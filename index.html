@@ -331,4 +331,194 @@ function expandPetSlot(){if(s.petSlots>=10)return;let cost=Math.floor(500*Math.p
 
 window.addEventListener('load',()=>{setTimeout(()=>{let h=document.querySelector('#start h1');if(h)h.textContent=`九州修仙錄 ${V06_LABEL}`;document.title=`九州修仙錄 ${V06_LABEL}`;if(s){ensureV06State();render()}},0)});
 
-</script></body></html>
+</script>
+<script>
+/* =========================
+   V0.61 TEST override layer
+   ========================= */
+const V061_LABEL='V0.61 TEST';
+const _v06_startGame=startGame, _v06_render=render, _v06_ensureState=ensureState, _v06_win=typeof win==='function'?win:null;
+
+function v061RealmStage(){
+  const r=s?.realm||'練氣一層';
+  const order=['練氣','築基','金丹','元嬰','化神','煉虛','合體','大乘','渡劫','真仙','天仙','帝仙','神帝'];
+  let major=order.findIndex(x=>r.includes(x)); if(major<0) major=0;
+  const m=r.match(/(\\d+)/); let lv=m?+m[1]:1;
+  return {major,lv,name:order[major]||'練氣'};
+}
+function ensureV061State(){
+  if(!s)return;
+  _v06_ensureState();
+  if(s.v061Migrated)return;
+  // Currency/material split
+  if(s.coins==null) s.coins = (s.year===213&&s.day===1&&s.hour<=10)?9999999:(s.stones||0);
+  s.materials=s.materials||{};
+  const mats=['普通靈草','百年靈草','仙靈草','靈露','楊木','靈石','玄鐵','仙金石','火晶石','水晶石','雷晶石','木晶石','土晶石','風晶石','冰晶石','妖皮','妖肉','妖骨','妖核碎片','中級妖核碎片','高級妖核碎片','仙獸妖核碎片'];
+  mats.forEach(k=>s.materials[k]=s.materials[k]||0);
+  // Old money no longer used as currency.
+  s.stones=0;
+  s.prestige=s.prestige||0;
+  s.treasureMaps=s.treasureMaps||0;
+  s.bountyUnlocked=s.bountyUnlocked||v061RealmStage().major>=2;
+  s.bounties=s.bounties||[];
+  s.completedBounties=s.completedBounties||[];
+  s.shopRobbery=s.shopRobbery||{};
+  s.guardQuest=s.guardQuest||null;
+  s.party=s.party||{npcs:[],pets:[]};
+  s.partners=s.partners||[];
+  s.petAffinity=s.petAffinity||{};
+  s.auctionBids=s.auctionBids||[];
+  s.treasureSite=s.treasureSite||null;
+  s.kills=s.kills||{}; ['高危種','妖王種','人類'].forEach(k=>s.kills[k]=s.kills[k]||0);
+  // remove starter pet food/cookies
+  s.bag=(s.bag||[]).filter(x=>!isPetFoodName(x[0]));
+  s.v061Migrated=true;
+}
+function startGame(){
+  _v06_startGame();
+  setTimeout(()=>{if(!s)return; s.coins=9999999; s.stones=0; s.bag=(s.bag||[]).filter(x=>!isPetFoodName(x[0])); s.v061Migrated=false; ensureV061State(); log('🧪 V0.61 TEST：測試資金 9,999,999 靈幣已發放。'); render();},90);
+}
+function addV061Nav(){
+  const nav=document.querySelector('.nav'); if(!nav||document.getElementById('n-minimap'))return;
+  const before=document.getElementById('n-updates');
+  [['minimap','🧭 小地圖'],['bounties','📜 懸賞令'],['partners','🤝 夥伴']].forEach(([id,txt])=>{let b=document.createElement('button');b.id='n-'+id;b.textContent=txt;b.onclick=()=>tab(id);nav.insertBefore(b,before)});
+}
+function statHelp(key){
+ const info={
+  hp:'玩家的血量，降為 0 時角色死亡；死亡後會由附近NPC抬回最近城鎮並收取救援費。',
+  mp:'施展技能、功法與部分特殊能力需要消耗的能量。靈力不足時，無法施展需要靈力的招式。',
+  exp:'目前境界的修為累積。修為達到上限後可以嘗試突破；部分境界突破存在失敗機率。',
+  atk:'影響普通攻擊、武器、技能與攻擊型功法造成的基礎傷害。',
+  def:'降低受到的物理與部分技能傷害。',
+  agi:'決定戰鬥行動先後。身法越高，越早行動。',
+  coins:'九州通用交易貨幣。商店、拍賣、救援費與大部分交易都使用靈幣。',
+  power:'由境界、HP、靈力、攻擊、防禦、身法、裝備與功法綜合計算的實力指標。',
+  karma:'善值與惡值分開累積。正義行為提高善值；搶劫、濫殺、邪道任務會提高惡值，並影響宗門與渡劫後道路。',
+  prestige:'完成懸賞令並回報後獲得。難度越高，威望獎勵通常越高，代表玩家在九州的名聲與辦事能力。'
+ };
+ showModal(`<h2>📖 詳細說明</h2><div class="card">${info[key]||'暫無說明。'}</div><button onclick="closeModal()">關閉</button>`)
+}
+function render(){
+ ensureV061State(); addV061Nav();
+ document.title=`九州修仙錄 ${V061_LABEL}`;
+ let title=document.querySelector('#game .title'); if(title)title.textContent=`九州修仙錄・${V061_LABEL}`;
+ document.getElementById('worldtime').textContent=`${V061_LABEL}・王朝${s.year}年・第${s.day}日・${String(s.hour).padStart(2,'0')}:00・${s.place}・${s.layer}`;
+ let expShown=Math.min(s.exp,s.expNeed),overflow=Math.max(0,s.exp-s.expNeed);
+ document.getElementById('char').innerHTML=`<b>${s.gender} ${s.name}</b><br><span class="gold">${s.realm} ${phaseOf(s.realm)}</span><br>🌿 主靈根：${s.root}
+ <div class="stat clickable" onclick="statHelp('hp')">❤️ HP <span>${s.hp}/${s.maxhp}</span></div><div class="bar"><i style="width:${100*s.hp/s.maxhp}%"></i></div>
+ <div class="stat clickable" onclick="statHelp('mp')">🔵 靈力 <span>${s.mp}/${s.maxmp}</span></div><div class="bar mp"><i style="width:${100*s.mp/s.maxmp}%"></i></div>
+ <div class="stat clickable" onclick="statHelp('exp')">✨ 修為 <span>${expShown}/${s.expNeed}${overflow?` (+${overflow})`:''}</span></div><div class="bar xp"><i style="width:${100*expShown/s.expNeed}%"></i></div>
+ <div class="stats"><div class="stat clickable" onclick="statHelp('atk')">⚔️ 攻擊 <span>${s.atk}</span></div><div class="stat clickable" onclick="statHelp('def')">🛡️ 防禦 <span>${s.def}</span></div><div class="stat clickable" onclick="statHelp('agi')">💨 身法 <span>${s.agi}</span></div><div class="stat clickable" onclick="statHelp('coins')">🪙 靈幣 <span>${s.coins.toLocaleString()}</span></div><div class="stat clickable" onclick="statHelp('power')">💥 戰力值 <span>${combatPower()}</span></div><div class="stat clickable" onclick="statHelp('prestige')">🏅 威望 <span>${s.prestige}</span></div><div class="stat clickable" onclick="statHelp('karma')">⚖️ 善惡 <span class="${s.good>=s.evil?'green':'red'}">善${s.good} / 惡${s.evil}</span></div></div>`;
+ let c=document.getElementById('content');
+ ({adventure,bag,cult,rootsView,techniques,sect,npc,pets,market,craft,world,chronicle,updates,minimap,bounties,partners}[tabNow]||adventure)(c);
+ updateOutsideLog?.(); autoSave?.(); checkExpFull?.();
+}
+
+function adventure(c){
+ recoverRetreatCharges?.(); let pi=placeInfo[s.place]||{州:'未知',王朝:'無',desc:'未知之地',danger:5};
+ let treasure=s.treasureMaps>0?`<button onclick="goTreasureSite()">🗺️ 前往藏寶地（${s.treasureMaps}）</button>`:'';
+ c.innerHTML=`${guideHTML?.()||''}${activeQuestHTML?.()||''}<div class="mapbox"><h2>🗺️ ${s.place}</h2><p>${pi.desc}</p><span class="pill">${pi.州}</span> <span class="pill">${pi.王朝}</span> <span class="pill ${pi.danger>=7?'danger':'safe'}">危險度 ${pi.danger}/10</span><div class="choices">${nearbyPlaces().map((p,i)=>`<button onclick="move('${p}')">${i+1}. 前往 ${p}</button>`).join('')}<button onclick="searchArea()">🔎 探索附近</button><button onclick="cultivate()">🧘 閉關修煉（${s.retreatCharges??5}/5）</button><button onclick="tab('minimap')">🧭 查看小地圖</button>${treasure}<button onclick="travelLayer()">☁️/🌑 世界層</button><button onclick="tab('bag')">🎒 打開背包</button>${isSafeLocation()?'<button onclick="guardClearEvilV061()">🛡️ 衛隊洗清惡名</button>':''}</div></div><h3>📜 冒險紀錄</h3><div class="log">${s.log.map(x=>`<div class="entry">${x}</div>`).join('')}</div>`;
+}
+function environmentGatherPool(){
+ let d=placeInfo[s.place]?.danger||1, name=s.place;
+ let arr=['普通靈草','靈露','楊木','靈石'];
+ if(d>=3)arr.push('玄鐵','火晶石','水晶石','雷晶石','木晶石','土晶石');
+ if(d>=6)arr.push('百年靈草','仙金石','風晶石','冰晶石');
+ if(d>=8)arr.push('仙靈草');
+ if(name.includes('火')||name.includes('炎'))arr.push('火晶石','火晶石');
+ if(name.includes('雷'))arr.push('雷晶石','雷晶石');
+ if(name.includes('冰')||name.includes('寒')||name.includes('雪'))arr.push('冰晶石','冰晶石');
+ return arr;
+}
+function searchArea(){
+ advance(2); let roll=Math.random();
+ if(roll<.30){log('👾 探索時察覺妖氣逼近！');encounter();return}
+ if(roll<.80){let g=rint(8,90);s.coins+=g;log(`🪙 撿到遺落在附近的 ${g} 靈幣。`);render();return}
+ if(roll<.805){s.materials['藏寶圖殘卷']=(s.materials['藏寶圖殘卷']||0)+1;log('🗺️ 你在不起眼的角落找到【藏寶圖殘卷】！');render();return}
+ let mat=pick(environmentGatherPool());s.materials[mat]=(s.materials[mat]||0)+1;log(`🌿 發現可採集物：【${mat}】×1。`);render();
+}
+
+function bag(c){
+ let groups={採集類:['普通靈草','百年靈草','仙靈草','靈露','楊木','靈石','玄鐵','仙金石','火晶石','水晶石','雷晶石','木晶石','土晶石','風晶石','冰晶石','藏寶圖殘卷'],妖物類:['妖皮','妖肉','妖骨','妖核碎片','中級妖核碎片','高級妖核碎片','仙獸妖核碎片']};
+ let cards=(s.bag||[]).filter(x=>x[1]>0).map(x=>{let idx=s.bag.indexOf(x),n=x[0],food=isPetFoodName(n),egg=isEggName(n),gear=isEquipmentName(n),usable=(n.includes('藥')||n.includes('丹'))&&!food;return `<div class="card"><b>${n}</b><br>數量：${x[1]}<br><span class="sub">${x[2]||''}</span><div class="choices">${usable?`<button onclick="openSingleItem(${idx},false)">使用</button>`:''}${egg?`<button onclick="startEggIncubation(${idx},false)">🥚 孵化</button>`:''}${gear?`<button onclick="equipFromBag(${idx})">🧥 更換/裝備</button><button onclick="discardBagItem(${idx})">🚮 丟棄</button>`:''}</div></div>`}).join('');
+ c.innerHTML=`<h2>🎒 背包與裝備</h2><div class="cards">${cards||'<div class="card">背包目前是空的。</div>'}</div>`+Object.entries(groups).map(([g,a])=>`<h3>🧱 ${g}</h3><div class="cards">${a.map(k=>`<div class="card">${k}：<b>${s.materials[k]||0}</b></div>`).join('')}</div>`).join('')+`<h3>🧥 目前裝備</h3><div class="equip">${Object.entries(s.equip).map(([k,v])=>`<div><b>${k}</b>：${v}${v!=='無'?`<br><button onclick="unequipSlot('${k}')">卸下</button>`:''}</div>`).join('')}</div>`;
+}
+
+function breakthroughBaseChance(){let {major,lv}=v061RealmStage();if(major<2)return 1;if(major<4)return .70;if(major<6)return .55;if(major<7)return .40;if(major===7&&lv<=3)return .30;if(major===7&&lv<=7)return .20;if(major===7)return .10;return .50}
+function breakthroughChance(){let base=breakthroughBaseChance(),{major}=v061RealmStage();if(major<2)return 1;if(major>=8)return base;let bonus=Math.min(.12,(s.cultivationDays||0)*.006)+Math.min(.08,(s.good||0)*.0005)+Math.min(.08,((s.kills.高危種||0)+(s.kills.妖王種||0)*3)*.003);return Math.min(1,base+bonus)}
+function breakthrough(){
+ if(s.exp<s.expNeed)return;let {major,lv}=v061RealmStage();if(major>=8||realmPower(s.realm)>=80)return startTribulation();
+ let old={hp:s.maxhp,mp:s.maxmp,atk:s.atk,def:s.def,agi:s.agi},oldNeed=s.expNeed,overflow=Math.max(0,s.exp-oldNeed),chance=breakthroughChance();
+ if(Math.random()>chance){s.exp=Math.floor(oldNeed*.72)+overflow;s.hp=Math.max(1,Math.floor(s.maxhp*.4));log(`💥 突破失敗（成功率 ${Math.round(chance*100)}%），修為有所回落。`);render();return}
+ let names=['練氣','築基','金丹','元嬰','化神','煉虛','合體','大乘']; if(lv<10){lv++;s.realm=names[major]+lv+'層'}else{s.realm=names[major+1]+'1層'}
+ s.expNeed=Math.floor(oldNeed*1.3+40);s.exp=overflow;let hpGain=18+major*6,mpGain=7+major*3,atkGain=4+major,defGain=3+major,agiGain=Math.max(1,Math.floor(1+major/2));s.maxhp+=hpGain;s.maxmp+=mpGain;s.atk+=atkGain;s.def+=defGain;s.agi+=agiGain;s.hp=s.maxhp;s.mp=s.maxmp;s.bountyUnlocked=v061RealmStage().major>=2;
+ showModal(`<h2>✨ 突破成功</h2><div class="card"><b>${s.realm}</b><br><br>❤️ HP +${hpGain}<br>🔵 靈力 +${mpGain}<br>⚔️ 攻擊 +${atkGain}<br>🛡️ 防禦 +${defGain}<br>💨 身法 +${agiGain}</div><button class="primary" onclick="closeModal();render()">確認</button>`);log(`✨ 突破成功！晉入【${s.realm}】。`)
+}
+function startTribulation(){let okHigh=(s.kills.高危種||0)>=30,okBoss=(s.kills.妖王種||0)>=3,okRank=s.sectRank==='長老'||s.sectRank==='宗主';showModal(`<h2>🌩️ 渡劫條件</h2><div class="card">${okHigh?'✅':'❌'} 高危種：${s.kills.高危種||0}/30<br>${okBoss?'✅':'❌'} 妖王種：${s.kills.妖王種||0}/3<br>${okRank?'✅':'❌'} 宗門職位：${s.sectRank||'無'}（需要長老）</div><div class="card">基礎渡劫成功率固定 50%。閉關、歷練、善值與一般丹藥無法提升；特殊環境最多 +10%。</div>${okHigh&&okBoss&&okRank?'<button class="primary" onclick="doTribulationV061()">引動天劫</button>':''}<button onclick="closeModal()">暫緩</button>`)}
+function doTribulationV061(){let special=(placeInfo[s.place]?.danger||0)>=9, chance=.5+(special?.1:0);if(Math.random()>chance){s.hp=1;log('🌩️ 渡劫失敗！你從雷劫中勉強保住性命。');closeModal();render();return}closeModal();if((s.evil||0)-(s.good||0)>=500){s.realm='真魔';s.immortal=true;log('😈 魔氣貫體——你踏入【真魔】之境！')}else if((s.good||0)-(s.evil||0)>=500){s.realm='真仙';s.immortal=true;log('🌟 仙門大開——你踏入【真仙】之境！')}else{log('🌩️ 天劫已渡，但善惡差值未達500，仙魔之路尚未定型。')}render()}
+
+const V061_SHOPS={
+ '💊 藥類商店':[['［初階］治療藥水',60],['［中階］治療藥水',160],['［高階］治療藥水',420],['［初階］靈力藥水',70],['［中階］靈力藥水',180],['［高階］靈力藥水',450],['治癒丹藥',550],['靈癒丹藥',520]],
+ '⚒️ 裝備鐵匠鋪':[['［初階］鐵劍',520],['［初階］鐵刀',610],['［初階］木弓',570],['［初階］長槍',540],['［初階］拳套',430],['［初階］鐵錘',680],['［初階］護身衣',750]],
+ '🐾 寵物商店':[['寵物飼料',120],['寵物餅乾',190],['神秘妖獸蛋',2800]],
+ '📖 功法商店':[['［初階］青木訣',480],['［初階］炎息訣',520],['［初階］流水訣',500],['［初階］御風步',620],['［初階］厚土功',560],['［中階］赤炎劍訣',1600],['［中階］雷引術',1750],['［中階］玄水護體',1680],['［中階］疾風步',1850],['［中階］金剛體',1780]],
+ '🧺 雜物商店':[['普通靈草',35],['靈露',45],['楊木',30],['靈石',55],['玄鐵',160],['火晶石',190],['🎁 清心香囊',260],['🎁 靈花束',420]]
+};
+function shopTypesHere(){let d=placeInfo[s.place]?.danger||1,keys=Object.keys(V061_SHOPS),n=1+(Math.abs([...s.place].reduce((a,c)=>a+c.charCodeAt(0),0))%5);return keys.slice(0,n)}
+function shopMarkup(name){let mult=1+Math.min(.6,(s.shopRobbery[name]?.count||0)*.2),d=placeInfo[s.place]?.danger||1;let items=V061_SHOPS[name].map(([n,p])=>[n,Math.floor(p*(1+d*.06)*mult)]);return `<h3>${name}</h3><div class="cards">${items.map(([n,p])=>`<div class="card"><b>${n}</b><br>${p} 靈幣<br><button onclick="buyV061('${n}',${p})">購買</button></div>`).join('')}</div><button class="danger" onclick="robShopV061('${name.replaceAll("'","\\'")}')">🗡️ 搶劫商店</button>`}
+function market(c){if(!isSafeLocation()){c.innerHTML='<h2>💰 商店</h2><div class="card red">荒野沒有固定商店。</div>';return}c.innerHTML=`<h2>🪙 商店街</h2><p class="sub">交易貨幣統一為靈幣；不同城鎮出現的商店種類不同。</p>${shopTypesHere().map(shopMarkup).join('')}<h2>🔨 拍賣所</h2>${auctionV061HTML()}`}
+function buyV061(n,p){if(s.coins<p){alert(`靈幣不足，無法購買。\\n需要：${p} 靈幣\\n持有：${s.coins} 靈幣`);return}s.coins-=p;if(n==='神秘妖獸蛋'||n.includes('藥')||n.includes('丹')||n.includes('飼料')||n.includes('餅乾')||n.startsWith('🎁')||n.includes('訣')||n.includes('術')||n.includes('步')||n.includes('功'))addBag(n,1,'V0.61 商店購入');else s.materials[n]=(s.materials[n]||0)+1;log(`🛒 花費 ${p} 靈幣購買【${n}】。`);render()}
+function robShopV061(name){let rec=s.shopRobbery[name]||(s.shopRobbery[name]={count:0,last:-9999});let now=(s.day||1)*24+(s.hour||0);if(now-rec.last<48){alert('距離上次搶劫尚未滿48遊戲小時。');return}rec.last=now;rec.count=Math.min(3,rec.count+1);let g=rint(80,600);s.coins+=g;s.evil+=30;let items=V061_SHOPS[name],num=rint(1,2);for(let i=0;i<num;i++){let it=pick(items)[0];if(it.includes('藥')||it.includes('丹')||it.includes('飼料')||it.includes('餅乾')||it==='神秘妖獸蛋'||it.startsWith('🎁'))addBag(it,1,'搶劫所得');else s.materials[it]=(s.materials[it]||0)+1}let noticed=Math.random()<.65;if(noticed){s.npcs.filter(n=>n.alive&&n.place===s.place).forEach(n=>n.aff=Math.max(0,(n.aff||0)-15));log('🚨 城鎮NPC發現了你的惡行，好感度 -1.5心。')}log(`🗡️ 搶劫【${name}】取得 ${g} 靈幣與架上物品；惡值 +30。該店永久漲價 ${(rec.count*20)}%。`);render()}
+function auctionV061HTML(){if(!s.auction?.length)seedAuction?.();return `<div class="cards">${(s.auction||[]).map((a,i)=>`<div class="card"><b>${a.name}</b><br>${a.desc||''}<br>目前競價：${a.price} 靈幣<div class="choices"><button onclick="bidV061(${i})">🔨 競拍</button><button onclick="buyoutV061(${i})">💰 一口價 ${Math.floor(a.price*1.6)}</button></div></div>`).join('')}</div>`}
+function bidV061(i){let a=s.auction[i],price=Math.ceil(a.price*1.1);if(s.coins<price)return alert('靈幣不足，無法競拍。');s.coins-=price;s.auctionBids.push({i,name:a.name,price,resolveAt:(s.day*24+s.hour)+24});log(`🔨 已出價 ${price} 靈幣競拍【${a.name}】，一日後結算。`);render()}
+function buyoutV061(i){let a=s.auction[i],p=Math.floor(a.price*1.6);if(s.coins<p)return alert('靈幣不足，無法直接購買。');s.coins-=p;addBag(a.name,1,a.desc||'拍賣品');s.auction.splice(i,1);log(`💰 以 ${p} 靈幣直接購得【${a.name}】。`);render()}
+
+function minimap(c){let cur=s.place,near=nearbyPlaces();let pi=placeInfo[cur]||{};c.innerHTML=`<h2>🧭 小地圖</h2><div class="card"><b class="gold">📍 ${cur}</b><br>${pi.desc||''}<br><span class="sub">推薦危險度：${pi.danger||1}/10</span></div><div class="mapbox"><div style="text-align:center;font-size:18px"><b>${cur}</b><br>│<br>${near.map(p=>`↳ <button onclick="move('${p}')">${p}</button>`).join('<br>')}</div></div><h3>📚 區域資訊</h3><div class="cards">${[cur,...near].map(p=>{let x=placeInfo[p]||{};return `<div class="card"><b>${p}</b><br>${x.州||'未知'}・${x.王朝||''}<br>危險度 ${x.danger||1}/10<br>可能素材：${environmentGatherPool().slice(0,5).join('、')}</div>`}).join('')}</div>`}
+
+function generateBountiesV061(){if(s.bounties.length)return;let data=[['½★','黑風盜',1,'築基三階','人類','持刀劫匪，專門襲擊往來商旅。',260,8],['★★','赤血散修',3,'金丹五階','人類','以邪術掠奪修士靈力，行蹤不定。',780,18],['★★★','炎骨道人',5,'元嬰二階','人類','火靈根邪修，曾燒毀數個村落。',1350,28],['★★★★★','蔣恩典',8,'元嬰五階','人類','劍修，擅長火靈根功法。殺人如麻，是個徹頭徹尾的瘋狂殺人魔，急需勇敢人士將他處決。',2100,45]];s.bounties=data.map((x,i)=>({id:'B'+i,stars:x[0],name:x[1],danger:x[2],realm:x[3],cat:x[4],desc:x[5],coins:x[6],prestige:x[7],done:false,reported:false}))}
+function bounties(c){s.bountyUnlocked=v061RealmStage().major>=2;if(!s.bountyUnlocked){c.innerHTML='<h2>📜 懸賞令</h2><div class="card">🔒 玩家達到【金丹一階】後開啟。</div>';return}generateBountiesV061();c.innerHTML=`<h2>📜 懸賞令</h2><div class="card"><b>🏅 威望值：${s.prestige}</b><br>完成懸賞令並回報可獲得威望。懸賞難度由半顆星至五星，難度越高，敵人越強，獎勵與威望也越高。</div><div class="cards">${s.bounties.map(b=>`<div class="card"><b>${b.stars} ${b.name}</b><br>${b.realm}・${b.cat}<br>戰力：${b.danger>=7?'？？？':b.danger>=4?'？？':'？'}<br><span class="sub">${b.desc}</span><br>🪙 ${b.coins} 靈幣・🏅 威望 +${b.prestige}${b.name==='蔣恩典'?'<br>💊［中階］靈火丹藥 ×1（3回合免疫火屬性傷害）':''}<div class="choices">${!b.done?`<button onclick="huntBounty('${b.id}')">前往追捕</button>`:!b.reported?`<button class="primary" onclick="reportBounty('${b.id}')">回報完成</button>`:'✅ 已完成'}</div></div>`).join('')}</div>`}
+function huntBounty(id){let b=s.bounties.find(x=>x.id===id);if(!b)return;window._activeBounty=id;makeEnemy({name:b.name,tier:'人類',category:'人類',danger:b.danger,realm:b.realm,skill:'懸賞犯絕技',look:b.desc});}
+function reportBounty(id){let b=s.bounties.find(x=>x.id===id);if(!b||!b.done||b.reported)return;b.reported=true;s.coins+=b.coins;s.prestige+=b.prestige;if(b.name==='蔣恩典')addBag('［中階］靈火丹藥',1,'使用後3回合內免疫火屬性傷害');log(`🏅 回報懸賞【${b.name}】，獲得 ${b.coins} 靈幣、威望 +${b.prestige}。`);render()}
+
+function petFeedMenu(i){let p=s.pets[i];if(!p)return;let food=s.bag.find(x=>x[0].includes('寵物飼料')&&x[1]>0),cookie=s.bag.find(x=>x[0].includes('寵物餅乾')&&x[1]>0);showModal(`<h2>🍖 餵食 ${p.name}</h2><div class="choices"><button ${food?'':'disabled'} onclick="feedPetV061(${i},'food')">寵物飼料（+¼心）</button><button ${cookie?'':'disabled'} onclick="feedPetV061(${i},'cookie')">寵物餅乾（+½心）</button><button onclick="closeModal()">返回</button></div>`)}
+function feedPetV061(i,type){let p=s.pets[i],needle=type==='food'?'寵物飼料':'寵物餅乾',b=s.bag.find(x=>x[0].includes(needle)&&x[1]>0);if(!p||!b)return;b[1]--;p.aff=Math.min(100,(p.aff||0)+(type==='food'?2.5:5));log(`🐾 ${p.name} 吃下${needle}，好感度 +${type==='food'?'¼':'½'}心。`);closeModal();render()}
+function togglePetBattle(i){let p=s.pets[i];if(!p)return;let arr=s.party.pets,active=arr.includes(i);if(active){s.party.pets=arr.filter(x=>x!==i);render();return}if(arr.length>=2)return alert('最多只能同時出戰2隻寵物。');if(1+s.party.npcs.length+arr.length>=4)return alert('我方最多出戰4名（包含玩家）。請先收回寵物或取消一名NPC出戰。');arr.push(i);render()}
+function pets(c){processIncubatingEggs?.();c.innerHTML=`<h2>🐾 寵物</h2><div class="card">我方總出戰：${1+s.party.npcs.length+s.party.pets.length}/4（含玩家）・寵物最多2隻</div><div class="cards">${s.pets.map((p,i)=>`<div class="card"><b>${p.name}</b> ${tierTag(p.tier)}<br>${p.species}<br>❤️ ${p.hp}/${p.maxhp}　🔵 ${p.mp}/${p.maxmp}<br>好感：${heartBar(p.aff)}<br>技能：${p.skills.join('、')}<div class="choices"><button onclick="togglePetBattle(${i})">${s.party.pets.includes(i)?'↩️ 收回':'⚔️ 出戰'}</button><button onclick="petFeedMenu(${i})">🍖 餵食</button></div></div>`).join('')||'<div class="card">目前沒有寵物。</div>'}</div>`}
+
+function partners(c){let all=s.partners.map(id=>s.npcs.find(n=>n.id===id)).filter(Boolean);c.innerHTML=`<h2>🤝 夥伴</h2><div class="card">我方最多出戰4名（包含玩家），NPC/伴侶/成年子女與寵物共用剩餘3個位置。</div><div class="cards">${all.map(n=>`<div class="card"><b>${n.name}</b><br>${n.realm}・${n.age}歲・${n.personality}<br>好感：${heartBar(n.aff)}<div class="choices"><button onclick="openNPCDialogue('${n.id}')">💬 聊天</button><button onclick="giftMenu('${n.id}')">🎁 贈禮</button><button onclick="sparPartner('${n.id}')">⚔️ 切磋</button><button onclick="partnerNews('${n.id}')">📰 詢問時事</button><button onclick="togglePartnerBattle('${n.id}')">${s.party.npcs.includes(n.id)?'取消出戰':'出戰'}</button><button onclick="dismissPartner('${n.id}')">🚪 夥伴請離</button></div></div>`).join('')||'<div class="card">目前沒有已招募夥伴。達到築基一階後，可在城鎮酒館招募。</div>'}</div>${v061RealmStage().major>=1&&isSafeLocation()?'<button onclick="openTavernV061()">🍺 前往酒館招募</button>':''}`}
+function togglePartnerBattle(id){let a=s.party.npcs;if(a.includes(id))s.party.npcs=a.filter(x=>x!==id);else{if(1+a.length+s.party.pets.length>=4)return alert('我方最多出戰4名（包含玩家）。請先收回寵物或取消一名NPC出戰。');a.push(id)}render()}
+function openTavernV061(){let pool=s.npcs.filter(n=>n.alive&&!s.partners.includes(n.id)).sort(()=>Math.random()-.5).slice(0,5);showModal(`<h2>🍺 酒館招募</h2><div class="cards">${pool.map(n=>`<div class="card"><b>${n.name}</b><br>HP ${Math.max(70,realmPower(n.realm)*4)}・靈力 ${Math.max(25,realmPower(n.realm)*2)}<br>戰力 ${Math.floor(realmPower(n.realm)*100+n.talent*7)}<br>${n.age}歲・${n.gender}・${n.realm}<br>擅長：${pick(['火','水','木','金','土','雷','風','冰'])}靈根<br>武器：${pick(['劍','刀','弓','長槍','拳','錘'])}<br>性格：${n.personality}<br><button onclick="recruitV061('${n.id}')">招募</button></div>`).join('')}</div><button onclick="closeModal()">離開</button>`)}
+function recruitV061(id){let n=s.npcs.find(x=>x.id===id);if(!n)return;if(!confirm(`是否招募【${n.name}】成為夥伴？`))return;s.partners.push(id);log(`🤝 ${n.name} 加入了你的夥伴隊伍。`);closeModal();render()}
+function sparPartner(id){let n=s.npcs.find(x=>x.id===id);if(!n)return;showModal(`<h2>⚔️ 與 ${n.name} 切磋</h2><div class="card">切磋開始時雙方視為滿HP、滿靈力；不論勝負，結束後都恢復切磋前狀態。</div><button onclick="closeModal()">完成切磋</button>`)}
+function partnerNews(id){let n=s.npcs.find(x=>x.id===id);showModal(`<h2>📰 ${n?.name||'夥伴'}談時事</h2><div class="dialogue">「${s.worldEvents?.[0]||'最近九州表面平靜，但修士間都在觀望風向。'}」</div><button onclick="closeModal()">返回</button>`)}
+function dismissPartner(id){let n=s.npcs.find(x=>x.id===id);if(!n||!confirm(`是否確認逐出夥伴【${n.name}】？`))return;s.partners=s.partners.filter(x=>x!==id);s.party.npcs=s.party.npcs.filter(x=>x!==id);render()}
+
+function guardClearEvilV061(){let q=s.guardQuest;if(q&&q.done){let cut=q.cut;s.evil=Math.max(0,s.evil-cut);s.guardQuest=null;showModal(`<h2>🛡️ 除惡任務完成</h2><div class="card">惡值 -${cut}<br>此任務沒有額外獎勵。</div><button onclick="closeModal();render()">離開</button>`);return}showModal(`<h2>🛡️ 衛隊・洗清惡名</h2><div class="dialogue">衛隊神情嚴正，看得出來是極重規矩與正義之人。</div><div class="choices"><button onclick="alert('衛隊：守城護民，是我等職責。')">💬 交談</button><button onclick="acceptGuardQuestV061()">📜 接取除惡任務</button><button onclick="closeModal()">離開</button></div>`)}
+function acceptGuardQuestV061(){if(s.guardQuest)return alert('你已經有一項衛隊指派任務。');let hard=Math.random()<.45,cut=hard?rint(15,30):rint(5,10),text=hard?pick(['清理城外妖物','擊退附近山賊']):pick(['替城中老人跑腿','協助清掃城鎮街道']);s.guardQuest={hard,cut,text,done:!hard};closeModal();log(`🛡️ 衛隊指派除惡任務：${text}。完成可降低 ${cut} 惡值，無其他任務獎勵。`);render()}
+
+function goTreasureSite(){if(s.treasureMaps<=0)return;s.treasureMaps--;s.treasureSite={active:true};window._treasureBattle=true;let candidates=s.monsterPool.filter(m=>m.tier==='高危種');let m=pick(candidates)||{name:'守寶妖獸',tier:'高危種',category:'妖物',danger:7,skill:'守護咆哮'};log('🗺️ 依照藏寶圖抵達隱秘地點，守衛妖物現身！');makeEnemy({...m,tier:'高危種',category:'妖物'});}
+function awardTreasureV061(){let g=rint(1000,5000);s.coins+=g;let pool=['［特殊］玄星戒','［特殊］流火佩','［高階］治療丹','［高階］靈力丹','［高階］殘月劍訣','［高階］天罡護體訣'];let picks=[...pool].sort(()=>Math.random()-.5).slice(0,2);picks.forEach(x=>addBag(x,1,'藏寶地寶藏'));log(`🎁 開啟寶藏：獲得 ${g} 靈幣，以及【${picks.join('】、【')}】。`)}
+
+// battle round / threat / drops hooks
+let _v061BattleRound=1;
+function threatLabel(){if(!enemy)return'';let ep=combatPower(enemy),pp=combatPower();return ep<pp*.85?'？':ep<=pp*1.15?'？？':'？？？'}
+const _oldRefreshCombat=typeof refreshCombat==='function'?refreshCombat:null;
+function refreshCombat(){if(!_oldRefreshCombat||!enemy)return _oldRefreshCombat?.();_oldRefreshCombat();let modal=document.querySelector('.modal')||document.querySelector('#modal');let content=document.querySelector('.modalbox')||document.querySelector('#modal .box');let el=content||document.querySelector('#modal');if(el){let h=el.querySelector('h2');if(h&&!h.textContent.includes('回合'))h.insertAdjacentHTML('afterend',`<div class="card"><b>回合 ${_v061BattleRound}/20</b> ・ 敵方戰力：<span class="red">${threatLabel()}</span></div>`)} }
+function advanceBattleRoundV061(){_v061BattleRound++;if(_v061BattleRound>20){log('⏳ 超過20回合，戰鬥失敗！本戰不獲得任何戰利品。');enemy=null;closeModal();render();return true}return false}
+const _oldAttack=attack; attack=function(){if(!enemy)return;_oldAttack();if(enemy&&advanceBattleRoundV061())return;refreshCombat()};
+const _oldUseSkill=useSkill; useSkill=function(name){if(!enemy)return;_oldUseSkill(name);if(enemy&&advanceBattleRoundV061())return;refreshCombat()};
+const _oldMakeEnemy=makeEnemy; makeEnemy=function(m){_v061BattleRound=1;return _oldMakeEnemy(m)};
+const _oldWin=typeof win==='function'?win:null;
+if(_oldWin) win=function(){let e=enemy,cat=e?.category||e?.tier;if(e){let strength=e.tier==='妖王種'?4:e.tier==='高危種'?3:e.tier==='特殊種'?2:1,items=[];if(e.category==='人類'||e.tier==='人類'){let pool=strength>=3?['玄鐵','火晶石','雷晶石','百年靈草']:['普通靈草','靈露','楊木','靈石'];for(let i=0;i<2;i++){let n=rint(0,2);if(n){let x=pick(pool);s.materials[x]=(s.materials[x]||0)+n;items.push(`${x}×${n}`)}}}else{let pool=strength>=4?['仙獸妖核碎片','高級妖核碎片','妖骨']:strength>=3?['高級妖核碎片','中級妖核碎片','妖皮','妖骨']:strength>=2?['中級妖核碎片','妖核碎片','妖皮','妖肉']:['妖核碎片','妖皮','妖肉','妖骨'];for(let i=0;i<2;i++){let n=rint(0,2);if(n){let x=pick(pool);s.materials[x]=(s.materials[x]||0)+n;items.push(`${x}×${n}`)}}}if(items.length)log('🎒 額外掉落：'+items.join('、'));if(window._activeBounty){let b=s.bounties.find(x=>x.id===window._activeBounty);if(b&&b.name===e.name){b.done=true;log(`📜 已擊敗懸賞目標【${b.name}】，請回懸賞令介面回報。`)}window._activeBounty=null}if(window._treasureBattle){window._treasureBattle=false;awardTreasureV061()}}return _oldWin()};
+
+function craft(c){if(!canCraftHere()){c.innerHTML='<h2>🔥 煉製</h2><div class="card red">此處沒有可用的煉製設施。</div>';return}let combos=[['功法殘卷',3,'隨機完整功法'],['藏寶圖殘卷',3,'藏寶圖'],['妖核碎片',10,'中級妖核碎片'],['中級妖核碎片',5,'高級妖核碎片'],['高級妖核碎片',3,'仙獸妖核碎片'],['仙獸妖核碎片',2,'完整仙獸妖核']];c.innerHTML=`<h2>🧩 合成</h2><div class="cards">${combos.map((x,i)=>`<div class="card"><b>${x[0]} ×${x[1]}</b><br>→ ${x[2]}<br><button onclick="combineV061(${i})">合成</button></div>`).join('')}</div><h2>🔥 煉丹</h2><div class="cards">${recipes.pill.map((r,i)=>recipeCard(r,'pill',i)).join('')}</div><h2>⚒️ 煉器</h2><div class="cards">${recipes.gear.map((r,i)=>recipeCard(r,'gear',i)).join('')}</div>`}
+function combineV061(i){let combos=[['功法殘卷',3,'隨機完整功法'],['藏寶圖殘卷',3,'藏寶圖'],['妖核碎片',10,'中級妖核碎片'],['中級妖核碎片',5,'高級妖核碎片'],['高級妖核碎片',3,'仙獸妖核碎片'],['仙獸妖核碎片',2,'完整仙獸妖核']],x=combos[i],have=s.materials[x[0]]||0;if(have<x[1])return alert('材料不足。');s.materials[x[0]]-=x[1];if(x[2]==='藏寶圖')s.treasureMaps++;else if(x[2]==='隨機完整功法'){let t=pick(rareTechs);s.techInventory.push(t.name);log(`📖 合成得到完整功法【${t.name}】。`)}else{s.materials[x[2]]=(s.materials[x[2]]||0)+1}log(`🧩 合成成功：${x[2]}。`);render()}
+
+function updates(c){c.innerHTML=`<h2>🧪 ${V061_LABEL}</h2><div class="card"><b>本版主要測試</b><br>🪙 靈幣/靈石分離<br>🧭 小地圖<br>📜 懸賞與威望<br>💊/⚒️/🐾/📖/🧺 分類商店<br>🗡️ 商店搶劫與永久漲價<br>🌿/👾 採集類與妖物類掉落<br>🧩 殘卷與妖核合成<br>🗺️ 藏寶圖<br>✨ 分階突破機率<br>🌩️ 渡劫條件與仙/魔道路<br>🤝 酒館招募與4人出戰上限<br>⏳ 20回合戰鬥限制</div>`}
+
+window.addEventListener('load',()=>{setTimeout(()=>{addV061Nav();if(s){ensureV061State();render()}},120)});
+</script>
+<style>
+.clickable{cursor:pointer}.clickable:hover{text-decoration:underline}.danger{border-color:#8d2a2a!important;color:#ffb6b6!important}.mapbox button{margin:4px}
+</style>
+</body></html>
