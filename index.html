@@ -2788,6 +2788,438 @@ makeEnemy=function(m){
   refreshCombat();
 };
 
+
+
+/* =========================================================
+   V0.6.6 寵物系統修復
+   - 恢復靈幣擴充寵物欄
+   - 同時最多孵化2顆蛋
+   - 出戰寵物真正進入戰鬥
+   ========================================================= */
+
+function ensurePetSystemV066(){
+  if(!s)return;
+  s.party=s.party||{npcs:[],pets:[]};
+  s.party.pets=Array.isArray(s.party.pets)?s.party.pets:[];
+  s.party.npcs=Array.isArray(s.party.npcs)?s.party.npcs:[];
+  s.petSlots=Math.max(1,s.petSlots||1);
+  s.petSlotPurchases=Math.max(0,s.petSlotPurchases||0);
+  s.ownedEggs=s.ownedEggs||[];
+}
+
+function petSlotCostV066(){
+  return Math.floor(500*Math.pow(1.65,s.petSlotPurchases||0));
+}
+expandPetSlot=function(){
+  ensurePetSystemV066();
+  if(s.petSlots>=10)return alert('寵物欄已達10格上限。');
+  let cost=petSlotCostV066();
+  if((s.coins||0)<cost)return alert(`靈幣不足。\n擴充下一格需要 ${cost.toLocaleString()} 靈幣。`);
+  s.coins-=cost;
+  s.petSlots++;
+  s.petSlotPurchases++;
+  log(`🐾 寵物欄擴充至 ${s.petSlots} 格，花費 ${cost.toLocaleString()} 靈幣。`);
+  render();
+};
+
+startHeldEggV062=function(id){
+  ensurePetSystemV066();
+  let egg=s.ownedEggs.find(x=>x.id===id);
+  if(!egg||egg.state!=='held')return;
+  let incubating=s.ownedEggs.filter(x=>x.state==='incubating').length;
+  if(incubating>=2)return alert('孵化陣一次最多只能孵化2顆妖獸蛋。');
+  let hours=rint(12,48);
+  egg.state='incubating';
+  egg.startedAt=gameHours();
+  egg.readyAt=gameHours()+hours;
+  egg.secretHours=hours;
+  log(`🥚 【${egg.name}】已放入孵化陣。目前孵化中 ${incubating+1}/2。`);
+  render();
+};
+
+function activeBattlePetsV066(){
+  ensurePetSystemV066();
+  let valid=[];
+  for(const idx of s.party.pets){
+    let p=s.pets[idx];
+    if(p)valid.push({idx,p});
+  }
+  return valid.slice(0,2);
+}
+function petAtkV066(p){
+  let tier=p.tier==='妖王種'?2.2:p.tier==='高危種'?1.7:p.tier==='特殊種'?1.35:1;
+  return Math.max(5,Math.floor((p.level||1)*3 + (p.maxhp||70)*0.08 + (p.maxmp||20)*0.06)*tier);
+}
+function petDefV066(p){
+  let tier=p.tier==='妖王種'?1.8:p.tier==='高危種'?1.5:p.tier==='特殊種'?1.25:1;
+  return Math.max(2,Math.floor((p.level||1)*1.5+(p.maxhp||70)*0.045)*tier);
+}
+function petAgiV066(p){
+  let tier=p.tier==='妖王種'?8:p.tier==='高危種'?6:p.tier==='特殊種'?4:2;
+  return Math.max(3,(p.level||1)+tier+Math.floor((p.maxmp||20)/15));
+}
+function petBattlePowerV066(p){
+  return Math.max(1,Math.floor((p.maxhp||0)*1.1+(p.maxmp||0)*.7+petAtkV066(p)*12+petDefV066(p)*9+petAgiV066(p)*5));
+}
+function petBattlePhaseV066(){
+  if(!enemy)return false;
+  let pets=activeBattlePetsV066().filter(x=>(x.p.hp||0)>0).sort((a,b)=>petAgiV066(b.p)-petAgiV066(a.p));
+  for(const {p} of pets){
+    if(!enemy||enemy.hp<=0)break;
+    let hit=Math.max(.68,Math.min(.98,.88+(petAgiV066(p)-(enemy.agi||5))*.01));
+    if(Math.random()>hit){log(`🐾 ${p.name} 的攻擊被【${enemy.name}】閃過。`);continue}
+    let base=petAtkV066(p)+rint(1,Math.max(2,p.level||1));
+    let dmg=Math.max(1,Math.floor(base*(base/Math.max(1,base+(enemy.def||0)*.8))*(.95+Math.random()*.1)));
+    enemy.hp-=dmg;
+    log(`🐾 ${p.name} 出手攻擊【${enemy.name}】，造成 ${dmg} 傷害。`);
+    if(enemy.hp<=0){win();return true}
+  }
+  return false;
+}
+
+function enemyTurnV066(reduce=0){
+  if(!enemy)return true;
+  let livingPets=activeBattlePetsV066().filter(x=>(x.p.hp||0)>0);
+  let candidates=[{type:'player',name:s.name,agi:s.agi||0,def:s.def||0}];
+  livingPets.forEach(x=>candidates.push({type:'pet',name:x.p.name,p:x.p,def:petDefV066(x.p),agi:petAgiV066(x.p)}));
+  let target=pick(candidates);
+  let spell=enemy.mp>=8&&Math.random()<((enemy.tier==='一般種'||enemy.tier==='生物')?.2:.55);
+  let atk=enemy.atk||5,def=target.def||0,dmg;
+  if(spell){
+    enemy.mp-=8;
+    dmg=Math.max(1,atk+7-def+rint(0,7)-(target.type==='player'?reduce:0));
+    log(`🌀 ${enemy.name} 施展【${enemy.skill||'妖術'}】，攻擊${target.type==='player'?'你':`寵物【${target.name}】`}，造成 ${dmg} 傷害！`);
+  }else{
+    dmg=Math.max(1,atk-def+rint(0,5)-(target.type==='player'?reduce:0));
+    log(`💥 ${enemy.name} 攻擊${target.type==='player'?'你':`寵物【${target.name}】`}，造成 ${dmg} 傷害。`);
+  }
+  if(target.type==='player'){
+    s.hp-=dmg;
+    if(s.hp<=0){
+      s.hp=1;
+      log('☠️ 你重傷倒地，被附近修士救回安全處。');
+      enemy=null;closeModal();render();return true;
+    }
+  }else{
+    target.p.hp=Math.max(0,(target.p.hp||0)-dmg);
+    if(target.p.hp<=0)log(`🐾 ${target.p.name} 在本場戰鬥中失去戰鬥能力。`);
+  }
+  return false;
+}
+enemyTurn=enemyTurnV066;
+
+const _refreshCombatPetBase=refreshCombat;
+refreshCombat=function(){
+  if(!enemy){closeModal();return}
+  let ep=combatPower(enemy),style=enemyPowerStyleV065(ep),pc=combatPower();
+  let pets=activeBattlePetsV066();
+  let petCards=pets.length?`<h3>🐾 出戰寵物</h3><div class="cards">${pets.map(({p})=>`<div class="card"><b>🐾 ${p.name}</b> ${tierTag(p.tier)}<br>狀態：${(p.hp||0)>0?'<span class="green">戰鬥中</span>':'<span class="red">失去戰鬥能力</span>'}<br>❤️ 氣血：${Math.max(0,p.hp||0)}/${p.maxhp}<br>🔵 靈力：${p.mp||0}/${p.maxmp||0}<br>💥 戰力：${petBattlePowerV066(p)}　💨 身法：${petAgiV066(p)}</div>`).join('')}</div>`:'';
+  showModal(`<h2>⚔️ 戰鬥</h2>
+  <div class="card"><b>回合 ${_v061BattleRound||1}/20</b>　｜　${enemy.name} 戰力：<b class="${style.cls}">${ep}${style.txt}</b></div>
+  <div class="card"><b>${enemy.category==='人類'?'🗡️':'👾'} ${enemy.name}</b> ${tierTag(enemy.tier)}<br>類別：${enemy.category||'妖物'}${enemy.realm?`　修為：<b>${enemy.realm}</b>`:''}<br>特徵：${enemy.look||'未知'}<br>招牌技能：${enemy.skill||'普通攻擊'}<br>❤️ 氣血：${enemy.hp}/${enemy.maxhp}　🔵 靈力：${enemy.mp}/${enemy.maxmp}</div>
+  <div class="card"><b>🧘 ${s.name}</b><br>${s.realm} ${phaseOf(s.realm)}　💥 戰力：${pc}<br>❤️ ${s.hp}/${s.maxhp}　🔵 ${s.mp}/${s.maxmp}</div>
+  ${petCards}
+  <div class="choices"><button onclick="attack()">⚔️ ① 攻擊（${s.equip.武器}）</button><button onclick="skillMenu()">✨ ② 使用技能與功法</button><button onclick="defend()">🛡️ ③ 防禦</button><button onclick="flee()">🏃 ④ 逃跑</button><button onclick="combatItemMenu()">🎒 ⑤ 使用道具或丹藥</button></div>`);
+};
+
+attack=function(){
+  if(!enemy)return;
+  let enemyAgi=enemy.agi||Math.max(3,(enemy.danger||1)*2);
+  if(Math.random()>hitChanceV065(s.hit||10,enemyAgi)){
+    log(`💨 你的攻擊被【${enemy.name}】閃過！`);
+  }else{
+    let r=calcDamageV065(s.atk,s.atk,enemy.def||0,true);
+    enemy.hp-=r.damage;
+    log(`${r.crit?'💥 暴擊！':'⚔️'} 你對【${enemy.name}】造成 ${r.damage} 傷害。`);
+    if(enemy.hp<=0)return win();
+  }
+  if(petBattlePhaseV066())return;
+  if(!enemy)return;
+  if(enemyTurnV066())return;
+  if(advanceBattleRoundV061())return;
+  refreshCombat();
+};
+
+useSkill=function(name){
+  if(!enemy)return;
+  if(s.mp<8){log('🔵 靈力不足。');refreshCombat();return}
+  s.mp-=8;
+  if(name.includes('回氣')||name.includes('回春')){
+    let heal=name.includes('回春')?35:18;
+    s.hp=Math.min(s.maxhp,s.hp+heal);
+    log(`🌿 ${name}恢復${heal} 氣血。`);
+  }else{
+    let mult=name.includes('雷')?1.6:name.includes('劍')?1.35:1.2,
+        fixed=name.includes('雷')?14:name.includes('劍')?8:5,
+        base=Math.floor(s.atk*mult+fixed),
+        r=calcDamageV065(base,s.atk,enemy.def||0,true);
+    enemy.hp-=r.damage;
+    log(`${r.crit?'💥 暴擊！ ':''}施展【${name}】，造成 ${r.damage} 傷害。`);
+    if(enemy.hp<=0)return win();
+  }
+  if(petBattlePhaseV066())return;
+  if(!enemy)return;
+  if(enemyTurnV066())return;
+  if(advanceBattleRoundV061())return;
+  refreshCombat();
+};
+
+defend=function(){
+  if(!enemy)return;
+  if(petBattlePhaseV066())return;
+  if(!enemy)return;
+  if(!enemyTurnV066(8)){
+    if(advanceBattleRoundV061())return;
+    refreshCombat();
+  }
+};
+
+function pets(c){
+  ensurePetSystemV066();
+  processIncubatingEggs?.();
+  let eggs=s.ownedEggs||[];
+  let incubating=eggs.filter(e=>e.state==='incubating').length;
+  let next=s.petSlots>=10?null:petSlotCostV066();
+  c.innerHTML=`<h2>🐾 寵物</h2>
+  <div class="card">
+    我方總出戰：${1+s.party.npcs.length+s.party.pets.length}/4（含玩家）・寵物最多同時出戰2隻<br>
+    🐾 寵物欄：${s.pets.length}/${s.petSlots}（最多10格）<br>
+    ${s.petSlots>=10?'✅ 寵物欄已達上限':`下一格擴充：<b>${next.toLocaleString()} 靈幣</b> <button onclick="expandPetSlot()">擴充</button>`}
+  </div>
+  <h3>🥚 妖獸蛋</h3>
+  <div class="card">孵化陣：<b>${incubating}/2</b>（一次最多孵化2顆）</div>
+  <div class="cards">${eggs.map(e=>`<div class="card"><b>${e.name}</b><br>狀態：${e.state==='held'?'持有中':e.state==='incubating'?'孵化中（剩餘時間未知）':'✅ 已可孵化'}<br>${e.state==='held'?`<button onclick="startHeldEggV062('${e.id}')" ${incubating>=2?'disabled':''}>開始孵化</button>`:e.state==='ready'?`<button onclick="hatchHeldEggV062('${e.id}')">查看孵化結果</button>`:'<span class="sub">遊戲時間推進時會持續倒數。</span>'}</div>`).join('')||'<div class="card">目前沒有持有的妖獸蛋。</div>'}</div>
+  <h3>🐾 已孵化寵物</h3>
+  <div class="cards">${s.pets.map((p,i)=>`<div class="card"><b>${p.name}</b> ${tierTag(p.tier)}<br>${p.species}<br>❤️ ${p.hp}/${p.maxhp}　🔵 ${p.mp}/${p.maxmp}<br>💥 戰力：${petBattlePowerV066(p)}<br>好感：${heartBar(p.aff)}<br>技能：${p.skills.join('、')}<div class="choices"><button onclick="togglePetBattle(${i})">${s.party.pets.includes(i)?'↩️ 收回':'⚔️ 出戰'}</button><button onclick="petFeedMenu(${i})">🍖 餵食</button></div></div>`).join('')||'<div class="card">目前沒有寵物。</div>'}</div>`;
+}
+
+// Every new battle restores participating pets to their current stored values;
+// after battle, fainted pets remain at 0 until healed/fed/rested, matching real participation.
+const _makeEnemyPetV066=makeEnemy;
+makeEnemy=function(m){
+  ensurePetSystemV066();
+  _makeEnemyPetV066(m);
+};
+
+
+
+/* =========================================================
+   V0.6.6 紅塵無情彩蛋 + 冒險紀錄視窗修復
+   ========================================================= */
+
+// ---------- 冒險紀錄浮動窗：可關閉、可重新開啟 ----------
+(function(){
+  const st=document.createElement('style');
+  st.textContent=`
+    #floatingLogReopenV066{
+      position:fixed;
+      right:18px;
+      bottom:18px;
+      z-index:10020;
+      padding:9px 12px;
+      border:1px solid #8f742d;
+      border-radius:10px;
+      background:#201b0e;
+      color:#ffd76a;
+      font-weight:900;
+      box-shadow:0 6px 18px #0008;
+      cursor:pointer;
+      display:none;
+    }
+  `;
+  document.head.appendChild(st);
+})();
+
+function ensureFloatingLogReopenV066(){
+  let b=document.getElementById('floatingLogReopenV066');
+  if(!b){
+    b=document.createElement('button');
+    b.id='floatingLogReopenV066';
+    b.textContent='📜 打開冒險紀錄';
+    b.onclick=openFloatingAdventureLogV066;
+    document.body.appendChild(b);
+  }
+  return b;
+}
+
+function closeFloatingAdventureLogV066(){
+  let box=document.getElementById('floatingAdventureLog');
+  if(box)box.style.display='none';
+  let b=ensureFloatingLogReopenV066();
+  b.style.display='block';
+}
+
+function openFloatingAdventureLogV066(){
+  ensureFloatingLogV065();
+  let box=document.getElementById('floatingAdventureLog');
+  if(box){
+    box.style.display='flex';
+    box.classList.remove('minimized');
+  }
+  let b=ensureFloatingLogReopenV066();
+  b.style.display='none';
+  updateFloatingLogV065();
+}
+
+const _ensureFloatingLogV066Base=ensureFloatingLogV065;
+ensureFloatingLogV065=function(){
+  _ensureFloatingLogV066Base();
+  let box=document.getElementById('floatingAdventureLog');
+  if(!box)return;
+
+  let head=box.querySelector('.draghead');
+  if(head && !head.querySelector('.closeLogV066')){
+    let close=document.createElement('button');
+    close.className='closeLogV066';
+    close.textContent='✕';
+    close.title='關閉冒險紀錄小視窗';
+    close.style.padding='2px 8px';
+    close.onclick=(e)=>{e.stopPropagation();closeFloatingAdventureLogV066()};
+    head.appendChild(close);
+  }
+  ensureFloatingLogReopenV066();
+};
+
+const _updateFloatingLogV066Base=updateFloatingLogV065;
+updateFloatingLogV065=function(){
+  let box=document.getElementById('floatingAdventureLog');
+  let wasHidden=box && box.style.display==='none';
+  _updateFloatingLogV066Base();
+  box=document.getElementById('floatingAdventureLog');
+  if(wasHidden && box)box.style.display='none';
+
+  let reopen=ensureFloatingLogReopenV066();
+  reopen.style.display=(box && box.style.display==='none')?'block':'none';
+};
+
+// ---------- 紅塵無情彩蛋：V0.6.6 正式規則 ----------
+function applyHongChenV066Final(forceFull=false){
+  if(!s || s.name!=='紅塵無情')return;
+
+  ensureV066State?.();
+
+  // 彩蛋角色：八屬靈根全部450，屬於特殊例外。
+  s.rootAffinities=s.rootAffinities||{};
+  V066_ROOTS.forEach(k=>s.rootAffinities[k]=450);
+  s.primaryRoot='火';
+  s.secondaryRoot='水';
+  s.root='🔥火';
+
+  // 視為已跨越所有靈根突破限制，避免450數值被一般規則誤判。
+  s.rootTrials=s.rootTrials||{};
+  V066_ROOTS.forEach(k=>{
+    s.rootTrials[k]=Object.assign({},s.rootTrials[k]||{},{
+      lordAccepted:false,
+      lordDefeated:true,
+      lordBroken:true,
+      godAccepted:false,
+      godDefeated:true,
+      godBroken:true
+    });
+  });
+
+  // 境界固定初始化為大乘一層。
+  s.realm='大乘1層';
+  s.exp=0;
+  s.expNeed=expNeedForRealmV065('大乘1層');
+
+  // 從練氣一層到大乘一層 = 70次小境界成長。
+  // 目前正式每次突破永久成長：
+  // 氣血+15、靈力+6、攻+2、防+2、身+1、命+1
+  const steps=70;
+  s.baseMaxHpFinalV065=120 + steps*15; // 1170
+  s.baseMaxMpFinalV065=50  + steps*6;  // 470
+  s.baseAtkFinalV065=10    + steps*2;  // 150
+  s.baseDefFinalV065=8     + steps*2;  // 148
+  s.baseAgiFinalV065=8     + steps;    // 78
+  s.baseHitFinalV065=10    + steps;    // 80
+
+  // 同步所有舊基礎欄位，避免舊模組讀到落後數值。
+  s.baseMaxhpV065=s.baseMaxHpFinalV065;
+  s.baseMaxmpV065=s.baseMaxMpFinalV065;
+  s.baseAtk=s.baseAtkFinalV065;
+  s.baseDef=s.baseDefFinalV065;
+  s.baseAgi=s.baseAgiFinalV065;
+  s.baseHit=s.baseHitFinalV065;
+
+  // 彩蛋裝備只放背包，不自動穿戴；保留既有新手三件套。
+  s.equip=s.equip||{};
+  const easterItems=[
+    ['［仙階］鐵鍋鏟(攻擊+300)','彩蛋武器・裝備後攻擊+300'],
+    ['［仙階］早餐店圍裙(防禦+300)','彩蛋衣服・裝備後防禦+300'],
+    ['［仙階］走起鞋!!(身法+300)','彩蛋鞋子・裝備後身法+300'],
+    ['［天階］與伊的未來(氣血+1000、靈力+1000)','彩蛋戒指・裝備後氣血+1000、靈力+1000']
+  ];
+  for(const [name,desc] of easterItems){
+    let equipped=Object.values(s.equip).some(v=>v===name);
+    let bagItem=(s.bag||[]).find(x=>x[0]===name);
+    if(!equipped && !bagItem)(s.bag||[]).push([name,1,desc]);
+  }
+
+  // 重新套用裝備後最終數值。
+  recalcFinalEquipV065(false);
+
+  // 新開遊戲或需要強制初始化時，當前氣血/靈力回滿。
+  if(forceFull || !s.hongChenV066FullInit){
+    s.hp=s.maxhp;
+    s.mp=s.maxmp;
+    s.hongChenV066FullInit=true;
+  }else{
+    s.hp=Math.min(s.hp,s.maxhp);
+    s.mp=Math.min(s.mp,s.maxmp);
+  }
+
+  s.hongChenEasterEgg=true;
+  s.hongChenV066Final=true;
+}
+
+// 彩蛋專屬靈根上限顯示：允許八屬450。
+const _currentRootCapV066Base=currentRootCapV066;
+currentRootCapV066=function(k){
+  if(s?.name==='紅塵無情' && s?.hongChenV066Final)return 450;
+  return _currentRootCapV066Base(k);
+};
+
+const _rootStatusV066Base=rootStatusV066;
+rootStatusV066=function(k){
+  if(s?.name==='紅塵無情' && s?.hongChenV066Final){
+    return '彩蛋特殊靈根・固定450';
+  }
+  return _rootStatusV066Base(k);
+};
+
+// 阻止舊版彩蛋修復邏輯把境界拉回元嬰9階。
+repairHongChenV065=function(forceFull=false){
+  if(!s||s.name!=='紅塵無情')return;
+  applyHongChenV066Final(forceFull);
+};
+applyHongChenEasterEggV065=function(){
+  if(!s||s.name!=='紅塵無情')return;
+  applyHongChenV066Final(true);
+};
+
+// 最後渲染前固定校正彩蛋狀態。
+const _renderHongChenV066Base=render;
+render=function(){
+  if(s?.name==='紅塵無情')applyHongChenV066Final(false);
+  _renderHongChenV066Base();
+  ensureFloatingLogReopenV066();
+};
+
+// 新遊戲完成後再次校正，確保所有舊初始化流程都已跑完。
+const _startHongChenV066Base=startGame;
+startGame=function(){
+  _startHongChenV066Base();
+  setTimeout(()=>{
+    if(!s)return;
+    if(s.name==='紅塵無情'){
+      applyHongChenV066Final(true);
+      log('🥚 彩蛋觸發：八屬靈根皆為450，初始境界為【大乘一層】。');
+    }
+    render();
+  },1400);
+};
+
 </script>
 
 </body></html>
