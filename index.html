@@ -2679,6 +2679,115 @@ startGame=function(){
  },1350);
 };
 
+
+/* =========================================================
+   V0.6.6 critical progression / world-layer / monster scaling fix
+   ========================================================= */
+
+// 1) Breakthrough must modify the SAME canonical base stats used by equipment/rendering.
+breakthrough=function(){
+  if(s.exp<s.expNeed)return;
+  ensureFinalBaseV065?.();
+  let {major,lv}=v061RealmStage();
+  if(major>=8||realmPower(s.realm)>=80)return startTribulation();
+  let oldNeed=s.expNeed,overflow=Math.max(0,s.exp-oldNeed),chance=breakthroughChance();
+  if(Math.random()>chance){
+    s.exp=Math.floor(oldNeed*.72)+overflow;
+    s.hp=Math.max(1,Math.floor(s.maxhp*.4));
+    log(`💥 突破失敗（成功率 ${Math.round(chance*100)}%），修為有所回落。`);
+    render();return;
+  }
+
+  s.exp=overflow;
+  if(lv<10){lv++;s.realm=realmNames[major]+lv+'層'}
+  else{s.realm=realmNames[major+1]+'1層'}
+  s.expNeed=Math.floor(oldNeed*1.3+40);
+
+  const hpGain=15,mpGain=6,atkGain=2,defGain=2,agiGain=1,hitGain=1;
+  // canonical gear-free progression values
+  s.baseAtkFinalV065=(s.baseAtkFinalV065??s.baseAtk??s.atk??10)+atkGain;
+  s.baseDefFinalV065=(s.baseDefFinalV065??s.baseDef??s.def??8)+defGain;
+  s.baseAgiFinalV065=(s.baseAgiFinalV065??s.baseAgi??s.agi??8)+agiGain;
+  s.baseHitFinalV065=(s.baseHitFinalV065??s.baseHit??s.hit??10)+hitGain;
+  s.baseMaxHpFinalV065=(s.baseMaxHpFinalV065??s.baseMaxhpV065??s.maxhp??120)+hpGain;
+  s.baseMaxMpFinalV065=(s.baseMaxMpFinalV065??s.baseMaxmpV065??s.maxmp??50)+mpGain;
+
+  // keep legacy bases synchronized for older subsystems that still read them
+  s.baseAtk=s.baseAtkFinalV065;s.baseDef=s.baseDefFinalV065;
+  s.baseAgi=s.baseAgiFinalV065;s.baseHit=s.baseHitFinalV065;
+  s.baseMaxhpV065=s.baseMaxHpFinalV065;s.baseMaxmpV065=s.baseMaxMpFinalV065;
+
+  recalcFinalEquipV065(false);
+  s.hp=s.maxhp;s.mp=s.maxmp;
+  s.bountyUnlocked=v061RealmStage().major>=2;
+  log(`✨ 突破成功！晉入【${s.realm}】。氣血+${hpGain}、靈力+${mpGain}、攻擊+${atkGain}、防禦+${defGain}、身法+${agiGain}、命中+${hitGain}。`);
+  showModal(`<h2>✨ 突破成功</h2><div class="card"><b>境界：${s.realm}</b><br><br>❤️ 氣血 +${hpGain}<br>🔵 靈力 +${mpGain}<br>⚔️ 攻擊 +${atkGain}<br>🛡️ 防禦 +${defGain}<br>💨 身法 +${agiGain}<br>🎯 命中 +${hitGain}<br><br><span class="sub">以上為永久基礎數值成長，裝備加成另外計算。</span></div><button onclick="closeModal();render()">確認</button>`);
+  render();
+};
+
+// 2) Real upper/lower world travel with an explicit way back.
+function enterWorldLayerV066(place,layer){
+  if(s.layer==='地面'){
+    s.upperWorldReturnV066={place:s.place,layer:'地面'};
+  }
+  advance(2);
+  s.place=place;s.layer=layer;
+  log(`🌌 你進入${layer==='地下'?'下層世界':layer==='天空'?'上層天空世界':'仙界'}【${place}】。`);
+  closeModal();render();
+}
+function returnUpperWorldV066(){
+  let r=s.upperWorldReturnV066||{place:'青陽鎮',layer:'地面'};
+  advance(2);s.place=r.place||'青陽鎮';s.layer='地面';
+  delete s.upperWorldReturnV066;
+  log(`🧭 你返回上層世界【${s.place}】。`);
+  render();
+}
+travelLayer=function(){
+  let opts=[];
+  if(s.layer!=='地面')opts.push(`<button class="primary" onclick="returnUpperWorldV066();closeModal()">⬆️ 返回上層世界</button>`);
+  if(s.layer==='地面'){
+    if(realmPower(s.realm)>=40)opts.push(`<button onclick="enterWorldLayerV066('九天浮島群','天空')">☁️ 飛往九天浮島群</button>`);
+    opts.push(`<button onclick="enterWorldLayerV066('幽冥地脈','地下')">🌑 進入下層世界・幽冥地脈</button>`);
+    if(s.immortal)opts.push(`<button onclick="enterWorldLayerV066('仙門天域','仙界')">✨ 登臨仙門天域</button>`);
+  }
+  showModal(`<h2>🌌 世界層</h2><div class="choices">${opts.join('')}<button onclick="closeModal()">關閉</button></div>`);
+};
+
+// Add a direct return button to Adventure whenever the player is outside the ground layer.
+const _adventureBeforeWorldReturnV066=adventure;
+adventure=function(c){
+  _adventureBeforeWorldReturnV066(c);
+  if(!s||s.layer==='地面')return;
+  let choices=c.querySelector('.mapbox .choices');
+  if(choices&&!choices.querySelector('.returnUpperWorldV066')){
+    let b=document.createElement('button');b.className='primary returnUpperWorldV066';
+    b.textContent='⬆️ 返回上層世界';b.onclick=returnUpperWorldV066;
+    choices.prepend(b);
+  }
+};
+
+// 3) Monster stats scale from monster realm + danger + species tier, never a flat 30 HP.
+makeEnemy=function(m){
+  _v061BattleRound=1;
+  let danger=Math.max(1,Number(m.danger)||1);
+  let rp=m.realm?realmPower(m.realm):Math.max(1,danger*5+rint(-2,3));
+  let tierMul=m.tier==='特殊種'?1.35:m.tier==='高危種'?1.8:m.tier==='妖王種'?2.65:m.tier==='生物'?.72:1;
+
+  // Realm is the primary growth axis; danger and tier add secondary scaling.
+  let hp=Math.floor((48 + rp*12 + danger*8)*tierMul);
+  let atk=Math.floor((6 + rp*1.55 + danger*1.8)*Math.sqrt(tierMul));
+  let def=Math.floor((2 + rp*1.05 + danger*1.25)*Math.sqrt(tierMul));
+  let agi=Math.floor((5 + rp*.65 + danger*.8)*(m.tier==='妖王種'?1.18:1));
+  let hit=Math.floor(8 + rp*.55 + danger*.7);
+  let mp=m.tier==='生物'?0:Math.floor((12+rp*3.2+danger*4)*(m.tier==='一般種'?0.65:1));
+
+  // keep ordinary low-realm mobs reasonable but NEVER collapse all enemies to 30 HP
+  hp=Math.max(45,hp);atk=Math.max(5,atk);def=Math.max(1,def);
+  let realm=m.realm||realmFromPower(Math.max(1,Math.round(rp)));
+  enemy={...m,realm,hp,maxhp:hp,atk,def,agi,hit,mp,maxmp:mp};
+  refreshCombat();
+};
+
 </script>
 
 </body></html>
