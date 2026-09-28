@@ -17282,5 +17282,154 @@ window.R560_UI_FIXES_V10=true;
 })();
 </script>
 
+<style id="r561-hostile-npc-portrait-fix-style">
+/* V11：一般NPC成為敵方時沿用正式NPC透明立繪；不改戰位框尺寸與素材。 */
+.bsv2-card.r561-human-enemy .bsv2-art{overflow:visible!important}
+.bsv2-card.r561-human-enemy .bsv2-art img{width:100%!important;height:118%!important;object-fit:contain!important;object-position:center bottom!important;transform:none!important}
+</style>
+<script id="r561-hostile-npc-portrait-fix">
+'use strict';
+(function(){
+function r561Name(f){return String(f?.name||'').replace(/^【[^】]+】/,'').trim()}
+function r561NpcArt(f){const n=r561Name(f);try{if(typeof r514NpcArt==='function'){const a=r514NpcArt(n);if(a)return a}}catch(e){}try{if(typeof R514_NPC_ART!=='undefined'&&R514_NPC_ART[n])return R514_NPC_ART[n]}catch(e){}return ''}
+function r561IsNpc(f){return !!r561NpcArt(f)}
+const prevImage=window.bsv2Image;window.bsv2Image=function(f,enemy){if(enemy){const a=r561NpcArt(f);if(a)return a}return typeof prevImage==='function'?prevImage(f,enemy):''};
+const prevFighterImage=window.r519FighterImage;window.r519FighterImage=function(f,enemy=false){if(enemy){const a=r561NpcArt(f);if(a)return a}return typeof prevFighterImage==='function'?prevFighterImage(f,enemy):''};
+const prevOrb=window.bsv2OrbHtml;window.bsv2OrbHtml=function(f,enemy){if(enemy&&r561IsNpc(f)){const n=r561Name(f);let raw='';try{raw=(R511_NPC||{})[n]?.roots||f?.roots||f?.root||''}catch(e){raw=f?.roots||f?.root||''}const list=typeof bsv2Elements==='function'?bsv2Elements(raw):[],map=typeof BSV2_ROOT_ORB!=='undefined'?BSV2_ROOT_ORB:{};return `<span class="bsv2-orbs root">${list.slice(0,2).map(x=>map[x]?`<img src="${map[x]}" alt="${x}靈根球">`:'').join('')}</span>`}return typeof prevOrb==='function'?prevOrb(f,enemy):''};
+const prevCard=window.bsv2Card;window.bsv2Card=function(f,row,enemy,cls){if(enemy&&r561IsNpc(f))cls=(cls||'')+' r561-human-enemy';return typeof prevCard==='function'?prevCard(f,row,enemy,cls):''};
+window.R561_HOSTILE_NPC_PORTRAIT_FIX=true;
+})();
+</script>
+
+
+<style id="r562-quest-clinic-root-fix-style">
+/* V12 測試分支：角色狀態專用全新靈根球呈現。完全不動戰鬥中的玩家靈根球。 */
+.r562-status-roots{display:grid;grid-template-columns:repeat(2,minmax(180px,1fr));gap:12px;margin-top:12px}
+.r562-status-root-card{display:flex;align-items:center;gap:12px;padding:10px;border:1px solid #41566a;border-radius:12px;background:linear-gradient(145deg,#101c26,#0a1219)}
+.r562-status-root-new{position:relative;width:92px;height:92px;flex:0 0 92px;display:grid;place-items:center;isolation:isolate}
+.r562-status-root-new::before{content:"";position:absolute;inset:7px;border-radius:50%;background:radial-gradient(circle at 38% 32%,rgba(255,255,255,.30),var(--r562-glow,#5fa7ff) 32%,rgba(8,16,24,.18) 66%,transparent 72%);filter:blur(1px);opacity:.58;z-index:-1;box-shadow:0 0 18px var(--r562-glow,#5fa7ff)}
+.r562-status-root-new img{width:88px!important;height:88px!important;object-fit:contain!important;object-position:center!important;border:0!important;border-radius:0!important;background:transparent!important;box-shadow:none!important;filter:drop-shadow(0 0 5px var(--r562-glow,#5fa7ff))!important}
+.r562-status-root-new[data-root="火"]{--r562-glow:#ff6b43}.r562-status-root-new[data-root="水"]{--r562-glow:#4da9ff}.r562-status-root-new[data-root="木"]{--r562-glow:#5ed477}.r562-status-root-new[data-root="風"]{--r562-glow:#6fe5dc}.r562-status-root-new[data-root="雷"]{--r562-glow:#b576ff}.r562-status-root-new[data-root="土"]{--r562-glow:#d89a4c}.r562-status-root-new[data-root="光"]{--r562-glow:#ffe89a}.r562-status-root-new[data-root="暗"]{--r562-glow:#8755bd}
+.r562-status-root-copy .kind{font-size:12px;color:#9fb0bd}.r562-status-root-copy .name{font-size:17px;font-weight:900;color:#edf6ff}.r562-status-root-copy .value{font-size:20px;font-weight:900;color:#efcf78}
+.r562-clinic-rest-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:8px}.r562-clinic-rest-row input{width:92px}
+@media(max-width:700px){.r562-status-roots{grid-template-columns:1fr}}
+</style>
+<script id="r562-quest-clinic-root-fix-script">
+'use strict';
+(function(){
+const R562_STARTER_WEAPONS=['新手劍','新手刀','新手長槍','新手弓','新手拳套','新手錘','新手寶珠','新手扇','新手葫蘆','新手傘'];
+function r562Esc(v){return String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]||c))}
+function r562RootArt(root){return (window.R557_BATTLE_ROOT_ART||{})[root]||''}
+function r562RootCard(root,label){const src=r562RootArt(root),val=S.roots?.[root]??'—';return `<div class="r562-status-root-card"><span class="r562-status-root-new" data-root="${r562Esc(root)}">${src?`<img src="${src}" alt="${r562Esc(root)}靈根・新版完整靈根球">`:''}</span><div class="r562-status-root-copy"><div class="kind">${label}</div><div class="name">${r562Esc(root||'—')}靈根</div><div class="value">${val}</div></div></div>`}
+
+/* 1 + 5. 首次進入戰鬥：林夏于加入夥伴時，同步自動編入隊伍第一個可用空位。 */
+R56_QUESTS.firstCombatEntry.objective='前往青陽山，點選遭遇妖物，戰勝後向夥伴介面的林夏于對話。';
+R56_QUESTS.firstCombatEntry.reward='［無階］新手劍、［無階］新手刀、［無階］新手長槍、［無階］新手弓、［無階］新手拳套、［無階］新手錘、［無階］新手寶珠、［無階］新手扇、［無階］新手葫蘆、［無階］新手傘選擇其一。';
+R56_QUESTS.craftMeet.autoDone=false;
+
+/* R56 正式任務對話中的 joinLin 也同步自動編隊，避免只修到舊入口。 */
+const r562PrevDoAction=r56DoAction;
+r56DoAction=function(action){
+  const r=r562PrevDoAction(action);
+  if(action==='joinLin'){
+    S.formation=S.formation||{front1:'player',front2:null,back1:null,back2:null};
+    r518EnsureLinFormation();
+    r4ScheduleAutoSave?.();
+  }
+  if(action==='leaveLin'){
+    S.formation=S.formation||{front1:'player',front2:null,back1:null,back2:null};
+    for(const k of ['front1','front2','back1','back2'])if(S.formation[k]==='npc:林夏于')S.formation[k]=null;
+  }
+  return r
+};
+
+r54AcceptFirstCombatEntry=function(){
+  /* 使用原始任務接取流程，避開舊版「刻意移出編隊」覆寫。 */
+  _r518AcceptFirstCombatEntry();
+  S.formation=S.formation||{front1:'player',front2:null,back1:null,back2:null};
+  r518EnsureLinFormation();
+  const q=S.quests?.find(x=>x.id==='firstCombatEntry'&&!x.claimed);
+  if(q){q.desc=R56_QUESTS.firstCombatEntry.objective;q.reward=R56_QUESTS.firstCombatEntry.reward;r56SyncQuestArchive?.(q)}
+  r4ScheduleAutoSave?.();
+  setTimeout(()=>showModal('⚠️ 任務叮嚀',`<div class="r519-team-help"><b>！請先點選隊伍並將林夏于編隊至任意位置。</b><br><span class="green">林夏于已自動編入目前第一個可用位置，可前往［隊伍］查看或自行換位。</span></div><button class="primary" onclick="closeModal();currentPage='team';renderPage();renderNav()">前往隊伍</button><button onclick="closeModal()">稍後查看</button>`),0);
+};
+
+/* 已接取但尚未回報的舊存檔也同步成10選1文案。 */
+try{const q=S?.quests?.find(x=>x.id==='firstCombatEntry'&&!x.claimed);if(q){q.desc=R56_QUESTS.firstCombatEntry.objective;q.reward=R56_QUESTS.firstCombatEntry.reward;r56SyncQuestArchive?.(q)}}catch(e){}
+
+/* 回報獎勵改為10種［無階］新手武器選1。只使用既有正式裝備數值。 */
+function r562StarterBonus(n){
+  const b=(typeof R546_GEAR_FULL!=='undefined'&&R546_GEAR_FULL['［無階］'+n])||(typeof R4_GEAR_STATS!=='undefined'&&R4_GEAR_STATS['［無階］'+n])||{};
+  const map={hp:'氣血',mp:'靈力',atk:'攻',dao:'道',def:'防',daoDef:'道防',agi:'身',hit:'命'};
+  const a=Object.entries(b).filter(([k,v])=>map[k]&&Number(v)!==0).map(([k,v])=>`${map[k]} ${Number(v)>0?'+':''}${v}`);
+  return a.join('・')||'無核心數值加成'
+}
+window.r58WeaponChoiceModal=function(){
+  showModal('🎁 選擇新手武器',`<div class="weapon-grid">${R562_STARTER_WEAPONS.map(n=>{
+    const desc=(typeof R58_WEAPON_DESC!=='undefined'&&R58_WEAPON_DESC[n])||'';
+    return `<div class="weapon-choice"><b>［無階］${n}</b><br>${r562StarterBonus(n)}${desc?`<br><span class="weapon-tag">${desc}</span>`:''}<br><button class="primary" style="margin-top:8px" onclick="r56ChooseWeapon('${n}')">選擇</button></div>`
+  }).join('')}</div>`)
+};
+
+/* 2. 醫館疲勞調養：移除單次最多20，玩家可輸入1～100；實際最多只扣到目前疲勞。 */
+openClinic=function(){
+  v070EnsureExperience();S.outsideStatus=S.outsideStatus||[];
+  const cost=v070ClinicGeneralCost(),treatable=S.outsideStatus.filter(x=>v070StatusFee(x)>0),meridian=S.outsideStatus.find(x=>['meridian_disorder','meridian_trauma'].includes(x.id));
+  showModal('🏥 醫館',`<div class="grid2"><div class="card"><b>❤️ 一般治療</b><br>氣血每恢復10點＝1靈幣；靈力每恢復5點＝1靈幣。<br>本次費用：<b>${cost}</b> 靈幣<br><button ${cost<=0?'disabled':''} onclick="v070ClinicHealGeneral()">接受治療</button></div><div class="card"><b>🛏️ 疲勞調養</b><br>每實際降低1點疲勞＝2靈幣。<br>目前疲勞：${S.fatigue}/100<div class="r562-clinic-rest-row"><span>調養點數</span><input id="v070RestFatigue" type="number" min="1" max="100" value="${Math.max(1,Math.min(100,Number(S.fatigue||10)))}"><span>（1～100）</span><button ${S.fatigue<=0?'disabled':''} onclick="v070ClinicRest()">開始調養</button></div></div></div><div class="card"><b>🩺 異常狀態治療</b><br>${treatable.length?treatable.map(x=>`<div>${x.name}・剩餘${x.turns||x.remainingTurns||1}回合　<b>${v070StatusFee(x)}靈幣</b> <button onclick="v070ClinicCure('${x.id}')">治療</button></div>`).join(''):'<span class="muted">身體狀態良好，目前沒有需要醫治的常規異常。</span>'}${treatable.length>1?`<br><button onclick="v070ClinicCureAll()">全部治療</button>`:''}</div><div class="card"><b>☯️ 經脈治療</b><br>${meridian?`${meridian.name}<br>${meridian.desc}<br>治療費：<b>${v070MeridianFee(meridian)}</b> 靈幣<br><button onclick="v070ClinicCureMeridian()">療養經脈</button>`:'<span class="muted">目前沒有突破／破境造成的經脈傷勢。</span>'}</div>`)
+};
+window.v070ClinicRest=function(){
+  let want=Math.max(1,Math.min(100,Math.floor(Number(document.getElementById('v070RestFatigue')?.value||1))));
+  const real=Math.min(want,Math.max(0,Number(S.fatigue||0))),cost=real*2;
+  if(real<=0)return alert('目前沒有疲勞需要調養。');
+  if(S.coins<cost)return alert(`靈幣不足，需要 ${cost} 靈幣。`);
+  S.coins-=cost;S.fatigue=Math.max(0,S.fatigue-real);r58ApplyFatigue();
+  log(`🏥 疲勞調養：降低 ${real} 點疲勞，花費 ${cost} 靈幣。`);openClinic();renderPlayer()
+};
+try{if(typeof R511_CODEX!=='undefined'&&R511_CODEX['醫館'])R511_CODEX['醫館'][1]=['一般治療：氣血每10點=1靈幣；靈力每5點=1靈幣。','疲勞調養：每降低1點=2靈幣；玩家每次可選擇1～100點，實際降低量不超過目前疲勞。疲勞低於100後［勞累］自動解除。','灼燒／流血每剩餘回合×10；中毒／遲緩×15；麻痺／虛弱×20。','經脈紊亂：100×境界倍率；經脈重創：250×境界倍率。']}catch(e){}
+
+/* 3. craftMeet：與林旺交談後必定變成可回報，任務／委託直接顯示回報按鈕。 */
+const r562PrevTalk=r4NormalTalk;
+r4NormalTalk=function(name){
+  if(name==='林旺'){
+    const q=S.quests?.find(x=>x.id==='craftMeet'&&!x.claimed);
+    if(q){
+      if(!q.done){q.done=true;r56SyncQuestArchive?.(q);renderQuests?.()}
+      showModal('💬 林旺',`<div class="card">林旺：新人？你／妳好，合成？這裡。</div><div class="card green">✅ ［主線］合成與鑄造：交談目標已完成。</div><div class="actions"><button class="primary" onclick="r56OpenNpcTasks('林旺')">任務／委託</button><button onclick="r58NpcInteraction('林旺')">返回互動</button></div>`);
+      return;
+    }
+  }
+  return r562PrevTalk(name)
+};
+window.r4NormalTalk=r4NormalTalk;
+
+const r562PrevNpcTasks=r56OpenNpcTasks;
+r56OpenNpcTasks=function(name){
+  if(name==='林旺'){
+    const q=S.quests?.find(x=>x.id==='craftMeet'&&!x.claimed);
+    if(q){
+      if(q.done){
+        showModal('📜 任務／委託・林旺',`<div class="quest-offer-card"><b>［主線］合成與鑄造</b><br>任務目標：與鑄造師林旺交談即可完成。<br>任務回報：無獎勵。<br><span class="green">✅ 已完成交談，可以回報。</span><br><button class="primary" onclick="r56ReportQuest('craftMeet')">回報任務</button></div><button onclick="r58NpcInteraction('林旺')">返回互動</button>`);return
+      }
+      showModal('📜 任務／委託・林旺',`<div class="quest-offer-card"><b>［主線］合成與鑄造</b><br>任務目標：與鑄造師林旺交談即可完成。<br>任務回報：無獎勵。<br><button class="primary" onclick="r4NormalTalk('林旺')">與林旺交談</button></div><button onclick="r58NpcInteraction('林旺')">返回互動</button>`);return
+    }
+  }
+  return r562PrevNpcTasks(name)
+};
+window.r56OpenNpcTasks=r56OpenNpcTasks;
+
+/* 4. 角色狀態：移除舊主／副靈根球元件，改用獨立的新版完整靈根球卡片。
+   戰鬥玩家靈根球 HARD LOCK：此處完全不修改 bsv2 / r554 戰鬥球。 */
+window.r513OpenPlayerStatus=function(){
+  if(typeof S==='undefined'||!S)return;
+  const c=typeof r4Core==='function'?r4Core():{},eq=S.equipment||{},need=Math.max(1,Number(S.expNeed||1)),xp=Math.min(need,Number(S.exp||0));
+  const slots=['武器','頭盔','上衣','下裝','鞋','項鍊','戒指','配飾'];
+  const ident=typeof r513DisplayIdentity==='function'?r513DisplayIdentity(S.identity):String(S.identity||'');
+  showModal('👤 角色狀態',`<div class="r513-status-modal-grid"><div class="card"><b>${r562Esc(ident)}・${r562Esc(S.name)}</b><br><span class="gold">${r562Esc(S.realm)}</span><div class="r562-status-roots">${r562RootCard(S.mainRoot,'主靈根')}${r562RootCard(S.subRoot,'副靈根')}</div></div><div class="card"><b>修為進度</b><br>${xp} / ${need}${xp>=need?'<br><span class="r513-exp-ready">修為已滿・可突破</span>':''}<div class="bar xp" style="margin-top:8px"><i style="width:${100*xp/need}%"></i></div></div></div><div class="card"><b>八大核心</b><div class="r513-core-grid" style="grid-template-columns:repeat(4,minmax(90px,1fr))"><div class="r513-core">❤️ 氣血<br><b>${S.hp} / ${c.maxhp??S.maxhp??0}</b></div><div class="r513-core">🔵 靈力<br><b>${S.mp} / ${c.maxmp??S.maxmp??0}</b></div><div class="r513-core">⚔️ 攻<br><b>${c.atk??S.atk??0}</b></div><div class="r513-core">🔮 道<br><b>${c.dao??S.dao??S.atk??0}</b></div><div class="r513-core">🛡️ 防<br><b>${c.def??S.def??0}</b></div><div class="r513-core">🌀 道防<br><b>${c.daoDef??S.daoDef??S.def??0}</b></div><div class="r513-core">💨 身<br><b>${c.agi??S.agi??0}</b></div><div class="r513-core">🎯 命<br><b>${c.hit??S.hit??0}</b></div></div></div><div class="card"><b>裝備</b><div class="r513-equip-grid">${slots.map(k=>`<div class="r513-equip"><span class="muted small">${k}</span><br>${r562Esc(eq[k]||'無')}</div>`).join('')}</div></div><div class="actions"><button onclick="detailInfo()">📋 其他資訊</button></div>`)
+};
+
+window.R562_QUEST_CLINIC_ROOT_FIX_V12=true;
+})();
+</script>
+
 </body>
 </html>
