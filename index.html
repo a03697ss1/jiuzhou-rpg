@@ -16013,7 +16013,7 @@ window.TEST_V2_ROUND_TYPE_INLINE = true;
   width:100%!important;height:100%!important;max-width:none!important;max-height:none!important;
   object-fit:cover!important;transform:none!important;margin:0!important;padding:0!important;
 }
-.monster-4layer-card[data-monster="精晶礦靈"] .monster-layer-art img{object-position:50% 40%!important;}
+.monster-4layer-card[data-monster="精晶礦靈"] .monster-layer-art img{object-position:50% 48%!important;}
 .monster-4layer-card[data-monster="自爆毒蛛"] .monster-layer-art img{object-position:50% 43%!important;}
 </style>
 
@@ -16267,6 +16267,1018 @@ window.TEST_V2_ROUND_TYPE_INLINE = true;
 
   window.TEST_V5_MINE_WIN_ONLY_CHARGE=true;
   window.TEST_V5_REWARD_MATERIAL_LINE=true;
+})();
+</script>
+
+
+<style id="rWantedLaw-v7-style">
+.rw-wanted-talk{border:1px solid #b94b4b!important;color:#ffd7d7!important;background:#2a1010!important}
+.rw-law-card{border:1px solid #9e6b45;background:linear-gradient(180deg,#1c1713,#120f0d);padding:10px;border-radius:8px;margin:8px 0}
+.rw-law-card b{color:#f0c77a}
+.rw-prison-box{border:1px solid #6f7782;background:#111820;padding:12px;border-radius:8px;line-height:1.7}
+</style>
+
+<script id="rWantedLaw-v7">
+'use strict';
+(function(){
+  /* 測試分支 V7：
+     只補上已定案的「通緝值 → NPC反應／通報 → 執法戰 → 判刑進監牢」中斷鏈。
+     不修改母檔版本號；未經使用者定案不得升正式母檔。
+  */
+
+  const RW_COIN_BASE={練氣:175,築基:500,金丹:1350,元嬰:3750,化神:10500,煉虛:30000,合體:90000,大乘:265000};
+
+  function rwEnsure(){
+    S.wanted=Number(S.wanted||0);
+    S.evil=Number(S.evil||0);
+    S.lawState=S.lawState||{
+      reportedLock:null,
+      posterShown500:false,
+      merchantRoll:{},
+      region:'東州'
+    };
+    S.prison=S.prison||{
+      active:false,
+      sentenceDays:0,
+      originalSentenceDays:0,
+      reason:'',
+      pendingPoorPrisonerDays:0
+    };
+  }
+
+  function rwNpc(name){
+    try{
+      return (typeof V070_NPC!=='undefined'&&V070_NPC?.[name])
+        ||(typeof R511_NPC!=='undefined'&&R511_NPC?.[name])
+        ||(typeof R58_NPCS!=='undefined'&&R58_NPCS?.[name])
+        ||{};
+    }catch(e){return {}}
+  }
+  function rwIdentity(p){return String(p?.identity||p?.role||'')}
+  function rwPersonality(p){return String(p?.personality||'')}
+  function rwIsMerchant(p){return /商人/.test(rwIdentity(p)) || !!p?.trade}
+  function rwIsGuard(p){return /道衛總隊長|道衛隊長|道衛隊員|道衛/.test(rwIdentity(p))}
+  function rwIsRighteous(p){return /正直|正值/.test(rwPersonality(p))}
+  function rwIsCautious(p){return /謹慎/.test(rwPersonality(p))}
+  function rwIsAggressive(p){return /好戰/.test(rwPersonality(p))}
+  function rwWanted(){rwEnsure();return Math.max(0,Math.min(1000,Number(S.wanted||0)))}
+
+  function rwPlayerFighter(){
+    const c=typeof r4Core==='function'?r4Core():{};
+    return {
+      type:'player',name:S.name,
+      hp:S.hp,maxhp:c.maxhp,mp:S.mp,maxmp:c.maxmp,
+      atk:c.atk,dao:c.dao,def:c.def,daoDef:c.daoDef,
+      agi:c.agi,hit:c.hit,
+      effectHit:c.effectHit??S.effectHit??100,
+      effectResist:c.effectResist??S.effectResist??100,
+      critRate:c.critRate??S.critRate??5,
+      critDamage:c.critDamage??S.critDamage??150,
+      status:[]
+    };
+  }
+
+  function rwNpcFighter(name){
+    if(typeof r519HostileNpcFighter==='function'){
+      const f=r519HostileNpcFighter(name,1);
+      const p=rwNpc(name);
+      f.realm=f.realm||p.realm||'未知';
+      f.quality=f.quality||p.quality||'';
+      return f;
+    }
+    return null;
+  }
+  function rwEnforcer(name){
+    return typeof r546MakeEnforcementFighter==='function'?r546MakeEnforcementFighter(name):null;
+  }
+
+  function rwStartBattle(enemyTeam,lawCase){
+    const enemies=(enemyTeam||[]).filter(Boolean);
+    if(!enemies.length)return alert('執法人員戰鬥資料不存在，無法開始追捕戰。');
+    const c=rwPlayerFighter();
+    battle={
+      round:1,auto:false,noRun:false,
+      lawCase:{...lawCase},
+      playerTeam:[c],
+      enemyTeam:enemies,
+      logs:[lawCase?.message||`⚠️ 執法人員攔下了${S.name}！`]
+    };
+    closeModal();
+    showBattle();
+  }
+
+  function rwReport(name){
+    rwEnsure();
+    S.lawState.reportedLock={place:S.place,reporter:name,active:true};
+    closeModal();
+    log(`🚨 ${name}已將${S.name}通報給執法人員。所在地暫時封鎖。`);
+    showModal('🚨 已遭通報',`<div class="rw-law-card"><b>${name}已將${S.name}通報給執法人員。</b><br>所在地所有設備與可前往地點暫時關閉。<br>請從冒險頁面的［遭遇捕快］進入追捕戰。</div>`);
+    render();
+  }
+
+  window.rwEncounterCopper=function(){
+    rwEnsure();
+    const lock=S.lawState.reportedLock;
+    if(!lock?.active||lock.place!==S.place)return alert('目前此地沒有正在追捕你的捕快。');
+    rwStartBattle([rwEnforcer('銅牌捕快')],{
+      tier:'100-249',sentence:1,reported:true,
+      message:'🚨 銅牌捕快奉通報前來追捕！'
+    });
+  };
+
+  function rwDirectNpcBattle(name,tier){
+    const npc=rwNpcFighter(name);
+    if(!npc)return alert('找不到此NPC的正式戰鬥資料。');
+    if(tier==='250-499'){
+      rwStartBattle([npc],{tier,sentence:3,npc:name,message:`⚠️ ${name}直接對${S.name}發起拘捕戰！`});
+      return;
+    }
+    const medal=tier==='500-749'?'銀牌捕快':'金牌捕快';
+    const extras=[rwEnforcer(medal),rwEnforcer(medal),rwEnforcer(medal)].filter(Boolean);
+    /* 正式規則：互動NPC固定隨機後排1/後排2，其餘捕快補滿剩餘位置。
+       現行四格陣列順序以 0..3 對應四格，因此插入索引 2 或 3。 */
+    const slot=Math.random()<.5?2:3;
+    const team=[...extras];
+    team.splice(slot,0,npc);
+    rwStartBattle(team.slice(0,4),{
+      tier,
+      sentence:tier==='500-749'?4:5,
+      npc:name,
+      message:`🚨 ${name}與${medal}×3展開追捕戰！`
+    });
+  }
+
+  function rwStart1000Battle(){
+    const team=[
+      rwEnforcer('東州州府統領'),
+      rwEnforcer('金牌捕快'),
+      rwEnforcer('金牌捕快'),
+      rwEnforcer('金牌捕快')
+    ].filter(Boolean);
+    rwStartBattle(team,{tier:'1000',sentence:7,message:'🚨 九州重犯追捕：東州州府統領＋金牌捕快×3！'});
+  }
+
+  function rwRealmCoin(realm){
+    const s=String(realm||'');
+    const k=Object.keys(RW_COIN_BASE).find(x=>s.includes(x));
+    return k?RW_COIN_BASE[k]:0;
+  }
+  function rwBattleReward(enemies,fixed20=false){
+    let total=0;
+    for(const e of (enemies||[])){
+      const base=rwRealmCoin(e?.realm);
+      const rate=fixed20?.20:(.10+Math.random()*.20);
+      total+=Math.floor(base*rate);
+    }
+    return total;
+  }
+
+  function rwAddItem(name,count){
+    S.items=S.items||{};
+    S.items[name]=(S.items[name]||0)+count;
+  }
+  function rwAwardChongLing(){
+    const pieces=['［中階］忡靈頭盔','［中階］忡靈戰甲','［中階］忡靈鎖褲','［中階］忡靈戰靴'];
+    S.gearInventory=S.gearInventory||{};
+    const missing=pieces.filter(n=>!(S.gearInventory[n]>0)&&!Object.values(S.equipment||{}).includes(n));
+    if(!missing.length)return '';
+    const got=missing[0];
+    S.gearInventory[got]=(S.gearInventory[got]||0)+1;
+    return got;
+  }
+
+  function rwLawVictory(b){
+    const law=b.lawCase||{},tier=law.tier,enemies=b.enemyTeam||[];
+    const p=b.playerTeam?.[0];
+    if(p){S.hp=Math.max(1,p.hp);S.mp=Math.max(0,p.mp)}
+    let reward=0,extra='';
+
+    if(tier==='100-249'){
+      S.wanted=Math.min(1000,rwWanted()+40);
+      reward=rwBattleReward(enemies,false);
+      if(S.lawState?.reportedLock)S.lawState.reportedLock.active=false;
+    }else if(tier==='250-499'){
+      S.wanted=Math.min(1000,rwWanted()+80);
+      reward=rwBattleReward(enemies,false);
+    }else if(tier==='500-749'){
+      S.wanted=Math.min(1000,rwWanted()+160);
+      S.evil+=5;
+      reward=rwBattleReward(enemies,false);
+    }else if(tier==='750-999'){
+      S.wanted=1000;
+      S.evil+=30;
+      reward=rwBattleReward(enemies,false);
+    }else if(tier==='1000'){
+      S.wanted=1;
+      reward=rwBattleReward(enemies,true);
+      rwAddItem('靈根精華丹',5);
+      rwAddItem('陰陽丹',10);
+      const piece=rwAwardChongLing();
+      extra=`<br>靈根精華丹×5、陰陽丹×10${piece?`、${piece}×1`:''}`;
+    }
+
+    S.coins=Number(S.coins||0)+reward;
+    battle=null;closeModal();
+    log(`⚔️ 追捕戰勝利：靈幣 +${reward}；目前通緝 ${S.wanted}。`);
+    render();
+    showModal('⚔️ 追捕戰勝利',`<div class="rw-law-card"><b>成功擊退追捕者。</b><br>本戰不獲得修為、歷練或一般擊殺獎勵。<br>靈幣 +${reward}<br>目前通緝：${S.wanted}${extra}</div>`);
+  }
+
+  function rwSendToPrison(law){
+    rwEnsure();
+    let days=Math.min(7,Math.max(1,Number(law?.sentence||1)));
+    let feeText='';
+
+    if(law?.tier==='750-999'){
+      if(Number(S.coins||0)>=3500){
+        S.coins-=3500;feeText='強制收取3500靈幣。';
+      }else{
+        const take=Math.floor(Number(S.coins||0)*.5);
+        S.coins=Math.max(0,Number(S.coins||0)-take);
+        days=Math.min(7,days+1);
+        feeText=`靈幣不足3500，扣除目前持有靈幣50%（${take}），刑期額外+1日。`;
+      }
+    }else if(law?.tier==='1000'){
+      const had=Number(S.coins||0);
+      if(had>=7000){
+        S.coins=had-7000;feeText='強制收取7000靈幣。';
+      }else{
+        S.coins=0;
+        S.prison.pendingPoorPrisonerDays=Math.max(S.prison.pendingPoorPrisonerDays||0,3);
+        feeText=`無法支付7000靈幣，現有靈幣已交付；出獄後獲得［窮囚犯］3個遊戲日。`;
+      }
+    }
+
+    S.prison.active=true;
+    S.prison.sentenceDays=days;
+    S.prison.originalSentenceDays=days;
+    S.prison.reason=`通緝追捕戰敗（${law?.tier||'未知級距'}）`;
+    if(S.lawState?.reportedLock)S.lawState.reportedLock.active=false;
+    S.hp=1;
+    const c=typeof r4Core==='function'?r4Core():{};
+    S.mp=Math.max(0,Math.min(Number(S.mp||0),Number(c.maxmp||S.maxmp||0)));
+
+    log(`⛓️ 被捕入獄：刑期${days}日。${feeText}`);
+    render();
+    rwOpenPrison();
+  }
+
+  function rwOpenPrison(){
+    rwEnsure();
+    if(!S.prison.active){
+      return showModal('⛓️ 監牢','<div class="card">只有實際觸發犯罪／判刑流程時才會進入。</div>');
+    }
+    showModal('⛓️ 監牢・服刑中',`
+      <div class="rw-prison-box">
+        <b>目前刑期：${S.prison.sentenceDays}日</b><br>
+        本次判刑原始刑期：${S.prison.originalSentenceDays}日<br>
+        原因：${S.prison.reason||'—'}<br>
+        <span class="muted">最高刑期7日。正式勞役小遊戲、越獄與出獄後狀態沿用母檔規則；本次測試分支先把「通緝→追捕→判刑→真正進入監牢狀態」接通。</span>
+      </div>`);
+  }
+  window.rwOpenPrison=rwOpenPrison;
+  window.rwSendToPrison=rwSendToPrison;
+  window.rwLawVictory=rwLawVictory;
+
+  /* 監牢設施：判刑後顯示實際刑期，不再永遠只有佔位文字。 */
+  const prevFacility=facilityClick;
+  facilityClick=function(x){
+    rwEnsure();
+    if(S.prison.active){
+      if(x==='監牢')return rwOpenPrison();
+      return alert('目前正在服刑，無法使用其他設施。');
+    }
+    const w=rwWanted();
+    const lock=S.lawState?.reportedLock;
+    if(lock?.active&&lock.place===S.place){
+      return alert(`你／妳已被${lock.reporter}通報，禁止亂跑。`);
+    }
+    if(w>=750){
+      if(x==='布告欄'&&w>=1000)return showModal('📜 九州通緝令',`<div class="rw-law-card"><b>${S.name}</b>已列為［九州重犯］，九州布告欄皆張貼通緝令。</div>`);
+      return alert('目前通緝級距下，所有設備皆已關閉。');
+    }
+    if(x==='布告欄'&&w>=500){
+      return showModal('📜 布告欄・通緝令',`<div class="rw-law-card"><b>${S.name}通緝令</b><br>目前通緝：${w}<br>玩家不可接取自己的通緝令。</div>`);
+    }
+    return prevFacility(x);
+  };
+
+  /* 通報後封鎖道路；服刑中禁止移動。 */
+  const prevMoveTo=moveTo;
+  moveTo=function(p){
+    rwEnsure();
+    if(S.prison.active)return alert('目前正在服刑，無法離開監牢。');
+    const lock=S.lawState?.reportedLock;
+    if(lock?.active&&lock.place===S.place)return alert(`你／妳已被${lock.reporter}通報，禁止亂跑。`);
+    return prevMoveTo(p);
+  };
+
+  /* 冒險頁顯示「遭遇捕快」。 */
+  const prevAdventure=renderAdventure;
+  renderAdventure=function(){
+    rwEnsure();
+    if(S.prison.active){
+      return pageHead('⛓️ 監牢','目前正在服刑。')+
+        `<div class="rw-prison-box"><b>剩餘刑期：${S.prison.sentenceDays}日</b><br>${S.prison.reason||''}<br><button onclick="rwOpenPrison()">查看監牢狀態</button></div>`;
+    }
+    let base=prevAdventure();
+    const lock=S.lawState?.reportedLock;
+    if(lock?.active&&lock.place===S.place){
+      base+=`<div class="rw-law-card"><b>🚨 所在地已遭封鎖</b><br>${lock.reporter}已通報執法人員。<br><button class="danger" onclick="rwEncounterCopper()">⚔️ 遭遇捕快</button></div>`;
+    }
+    return base;
+  };
+
+  /* 1～99 可疑：謹慎型NPC的對話改成紅框可疑對話。 */
+  const prevTalk=r4NormalTalk;
+  r4NormalTalk=function(name){
+    const p=rwNpc(name),w=rwWanted();
+    if(w>=1&&w<=99&&rwIsCautious(p)){
+      const line=Math.random()<.5?'你／妳看起來有點可疑。':'你／妳是不是做了什麼事？';
+      return showModal(`💬 ${name}`,`<div class="rw-law-card"><b>${name}</b><br>${line}</div><button onclick="r58NpcInteraction('${name}')">返回</button>`);
+    }
+    return prevTalk(name);
+  };
+
+  function rwRestrictButtons(allowed,redTalk=false){
+    const root=document.getElementById('modalBody')||document.querySelector('.modal-body');
+    if(!root)return;
+    [...root.querySelectorAll('button')].forEach(btn=>{
+      const txt=(btn.textContent||'').trim();
+      if(txt.includes('返回')||txt.includes('詳細介紹'))return;
+      const keep=allowed.some(k=>txt.includes(k));
+      if(!keep)btn.style.display='none';
+      if(redTalk&&txt.includes('對話'))btn.classList.add('rw-wanted-talk');
+    });
+  }
+  function rwMerchantRefusal(name,p,w){
+    if(!rwIsMerchant(p))return false;
+    let chance=0;if(w>=500)chance=1;else if(w>=250)chance=.5;else if(w>=100)chance=.3;
+    if(!chance)return false;
+    const refused=Math.random()<chance;
+    if(!refused)return false;
+    setTimeout(()=>{
+      const root=document.getElementById('modalBody')||document.querySelector('.modal-body');
+      if(!root)return;
+      [...root.querySelectorAll('button')].forEach(btn=>{
+        const txt=(btn.textContent||'').trim();
+        if(/交易|商店|購買|販賣/.test(txt)){
+          btn.disabled=true;
+          btn.textContent='拒絕交易';
+          btn.title='商人因目前通緝狀態拒絕交易';
+        }
+      });
+      const note=document.createElement('div');
+      note.className='rw-law-card';
+      note.innerHTML='<b>商人拒絕交易。</b><br>本次正式進入互動介面已完成一次拒絕判定；離開後重新進入才會再次判定。';
+      root.prepend(note);
+    },0);
+    return true;
+  }
+
+  /* 最後包住現行 NPC 互動，保留最新張榕真等既有覆寫。 */
+  const prevNpcInteraction=r58NpcInteraction;
+  r58NpcInteraction=function(name){
+    rwEnsure();
+    if(S.prison.active)return rwOpenPrison();
+    const p=rwNpc(name),w=rwWanted();
+
+    if(w>=1000){
+      /* 任務／委託永遠保留。現行資料只要此NPC具有任務入口，就只保留任務；否則直接州府追捕。 */
+      const acts=Array.isArray(p.actions)?p.actions:[];
+      const hasQuestEntry=acts.includes('任務／委託')||!!p.quest;
+      if(!hasQuestEntry)return rwStart1000Battle();
+      prevNpcInteraction(name);
+      setTimeout(()=>rwRestrictButtons(['任務／委託']),0);
+      return;
+    }
+
+    if(w>=750){
+      if(rwIsGuard(p))return rwDirectNpcBattle(name,'750-999');
+      prevNpcInteraction(name);
+      setTimeout(()=>rwRestrictButtons(['任務／委託']),0);
+      return;
+    }
+
+    if(w>=500){
+      if(rwIsGuard(p))return rwDirectNpcBattle(name,'500-749');
+      prevNpcInteraction(name);
+      setTimeout(()=>{
+        rwRestrictButtons(['任務／委託','偷襲','搶奪','搶劫']);
+        rwMerchantRefusal(name,p,w);
+      },0);
+      return;
+    }
+
+    if(w>=250){
+      if(rwIsGuard(p)||rwIsAggressive(p))return rwDirectNpcBattle(name,'250-499');
+      prevNpcInteraction(name);
+      rwMerchantRefusal(name,p,w);
+      return;
+    }
+
+    if(w>=100){
+      if(rwIsRighteous(p))return rwReport(name);
+      prevNpcInteraction(name);
+      rwMerchantRefusal(name,p,w);
+      return;
+    }
+
+    prevNpcInteraction(name);
+    if(w>=1&&rwIsCautious(p)){
+      setTimeout(()=>rwRestrictButtons(['對話','任務／委託','偷襲','搶奪','搶劫'],true),0);
+    }
+  };
+
+  /* 首次進入500+通緝級距：只提示一次；降回499以下後重置。 */
+  function rwThresholdNotice(){
+    rwEnsure();
+    const w=rwWanted();
+    if(w>=500&&!S.lawState.posterShown500){
+      S.lawState.posterShown500=true;
+      log(`📜 ${S.name}通緝令已被張貼布告欄。`);
+      setTimeout(()=>alert(`${S.name}通緝令已被張貼布告欄。`),0);
+    }else if(w<500){
+      S.lawState.posterShown500=false;
+    }
+  }
+  const prevRender=render;
+  render=function(){
+    rwThresholdNotice();
+    return prevRender();
+  };
+
+  /* 追捕戰勝利：覆寫一般 battleWin，禁止套妖物修為/歷練/一般掉落。 */
+  const prevBattleWin=battleWin;
+  battleWin=function(){
+    if(battle?.lawCase)return rwLawVictory(battle);
+    return prevBattleWin();
+  };
+  window.battleWin=battleWin;
+
+  /* 追捕戰敗：現行 enemyTurn 會先把 battle 清掉，因此先保存 lawCase，回傳後再判刑。 */
+  const prevEnemyTurn=enemyTurn;
+  enemyTurn=function(){
+    const law=battle?.lawCase?{...battle.lawCase}:null;
+    const before=battle;
+    const r=prevEnemyTurn();
+    if(law&&before&&!battle&&Number(S.hp||0)<=1){
+      setTimeout(()=>rwSendToPrison(law),0);
+    }
+    return r;
+  };
+  window.enemyTurn=enemyTurn;
+
+  /* 測試捷徑：只供本地驗收通緝級距，不改正常流程。 */
+  window.rwTestWanted=function(v){
+    rwEnsure();S.wanted=Math.max(0,Math.min(1000,Number(v)||0));
+    if(S.wanted<500)S.lawState.posterShown500=false;
+    log(`🧪 測試：通緝值設為 ${S.wanted}。`);render();
+  };
+
+  window.RW_WANTED_LAW_V7=true;
+})();
+</script>
+
+
+
+<style id="r558-debug-wanted-player-ui-style">
+/* V8 測試分支：主介面獨立靈幣列，任務框自然下移，不擠壓角色資訊。 */
+#playerPanel .r558-main-coins{
+  margin-top:10px;
+  padding:10px 12px;
+  border:1px solid #6e5930;
+  border-radius:10px;
+  background:linear-gradient(180deg,#1d190f,#12100b);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  box-sizing:border-box;
+}
+#playerPanel .r558-main-coins .r558-coin-label{
+  color:#c7b98d;
+  font-size:12px;
+}
+#playerPanel .r558-main-coins .r558-coin-value{
+  color:#f0ca63;
+  font-weight:900;
+  font-size:16px;
+  white-space:nowrap;
+}
+.sidebar > #playerPanel + .card{margin-top:14px}
+
+.r558-wanted-grid{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:7px;
+  margin-top:8px;
+}
+.r558-wanted-grid button{min-height:38px}
+.r558-wanted-current{
+  margin-top:8px;
+  padding:9px 10px;
+  border:1px solid #724444;
+  border-radius:8px;
+  background:#1d1010;
+  color:#efc7c7;
+}
+.r558-law-debug-controls{
+  margin-top:9px;
+  padding:8px;
+  border:1px dashed #856d3e;
+  border-radius:8px;
+  background:#16130c;
+  display:flex;
+  gap:8px;
+  flex-wrap:wrap;
+  align-items:center;
+}
+.r558-law-debug-controls b{color:#efd077}
+@media(max-width:760px){
+  .r558-wanted-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+</style>
+
+<script id="r558-debug-wanted-player-ui-fix">
+'use strict';
+(function(){
+
+function r558Esc(s){
+  return String(s??'').replace(/[&<>"']/g,c=>({
+    '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'
+  }[c]||c));
+}
+
+/* ---------- 1. 修復左上角色卡點擊無反應 ----------
+   V0.5.4 舊覆寫使用 window.S，但目前正式狀態 S 是 lexical global，
+   因此直接使用 S，不再檢查 window.S。
+   同時同步為現行正式八核顯示。 */
+window.r513OpenPlayerStatus=function(){
+  if(typeof S==='undefined' || !S)return;
+  if(typeof r4Ensure==='function')r4Ensure();
+  if(typeof r512Ensure==='function')r512Ensure();
+
+  const c=typeof r4Core==='function'?r4Core():{};
+  const eq=S.equipment||{};
+  const expNeed=Math.max(1,Number(S.expNeed||1));
+  const exp=Math.min(expNeed,Number(S.exp||0));
+  const equipOrder=['武器','頭盔','上衣','下裝','鞋','項鍊','戒指','配飾'];
+
+  let mainRootHtml=`${r558Esc(S.mainRoot||'—')} <b>${S.roots?.[S.mainRoot]??'—'}</b>`;
+  let subRootHtml=`${r558Esc(S.subRoot||'—')} <b>${S.roots?.[S.subRoot]??'—'}</b>`;
+  try{
+    if(typeof r521RootOrb==='function'){
+      mainRootHtml=`${r521RootOrb(S.mainRoot)} <b>${S.roots?.[S.mainRoot]??'—'}</b>`;
+      subRootHtml=`${r521RootOrb(S.subRoot)} <b>${S.roots?.[S.subRoot]??'—'}</b>`;
+    }
+  }catch(e){}
+
+  const displayIdentity=(typeof r513DisplayIdentity==='function')
+    ?r513DisplayIdentity(S.identity)
+    :String(S.identity||'');
+
+  showModal('👤 角色狀態',`
+    <div class="r513-status-modal-grid">
+      <div class="card">
+        <b>${r558Esc(displayIdentity)}・${r558Esc(S.name)}</b><br>
+        <span class="gold">${r558Esc(S.realm)}</span><br><br>
+        <div class="r521-root-value"><span class="muted">主靈根</span>${mainRootHtml}</div><br>
+        <div class="r521-root-value"><span class="muted">副靈根</span>${subRootHtml}</div>
+      </div>
+      <div class="card">
+        <b>修為進度</b><br>${exp} / ${expNeed}
+        ${exp>=expNeed?'<br><span class="r513-exp-ready">修為已滿・可突破</span>':''}
+        <div class="bar xp" style="margin-top:8px"><i style="width:${100*exp/expNeed}%"></i></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <b>八大核心</b>
+      <div class="r513-core-grid" style="grid-template-columns:repeat(4,minmax(90px,1fr))">
+        <div class="r513-core">❤️ 氣血<br><b>${S.hp} / ${Number(c.maxhp??S.maxhp??0)}</b></div>
+        <div class="r513-core">🔵 靈力<br><b>${S.mp} / ${Number(c.maxmp??S.maxmp??0)}</b></div>
+        <div class="r513-core">⚔️ 攻<br><b>${Number(c.atk??S.atk??0)}</b></div>
+        <div class="r513-core">🔮 道<br><b>${Number(c.dao??S.dao??S.atk??0)}</b></div>
+        <div class="r513-core">🛡️ 防<br><b>${Number(c.def??S.def??0)}</b></div>
+        <div class="r513-core">🌀 道防<br><b>${Number(c.daoDef??S.daoDef??S.def??0)}</b></div>
+        <div class="r513-core">💨 身<br><b>${Number(c.agi??S.agi??0)}</b></div>
+        <div class="r513-core">🎯 命<br><b>${Number(c.hit??S.hit??0)}</b></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <b>裝備</b>
+      <div class="r513-equip-grid">
+        ${equipOrder.map(k=>`<div class="r513-equip"><span class="muted small">${k}</span><br>${r558Esc(eq[k]||'無')}</div>`).join('')}
+      </div>
+    </div>
+    <div class="actions"><button onclick="detailInfo()">📋 其他資訊</button></div>
+  `);
+
+  try{
+    if(typeof window.r554RebuildAllRootWidgets==='function'){
+      setTimeout(()=>window.r554RebuildAllRootWidgets(document),0);
+    }
+  }catch(e){}
+};
+
+/* ---------- 2. 左側主介面增加獨立靈幣列 ----------
+   不改角色立繪、不改既有血/靈力/修為排版，只在 playerPanel 後方加一列。 */
+const r558PrevRenderPlayer=renderPlayer;
+renderPlayer=function(){
+  const v=r558PrevRenderPlayer.apply(this,arguments);
+  const panel=document.getElementById('playerPanel');
+  if(!panel || typeof S==='undefined' || !S)return v;
+
+  let coin=panel.querySelector('.r558-main-coins');
+  if(!coin){
+    coin=document.createElement('div');
+    coin.className='r558-main-coins';
+    panel.appendChild(coin);
+  }
+  coin.innerHTML=`<span class="r558-coin-label">🪙 靈幣</span><span class="r558-coin-value">${Number(S.coins||0).toLocaleString()}</span>`;
+  return v;
+};
+window.renderPlayer=renderPlayer;
+
+/* ---------- 3. 測試999：通緝值快速切換 ---------- */
+window.r558SetWanted=function(v){
+  if(typeof S==='undefined' || !S)return;
+  if(typeof rwEnsure==='function')rwEnsure();
+  S.wanted=Math.max(0,Math.min(1000,Number(v)||0));
+  if(S.lawState){
+    S.lawState.reportedLock=null;
+    if(S.wanted<500)S.lawState.posterShown500=false;
+  }
+  try{log(`🧪 測試999：通緝值直接設定為 ${S.wanted}。`)}catch(e){}
+  try{render()}catch(e){}
+  window.r548OpenDebug999();
+};
+
+window.r558ClearLawTest=function(){
+  if(typeof S==='undefined' || !S)return;
+  if(typeof rwEnsure==='function')rwEnsure();
+  S.wanted=0;
+  if(S.lawState){
+    S.lawState.reportedLock=null;
+    S.lawState.posterShown500=false;
+  }
+  if(S.prison){
+    S.prison.active=false;
+    S.prison.sentenceDays=0;
+    S.prison.originalSentenceDays=0;
+    S.prison.reason='';
+  }
+  try{log('🧪 測試999：已清除通緝／通報／服刑測試狀態。')}catch(e){}
+  try{render()}catch(e){}
+  window.r548OpenDebug999();
+};
+
+/* 追捕戰測試：直接走「正式追捕戰結算」，不修改正常戰鬥公式。 */
+window.r558ForceLawWin=function(){
+  if(typeof battle==='undefined' || !battle?.lawCase)return alert('目前不是通緝追捕戰。');
+  if(typeof battleWin!=='function')return alert('找不到戰鬥勝利結算。');
+  battleWin();
+};
+
+window.r558ForceLawLose=function(){
+  if(typeof battle==='undefined' || !battle?.lawCase)return alert('目前不是通緝追捕戰。');
+  if(typeof window.rwSendToPrison!=='function')return alert('找不到追捕戰判刑流程。');
+  const law={...battle.lawCase};
+  const p=battle.playerTeam?.[0];
+  if(p){p.hp=0}
+  battle=null;
+  closeModal();
+  window.rwSendToPrison(law);
+};
+
+/* ---------- 4. 擴充測試999快捷面板 ---------- */
+window.r548OpenDebug999=function(){
+  const wanted=(typeof S!=='undefined'&&S)?Number(S.wanted||0):0;
+  showModal('🧪 測試999・快捷選擇',`
+    <div class="debug-banner">
+      <b>目前測試基底：［主線］確認修為前</b><br>
+      可測執法人員戰鬥、練氣五層／秘境，以及完整通緝級距。
+    </div>
+
+    <div class="card">
+      <b>🚨 通緝系統測試模式</b>
+      <div class="r558-wanted-current">目前通緝值：<b>${wanted}</b></div>
+      <div class="small muted" style="margin-top:7px">
+        直接設定臨界值後關閉此視窗，再點擊對應NPC／商人／設施測試實際反應。
+        追捕戰開始後，戰鬥畫面會出現「測試直接勝利／測試直接敗北」。
+      </div>
+      <div class="r558-wanted-grid">
+        ${[0,99,100,249,250,499,500,749,750,999,1000].map(v=>`<button onclick="r558SetWanted(${v})">通緝 ${v}</button>`).join('')}
+        <button class="danger" onclick="r558ClearLawTest()">清除通緝／服刑</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <b>⚔️ 執法人員戰鬥立繪／八核測試</b>
+      <div class="r548-debug-grid">
+        ${['銅牌捕快','銀牌捕快','金牌捕快','監牢守衛','監牢隊長','東州州府統領'].map(n=>`<button onclick="r548DebugFight('${n}')">⚔️ ${n}</button>`).join('')}
+      </div>
+    </div>
+
+    <div class="card">
+      <b>🌊 其他快速測試</b>
+      <div class="r548-debug-grid">
+        <button class="primary" onclick="r548SetQi5()">直接升至練氣五層</button>
+        <button onclick="closeModal()">▶ 維持目前測試進度</button>
+      </div>
+    </div>
+
+    <div class="r548-debug-note">
+      通緝測試只改測試999當前存檔狀態，不改一般新遊戲流程；正式母檔不升版。
+    </div>
+  `);
+};
+
+/* ---------- 5. 通緝追捕戰顯示測試勝／敗按鈕 ---------- */
+const r558PrevShowBattle=showBattle;
+showBattle=function(){
+  const v=r558PrevShowBattle.apply(this,arguments);
+  try{
+    if(typeof S!=='undefined' && S?.name==='測試999' && battle?.lawCase){
+      const body=document.getElementById('modalBody');
+      if(body && !body.querySelector('.r558-law-debug-controls')){
+        const box=document.createElement('div');
+        box.className='r558-law-debug-controls';
+        box.innerHTML=`<b>🧪 通緝追捕測試：</b>
+          <button class="primary" onclick="r558ForceLawWin()">直接判定勝利</button>
+          <button class="danger" onclick="r558ForceLawLose()">直接判定敗北／入獄</button>`;
+        body.appendChild(box);
+      }
+    }
+  }catch(e){console.error(e)}
+  return v;
+};
+window.showBattle=showBattle;
+
+/* 立即重繪一次，讓已進遊戲的測試檔直接看到靈幣列。 */
+try{if(typeof S!=='undefined'&&S&&typeof renderPlayer==='function')renderPlayer()}catch(e){}
+
+window.R558_DEBUG_WANTED_PLAYER_UI=true;
+})();
+</script>
+
+
+
+<script id="r559-wanted-decay-v9">
+'use strict';
+(function(){
+  /* V9 測試分支：通緝自然衰減
+     新規則：
+     - 連續3個遊戲日沒有再次犯罪後進入衰減期。
+     - 之後每完整經過1個遊戲日，通緝值 -20。
+     - 3日內若再次犯罪，3日無犯罪計時重新開始。
+     - 通緝最低降至0。
+     - 只接現行單州 S.wanted；未擅自擴造多州通緝資料結構。
+  */
+
+  const R559_GRACE_MINUTES = 3 * 24 * 60;
+  const R559_DECAY_STEP_MINUTES = 24 * 60;
+  const R559_DECAY_AMOUNT = 20;
+
+  function r559Now(){
+    try{
+      return typeof r4GameMinutes==='function' ? Number(r4GameMinutes()||0) : 0;
+    }catch(e){ return 0; }
+  }
+
+  function r559EnsureWantedDecay(){
+    if(typeof S==='undefined' || !S)return null;
+    S.wantedDecay = S.wantedDecay || {};
+    const d=S.wantedDecay;
+    if(!Number.isFinite(d.lastCrimeAt)) d.lastCrimeAt = r559Now();
+    if(!Number.isFinite(d.lastDecayAt)) d.lastDecayAt = d.lastCrimeAt + R559_GRACE_MINUTES;
+    if(!Number.isFinite(d.lastSeenWanted)) d.lastSeenWanted = Number(S.wanted||0);
+    return d;
+  }
+
+  function r559ResetCrimeTimer(reason='犯罪'){
+    const d=r559EnsureWantedDecay();
+    if(!d)return;
+    const now=r559Now();
+    d.lastCrimeAt=now;
+    /* 先完整等待3日；第3日結束後才開始計算「每經過1日 -20」 */
+    d.lastDecayAt=now + R559_GRACE_MINUTES;
+    d.lastSeenWanted=Number(S.wanted||0);
+    d.lastCrimeReason=reason;
+    d.lastCrimeResetAt=now;
+  }
+  window.r559ResetCrimeTimer=r559ResetCrimeTimer;
+
+  function r559ProcessWantedDecay(){
+    const d=r559EnsureWantedDecay();
+    if(!d)return;
+    let wanted=Math.max(0,Number(S.wanted||0));
+    const now=r559Now();
+
+    if(wanted<=0){
+      S.wanted=0;
+      d.lastSeenWanted=0;
+      return;
+    }
+
+    const graceEnd=Number(d.lastCrimeAt||0)+R559_GRACE_MINUTES;
+    if(now<=graceEnd){
+      d.lastSeenWanted=wanted;
+      return;
+    }
+
+    /* lastDecayAt = 無犯罪3日的終點。
+       只有再完整經過1日才扣第一次20，所以第一扣發生在第4個完整無犯罪遊戲日。 */
+    const base=Math.max(graceEnd,Number(d.lastDecayAt||graceEnd));
+    const elapsed=now-base;
+    if(elapsed < R559_DECAY_STEP_MINUTES){
+      d.lastSeenWanted=wanted;
+      return;
+    }
+
+    const steps=Math.floor(elapsed/R559_DECAY_STEP_MINUTES);
+    if(steps<=0)return;
+
+    const before=wanted;
+    wanted=Math.max(0,wanted - steps*R559_DECAY_AMOUNT);
+    S.wanted=wanted;
+    d.lastDecayAt=base + steps*R559_DECAY_STEP_MINUTES;
+    d.lastSeenWanted=wanted;
+
+    const reduced=before-wanted;
+    if(reduced>0){
+      try{ log(`📉 已連續3個遊戲日未再次犯罪；通緝自然衰減 ${before} → ${wanted}（-${reduced}）。`); }catch(e){}
+    }
+  }
+  window.r559ProcessWantedDecay=r559ProcessWantedDecay;
+
+  /* 所有正常遊戲時間推進後檢查衰減。 */
+  const r559PrevAdvance = r4AdvanceMinutes;
+  r4AdvanceMinutes=function(mins,opt={}){
+    const r=r559PrevAdvance(mins,opt);
+    try{r559ProcessWantedDecay()}catch(e){console.error(e)}
+    return r;
+  };
+
+  /* 偷襲：確認發動即屬犯罪，重置3日計時。 */
+  if(typeof r519ConfirmAmbush==='function'){
+    const prev=r519ConfirmAmbush;
+    r519ConfirmAmbush=function(name){
+      const before=Number(S?.wanted||0);
+      const r=prev(name);
+      const after=Number(S?.wanted||0);
+      if(after>before)r559ResetCrimeTimer('偷襲');
+      return r;
+    };
+    window.r519ConfirmAmbush=r519ConfirmAmbush;
+  }
+
+  /* 搶奪：依現行規則只有成功後才增加通緝，因此成功增加通緝時重置。 */
+  if(typeof r519ConfirmSteal==='function'){
+    const prev=r519ConfirmSteal;
+    r519ConfirmSteal=function(name){
+      const before=Number(S?.wanted||0);
+      const r=prev(name);
+      const after=Number(S?.wanted||0);
+      if(after>before)r559ResetCrimeTimer('搶奪');
+      return r;
+    };
+    window.r519ConfirmSteal=r519ConfirmSteal;
+  }
+
+  /* 搶劫：現行正式覆寫入口是 window.r519ConfirmRobbery。 */
+  if(typeof window.r519ConfirmRobbery==='function'){
+    const prev=window.r519ConfirmRobbery;
+    window.r519ConfirmRobbery=function(name){
+      const before=Number(S?.wanted||0);
+      const r=prev(name);
+      const after=Number(S?.wanted||0);
+      if(after>before)r559ResetCrimeTimer('搶劫');
+      return r;
+    };
+    try{r519ConfirmRobbery=window.r519ConfirmRobbery}catch(e){}
+  }
+
+  /* 追捕戰勝利若使通緝上升，也視為再次犯罪/抗拒執法，重新計時。
+     1000級勝利會把通緝降為1，不視為「再次犯罪增加通緝」。 */
+  if(typeof battleWin==='function'){
+    const prev=battleWin;
+    battleWin=function(){
+      const before=Number(S?.wanted||0);
+      const wasLaw=!!battle?.lawCase;
+      const r=prev();
+      const after=Number(S?.wanted||0);
+      if(wasLaw && after>before)r559ResetCrimeTimer('抗拒執法');
+      return r;
+    };
+    window.battleWin=battleWin;
+  }
+
+  /* 測試999直接切通緝值時，從該刻開始計算3日，
+     避免測試值被舊計時器立刻衰減。 */
+  if(typeof window.r558SetWanted==='function'){
+    const prev=window.r558SetWanted;
+    window.r558SetWanted=function(v){
+      const r=prev(v);
+      r559ResetCrimeTimer('測試999設定通緝值');
+      return r;
+    };
+  }
+
+  /* 清除測試時同步清理衰減狀態。 */
+  if(typeof window.r558ClearLawTest==='function'){
+    const prev=window.r558ClearLawTest;
+    window.r558ClearLawTest=function(){
+      const r=prev();
+      if(S)S.wantedDecay={
+        lastCrimeAt:r559Now(),
+        lastDecayAt:r559Now()+R559_GRACE_MINUTES,
+        lastSeenWanted:0
+      };
+      return r;
+    };
+  }
+
+  /* 額外提供測試999「時間快進」方便驗收，不影響一般流程。 */
+  window.r559DebugAdvanceDays=function(days){
+    days=Math.max(1,Math.floor(Number(days)||1));
+    if(typeof S==='undefined'||!S)return;
+    r4AdvanceMinutes(days*1440,{effective:false});
+    try{render()}catch(e){}
+    const d=r559EnsureWantedDecay();
+    const now=r559Now();
+    const since=Math.max(0,now-Number(d.lastCrimeAt||now));
+    alert(`已快進 ${days} 個遊戲日。\n目前通緝：${Number(S.wanted||0)}\n距最近犯罪：${Math.floor(since/1440)}日 ${Math.floor((since%1440)/60)}小時`);
+  };
+
+  /* 擴充現有測試999視窗：加入通緝衰減測試區。 */
+  if(typeof window.r548OpenDebug999==='function'){
+    const prev=window.r548OpenDebug999;
+    window.r548OpenDebug999=function(){
+      prev();
+      setTimeout(()=>{
+        const body=document.getElementById('modalBody');
+        if(!body || body.querySelector('.r559-decay-debug'))return;
+        const box=document.createElement('div');
+        box.className='card r559-decay-debug';
+        box.innerHTML=`
+          <b>📉 通緝自然衰減測試</b>
+          <div class="small muted" style="margin:6px 0 8px">
+            連續3個遊戲日無再次犯罪後，之後每完整1個遊戲日通緝-20；再次犯罪會重新計算3日。
+          </div>
+          <div class="actions">
+            <button onclick="r559DebugAdvanceDays(1)">快進1日</button>
+            <button onclick="r559DebugAdvanceDays(3)">快進3日</button>
+            <button onclick="r559DebugAdvanceDays(4)">快進4日</button>
+            <button onclick="r559DebugAdvanceDays(7)">快進7日</button>
+          </div>`;
+        body.appendChild(box);
+      },0);
+    };
+  }
+
+  /* 讀舊存檔／進遊戲時補初始值。 */
+  try{r559EnsureWantedDecay();r559ProcessWantedDecay()}catch(e){}
+
+  window.R559_WANTED_DECAY_V9=true;
+})();
+</script>
+
+<style id="r560-ui-fixes-style">
+.r560-root-caption{margin-top:5px;font-size:12px;color:#b9c9d7;text-align:center;white-space:nowrap}
+.r560-main-root-info{display:flex;flex-direction:column;gap:3px}.r560-main-root-info .root-name{color:#dcecff;font-weight:800}.r560-main-root-info .root-value{color:#efcf78;font-weight:900;font-size:18px}
+.r560-status-root-row{display:flex;align-items:center;gap:12px;margin-top:8px}.r560-status-root-orb{width:78px;height:78px;flex:0 0 78px;display:grid;place-items:center;overflow:visible}.r560-status-root-orb img{width:100%!important;height:100%!important;object-fit:contain!important;object-position:center!important;border:0!important;border-radius:0!important;background:transparent!important;box-shadow:none!important}.r560-status-root-text b{color:#eef6ff}.r560-status-root-text .value{color:#efcf78;font-weight:900}.r560-tutorial-note{padding:8px 10px;border:1px solid #496b83;border-radius:7px;background:#0b1822;color:#dcebf6;font-size:13px;margin-right:8px;display:flex;align-items:center}
+</style>
+<script id="r560-ui-fixes-script">
+'use strict';
+(function(){
+const ROOTS=['火','水','木','風','雷','土','光','暗'];
+const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const art=r=>(window.R557_BATTLE_ROOT_ART||{})[r]||'';
+function orb(r,cls=''){const s=art(r);return s?`<span class="${cls}" data-root="${esc(r)}"><img src="${s}" alt="${esc(r)}靈根球"></span>`:`<span class="${cls}">${esc(r||'—')}</span>`}
+window.renderRoots=function(){const m=S?.mainRoot||'—',s=S?.subRoot||'—';return pageHead('🌿 靈根','查看主靈根、副靈根與八系靈根數值；每顆靈根球皆標示對應屬性。')+`<div class="r558-root-page-main-grid"><div class="r558-root-page-main-card"><b>主靈根</b><div class="r558-root-page-main-value">${orb(m,'r558-root-page-orb main')}<div class="r560-main-root-info"><span class="root-name">${esc(m)}靈根</span><span class="root-value">${S?.roots?.[m]??'—'}</span></div></div></div><div class="r558-root-page-main-card"><b>副靈根</b><div class="r558-root-page-main-value">${orb(s,'r558-root-page-orb main')}<div class="r560-main-root-info"><span class="root-name">${esc(s)}靈根</span><span class="root-value">${S?.roots?.[s]??'—'}</span></div></div></div></div><div class="r558-root-page-all-grid">${ROOTS.map(r=>`<div class="r558-root-page-all-card" style="flex-direction:column">${orb(r,'r558-root-page-orb')}<div class="r560-root-caption">${r}靈根</div><b>${S?.roots?.[r]??0}</b></div>`).join('')}</div>`};
+window.r513OpenPlayerStatus=function(){if(!S)return;const c=typeof r4Core==='function'?r4Core():{},eq=S.equipment||{},need=Math.max(1,Number(S.expNeed||1)),xp=Math.min(need,Number(S.exp||0));const slots=['武器','頭盔','上衣','下裝','鞋','項鍊','戒指','配飾'];const ident=typeof r513DisplayIdentity==='function'?r513DisplayIdentity(S.identity):String(S.identity||'');const rootRow=(r,l)=>`<div class="r560-status-root-row">${orb(r,'r560-status-root-orb')}<div class="r560-status-root-text"><span class="muted">${l}</span><br><b>${esc(r||'—')}靈根</b><br><span class="value">${S.roots?.[r]??'—'}</span></div></div>`;showModal('👤 角色狀態',`<div class="r513-status-modal-grid"><div class="card"><b>${esc(ident)}・${esc(S.name)}</b><br><span class="gold">${esc(S.realm)}</span>${rootRow(S.mainRoot,'主靈根')}${rootRow(S.subRoot,'副靈根')}</div><div class="card"><b>修為進度</b><br>${xp} / ${need}<div class="bar xp" style="margin-top:8px"><i style="width:${100*xp/need}%"></i></div></div></div><div class="card"><b>八大核心</b><div class="r513-core-grid" style="grid-template-columns:repeat(4,minmax(90px,1fr))"><div class="r513-core">❤️ 氣血<br><b>${S.hp} / ${c.maxhp??S.maxhp??0}</b></div><div class="r513-core">🔵 靈力<br><b>${S.mp} / ${c.maxmp??S.maxmp??0}</b></div><div class="r513-core">⚔️ 攻<br><b>${c.atk??S.atk??0}</b></div><div class="r513-core">🔮 道<br><b>${c.dao??S.dao??S.atk??0}</b></div><div class="r513-core">🛡️ 防<br><b>${c.def??S.def??0}</b></div><div class="r513-core">🌀 道防<br><b>${c.daoDef??S.daoDef??S.def??0}</b></div><div class="r513-core">💨 身<br><b>${c.agi??S.agi??0}</b></div><div class="r513-core">🎯 命<br><b>${c.hit??S.hit??0}</b></div></div></div><div class="card"><b>裝備</b><div class="r513-equip-grid">${slots.map(k=>`<div class="r513-equip"><span class="muted small">${k}</span><br>${esc(eq[k]||'無')}</div>`).join('')}</div></div><div class="actions"><button onclick="detailInfo()">📋 其他資訊</button></div>`)};
+function pf(){const c=r4Core();return{type:'player',name:S.name,root:S.mainRoot,hp:S.hp,maxhp:c.maxhp,mp:S.mp,maxmp:c.maxmp,atk:c.atk,dao:c.dao??c.atk,def:c.def,daoDef:c.daoDef??c.def,agi:c.agi,hit:c.hit,status:[]}}
+function lf(){let p={};try{p=r519HostileNpcFighter('林夏于',1)||{}}catch(e){}const s=(S.partners||[]).find(x=>x.name==='林夏于')||{};return{...p,type:'ally',name:'林夏于',hp:p.hp??s.hp??100,maxhp:p.maxhp??s.maxhp??100,mp:p.mp??s.mp??30,maxmp:p.maxmp??s.maxmp??30,atk:p.atk??s.atk??15,dao:p.dao??p.atk??s.atk??15,def:p.def??s.def??10,daoDef:p.daoDef??p.def??s.def??10,agi:p.agi??s.agi??11,hit:p.hit??s.hit??13,status:[]}}
+function wolf(){return{type:'monster',name:'青木狼',tier:'一般種',attr:'木',hp:70,maxhp:70,mp:0,maxmp:0,atk:8,dao:8,def:4,daoDef:4,agi:6,hit:8,status:[]}}
+function start(kind,logs){battle={round:1,auto:false,noRun:true,tutorialCase:{kind,step:kind==='item'?'defend':'action'},playerTeam:[pf(),lf()],enemyTeam:[wolf()],logs:[...logs]};showBattle()}
+window.startFirstCombatTutorial=function(){const q=S.quests.find(x=>x.id==='firstCombatEntry'&&!x.done);if(q&&S.place==='青陽山')start('first',['遭遇［一般種］青木狼。','教學：先使用普通攻擊。'])};
+window.doFirstTry=function(){const q=S.quests.find(x=>x.id==='firstTry'&&!x.done);if(q&&S.place==='青陽山')start('firstTry',['遭遇［一般種］青木狼。','教學：這次請使用［初階］靈氣絕。'])};
+window.doItemUse=function(){const q=S.quests.find(x=>x.id==='itemUse'&&!x.done);if(!q||S.place!=='青陽山')return;if(!(S.items?.['［初階］氣血藥水']>0))return alert('背包內沒有［初階］氣血藥水。');start('item',['遭遇［一般種］青木狼。','教學：先防禦，再從背包使用［初階］氣血藥水。'])};
+function actions(b){const t=b.tutorialCase;let note='',buttons='';if(t.kind==='first'){if(t.step==='action'){note='教學：使用普通攻擊。';buttons='<button class="primary" onclick="r560TutorialAttack()">普攻</button>'}else{note='林夏于已斬殺青木狼。';buttons="<button class='primary' onclick=\"r560FinishTutorial('first')\">繼續</button>"}}else if(t.kind==='firstTry'){if(t.step==='action'){note='教學：使用［初階］靈氣絕。';buttons='<button class="primary" onclick="r560TutorialTechnique()">功法：靈氣絕</button>'}else{note='林夏于已斬殺青木狼。';buttons="<button class='primary' onclick=\"r560FinishTutorial('firstTry')\">繼續</button>"}}else{if(t.step==='defend'){note='教學：先進入防禦姿態。';buttons='<button class="primary" onclick="r560TutorialDefend()">防禦</button>'}else if(t.step==='potion'){note='教學：從戰鬥背包使用氣血藥水。';buttons='<button class="primary" onclick="r560TutorialBag()">背包</button>'}else if(t.step==='action'){note='藥水不消耗行動，再使用普通攻擊或功法。';buttons="<button onclick=\"r560TutorialItemFinish('普通攻擊')\">普攻</button><button onclick=\"r560TutorialItemFinish('功法')\">功法</button>"}else{note='林夏于已斬殺青木狼。';buttons="<button class='primary' onclick=\"r560FinishTutorial('item')\">繼續</button>"}}return `<div class="r519-actions"><div class="r560-tutorial-note">${note}</div>${buttons}</div>`}
+const oldUI=bmv1UI;bmv1UI=function(b){let h=oldUI(b);return b?.tutorialCase?h.replace(/<div class="r519-actions">[\s\S]*?<\/div>/,actions(b)):h};
+window.r560TutorialAttack=function(){const b=battle;if(!b)return;const e=b.enemyTeam[0];e.hp=67;b.logs.push(`${S.name}徒手普通攻擊，造成3點傷害。青木狼：70 → 67。`);b.logs.push('【俠客】林夏于出手，一擊斬殺青木狼剩餘67點氣血。');e.hp=0;b.tutorialCase.step='finish';showBattle()};
+window.r560TutorialTechnique=function(){const b=battle;if(!b)return;const p=b.playerTeam[0],e=b.enemyTeam[0];if(p.mp<5)return alert('靈力不足。');p.mp-=5;e.hp=60;b.logs.push(`${S.name}施展［初階］靈氣絕，造成10點傷害。青木狼：70 → 60。`);b.logs.push('【俠客】林夏于出手，斬殺青木狼剩餘60點氣血。');e.hp=0;b.tutorialCase.step='finish';showBattle()};
+window.r560TutorialDefend=function(){const b=battle;if(!b)return;const p=b.playerTeam[0];b.logs.push(`${S.name}進入防禦姿態。`);p.hp=Math.max(1,p.hp-4);b.logs.push('青木狼攻擊，防禦後承受4點傷害。');b.round=2;b.tutorialCase.step='potion';showBattle()};
+window.r560TutorialBag=function(){const n=Number(S.items?.['［初階］氣血藥水']||0);showModal('🎒 戰鬥背包',`<div class="card"><b>［初階］氣血藥水</b><br>持有：${n}<br>作用：恢復50氣血。<br><button class="primary" ${n>0?'':'disabled'} onclick="r560TutorialPotion()">使用</button></div><div class="actions"><button onclick="showBattle()">返回戰鬥</button></div>`)};
+window.r560TutorialPotion=function(){const b=battle;if(!b)return;if(!(S.items?.['［初階］氣血藥水']>0))return alert('背包內沒有［初階］氣血藥水。');S.items['［初階］氣血藥水']--;const p=b.playerTeam[0],x=p.hp;p.hp=Math.min(p.maxhp,p.hp+50);b.logs.push(`${S.name}使用［初階］氣血藥水，氣血 ${x} → ${p.hp}。`);b.logs.push('藥水不消耗本回合行動。');b.tutorialCase.step='action';showBattle()};
+window.r560TutorialItemFinish=function(a){const b=battle;if(!b)return;const e=b.enemyTeam[0];b.logs.push(`${S.name}接著使用${a}。`);b.logs.push('【俠客】林夏于隨即出手，斬殺青木狼。');e.hp=0;b.tutorialCase.step='finish';showBattle()};
+window.r560FinishTutorial=function(kind){const m={first:['firstCombatEntry',5,15,'首次進入戰鬥'],firstTry:['firstTry',5,15,'初次嘗試'],item:['itemUse',5,20,'道具的使用']};const [id,xp,min,title]=m[kind],q=S.quests.find(x=>x.id===id&&!x.done),p=battle?.playerTeam?.[0];if(!q)return;if(p){S.hp=Math.max(1,p.hp);S.mp=Math.max(0,p.mp)}q.done=true;S.exp=Math.min(S.expNeed,S.exp+xp);battle=null;closeModal();r4AdvanceMinutes(min,{effective:true});log(`✨ ［主線］${title}教學戰鬥完成，戰鬥修為 +${xp}。`);render()};
+const oldTalk=r4NormalTalk;r4NormalTalk=function(name){if(name==='林旺'){const q=S.quests.find(x=>x.id==='craftMeet'&&!x.claimed);if(q&&!q.done){q.done=true;if(typeof r56SyncQuestArchive==='function')r56SyncQuestArchive(q);showModal('💬 林旺',`<div class="card">「新人？你／妳好，合成？這裡。」</div><div class="card green">✅ ［主線］合成與鑄造：已完成交談目標。現在可從［任務／委託］回報。</div><div class="actions"><button class="primary" onclick="r56OpenNpcTasks('林旺')">任務／委託</button><button onclick="closeModal()">關閉</button></div>`);renderQuests();return}}return oldTalk(name)};window.r4NormalTalk=r4NormalTalk;
+try{if(R56_QUESTS?.craftIntro){R56_QUESTS.craftIntro.objective='找到鑄造師林旺並與之交談。';(R56_QUESTS.craftIntro.dialog||[]).forEach(e=>{if(typeof e.text==='string')e.text=e.text.replaceAll('陳旺','林旺')})}}catch(e){}
+window.R560_UI_FIXES_V10=true;
 })();
 </script>
 
