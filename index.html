@@ -20564,7 +20564,7 @@ JZV2.spec.official070['妖物素材掉落']='每場勝利素材總數1～2；種
 
 <script id="jz-update1008">
 (()=>{'use strict';const R=JZR,W=JZW,V=JZV2,U=window.JZ1008={};
-U.syncLog=()=>{const p=document.getElementById('advLog'),b=document.getElementById('logOpen');if(!p||!b)return;if(battle){p.classList.add('hidden');b.classList.add('hidden');return;}document.body.classList.remove('jz26-battle');b.classList.toggle('hidden',!p.classList.contains('hidden'));};
+U.syncLog=()=>{const p=document.getElementById('advLog'),b=document.getElementById('logOpen');if(!p||!b)return;if(battle){if(!p.classList.contains('hidden'))p.classList.add('hidden');if(!b.classList.contains('hidden'))b.classList.add('hidden');return;}document.body.classList.remove('jz26-battle');b.classList.toggle('hidden',!p.classList.contains('hidden'));};
 const oldLog=renderLog;renderLog=function(){const out=oldLog.apply(this,arguments);U.syncLog();return out;};
 new MutationObserver(U.syncLog).observe(document.getElementById('advLog'),{attributes:true,attributeFilter:['class']});
 U.pan=(x,y,el)=>{const w=el?.clientWidth||354,h=el?.clientHeight||480,m=58;return [Math.max(Math.max(-200,m-w*.43),Math.min(Math.min(200,w*.57-m),Number(x)||0)),Math.max(Math.max(-150,m-h*.44),Math.min(Math.min(150,h*.56-m),Number(y)||0))];};
