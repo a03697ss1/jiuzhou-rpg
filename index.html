@@ -7511,6 +7511,7 @@ try{ window.r512Portrait=r512Portrait; }catch(e){}
 // 若畫面已經渲染，立刻替換現存蘇璃圖片，不必重開頁面。
 function r524RefreshSuli(){
   document.querySelectorAll('img').forEach(img=>{
+    if(img.closest('.bmv1-canvas,.bsv2-card,.combat-card,.r519-art,.r519-unit'))return;
     const alt=img.getAttribute('alt')||'';
     const card=img.closest('.card,.r514-npc-list-card,.npc-profile-final,.npc-profile-hero,.r519-unit,.combat-card');
     const text=card?.textContent||'';
