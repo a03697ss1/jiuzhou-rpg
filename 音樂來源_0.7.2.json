@@ -5,24 +5,24 @@
       "file": "九州_雲行山水_戰鬥外.mp3",
       "seconds": 53.333333333333336,
       "bpm": 72,
-      "sha256": "1f809bb643b233885fdd13c67ba9fd8c222bfb32e70b9472dddaf574e8a78485",
+      "sha256": "b485546ef891cc27e7b74189cae9937328e92b20f8fcf14d2671dbbf537e7764",
       "source": "本輪原創旋律與程式合成聲音；未使用第三方歌曲、錄音或採樣。",
-      "bytes": 1873584,
+      "bytes": 641088,
       "losslessSource": "九州_雲行山水_戰鬥外.wav",
       "encoding": "MP3；網頁播放用，原始WAV留在工作資料夾。",
-      "publishedFile": "music/jz072_1f809bb643b233885fdd13c6.mp3"
+      "publishedFile": "music/jz072_b485546ef891cc27e7b74189.mp3"
     },
     {
       "name": "九州_破陣迎鋒_戰鬥內",
       "file": "九州_破陣迎鋒_戰鬥內.mp3",
       "seconds": 34.285714285714285,
       "bpm": 112,
-      "sha256": "63f75c49e0979dad1607b1f12562ab54a039296cdf8b4c78b40332b5ea9eea11",
+      "sha256": "62d30c068fb6f9171376ad1c10e14a79c1cde3531455b88d482a6b580268309c",
       "source": "本輪原創旋律與程式合成聲音；未使用第三方歌曲、錄音或採樣。",
-      "bytes": 1230192,
+      "bytes": 412560,
       "losslessSource": "九州_破陣迎鋒_戰鬥內.wav",
       "encoding": "MP3；網頁播放用，原始WAV留在工作資料夾。",
-      "publishedFile": "music/jz072_63f75c49e0979dad1607b1f1.mp3"
+      "publishedFile": "music/jz072_62d30c068fb6f9171376ad1c.mp3"
     }
   ],
   "instrumentation": "合成撥弦、笛音、低音與戰鼓",
