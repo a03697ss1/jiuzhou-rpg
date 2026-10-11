@@ -1,0 +1,24 @@
+{
+  "tracks": [
+    {
+      "name": "九州_雲行山水_戰鬥外",
+      "file": "九州_雲行山水_戰鬥外.wav",
+      "seconds": 53.333333333333336,
+      "bpm": 72,
+      "sha256": "aae9c0bd16b6a1db7e37f78937cf82981c8812897ab4395321ebe54aa4d4d8bc",
+      "source": "本輪原創旋律與程式合成聲音；未使用第三方歌曲、錄音或採樣。",
+      "publishedFile": "music/jz072_aae9c0bd16b6a1db7e37f789.wav"
+    },
+    {
+      "name": "九州_破陣迎鋒_戰鬥內",
+      "file": "九州_破陣迎鋒_戰鬥內.wav",
+      "seconds": 34.285714285714285,
+      "bpm": 112,
+      "sha256": "bdaac910046268864913011e53726bca8fbf72aee623f7937540f267727e3eb1",
+      "source": "本輪原創旋律與程式合成聲音；未使用第三方歌曲、錄音或採樣。",
+      "publishedFile": "music/jz072_bdaac910046268864913011e.wav"
+    }
+  ],
+  "instrumentation": "合成撥弦、笛音、低音與戰鼓",
+  "usage": "供九州修仙錄使用；兩首可循環。"
+}
