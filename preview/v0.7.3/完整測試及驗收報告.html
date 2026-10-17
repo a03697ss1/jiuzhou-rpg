@@ -1,4 +1,4 @@
-<!doctype html><html lang="zh-Hant"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>V0.7.3 完整測試及驗收報告</title><style>body{margin:0;background:#0c1720;color:#dbe5ed;font:16px/1.7 "Microsoft JhengHei",sans-serif}main{max-width:1280px;margin:auto;padding:26px}a{color:#93caff}h1{color:#f2d68b;font-size:28px}h2{margin-top:32px;color:#c8dded}nav{display:flex;flex-wrap:wrap;gap:16px;margin:18px 0}.note{border:1px solid #b88c44;background:#33291a;padding:15px;border-radius:10px}.ok{color:#9be3ad}.pending{color:#ffcf84}.summary{display:flex;gap:16px;flex-wrap:wrap}.summary>div{padding:16px;background:#182b39;border-radius:8px}table{border-collapse:collapse;width:100%;font-size:14px}th,td{border:1px solid #355266;padding:10px;vertical-align:top}th{background:#1c3343;position:sticky;top:0}tr:nth-child(even){background:#12232f}pre{white-space:pre-wrap;overflow-wrap:anywhere;font:12px/1.6 Consolas,monospace}img{max-width:100%;border:1px solid #375367;border-radius:8px}button,select,input{font:inherit;color:inherit;background:#203749;border:1px solid #59758a;border-radius:6px;padding:8px;margin:5px}details{margin:9px 0}li{margin:7px 0}.scroll{overflow:auto}.muted{color:#a9bccb}@media(max-width:700px){main{padding:14px}table{min-width:900px}}</style><main><h1>V0.7.3 完整測試及驗收報告</h1><nav><a href="閱讀我_先看這裡.html">交付入口</a><a href="index.html">單檔遊戲</a><a href="逐項施工工程覆蓋表.html">38項覆蓋表</a><a href="BUG修復與待補清單.html">BUG／待補</a><a href="完整測試及驗收報告.html">測試報告</a></nav><p class="note">本檔是可玩的0.7.3獨立測試交付，尚未整版驗收通過。正式母檔、正式0.7.2及GitHub均未修改。測試通過包含「缺資料時保護鎖正常」；不代表待補功能已完成。</p><div class="summary"><div>施工項目：38</div><div>新增測試：97／97</div><div>既有回歸：95／95</div><div>長右固定種子：16／16<br>15～18回合</div></div><h2>測試結果與界限</h2><p>共192項自動化檢查通過（新增97＋既有回歸95）。另有16組BOSS解析器實戰、1場UI自動戰鬥、4尺寸畫面及單檔離線驗證。這些是工程證據；38項完整功能與數值平衡尚未取得玩家驗收。</p><h2>長右BOSS</h2><p>固定種子1732～1739，沈玄川／柳清妍各8組，正式NPC八核＋測試999原始八核、不喝藥、不加作弊傷害；全部15～18回合獲勝。實際點擊自動戰鬥第16回合通過第二階段並獲勝。50%鎖血2250、MP1200、首動轟雷、次動洪水、潮濕優先潮閃引雷、硬控免疫另有單項檢查。</p><p>此結果只對候選八核及此隊伍／操作有效，不保證所有玩家配置都能30回合擊殺；長右獨立隱藏值與正式戰力仍待定。</p><p><a href="長右30回合實戰資料.json">16組完整戰鬥資料</a>　<a href="長右實際自動戰鬥驗收.json">UI實戰紀錄</a></p><img src="長右戰鬥畫面.png" alt="長右完整戰鬥畫面"><h2>新增流程與既有回歸</h2><ul><li>舊主線：31／31檢查。<a href="r1011-reg-main-results.json">原始結果</a></li><li>舊支線：21／21檢查。<a href="reg-sides-results.json">原始結果</a></li><li>舊25委託：25／25檢查。<a href="reg-commissions-results.json">原始結果</a></li><li>既有系統：18／18檢查。<a href="reg-systems-results.json">原始結果</a></li></ul><p>原28段主線、12條支線、25委託由原回歸腳本在本輪新HTML實際走流程。舊工作檔只作測試用存檔種子，沒有作施工底稿。</p><h2>本次補充B線與兩項機率</h2><p>033B三處調查六種順序、林夏于追擊離隊、九珠陰雷強制首動／免費特殊結算、滿貫丹實際服下才恢復、三波每場結算與失敗續接、036B調查傳送陣與五人會合，皆有逐項測試。另實際連續從032選B到038長右結算；此流程案例使用隔離角色提高八核以滿足地圖門檻，只驗收流程，不能當作平衡結論。</p><p><a href="B線與補充定案測試結果.json">本次完整測試結果</a>　<a href="B線完整對話805節點.txt">B線805節點文字</a>　<a href="補充定案_修為與問道.json">修為與問道補充規則</a></p><img src="B線九珠陰雷戰鬥畫面.png" alt="B線九珠陰雷劇情戰"><h2>本次A線與NPC公式補完</h2><p>A線709節點原稿已接入，實際從032選A、033A兩場戰鬥、034A固定火紅蓮必敗與免費寵物復原、035A陸景和救援／命符／無戰利品黑衣人戰、036A四人入窟會合，再到037／038長右結算，保留A線專屬物品與紀錄且不完成B線。</p><p>問道測試包含80組正式NPC基線、築基及金丹九層、五種可抽品質及弱者通用品質、八流派／額外效果、每核獨立±5%、1200個完整合法對手、八流派各20000次武器抽樣、100000次裝備品質抽樣及缺品質重新分配。實際1V1勝利發33點，連勝結算最高37、失敗歸0；禁止道具／戰前效果／逃跑，存檔後對手不重抽。</p><p>NPC品質只乘自身基線，裝備只加成品記錄值一次。普通1／優良1.1／精品1.2／珍稀1.35／極品1.5／完美1.7僅保存未來候選，未改玩家裝備或成品能力。</p><p><a href="A線與NPC公式測試結果.json">A線／NPC完整測試結果</a>　<a href="A線完整對話709節點.txt">A線709節點原稿</a>　<a href="NPC通用生成正式資料.json">NPC正式生成資料與候選表</a></p><img src="A線必敗戰結算.png" alt="A線必敗戰結算"><img src="問道跨境界戰實際結算.png" alt="問道跨境界戰結算"><h2>全部新增測項</h2><details><summary>✓ L38 載入、版本與存檔隔離</summary><pre>{
+<!doctype html><html lang="zh-Hant"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>V0.7.3 完整測試及驗收報告</title><style>body{margin:0;background:#0c1720;color:#dbe5ed;font:16px/1.7 "Microsoft JhengHei",sans-serif}main{max-width:1280px;margin:auto;padding:26px}a{color:#93caff}h1{color:#f2d68b;font-size:28px}h2{margin-top:32px;color:#c8dded}nav{display:flex;flex-wrap:wrap;gap:16px;margin:18px 0}.note{border:1px solid #b88c44;background:#33291a;padding:15px;border-radius:10px}.ok{color:#9be3ad}.pending{color:#ffcf84}.summary{display:flex;gap:16px;flex-wrap:wrap}.summary>div{padding:16px;background:#182b39;border-radius:8px}table{border-collapse:collapse;width:100%;font-size:14px}th,td{border:1px solid #355266;padding:10px;vertical-align:top}th{background:#1c3343;position:sticky;top:0}tr:nth-child(even){background:#12232f}pre{white-space:pre-wrap;overflow-wrap:anywhere;font:12px/1.6 Consolas,monospace}img{max-width:100%;border:1px solid #375367;border-radius:8px}button,select,input{font:inherit;color:inherit;background:#203749;border:1px solid #59758a;border-radius:6px;padding:8px;margin:5px}details{margin:9px 0}li{margin:7px 0}.scroll{overflow:auto}.muted{color:#a9bccb}@media(max-width:700px){main{padding:14px}table{min-width:900px}}</style><main><h1>V0.7.3 完整測試及驗收報告</h1><nav><a href="閱讀我_先看這裡.html">交付入口</a><a href="index.html">單檔遊戲</a><a href="逐項施工工程覆蓋表.html">38項覆蓋表</a><a href="BUG修復與待補清單.html">BUG／待補</a><a href="完整測試及驗收報告.html">測試報告</a></nav><p class="note">0.7.3獨立測試版已依使用者授權發布至GitHub測試子網址，尚未整版驗收通過。正式母檔與0.7.2正式入口保持不變。尚缺資料的功能仍列待補，未冒充完成。</p><p><a href="https://a03697ss1.github.io/jiuzhou-rpg/preview/v0.7.3/">開啟GitHub 0.7.3獨立測試版</a></p><div class="summary"><div>施工項目：38</div><div>新增測試：98／98</div><div>既有回歸：95／95</div><div>長右固定種子：16／16<br>15～18回合</div></div><h2>測試結果與界限</h2><p>共193項自動化檢查通過（新增98＋既有回歸95）。另有16組BOSS解析器實戰、1場UI自動戰鬥、4尺寸畫面及單檔離線驗證。這些是工程證據；38項完整功能與數值平衡尚未取得玩家驗收。</p><h2>長右BOSS</h2><p>固定種子1732～1739，沈玄川／柳清妍各8組，正式NPC八核＋測試999原始八核、不喝藥、不加作弊傷害；全部15～18回合獲勝。實際點擊自動戰鬥第16回合通過第二階段並獲勝。50%鎖血2250、MP1200、首動轟雷、次動洪水、潮濕優先潮閃引雷、硬控免疫另有單項檢查。</p><p>此結果只對候選八核及此隊伍／操作有效，不保證所有玩家配置都能30回合擊殺；長右獨立隱藏值與正式戰力仍待定。</p><p><a href="長右30回合實戰資料.json">16組完整戰鬥資料</a>　<a href="長右實際自動戰鬥驗收.json">UI實戰紀錄</a></p><img src="長右戰鬥畫面.png" alt="長右完整戰鬥畫面"><h2>新增流程與既有回歸</h2><ul><li>舊主線：31／31檢查。<a href="r1011-reg-main-results.json">原始結果</a></li><li>舊支線：21／21檢查。<a href="reg-sides-results.json">原始結果</a></li><li>舊25委託：25／25檢查。<a href="reg-commissions-results.json">原始結果</a></li><li>既有系統：18／18檢查。<a href="reg-systems-results.json">原始結果</a></li></ul><p>原28段主線、12條支線、25委託由原回歸腳本在本輪新HTML實際走流程。舊工作檔只作測試用存檔種子，沒有作施工底稿。</p><h2>本次補充B線與兩項機率</h2><p>033B三處調查六種順序、林夏于追擊離隊、九珠陰雷強制首動／免費特殊結算、滿貫丹實際服下才恢復、三波每場結算與失敗續接、036B調查傳送陣與五人會合，皆有逐項測試。另實際連續從032選B到038長右結算；此流程案例使用隔離角色提高八核以滿足地圖門檻，只驗收流程，不能當作平衡結論。</p><p><a href="B線與補充定案測試結果.json">本次完整測試結果</a>　<a href="B線完整對話805節點.txt">B線805節點文字</a>　<a href="補充定案_修為與問道.json">修為與問道補充規則</a></p><img src="B線九珠陰雷戰鬥畫面.png" alt="B線九珠陰雷劇情戰"><h2>本次A線與NPC公式補完</h2><p>A線709節點原稿已接入，實際從032選A、033A兩場戰鬥、034A固定火紅蓮必敗與免費寵物復原、035A陸景和救援／命符／無戰利品黑衣人戰、036A四人入窟會合，再到037／038長右結算，保留A線專屬物品與紀錄且不完成B線。</p><p>問道測試包含80組正式NPC基線、築基及金丹九層、五種可抽品質及弱者通用品質、八流派／額外效果、每核獨立±5%、1200個完整合法對手、八流派各20000次武器抽樣、100000次裝備品質抽樣及缺品質重新分配。實際1V1勝利發33點，連勝結算最高37、失敗歸0；禁止道具／戰前效果／逃跑，存檔後對手不重抽。</p><p>NPC品質只乘自身基線，裝備只加成品記錄值一次。普通1／優良1.1／精品1.2／珍稀1.35／極品1.5／完美1.7僅保存未來候選，未改玩家裝備或成品能力。</p><p><a href="A線與NPC公式測試結果.json">A線／NPC完整測試結果</a>　<a href="A線完整對話709節點.txt">A線709節點原稿</a>　<a href="NPC通用生成正式資料.json">NPC正式生成資料與候選表</a></p><img src="A線必敗戰結算.png" alt="A線必敗戰結算"><img src="問道跨境界戰實際結算.png" alt="問道跨境界戰結算"><h2>全部新增測項</h2><details><summary>✓ L38 載入、版本與存檔隔離</summary><pre>{
   &quot;version&quot;: &quot;0.7.3&quot;,
   &quot;title&quot;: &quot;九州修仙錄 0.7.3 獨立測試&quot;,
   &quot;prefix&quot;: &quot;jz073-independent-20261017:&quot;,
@@ -2681,7 +2681,7 @@
       &quot;loadout&quot;: [
         &quot;纏繞&quot;
       ],
-      &quot;v3TouchId&quot;: &quot;26e6f452-3bbc-4be3-95ef-299eb933c67c&quot;
+      &quot;v3TouchId&quot;: &quot;b2fb7231-8bd7-4d8e-bfe6-e8a74a2c8d2d&quot;
     },
     &quot;maxhp&quot;: 78,
     &quot;maxmp&quot;: 34,
@@ -4773,7 +4773,7 @@
   }
 }</pre></details><details><summary>✓ L30 問道入口開放、金丹停用；預覽保密及問道令只可重抽一次</summary><pre>{
   &quot;enabled&quot;: true,
-  &quot;text&quot;: &quot;對手境界：築基圓滿。詳細戰鬥資訊於開戰後揭示。開始戰鬥問道令×1・重抽一次返回&quot;,
+  &quot;text&quot;: &quot;對手境界：築基八層。詳細戰鬥資訊於開戰後揭示。開始戰鬥問道令×1・重抽一次返回&quot;,
   &quot;different&quot;: true,
   &quot;spent&quot;: 1,
   &quot;same&quot;: true,
@@ -4783,11 +4783,11 @@
     &quot;team&quot;: [
       &quot;player&quot;
     ],
-    &quot;enemyRealm&quot;: &quot;金丹七層&quot;,
+    &quot;enemyRealm&quot;: &quot;金丹二層&quot;,
     &quot;mode&quot;: &quot;cross&quot;,
     &quot;noRun&quot;: true,
     &quot;items&quot;: null,
-    &quot;ui&quot;: &quot;\n    詳細戰鬥資訊測試999其他資訊氣血 10000/10018靈力 500/508攻 5004道 5001防 9道防 9身 10000命 10004境界 築基一層戰力 45344主靈根：水Buff無Debuff無問道修士其他資訊氣血 2847/2847靈力 1820/1820攻 247道 261防 160道防 184身 193命 174境界 金丹七層戰力 2685主靈根：雷Buff無Debuff無\n      \n      \n      敵方\n      \n    \n    \n\n    \n      問道修士\n    \n\n    \n      \n        氣血\n        \n        2847/2847\n      \n      \n        靈力\n        \n        1820/1820\n      \n    \n\n    後排1\n  \n      空位\n      後排2\n    \n      空位\n      前排1\n    \n      空位\n      前排2\n    \n      我方\n      \n    \n    \n\n    \n      測試999\n    \n\n    \n      \n        氣血\n        \n        10000/10018\n      \n      \n        靈力\n        \n        500/508\n      \n    \n\n    前排1\n  \n      空位\n      前排2\n    \n      空位\n      後排1\n    \n      空位\n      後排2\n    \n    \n    \n\n    \n    普攻\n    功法\n    背包\n    防禦\n    逃跑\n    自動戰鬥速度 1.0×1.5×\n  \n\n    \n      第 1 回合一般戰鬥\n      \n        行動順序\n        ▶ 測試9992 問道修士\n      \n      \n        戰鬥日誌\n        問道檯・境界相符戰輪到測試999行動。\n      \n    \n\n    主戰場 1300×800 / 中心 X=650\n    底部操作區 1300×100\n    右側資訊區 300×900\n  &quot;
+    &quot;ui&quot;: &quot;\n    詳細戰鬥資訊測試999其他資訊氣血 10000/10018靈力 500/508攻 5004道 5001防 9道防 9身 10000命 10004境界 築基一層戰力 45344主靈根：火Buff無Debuff無問道修士其他資訊氣血 1457/1457靈力 994/994攻 100道 142防 88道防 104身 103命 98境界 金丹二層戰力 1360主靈根：木Buff無Debuff無\n      \n      \n      敵方\n      \n    \n    \n\n    \n      問道修士\n    \n\n    \n      \n        氣血\n        \n        1457/1457\n      \n      \n        靈力\n        \n        994/994\n      \n    \n\n    後排1\n  \n      空位\n      後排2\n    \n      空位\n      前排1\n    \n      空位\n      前排2\n    \n      我方\n      \n    \n    \n\n    \n      測試999\n    \n\n    \n      \n        氣血\n        \n        10000/10018\n      \n      \n        靈力\n        \n        500/508\n      \n    \n\n    前排1\n  \n      空位\n      前排2\n    \n      空位\n      後排1\n    \n      空位\n      後排2\n    \n    \n    \n\n    \n    普攻\n    功法\n    背包\n    防禦\n    逃跑\n    自動戰鬥速度 1.0×1.5×\n  \n\n    \n      第 1 回合一般戰鬥\n      \n        行動順序\n        ▶ 測試9992 問道修士\n      \n      \n        戰鬥日誌\n        問道檯・境界相符戰輪到測試999行動。\n      \n    \n\n    主戰場 1300×800 / 中心 X=650\n    底部操作區 1300×100\n    右側資訊區 300×900\n  &quot;
   },
   &quot;points&quot;: 33,
   &quot;streak&quot;: 1,
@@ -4795,17 +4795,18 @@
   &quot;previewRemaining&quot;: false,
   &quot;hp&quot;: 10000,
   &quot;mp&quot;: 500,
-  &quot;realm&quot;: &quot;金丹七層&quot;,
+  &quot;realm&quot;: &quot;金丹二層&quot;,
   &quot;skills&quot;: [
-    &quot;小周天回流&quot;,
-    &quot;擾神訣&quot;,
-    &quot;散元訣&quot;,
-    &quot;照心訣&quot;,
-    &quot;驚神震&quot;,
-    &quot;震膽喝聲&quot;,
-    &quot;定息養元&quot;,
-    &quot;封生絕脈&quot;,
-    &quot;渡氣療傷&quot;
+    &quot;燃脈聚氣&quot;,
+    &quot;攝膽訣&quot;,
+    &quot;落葉覆陣&quot;,
+    &quot;振氣決&quot;,
+    &quot;赤焰連珠&quot;,
+    &quot;蝕靈小印&quot;,
+    &quot;荊棘雙纏&quot;,
+    &quot;遮眼砂&quot;,
+    &quot;清葉辟毒&quot;,
+    &quot;調息回靈&quot;
   ],
   &quot;round&quot;: 1
 }</pre></details><details><summary>✓ L30 跨境連勝加成上限37、敗北連勝歸0且不發野外獎勵</summary><pre>{
@@ -5023,7 +5024,7 @@
       &quot;win&quot;: true
     },
     {
-      &quot;round&quot;: 3,
+      &quot;round&quot;: 2,
       &quot;win&quot;: true
     },
     {
@@ -5045,7 +5046,7 @@
   ],
   &quot;bChat&quot;: false,
   &quot;boss&quot;: {
-    &quot;round&quot;: 15,
+    &quot;round&quot;: 14,
     &quot;phase&quot;: 2,
     &quot;win&quot;: true
   },
@@ -5067,6 +5068,26 @@
   &quot;pets&quot;: true,
   &quot;gear&quot;: true,
   &quot;cross&quot;: true
+}</pre></details><details><summary>✓ L36 NPC品質裝備記錄隨對手保存，重載後成品效果不遺失且不改玩家庫存</summary><pre>{
+  &quot;snapshot&quot;: {
+    &quot;atk&quot;: 37,
+    &quot;hit&quot;: 4,
+    &quot;source&quot;: &quot;玩家煉器&quot;,
+    &quot;slot&quot;: &quot;武&quot;,
+    &quot;quality&quot;: &quot;精品&quot;,
+    &quot;effect&quot;: &quot;隔離成品記錄&quot;
+  },
+  &quot;restored&quot;: {
+    &quot;atk&quot;: 37,
+    &quot;hit&quot;: 4,
+    &quot;source&quot;: &quot;玩家煉器&quot;,
+    &quot;slot&quot;: &quot;武&quot;,
+    &quot;quality&quot;: &quot;精品&quot;,
+    &quot;effect&quot;: &quot;隔離成品記錄&quot;
+  },
+  &quot;same&quot;: true,
+  &quot;inventory&quot;: true,
+  &quot;fixture&quot;: &quot;只在隔離案例提供一筆已有最終數值的成品，驗證記錄保存；未新增至遊戲正式庫。&quot;
 }</pre></details><details><summary>✓ L36 A線交談中與問道對手存檔重載保持一致</summary><pre>{
   &quot;a&quot;: {
     &quot;section&quot;: &quot;035A-rescue&quot;,
@@ -5077,7 +5098,7 @@
   &quot;cross&quot;: {
     &quot;equal&quot;: true
   }
-}</pre></details><h2>離線與畫面</h2><p>單檔500865091位元組（約477.7 MiB），file://開啟且封鎖HTTP/HTTPS；0外網請求、0頁面執行錯誤，14張新圖皆為內嵌且成功解碼。四視窗1440×1000、1024×768、768×1024、390×844確認特殊／高危／高危特角尾叉可見、頁面無水平溢出。390寬沿既有全景縮放，並非新增手機版佈局。</p><p><a href="單檔離線驗收.json">離線結果</a>　<a href="四尺寸畫面驗收.json">四尺寸紀錄</a></p><img src="東州新地圖.png" alt="新東州地圖"><img src="圖鑑素材反查.png" alt="火尾毛來源反查"><h2>正式檔保護</h2><p>正式main仍為a420a7772dcbb75de52b87c6e2628fa87937495a，正式工作目錄乾淨；下列五檔SHA-256前後一致。只建立本地test/v0.7.3-20261017分支，尚未commit或push，未變更GitHub設定或發布。</p><pre>[
+}</pre></details><h2>離線與畫面</h2><p>單檔500865595位元組（約477.7 MiB），file://開啟且封鎖HTTP/HTTPS；0外網請求、0頁面執行錯誤，14張新圖皆為內嵌且成功解碼。四視窗1440×1000、1024×768、768×1024、390×844確認特殊／高危／高危特角尾叉可見、頁面無水平溢出。390寬沿既有全景縮放，並非新增手機版佈局。</p><p><a href="單檔離線驗收.json">離線結果</a>　<a href="四尺寸畫面驗收.json">四尺寸紀錄</a></p><img src="東州新地圖.png" alt="新東州地圖"><img src="圖鑑素材反查.png" alt="火尾毛來源反查"><h2>正式檔保護</h2><p>正式母檔基準為a420a7772dcbb75de52b87c6e2628fa87937495a；GitHub主分支另增加獨立測試子目錄提交，正式入口與五個受保護檔案未變。下列五檔SHA-256前後一致。已另提交並推送preview/v0.7.3測試子目錄；未變更Pages設定或正式遊戲版本。遊戲內容提交：9b2f328aa80ffb4725b36c85b50ebb41834d22b4</p><pre>[
   {
     &quot;path&quot;: &quot;九州修仙錄_測試分支.html&quot;,
     &quot;bytes&quot;: 452436272,
@@ -5116,26 +5137,37 @@
 ]</pre><h2>交付檔驗證</h2><pre>{
   &quot;version&quot;: &quot;0.7.3&quot;,
   &quot;phase&quot;: &quot;獨立測試／尚未玩家驗收／未發布&quot;,
-  &quot;createdAt&quot;: &quot;2026-10-17T22:17:41+08:00&quot;,
+  &quot;createdAt&quot;: &quot;2026-10-17T22:24:08+08:00&quot;,
   &quot;branch&quot;: &quot;test/v0.7.3-20261017&quot;,
   &quot;baseCommit&quot;: &quot;a420a7772dcbb75de52b87c6e2628fa87937495a&quot;,
   &quot;baselineHtmlSha256&quot;: &quot;58ce74be8922d4d0bc5e702fde0ebc8823649f560f00d12c8d843a5954a3ca50&quot;,
   &quot;game&quot;: {
     &quot;name&quot;: &quot;index.html&quot;,
-    &quot;bytes&quot;: 500865091,
-    &quot;sha256&quot;: &quot;a76c17ab8f2a35cd097bda9643e14d6078ada2281f3f6c32ea4c6e98ff989820&quot;
+    &quot;bytes&quot;: 500865595,
+    &quot;sha256&quot;: &quot;86f64432ea4e30cf110eaaa5c12cf7c5997e2419542ae8bad07ed4529d02528a&quot;
   },
   &quot;formalFilesUnchanged&quot;: true,
   &quot;formalWorktreeClean&quot;: true,
-  &quot;published&quot;: false,
-  &quot;committed&quot;: false,
-  &quot;publication&quot;: null,
+  &quot;published&quot;: true,
+  &quot;committed&quot;: true,
+  &quot;publication&quot;: {
+    &quot;kind&quot;: &quot;independent-preview&quot;,
+    &quot;url&quot;: &quot;https://a03697ss1.github.io/jiuzhou-rpg/preview/v0.7.3/&quot;,
+    &quot;path&quot;: &quot;preview/v0.7.3&quot;,
+    &quot;branch&quot;: &quot;main&quot;,
+    &quot;gameCommit&quot;: &quot;9b2f328aa80ffb4725b36c85b50ebb41834d22b4&quot;,
+    &quot;publishedAt&quot;: &quot;2026-10-17T22:19:49+08:00&quot;,
+    &quot;formalVersion&quot;: &quot;0.7.2&quot;,
+    &quot;formalEntryUnchanged&quot;: true,
+    &quot;changedOnlyPreview&quot;: true,
+    &quot;indexSha256&quot;: &quot;275600c8763c52d6c8ff0d03f65c563276d9607a5d6f79890e6a142660fb5408&quot;
+  },
   &quot;coverageCounts&quot;: {
     &quot;已實裝&quot;: 31,
     &quot;部分實裝&quot;: 7
   },
-  &quot;newChecks&quot;: 97,
-  &quot;newPassed&quot;: 97,
+  &quot;newChecks&quot;: 98,
+  &quot;newPassed&quot;: 98,
   &quot;regression&quot;: [
     {
       &quot;name&quot;: &quot;舊主線&quot;,
