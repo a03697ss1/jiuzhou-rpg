@@ -3,10 +3,11 @@
   "url": "https://a03697ss1.github.io/jiuzhou-rpg/preview/v0.7.3/",
   "path": "preview/v0.7.3",
   "branch": "main",
-  "gameCommit": "9b2f328aa80ffb4725b36c85b50ebb41834d22b4",
-  "publishedAt": "2026-10-17T22:19:49+08:00",
+  "gameCommit": "bc05bef0749d5881198883520581a3c800b38c20",
+  "deploymentCommit": "bc05bef0749d5881198883520581a3c800b38c20",
+  "publishedAt": "2026-10-17T22:24:20+08:00",
   "formalVersion": "0.7.2",
   "formalEntryUnchanged": true,
   "changedOnlyPreview": true,
-  "indexSha256": "275600c8763c52d6c8ff0d03f65c563276d9607a5d6f79890e6a142660fb5408"
+  "indexSha256": "cc17a72d22efb68a759dce6c2b5e95b89c4d4cf455690eff9c93130ccd02f468"
 }
