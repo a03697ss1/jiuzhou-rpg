@@ -1,0 +1,15 @@
+(function(){'use strict';const N=JZ073,R=JZR;
+N.cultFloor10={'一般種':1,'特殊種':2,'高危種':4,'高危種（特）':5,'高危種(特)':5,'妖王種':8,'神獸種':15,'災獸種':15};
+const kind=N.kind;N.kind=e=>e.hostileKind||kind(e);
+const exp=N.expFor;N.expFor=(enemy,realm)=>{const diff=N.realmIndex(enemy.realm)-N.realmIndex(realm);if(diff<=-11)return 0;if(diff===-10){const k=N.kind(enemy);if(Object.hasOwn(N.cultFloor10,k))return N.cultFloor10[k];if(['山賊','盜賊','逃犯','海盜','邪修','劫修','魔修','殺手','邪教徒','叛宗弟子','長老級','道祖級'].includes(k))return Math.ceil(N.kindMult[k]);return null;}return exp(enemy,realm);};
+N.crossParameters.rootBands=[[80,140,55],[141,190,30],[191,230,12],[231,250,3]];
+N.crossParameters.weaponPreferredWeight=70;N.crossParameters.weaponOtherWeight=30;
+N.crossParameters.unconfirmed=['完整NPC境界基線／品質倍率／八流派倍率原表','正式八流派武器偏好對照表'];
+N.crossMainRootValue=(rng=Math.random)=>{const row=N.choose(N.crossParameters.rootBands,rng,r=>r[2]);return row[0]+Math.floor(rng()*(row[1]-row[0]+1));};
+N.crossRoots=(rng=Math.random)=>N.crossRootShape(N.crossMainRootValue(rng),rng()<.3,rng);
+N.crossWeapon=(legalWeapons,preferredWeapons,rng=Math.random)=>{const legal=[...new Set(legalWeapons)],preferred=legal.filter(n=>preferredWeapons.includes(n)),other=legal.filter(n=>!preferredWeapons.includes(n));let pool=preferred.length&&other.length?(rng()<.7?preferred:other):preferred.length?preferred:other;return pool.length?pool[Math.floor(rng()*pool.length)]:null;};
+const open=JZW.openWendao;JZW.openWendao=function(){const out=open.apply(this,arguments);for(const button of document.querySelectorAll('#modalBody button'))if(button.textContent.includes('跨境界戰'))button.title='主根分段與武器偏好機率已補齊；仍缺正式NPC境界基線、品質／流派倍率及偏好對照表。';return out;};
+N.pending=N.pending.filter(x=>!['修為非一般種差10級','問道兩項抽選機率'].includes(x.id));
+N.note('L27','已實裝','差10級按一般1／特殊2／高危4／高危特5／妖王8／神獸與災獸15保底；12類敵對人形倍率向上取整；差11級全部0，各出戰角色獨立結算。');
+N.note('L30','部分實裝','主根四段55／30／12／3及合法武器偏好70／30已補齊並參數化；仍缺通用NPC八核、品質、八流派倍率與偏好表，跨境對手實戰暫鎖。');
+})();
