@@ -1,0 +1,1590 @@
+{
+  "results": [
+    {
+      "id": "CQ-DZ-001",
+      "pass": true,
+      "detail": {
+        "claimed": true,
+        "rep": 2,
+        "closed": "empty",
+        "receipt": {
+          "id": "CQ-DZ-001-1",
+          "type": "委託",
+          "title": "可怕的狼！",
+          "reward": "聲望＋2、修為＋15、靈幣＋100、不同項目3選2：［一階］皮毛×1／［一階］獸骨×1／［一階］獸牙×1",
+          "gains": [
+            "靈幣＋100",
+            "修為＋15",
+            "［一階］獸骨×1",
+            "［一階］皮毛×1"
+          ],
+          "at": 2640
+        },
+        "rewardItems": []
+      },
+      "pending": {
+        "done": true,
+        "claimed": false
+      },
+      "rewardExact": true,
+      "once": true,
+      "rewardBefore": {
+        "coins": 100004,
+        "cult": 2,
+        "rep": 0,
+        "items": {
+          "［一階］獸牙": 1,
+          "［一階］獸骨": 3,
+          "［無階］新手劍": 1,
+          "［無階］新手項鍊": 1,
+          "［無階］新手戒指": 1,
+          "［初階］粗布頭盔": 1
+        }
+      },
+      "rewardAfter": {
+        "coins": 100104,
+        "cult": 17,
+        "rep": 2,
+        "items": {
+          "［一階］獸牙": 1,
+          "［一階］獸骨": 4,
+          "［一階］皮毛": 1,
+          "［無階］新手劍": 1,
+          "［無階］新手項鍊": 1,
+          "［無階］新手戒指": 1,
+          "［初階］粗布頭盔": 1
+        }
+      },
+      "expectedItems": [
+        [
+          "［一階］皮毛",
+          1,
+          "materials"
+        ],
+        [
+          "［一階］獸骨",
+          1,
+          "materials"
+        ]
+      ]
+    },
+    {
+      "id": "CQ-DZ-002",
+      "pass": true,
+      "detail": {
+        "claimed": true,
+        "rep": 2,
+        "closed": "empty",
+        "receipt": {
+          "id": "CQ-DZ-002-1",
+          "type": "委託",
+          "title": "我愛甲殼！甲殼愛我！",
+          "reward": "聲望＋2、靈幣＋50、［一階］毒囊×1",
+          "gains": [
+            "靈幣＋50",
+            "［一階］毒囊×1"
+          ],
+          "at": 2599
+        },
+        "rewardItems": [
+          {
+            "n": "［一階］毒囊",
+            "expected": 1,
+            "count": 1
+          }
+        ]
+      },
+      "pending": {
+        "done": true,
+        "claimed": false
+      },
+      "rewardExact": true,
+      "once": true,
+      "rewardBefore": {
+        "coins": 100000,
+        "cult": 0,
+        "rep": 0,
+        "items": {
+          "［無階］新手劍": 1,
+          "［無階］新手項鍊": 1,
+          "［無階］新手戒指": 1,
+          "［初階］粗布頭盔": 1
+        }
+      },
+      "rewardAfter": {
+        "coins": 100050,
+        "cult": 0,
+        "rep": 2,
+        "items": {
+          "［一階］毒囊": 1,
+          "［無階］新手劍": 1,
+          "［無階］新手項鍊": 1,
+          "［無階］新手戒指": 1,
+          "［初階］粗布頭盔": 1
+        }
+      },
+      "expectedItems": [
+        [
+          "［一階］毒囊",
+          1,
+          "materials"
+        ]
+      ]
+    },
+    {
+      "id": "CQ-DZ-003",
+      "pass": true,
+      "detail": {
+        "claimed": true,
+        "rep": 2,
+        "closed": "empty",
+        "receipt": {
+          "id": "CQ-DZ-003-1",
+          "type": "委託",
+          "title": "可怕的蛇！",
+          "reward": "聲望＋2、修為＋15、靈幣＋100、不同項目2選1：［一階］蛇鱗×1／［一階］獸牙×1",
+          "gains": [
+            "靈幣＋100",
+            "修為＋15",
+            "［一階］蛇鱗×1"
+          ],
+          "at": 2643
+        },
+        "rewardItems": []
+      },
+      "pending": {
+        "done": true,
+        "claimed": false
+      },
+      "rewardExact": true,
+      "once": true,
+      "rewardBefore": {
+        "coins": 100004,
+        "cult": 2,
+        "rep": 0,
+        "items": {
+          "［一階］殘缺妖丹": 2,
+          "［一階］蛇鱗": 1,
+          "［無階］新手劍": 1,
+          "［無階］新手項鍊": 1,
+          "［無階］新手戒指": 1,
+          "［初階］粗布頭盔": 1
+        }
+      },
+      "rewardAfter": {
+        "coins": 100104,
+        "cult": 17,
+        "rep": 2,
+        "items": {
+          "［一階］殘缺妖丹": 2,
+          "［一階］蛇鱗": 2,
+          "［無階］新手劍": 1,
+          "［無階］新手項鍊": 1,
+          "［無階］新手戒指": 1,
+          "［初階］粗布頭盔": 1
+        }
+      },
+      "expectedItems": [
+        [
+          "［一階］蛇鱗",
+          1,
+          "materials"
+        ]
+      ]
+    },
+    {
+      "id": "CQ-DZ-004",
+      "pass": true,
+      "detail": {
+        "claimed": true,
+        "rep": 2,
+        "closed": "empty",
+        "receipt": {
+          "id": "CQ-DZ-004-1",
+          "type": "委託",
+          "title": "可怕的蟲！",
+          "reward": "聲望＋2、修為＋15、靈幣＋100、不同項目2選1：［一階］硬蟲甲×1／［一階］毒囊×1",
+          "gains": [
+            "靈幣＋100",
+            "修為＋15",
+            "［一階］硬蟲甲×1"
+          ],
+          "at": 2631
+        },
+        "rewardItems": []
+      },
+      "pending": {
+        "done": true,
+        "claimed": false
+      },
+      "rewardExact": true,
+      "once": true,
+      "rewardBefore": {
+        "coins": 100012,
+        "cult": 2,
+        "rep": 0,
+        "items": {
+          "［一階］殘魂": 1,
+          "［一階］硬蟲甲": 2,
+          "［無階］新手劍": 1,
+          "［無階］新手項鍊": 1,
+          "［無階］新手戒指": 1,
+          "［初階］粗布頭盔": 1
+        }
+      },
+      "rewardAfter": {
+        "coins": 100112,
+        "cult": 17,
+        "rep": 2,
+        "items": {
+          "［一階］殘魂": 1,
+          "［一階］硬蟲甲": 3,
+          "［無階］新手劍": 1,
+          "［無階］新手項鍊": 1,
+          "［無階］新手戒指": 1,
+          "［初階］粗布頭盔": 1
+        }
+      },
+      "expectedItems": [
+        [
+          "［一階］硬蟲甲",
+          1,
+          "materials"
+        ]
+      ]
+    },
+    {
+      "id": "CQ-DZ-005",
+      "pass": true,
+      "detail": {
+        "claimed": true,
+        "rep": 3,
+        "closed": "empty",
+        "receipt": {
+          "id": "CQ-DZ-005-1",
+          "type": "委託",
+          "title": "收集！",
+          "reward": "聲望＋3、靈幣＋150",
+          "gains": [
+            "靈幣＋150"
+          ],
+          "at": 2599
+        },
+        "rewardItems": []
+      },
+      "pending": {
+        "done": true,
+        "claimed": false
+      },
+      "rewardExact": true,
+      "once": true,
+      "rewardBefore": {
+        "coins": 100000,
+        "cult": 0,
+        "rep": 0,
+        "items": {
+          "［無階］新手劍": 1,
+          "［無階］新手項鍊": 1,
+          "［無階］新手戒指": 1,
+          "［初階］粗布頭盔": 1
+        }
+      },
+      "rewardAfter": {
+        "coins": 100150,
+        "cult": 0,
+        "rep": 3,
+        "items": {
+          "［無階］新手劍": 1,
+          "［無階］新手項鍊": 1,
+          "［無階］新手戒指": 1,
+          "［初階］粗布頭盔": 1
+        }
+      },
+      "expectedItems": []
+    },
+    {
+      "id": "CQ-DZ-006",
+      "pass": true,
+      "detail": {
+        "claimed": true,
+        "rep": 3,
+        "closed": "empty",
+        "receipt": {
+          "id": "CQ-DZ-006-1",
+          "type": "委託",
+          "title": "收集！",
+          "reward": "聲望＋3、靈幣＋250",
+          "gains": [
+            "靈幣＋250"
+          ],
+          "at": 2599
+        },
+        "rewardItems": []
+      },
+      "pending": {
+        "done": true,
+        "claimed": false
+      },
+      "rewardExact": true,
+      "once": true,
+      "rewardBefore": {
+        "coins": 100000,
+        "cult": 0,
+        "rep": 0,
+        "items": {
+          "［無階］新手劍": 1,
+          "［無階］新手項鍊": 1,
+          "［無階］新手戒指": 1,
+          "［初階］粗布頭盔": 1
+        }
+      },
+      "rewardAfter": {
+        "coins": 100250,
+        "cult": 0,
+        "rep": 3,
+        "items": {
+          "［無階］新手劍": 1,
+          "［無階］新手項鍊": 1,
+          "［無階］新手戒指": 1,
+          "［初階］粗布頭盔": 1
+        }
+      },
+      "expectedItems": []
+    },
+    {
+      "id": "CQ-DZ-007",
+      "pass": true,
+      "detail": {
+        "claimed": true,
+        "rep": 3,
+        "closed": "empty",
+        "receipt": {
+          "id": "CQ-DZ-007-1",
+          "type": "委託",
+          "title": "收集！",
+          "reward": "聲望＋3、靈幣＋200、不同項目7選3：［一階］破布×1／［一階］靈藥粉×1／［一階］精靈液×1／［一階］碧木芯×1／［一階］導靈粉×1／［一階］靈鐵錠×1／［一階］獸骨粉×1",
+          "gains": [
+            "靈幣＋200",
+            "［一階］破布×1",
+            "［一階］靈藥粉×1",
+            "［一階］精靈液×1"
+          ],
+          "at": 2599
+        },
+        "rewardItems": []
+      },
+      "pending": {
+        "done": true,
+        "claimed": false
+      },
+      "rewardExact": true,
+      "once": true,
+      "rewardBefore": {
+        "coins": 100000,
+        "cult": 0,
+        "rep": 0,
+        "items": {
+          "［無階］新手劍": 1,
+          "［無階］新手項鍊": 1,
+          "［無階］新手戒指": 1,
+          "［初階］粗布頭盔": 1
+        }
+      },
+      "rewardAfter": {
+        "coins": 100200,
+        "cult": 0,
+        "rep": 3,
+        "items": {
+          "［一階］破布": 1,
+          "［一階］靈藥粉": 1,
+          "［一階］精靈液": 1,
+          "［無階］新手劍": 1,
+          "［無階］新手項鍊": 1,
+          "［無階］新手戒指": 1,
+          "［初階］粗布頭盔": 1
+        }
+      },
+      "expectedItems": [
+        [
+          "［一階］破布",
+          1,
+          "materials"
+        ],
+        [
+          "［一階］靈藥粉",
+          1,
+          "materials"
+        ],
+        [
+          "［一階］精靈液",
+          1,
+          "materials"
+        ]
+      ]
+    },
+    {
+      "id": "CQ-DZ-008",
+      "pass": true,
+      "detail": {
+        "claimed": true,
+        "rep": 4,
+        "closed": "empty",
+        "receipt": {
+          "id": "CQ-DZ-008-1",
+          "type": "委託",
+          "title": "收集！",
+          "reward": "聲望＋4、靈幣＋500",
+          "gains": [
+            "靈幣＋500"
+          ],
+          "at": 2599
+        },
+        "rewardItems": []
+      },
+      "pending": {
+        "done": true,
+        "claimed": false
+      },
+      "rewardExact": true,
+      "once": true,
+      "rewardBefore": {
+        "coins": 100000,
+        "cult": 0,
+        "rep": 0,
+        "items": {
+          "［無階］新手劍": 1,
+          "［無階］新手項鍊": 1,
+          "［無階］新手戒指": 1,
+          "［初階］粗布頭盔": 1
+        }
+      },
+      "rewardAfter": {
+        "coins": 100500,
+        "cult": 0,
+        "rep": 4,
+        "items": {
+          "［無階］新手劍": 1,
+          "［無階］新手項鍊": 1,
+          "［無階］新手戒指": 1,
+          "［初階］粗布頭盔": 1
+        }
+      },
+      "expectedItems": []
+    },
+    {
+      "id": "CQ-DZ-009",
+      "pass": true,
+      "detail": {
+        "claimed": true,
+        "rep": 4,
+        "closed": "empty",
+        "receipt": {
+          "id": "CQ-DZ-009-1",
+          "type": "委託",
+          "title": "素材換藥水！",
+          "reward": "聲望＋4、不同項目2選1：［初階］氣血藥水×5／［初階］靈力藥水×5",
+          "gains": [
+            "［初階］氣血藥水×5"
+          ],
+          "at": 2599
+        },
+        "rewardItems": []
+      },
+      "pending": {
+        "done": true,
+        "claimed": false
+      },
+      "rewardExact": true,
+      "once": true,
+      "rewardBefore": {
+        "coins": 100000,
+        "cult": 0,
+        "rep": 0,
+        "items": {
+          "［無階］新手劍": 1,
+          "［無階］新手項鍊": 1,
+          "［無階］新手戒指": 1,
+          "［初階］粗布頭盔": 1
+        }
+      },
+      "rewardAfter": {
+        "coins": 100000,
+        "cult": 0,
+        "rep": 4,
+        "items": {
+          "［初階］氣血藥水": 5,
+          "［無階］新手劍": 1,
+          "［無階］新手項鍊": 1,
+          "［無階］新手戒指": 1,
+          "［初階］粗布頭盔": 1
+        }
+      },
+      "expectedItems": [
+        [
+          "［初階］氣血藥水",
+          5
+        ]
+      ]
+    },
+    {
+      "id": "CQ-DZ-010",
+      "pass": true,
+      "detail": {
+        "claimed": true,
+        "rep": 4,
+        "closed": "empty",
+        "receipt": {
+          "id": "CQ-DZ-010-1",
+          "type": "委託",
+          "title": "收集！",
+          "reward": "聲望＋4、靈幣＋750",
+          "gains": [
+            "靈幣＋750"
+          ],
+          "at": 2599
+        },
+        "rewardItems": []
+      },
+      "pending": {
+        "done": true,
+        "claimed": false
+      },
+      "rewardExact": true,
+      "once": true,
+      "rewardBefore": {
+        "coins": 100000,
+        "cult": 0,
+        "rep": 0,
+        "items": {
+          "［無階］新手劍": 1,
+          "［無階］新手項鍊": 1,
+          "［無階］新手戒指": 1,
+          "［初階］粗布頭盔": 1
+        }
+      },
+      "rewardAfter": {
+        "coins": 100750,
+        "cult": 0,
+        "rep": 4,
+        "items": {
+          "［無階］新手劍": 1,
+          "［無階］新手項鍊": 1,
+          "［無階］新手戒指": 1,
+          "［初階］粗布頭盔": 1
+        }
+      },
+      "expectedItems": []
+    },
+    {
+      "id": "CQ-DZ-011",
+      "pass": true,
+      "detail": {
+        "claimed": true,
+        "rep": 7,
+        "closed": "empty",
+        "receipt": {
+          "id": "CQ-DZ-011-1",
+          "type": "委託",
+          "title": "收集！",
+          "reward": "聲望＋7、靈幣＋1000、不同項目5選3：［初階］氣血藥水×10／［初階］靈力藥水×10／［特殊］自選一階材料箱×5／［特殊］自選一階妖物素材箱×5／功法殘卷×2",
+          "gains": [
+            "靈幣＋1000",
+            "［初階］氣血藥水×10",
+            "［初階］靈力藥水×10",
+            "［特殊］自選一階材料箱×5"
+          ],
+          "at": 2599
+        },
+        "rewardItems": []
+      },
+      "pending": {
+        "done": true,
+        "claimed": false
+      },
+      "rewardExact": true,
+      "once": true,
+      "rewardBefore": {
+        "coins": 100000,
+        "cult": 0,
+        "rep": 0,
+        "items": {
+          "［無階］新手劍": 1,
+          "［無階］新手項鍊": 1,
+          "［無階］新手戒指": 1,
+          "［初階］粗布頭盔": 1
+        }
+      },
+      "rewardAfter": {
+        "coins": 101000,
+        "cult": 0,
+        "rep": 7,
+        "items": {
+          "［初階］氣血藥水": 10,
+          "［初階］靈力藥水": 10,
+          "［特殊］自選一階材料箱": 5,
+          "［無階］新手劍": 1,
+          "［無階］新手項鍊": 1,
+          "［無階］新手戒指": 1,
+          "［初階］粗布頭盔": 1
+        }
+      },
+      "expectedItems": [
+        [
+          "［初階］氣血藥水",
+          10
+        ],
+        [
+          "［初階］靈力藥水",
+          10
+        ],
+        [
+          "［特殊］自選一階材料箱",
+          5
+        ]
+      ]
+    },
+    {
+      "id": "CQ-DZ-012",
+      "pass": true,
+      "detail": {
+        "claimed": true,
+        "rep": 7,
+        "closed": "empty",
+        "receipt": {
+          "id": "CQ-DZ-012-1",
+          "type": "委託",
+          "title": "收集！",
+          "reward": "聲望＋7、［特殊］綜合一階素材箱×3、功法殘卷×1",
+          "gains": [
+            "［特殊］綜合一階素材箱×3",
+            "功法殘卷×1"
+          ],
+          "at": 2599
+        },
+        "rewardItems": [
+          {
+            "n": "［特殊］綜合一階素材箱",
+            "expected": 3,
+            "count": 3
+          },
+          {
+            "n": "功法殘卷",
+            "expected": 1,
+            "count": 1
+          }
+        ]
+      },
+      "pending": {
+        "done": true,
+        "claimed": false
+      },
+      "rewardExact": true,
+      "once": true,
+      "rewardBefore": {
+        "coins": 100000,
+        "cult": 0,
+        "rep": 0,
+        "items": {
+          "［無階］新手劍": 1,
+          "［無階］新手項鍊": 1,
+          "［無階］新手戒指": 1,
+          "［初階］粗布頭盔": 1
+        }
+      },
+      "rewardAfter": {
+        "coins": 100000,
+        "cult": 0,
+        "rep": 7,
+        "items": {
+          "［特殊］綜合一階素材箱": 3,
+          "功法殘卷": 1,
+          "［無階］新手劍": 1,
+          "［無階］新手項鍊": 1,
+          "［無階］新手戒指": 1,
+          "［初階］粗布頭盔": 1
+        }
+      },
+      "expectedItems": [
+        [
+          "［特殊］綜合一階素材箱",
+          3
+        ],
+        [
+          "功法殘卷",
+          1,
+          "special"
+        ]
+      ]
+    },
+    {
+      "id": "CQ-DZ-013",
+      "pass": true,
+      "detail": {
+        "claimed": true,
+        "rep": 10,
+        "closed": "empty",
+        "receipt": {
+          "id": "CQ-DZ-013-1",
+          "type": "委託",
+          "title": "可怕的蝴蝶！",
+          "reward": "聲望＋10、修為＋30、靈幣＋500、［一階］殘魂×1、功法殘卷×2",
+          "gains": [
+            "靈幣＋500",
+            "修為＋30",
+            "［一階］殘魂×1",
+            "功法殘卷×2"
+          ],
+          "at": 2646
+        },
+        "rewardItems": [
+          {
+            "n": "［一階］殘魂",
+            "expected": 1,
+            "count": 1
+          },
+          {
+            "n": "功法殘卷",
+            "expected": 2,
+            "count": 2
+          }
+        ]
+      },
+      "pending": {
+        "done": true,
+        "claimed": false
+      },
+      "rewardExact": true,
+      "once": true,
+      "rewardBefore": {
+        "coins": 100004,
+        "cult": 2,
+        "rep": 0,
+        "items": {
+          "［一階］妖獸精血": 1,
+          "［一階］殘缺妖丹": 2,
+          "［無階］新手劍": 1,
+          "［無階］新手項鍊": 1,
+          "［無階］新手戒指": 1,
+          "［初階］粗布頭盔": 1
+        }
+      },
+      "rewardAfter": {
+        "coins": 100504,
+        "cult": 32,
+        "rep": 10,
+        "items": {
+          "［一階］妖獸精血": 1,
+          "［一階］殘缺妖丹": 2,
+          "［一階］殘魂": 1,
+          "功法殘卷": 2,
+          "［無階］新手劍": 1,
+          "［無階］新手項鍊": 1,
+          "［無階］新手戒指": 1,
+          "［初階］粗布頭盔": 1
+        }
+      },
+      "expectedItems": [
+        [
+          "［一階］殘魂",
+          1,
+          "materials"
+        ],
+        [
+          "功法殘卷",
+          2,
+          "special"
+        ]
+      ]
+    },
+    {
+      "id": "CQ-DZ-014",
+      "pass": true,
+      "detail": {
+        "claimed": true,
+        "rep": 10,
+        "closed": "empty",
+        "receipt": {
+          "id": "CQ-DZ-014-1",
+          "type": "委託",
+          "title": "收集！",
+          "reward": "聲望＋10、靈幣＋1000、功法殘卷×2",
+          "gains": [
+            "靈幣＋1000",
+            "功法殘卷×2"
+          ],
+          "at": 2599
+        },
+        "rewardItems": [
+          {
+            "n": "功法殘卷",
+            "expected": 2,
+            "count": 2
+          }
+        ]
+      },
+      "pending": {
+        "done": true,
+        "claimed": false
+      },
+      "rewardExact": true,
+      "once": true,
+      "rewardBefore": {
+        "coins": 100000,
+        "cult": 0,
+        "rep": 0,
+        "items": {
+          "［無階］新手劍": 1,
+          "［無階］新手項鍊": 1,
+          "［無階］新手戒指": 1,
+          "［初階］粗布頭盔": 1
+        }
+      },
+      "rewardAfter": {
+        "coins": 101000,
+        "cult": 0,
+        "rep": 10,
+        "items": {
+          "功法殘卷": 2,
+          "［無階］新手劍": 1,
+          "［無階］新手項鍊": 1,
+          "［無階］新手戒指": 1,
+          "［初階］粗布頭盔": 1
+        }
+      },
+      "expectedItems": [
+        [
+          "功法殘卷",
+          2,
+          "special"
+        ]
+      ]
+    },
+    {
+      "id": "CQ-DZ-015",
+      "pass": true,
+      "detail": {
+        "claimed": true,
+        "rep": 3,
+        "closed": "empty",
+        "receipt": {
+          "id": "CQ-DZ-015-1",
+          "type": "委託",
+          "title": "狡猾的狐狸！",
+          "reward": "聲望＋3、修為＋20、靈幣＋130、不同項目3選2：［一階］皮毛×1／［一階］獸骨×1／［一階］獸牙×1",
+          "gains": [
+            "靈幣＋130",
+            "修為＋20",
+            "［一階］獸骨×1",
+            "［一階］皮毛×1"
+          ],
+          "at": 2675
+        },
+        "rewardItems": []
+      },
+      "pending": {
+        "done": true,
+        "claimed": false
+      },
+      "rewardExact": true,
+      "once": true,
+      "rewardBefore": {
+        "coins": 100018,
+        "cult": 3,
+        "rep": 0,
+        "items": {
+          "［一階］獸牙": 3,
+          "［一階］獸骨": 1,
+          "［無階］新手劍": 1,
+          "［無階］新手項鍊": 1,
+          "［無階］新手戒指": 1,
+          "［初階］粗布頭盔": 1
+        }
+      },
+      "rewardAfter": {
+        "coins": 100148,
+        "cult": 23,
+        "rep": 3,
+        "items": {
+          "［一階］獸牙": 3,
+          "［一階］獸骨": 2,
+          "［一階］皮毛": 1,
+          "［無階］新手劍": 1,
+          "［無階］新手項鍊": 1,
+          "［無階］新手戒指": 1,
+          "［初階］粗布頭盔": 1
+        }
+      },
+      "expectedItems": [
+        [
+          "［一階］皮毛",
+          1,
+          "materials"
+        ],
+        [
+          "［一階］獸骨",
+          1,
+          "materials"
+        ]
+      ]
+    },
+    {
+      "id": "CQ-DZ-016",
+      "pass": true,
+      "detail": {
+        "claimed": true,
+        "rep": 3,
+        "closed": "empty",
+        "receipt": {
+          "id": "CQ-DZ-016-1",
+          "type": "委託",
+          "title": "可愛的小鳥！",
+          "reward": "聲望＋3、靈幣＋130、［一階］妖鳥羽×2",
+          "gains": [
+            "靈幣＋130",
+            "［一階］妖鳥羽×2"
+          ],
+          "at": 2599
+        },
+        "rewardItems": [
+          {
+            "n": "［一階］妖鳥羽",
+            "expected": 2,
+            "count": 2
+          }
+        ]
+      },
+      "pending": {
+        "done": true,
+        "claimed": false
+      },
+      "rewardExact": true,
+      "once": true,
+      "rewardBefore": {
+        "coins": 100000,
+        "cult": 0,
+        "rep": 0,
+        "items": {
+          "［無階］新手劍": 1,
+          "［無階］新手項鍊": 1,
+          "［無階］新手戒指": 1,
+          "［初階］粗布頭盔": 1
+        }
+      },
+      "rewardAfter": {
+        "coins": 100130,
+        "cult": 0,
+        "rep": 3,
+        "items": {
+          "［一階］妖鳥羽": 2,
+          "［無階］新手劍": 1,
+          "［無階］新手項鍊": 1,
+          "［無階］新手戒指": 1,
+          "［初階］粗布頭盔": 1
+        }
+      },
+      "expectedItems": [
+        [
+          "［一階］妖鳥羽",
+          2,
+          "materials"
+        ]
+      ]
+    },
+    {
+      "id": "CQ-DZ-017",
+      "pass": true,
+      "detail": {
+        "claimed": true,
+        "rep": 3,
+        "closed": "empty",
+        "receipt": {
+          "id": "CQ-DZ-017-1",
+          "type": "委託",
+          "title": "既可愛又可怕！",
+          "reward": "聲望＋3、修為＋20、靈幣＋130、［一階］蛛絲×2",
+          "gains": [
+            "靈幣＋130",
+            "修為＋20",
+            "［一階］蛛絲×2"
+          ],
+          "at": 2648
+        },
+        "rewardItems": [
+          {
+            "n": "［一階］蛛絲",
+            "expected": 2,
+            "count": 6
+          }
+        ]
+      },
+      "pending": {
+        "done": true,
+        "claimed": false
+      },
+      "rewardExact": true,
+      "once": true,
+      "rewardBefore": {
+        "coins": 100018,
+        "cult": 3,
+        "rep": 0,
+        "items": {
+          "［一階］蛛絲": 4,
+          "［無階］新手劍": 1,
+          "［無階］新手項鍊": 1,
+          "［無階］新手戒指": 1,
+          "［初階］粗布頭盔": 1
+        }
+      },
+      "rewardAfter": {
+        "coins": 100148,
+        "cult": 23,
+        "rep": 3,
+        "items": {
+          "［一階］蛛絲": 6,
+          "［無階］新手劍": 1,
+          "［無階］新手項鍊": 1,
+          "［無階］新手戒指": 1,
+          "［初階］粗布頭盔": 1
+        }
+      },
+      "expectedItems": [
+        [
+          "［一階］蛛絲",
+          2,
+          "materials"
+        ]
+      ]
+    },
+    {
+      "id": "CQ-DZ-018",
+      "pass": true,
+      "detail": {
+        "claimed": true,
+        "rep": 3,
+        "closed": "empty",
+        "receipt": {
+          "id": "CQ-DZ-018-1",
+          "type": "委託",
+          "title": "可怕的雷電！",
+          "reward": "聲望＋3、修為＋30、靈幣＋150、［二階］雷角×1、不同項目2選1：［一階］皮毛×2／［一階］獸骨×2",
+          "gains": [
+            "靈幣＋150",
+            "修為＋30",
+            "［一階］皮毛×2",
+            "［二階］雷角×1"
+          ],
+          "at": 2643
+        },
+        "rewardItems": [
+          {
+            "n": "［二階］雷角",
+            "expected": 1,
+            "count": 1
+          }
+        ]
+      },
+      "pending": {
+        "done": true,
+        "claimed": false
+      },
+      "rewardExact": true,
+      "once": true,
+      "rewardBefore": {
+        "coins": 100057,
+        "cult": 57,
+        "rep": 0,
+        "items": {
+          "［一階］獸骨": 2,
+          "［一階］皮毛": 1,
+          "［一階］雷角": 1,
+          "［無階］新手劍": 1,
+          "［無階］新手項鍊": 1,
+          "［無階］新手戒指": 1,
+          "［初階］粗布頭盔": 1
+        }
+      },
+      "rewardAfter": {
+        "coins": 100207,
+        "cult": 87,
+        "rep": 3,
+        "items": {
+          "［一階］獸骨": 2,
+          "［一階］皮毛": 3,
+          "［一階］雷角": 1,
+          "［二階］雷角": 1,
+          "［無階］新手劍": 1,
+          "［無階］新手項鍊": 1,
+          "［無階］新手戒指": 1,
+          "［初階］粗布頭盔": 1
+        }
+      },
+      "expectedItems": [
+        [
+          "［二階］雷角",
+          1,
+          "materials"
+        ],
+        [
+          "［一階］皮毛",
+          2,
+          "materials"
+        ]
+      ]
+    },
+    {
+      "id": "CQ-DZ-019",
+      "pass": true,
+      "detail": {
+        "claimed": true,
+        "rep": 3,
+        "closed": "empty",
+        "receipt": {
+          "id": "CQ-DZ-019-1",
+          "type": "委託",
+          "title": "胖嘟嘟的鯰魚！",
+          "reward": "聲望＋3、修為＋30、靈幣＋150、［一階］妖獸精血×1",
+          "gains": [
+            "靈幣＋150",
+            "修為＋30",
+            "［一階］妖獸精血×1"
+          ],
+          "at": 2615
+        },
+        "rewardItems": [
+          {
+            "n": "［一階］妖獸精血",
+            "expected": 1,
+            "count": 2
+          }
+        ]
+      },
+      "pending": {
+        "done": true,
+        "claimed": false
+      },
+      "rewardExact": true,
+      "once": true,
+      "rewardBefore": {
+        "coins": 100013,
+        "cult": 13,
+        "rep": 0,
+        "items": {
+          "［一階］妖獸精血": 1,
+          "［一階］殘缺妖丹": 1,
+          "［無階］新手劍": 1,
+          "［無階］新手項鍊": 1,
+          "［無階］新手戒指": 1,
+          "［初階］粗布頭盔": 1
+        }
+      },
+      "rewardAfter": {
+        "coins": 100163,
+        "cult": 43,
+        "rep": 3,
+        "items": {
+          "［一階］妖獸精血": 2,
+          "［一階］殘缺妖丹": 1,
+          "［無階］新手劍": 1,
+          "［無階］新手項鍊": 1,
+          "［無階］新手戒指": 1,
+          "［初階］粗布頭盔": 1
+        }
+      },
+      "expectedItems": [
+        [
+          "［一階］妖獸精血",
+          1,
+          "materials"
+        ]
+      ]
+    },
+    {
+      "id": "CQ-DZ-020",
+      "pass": true,
+      "detail": {
+        "claimed": true,
+        "rep": 3,
+        "closed": "empty",
+        "receipt": {
+          "id": "CQ-DZ-020-1",
+          "type": "委託",
+          "title": "奇怪的蛇！",
+          "reward": "聲望＋3、修為＋30、靈幣＋150、［二階］蛟鱗×1、［一階］獸牙×1",
+          "gains": [
+            "靈幣＋150",
+            "修為＋30",
+            "［二階］蛟鱗×1",
+            "［一階］獸牙×1"
+          ],
+          "at": 2629
+        },
+        "rewardItems": [
+          {
+            "n": "［二階］蛟鱗",
+            "expected": 1,
+            "count": 1
+          },
+          {
+            "n": "［一階］獸牙",
+            "expected": 1,
+            "count": 1
+          }
+        ]
+      },
+      "pending": {
+        "done": true,
+        "claimed": false
+      },
+      "rewardExact": true,
+      "once": true,
+      "rewardBefore": {
+        "coins": 100017,
+        "cult": 15,
+        "rep": 0,
+        "items": {
+          "［一階］蛟鱗": 1,
+          "［無階］新手劍": 1,
+          "［無階］新手項鍊": 1,
+          "［無階］新手戒指": 1,
+          "［初階］粗布頭盔": 1
+        }
+      },
+      "rewardAfter": {
+        "coins": 100167,
+        "cult": 45,
+        "rep": 3,
+        "items": {
+          "［一階］蛟鱗": 1,
+          "［二階］蛟鱗": 1,
+          "［一階］獸牙": 1,
+          "［無階］新手劍": 1,
+          "［無階］新手項鍊": 1,
+          "［無階］新手戒指": 1,
+          "［初階］粗布頭盔": 1
+        }
+      },
+      "expectedItems": [
+        [
+          "［二階］蛟鱗",
+          1,
+          "materials"
+        ],
+        [
+          "［一階］獸牙",
+          1,
+          "materials"
+        ]
+      ]
+    },
+    {
+      "id": "CQ-DZ-021",
+      "pass": true,
+      "detail": {
+        "claimed": true,
+        "rep": 4,
+        "closed": "empty",
+        "receipt": {
+          "id": "CQ-DZ-021-1",
+          "type": "委託",
+          "title": "收集！",
+          "reward": "聲望＋4、靈幣＋500",
+          "gains": [
+            "靈幣＋500"
+          ],
+          "at": 2599
+        },
+        "rewardItems": []
+      },
+      "pending": {
+        "done": true,
+        "claimed": false
+      },
+      "rewardExact": true,
+      "once": true,
+      "rewardBefore": {
+        "coins": 100000,
+        "cult": 0,
+        "rep": 0,
+        "items": {
+          "［無階］新手劍": 1,
+          "［無階］新手項鍊": 1,
+          "［無階］新手戒指": 1,
+          "［初階］粗布頭盔": 1
+        }
+      },
+      "rewardAfter": {
+        "coins": 100500,
+        "cult": 0,
+        "rep": 4,
+        "items": {
+          "［無階］新手劍": 1,
+          "［無階］新手項鍊": 1,
+          "［無階］新手戒指": 1,
+          "［初階］粗布頭盔": 1
+        }
+      },
+      "expectedItems": []
+    },
+    {
+      "id": "CQ-DZ-022",
+      "pass": true,
+      "detail": {
+        "claimed": true,
+        "rep": 7,
+        "closed": "empty",
+        "receipt": {
+          "id": "CQ-DZ-022-1",
+          "type": "委託",
+          "title": "急需靈幣",
+          "reward": "聲望＋7、［特殊］萬靈藥水×5、不同項目2選1：［初階］氣血藥水×50／［初階］靈力藥水×50",
+          "gains": [
+            "［初階］氣血藥水×50",
+            "［特殊］萬靈藥水×5"
+          ],
+          "at": 2599
+        },
+        "rewardItems": [
+          {
+            "n": "［特殊］萬靈藥水",
+            "expected": 5,
+            "count": 5
+          }
+        ]
+      },
+      "pending": {
+        "done": true,
+        "claimed": false
+      },
+      "rewardExact": true,
+      "once": true,
+      "rewardBefore": {
+        "coins": 97500,
+        "cult": 0,
+        "rep": 0,
+        "items": {
+          "［無階］新手劍": 1,
+          "［無階］新手項鍊": 1,
+          "［無階］新手戒指": 1,
+          "［初階］粗布頭盔": 1
+        }
+      },
+      "rewardAfter": {
+        "coins": 97500,
+        "cult": 0,
+        "rep": 7,
+        "items": {
+          "［初階］氣血藥水": 50,
+          "［特殊］萬靈藥水": 5,
+          "［無階］新手劍": 1,
+          "［無階］新手項鍊": 1,
+          "［無階］新手戒指": 1,
+          "［初階］粗布頭盔": 1
+        }
+      },
+      "expectedItems": [
+        [
+          "［特殊］萬靈藥水",
+          5
+        ],
+        [
+          "［初階］氣血藥水",
+          50
+        ]
+      ]
+    },
+    {
+      "id": "CQ-DZ-023",
+      "pass": true,
+      "detail": {
+        "claimed": true,
+        "rep": 10,
+        "closed": "empty",
+        "receipt": {
+          "id": "CQ-DZ-023-1",
+          "type": "委託",
+          "title": "不一樣的妖",
+          "reward": "聲望＋10、修為＋40、靈幣＋750、功法殘卷×3",
+          "gains": [
+            "靈幣＋750",
+            "修為＋40",
+            "功法殘卷×3"
+          ],
+          "at": 2617
+        },
+        "rewardItems": [
+          {
+            "n": "功法殘卷",
+            "expected": 3,
+            "count": 3
+          }
+        ]
+      },
+      "pending": {
+        "done": true,
+        "claimed": false
+      },
+      "rewardExact": true,
+      "once": true,
+      "rewardBefore": {
+        "coins": 100019,
+        "cult": 19,
+        "rep": 0,
+        "items": {
+          "［一階］獸骨": 1,
+          "［一階］殘缺妖丹": 1,
+          "［無階］新手劍": 1,
+          "［無階］新手項鍊": 1,
+          "［無階］新手戒指": 1,
+          "［初階］粗布頭盔": 1
+        }
+      },
+      "rewardAfter": {
+        "coins": 100769,
+        "cult": 59,
+        "rep": 10,
+        "items": {
+          "［一階］獸骨": 1,
+          "［一階］殘缺妖丹": 1,
+          "功法殘卷": 3,
+          "［無階］新手劍": 1,
+          "［無階］新手項鍊": 1,
+          "［無階］新手戒指": 1,
+          "［初階］粗布頭盔": 1
+        }
+      },
+      "expectedItems": [
+        [
+          "功法殘卷",
+          3,
+          "special"
+        ]
+      ]
+    },
+    {
+      "id": "CQ-DZ-024",
+      "pass": true,
+      "detail": {
+        "claimed": true,
+        "rep": 50,
+        "closed": "empty",
+        "receipt": {
+          "id": "CQ-DZ-024-1",
+          "type": "委託",
+          "title": "？？？",
+          "reward": "聲望＋50",
+          "gains": [],
+          "at": 2629
+        },
+        "rewardItems": []
+      },
+      "pending": {
+        "done": true,
+        "claimed": true
+      },
+      "rewardExact": true,
+      "once": true,
+      "rewardBefore": {
+        "coins": 100000,
+        "cult": 0,
+        "rep": 0,
+        "items": {
+          "［無階］新手劍": 1,
+          "［無階］新手項鍊": 1,
+          "［無階］新手戒指": 1,
+          "［初階］粗布頭盔": 1
+        }
+      },
+      "rewardAfter": {
+        "coins": 100000,
+        "cult": 0,
+        "rep": 50,
+        "items": {
+          "［無階］新手劍": 1,
+          "［無階］新手項鍊": 1,
+          "［無階］新手戒指": 1,
+          "［初階］粗布頭盔": 1
+        }
+      },
+      "expectedItems": []
+    },
+    {
+      "id": "CQ-DZ-025",
+      "pass": true,
+      "detail": {
+        "claimed": true,
+        "rep": 50,
+        "closed": "empty",
+        "receipt": {
+          "id": "CQ-DZ-025-1",
+          "type": "委託",
+          "title": "無字的紙",
+          "reward": "聲望＋50、修為＋100、［特殊］綜合一階素材箱×3、功法殘卷×2",
+          "gains": [
+            "修為＋100",
+            "［特殊］綜合一階素材箱×3",
+            "功法殘卷×2"
+          ],
+          "at": 2717
+        },
+        "rewardItems": [
+          {
+            "n": "［特殊］綜合一階素材箱",
+            "expected": 3,
+            "count": 3
+          },
+          {
+            "n": "功法殘卷",
+            "expected": 2,
+            "count": 2
+          }
+        ]
+      },
+      "pending": {
+        "done": true,
+        "claimed": true
+      },
+      "rewardExact": true,
+      "once": true,
+      "rewardBefore": {
+        "coins": 100018,
+        "cult": 3,
+        "rep": 0,
+        "items": {
+          "［一階］妖鳥羽": 5,
+          "［任務］無名靈印": 1,
+          "［無階］新手劍": 1,
+          "［無階］新手項鍊": 1,
+          "［無階］新手戒指": 1,
+          "［初階］粗布頭盔": 1
+        }
+      },
+      "rewardAfter": {
+        "coins": 100018,
+        "cult": 103,
+        "rep": 50,
+        "items": {
+          "［一階］妖鳥羽": 5,
+          "［任務］無名靈印": 1,
+          "［特殊］綜合一階素材箱": 3,
+          "功法殘卷": 2,
+          "［無階］新手劍": 1,
+          "［無階］新手項鍊": 1,
+          "［無階］新手戒指": 1,
+          "［初階］粗布頭盔": 1
+        }
+      },
+      "expectedItems": [
+        [
+          "［特殊］綜合一階素材箱",
+          3
+        ],
+        [
+          "功法殘卷",
+          2,
+          "special"
+        ]
+      ]
+    }
+  ],
+  "errors": []
+}

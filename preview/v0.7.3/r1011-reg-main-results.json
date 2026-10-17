@@ -1,0 +1,683 @@
+{
+  "results": [
+    {
+      "id": "tutorial1",
+      "pass": true,
+      "detail": {
+        "q": {
+          "id": "tutorial1",
+          "type": "主線",
+          "region": "東州",
+          "title": "入門教學1",
+          "desc": "依序查看冒險、背包、修煉、靈根、功法；五個介面皆查看完成後，點擊左側完成任務。",
+          "reward": "新手大禮包×1。",
+          "done": true,
+          "pinned": false,
+          "claimed": true,
+          "canonicalId": "MQ-DZ-001",
+          "progress": {}
+        }
+      }
+    },
+    {
+      "id": "tutorial2",
+      "pass": true,
+      "detail": {
+        "q": {
+          "id": "tutorial2",
+          "type": "主線",
+          "region": "東州",
+          "title": "入門教學2",
+          "desc": "打開背包 → ［消耗特殊］分頁 → 使用新手大禮包；穿戴［無階］新手護符後回報。",
+          "reward": "靈幣＋300、［初階］氣血藥水×2、［初階］靈力藥水×2、歷練×2。",
+          "pinned": false,
+          "done": true,
+          "claimed": true,
+          "canonicalId": "MQ-DZ-002"
+        },
+        "next": "tour"
+      }
+    },
+    {
+      "id": "tour",
+      "pass": true,
+      "detail": {
+        "q": {
+          "id": "tour",
+          "type": "主線",
+          "region": "東州",
+          "title": "初來乍到",
+          "desc": "回到冒險介面，分別點選布告欄、煉金爐、鑄造台、茶館、醫館、監牢設施並查看詳細資訊，完成後再回去找邱山河。",
+          "reward": "修為+30。",
+          "canonicalId": "MQ-DZ-003",
+          "pinned": false,
+          "done": true,
+          "claimed": true,
+          "acceptedAt": 480,
+          "progress": {},
+          "completedAt": 480
+        },
+        "next": "trainingQuest"
+      }
+    },
+    {
+      "id": "trainingQuest",
+      "pass": true,
+      "detail": {
+        "q": {
+          "id": "trainingQuest",
+          "type": "主線",
+          "region": "東州",
+          "title": "修煉",
+          "desc": "點選修練場，並完成一次修練，再回去找邱山河。",
+          "reward": "無獎勵。",
+          "canonicalId": "MQ-DZ-004",
+          "pinned": false,
+          "done": true,
+          "claimed": true,
+          "acceptedAt": 480,
+          "progress": {},
+          "completedAt": 720
+        },
+        "next": "firstBattle"
+      }
+    },
+    {
+      "id": "firstBattle",
+      "pass": true,
+      "detail": {
+        "q": {
+          "id": "firstBattle",
+          "type": "主線",
+          "region": "東州",
+          "title": "初次戰鬥",
+          "desc": "前往青陽鎮，尋找俠客－林夏于。 ",
+          "reward": "無獎勵。",
+          "canonicalId": "MQ-DZ-005",
+          "pinned": false,
+          "done": true,
+          "claimed": true,
+          "acceptedAt": 720,
+          "progress": {}
+        },
+        "next": "firstCombatEntry"
+      }
+    },
+    {
+      "id": "firstCombatEntry",
+      "pass": true,
+      "detail": {
+        "q": {
+          "id": "firstCombatEntry",
+          "type": "主線",
+          "region": "東州",
+          "title": "首次進入戰鬥",
+          "desc": "前往青陽山，點選遭遇妖物，戰勝後向夥伴介面的林夏于對話。",
+          "reward": "［無階］新手劍、［無階］新手刀、［無階］新手長槍、［無階］新手弓、［無階］新手拳套、［無階］新手錘、［無階］新手寶珠、［無階］新手扇、［無階］新手葫蘆、［無階］新手傘選擇其一。",
+          "canonicalId": "MQ-DZ-006",
+          "pinned": false,
+          "done": true,
+          "claimed": true,
+          "acceptedAt": 730,
+          "progress": {}
+        },
+        "next": "techQuest"
+      }
+    },
+    {
+      "id": "techQuest",
+      "pass": true,
+      "detail": {
+        "q": {
+          "id": "techQuest",
+          "type": "主線",
+          "region": "東州",
+          "title": "功法",
+          "desc": "打開功法介面，習得靈氣絕後向林夏于回報任務。",
+          "reward": "［初階］靈氣絕。",
+          "canonicalId": "MQ-DZ-007",
+          "pinned": false,
+          "done": true,
+          "claimed": true,
+          "acceptedAt": 760,
+          "progress": {},
+          "completedAt": 760
+        },
+        "next": "firstTry"
+      }
+    },
+    {
+      "id": "firstTry",
+      "pass": true,
+      "detail": {
+        "q": {
+          "id": "firstTry",
+          "type": "主線",
+          "region": "東州",
+          "title": "初次嘗試",
+          "desc": "點選遭遇妖物，並使用功法，［初階］靈氣絕攻擊青木狼一次，戰勝後向夥伴介面的林夏于對話。",
+          "reward": "修為+10。",
+          "canonicalId": "MQ-DZ-008",
+          "pinned": false,
+          "done": true,
+          "claimed": true,
+          "acceptedAt": 760,
+          "progress": {},
+          "completedAt": 775
+        },
+        "next": "itemUse"
+      }
+    },
+    {
+      "id": "itemUse",
+      "pass": true,
+      "detail": {
+        "q": {
+          "id": "itemUse",
+          "type": "主線",
+          "region": "東州",
+          "title": "道具的使用",
+          "desc": "點選遭遇妖物，使用防禦，讓青木狼攻擊一次，隨後點選物品，使用［初階］氣血藥水，戰勝後向夥伴介面的林夏于對話。",
+          "reward": "修為+25。",
+          "canonicalId": "MQ-DZ-009",
+          "pinned": false,
+          "done": true,
+          "claimed": true,
+          "acceptedAt": 775,
+          "progress": {},
+          "completedAt": 795
+        },
+        "next": "breakthrough"
+      }
+    },
+    {
+      "id": "breakthrough",
+      "pass": true,
+      "detail": {
+        "q": {
+          "id": "breakthrough",
+          "type": "主線",
+          "region": "東州",
+          "title": "突破",
+          "desc": "前往［修煉］介面進行突破，達到練氣二層。",
+          "reward": "［無階］新手項鍊、［無階］新手戒指。",
+          "canonicalId": "MQ-DZ-010",
+          "pinned": false,
+          "done": true,
+          "claimed": true,
+          "acceptedAt": 795,
+          "progress": {},
+          "completedAt": 795
+        },
+        "next": "returnCity"
+      }
+    },
+    {
+      "id": "returnCity",
+      "pass": true,
+      "detail": {
+        "q": {
+          "id": "returnCity",
+          "type": "主線",
+          "region": "東州",
+          "title": "返回主城",
+          "desc": "返回朝御城，找邱山河對話。",
+          "reward": "無獎勵。",
+          "canonicalId": "MQ-DZ-011",
+          "pinned": false,
+          "done": true,
+          "claimed": true,
+          "acceptedAt": 795,
+          "progress": {},
+          "completedAt": 820
+        },
+        "next": "confirmCult"
+      }
+    },
+    {
+      "id": "confirmCult",
+      "pass": true,
+      "detail": {
+        "q": {
+          "id": "confirmCult",
+          "type": "主線",
+          "region": "東州",
+          "title": "確認修為",
+          "desc": "與道衛隊長邱山河完成對話。",
+          "reward": "無獎勵。",
+          "canonicalId": "MQ-DZ-012",
+          "pinned": false,
+          "done": true,
+          "claimed": true,
+          "acceptedAt": 820,
+          "progress": {},
+          "completedAt": 820
+        },
+        "next": "alchemy1"
+      }
+    },
+    {
+      "id": "alchemy1",
+      "pass": true,
+      "detail": {
+        "q": {
+          "id": "alchemy1",
+          "type": "主線",
+          "region": "東州",
+          "title": "煉製之路",
+          "desc": "使用設備煉金爐進行一次調製，調製出一瓶［初階］氣血藥水，完成後與林熙交談。",
+          "reward": "靈幣+350、藥草ｘ3、脆脆果ｘ1、小型煉金爐。（完成後開啟煉金爐介面）",
+          "canonicalId": "MQ-DZ-013",
+          "pinned": false,
+          "done": true,
+          "claimed": true,
+          "acceptedAt": 820,
+          "progress": {},
+          "completedAt": 820
+        },
+        "next": "alchemy2"
+      }
+    },
+    {
+      "id": "alchemy2",
+      "pass": true,
+      "detail": {
+        "q": {
+          "id": "alchemy2",
+          "type": "主線",
+          "region": "東州",
+          "title": "煉製之路2",
+          "desc": "打開煉金爐介面，選擇治癒丹並點選煉丹，完成後與林熙交談。",
+          "reward": "靈幣+350，梨草ｘ９。",
+          "canonicalId": "MQ-DZ-014",
+          "pinned": false,
+          "done": true,
+          "claimed": true,
+          "acceptedAt": 820,
+          "progress": {},
+          "completedAt": 820
+        },
+        "next": "craftIntro"
+      }
+    },
+    {
+      "id": "craftIntro",
+      "pass": true,
+      "detail": {
+        "q": {
+          "id": "craftIntro",
+          "type": "主線",
+          "region": "東州",
+          "title": "合成與鑄造",
+          "desc": "找到鑄造師・林旺，與林旺交談。",
+          "reward": "無獎勵。",
+          "canonicalId": "MQ-DZ-015",
+          "pinned": false,
+          "done": true,
+          "claimed": true,
+          "acceptedAt": 820,
+          "progress": {},
+          "completedAt": 832
+        },
+        "next": "craft2"
+      }
+    },
+    {
+      "id": "craft2",
+      "pass": true,
+      "detail": {
+        "q": {
+          "id": "craft2",
+          "type": "主線",
+          "region": "東州",
+          "title": "合成與鑄造2",
+          "desc": "使用設備鑄造台裡的合成，將９個梨草合成為３個破布，完成後與林旺交談。",
+          "reward": "靈原鐵ｘ１。",
+          "canonicalId": "MQ-DZ-016",
+          "pinned": false,
+          "done": true,
+          "claimed": true,
+          "acceptedAt": 832,
+          "progress": {},
+          "craftedCloth": 3,
+          "completedAt": 832
+        },
+        "next": "craft3"
+      }
+    },
+    {
+      "id": "craft3",
+      "pass": true,
+      "detail": {
+        "q": {
+          "id": "craft3",
+          "type": "主線",
+          "region": "東州",
+          "title": "合成與鑄造3",
+          "desc": "使用設備鑄造台，在鍛造介面鍛造［初階］粗布頭盔×1，完成後與林旺交談。",
+          "reward": "靈幣+370、鑄造台。（完成後開啟鑄造台介面）",
+          "canonicalId": "MQ-DZ-017",
+          "pinned": false,
+          "done": true,
+          "claimed": true,
+          "acceptedAt": 832,
+          "progress": {},
+          "completedAt": 832
+        },
+        "next": "duel"
+      }
+    },
+    {
+      "id": "duel",
+      "pass": true,
+      "detail": {
+        "q": {
+          "id": "duel",
+          "type": "主線",
+          "region": "東州",
+          "title": "來對決吧！",
+          "desc": "從東州傳送塔傳送至問道檯並進入，戰勝一場逐步挑戰後回天海港找指引人張榕真交談。",
+          "reward": "修為＋３０，靈幣＋４００、問道檯傳送令牌。",
+          "canonicalId": "MQ-DZ-018",
+          "pinned": false,
+          "done": true,
+          "claimed": true,
+          "acceptedAt": 832,
+          "progress": {},
+          "completedAt": 852
+        },
+        "next": "petIntro"
+      }
+    },
+    {
+      "id": "petIntro",
+      "pass": true,
+      "detail": {
+        "q": {
+          "id": "petIntro",
+          "type": "主線",
+          "region": "東州",
+          "title": "寵物",
+          "desc": "完成與指引員張榕真的交談後，選擇一顆妖物蛋。",
+          "reward": "青木狼妖物蛋、青靈蛇妖物蛋、青翠蝶妖物蛋（三選一；必定5遊戲分鐘一般種）。",
+          "canonicalId": "MQ-DZ-019",
+          "pinned": false,
+          "done": true,
+          "claimed": true,
+          "acceptedAt": 852,
+          "progress": {},
+          "petChoice": "青木狼",
+          "completedAt": 852
+        },
+        "next": "pet1"
+      }
+    },
+    {
+      "id": "pet1",
+      "pass": true,
+      "detail": {
+        "q": {
+          "id": "pet1",
+          "type": "主線",
+          "region": "東州",
+          "title": "就決定是你了！",
+          "desc": "孵化剛取得的妖物蛋，孵化完成後與指引員・張榕真交談。",
+          "reward": "無。",
+          "canonicalId": "MQ-DZ-020",
+          "pinned": false,
+          "done": true,
+          "claimed": true,
+          "acceptedAt": 852,
+          "progress": {},
+          "completedAt": 857
+        },
+        "next": "pet2"
+      }
+    },
+    {
+      "id": "pet2",
+      "pass": true,
+      "detail": {
+        "q": {
+          "id": "pet2",
+          "type": "主線",
+          "region": "東州",
+          "title": "就決定是你了！2",
+          "desc": "從東州傳送塔傳送至萬獸檯並進入，戰勝一場1V1萬獸塔，再回天海港找張榕真交談。",
+          "reward": "修為＋40、靈幣＋500、［特殊］萬獸檯傳送令牌×1。",
+          "canonicalId": "MQ-DZ-021",
+          "pinned": false,
+          "done": true,
+          "claimed": true,
+          "acceptedAt": 857,
+          "progress": {},
+          "completedAt": 877,
+          "claimedAt": 877
+        },
+        "next": "strength"
+      }
+    },
+    {
+      "id": "22境界不足不得接取",
+      "pass": true
+    },
+    {
+      "id": "strength",
+      "pass": true,
+      "detail": {
+        "q": {
+          "id": "strength",
+          "type": "主線",
+          "region": "東州",
+          "title": "變強，才有保護的能力",
+          "desc": "前往青陽山，尋找道衛隊員・沈玄川，調查妖物躁動的原因。",
+          "reward": "修為＋50、［初階］靈根丹×3。",
+          "canonicalId": "MQ-DZ-022",
+          "pinned": false,
+          "done": true,
+          "claimed": true,
+          "acceptedAt": 877,
+          "progress": {
+            "stage": "kill",
+            "stageIds": [
+              "MQ-DZ-022-2"
+            ],
+            "kills": 5
+          },
+          "completedAt": 957,
+          "claimedAt": 957
+        },
+        "next": "improve"
+      }
+    },
+    {
+      "id": "23選項好感增加",
+      "pass": true,
+      "detail": {
+        "favor": 3
+      }
+    },
+    {
+      "id": "improve",
+      "pass": true,
+      "detail": {
+        "q": {
+          "id": "improve",
+          "type": "主線",
+          "region": "東州",
+          "title": "提升實力",
+          "desc": "擊殺特殊種青木狼（練氣七層；開戰95%氣血），完成後與沈玄川交談。",
+          "reward": "修為＋70、靈幣＋300、妖血精華×1。",
+          "canonicalId": "MQ-DZ-023",
+          "pinned": false,
+          "done": true,
+          "claimed": true,
+          "acceptedAt": 957,
+          "progress": {
+            "victory": true
+          },
+          "completedAt": 984,
+          "claimedAt": 984
+        },
+        "next": "report"
+      }
+    },
+    {
+      "id": "report",
+      "pass": true,
+      "detail": {
+        "q": {
+          "id": "report",
+          "type": "主線",
+          "region": "東州",
+          "title": "通報",
+          "desc": "返回朝御城找邱山河通報；落星谷為必做，另選青陽鎮／醫館一個分支。",
+          "reward": "無。",
+          "canonicalId": "MQ-DZ-024",
+          "pinned": false,
+          "done": true,
+          "claimed": true,
+          "acceptedAt": 984,
+          "progress": {
+            "stage": "branches",
+            "stageIds": [
+              "MQ-DZ-024-2",
+              "MQ-DZ-024-A",
+              "MQ-DZ-024-B"
+            ],
+            "branch": "B",
+            "foe": "朝東鳥",
+            "ACombatWin": true,
+            "A": true,
+            "B": true
+          },
+          "completedAt": 1004,
+          "claimedAt": 1004
+        },
+        "next": "eastResolved"
+      }
+    },
+    {
+      "id": "eastResolved",
+      "pass": true,
+      "detail": {
+        "q": {
+          "id": "eastResolved",
+          "type": "主線",
+          "region": "東州",
+          "title": "事情解決了，嗎？",
+          "desc": "與道衛隊長邱山河完成交談。",
+          "reward": "二階妖物材料隨機×3、二階採集類材料隨機×3。",
+          "canonicalId": "MQ-DZ-025",
+          "pinned": false,
+          "done": true,
+          "claimed": true,
+          "acceptedAt": 1004,
+          "progress": {
+            "materialReward": [
+              [
+                "［二階］利爪",
+                2,
+                "materials"
+              ],
+              [
+                "［二階］雷角",
+                1,
+                "materials"
+              ],
+              [
+                "［二階］玄鐵",
+                1,
+                "materials"
+              ],
+              [
+                "［二階］碧綠木",
+                1,
+                "materials"
+              ],
+              [
+                "［二階］百年靈草",
+                1,
+                "materials"
+              ]
+            ]
+          },
+          "completedAt": 1004,
+          "claimedAt": 1004
+        },
+        "next": "eastTraining"
+      }
+    },
+    {
+      "id": "26完整1日等待",
+      "pass": true
+    },
+    {
+      "id": "eastTraining",
+      "pass": true,
+      "detail": {
+        "q": {
+          "id": "eastTraining",
+          "type": "主線",
+          "region": "東州",
+          "title": "訓練",
+          "desc": "與邱山河完成交談。",
+          "reward": "［特殊］潮汐秘境通行證×1",
+          "canonicalId": "MQ-DZ-026",
+          "pinned": false,
+          "done": true,
+          "claimed": true,
+          "acceptedAt": 2444,
+          "progress": {},
+          "completedAt": 2444
+        },
+        "next": "eastTraining2"
+      }
+    },
+    {
+      "id": "eastTraining2",
+      "pass": true,
+      "detail": {
+        "q": {
+          "id": "eastTraining2",
+          "type": "主線",
+          "region": "東州",
+          "title": "訓練2",
+          "desc": "擊殺潮汐秘境內任意妖物×10，再與邱山河交談。",
+          "reward": "修為＋300、靈幣＋500、［特殊］神秘奇藥×1",
+          "canonicalId": "MQ-DZ-027",
+          "pinned": false,
+          "done": true,
+          "claimed": true,
+          "acceptedAt": 2444,
+          "progress": {},
+          "completedAt": 2598
+        },
+        "next": "realmBreakQuest"
+      }
+    },
+    {
+      "id": "realmBreakQuest",
+      "pass": true,
+      "detail": {
+        "q": {
+          "id": "realmBreakQuest",
+          "type": "主線",
+          "region": "東州",
+          "title": "破境",
+          "desc": "於城鎮［修煉］介面成功破境踏入築基境，完成後向邱山河交談。",
+          "reward": "靈幣＋500、［初階］靈根丹×1。",
+          "canonicalId": "MQ-DZ-028",
+          "pinned": false,
+          "done": true,
+          "claimed": true,
+          "acceptedAt": 2598,
+          "progress": {},
+          "completedAt": 2598,
+          "claimedAt": 2598
+        }
+      }
+    }
+  ],
+  "errors": []
+}

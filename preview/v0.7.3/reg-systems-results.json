@@ -1,0 +1,349 @@
+{
+  "results": [
+    {
+      "id": "NPC-朝御城六位與雙背景",
+      "pass": true,
+      "detail": {
+        "pass": true,
+        "cards": [
+          {
+            "n": "阿禾",
+            "html": "<div class=\"jz1009-civilian card jz071-civilian jz38-npc-scene\" data-npc=\"阿禾\" data-npc-background=\"阿禾\" style=\"background-image: linear-gradient(90deg, rgba(9, 22, 28, 0.1), rgba(9, 22, 28, 0.74)), url(&quot;/github-relea"
+          },
+          {
+            "n": "寧寧",
+            "html": "<div class=\"jz1009-civilian card jz071-civilian jz38-npc-scene\" data-npc=\"寧寧\" data-npc-background=\"寧寧\" style=\"background-image: linear-gradient(90deg, rgba(9, 22, 28, 0.1), rgba(9, 22, 28, 0.74)), url(&quot;/github-relea"
+          },
+          {
+            "n": "沈菜芳",
+            "html": "<div class=\"jz1009-civilian card jz071-civilian jz38-npc-scene\" data-npc=\"沈菜芳\" data-npc-background=\"沈菜芳\" style=\"background-image: linear-gradient(90deg, rgba(9, 22, 28, 0.1), rgba(9, 22, 28, 0.74)), url(&quot;/github-rel"
+          },
+          {
+            "n": "陳蘭",
+            "html": "<div class=\"jz1009-civilian card jz071-civilian jz38-npc-scene\" data-npc=\"陳蘭\" data-npc-background=\"陳蘭\" style=\"background-image: linear-gradient(90deg, rgba(9, 22, 28, 0.1), rgba(9, 22, 28, 0.74)), url(&quot;/github-relea"
+          },
+          {
+            "n": "吳大海",
+            "html": "<div class=\"jz1009-civilian card jz071-civilian jz38-npc-scene\" data-npc=\"吳大海\" data-npc-background=\"吳大海\" style=\"background-image: linear-gradient(90deg, rgba(9, 22, 28, 0.1), rgba(9, 22, 28, 0.74)), url(&quot;/github-rel"
+          },
+          {
+            "n": "陳東娘",
+            "html": "<div class=\"jz1009-civilian card jz071-civilian jz38-npc-scene\" data-npc=\"陳東娘\" data-npc-background=\"陳東娘\" style=\"background-image: linear-gradient(90deg, rgba(9, 22, 28, 0.1), rgba(9, 22, 28, 0.74)), url(&quot;/github-rel"
+          }
+        ]
+      }
+    },
+    {
+      "id": "NPC互動限制與未知身份",
+      "pass": true,
+      "detail": {
+        "pass": true,
+        "text": "← 返回人物\n【？？】？？？\n\n？／？\n\n📋 詳細介紹\n友好互動\n對話\n功能互動\n交易"
+      }
+    },
+    {
+      "id": "布告欄初期鎖定與4紙",
+      "pass": true,
+      "detail": {
+        "pass": true,
+        "ids": [
+          "CQ-DZ-008",
+          "CQ-DZ-015",
+          "CQ-DZ-001",
+          "CQ-DZ-003"
+        ]
+      }
+    },
+    {
+      "id": "委託抽池機率/唯一/境界",
+      "pass": true,
+      "detail": {
+        "pass": true,
+        "counts": {
+          "簡易": 49877,
+          "普通": 24896,
+          "稀有": 7054,
+          "困難": 15170,
+          "神秘": 3003
+        },
+        "low": 18,
+        "mid": 21,
+        "high": 27
+      }
+    },
+    {
+      "id": "委託刷新/上限/放棄剩餘時間",
+      "pass": true,
+      "detail": {
+        "pass": true,
+        "rem": 465,
+        "remaining": 465,
+        "frozen": true,
+        "cap": true
+      }
+    },
+    {
+      "id": "布告箱不足/主動扣除/不自動領獎",
+      "pass": true,
+      "detail": {
+        "pass": true,
+        "no": true,
+        "yes": true,
+        "pending": true,
+        "coins": 250,
+        "count": 0
+      }
+    },
+    {
+      "id": "分類提交矩陣與不可投入靈印",
+      "pass": true,
+      "detail": {
+        "pass": true,
+        "rows": [
+          {
+            "category": "材料類",
+            "ok": true,
+            "count": 0,
+            "seal": 8
+          },
+          {
+            "category": "妖物類",
+            "ok": true,
+            "count": 0,
+            "seal": 8
+          },
+          {
+            "category": "任意素材",
+            "ok": true,
+            "count": 0,
+            "seal": 8
+          },
+          {
+            "category": "礦物類",
+            "ok": true,
+            "count": 0,
+            "seal": 8
+          },
+          {
+            "category": "元素晶石",
+            "ok": true,
+            "count": 0,
+            "seal": 8
+          }
+        ]
+      }
+    },
+    {
+      "id": "不同獎勵7選3",
+      "pass": true,
+      "detail": {
+        "pass": true,
+        "toggle": true,
+        "unique": true,
+        "ok": true
+      }
+    },
+    {
+      "id": "聲望兌換8次與未接刷新令",
+      "pass": true,
+      "detail": {
+        "pass": true,
+        "max": true,
+        "capacity": 10,
+        "open": true,
+        "locked": true
+      }
+    },
+    {
+      "id": "神秘商人交易/永久石/30分鐘自動回報",
+      "pass": true,
+      "detail": {
+        "pass": true,
+        "buyOnly": true,
+        "stoneHidden": true,
+        "count": true,
+        "deltas": [
+          10,
+          10
+        ],
+        "stays": true,
+        "rep": 50
+      }
+    },
+    {
+      "id": "新蛋時長/概率/排除妖王/25選1",
+      "pass": true,
+      "detail": {
+        "pass": true,
+        "buttons": 26,
+        "duration": 360,
+        "early": false,
+        "open": true,
+        "tiers": [
+          "一般種",
+          "特殊種",
+          "特殊種",
+          "高危種",
+          "高危種"
+        ],
+        "eggPool": [
+          "雷角鹿",
+          "轟轟鯰",
+          "噴水蟲",
+          "冥雷蛟",
+          "鳴雀"
+        ]
+      }
+    },
+    {
+      "id": "綜合素材箱正式兩階清單",
+      "pass": true,
+      "detail": {
+        "pass": true,
+        "list": [
+          "［二階］凝露花",
+          "［二階］百年靈草",
+          "［二階］青紋藤",
+          "［二階］赤銅礦",
+          "［二階］玄鐵",
+          "［二階］火晶石",
+          "［二階］水晶石",
+          "［二階］木晶石",
+          "［二階］風晶石",
+          "［二階］雷晶石",
+          "［二階］土晶石",
+          "［二階］光晶石",
+          "［二階］暗晶石",
+          "［二階］碧綠木",
+          "［二階］楊木",
+          "［二階］玉葉果",
+          "［二階］玄靈鐵錠",
+          "［二階］靈楊木板",
+          "［二階］硬骨板",
+          "［二階］濃靈血精",
+          "［二階］凝魂砂",
+          "［二階］妖丹精華",
+          "［二階］狐毛",
+          "［二階］蛟鱗",
+          "［二階］黑蠍甲",
+          "［二階］雀羽",
+          "［二階］硬獸骨",
+          "［二階］利爪",
+          "［二階］濃縮妖血",
+          "［二階］妖丹",
+          "［二階］妖魂碎片",
+          "［二階］雷角",
+          "［二階］火尾毛"
+        ]
+      }
+    },
+    {
+      "id": "採集30分/連續/上限",
+      "pass": true,
+      "detail": {
+        "pass": true,
+        "cap": 5,
+        "a": 3,
+        "c": 4,
+        "final": 5
+      }
+    },
+    {
+      "id": "售物立即成交/功法單一二次確認",
+      "pass": true,
+      "detail": {
+        "pass": true,
+        "normal": true,
+        "prompts": 1,
+        "price": 8
+      }
+    },
+    {
+      "id": "藥水商人全敘述",
+      "pass": true,
+      "detail": {
+        "pass": true,
+        "rows": [
+          {
+            "name": "［初階］氣血藥水",
+            "desc": "氣血＋50；戰前／戰中共用。"
+          },
+          {
+            "name": "［初階］靈力藥水",
+            "desc": "靈力＋20；戰前／戰中共用。"
+          },
+          {
+            "name": "［初階］綜合藥水",
+            "desc": "氣血＋30、靈力＋10；戰前／戰中共用。"
+          },
+          {
+            "name": "［初階］解毒藥水",
+            "desc": "解除自身中毒。"
+          },
+          {
+            "name": "［初階］解燒藥水",
+            "desc": "解除自身灼燒。"
+          },
+          {
+            "name": "［初階］止血藥水",
+            "desc": "解除自身流血。"
+          },
+          {
+            "name": "［初階］清神藥水",
+            "desc": "解除自身睡眠。"
+          },
+          {
+            "name": "［初階］醒目藥水",
+            "desc": "解除自身失明。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "通緝令額外張貼立即撤除",
+      "pass": true,
+      "detail": {
+        "pass": true,
+        "present": true
+      }
+    },
+    {
+      "id": "落星谷概率與戰力/青陽山不改",
+      "pass": true,
+      "detail": {
+        "pass": true,
+        "recommended": 173,
+        "samples": {
+          "朝東鳥": {
+            "練氣五層": 493,
+            "練氣七層": 293,
+            "練氣九層": 159,
+            "練氣圓滿": 55
+          },
+          "朝陽狐": {
+            "練氣五層": 352,
+            "練氣八層": 171,
+            "練氣七層": 192,
+            "練氣圓滿": 285
+          },
+          "重翅蝶": {
+            "練氣六層": 196,
+            "練氣五層": 221,
+            "練氣七層": 398,
+            "練氣圓滿": 185
+          },
+          "小圓蛛": {
+            "練氣五層": 667,
+            "練氣圓滿": 333
+          }
+        }
+      }
+    },
+    {
+      "id": "瀏覽器執行錯誤",
+      "pass": true,
+      "errors": []
+    }
+  ],
+  "errors": []
+}

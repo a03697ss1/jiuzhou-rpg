@@ -1,0 +1,1138 @@
+{
+  "version": "0.7.3",
+  "baseline": "0.7.2",
+  "rows": [
+    {
+      "id": "L02",
+      "name": "逐字對話跳過停在重要節點，分支選擇不自動決定",
+      "pass": true,
+      "detail": {
+        "index": 2,
+        "body": "旁白不可錯過的情報點擊繼續跳過暫時離開",
+        "branch": null,
+        "choice": "我跟沈玄川、柳清妍去清除妖物。我跟邱山河、林夏于去調查傳送塔。"
+      },
+      "ms": 5
+    },
+    {
+      "id": "L05",
+      "name": "主黃支藍委綠標題實際色彩與任務工作編號隱藏",
+      "pass": true,
+      "detail": [
+        {
+          "title": "［主線］測試",
+          "color": "rgb(255, 224, 132)",
+          "workId": false
+        },
+        {
+          "title": "［支線］測試",
+          "color": "rgb(132, 184, 255)",
+          "workId": false
+        },
+        {
+          "title": "［委託］測試",
+          "color": "rgb(138, 222, 158)",
+          "workId": false
+        }
+      ],
+      "ms": 7
+    },
+    {
+      "id": "L06",
+      "name": "公共與個人製作配方可製作置頂且成本保持",
+      "pass": true,
+      "detail": [
+        {
+          "fn": "r511RecipeList",
+          "count": 9,
+          "can": 0,
+          "sorted": true,
+          "recipe": [
+            "［初階］氣血藥水",
+            "靈草×2＋藥草×1",
+            "恢復50氣血。"
+          ]
+        },
+        {
+          "fn": "r510RecipeRows",
+          "count": 9,
+          "can": 0,
+          "sorted": true,
+          "recipe": [
+            "［初階］氣血藥水",
+            "靈草×2＋藥草×1",
+            "恢復50氣血。"
+          ]
+        },
+        {
+          "fn": "r59RecipeRows",
+          "count": 22,
+          "can": 0,
+          "sorted": true,
+          "recipe": [
+            "［初階］氣血藥水",
+            "靈草×2＋藥草×1",
+            "恢復50氣血。"
+          ]
+        },
+        {
+          "fn": "r512NpcRecipeRows",
+          "count": 22,
+          "can": 0,
+          "sorted": true,
+          "recipe": [
+            "［初階］氣血藥水",
+            "靈草×2＋藥草×1",
+            "恢復50氣血。"
+          ]
+        }
+      ],
+      "ms": 13
+    },
+    {
+      "id": "L07",
+      "name": "特殊／高危／高危特惡魔框雙角／尾巴／叉圖層未切除",
+      "pass": true,
+      "detail": [
+        {
+          "tier": "特殊種",
+          "svg": true,
+          "viewBox": "0 0 260 110",
+          "paths": 1,
+          "art": 2
+        },
+        {
+          "tier": "高危種",
+          "svg": true,
+          "viewBox": "0 0 260 110",
+          "paths": 2,
+          "art": 2
+        },
+        {
+          "tier": "高危種（特）",
+          "svg": true,
+          "viewBox": "0 0 260 110",
+          "paths": 3,
+          "art": 2
+        }
+      ],
+      "ms": 12
+    },
+    {
+      "id": "L12",
+      "name": "火尾毛素材階級與物品描述／圖鑑同源",
+      "pass": true,
+      "detail": {
+        "catalog": [
+          "［二階］火尾毛"
+        ],
+        "desc": "［二階］燐火狼尾部留下的火系特殊毛束，可用於任務需求、鍛造、寵物鍛造與鑄飾；材料不分品質。",
+        "drops": [
+          [
+            "火尾毛",
+            35
+          ],
+          [
+            "硬獸骨",
+            20
+          ],
+          [
+            "獸牙",
+            5
+          ],
+          [
+            "利爪",
+            30
+          ],
+          [
+            "濃縮妖血",
+            5
+          ],
+          [
+            "妖丹",
+            4
+          ],
+          [
+            "妖魂碎片",
+            1
+          ]
+        ],
+        "source": [
+          {
+            "kind": "妖物",
+            "name": "燐火狼",
+            "text": "黑潮禁岸・燐火狼 35%"
+          },
+          {
+            "kind": "委託",
+            "name": "CQ-DZ-035",
+            "text": "［委託］尾巴著火啦！（固定獎勵）"
+          }
+        ]
+      },
+      "ms": 4
+    },
+    {
+      "id": "L01",
+      "name": "舊任務引導實際移動，黑潮未解鎖不繞過入口",
+      "pass": true,
+      "detail": {
+        "ok": true,
+        "place": "雷鳴沼",
+        "after": "朝御城",
+        "body": "目前沒有符合解鎖條件的合法路線。關閉"
+      },
+      "ms": 77
+    },
+    {
+      "id": "L21",
+      "name": "030兩地異相實際配置／兩次戰鬥／合計回報",
+      "pass": true,
+      "detail": {
+        "routes": [
+          "青陽山",
+          "雷鳴沼"
+        ],
+        "foes": [
+          [
+            {
+              "name": "青靈蛇",
+              "tier": "特殊種",
+              "skills": [
+                "咬咬",
+                "蛇之舞"
+              ]
+            },
+            {
+              "name": "青靈蛇",
+              "tier": "一般種",
+              "skills": [
+                "咬咬"
+              ]
+            }
+          ],
+          [
+            {
+              "name": "轟轟鯰",
+              "tier": "特殊種",
+              "skills": [
+                "轟泥",
+                "用力",
+                "玩泥巴"
+              ]
+            },
+            {
+              "name": "雷角鹿",
+              "tier": "一般種",
+              "skills": [
+                "角擊",
+                "雷擊"
+              ]
+            }
+          ]
+        ],
+        "claimed": true,
+        "coins": 1200,
+        "expected": 1200,
+        "routeIndex": 2
+      },
+      "ms": 155
+    },
+    {
+      "id": "L21",
+      "name": "031關塔與三人實際同行，返城自動完成",
+      "pass": true,
+      "detail": {
+        "before": false,
+        "tower": true,
+        "joined": [
+          true,
+          true,
+          true
+        ],
+        "claimed": true,
+        "recruited": [
+          "林夏于",
+          "沈玄川",
+          "柳清妍"
+        ]
+      },
+      "ms": 152
+    },
+    {
+      "id": "L22",
+      "name": "033A雙戰站位及調查回報，B線以本次正式對話接續",
+      "pass": true,
+      "detail": {
+        "a": true,
+        "foes": [
+          {
+            "names": [
+              "青臭蟲",
+              "青臭蟲",
+              "青臭蟲"
+            ],
+            "positions": [
+              "front1",
+              "front2",
+              "back1"
+            ]
+          },
+          {
+            "names": [
+              "青木狼",
+              "青木狼",
+              "青翠蝶"
+            ],
+            "positions": [
+              "front1",
+              "front2",
+              "back2"
+            ]
+          }
+        ],
+        "known": [
+          "龍胤之陣"
+        ],
+        "b": {
+          "exists": true,
+          "claimed": false,
+          "coins": 0
+        },
+        "text": "邱山河那就決定了。點擊繼續跳過暫時離開"
+      },
+      "ms": 109
+    },
+    {
+      "id": "L21",
+      "name": "034A未完成入口事件不得跳過直接開戰",
+      "pass": true,
+      "detail": {
+        "go": false,
+        "battle": false,
+        "claimed": false
+      },
+      "ms": 1
+    },
+    {
+      "id": "L22",
+      "name": "035A黑衣人正式368功法與零戰鬥獎勵",
+      "pass": true,
+      "detail": {
+        "skills": [
+          {
+            "name": "電刃破甲",
+            "legal": true
+          },
+          {
+            "name": "鳴雷擊",
+            "legal": true
+          },
+          {
+            "name": "斷念雷音",
+            "legal": true
+          }
+        ],
+        "noLoot": 0
+      },
+      "ms": 66
+    },
+    {
+      "id": "L23",
+      "name": "新增支線兩日門檻與B線閒聊權限，完成危險區解鎖",
+      "pass": true,
+      "detail": {
+        "early": false,
+        "ready": true,
+        "unlocked": true,
+        "b": true,
+        "a": false,
+        "limitation": "完整逐字稿待補；測到的是工作檔事件骨架"
+      },
+      "ms": 25
+    },
+    {
+      "id": "L24",
+      "name": "兩條新神秘委託夜間事件、戰敗保留、重試／回收與獎勵",
+      "pass": true,
+      "detail": [
+        {
+          "id": "CQ-DZ-034",
+          "day": false,
+          "item": 1,
+          "retained": 1,
+          "retry": true,
+          "done": true,
+          "claimed": true,
+          "remaining": 0,
+          "coins": 1200
+        },
+        {
+          "id": "CQ-DZ-050",
+          "day": false,
+          "item": 1,
+          "retained": 1,
+          "retry": true,
+          "done": true,
+          "claimed": true,
+          "remaining": 0,
+          "coins": 1800
+        }
+      ],
+      "ms": 167
+    },
+    {
+      "id": "L25",
+      "name": "新增25委託完成資格及逐件實際領獎，拒絕二次領取",
+      "pass": true,
+      "detail": [
+        {
+          "id": "CQ-DZ-026",
+          "done": true,
+          "claimed": true,
+          "coins": 150,
+          "expected": 150,
+          "rep": 3,
+          "expectedRep": 3,
+          "items": [
+            {
+              "name": "［一階］利爪",
+              "expected": 1,
+              "got": 1
+            }
+          ],
+          "twice": false
+        },
+        {
+          "id": "CQ-DZ-027",
+          "done": true,
+          "claimed": true,
+          "coins": 500,
+          "expected": 500,
+          "rep": 10,
+          "expectedRep": 10,
+          "items": [
+            {
+              "name": "［特殊］自選一階礦物箱",
+              "expected": 3,
+              "got": 3
+            },
+            {
+              "name": "功法殘卷",
+              "expected": 1,
+              "got": 1
+            }
+          ],
+          "twice": false
+        },
+        {
+          "id": "CQ-DZ-028",
+          "done": true,
+          "claimed": true,
+          "coins": 150,
+          "expected": 150,
+          "rep": 3,
+          "expectedRep": 3,
+          "items": [
+            {
+              "name": "［一階］蛇鱗",
+              "expected": 1,
+              "got": 1
+            }
+          ],
+          "twice": false
+        },
+        {
+          "id": "CQ-DZ-029",
+          "done": true,
+          "claimed": true,
+          "coins": 300,
+          "expected": 300,
+          "rep": 7,
+          "expectedRep": 7,
+          "items": [
+            {
+              "name": "［初階］治癒丹",
+              "expected": 8,
+              "got": 8
+            }
+          ],
+          "twice": false
+        },
+        {
+          "id": "CQ-DZ-030",
+          "done": true,
+          "claimed": true,
+          "coins": 200,
+          "expected": 200,
+          "rep": 5,
+          "expectedRep": 5,
+          "items": [],
+          "twice": false
+        },
+        {
+          "id": "CQ-DZ-031",
+          "done": true,
+          "claimed": true,
+          "coins": 200,
+          "expected": 200,
+          "rep": 5,
+          "expectedRep": 5,
+          "items": [],
+          "twice": false
+        },
+        {
+          "id": "CQ-DZ-032",
+          "done": true,
+          "claimed": true,
+          "coins": 0,
+          "expected": 0,
+          "rep": 7,
+          "expectedRep": 7,
+          "items": [
+            {
+              "name": "寵物飼料",
+              "expected": 5,
+              "got": 5
+            },
+            {
+              "name": "［初階］迅獸丹",
+              "expected": 3,
+              "got": 3
+            },
+            {
+              "name": "［初階］獸戰丹",
+              "expected": 3,
+              "got": 3
+            }
+          ],
+          "twice": false
+        },
+        {
+          "id": "CQ-DZ-033",
+          "done": true,
+          "claimed": true,
+          "coins": 1500,
+          "expected": 1500,
+          "rep": 10,
+          "expectedRep": 10,
+          "items": [
+            {
+              "name": "功法殘卷",
+              "expected": 2,
+              "got": 2
+            }
+          ],
+          "twice": false
+        },
+        {
+          "id": "CQ-DZ-034",
+          "done": true,
+          "claimed": true,
+          "coins": 1200,
+          "expected": 1200,
+          "rep": 50,
+          "expectedRep": 50,
+          "items": [
+            {
+              "name": "［特殊］自選一階礦物箱",
+              "expected": 3,
+              "got": 3
+            },
+            {
+              "name": "功法殘卷",
+              "expected": 2,
+              "got": 2
+            }
+          ],
+          "twice": false
+        },
+        {
+          "id": "CQ-DZ-035",
+          "done": true,
+          "claimed": true,
+          "coins": 200,
+          "expected": 200,
+          "rep": 3,
+          "expectedRep": 3,
+          "items": [
+            {
+              "name": "［二階］火尾毛",
+              "expected": 1,
+              "got": 1
+            }
+          ],
+          "twice": false
+        },
+        {
+          "id": "CQ-DZ-036",
+          "done": true,
+          "claimed": true,
+          "coins": 200,
+          "expected": 200,
+          "rep": 3,
+          "expectedRep": 3,
+          "items": [
+            {
+              "name": "［二階］黑蠍甲",
+              "expected": 1,
+              "got": 1
+            }
+          ],
+          "twice": false
+        },
+        {
+          "id": "CQ-DZ-037",
+          "done": true,
+          "claimed": true,
+          "coins": 220,
+          "expected": 220,
+          "rep": 3,
+          "expectedRep": 3,
+          "items": [
+            {
+              "name": "［一階］靈粉",
+              "expected": 2,
+              "got": 2
+            }
+          ],
+          "twice": false
+        },
+        {
+          "id": "CQ-DZ-038",
+          "done": true,
+          "claimed": true,
+          "coins": 300,
+          "expected": 300,
+          "rep": 3,
+          "expectedRep": 3,
+          "items": [
+            {
+              "name": "［特殊］自選二階素材箱",
+              "expected": 1,
+              "got": 1
+            }
+          ],
+          "twice": false
+        },
+        {
+          "id": "CQ-DZ-039",
+          "done": true,
+          "claimed": true,
+          "coins": 300,
+          "expected": 300,
+          "rep": 3,
+          "expectedRep": 3,
+          "items": [
+            {
+              "name": "［二階］硬獸骨",
+              "expected": 2,
+              "got": 2
+            }
+          ],
+          "twice": false
+        },
+        {
+          "id": "CQ-DZ-040",
+          "done": true,
+          "claimed": true,
+          "coins": 250,
+          "expected": 250,
+          "rep": 3,
+          "expectedRep": 3,
+          "items": [
+            {
+              "name": "［初階］靈力藥水",
+              "expected": 5,
+              "got": 5
+            }
+          ],
+          "twice": false
+        },
+        {
+          "id": "CQ-DZ-041",
+          "done": true,
+          "claimed": true,
+          "coins": 250,
+          "expected": 250,
+          "rep": 3,
+          "expectedRep": 3,
+          "items": [
+            {
+              "name": "［初階］百靈藥水",
+              "expected": 3,
+              "got": 3
+            }
+          ],
+          "twice": false
+        },
+        {
+          "id": "CQ-DZ-042",
+          "done": true,
+          "claimed": true,
+          "coins": 300,
+          "expected": 300,
+          "rep": 5,
+          "expectedRep": 5,
+          "items": [],
+          "twice": false
+        },
+        {
+          "id": "CQ-DZ-043",
+          "done": true,
+          "claimed": true,
+          "coins": 500,
+          "expected": 500,
+          "rep": 5,
+          "expectedRep": 5,
+          "items": [
+            {
+              "name": "［特殊］自選二階素材箱",
+              "expected": 1,
+              "got": 1
+            }
+          ],
+          "twice": false
+        },
+        {
+          "id": "CQ-DZ-044",
+          "done": true,
+          "claimed": true,
+          "coins": 500,
+          "expected": 500,
+          "rep": 5,
+          "expectedRep": 5,
+          "items": [
+            {
+              "name": "［初階］百靈藥水",
+              "expected": 5,
+              "got": 5
+            }
+          ],
+          "twice": false
+        },
+        {
+          "id": "CQ-DZ-045",
+          "done": true,
+          "claimed": true,
+          "coins": 650,
+          "expected": 650,
+          "rep": 5,
+          "expectedRep": 5,
+          "items": [
+            {
+              "name": "［特殊］自選二階素材箱",
+              "expected": 1,
+              "got": 1
+            }
+          ],
+          "twice": false
+        },
+        {
+          "id": "CQ-DZ-046",
+          "done": true,
+          "claimed": true,
+          "coins": 500,
+          "expected": 500,
+          "rep": 7,
+          "expectedRep": 7,
+          "items": [
+            {
+              "name": "［特殊］自選二階妖物素材箱",
+              "expected": 1,
+              "got": 1
+            }
+          ],
+          "twice": false
+        },
+        {
+          "id": "CQ-DZ-047",
+          "done": true,
+          "claimed": true,
+          "coins": 2000,
+          "expected": 2000,
+          "rep": 7,
+          "expectedRep": 7,
+          "items": [],
+          "twice": false
+        },
+        {
+          "id": "CQ-DZ-048",
+          "done": true,
+          "claimed": true,
+          "coins": 2000,
+          "expected": 2000,
+          "rep": 12,
+          "expectedRep": 12,
+          "items": [
+            {
+              "name": "［特殊］隨機功法書",
+              "expected": 1,
+              "got": 1
+            },
+            {
+              "name": "［初階］靈根丹",
+              "expected": 1,
+              "got": 1
+            }
+          ],
+          "twice": false
+        },
+        {
+          "id": "CQ-DZ-049",
+          "done": true,
+          "claimed": true,
+          "coins": 3000,
+          "expected": 3000,
+          "rep": 10,
+          "expectedRep": 10,
+          "items": [
+            {
+              "name": "［特殊］綜合二階素材箱",
+              "expected": 5,
+              "got": 5
+            },
+            {
+              "name": "功法殘卷",
+              "expected": 2,
+              "got": 2
+            }
+          ],
+          "twice": false
+        },
+        {
+          "id": "CQ-DZ-050",
+          "done": true,
+          "claimed": true,
+          "coins": 1800,
+          "expected": 1800,
+          "rep": 50,
+          "expectedRep": 50,
+          "items": [
+            {
+              "name": "［特殊］自選二階妖物素材箱",
+              "expected": 3,
+              "got": 3
+            },
+            {
+              "name": "功法殘卷",
+              "expected": 2,
+              "got": 2
+            },
+            {
+              "name": "［特殊］滿貫丹",
+              "expected": 1,
+              "got": 1
+            }
+          ],
+          "twice": false
+        }
+      ],
+      "ms": 172
+    },
+    {
+      "id": "L20",
+      "name": "三寵10心計數接取後開始，失敗條件及學5招門檻",
+      "pass": true,
+      "detail": [
+        {
+          "species": "燐火狼",
+          "id": "P07307",
+          "before": null,
+          "task": {
+            "id": "P07307",
+            "acceptedAt": 480,
+            "counts": [
+              0,
+              1
+            ],
+            "claimed": false
+          },
+          "fail": [
+            0,
+            0
+          ]
+        },
+        {
+          "species": "硬黑蠍",
+          "id": "P07308",
+          "before": null,
+          "task": {
+            "id": "P07308",
+            "acceptedAt": 480,
+            "counts": [
+              0,
+              1
+            ],
+            "claimed": false
+          },
+          "fail": [
+            0,
+            0
+          ]
+        },
+        {
+          "species": "靈珠蝶",
+          "id": "P07309",
+          "before": null,
+          "task": {
+            "id": "P07309",
+            "acceptedAt": 480,
+            "counts": [
+              0,
+              2
+            ],
+            "claimed": false
+          },
+          "fail": [
+            0,
+            1
+          ]
+        }
+      ],
+      "ms": 6
+    },
+    {
+      "id": "L32",
+      "name": "同行NPC圖鑑不重複駐地，華安既有動態地點保留",
+      "pass": true,
+      "detail": {
+        "places": [
+          "同行中",
+          "同行中",
+          "同行中"
+        ],
+        "body": "妖物素材NPC地區裝備丹藥禮物任務物品功法篩選：沈玄川 查看全部沈玄川道衛隊員｜同行中對話、贈禮、任務／委託、切磋、邀請同行、收取禮物♥♥♥♥♥♥♥♥♥♥",
+        "hua": "朝御城"
+      },
+      "ms": 2
+    },
+    {
+      "id": "L13",
+      "name": "新地圖節點／冒險／遭遇實際開啟與戰鬥背景",
+      "pass": true,
+      "detail": {
+        "mapText": "🧭 東州山水圖拖曳地圖平移，點選地區查看資訊。📍 朝御城・主城返回九州總覽朝御城青陽鎮青陽山碧潮鎮雷鳴沼東嶺鎮落星谷天海港東州傳送塔潮汐秘境 🔒晶礦秘境問道檯萬獸檯天穹浮島黑潮禁岸雷鳴沼地下深窟圖例● 城鎮　▲ 野外　◇ 秘境─ 道路　┄ 傳送　🔒 未解鎖朝御城類型：主城最低境界：無推薦戰力：無設備／內容：煉金爐、鑄造台、布告欄、監牢、茶館、修練場、醫館、聲望兌換所前往此地野外妖物境界青陽山：練氣一層～練氣五層落星谷：練氣五層～練氣圓滿雷鳴沼：築基一層～築基五層（不含長右）潮汐秘境：練氣五層～練氣圓滿天穹浮島：練氣七層～築基二層晶礦秘境：練氣一層～練氣一層黑潮禁岸：築基五層～築基圓滿雷鳴沼地下深窟：築基圓滿（主線長右另計）",
+        "rows": [
+          {
+            "place": "黑潮禁岸",
+            "html": true,
+            "go": true,
+            "foes": [
+              "燐火狼"
+            ],
+            "scene": "/新增美術_2026-10-16/黑潮禁岸_戰鬥背景.png"
+          },
+          {
+            "place": "雷鳴沼地下深窟",
+            "html": true,
+            "go": true,
+            "foes": [
+              "財寶怨靈"
+            ],
+            "scene": "/新增美術_2026-10-16/雷鳴沼地下深窟_戰鬥背景.png"
+          }
+        ]
+      },
+      "ms": 51
+    },
+    {
+      "id": "L19",
+      "name": "六個五星技能實際施放與三個10心被動實際觸發",
+      "pass": true,
+      "detail": {
+        "results": [
+          {
+            "id": "P07301",
+            "cast": true,
+            "mp": 22,
+            "effect": true
+          },
+          {
+            "id": "P07302",
+            "cast": true,
+            "mp": 25,
+            "effect": true
+          },
+          {
+            "id": "P07303",
+            "cast": true,
+            "mp": 24,
+            "effect": true
+          },
+          {
+            "id": "P07304",
+            "cast": true,
+            "mp": 22,
+            "effect": true
+          },
+          {
+            "id": "P07305",
+            "cast": true,
+            "mp": 25,
+            "effect": true
+          },
+          {
+            "id": "P07306",
+            "cast": true,
+            "mp": 27,
+            "effect": true
+          }
+        ],
+        "wolf": {
+          "protectedHP": 1,
+          "wolfHP": 850,
+          "second": 0
+        },
+        "scorpion": {
+          "defense": 114.99999999999999,
+          "shield": true
+        },
+        "butterfly": {
+          "first": 534,
+          "repeated": 534
+        }
+      },
+      "ms": 8
+    },
+    {
+      "id": "L20",
+      "name": "三寵10心15擊殺／15束縛／20撲粉實際行動累計",
+      "pass": true,
+      "detail": [
+        {
+          "species": "燐火狼",
+          "count": 15,
+          "expected": 15,
+          "ready": false
+        },
+        {
+          "species": "硬黑蠍",
+          "count": 15,
+          "expected": 15,
+          "ready": false
+        },
+        {
+          "species": "靈珠蝶",
+          "count": 20,
+          "expected": 20,
+          "ready": false
+        }
+      ],
+      "ms": 10
+    },
+    {
+      "id": "L21",
+      "name": "035A完成救援交談後滿回復，不產生滿貫丹",
+      "pass": true,
+      "detail": [
+        {
+          "key": "035A",
+          "before": 1,
+          "hp": 128,
+          "maxhp": 128,
+          "mp": 47,
+          "maxmp": 47,
+          "qiu": 1,
+          "qiuMax": 2706,
+          "pills": 0
+        }
+      ],
+      "ms": 32
+    },
+    {
+      "id": "L27",
+      "name": "實際夥伴／寵物各依自身境界取得修為，陣亡不取得",
+      "pass": true,
+      "detail": {
+        "partner": 9,
+        "pet": 10,
+        "dead": 0
+      },
+      "ms": 2
+    },
+    {
+      "id": "L01",
+      "name": "天海港張榕真引導實際抵達人物介面",
+      "pass": true,
+      "detail": {
+        "ok": true,
+        "place": "天海港",
+        "page": "people",
+        "title": "🌸 張榕真"
+      },
+      "ms": 53
+    },
+    {
+      "id": "L17",
+      "name": "既有醫館手動付費30分鐘規則未回退成1日",
+      "pass": true,
+      "detail": {
+        "unattended": 0,
+        "a": true,
+        "b": true,
+        "fee": 840,
+        "expectedFee": 840,
+        "durations": [
+          30,
+          30
+        ],
+        "early": true,
+        "returned": true,
+        "wards": 0
+      },
+      "ms": 35
+    },
+    {
+      "id": "L36",
+      "name": "原0.7.2舊存檔匯入保留裝備及任務，不混用正式儲存區",
+      "pass": true,
+      "detail": {
+        "name": "任務流程驗收",
+        "version": "V0.7.3 獨立測試",
+        "newSchema": 1,
+        "itemsPreserved": true,
+        "questCount": 30,
+        "previousQuests": 30
+      },
+      "ms": 74
+    },
+    {
+      "id": "L14",
+      "name": "深窟完整地名／主線區域資訊及火尾毛妖物分類",
+      "pass": true,
+      "detail": {
+        "node": "雷鳴沼地下深窟",
+        "info": "雷鳴沼地下深窟類型：BOSS封印區最低境界：主線期間依任務開放最低／推薦戰力：1050／1400（野外狀態，不含長右）（測試參考值）入口已開放前往",
+        "category": "妖物",
+        "genericSet": false
+      },
+      "ms": 8
+    },
+    {
+      "id": "L36",
+      "name": "實際存檔重載保留分支／挖掘／委託，正式名稱空間不變",
+      "pass": true,
+      "detail": {
+        "has": true,
+        "branch": "A",
+        "dig": {
+          "count": 2,
+          "nextAt": 9999
+        },
+        "gear": 1,
+        "quest": {
+          "kills": 2,
+          "coins": 5000
+        },
+        "keys": [
+          "jz073-independent-20261017:JZXX_V070_CLEAN_R4_2",
+          "jz073-independent-20261017:jz-v3-touch-identities",
+          "jz073-independent-20261017:JZXX_V070_CLEAN_R4_1"
+        ]
+      },
+      "ms": 148
+    }
+  ],
+  "errors": []
+}

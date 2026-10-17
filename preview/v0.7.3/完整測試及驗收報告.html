@@ -1,0 +1,5172 @@
+<!doctype html><html lang="zh-Hant"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>V0.7.3 完整測試及驗收報告</title><style>body{margin:0;background:#0c1720;color:#dbe5ed;font:16px/1.7 "Microsoft JhengHei",sans-serif}main{max-width:1280px;margin:auto;padding:26px}a{color:#93caff}h1{color:#f2d68b;font-size:28px}h2{margin-top:32px;color:#c8dded}nav{display:flex;flex-wrap:wrap;gap:16px;margin:18px 0}.note{border:1px solid #b88c44;background:#33291a;padding:15px;border-radius:10px}.ok{color:#9be3ad}.pending{color:#ffcf84}.summary{display:flex;gap:16px;flex-wrap:wrap}.summary>div{padding:16px;background:#182b39;border-radius:8px}table{border-collapse:collapse;width:100%;font-size:14px}th,td{border:1px solid #355266;padding:10px;vertical-align:top}th{background:#1c3343;position:sticky;top:0}tr:nth-child(even){background:#12232f}pre{white-space:pre-wrap;overflow-wrap:anywhere;font:12px/1.6 Consolas,monospace}img{max-width:100%;border:1px solid #375367;border-radius:8px}button,select,input{font:inherit;color:inherit;background:#203749;border:1px solid #59758a;border-radius:6px;padding:8px;margin:5px}details{margin:9px 0}li{margin:7px 0}.scroll{overflow:auto}.muted{color:#a9bccb}@media(max-width:700px){main{padding:14px}table{min-width:900px}}</style><main><h1>V0.7.3 完整測試及驗收報告</h1><nav><a href="閱讀我_先看這裡.html">交付入口</a><a href="index.html">單檔遊戲</a><a href="逐項施工工程覆蓋表.html">38項覆蓋表</a><a href="BUG修復與待補清單.html">BUG／待補</a><a href="完整測試及驗收報告.html">測試報告</a></nav><p class="note">本檔是可玩的0.7.3獨立測試交付，尚未整版驗收通過。正式母檔、正式0.7.2及GitHub均未修改。測試通過包含「缺資料時保護鎖正常」；不代表待補功能已完成。</p><div class="summary"><div>施工項目：38</div><div>新增測試：97／97</div><div>既有回歸：95／95</div><div>長右固定種子：16／16<br>15～18回合</div></div><h2>測試結果與界限</h2><p>共192項自動化檢查通過（新增97＋既有回歸95）。另有16組BOSS解析器實戰、1場UI自動戰鬥、4尺寸畫面及單檔離線驗證。這些是工程證據；38項完整功能與數值平衡尚未取得玩家驗收。</p><h2>長右BOSS</h2><p>固定種子1732～1739，沈玄川／柳清妍各8組，正式NPC八核＋測試999原始八核、不喝藥、不加作弊傷害；全部15～18回合獲勝。實際點擊自動戰鬥第16回合通過第二階段並獲勝。50%鎖血2250、MP1200、首動轟雷、次動洪水、潮濕優先潮閃引雷、硬控免疫另有單項檢查。</p><p>此結果只對候選八核及此隊伍／操作有效，不保證所有玩家配置都能30回合擊殺；長右獨立隱藏值與正式戰力仍待定。</p><p><a href="長右30回合實戰資料.json">16組完整戰鬥資料</a>　<a href="長右實際自動戰鬥驗收.json">UI實戰紀錄</a></p><img src="長右戰鬥畫面.png" alt="長右完整戰鬥畫面"><h2>新增流程與既有回歸</h2><ul><li>舊主線：31／31檢查。<a href="r1011-reg-main-results.json">原始結果</a></li><li>舊支線：21／21檢查。<a href="reg-sides-results.json">原始結果</a></li><li>舊25委託：25／25檢查。<a href="reg-commissions-results.json">原始結果</a></li><li>既有系統：18／18檢查。<a href="reg-systems-results.json">原始結果</a></li></ul><p>原28段主線、12條支線、25委託由原回歸腳本在本輪新HTML實際走流程。舊工作檔只作測試用存檔種子，沒有作施工底稿。</p><h2>本次補充B線與兩項機率</h2><p>033B三處調查六種順序、林夏于追擊離隊、九珠陰雷強制首動／免費特殊結算、滿貫丹實際服下才恢復、三波每場結算與失敗續接、036B調查傳送陣與五人會合，皆有逐項測試。另實際連續從032選B到038長右結算；此流程案例使用隔離角色提高八核以滿足地圖門檻，只驗收流程，不能當作平衡結論。</p><p><a href="B線與補充定案測試結果.json">本次完整測試結果</a>　<a href="B線完整對話805節點.txt">B線805節點文字</a>　<a href="補充定案_修為與問道.json">修為與問道補充規則</a></p><img src="B線九珠陰雷戰鬥畫面.png" alt="B線九珠陰雷劇情戰"><h2>本次A線與NPC公式補完</h2><p>A線709節點原稿已接入，實際從032選A、033A兩場戰鬥、034A固定火紅蓮必敗與免費寵物復原、035A陸景和救援／命符／無戰利品黑衣人戰、036A四人入窟會合，再到037／038長右結算，保留A線專屬物品與紀錄且不完成B線。</p><p>問道測試包含80組正式NPC基線、築基及金丹九層、五種可抽品質及弱者通用品質、八流派／額外效果、每核獨立±5%、1200個完整合法對手、八流派各20000次武器抽樣、100000次裝備品質抽樣及缺品質重新分配。實際1V1勝利發33點，連勝結算最高37、失敗歸0；禁止道具／戰前效果／逃跑，存檔後對手不重抽。</p><p>NPC品質只乘自身基線，裝備只加成品記錄值一次。普通1／優良1.1／精品1.2／珍稀1.35／極品1.5／完美1.7僅保存未來候選，未改玩家裝備或成品能力。</p><p><a href="A線與NPC公式測試結果.json">A線／NPC完整測試結果</a>　<a href="A線完整對話709節點.txt">A線709節點原稿</a>　<a href="NPC通用生成正式資料.json">NPC正式生成資料與候選表</a></p><img src="A線必敗戰結算.png" alt="A線必敗戰結算"><img src="問道跨境界戰實際結算.png" alt="問道跨境界戰結算"><h2>全部新增測項</h2><details><summary>✓ L38 載入、版本與存檔隔離</summary><pre>{
+  &quot;version&quot;: &quot;0.7.3&quot;,
+  &quot;title&quot;: &quot;九州修仙錄 0.7.3 獨立測試&quot;,
+  &quot;prefix&quot;: &quot;jz073-independent-20261017:&quot;,
+  &quot;formalMusic&quot;: false,
+  &quot;storage&quot;: [],
+  &quot;count&quot;: 38
+}</pre></details><details><summary>✓ L26 原25條委託逐欄不變；新增編號完整50條</summary><pre>{
+  &quot;same&quot;: true,
+  &quot;ids&quot;: [
+    &quot;CQ-DZ-001&quot;,
+    &quot;CQ-DZ-002&quot;,
+    &quot;CQ-DZ-003&quot;,
+    &quot;CQ-DZ-004&quot;,
+    &quot;CQ-DZ-005&quot;,
+    &quot;CQ-DZ-006&quot;,
+    &quot;CQ-DZ-007&quot;,
+    &quot;CQ-DZ-008&quot;,
+    &quot;CQ-DZ-009&quot;,
+    &quot;CQ-DZ-010&quot;,
+    &quot;CQ-DZ-011&quot;,
+    &quot;CQ-DZ-012&quot;,
+    &quot;CQ-DZ-013&quot;,
+    &quot;CQ-DZ-014&quot;,
+    &quot;CQ-DZ-015&quot;,
+    &quot;CQ-DZ-016&quot;,
+    &quot;CQ-DZ-017&quot;,
+    &quot;CQ-DZ-018&quot;,
+    &quot;CQ-DZ-019&quot;,
+    &quot;CQ-DZ-020&quot;,
+    &quot;CQ-DZ-021&quot;,
+    &quot;CQ-DZ-022&quot;,
+    &quot;CQ-DZ-023&quot;,
+    &quot;CQ-DZ-024&quot;,
+    &quot;CQ-DZ-025&quot;,
+    &quot;CQ-DZ-026&quot;,
+    &quot;CQ-DZ-027&quot;,
+    &quot;CQ-DZ-028&quot;,
+    &quot;CQ-DZ-029&quot;,
+    &quot;CQ-DZ-030&quot;,
+    &quot;CQ-DZ-031&quot;,
+    &quot;CQ-DZ-032&quot;,
+    &quot;CQ-DZ-033&quot;,
+    &quot;CQ-DZ-034&quot;,
+    &quot;CQ-DZ-035&quot;,
+    &quot;CQ-DZ-036&quot;,
+    &quot;CQ-DZ-037&quot;,
+    &quot;CQ-DZ-038&quot;,
+    &quot;CQ-DZ-039&quot;,
+    &quot;CQ-DZ-040&quot;,
+    &quot;CQ-DZ-041&quot;,
+    &quot;CQ-DZ-042&quot;,
+    &quot;CQ-DZ-043&quot;,
+    &quot;CQ-DZ-044&quot;,
+    &quot;CQ-DZ-045&quot;,
+    &quot;CQ-DZ-046&quot;,
+    &quot;CQ-DZ-047&quot;,
+    &quot;CQ-DZ-048&quot;,
+    &quot;CQ-DZ-049&quot;,
+    &quot;CQ-DZ-050&quot;
+  ],
+  &quot;newRewards&quot;: [
+    {
+      &quot;id&quot;: &quot;CQ-DZ-046&quot;,
+      &quot;reward&quot;: {
+        &quot;rep&quot;: 7,
+        &quot;cult&quot;: 55,
+        &quot;coins&quot;: 500,
+        &quot;items&quot;: [
+          [
+            &quot;［特殊］自選二階妖物素材箱&quot;,
+            1,
+            &quot;special&quot;
+          ]
+        ]
+      }
+    },
+    {
+      &quot;id&quot;: &quot;CQ-DZ-047&quot;,
+      &quot;reward&quot;: {
+        &quot;rep&quot;: 7,
+        &quot;coins&quot;: 2000
+      }
+    },
+    {
+      &quot;id&quot;: &quot;CQ-DZ-048&quot;,
+      &quot;reward&quot;: {
+        &quot;rep&quot;: 12,
+        &quot;cult&quot;: 60,
+        &quot;coins&quot;: 2000,
+        &quot;items&quot;: [
+          [
+            &quot;［特殊］隨機功法書&quot;,
+            1,
+            &quot;special&quot;
+          ],
+          [
+            &quot;［初階］靈根丹&quot;,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      &quot;id&quot;: &quot;CQ-DZ-049&quot;,
+      &quot;reward&quot;: {
+        &quot;rep&quot;: 10,
+        &quot;coins&quot;: 3000,
+        &quot;items&quot;: [
+          [
+            &quot;［特殊］綜合二階素材箱&quot;,
+            5,
+            &quot;special&quot;
+          ],
+          [
+            &quot;功法殘卷&quot;,
+            2,
+            &quot;special&quot;
+          ]
+        ]
+      }
+    }
+  ]
+}</pre></details><details><summary>✓ L28 80級靈幣表、全部種級、人形與玩家境界無關</summary><pre>{
+  &quot;errors&quot;: [],
+  &quot;checks&quot;: 1600,
+  &quot;example&quot;: [
+    2,
+    31,
+    130
+  ]
+}</pre></details><details><summary>✓ L27 修為同級、跨境、差10與11，角色獨立</summary><pre>{
+  &quot;values&quot;: [
+    10,
+    9,
+    5,
+    1,
+    0
+  ],
+  &quot;higher&quot;: 2,
+  &quot;levels&quot;: [
+    6,
+    7,
+    8,
+    8,
+    9,
+    9,
+    10,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    21,
+    23,
+    25,
+    40,
+    45,
+    50,
+    55,
+    60,
+    67,
+    74,
+    80,
+    87,
+    95,
+    105,
+    120,
+    135,
+    150,
+    165,
+    185,
+    200,
+    225,
+    250,
+    275,
+    285,
+    330,
+    370,
+    430,
+    485,
+    555,
+    630,
+    715,
+    800,
+    870,
+    840,
+    950,
+    1080,
+    1240,
+    1420,
+    1630,
+    1870,
+    2130,
+    2420,
+    2650,
+    2750,
+    3125,
+    3500,
+    4000,
+    4500,
+    5125,
+    5750,
+    6500,
+    7375,
+    8100,
+    7800,
+    8900,
+    10000,
+    11300,
+    12900,
+    14700,
+    16700,
+    18900,
+    21300,
+    23500
+  ]
+}</pre></details><details><summary>✓ L15 新妖物合法境界、種級、機率及正式公式候選戰力</summary><pre>{
+  &quot;counts&quot;: {
+    &quot;靈珠蝶&quot;: 3347,
+    &quot;硬黑蠍&quot;: 3314,
+    &quot;燐火狼&quot;: 3339
+  },
+  &quot;bad&quot;: 0,
+  &quot;values&quot;: [
+    {
+      &quot;name&quot;: &quot;燐火狼&quot;,
+      &quot;realm&quot;: &quot;築基五層&quot;,
+      &quot;stats&quot;: [
+        585,
+        159,
+        47,
+        38,
+        33,
+        31,
+        39,
+        38
+      ],
+      &quot;power&quot;: 475
+    },
+    {
+      &quot;name&quot;: &quot;燐火狼&quot;,
+      &quot;realm&quot;: &quot;築基六層&quot;,
+      &quot;stats&quot;: [
+        644,
+        174,
+        50,
+        41,
+        35,
+        33,
+        41,
+        42
+      ],
+      &quot;power&quot;: 510
+    },
+    {
+      &quot;name&quot;: &quot;燐火狼&quot;,
+      &quot;realm&quot;: &quot;築基七層&quot;,
+      &quot;stats&quot;: [
+        702,
+        189,
+        55,
+        44,
+        38,
+        36,
+        44,
+        45
+      ],
+      &quot;power&quot;: 554
+    },
+    {
+      &quot;name&quot;: &quot;燐火狼&quot;,
+      &quot;realm&quot;: &quot;築基八層&quot;,
+      &quot;stats&quot;: [
+        760,
+        204,
+        59,
+        48,
+        41,
+        39,
+        47,
+        48
+      ],
+      &quot;power&quot;: 597
+    },
+    {
+      &quot;name&quot;: &quot;燐火狼&quot;,
+      &quot;realm&quot;: &quot;築基圓滿&quot;,
+      &quot;stats&quot;: [
+        878,
+        234,
+        67,
+        54,
+        47,
+        45,
+        54,
+        54
+      ],
+      &quot;power&quot;: 681
+    },
+    {
+      &quot;name&quot;: &quot;硬黑蠍&quot;,
+      &quot;realm&quot;: &quot;築基五層&quot;,
+      &quot;stats&quot;: [
+        485,
+        159,
+        38,
+        36,
+        44,
+        44,
+        28,
+        33
+      ],
+      &quot;power&quot;: 467
+    },
+    {
+      &quot;name&quot;: &quot;硬黑蠍&quot;,
+      &quot;realm&quot;: &quot;築基七層&quot;,
+      &quot;stats&quot;: [
+        582,
+        189,
+        44,
+        42,
+        51,
+        51,
+        32,
+        39
+      ],
+      &quot;power&quot;: 544
+    },
+    {
+      &quot;name&quot;: &quot;硬黑蠍&quot;,
+      &quot;realm&quot;: &quot;築基九層&quot;,
+      &quot;stats&quot;: [
+        680,
+        219,
+        50,
+        48,
+        59,
+        59,
+        37,
+        44
+      ],
+      &quot;power&quot;: 626
+    },
+    {
+      &quot;name&quot;: &quot;硬黑蠍&quot;,
+      &quot;realm&quot;: &quot;築基圓滿&quot;,
+      &quot;stats&quot;: [
+        728,
+        234,
+        54,
+        51,
+        63,
+        63,
+        39,
+        47
+      ],
+      &quot;power&quot;: 669
+    },
+    {
+      &quot;name&quot;: &quot;靈珠蝶&quot;,
+      &quot;realm&quot;: &quot;築基五層&quot;,
+      &quot;stats&quot;: [
+        476,
+        276,
+        41,
+        75,
+        34,
+        41,
+        51,
+        51
+      ],
+      &quot;power&quot;: 630
+    },
+    {
+      &quot;name&quot;: &quot;靈珠蝶&quot;,
+      &quot;realm&quot;: &quot;築基圓滿&quot;,
+      &quot;stats&quot;: [
+        715,
+        406,
+        59,
+        106,
+        49,
+        59,
+        71,
+        71
+      ],
+      &quot;power&quot;: 898
+    },
+    {
+      &quot;name&quot;: &quot;財寶怨靈&quot;,
+      &quot;realm&quot;: &quot;築基圓滿&quot;,
+      &quot;stats&quot;: [
+        2600,
+        390,
+        75,
+        79,
+        69,
+        69,
+        56,
+        69
+      ],
+      &quot;power&quot;: 1084
+    },
+    {
+      &quot;name&quot;: &quot;長右&quot;,
+      &quot;realm&quot;: &quot;築基圓滿&quot;,
+      &quot;stats&quot;: [
+        4500,
+        1200,
+        115,
+        180,
+        80,
+        90,
+        48,
+        70
+      ],
+      &quot;power&quot;: 1957
+    }
+  ]
+}</pre></details><details><summary>✓ L08 實際chosen入口10000次前60%後40%，指定／嘲諷例外</summary><pre>{
+  &quot;front&quot;: 6051,
+  &quot;back&quot;: 3949,
+  &quot;selected&quot;: true,
+  &quot;taunted&quot;: true
+}</pre></details><details><summary>✓ L16 長右50%同體鎖血、靈力全滿、指定兩動及潮濕優先</summary><pre>{
+  &quot;transition&quot;: {
+    &quot;hp&quot;: 2250,
+    &quot;mp&quot;: 1200,
+    &quot;phase&quot;: 2,
+    &quot;count&quot;: 1
+  },
+  &quot;first&quot;: &quot;轟雷&quot;,
+  &quot;second&quot;: &quot;洪水&quot;,
+  &quot;third&quot;: &quot;潮閃引雷&quot;,
+  &quot;cast1&quot;: true,
+  &quot;cast2&quot;: true,
+  &quot;wet&quot;: [
+    true,
+    true
+  ]
+}</pre></details><details><summary>✓ L16 災獸之體在控制判定前攔截</summary><pre>[
+  {
+    &quot;name&quot;: &quot;暈眩&quot;,
+    &quot;added&quot;: false,
+    &quot;hard&quot;: 0,
+    &quot;has&quot;: false
+  },
+  {
+    &quot;name&quot;: &quot;麻痺&quot;,
+    &quot;added&quot;: false,
+    &quot;hard&quot;: 0,
+    &quot;has&quot;: false
+  },
+  {
+    &quot;name&quot;: &quot;冰凍&quot;,
+    &quot;added&quot;: false,
+    &quot;hard&quot;: 0,
+    &quot;has&quot;: false
+  },
+  {
+    &quot;name&quot;: &quot;睡眠&quot;,
+    &quot;added&quot;: false,
+    &quot;hard&quot;: 0,
+    &quot;has&quot;: false
+  },
+  {
+    &quot;name&quot;: &quot;特殊睡眠&quot;,
+    &quot;added&quot;: false,
+    &quot;hard&quot;: 0,
+    &quot;has&quot;: false
+  },
+  {
+    &quot;name&quot;: &quot;束縛&quot;,
+    &quot;added&quot;: false,
+    &quot;hard&quot;: 0,
+    &quot;has&quot;: false
+  },
+  {
+    &quot;name&quot;: &quot;混亂&quot;,
+    &quot;added&quot;: false,
+    &quot;hard&quot;: 0,
+    &quot;has&quot;: false
+  },
+  {
+    &quot;name&quot;: &quot;恐懼&quot;,
+    &quot;added&quot;: false,
+    &quot;hard&quot;: 0,
+    &quot;has&quot;: false
+  },
+  {
+    &quot;name&quot;: &quot;魅惑&quot;,
+    &quot;added&quot;: false,
+    &quot;hard&quot;: 0,
+    &quot;has&quot;: false
+  }
+]</pre></details><details><summary>✓ L29 財寶怨靈實際施放扣幣；0MP及最低0</summary><pre>{
+  &quot;casts&quot;: 35,
+  &quot;purse&quot;: 0,
+  &quot;coins&quot;: 0,
+  &quot;cd&quot;: 0,
+  &quot;mp&quot;: 0
+}</pre></details><details><summary>✓ L18 八種狀態獨立於增減益，雷傷消耗一次及同招順序</summary><pre>{
+  &quot;before&quot;: {
+    &quot;states&quot;: 8,
+    &quot;buff&quot;: 0,
+    &quot;debuff&quot;: 0
+  },
+  &quot;wet&quot;: false,
+  &quot;paralysis&quot;: 2,
+  &quot;states&quot;: [
+    &quot;灼熱&quot;,
+    &quot;纏身&quot;,
+    &quot;泥身&quot;,
+    &quot;風蝕&quot;,
+    &quot;光明&quot;,
+    &quot;黑暗&quot;
+  ],
+  &quot;after&quot;: 9768
+}</pre></details><details><summary>✓ L10 護盾直接破盾反擊一次；DoT不反擊</summary><pre>{
+  &quot;direct&quot;: {
+    &quot;counter&quot;: 60,
+    &quot;total&quot;: 60,
+    &quot;stun&quot;: true,
+    &quot;shield&quot;: false
+  },
+  &quot;dot&quot;: {
+    &quot;counter&quot;: 0,
+    &quot;total&quot;: 0,
+    &quot;stun&quot;: false,
+    &quot;shield&quot;: false
+  }
+}</pre></details><details><summary>✓ L18 破夢先判睡眠、喚醒後仍施加混亂；非睡眠弱傷</summary><pre>{
+  &quot;sleep&quot;: {
+    &quot;lost&quot;: 195,
+    &quot;sleep&quot;: false,
+    &quot;confused&quot;: true
+  },
+  &quot;awake&quot;: {
+    &quot;lost&quot;: 45,
+    &quot;sleep&quot;: false,
+    &quot;confused&quot;: false
+  }
+}</pre></details><details><summary>✓ L27 一般多敵勝利真實發放合計修為與靈幣</summary><pre>{
+  &quot;coins&quot;: 5,
+  &quot;exp&quot;: 13
+}</pre></details><details><summary>✓ L25 CQ046特殊種區分與三獸數量；領獎不重複</summary><pre>{
+  &quot;initial&quot;: [
+    0,
+    0,
+    0
+  ],
+  &quot;counts&quot;: [
+    3,
+    3,
+    2
+  ],
+  &quot;done&quot;: true,
+  &quot;claimed&quot;: true,
+  &quot;once&quot;: {
+    &quot;coins&quot;: 500,
+    &quot;box&quot;: 1
+  },
+  &quot;twice&quot;: false
+}</pre></details><details><summary>✓ L25 CQ047僅實得怨靈靈幣累計，不讀身上總額</summary><pre>{
+  &quot;before&quot;: {
+    &quot;done&quot;: false,
+    &quot;kills&quot;: 3,
+    &quot;coins&quot;: 5700
+  },
+  &quot;done&quot;: true,
+  &quot;claimed&quot;: true,
+  &quot;coins&quot;: 6000,
+  &quot;reward&quot;: 2000
+}</pre></details><details><summary>✓ L25 CQ048圓滿條件、CQ049戰敗重置</summary><pre>{
+  &quot;low&quot;: false,
+  &quot;right&quot;: true,
+  &quot;one&quot;: 1,
+  &quot;loss&quot;: 0,
+  &quot;streak&quot;: 2,
+  &quot;done&quot;: true
+}</pre></details><details><summary>✓ L24 CQ033三選二靈幣是選項；選足才發放</summary><pre>{
+  &quot;opened&quot;: 0,
+  &quot;invalid&quot;: false,
+  &quot;ok&quot;: true,
+  &quot;coins&quot;: 1500,
+  &quot;scroll&quot;: 2,
+  &quot;ghost&quot;: 0
+}</pre></details><details><summary>✓ L25 新委託多項提交選擇、取消、不足與正確扣除</summary><pre>{
+  &quot;before&quot;: [
+    5,
+    5
+  ],
+  &quot;invalid&quot;: false,
+  &quot;afterBad&quot;: [
+    5,
+    5
+  ],
+  &quot;ok&quot;: true,
+  &quot;after&quot;: [
+    2,
+    2
+  ],
+  &quot;done&quot;: true,
+  &quot;claimed&quot;: false
+}</pre></details><details><summary>✓ L24 製作寵物裝備需接取後製作證明</summary><pre>{
+  &quot;name&quot;: &quot;［初階］狼皮護頸&quot;,
+  &quot;before&quot;: [],
+  &quot;after&quot;: [
+    &quot;［初階］狼皮護頸&quot;
+  ],
+  &quot;proof&quot;: {
+    &quot;［初階］狼皮護頸&quot;: 1
+  }
+}</pre></details><details><summary>✓ L25 四紙不重複、8小時、已接取與完成等待</summary><pre>{
+  &quot;ids&quot;: [
+    &quot;CQ-DZ-012&quot;,
+    &quot;CQ-DZ-006&quot;,
+    &quot;CQ-DZ-044&quot;,
+    &quot;CQ-DZ-015&quot;
+  ],
+  &quot;intervals&quot;: [
+    480,
+    480,
+    480,
+    480
+  ],
+  &quot;same&quot;: true,
+  &quot;remaining&quot;: 480,
+  &quot;refill&quot;: 480,
+  &quot;status&quot;: &quot;empty&quot;
+}</pre></details><details><summary>✓ L13 黑潮解鎖、境界、主線關塔及導航不繞鎖</summary><pre>{
+  &quot;a&quot;: &quot;需完成［支線］危險區&quot;,
+  &quot;b&quot;: &quot;最低境界：築基五層&quot;,
+  &quot;c&quot;: &quot;傳送通道異常，暫時無法前往。&quot;,
+  &quot;d&quot;: &quot;傳送通道異常，暫時無法前往。&quot;,
+  &quot;path&quot;: null
+}</pre></details><details><summary>✓ L14 地下深窟3日野外化與每日回復1最多2</summary><pre>{
+  &quot;before&quot;: false,
+  &quot;wild&quot;: true,
+  &quot;one&quot;: 1,
+  &quot;max&quot;: 2
+}</pre></details><details><summary>✓ L13 A線永久挖掘3次與B線隔離</summary><pre>{
+  &quot;b&quot;: false,
+  &quot;one&quot;: true,
+  &quot;early&quot;: false,
+  &quot;two&quot;: true,
+  &quot;early2&quot;: false,
+  &quot;three&quot;: true,
+  &quot;four&quot;: false,
+  &quot;count&quot;: 3,
+  &quot;bone&quot;: 1
+}</pre></details><details><summary>✓ L22 A/B分支選項鎖定、同行位置與B線無陸家情報</summary><pre>[
+  {
+    &quot;branch&quot;: &quot;A&quot;,
+    &quot;done&quot;: true,
+    &quot;party&quot;: [
+      &quot;沈玄川&quot;,
+      &quot;柳清妍&quot;
+    ],
+    &quot;known&quot;: [],
+    &quot;second&quot;: false,
+    &quot;places&quot;: {
+      &quot;沈玄川&quot;: &quot;同行中&quot;,
+      &quot;柳清妍&quot;: &quot;同行中&quot;,
+      &quot;邱山河&quot;: &quot;朝御城&quot;,
+      &quot;林夏于&quot;: &quot;朝御城&quot;
+    }
+  },
+  {
+    &quot;branch&quot;: &quot;B&quot;,
+    &quot;done&quot;: true,
+    &quot;party&quot;: [
+      &quot;邱山河&quot;,
+      &quot;林夏于&quot;
+    ],
+    &quot;known&quot;: [],
+    &quot;second&quot;: false,
+    &quot;places&quot;: {
+      &quot;沈玄川&quot;: &quot;青陽山&quot;,
+      &quot;柳清妍&quot;: &quot;青陽山&quot;,
+      &quot;邱山河&quot;: &quot;同行中&quot;,
+      &quot;林夏于&quot;: &quot;同行中&quot;
+    }
+  }
+]</pre></details><details><summary>✓ L21 主線029等待門檻、逐字流程與多敵回報</summary><pre>{
+  &quot;early&quot;: false,
+  &quot;ready&quot;: true,
+  &quot;battleDone&quot;: true,
+  &quot;claimed&quot;: true,
+  &quot;coins&quot;: 10838,
+  &quot;reportLines&quot;: 15
+}</pre></details><details><summary>✓ L17 長右戰敗實際復原、醫館、免費、進度可重試</summary><pre>{
+  &quot;place&quot;: &quot;朝御城&quot;,
+  &quot;coins&quot;: 0,
+  &quot;hp&quot;: 128,
+  &quot;max&quot;: 128,
+  &quot;claimed&quot;: false,
+  &quot;partners&quot;: [
+    {
+      &quot;name&quot;: &quot;邱山河&quot;,
+      &quot;hp&quot;: 2706,
+      &quot;max&quot;: 2706,
+      &quot;dead&quot;: false
+    },
+    {
+      &quot;name&quot;: &quot;林夏于&quot;,
+      &quot;hp&quot;: 1413,
+      &quot;max&quot;: 1413,
+      &quot;dead&quot;: false
+    },
+    {
+      &quot;name&quot;: &quot;沈玄川&quot;,
+      &quot;hp&quot;: 265,
+      &quot;max&quot;: 265,
+      &quot;dead&quot;: false
+    }
+  ]
+}</pre></details><details><summary>✓ L35 長右勝後公告、交談、心臟及完整獎勵僅一次</summary><pre>{
+  &quot;still&quot;: true,
+  &quot;coin&quot;: 5000,
+  &quot;heart&quot;: 1,
+  &quot;soul&quot;: 1,
+  &quot;pack&quot;: 1,
+  &quot;twice&quot;: false,
+  &quot;claimed&quot;: true,
+  &quot;dir&quot;: &quot;NE&quot;,
+  &quot;place&quot;: &quot;雷鳴沼地下深窟&quot;
+}</pre></details><details><summary>✓ L09 實際個人合成100%成功、不扣能、不加經驗、材料無品質</summary><pre>{
+  &quot;ok&quot;: true,
+  &quot;before&quot;: {
+    &quot;level&quot;: 1,
+    &quot;core&quot;: 0,
+    &quot;aura&quot;: 0,
+    &quot;lastAt&quot;: 480,
+    &quot;aux&quot;: null
+  },
+  &quot;after&quot;: {
+    &quot;level&quot;: 1,
+    &quot;core&quot;: 0,
+    &quot;aura&quot;: 0,
+    &quot;lastAt&quot;: 480,
+    &quot;aux&quot;: null
+  },
+  &quot;gained&quot;: 1
+}</pre></details><details><summary>✓ L11 箱分類、階級、多箱確認與取消防重複</summary><pre>{
+  &quot;list&quot;: [
+    &quot;［一階］靈草&quot;,
+    &quot;［一階］梨草&quot;,
+    &quot;［一階］精草&quot;,
+    &quot;［一階］靈露&quot;,
+    &quot;［一階］碧萃枝&quot;,
+    &quot;［一階］藥草&quot;,
+    &quot;［一階］靈石&quot;,
+    &quot;［一階］靈原鐵&quot;,
+    &quot;［一階］靈木&quot;,
+    &quot;［一階］靈果&quot;,
+    &quot;［一階］脆脆果&quot;,
+    &quot;［一階］破布&quot;,
+    &quot;［一階］靈藥粉&quot;,
+    &quot;［一階］精靈液&quot;,
+    &quot;［一階］碧木芯&quot;,
+    &quot;［一階］導靈粉&quot;,
+    &quot;［一階］靈鐵錠&quot;,
+    &quot;［一階］獸骨粉&quot;,
+    &quot;［一階］妖血精華&quot;,
+    &quot;［一階］魂粉&quot;,
+    &quot;［一階］妖丹粉末&quot;,
+    &quot;［一階］皮毛&quot;,
+    &quot;［一階］蛇鱗&quot;,
+    &quot;［一階］硬蟲甲&quot;,
+    &quot;［一階］妖鳥羽&quot;,
+    &quot;［一階］獸骨&quot;,
+    &quot;［一階］獸牙&quot;,
+    &quot;［一階］妖獸精血&quot;,
+    &quot;［一階］殘缺妖丹&quot;,
+    &quot;［一階］殘魂&quot;,
+    &quot;［一階］毒囊&quot;,
+    &quot;［一階］蛛絲&quot;,
+    &quot;［一階］獸角&quot;,
+    &quot;［一階］靈粉&quot;,
+    &quot;［一階］龜殼&quot;
+  ],
+  &quot;tabs&quot;: [
+    &quot;全部&quot;,
+    &quot;植物&quot;,
+    &quot;礦物&quot;,
+    &quot;木材&quot;,
+    &quot;靈果&quot;,
+    &quot;妖物&quot;
+  ],
+  &quot;notYet&quot;: true,
+  &quot;before&quot;: 3,
+  &quot;once&quot;: {
+    &quot;box&quot;: 1,
+    &quot;items&quot;: 2
+  },
+  &quot;twice&quot;: false
+}</pre></details><details><summary>✓ L03 品質裝備比較、同槽數值與保存字串</summary><pre>{
+  &quot;body&quot;: &quot;目前穿戴：［無階］新手劍欲穿戴：優良［初階］靈楊長弓數值目前基礎已記錄品質加成欲穿戴差額氣血00000靈力00000攻3808+5道0505+5防00000道防00000身0202+2命2707+5暴擊率00000暴擊傷害00000效果命中00000效果抵抗00000火屬性傷害00000水屬性傷害00000木屬性傷害00000土屬性傷害00000雷屬性傷害00000風屬性傷害00000光屬性傷害00000暗屬性傷害00000目前效果：無欲穿戴效果：無依物品現有資料顯示，不另補造品質倍率。返回背包&quot;,
+  &quot;rows&quot;: 20,
+  &quot;registered&quot;: true
+}</pre></details><details><summary>✓ L04 平民無愛心／贈禮、功能NPC保留</summary><pre>{
+  &quot;civilHearts&quot;: 0,
+  &quot;civilGift&quot;: false,
+  &quot;qiuGift&quot;: true
+}</pre></details><details><summary>✓ L30 跨境範圍與根值邊界，正式表補齊後入口開放</summary><pre>{
+  &quot;realmMin&quot;: 11,
+  &quot;realmMax&quot;: 20,
+  &quot;goldMin&quot;: 21,
+  &quot;goldMax&quot;: 30,
+  &quot;stopped&quot;: true,
+  &quot;bad&quot;: 0,
+  &quot;disabled&quot;: false,
+  &quot;title&quot;: &quot;對手為下一大境界一層～圓滿；最高金丹圓滿。&quot;,
+  &quot;acceptance&quot;: &quot;原表已補入，另有完整對手與跨境實戰驗收&quot;
+}</pre></details><details><summary>✓ L31 火尾毛來源反查燐火狼／黑潮，圖示共用</summary><pre>{
+  &quot;body&quot;: &quot;妖物素材NPC地區裝備丹藥禮物任務物品功法篩選：［二階］火尾毛 查看全部［二階］火尾毛分類：妖物｜材料不分品質火系妖物尾部留下的特殊毛束，可用於任務需求、鍛造、寵物鍛造、鑄飾。取得來源黑潮禁岸・燐火狼 35%查看妖物［委託］尾巴著火啦！（固定獎勵）用途裝備・［初階］赤尾披衣、裝備・［初階］赤尾靈袍、飾品・［初階］赤尾玉佩、寵物裝備・［初階］赤尾靈飾、［委託］火尾毛收購！、［委託］燐火與靈蝶&quot;,
+  &quot;shared&quot;: true,
+  &quot;sources&quot;: [
+    {
+      &quot;kind&quot;: &quot;妖物&quot;,
+      &quot;name&quot;: &quot;燐火狼&quot;,
+      &quot;text&quot;: &quot;黑潮禁岸・燐火狼 35%&quot;
+    },
+    {
+      &quot;kind&quot;: &quot;委託&quot;,
+      &quot;name&quot;: &quot;CQ-DZ-035&quot;,
+      &quot;text&quot;: &quot;［委託］尾巴著火啦！（固定獎勵）&quot;
+    }
+  ]
+}</pre></details><details><summary>✓ L33 所有圖鑑分類實際開啟，缺來源明示、圖片可載入</summary><pre>[
+  {
+    &quot;tab&quot;: &quot;妖物&quot;,
+    &quot;cards&quot;: 29,
+    &quot;images&quot;: 130,
+    &quot;secret&quot;: false,
+    &quot;broken&quot;: 0
+  },
+  {
+    &quot;tab&quot;: &quot;素材&quot;,
+    &quot;cards&quot;: 68,
+    &quot;images&quot;: 68,
+    &quot;secret&quot;: false,
+    &quot;broken&quot;: 0
+  },
+  {
+    &quot;tab&quot;: &quot;NPC&quot;,
+    &quot;cards&quot;: 26,
+    &quot;images&quot;: 26,
+    &quot;secret&quot;: false,
+    &quot;broken&quot;: 0
+  },
+  {
+    &quot;tab&quot;: &quot;地區&quot;,
+    &quot;cards&quot;: 16,
+    &quot;images&quot;: 16,
+    &quot;secret&quot;: false,
+    &quot;broken&quot;: 0
+  },
+  {
+    &quot;tab&quot;: &quot;裝備&quot;,
+    &quot;cards&quot;: 254,
+    &quot;images&quot;: 254,
+    &quot;secret&quot;: false,
+    &quot;broken&quot;: 0
+  },
+  {
+    &quot;tab&quot;: &quot;丹藥&quot;,
+    &quot;cards&quot;: 28,
+    &quot;images&quot;: 28,
+    &quot;secret&quot;: false,
+    &quot;broken&quot;: 0
+  },
+  {
+    &quot;tab&quot;: &quot;禮物&quot;,
+    &quot;cards&quot;: 67,
+    &quot;images&quot;: 67,
+    &quot;secret&quot;: false,
+    &quot;broken&quot;: 0
+  },
+  {
+    &quot;tab&quot;: &quot;任務物品&quot;,
+    &quot;cards&quot;: 0,
+    &quot;images&quot;: 0,
+    &quot;secret&quot;: false,
+    &quot;broken&quot;: 0
+  },
+  {
+    &quot;tab&quot;: &quot;功法&quot;,
+    &quot;cards&quot;: 369,
+    &quot;images&quot;: 0,
+    &quot;secret&quot;: false,
+    &quot;broken&quot;: 0
+  }
+]</pre></details><details><summary>✓ L19 新寵五星與10心技能分離、長右專屬不可學</summary><pre>{
+  &quot;before&quot;: false,
+  &quot;choice&quot;: true,
+  &quot;after&quot;: true,
+  &quot;heartBefore&quot;: false,
+  &quot;heartAccepted&quot;: true,
+  &quot;task&quot;: {
+    &quot;id&quot;: &quot;P07307&quot;,
+    &quot;acceptedAt&quot;: 480,
+    &quot;counts&quot;: [
+      0,
+      0
+    ],
+    &quot;claimed&quot;: false
+  },
+  &quot;exclusive&quot;: false,
+  &quot;core&quot;: &quot;dualdef&quot;
+}</pre></details><details><summary>✓ L34 25種神秘蛋選單；新種資料不足不扣蛋</summary><pre>{
+  &quot;species&quot;: 25,
+  &quot;no&quot;: false,
+  &quot;before&quot;: 1,
+  &quot;after&quot;: 1,
+  &quot;body&quot;: &quot;工作檔提供野外候選境界八核，但未提供練氣一層孵化起始及完整成長偏科倍率。保留蛋，不消耗、不建立無法顯示的寵物。關閉&quot;
+}</pre></details><details><summary>✓ L16 長右實際戰鬥畫面、整體立繪與連續血條</summary><pre>{
+  &quot;saved&quot;: [
+    {
+      &quot;name&quot;: &quot;蘇璃&quot;,
+      &quot;hp&quot;: 322,
+      &quot;max&quot;: 322
+    },
+    {
+      &quot;name&quot;: &quot;邱山河&quot;,
+      &quot;hp&quot;: 2706,
+      &quot;max&quot;: 2706,
+      &quot;story&quot;: true
+    },
+    {
+      &quot;name&quot;: &quot;林夏于&quot;,
+      &quot;hp&quot;: 1413,
+      &quot;max&quot;: 1413,
+      &quot;story&quot;: true
+    },
+    {
+      &quot;name&quot;: &quot;沈玄川&quot;,
+      &quot;hp&quot;: 265,
+      &quot;max&quot;: 265,
+      &quot;story&quot;: true
+    }
+  ],
+  &quot;formation&quot;: {
+    &quot;front1&quot;: &quot;player&quot;,
+    &quot;front2&quot;: &quot;npc:邱山河&quot;,
+    &quot;back1&quot;: &quot;npc:林夏于&quot;,
+    &quot;back2&quot;: &quot;npc:沈玄川&quot;
+  },
+  &quot;team&quot;: [
+    {
+      &quot;name&quot;: &quot;測試999&quot;,
+      &quot;hp&quot;: 128,
+      &quot;atk&quot;: 15,
+      &quot;dao&quot;: 15
+    },
+    {
+      &quot;name&quot;: &quot;邱山河&quot;,
+      &quot;realm&quot;: &quot;金丹五層&quot;,
+      &quot;hp&quot;: 2706,
+      &quot;atk&quot;: 236,
+      &quot;dao&quot;: 135,
+      &quot;skills&quot;: [
+        &quot;［中階］貫陣龍槍&quot;,
+        &quot;［中階］鎮岳金身&quot;,
+        &quot;［初階］蓄槍訣&quot;,
+        &quot;［初階］穿雲直刺&quot;,
+        &quot;［初階］掃陣槍&quot;,
+        &quot;［初階］長槍守界&quot;,
+        &quot;［初階］挑燈截脈&quot;
+      ]
+    },
+    {
+      &quot;name&quot;: &quot;林夏于&quot;,
+      &quot;realm&quot;: &quot;築基圓滿&quot;,
+      &quot;hp&quot;: 1413,
+      &quot;atk&quot;: 139,
+      &quot;dao&quot;: 81,
+      &quot;skills&quot;: [
+        &quot;［初階］玄刀斬&quot;,
+        &quot;［初階］斷潮刀式&quot;,
+        &quot;［初階］赤痕追斬&quot;,
+        &quot;［初階］逆鋒截擊&quot;,
+        &quot;［初階］藏刃訣&quot;,
+        &quot;［初階］刀背鎮魂&quot;
+      ]
+    },
+    {
+      &quot;name&quot;: &quot;沈玄川&quot;,
+      &quot;realm&quot;: &quot;練氣五層&quot;,
+      &quot;hp&quot;: 265,
+      &quot;atk&quot;: 36,
+      &quot;dao&quot;: 35,
+      &quot;skills&quot;: [
+        &quot;［初階］劍氣斬&quot;,
+        &quot;［初階］削甲劍訣&quot;,
+        &quot;［初階］回劍護身&quot;
+      ]
+    }
+  ],
+  &quot;bosses&quot;: 1,
+  &quot;bars&quot;: 1,
+  &quot;images&quot;: 1,
+  &quot;box&quot;: {
+    &quot;x&quot;: 315,
+    &quot;y&quot;: 108.5,
+    &quot;width&quot;: 792,
+    &quot;height&quot;: 455.4000244140625,
+    &quot;top&quot;: 108.5,
+    &quot;right&quot;: 1107,
+    &quot;bottom&quot;: 563.9000244140625,
+    &quot;left&quot;: 315
+  },
+  &quot;body&quot;: &quot;\n    詳細戰鬥資訊測試999其他資訊氣血 110/128靈力 39/47攻 15道 15防 9道防 9身 9命 15境界 築基圓滿戰力 132主靈根：水Buff無Debuff無邱山河其他資訊氣血 2706/2706靈力 1188/1188攻 236道 135防 178道防 146身 130命 141境界 金丹五層戰力 2164主靈根：土Buff無Debuff無林夏于其他資訊氣血 1413/1413靈力 684/684攻 139道 81防 84道防 81身 78命 84境界 築基圓滿戰力 11&quot;
+}</pre></details><details><summary>✓ L02 逐字對話跳過停在重要節點，分支選擇不自動決定</summary><pre>{
+  &quot;index&quot;: 2,
+  &quot;body&quot;: &quot;旁白不可錯過的情報點擊繼續跳過暫時離開&quot;,
+  &quot;branch&quot;: null,
+  &quot;choice&quot;: &quot;我跟沈玄川、柳清妍去清除妖物。我跟邱山河、林夏于去調查傳送塔。&quot;
+}</pre></details><details><summary>✓ L05 主黃支藍委綠標題實際色彩與任務工作編號隱藏</summary><pre>[
+  {
+    &quot;title&quot;: &quot;［主線］測試&quot;,
+    &quot;color&quot;: &quot;rgb(255, 224, 132)&quot;,
+    &quot;workId&quot;: false
+  },
+  {
+    &quot;title&quot;: &quot;［支線］測試&quot;,
+    &quot;color&quot;: &quot;rgb(132, 184, 255)&quot;,
+    &quot;workId&quot;: false
+  },
+  {
+    &quot;title&quot;: &quot;［委託］測試&quot;,
+    &quot;color&quot;: &quot;rgb(138, 222, 158)&quot;,
+    &quot;workId&quot;: false
+  }
+]</pre></details><details><summary>✓ L06 公共與個人製作配方可製作置頂且成本保持</summary><pre>[
+  {
+    &quot;fn&quot;: &quot;r511RecipeList&quot;,
+    &quot;count&quot;: 9,
+    &quot;can&quot;: 0,
+    &quot;sorted&quot;: true,
+    &quot;recipe&quot;: [
+      &quot;［初階］氣血藥水&quot;,
+      &quot;靈草×2＋藥草×1&quot;,
+      &quot;恢復50氣血。&quot;
+    ]
+  },
+  {
+    &quot;fn&quot;: &quot;r510RecipeRows&quot;,
+    &quot;count&quot;: 9,
+    &quot;can&quot;: 0,
+    &quot;sorted&quot;: true,
+    &quot;recipe&quot;: [
+      &quot;［初階］氣血藥水&quot;,
+      &quot;靈草×2＋藥草×1&quot;,
+      &quot;恢復50氣血。&quot;
+    ]
+  },
+  {
+    &quot;fn&quot;: &quot;r59RecipeRows&quot;,
+    &quot;count&quot;: 22,
+    &quot;can&quot;: 0,
+    &quot;sorted&quot;: true,
+    &quot;recipe&quot;: [
+      &quot;［初階］氣血藥水&quot;,
+      &quot;靈草×2＋藥草×1&quot;,
+      &quot;恢復50氣血。&quot;
+    ]
+  },
+  {
+    &quot;fn&quot;: &quot;r512NpcRecipeRows&quot;,
+    &quot;count&quot;: 22,
+    &quot;can&quot;: 0,
+    &quot;sorted&quot;: true,
+    &quot;recipe&quot;: [
+      &quot;［初階］氣血藥水&quot;,
+      &quot;靈草×2＋藥草×1&quot;,
+      &quot;恢復50氣血。&quot;
+    ]
+  }
+]</pre></details><details><summary>✓ L07 特殊／高危／高危特惡魔框雙角／尾巴／叉圖層未切除</summary><pre>[
+  {
+    &quot;tier&quot;: &quot;特殊種&quot;,
+    &quot;svg&quot;: true,
+    &quot;viewBox&quot;: &quot;0 0 260 110&quot;,
+    &quot;paths&quot;: 1,
+    &quot;art&quot;: 2
+  },
+  {
+    &quot;tier&quot;: &quot;高危種&quot;,
+    &quot;svg&quot;: true,
+    &quot;viewBox&quot;: &quot;0 0 260 110&quot;,
+    &quot;paths&quot;: 2,
+    &quot;art&quot;: 2
+  },
+  {
+    &quot;tier&quot;: &quot;高危種（特）&quot;,
+    &quot;svg&quot;: true,
+    &quot;viewBox&quot;: &quot;0 0 260 110&quot;,
+    &quot;paths&quot;: 3,
+    &quot;art&quot;: 2
+  }
+]</pre></details><details><summary>✓ L12 火尾毛素材階級與物品描述／圖鑑同源</summary><pre>{
+  &quot;catalog&quot;: [
+    &quot;［二階］火尾毛&quot;
+  ],
+  &quot;desc&quot;: &quot;［二階］燐火狼尾部留下的火系特殊毛束，可用於任務需求、鍛造、寵物鍛造與鑄飾；材料不分品質。&quot;,
+  &quot;drops&quot;: [
+    [
+      &quot;火尾毛&quot;,
+      35
+    ],
+    [
+      &quot;硬獸骨&quot;,
+      20
+    ],
+    [
+      &quot;獸牙&quot;,
+      5
+    ],
+    [
+      &quot;利爪&quot;,
+      30
+    ],
+    [
+      &quot;濃縮妖血&quot;,
+      5
+    ],
+    [
+      &quot;妖丹&quot;,
+      4
+    ],
+    [
+      &quot;妖魂碎片&quot;,
+      1
+    ]
+  ],
+  &quot;source&quot;: [
+    {
+      &quot;kind&quot;: &quot;妖物&quot;,
+      &quot;name&quot;: &quot;燐火狼&quot;,
+      &quot;text&quot;: &quot;黑潮禁岸・燐火狼 35%&quot;
+    },
+    {
+      &quot;kind&quot;: &quot;委託&quot;,
+      &quot;name&quot;: &quot;CQ-DZ-035&quot;,
+      &quot;text&quot;: &quot;［委託］尾巴著火啦！（固定獎勵）&quot;
+    }
+  ]
+}</pre></details><details><summary>✓ L01 舊任務引導實際移動，黑潮未解鎖不繞過入口</summary><pre>{
+  &quot;ok&quot;: true,
+  &quot;place&quot;: &quot;雷鳴沼&quot;,
+  &quot;after&quot;: &quot;朝御城&quot;,
+  &quot;body&quot;: &quot;目前沒有符合解鎖條件的合法路線。關閉&quot;
+}</pre></details><details><summary>✓ L21 030兩地異相實際配置／兩次戰鬥／合計回報</summary><pre>{
+  &quot;routes&quot;: [
+    &quot;青陽山&quot;,
+    &quot;雷鳴沼&quot;
+  ],
+  &quot;foes&quot;: [
+    [
+      {
+        &quot;name&quot;: &quot;青靈蛇&quot;,
+        &quot;tier&quot;: &quot;特殊種&quot;,
+        &quot;skills&quot;: [
+          &quot;咬咬&quot;,
+          &quot;蛇之舞&quot;
+        ]
+      },
+      {
+        &quot;name&quot;: &quot;青靈蛇&quot;,
+        &quot;tier&quot;: &quot;一般種&quot;,
+        &quot;skills&quot;: [
+          &quot;咬咬&quot;
+        ]
+      }
+    ],
+    [
+      {
+        &quot;name&quot;: &quot;轟轟鯰&quot;,
+        &quot;tier&quot;: &quot;特殊種&quot;,
+        &quot;skills&quot;: [
+          &quot;轟泥&quot;,
+          &quot;用力&quot;,
+          &quot;玩泥巴&quot;
+        ]
+      },
+      {
+        &quot;name&quot;: &quot;雷角鹿&quot;,
+        &quot;tier&quot;: &quot;一般種&quot;,
+        &quot;skills&quot;: [
+          &quot;角擊&quot;,
+          &quot;雷擊&quot;
+        ]
+      }
+    ]
+  ],
+  &quot;claimed&quot;: true,
+  &quot;coins&quot;: 1200,
+  &quot;expected&quot;: 1200,
+  &quot;routeIndex&quot;: 2
+}</pre></details><details><summary>✓ L21 031關塔與三人實際同行，返城自動完成</summary><pre>{
+  &quot;before&quot;: false,
+  &quot;tower&quot;: true,
+  &quot;joined&quot;: [
+    true,
+    true,
+    true
+  ],
+  &quot;claimed&quot;: true,
+  &quot;recruited&quot;: [
+    &quot;林夏于&quot;,
+    &quot;沈玄川&quot;,
+    &quot;柳清妍&quot;
+  ]
+}</pre></details><details><summary>✓ L22 033A雙戰站位及調查回報，B線以本次正式對話接續</summary><pre>{
+  &quot;a&quot;: true,
+  &quot;foes&quot;: [
+    {
+      &quot;names&quot;: [
+        &quot;青臭蟲&quot;,
+        &quot;青臭蟲&quot;,
+        &quot;青臭蟲&quot;
+      ],
+      &quot;positions&quot;: [
+        &quot;front1&quot;,
+        &quot;front2&quot;,
+        &quot;back1&quot;
+      ]
+    },
+    {
+      &quot;names&quot;: [
+        &quot;青木狼&quot;,
+        &quot;青木狼&quot;,
+        &quot;青翠蝶&quot;
+      ],
+      &quot;positions&quot;: [
+        &quot;front1&quot;,
+        &quot;front2&quot;,
+        &quot;back2&quot;
+      ]
+    }
+  ],
+  &quot;known&quot;: [
+    &quot;龍胤之陣&quot;
+  ],
+  &quot;b&quot;: {
+    &quot;exists&quot;: true,
+    &quot;claimed&quot;: false,
+    &quot;coins&quot;: 0
+  },
+  &quot;text&quot;: &quot;邱山河那就決定了。點擊繼續跳過暫時離開&quot;
+}</pre></details><details><summary>✓ L21 034A未完成入口事件不得跳過直接開戰</summary><pre>{
+  &quot;go&quot;: false,
+  &quot;battle&quot;: false,
+  &quot;claimed&quot;: false
+}</pre></details><details><summary>✓ L22 035A黑衣人正式368功法與零戰鬥獎勵</summary><pre>{
+  &quot;skills&quot;: [
+    {
+      &quot;name&quot;: &quot;電刃破甲&quot;,
+      &quot;legal&quot;: true
+    },
+    {
+      &quot;name&quot;: &quot;鳴雷擊&quot;,
+      &quot;legal&quot;: true
+    },
+    {
+      &quot;name&quot;: &quot;斷念雷音&quot;,
+      &quot;legal&quot;: true
+    }
+  ],
+  &quot;noLoot&quot;: 0
+}</pre></details><details><summary>✓ L23 新增支線兩日門檻與B線閒聊權限，完成危險區解鎖</summary><pre>{
+  &quot;early&quot;: false,
+  &quot;ready&quot;: true,
+  &quot;unlocked&quot;: true,
+  &quot;b&quot;: true,
+  &quot;a&quot;: false,
+  &quot;limitation&quot;: &quot;完整逐字稿待補；測到的是工作檔事件骨架&quot;
+}</pre></details><details><summary>✓ L24 兩條新神秘委託夜間事件、戰敗保留、重試／回收與獎勵</summary><pre>[
+  {
+    &quot;id&quot;: &quot;CQ-DZ-034&quot;,
+    &quot;day&quot;: false,
+    &quot;item&quot;: 1,
+    &quot;retained&quot;: 1,
+    &quot;retry&quot;: true,
+    &quot;done&quot;: true,
+    &quot;claimed&quot;: true,
+    &quot;remaining&quot;: 0,
+    &quot;coins&quot;: 1200
+  },
+  {
+    &quot;id&quot;: &quot;CQ-DZ-050&quot;,
+    &quot;day&quot;: false,
+    &quot;item&quot;: 1,
+    &quot;retained&quot;: 1,
+    &quot;retry&quot;: true,
+    &quot;done&quot;: true,
+    &quot;claimed&quot;: true,
+    &quot;remaining&quot;: 0,
+    &quot;coins&quot;: 1800
+  }
+]</pre></details><details><summary>✓ L25 新增25委託完成資格及逐件實際領獎，拒絕二次領取</summary><pre>[
+  {
+    &quot;id&quot;: &quot;CQ-DZ-026&quot;,
+    &quot;done&quot;: true,
+    &quot;claimed&quot;: true,
+    &quot;coins&quot;: 150,
+    &quot;expected&quot;: 150,
+    &quot;rep&quot;: 3,
+    &quot;expectedRep&quot;: 3,
+    &quot;items&quot;: [
+      {
+        &quot;name&quot;: &quot;［一階］利爪&quot;,
+        &quot;expected&quot;: 1,
+        &quot;got&quot;: 1
+      }
+    ],
+    &quot;twice&quot;: false
+  },
+  {
+    &quot;id&quot;: &quot;CQ-DZ-027&quot;,
+    &quot;done&quot;: true,
+    &quot;claimed&quot;: true,
+    &quot;coins&quot;: 500,
+    &quot;expected&quot;: 500,
+    &quot;rep&quot;: 10,
+    &quot;expectedRep&quot;: 10,
+    &quot;items&quot;: [
+      {
+        &quot;name&quot;: &quot;［特殊］自選一階礦物箱&quot;,
+        &quot;expected&quot;: 3,
+        &quot;got&quot;: 3
+      },
+      {
+        &quot;name&quot;: &quot;功法殘卷&quot;,
+        &quot;expected&quot;: 1,
+        &quot;got&quot;: 1
+      }
+    ],
+    &quot;twice&quot;: false
+  },
+  {
+    &quot;id&quot;: &quot;CQ-DZ-028&quot;,
+    &quot;done&quot;: true,
+    &quot;claimed&quot;: true,
+    &quot;coins&quot;: 150,
+    &quot;expected&quot;: 150,
+    &quot;rep&quot;: 3,
+    &quot;expectedRep&quot;: 3,
+    &quot;items&quot;: [
+      {
+        &quot;name&quot;: &quot;［一階］蛇鱗&quot;,
+        &quot;expected&quot;: 1,
+        &quot;got&quot;: 1
+      }
+    ],
+    &quot;twice&quot;: false
+  },
+  {
+    &quot;id&quot;: &quot;CQ-DZ-029&quot;,
+    &quot;done&quot;: true,
+    &quot;claimed&quot;: true,
+    &quot;coins&quot;: 300,
+    &quot;expected&quot;: 300,
+    &quot;rep&quot;: 7,
+    &quot;expectedRep&quot;: 7,
+    &quot;items&quot;: [
+      {
+        &quot;name&quot;: &quot;［初階］治癒丹&quot;,
+        &quot;expected&quot;: 8,
+        &quot;got&quot;: 8
+      }
+    ],
+    &quot;twice&quot;: false
+  },
+  {
+    &quot;id&quot;: &quot;CQ-DZ-030&quot;,
+    &quot;done&quot;: true,
+    &quot;claimed&quot;: true,
+    &quot;coins&quot;: 200,
+    &quot;expected&quot;: 200,
+    &quot;rep&quot;: 5,
+    &quot;expectedRep&quot;: 5,
+    &quot;items&quot;: [],
+    &quot;twice&quot;: false
+  },
+  {
+    &quot;id&quot;: &quot;CQ-DZ-031&quot;,
+    &quot;done&quot;: true,
+    &quot;claimed&quot;: true,
+    &quot;coins&quot;: 200,
+    &quot;expected&quot;: 200,
+    &quot;rep&quot;: 5,
+    &quot;expectedRep&quot;: 5,
+    &quot;items&quot;: [],
+    &quot;twice&quot;: false
+  },
+  {
+    &quot;id&quot;: &quot;CQ-DZ-032&quot;,
+    &quot;done&quot;: true,
+    &quot;claimed&quot;: true,
+    &quot;coins&quot;: 0,
+    &quot;expected&quot;: 0,
+    &quot;rep&quot;: 7,
+    &quot;expectedRep&quot;: 7,
+    &quot;items&quot;: [
+      {
+        &quot;name&quot;: &quot;寵物飼料&quot;,
+        &quot;expected&quot;: 5,
+        &quot;got&quot;: 5
+      },
+      {
+        &quot;name&quot;: &quot;［初階］迅獸丹&quot;,
+        &quot;expected&quot;: 3,
+        &quot;got&quot;: 3
+      },
+      {
+        &quot;name&quot;: &quot;［初階］獸戰丹&quot;,
+        &quot;expected&quot;: 3,
+        &quot;got&quot;: 3
+      }
+    ],
+    &quot;twice&quot;: false
+  },
+  {
+    &quot;id&quot;: &quot;CQ-DZ-033&quot;,
+    &quot;done&quot;: true,
+    &quot;claimed&quot;: true,
+    &quot;coins&quot;: 1500,
+    &quot;expected&quot;: 1500,
+    &quot;rep&quot;: 10,
+    &quot;expectedRep&quot;: 10,
+    &quot;items&quot;: [
+      {
+        &quot;name&quot;: &quot;功法殘卷&quot;,
+        &quot;expected&quot;: 2,
+        &quot;got&quot;: 2
+      }
+    ],
+    &quot;twice&quot;: false
+  },
+  {
+    &quot;id&quot;: &quot;CQ-DZ-034&quot;,
+    &quot;done&quot;: true,
+    &quot;claimed&quot;: true,
+    &quot;coins&quot;: 1200,
+    &quot;expected&quot;: 1200,
+    &quot;rep&quot;: 50,
+    &quot;expectedRep&quot;: 50,
+    &quot;items&quot;: [
+      {
+        &quot;name&quot;: &quot;［特殊］自選一階礦物箱&quot;,
+        &quot;expected&quot;: 3,
+        &quot;got&quot;: 3
+      },
+      {
+        &quot;name&quot;: &quot;功法殘卷&quot;,
+        &quot;expected&quot;: 2,
+        &quot;got&quot;: 2
+      }
+    ],
+    &quot;twice&quot;: false
+  },
+  {
+    &quot;id&quot;: &quot;CQ-DZ-035&quot;,
+    &quot;done&quot;: true,
+    &quot;claimed&quot;: true,
+    &quot;coins&quot;: 200,
+    &quot;expected&quot;: 200,
+    &quot;rep&quot;: 3,
+    &quot;expectedRep&quot;: 3,
+    &quot;items&quot;: [
+      {
+        &quot;name&quot;: &quot;［二階］火尾毛&quot;,
+        &quot;expected&quot;: 1,
+        &quot;got&quot;: 1
+      }
+    ],
+    &quot;twice&quot;: false
+  },
+  {
+    &quot;id&quot;: &quot;CQ-DZ-036&quot;,
+    &quot;done&quot;: true,
+    &quot;claimed&quot;: true,
+    &quot;coins&quot;: 200,
+    &quot;expected&quot;: 200,
+    &quot;rep&quot;: 3,
+    &quot;expectedRep&quot;: 3,
+    &quot;items&quot;: [
+      {
+        &quot;name&quot;: &quot;［二階］黑蠍甲&quot;,
+        &quot;expected&quot;: 1,
+        &quot;got&quot;: 1
+      }
+    ],
+    &quot;twice&quot;: false
+  },
+  {
+    &quot;id&quot;: &quot;CQ-DZ-037&quot;,
+    &quot;done&quot;: true,
+    &quot;claimed&quot;: true,
+    &quot;coins&quot;: 220,
+    &quot;expected&quot;: 220,
+    &quot;rep&quot;: 3,
+    &quot;expectedRep&quot;: 3,
+    &quot;items&quot;: [
+      {
+        &quot;name&quot;: &quot;［一階］靈粉&quot;,
+        &quot;expected&quot;: 2,
+        &quot;got&quot;: 2
+      }
+    ],
+    &quot;twice&quot;: false
+  },
+  {
+    &quot;id&quot;: &quot;CQ-DZ-038&quot;,
+    &quot;done&quot;: true,
+    &quot;claimed&quot;: true,
+    &quot;coins&quot;: 300,
+    &quot;expected&quot;: 300,
+    &quot;rep&quot;: 3,
+    &quot;expectedRep&quot;: 3,
+    &quot;items&quot;: [
+      {
+        &quot;name&quot;: &quot;［特殊］自選二階素材箱&quot;,
+        &quot;expected&quot;: 1,
+        &quot;got&quot;: 1
+      }
+    ],
+    &quot;twice&quot;: false
+  },
+  {
+    &quot;id&quot;: &quot;CQ-DZ-039&quot;,
+    &quot;done&quot;: true,
+    &quot;claimed&quot;: true,
+    &quot;coins&quot;: 300,
+    &quot;expected&quot;: 300,
+    &quot;rep&quot;: 3,
+    &quot;expectedRep&quot;: 3,
+    &quot;items&quot;: [
+      {
+        &quot;name&quot;: &quot;［二階］硬獸骨&quot;,
+        &quot;expected&quot;: 2,
+        &quot;got&quot;: 2
+      }
+    ],
+    &quot;twice&quot;: false
+  },
+  {
+    &quot;id&quot;: &quot;CQ-DZ-040&quot;,
+    &quot;done&quot;: true,
+    &quot;claimed&quot;: true,
+    &quot;coins&quot;: 250,
+    &quot;expected&quot;: 250,
+    &quot;rep&quot;: 3,
+    &quot;expectedRep&quot;: 3,
+    &quot;items&quot;: [
+      {
+        &quot;name&quot;: &quot;［初階］靈力藥水&quot;,
+        &quot;expected&quot;: 5,
+        &quot;got&quot;: 5
+      }
+    ],
+    &quot;twice&quot;: false
+  },
+  {
+    &quot;id&quot;: &quot;CQ-DZ-041&quot;,
+    &quot;done&quot;: true,
+    &quot;claimed&quot;: true,
+    &quot;coins&quot;: 250,
+    &quot;expected&quot;: 250,
+    &quot;rep&quot;: 3,
+    &quot;expectedRep&quot;: 3,
+    &quot;items&quot;: [
+      {
+        &quot;name&quot;: &quot;［初階］百靈藥水&quot;,
+        &quot;expected&quot;: 3,
+        &quot;got&quot;: 3
+      }
+    ],
+    &quot;twice&quot;: false
+  },
+  {
+    &quot;id&quot;: &quot;CQ-DZ-042&quot;,
+    &quot;done&quot;: true,
+    &quot;claimed&quot;: true,
+    &quot;coins&quot;: 300,
+    &quot;expected&quot;: 300,
+    &quot;rep&quot;: 5,
+    &quot;expectedRep&quot;: 5,
+    &quot;items&quot;: [],
+    &quot;twice&quot;: false
+  },
+  {
+    &quot;id&quot;: &quot;CQ-DZ-043&quot;,
+    &quot;done&quot;: true,
+    &quot;claimed&quot;: true,
+    &quot;coins&quot;: 500,
+    &quot;expected&quot;: 500,
+    &quot;rep&quot;: 5,
+    &quot;expectedRep&quot;: 5,
+    &quot;items&quot;: [
+      {
+        &quot;name&quot;: &quot;［特殊］自選二階素材箱&quot;,
+        &quot;expected&quot;: 1,
+        &quot;got&quot;: 1
+      }
+    ],
+    &quot;twice&quot;: false
+  },
+  {
+    &quot;id&quot;: &quot;CQ-DZ-044&quot;,
+    &quot;done&quot;: true,
+    &quot;claimed&quot;: true,
+    &quot;coins&quot;: 500,
+    &quot;expected&quot;: 500,
+    &quot;rep&quot;: 5,
+    &quot;expectedRep&quot;: 5,
+    &quot;items&quot;: [
+      {
+        &quot;name&quot;: &quot;［初階］百靈藥水&quot;,
+        &quot;expected&quot;: 5,
+        &quot;got&quot;: 5
+      }
+    ],
+    &quot;twice&quot;: false
+  },
+  {
+    &quot;id&quot;: &quot;CQ-DZ-045&quot;,
+    &quot;done&quot;: true,
+    &quot;claimed&quot;: true,
+    &quot;coins&quot;: 650,
+    &quot;expected&quot;: 650,
+    &quot;rep&quot;: 5,
+    &quot;expectedRep&quot;: 5,
+    &quot;items&quot;: [
+      {
+        &quot;name&quot;: &quot;［特殊］自選二階素材箱&quot;,
+        &quot;expected&quot;: 1,
+        &quot;got&quot;: 1
+      }
+    ],
+    &quot;twice&quot;: false
+  },
+  {
+    &quot;id&quot;: &quot;CQ-DZ-046&quot;,
+    &quot;done&quot;: true,
+    &quot;claimed&quot;: true,
+    &quot;coins&quot;: 500,
+    &quot;expected&quot;: 500,
+    &quot;rep&quot;: 7,
+    &quot;expectedRep&quot;: 7,
+    &quot;items&quot;: [
+      {
+        &quot;name&quot;: &quot;［特殊］自選二階妖物素材箱&quot;,
+        &quot;expected&quot;: 1,
+        &quot;got&quot;: 1
+      }
+    ],
+    &quot;twice&quot;: false
+  },
+  {
+    &quot;id&quot;: &quot;CQ-DZ-047&quot;,
+    &quot;done&quot;: true,
+    &quot;claimed&quot;: true,
+    &quot;coins&quot;: 2000,
+    &quot;expected&quot;: 2000,
+    &quot;rep&quot;: 7,
+    &quot;expectedRep&quot;: 7,
+    &quot;items&quot;: [],
+    &quot;twice&quot;: false
+  },
+  {
+    &quot;id&quot;: &quot;CQ-DZ-048&quot;,
+    &quot;done&quot;: true,
+    &quot;claimed&quot;: true,
+    &quot;coins&quot;: 2000,
+    &quot;expected&quot;: 2000,
+    &quot;rep&quot;: 12,
+    &quot;expectedRep&quot;: 12,
+    &quot;items&quot;: [
+      {
+        &quot;name&quot;: &quot;［特殊］隨機功法書&quot;,
+        &quot;expected&quot;: 1,
+        &quot;got&quot;: 1
+      },
+      {
+        &quot;name&quot;: &quot;［初階］靈根丹&quot;,
+        &quot;expected&quot;: 1,
+        &quot;got&quot;: 1
+      }
+    ],
+    &quot;twice&quot;: false
+  },
+  {
+    &quot;id&quot;: &quot;CQ-DZ-049&quot;,
+    &quot;done&quot;: true,
+    &quot;claimed&quot;: true,
+    &quot;coins&quot;: 3000,
+    &quot;expected&quot;: 3000,
+    &quot;rep&quot;: 10,
+    &quot;expectedRep&quot;: 10,
+    &quot;items&quot;: [
+      {
+        &quot;name&quot;: &quot;［特殊］綜合二階素材箱&quot;,
+        &quot;expected&quot;: 5,
+        &quot;got&quot;: 5
+      },
+      {
+        &quot;name&quot;: &quot;功法殘卷&quot;,
+        &quot;expected&quot;: 2,
+        &quot;got&quot;: 2
+      }
+    ],
+    &quot;twice&quot;: false
+  },
+  {
+    &quot;id&quot;: &quot;CQ-DZ-050&quot;,
+    &quot;done&quot;: true,
+    &quot;claimed&quot;: true,
+    &quot;coins&quot;: 1800,
+    &quot;expected&quot;: 1800,
+    &quot;rep&quot;: 50,
+    &quot;expectedRep&quot;: 50,
+    &quot;items&quot;: [
+      {
+        &quot;name&quot;: &quot;［特殊］自選二階妖物素材箱&quot;,
+        &quot;expected&quot;: 3,
+        &quot;got&quot;: 3
+      },
+      {
+        &quot;name&quot;: &quot;功法殘卷&quot;,
+        &quot;expected&quot;: 2,
+        &quot;got&quot;: 2
+      },
+      {
+        &quot;name&quot;: &quot;［特殊］滿貫丹&quot;,
+        &quot;expected&quot;: 1,
+        &quot;got&quot;: 1
+      }
+    ],
+    &quot;twice&quot;: false
+  }
+]</pre></details><details><summary>✓ L20 三寵10心計數接取後開始，失敗條件及學5招門檻</summary><pre>[
+  {
+    &quot;species&quot;: &quot;燐火狼&quot;,
+    &quot;id&quot;: &quot;P07307&quot;,
+    &quot;before&quot;: null,
+    &quot;task&quot;: {
+      &quot;id&quot;: &quot;P07307&quot;,
+      &quot;acceptedAt&quot;: 480,
+      &quot;counts&quot;: [
+        0,
+        1
+      ],
+      &quot;claimed&quot;: false
+    },
+    &quot;fail&quot;: [
+      0,
+      0
+    ]
+  },
+  {
+    &quot;species&quot;: &quot;硬黑蠍&quot;,
+    &quot;id&quot;: &quot;P07308&quot;,
+    &quot;before&quot;: null,
+    &quot;task&quot;: {
+      &quot;id&quot;: &quot;P07308&quot;,
+      &quot;acceptedAt&quot;: 480,
+      &quot;counts&quot;: [
+        0,
+        1
+      ],
+      &quot;claimed&quot;: false
+    },
+    &quot;fail&quot;: [
+      0,
+      0
+    ]
+  },
+  {
+    &quot;species&quot;: &quot;靈珠蝶&quot;,
+    &quot;id&quot;: &quot;P07309&quot;,
+    &quot;before&quot;: null,
+    &quot;task&quot;: {
+      &quot;id&quot;: &quot;P07309&quot;,
+      &quot;acceptedAt&quot;: 480,
+      &quot;counts&quot;: [
+        0,
+        2
+      ],
+      &quot;claimed&quot;: false
+    },
+    &quot;fail&quot;: [
+      0,
+      1
+    ]
+  }
+]</pre></details><details><summary>✓ L32 同行NPC圖鑑不重複駐地，華安既有動態地點保留</summary><pre>{
+  &quot;places&quot;: [
+    &quot;同行中&quot;,
+    &quot;同行中&quot;,
+    &quot;同行中&quot;
+  ],
+  &quot;body&quot;: &quot;妖物素材NPC地區裝備丹藥禮物任務物品功法篩選：沈玄川 查看全部沈玄川道衛隊員｜同行中對話、贈禮、任務／委託、切磋、邀請同行、收取禮物♥♥♥♥♥♥♥♥♥♥&quot;,
+  &quot;hua&quot;: &quot;朝御城&quot;
+}</pre></details><details><summary>✓ L13 新地圖節點／冒險／遭遇實際開啟與戰鬥背景</summary><pre>{
+  &quot;mapText&quot;: &quot;🧭 東州山水圖拖曳地圖平移，點選地區查看資訊。📍 朝御城・主城返回九州總覽朝御城青陽鎮青陽山碧潮鎮雷鳴沼東嶺鎮落星谷天海港東州傳送塔潮汐秘境 🔒晶礦秘境問道檯萬獸檯天穹浮島黑潮禁岸雷鳴沼地下深窟圖例● 城鎮　▲ 野外　◇ 秘境─ 道路　┄ 傳送　🔒 未解鎖朝御城類型：主城最低境界：無推薦戰力：無設備／內容：煉金爐、鑄造台、布告欄、監牢、茶館、修練場、醫館、聲望兌換所前往此地野外妖物境界青陽山：練氣一層～練氣五層落星谷：練氣五層～練氣圓滿雷鳴沼：築基一層～築基五層（不含長右）潮汐秘境：練氣五層～練氣圓滿天穹浮島：練氣七層～築基二層晶礦秘境：練氣一層～練氣一層黑潮禁岸：築基五層～築基圓滿雷鳴沼地下深窟：築基圓滿（主線長右另計）&quot;,
+  &quot;rows&quot;: [
+    {
+      &quot;place&quot;: &quot;黑潮禁岸&quot;,
+      &quot;html&quot;: true,
+      &quot;go&quot;: true,
+      &quot;foes&quot;: [
+        &quot;燐火狼&quot;
+      ],
+      &quot;scene&quot;: &quot;/新增美術_2026-10-16/黑潮禁岸_戰鬥背景.png&quot;
+    },
+    {
+      &quot;place&quot;: &quot;雷鳴沼地下深窟&quot;,
+      &quot;html&quot;: true,
+      &quot;go&quot;: true,
+      &quot;foes&quot;: [
+        &quot;財寶怨靈&quot;
+      ],
+      &quot;scene&quot;: &quot;/新增美術_2026-10-16/雷鳴沼地下深窟_戰鬥背景.png&quot;
+    }
+  ]
+}</pre></details><details><summary>✓ L19 六個五星技能實際施放與三個10心被動實際觸發</summary><pre>{
+  &quot;results&quot;: [
+    {
+      &quot;id&quot;: &quot;P07301&quot;,
+      &quot;cast&quot;: true,
+      &quot;mp&quot;: 22,
+      &quot;effect&quot;: true
+    },
+    {
+      &quot;id&quot;: &quot;P07302&quot;,
+      &quot;cast&quot;: true,
+      &quot;mp&quot;: 25,
+      &quot;effect&quot;: true
+    },
+    {
+      &quot;id&quot;: &quot;P07303&quot;,
+      &quot;cast&quot;: true,
+      &quot;mp&quot;: 24,
+      &quot;effect&quot;: true
+    },
+    {
+      &quot;id&quot;: &quot;P07304&quot;,
+      &quot;cast&quot;: true,
+      &quot;mp&quot;: 22,
+      &quot;effect&quot;: true
+    },
+    {
+      &quot;id&quot;: &quot;P07305&quot;,
+      &quot;cast&quot;: true,
+      &quot;mp&quot;: 25,
+      &quot;effect&quot;: true
+    },
+    {
+      &quot;id&quot;: &quot;P07306&quot;,
+      &quot;cast&quot;: true,
+      &quot;mp&quot;: 27,
+      &quot;effect&quot;: true
+    }
+  ],
+  &quot;wolf&quot;: {
+    &quot;protectedHP&quot;: 1,
+    &quot;wolfHP&quot;: 850,
+    &quot;second&quot;: 0
+  },
+  &quot;scorpion&quot;: {
+    &quot;defense&quot;: 114.99999999999999,
+    &quot;shield&quot;: true
+  },
+  &quot;butterfly&quot;: {
+    &quot;first&quot;: 534,
+    &quot;repeated&quot;: 534
+  }
+}</pre></details><details><summary>✓ L20 三寵10心15擊殺／15束縛／20撲粉實際行動累計</summary><pre>[
+  {
+    &quot;species&quot;: &quot;燐火狼&quot;,
+    &quot;count&quot;: 15,
+    &quot;expected&quot;: 15,
+    &quot;ready&quot;: false
+  },
+  {
+    &quot;species&quot;: &quot;硬黑蠍&quot;,
+    &quot;count&quot;: 15,
+    &quot;expected&quot;: 15,
+    &quot;ready&quot;: false
+  },
+  {
+    &quot;species&quot;: &quot;靈珠蝶&quot;,
+    &quot;count&quot;: 20,
+    &quot;expected&quot;: 20,
+    &quot;ready&quot;: false
+  }
+]</pre></details><details><summary>✓ L21 035A完成救援交談後滿回復，不產生滿貫丹</summary><pre>[
+  {
+    &quot;key&quot;: &quot;035A&quot;,
+    &quot;before&quot;: 1,
+    &quot;hp&quot;: 128,
+    &quot;maxhp&quot;: 128,
+    &quot;mp&quot;: 47,
+    &quot;maxmp&quot;: 47,
+    &quot;qiu&quot;: 1,
+    &quot;qiuMax&quot;: 2706,
+    &quot;pills&quot;: 0
+  }
+]</pre></details><details><summary>✓ L27 實際夥伴／寵物各依自身境界取得修為，陣亡不取得</summary><pre>{
+  &quot;partner&quot;: 9,
+  &quot;pet&quot;: 10,
+  &quot;dead&quot;: 0
+}</pre></details><details><summary>✓ L01 天海港張榕真引導實際抵達人物介面</summary><pre>{
+  &quot;ok&quot;: true,
+  &quot;place&quot;: &quot;天海港&quot;,
+  &quot;page&quot;: &quot;people&quot;,
+  &quot;title&quot;: &quot;🌸 張榕真&quot;
+}</pre></details><details><summary>✓ L17 既有醫館手動付費30分鐘規則未回退成1日</summary><pre>{
+  &quot;unattended&quot;: 0,
+  &quot;a&quot;: true,
+  &quot;b&quot;: true,
+  &quot;fee&quot;: 840,
+  &quot;expectedFee&quot;: 840,
+  &quot;durations&quot;: [
+    30,
+    30
+  ],
+  &quot;early&quot;: true,
+  &quot;returned&quot;: true,
+  &quot;wards&quot;: 0
+}</pre></details><details><summary>✓ L36 原0.7.2舊存檔匯入保留裝備及任務，不混用正式儲存區</summary><pre>{
+  &quot;name&quot;: &quot;任務流程驗收&quot;,
+  &quot;version&quot;: &quot;V0.7.3 獨立測試&quot;,
+  &quot;newSchema&quot;: 1,
+  &quot;itemsPreserved&quot;: true,
+  &quot;questCount&quot;: 30,
+  &quot;previousQuests&quot;: 30
+}</pre></details><details><summary>✓ L14 深窟完整地名／主線區域資訊及火尾毛妖物分類</summary><pre>{
+  &quot;node&quot;: &quot;雷鳴沼地下深窟&quot;,
+  &quot;info&quot;: &quot;雷鳴沼地下深窟類型：BOSS封印區最低境界：主線期間依任務開放最低／推薦戰力：1050／1400（野外狀態，不含長右）（測試參考值）入口已開放前往&quot;,
+  &quot;category&quot;: &quot;妖物&quot;,
+  &quot;genericSet&quot;: false
+}</pre></details><details><summary>✓ L36 實際存檔重載保留分支／挖掘／委託，正式名稱空間不變</summary><pre>{
+  &quot;has&quot;: true,
+  &quot;branch&quot;: &quot;A&quot;,
+  &quot;dig&quot;: {
+    &quot;count&quot;: 2,
+    &quot;nextAt&quot;: 9999
+  },
+  &quot;gear&quot;: 1,
+  &quot;quest&quot;: {
+    &quot;kills&quot;: 2,
+    &quot;coins&quot;: 5000
+  },
+  &quot;keys&quot;: [
+    &quot;jz073-independent-20261017:JZXX_V070_CLEAN_R4_2&quot;,
+    &quot;jz073-independent-20261017:jz-v3-touch-identities&quot;,
+    &quot;jz073-independent-20261017:JZXX_V070_CLEAN_R4_1&quot;
+  ]
+}</pre></details><details><summary>✓ L21 B線完整原稿805節點載入，舊缺稿標記解除</summary><pre>{
+  &quot;lines&quot;: 805,
+  &quot;sections&quot;: 23,
+  &quot;reward&quot;: {
+    &quot;cult&quot;: 180
+  },
+  &quot;place&quot;: &quot;朝御城&quot;,
+  &quot;partial&quot;: [
+    false,
+    false,
+    false,
+    false
+  ],
+  &quot;pending&quot;: [
+    &quot;素材提交分類&quot;,
+    &quot;長右與新妖物數值&quot;,
+    &quot;新寵物全境界八核&quot;,
+    &quot;圖鑑缺少原始來源欄位&quot;,
+    &quot;長右隱藏戰鬥值&quot;,
+    &quot;B線支線016記載衝突&quot;,
+    &quot;裝備品質候選倍率（未啟用）&quot;
+  ]
+}</pre></details><details><summary>✓ L27 差10級七種保底與12人形向上取整；差11級全部0</summary><pre>{
+  &quot;rows&quot;: [
+    {
+      &quot;tier&quot;: &quot;一般種&quot;,
+      &quot;expected&quot;: 1,
+      &quot;ten&quot;: 1,
+      &quot;eleven&quot;: 0
+    },
+    {
+      &quot;tier&quot;: &quot;特殊種&quot;,
+      &quot;expected&quot;: 2,
+      &quot;ten&quot;: 2,
+      &quot;eleven&quot;: 0
+    },
+    {
+      &quot;tier&quot;: &quot;高危種&quot;,
+      &quot;expected&quot;: 4,
+      &quot;ten&quot;: 4,
+      &quot;eleven&quot;: 0
+    },
+    {
+      &quot;tier&quot;: &quot;高危種（特）&quot;,
+      &quot;expected&quot;: 5,
+      &quot;ten&quot;: 5,
+      &quot;eleven&quot;: 0
+    },
+    {
+      &quot;tier&quot;: &quot;高危種(特)&quot;,
+      &quot;expected&quot;: 5,
+      &quot;ten&quot;: 5,
+      &quot;eleven&quot;: 0
+    },
+    {
+      &quot;tier&quot;: &quot;妖王種&quot;,
+      &quot;expected&quot;: 8,
+      &quot;ten&quot;: 8,
+      &quot;eleven&quot;: 0
+    },
+    {
+      &quot;tier&quot;: &quot;神獸種&quot;,
+      &quot;expected&quot;: 15,
+      &quot;ten&quot;: 15,
+      &quot;eleven&quot;: 0
+    },
+    {
+      &quot;tier&quot;: &quot;災獸種&quot;,
+      &quot;expected&quot;: 15,
+      &quot;ten&quot;: 15,
+      &quot;eleven&quot;: 0
+    }
+  ],
+  &quot;humans&quot;: [
+    {
+      &quot;hostileKind&quot;: &quot;山賊&quot;,
+      &quot;expected&quot;: 2,
+      &quot;ten&quot;: 2,
+      &quot;eleven&quot;: 0
+    },
+    {
+      &quot;hostileKind&quot;: &quot;盜賊&quot;,
+      &quot;expected&quot;: 2,
+      &quot;ten&quot;: 2,
+      &quot;eleven&quot;: 0
+    },
+    {
+      &quot;hostileKind&quot;: &quot;逃犯&quot;,
+      &quot;expected&quot;: 2,
+      &quot;ten&quot;: 2,
+      &quot;eleven&quot;: 0
+    },
+    {
+      &quot;hostileKind&quot;: &quot;海盜&quot;,
+      &quot;expected&quot;: 2,
+      &quot;ten&quot;: 2,
+      &quot;eleven&quot;: 0
+    },
+    {
+      &quot;hostileKind&quot;: &quot;邪修&quot;,
+      &quot;expected&quot;: 2,
+      &quot;ten&quot;: 2,
+      &quot;eleven&quot;: 0
+    },
+    {
+      &quot;hostileKind&quot;: &quot;劫修&quot;,
+      &quot;expected&quot;: 2,
+      &quot;ten&quot;: 2,
+      &quot;eleven&quot;: 0
+    },
+    {
+      &quot;hostileKind&quot;: &quot;魔修&quot;,
+      &quot;expected&quot;: 3,
+      &quot;ten&quot;: 3,
+      &quot;eleven&quot;: 0
+    },
+    {
+      &quot;hostileKind&quot;: &quot;殺手&quot;,
+      &quot;expected&quot;: 3,
+      &quot;ten&quot;: 3,
+      &quot;eleven&quot;: 0
+    },
+    {
+      &quot;hostileKind&quot;: &quot;邪教徒&quot;,
+      &quot;expected&quot;: 3,
+      &quot;ten&quot;: 3,
+      &quot;eleven&quot;: 0
+    },
+    {
+      &quot;hostileKind&quot;: &quot;叛宗弟子&quot;,
+      &quot;expected&quot;: 3,
+      &quot;ten&quot;: 3,
+      &quot;eleven&quot;: 0
+    },
+    {
+      &quot;hostileKind&quot;: &quot;長老級&quot;,
+      &quot;expected&quot;: 4,
+      &quot;ten&quot;: 4,
+      &quot;eleven&quot;: 0
+    },
+    {
+      &quot;hostileKind&quot;: &quot;道祖級&quot;,
+      &quot;expected&quot;: 8,
+      &quot;ten&quot;: 8,
+      &quot;eleven&quot;: 0
+    }
+  ]
+}</pre></details><details><summary>✓ L27 差10級特殊種實際戰勝發放2修為且無待結算</summary><pre>{
+  &quot;gained&quot;: 2,
+  &quot;pending&quot;: []
+}</pre></details><details><summary>✓ L30 主根四段55/30/12/3抽樣與六元素／雙高上限</summary><pre>{
+  &quot;counts&quot;: [
+    54987,
+    29989,
+    12105,
+    2919
+  ],
+  &quot;double&quot;: 2959,
+  &quot;bad&quot;: 0
+}</pre></details><details><summary>✓ L30 合法武器偏好70/30與空池後備；不虛構流派偏好表</summary><pre>{
+  &quot;counts&quot;: {
+    &quot;扇&quot;: 34996,
+    &quot;寶珠&quot;: 35126,
+    &quot;劍&quot;: 29878
+  },
+  &quot;noPreferred&quot;: &quot;劍&quot;,
+  &quot;noOther&quot;: &quot;扇&quot;,
+  &quot;empty&quot;: null,
+  &quot;pending&quot;: []
+}</pre></details><details><summary>✓ L21 033B三處調查六種順序皆可完成，回報180僅一次</summary><pre>[
+  {
+    &quot;order&quot;: [
+      &quot;core&quot;,
+      &quot;lines&quot;,
+      &quot;channel&quot;
+    ],
+    &quot;early&quot;: false,
+    &quot;repeat&quot;: false,
+    &quot;twice&quot;: false,
+    &quot;gained&quot;: 180,
+    &quot;claimed&quot;: true,
+    &quot;place&quot;: &quot;東州傳送塔&quot;,
+    &quot;next&quot;: true,
+    &quot;known&quot;: [
+      &quot;黑色陌生陣紋&quot;,
+      &quot;傳送塔核心未完全毀壞&quot;,
+      &quot;傳送塔靈力流向被改變&quot;,
+      &quot;黑衣人目的不止破壞傳送功能&quot;
+    ],
+    &quot;party&quot;: [
+      &quot;邱山河&quot;,
+      &quot;林夏于&quot;
+    ]
+  },
+  {
+    &quot;order&quot;: [
+      &quot;core&quot;,
+      &quot;channel&quot;,
+      &quot;lines&quot;
+    ],
+    &quot;early&quot;: false,
+    &quot;repeat&quot;: false,
+    &quot;twice&quot;: false,
+    &quot;gained&quot;: 180,
+    &quot;claimed&quot;: true,
+    &quot;place&quot;: &quot;東州傳送塔&quot;,
+    &quot;next&quot;: true,
+    &quot;known&quot;: [
+      &quot;黑色陌生陣紋&quot;,
+      &quot;傳送塔核心未完全毀壞&quot;,
+      &quot;傳送塔靈力流向被改變&quot;,
+      &quot;黑衣人目的不止破壞傳送功能&quot;
+    ],
+    &quot;party&quot;: [
+      &quot;邱山河&quot;,
+      &quot;林夏于&quot;
+    ]
+  },
+  {
+    &quot;order&quot;: [
+      &quot;lines&quot;,
+      &quot;core&quot;,
+      &quot;channel&quot;
+    ],
+    &quot;early&quot;: false,
+    &quot;repeat&quot;: false,
+    &quot;twice&quot;: false,
+    &quot;gained&quot;: 180,
+    &quot;claimed&quot;: true,
+    &quot;place&quot;: &quot;東州傳送塔&quot;,
+    &quot;next&quot;: true,
+    &quot;known&quot;: [
+      &quot;黑色陌生陣紋&quot;,
+      &quot;傳送塔核心未完全毀壞&quot;,
+      &quot;傳送塔靈力流向被改變&quot;,
+      &quot;黑衣人目的不止破壞傳送功能&quot;
+    ],
+    &quot;party&quot;: [
+      &quot;邱山河&quot;,
+      &quot;林夏于&quot;
+    ]
+  },
+  {
+    &quot;order&quot;: [
+      &quot;lines&quot;,
+      &quot;channel&quot;,
+      &quot;core&quot;
+    ],
+    &quot;early&quot;: false,
+    &quot;repeat&quot;: false,
+    &quot;twice&quot;: false,
+    &quot;gained&quot;: 180,
+    &quot;claimed&quot;: true,
+    &quot;place&quot;: &quot;東州傳送塔&quot;,
+    &quot;next&quot;: true,
+    &quot;known&quot;: [
+      &quot;黑色陌生陣紋&quot;,
+      &quot;傳送塔核心未完全毀壞&quot;,
+      &quot;傳送塔靈力流向被改變&quot;,
+      &quot;黑衣人目的不止破壞傳送功能&quot;
+    ],
+    &quot;party&quot;: [
+      &quot;邱山河&quot;,
+      &quot;林夏于&quot;
+    ]
+  },
+  {
+    &quot;order&quot;: [
+      &quot;channel&quot;,
+      &quot;core&quot;,
+      &quot;lines&quot;
+    ],
+    &quot;early&quot;: false,
+    &quot;repeat&quot;: false,
+    &quot;twice&quot;: false,
+    &quot;gained&quot;: 180,
+    &quot;claimed&quot;: true,
+    &quot;place&quot;: &quot;東州傳送塔&quot;,
+    &quot;next&quot;: true,
+    &quot;known&quot;: [
+      &quot;黑色陌生陣紋&quot;,
+      &quot;傳送塔核心未完全毀壞&quot;,
+      &quot;傳送塔靈力流向被改變&quot;,
+      &quot;黑衣人目的不止破壞傳送功能&quot;
+    ],
+    &quot;party&quot;: [
+      &quot;邱山河&quot;,
+      &quot;林夏于&quot;
+    ]
+  },
+  {
+    &quot;order&quot;: [
+      &quot;channel&quot;,
+      &quot;lines&quot;,
+      &quot;core&quot;
+    ],
+    &quot;early&quot;: false,
+    &quot;repeat&quot;: false,
+    &quot;twice&quot;: false,
+    &quot;gained&quot;: 180,
+    &quot;claimed&quot;: true,
+    &quot;place&quot;: &quot;東州傳送塔&quot;,
+    &quot;next&quot;: true,
+    &quot;known&quot;: [
+      &quot;黑色陌生陣紋&quot;,
+      &quot;傳送塔核心未完全毀壞&quot;,
+      &quot;傳送塔靈力流向被改變&quot;,
+      &quot;黑衣人目的不止破壞傳送功能&quot;
+    ],
+    &quot;party&quot;: [
+      &quot;邱山河&quot;,
+      &quot;林夏于&quot;
+    ]
+  }
+]</pre></details><details><summary>✓ L22 034B追擊離隊與世界位置，全入口操作鎖至必敗戰</summary><pre>{
+  &quot;phase&quot;: &quot;fight&quot;,
+  &quot;locked&quot;: true,
+  &quot;checks&quot;: [
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+  ],
+  &quot;place&quot;: &quot;東州傳送塔&quot;,
+  &quot;before&quot;: &quot;東州傳送塔&quot;,
+  &quot;party&quot;: [
+    &quot;邱山河&quot;
+  ],
+  &quot;lin&quot;: &quot;追擊黑衣人中（東嶺鎮方向）&quot;,
+  &quot;shen&quot;: &quot;青陽山&quot;,
+  &quot;liu&quot;: &quot;青陽山&quot;,
+  &quot;body&quot;: &quot;神秘黑衣人擋住了所有去路。與???戰鬥&quot;
+}</pre></details><details><summary>✓ L22 034B九珠陰雷真實UI強制首動全倒，免費特殊結算且不污染寵物任務</summary><pre>{
+  &quot;before&quot;: {
+    &quot;first&quot;: &quot;???&quot;,
+    &quot;enemy&quot;: [
+      {
+        &quot;name&quot;: &quot;???&quot;,
+        &quot;keys&quot;: [
+          999999,
+          999999,
+          999999,
+          999999,
+          999999,
+          999999,
+          999999,
+          999999
+        ]
+      }
+    ],
+    &quot;allies&quot;: [
+      &quot;測試999&quot;,
+      &quot;邱山河&quot;,
+      &quot;劇情測試狼&quot;
+    ],
+    &quot;symbol&quot;: false,
+    &quot;image&quot;: true,
+    &quot;detail&quot;: &quot;???氣血 999999靈力 999999攻 999999道 999999防 999999道防 999999身 999999命 999999&quot;
+  },
+  &quot;after&quot;: {
+    &quot;cutscene&quot;: true,
+    &quot;allZero&quot;: true,
+    &quot;logs&quot;: [
+      &quot;遭遇 ???！&quot;,
+      &quot;輪到???行動。&quot;,
+      &quot;測試999獲得「護盾」3回合。&quot;,
+      &quot;測試999獲得「堅毅」3回合。&quot;,
+      &quot;???緩緩抬起雙手。&quot;,
+      &quot;天空中突然傳來低沉雷鳴。&quot;,
+      &quot;大量陰暗雷光在黑衣人上方迅速凝聚。&quot;,
+      &quot;???：消失吧。&quot;,
+      &quot;［天階］九珠陰雷&quot;,
+      &quot;九道陰雷從天空轟然落下！&quot;,
+      &quot;直接命中我方全體。&quot;,
+      &quot;［天階］九珠陰雷命中我方全體。&quot;
+    ],
+    &quot;hp&quot;: 1,
+    &quot;qiu&quot;: 1,
+    &quot;coins&quot;: 0,
+    &quot;ward&quot;: 0,
+    &quot;pet&quot;: {
+      &quot;hp&quot;: 78,
+      &quot;mp&quot;: 34,
+      &quot;max&quot;: 78,
+      &quot;maxmp&quot;: 34,
+      &quot;exp&quot;: 12,
+      &quot;affection&quot;: 60,
+      &quot;dead&quot;: false
+    },
+    &quot;petUnchanged&quot;: true,
+    &quot;commissionStreak&quot;: 1,
+    &quot;claimed&quot;: false,
+    &quot;phase&quot;: &quot;post&quot;
+  },
+  &quot;completed&quot;: {
+    &quot;claimed&quot;: true,
+    &quot;hp&quot;: 1,
+    &quot;locked&quot;: false,
+    &quot;next&quot;: true
+  }
+}</pre></details><details><summary>✓ L21 035B滿貫丹在服下節點才回滿，跳過／重開不複製丹藥</summary><pre>{
+  &quot;before&quot;: 1,
+  &quot;at&quot;: {
+    &quot;hp&quot;: 128,
+    &quot;mp&quot;: 47
+  },
+  &quot;max&quot;: 128,
+  &quot;maxmp&quot;: 47,
+  &quot;pills&quot;: 0,
+  &quot;phase&quot;: &quot;travel&quot;,
+  &quot;known&quot;: [
+    &quot;傳送塔靈力被導向雷鳴沼&quot;
+  ]
+}</pre></details><details><summary>✓ L21 035B三波站位／每場獨立結算／第二場失敗可重試且不重領</summary><pre>{
+  &quot;waves&quot;: [
+    {
+      &quot;count&quot;: 3,
+      &quot;slots&quot;: [
+        &quot;front1&quot;,
+        &quot;front2&quot;,
+        &quot;back1&quot;
+      ]
+    },
+    {
+      &quot;count&quot;: 2,
+      &quot;slots&quot;: [
+        &quot;front1&quot;,
+        &quot;front2&quot;
+      ]
+    },
+    {
+      &quot;count&quot;: 3,
+      &quot;slots&quot;: [
+        &quot;front1&quot;,
+        &quot;front2&quot;,
+        &quot;back2&quot;
+      ]
+    }
+  ],
+  &quot;rewards&quot;: [
+    59,
+    62,
+    73
+  ],
+  &quot;failed&quot;: {
+    &quot;step&quot;: 1,
+    &quot;fee&quot;: 13,
+    &quot;place&quot;: &quot;朝御城&quot;
+  },
+  &quot;double&quot;: 0,
+  &quot;notYet&quot;: true,
+  &quot;claimed&quot;: true,
+  &quot;next&quot;: true,
+  &quot;place&quot;: &quot;碧潮鎮&quot;
+}</pre></details><details><summary>✓ L22 036B實際引導、調查傳送陣、深窟會合，無A線秘密或命符</summary><pre>{
+  &quot;array&quot;: {
+    &quot;place&quot;: &quot;雷鳴沼&quot;,
+    &quot;phase&quot;: &quot;array&quot;,
+    &quot;bChat&quot;: true,
+    &quot;cave&quot;: false
+  },
+  &quot;place&quot;: &quot;雷鳴沼地下深窟&quot;,
+  &quot;claimed&quot;: true,
+  &quot;next&quot;: true,
+  &quot;nextClaimed&quot;: false,
+  &quot;known&quot;: [
+    &quot;災獸長右&quot;,
+    &quot;龍胤之陣&quot;,
+    &quot;混沌魔宗&quot;,
+    &quot;雷鳴沼地下深窟的異常靈力&quot;,
+    &quot;妖物逃離雷鳴沼&quot;
+  ],
+  &quot;token&quot;: 0,
+  &quot;dig&quot;: false,
+  &quot;party&quot;: [
+    &quot;邱山河&quot;,
+    &quot;林夏于&quot;
+  ],
+  &quot;shen&quot;: &quot;雷鳴沼地下深窟&quot;,
+  &quot;liu&quot;: &quot;雷鳴沼地下深窟&quot;,
+  &quot;lin&quot;: &quot;同行中&quot;
+}</pre></details><details><summary>✓ L21 B線032選擇至038長右完整連續實戰與結算</summary><pre>{
+  &quot;quests&quot;: [
+    {
+      &quot;key&quot;: &quot;032&quot;,
+      &quot;claimed&quot;: true
+    },
+    {
+      &quot;key&quot;: &quot;033B&quot;,
+      &quot;claimed&quot;: true
+    },
+    {
+      &quot;key&quot;: &quot;034B&quot;,
+      &quot;claimed&quot;: true
+    },
+    {
+      &quot;key&quot;: &quot;035B&quot;,
+      &quot;claimed&quot;: true
+    },
+    {
+      &quot;key&quot;: &quot;036B&quot;,
+      &quot;claimed&quot;: true
+    },
+    {
+      &quot;key&quot;: &quot;037&quot;,
+      &quot;claimed&quot;: true
+    },
+    {
+      &quot;key&quot;: &quot;038&quot;,
+      &quot;claimed&quot;: true
+    }
+  ],
+  &quot;waves&quot;: [
+    {
+      &quot;round&quot;: 3,
+      &quot;won&quot;: true,
+      &quot;step&quot;: 1
+    },
+    {
+      &quot;round&quot;: 2,
+      &quot;won&quot;: true,
+      &quot;step&quot;: 2
+    },
+    {
+      &quot;round&quot;: 3,
+      &quot;won&quot;: true,
+      &quot;step&quot;: 3
+    }
+  ],
+  &quot;boss&quot;: {
+    &quot;round&quot;: 12,
+    &quot;phase&quot;: 2,
+    &quot;won&quot;: true
+  },
+  &quot;place&quot;: &quot;雷鳴沼地下深窟&quot;,
+  &quot;towerClosed&quot;: false,
+  &quot;token&quot;: 0,
+  &quot;heart&quot;: 1,
+  &quot;party&quot;: [],
+  &quot;bChat&quot;: true,
+  &quot;fixture&quot;: &quot;隔離測試角色提升八核以滿足地圖門檻；此案例測完整流程，不作數值平衡結論。&quot;
+}</pre></details><details><summary>✓ L36 033B調查中存檔重載，進度／對話位置與獎勵可接續</summary><pre>{
+  &quot;before&quot;: {
+    &quot;investigated&quot;: [
+      &quot;channel&quot;
+    ],
+    &quot;dialogue&quot;: {
+      &quot;section&quot;: &quot;033B-core&quot;,
+      &quot;index&quot;: 1
+    }
+  },
+  &quot;flow&quot;: true,
+  &quot;section&quot;: &quot;033B-core&quot;,
+  &quot;index&quot;: 1,
+  &quot;phase&quot;: &quot;investigate&quot;
+}</pre></details><details><summary>✓ L21 A線完整709節點與保密原稿接入</summary><pre>{
+  &quot;nodes&quot;: 709,
+  &quot;sections&quot;: 15,
+  &quot;partial&quot;: [
+    false,
+    false,
+    false
+  ],
+  &quot;leak&quot;: false,
+  &quot;pending&quot;: [
+    &quot;素材提交分類&quot;,
+    &quot;長右與新妖物數值&quot;,
+    &quot;新寵物全境界八核&quot;,
+    &quot;圖鑑缺少原始來源欄位&quot;,
+    &quot;長右隱藏戰鬥值&quot;,
+    &quot;B線支線016記載衝突&quot;,
+    &quot;裝備品質候選倍率（未啟用）&quot;
+  ]
+}</pre></details><details><summary>✓ L22 034A山上交談後留守；青陽鎮入口事件封鎖所有移動</summary><pre>{
+  &quot;mountain&quot;: {
+    &quot;place&quot;: &quot;青陽山&quot;,
+    &quot;coins&quot;: 10000,
+    &quot;realm&quot;: &quot;築基圓滿&quot;,
+    &quot;hp&quot;: 110,
+    &quot;mp&quot;: 39,
+    &quot;party&quot;: [],
+    &quot;formation&quot;: {
+      &quot;front1&quot;: &quot;player&quot;,
+      &quot;front2&quot;: null,
+      &quot;back1&quot;: null,
+      &quot;back2&quot;: null
+    },
+    &quot;pets&quot;: [
+      {
+        &quot;name&quot;: &quot;青靈蛇&quot;,
+        &quot;species&quot;: &quot;青靈蛇&quot;,
+        &quot;realm&quot;: &quot;練氣一層&quot;,
+        &quot;tier&quot;: &quot;一般種&quot;,
+        &quot;stars&quot;: 0,
+        &quot;affection&quot;: 0,
+        &quot;skills&quot;: [
+          &quot;揮擊&quot;,
+          &quot;纏繞&quot;
+        ],
+        &quot;jzr&quot;: {
+          &quot;species&quot;: &quot;青靈蛇&quot;,
+          &quot;realm&quot;: &quot;練氣一層&quot;,
+          &quot;tier&quot;: &quot;一般種&quot;,
+          &quot;stars&quot;: 0,
+          &quot;affection&quot;: 0,
+          &quot;skills&quot;: [
+            &quot;揮擊&quot;,
+            &quot;纏繞&quot;
+          ],
+          &quot;gear&quot;: [],
+          &quot;bonus&quot;: {},
+          &quot;elementBonus&quot;: {},
+          &quot;wins&quot;: 0,
+          &quot;pre&quot;: [],
+          &quot;loadout&quot;: [
+            &quot;纏繞&quot;
+          ]
+        },
+        &quot;maxhp&quot;: 70,
+        &quot;maxmp&quot;: 30,
+        &quot;hp&quot;: 70,
+        &quot;mp&quot;: 30,
+        &quot;deployed&quot;: false
+      }
+    ],
+    &quot;known&quot;: [
+      &quot;青陽山龍胤之陣靈力爆破&quot;
+    ],
+    &quot;story&quot;: {
+      &quot;savedFormation&quot;: {
+        &quot;front1&quot;: &quot;player&quot;,
+        &quot;front2&quot;: null,
+        &quot;back1&quot;: null,
+        &quot;back2&quot;: null
+      },
+      &quot;towerClosed&quot;: true,
+      &quot;qingyangBurst&quot;: true,
+      &quot;npcPlaces&quot;: {
+        &quot;沈玄川&quot;: &quot;青陽山&quot;,
+        &quot;柳清妍&quot;: &quot;青陽山&quot;,
+        &quot;邱山河&quot;: &quot;東州傳送塔&quot;,
+        &quot;林夏于&quot;: &quot;追擊黑衣人中&quot;
+      }
+    }
+  },
+  &quot;triggered&quot;: true,
+  &quot;locked&quot;: true,
+  &quot;phase&quot;: &quot;fight&quot;,
+  &quot;place&quot;: &quot;青陽鎮&quot;,
+  &quot;before&quot;: &quot;青陽鎮&quot;,
+  &quot;shen&quot;: &quot;青陽山&quot;,
+  &quot;liu&quot;: &quot;青陽山&quot;,
+  &quot;claimed&quot;: false,
+  &quot;text&quot;: &quot;前方道路已被神秘黑衣人阻擋，目前無法離開。與???戰鬥&quot;
+}</pre></details><details><summary>✓ L21 034A火紅蓮實際首動必敗，玩家1HP、寵物免費回滿不改成長</summary><pre>{
+  &quot;hp&quot;: 1,
+  &quot;mp&quot;: 13,
+  &quot;fee&quot;: 0,
+  &quot;first&quot;: &quot;???&quot;,
+  &quot;stats&quot;: [
+    999999,
+    999999,
+    999999,
+    999999,
+    999999,
+    999999,
+    999999,
+    999999
+  ],
+  &quot;team&quot;: [
+    {
+      &quot;name&quot;: &quot;測試999&quot;,
+      &quot;type&quot;: &quot;player&quot;
+    },
+    {
+      &quot;name&quot;: &quot;青靈蛇&quot;,
+      &quot;type&quot;: &quot;pet&quot;
+    }
+  ],
+  &quot;pet&quot;: {
+    &quot;name&quot;: &quot;青靈蛇&quot;,
+    &quot;species&quot;: &quot;青靈蛇&quot;,
+    &quot;realm&quot;: &quot;練氣一層&quot;,
+    &quot;tier&quot;: &quot;一般種&quot;,
+    &quot;stars&quot;: 0,
+    &quot;affection&quot;: 0,
+    &quot;skills&quot;: [
+      &quot;揮擊&quot;,
+      &quot;纏繞&quot;
+    ],
+    &quot;jzr&quot;: {
+      &quot;species&quot;: &quot;青靈蛇&quot;,
+      &quot;realm&quot;: &quot;練氣一層&quot;,
+      &quot;tier&quot;: &quot;一般種&quot;,
+      &quot;stars&quot;: 2,
+      &quot;affection&quot;: 80,
+      &quot;skills&quot;: [
+        &quot;揮擊&quot;,
+        &quot;纏繞&quot;
+      ],
+      &quot;gear&quot;: [],
+      &quot;bonus&quot;: {},
+      &quot;elementBonus&quot;: {},
+      &quot;wins&quot;: 0,
+      &quot;pre&quot;: [],
+      &quot;loadout&quot;: [
+        &quot;纏繞&quot;
+      ],
+      &quot;v3TouchId&quot;: &quot;26e6f452-3bbc-4be3-95ef-299eb933c67c&quot;
+    },
+    &quot;maxhp&quot;: 78,
+    &quot;maxmp&quot;: 34,
+    &quot;hp&quot;: 78,
+    &quot;mp&quot;: 34,
+    &quot;deployed&quot;: true,
+    &quot;hospitalized&quot;: false,
+    &quot;dead&quot;: false
+  },
+  &quot;before&quot;: {
+    &quot;name&quot;: &quot;青靈蛇&quot;,
+    &quot;species&quot;: &quot;青靈蛇&quot;,
+    &quot;realm&quot;: &quot;練氣一層&quot;,
+    &quot;tier&quot;: &quot;一般種&quot;,
+    &quot;stars&quot;: 0,
+    &quot;affection&quot;: 0,
+    &quot;skills&quot;: [
+      &quot;揮擊&quot;,
+      &quot;纏繞&quot;
+    ],
+    &quot;jzr&quot;: {
+      &quot;species&quot;: &quot;青靈蛇&quot;,
+      &quot;realm&quot;: &quot;練氣一層&quot;,
+      &quot;tier&quot;: &quot;一般種&quot;,
+      &quot;stars&quot;: 2,
+      &quot;affection&quot;: 80,
+      &quot;skills&quot;: [
+        &quot;揮擊&quot;,
+        &quot;纏繞&quot;
+      ],
+      &quot;gear&quot;: [],
+      &quot;bonus&quot;: {},
+      &quot;elementBonus&quot;: {},
+      &quot;wins&quot;: 0,
+      &quot;pre&quot;: [],
+      &quot;loadout&quot;: [
+        &quot;纏繞&quot;
+      ]
+    },
+    &quot;maxhp&quot;: 70,
+    &quot;maxmp&quot;: 30,
+    &quot;hp&quot;: 10,
+    &quot;mp&quot;: 30,
+    &quot;deployed&quot;: true
+  },
+  &quot;logs&quot;: [
+    &quot;遭遇 ???！&quot;,
+    &quot;輪到???行動。&quot;,
+    &quot;???：結束了。&quot;,
+    &quot;???拔刀。&quot;,
+    &quot;刀身上的赤紅紋路瞬間燃起。&quot;,
+    &quot;［天階］火紅蓮&quot;,
+    &quot;一刀斬下。&quot;,
+    &quot;玩家與目前上陣寵物（若有）遭到致命攻擊。&quot;
+  ],
+  &quot;claimed&quot;: false,
+  &quot;locked&quot;: true,
+  &quot;after&quot;: {
+    &quot;claimed&quot;: true,
+    &quot;next&quot;: true,
+    &quot;hp&quot;: 1,
+    &quot;known&quot;: [
+      &quot;青陽山龍胤之陣靈力爆破&quot;,
+      &quot;陸刑舟&quot;
+    ]
+  }
+}</pre></details><details><summary>✓ L21 035A救援到正確節點才回滿、命符與線索不重複發放</summary><pre>{
+  &quot;before&quot;: {
+    &quot;hp&quot;: 1,
+    &quot;mp&quot;: 9,
+    &quot;token&quot;: 0
+  },
+  &quot;healed&quot;: {
+    &quot;hp&quot;: 128,
+    &quot;mp&quot;: 47,
+    &quot;core&quot;: {
+      &quot;maxhp&quot;: 128,
+      &quot;maxmp&quot;: 47,
+      &quot;atk&quot;: 15,
+      &quot;dao&quot;: 12,
+      &quot;def&quot;: 9,
+      &quot;daoDef&quot;: 9,
+      &quot;agi&quot;: 9,
+      &quot;hit&quot;: 15,
+      &quot;effectHit&quot;: 0,
+      &quot;effectResist&quot;: 0,
+      &quot;critRate&quot;: 5,
+      &quot;critDamage&quot;: 150,
+      &quot;healBonus&quot;: 0
+    }
+  },
+  &quot;mid&quot;: {
+    &quot;place&quot;: &quot;青陽鎮&quot;,
+    &quot;coins&quot;: 10000,
+    &quot;realm&quot;: &quot;築基圓滿&quot;,
+    &quot;hp&quot;: 128,
+    &quot;mp&quot;: 47,
+    &quot;party&quot;: [],
+    &quot;formation&quot;: {
+      &quot;front1&quot;: &quot;player&quot;,
+      &quot;front2&quot;: null,
+      &quot;back1&quot;: null,
+      &quot;back2&quot;: null
+    },
+    &quot;pets&quot;: [
+      {
+        &quot;name&quot;: &quot;青靈蛇&quot;,
+        &quot;species&quot;: &quot;青靈蛇&quot;,
+        &quot;realm&quot;: &quot;練氣一層&quot;,
+        &quot;tier&quot;: &quot;一般種&quot;,
+        &quot;stars&quot;: 0,
+        &quot;affection&quot;: 0,
+        &quot;skills&quot;: [
+          &quot;揮擊&quot;,
+          &quot;纏繞&quot;
+        ],
+        &quot;jzr&quot;: {
+          &quot;species&quot;: &quot;青靈蛇&quot;,
+          &quot;realm&quot;: &quot;練氣一層&quot;,
+          &quot;tier&quot;: &quot;一般種&quot;,
+          &quot;stars&quot;: 0,
+          &quot;affection&quot;: 0,
+          &quot;skills&quot;: [
+            &quot;揮擊&quot;,
+            &quot;纏繞&quot;
+          ],
+          &quot;gear&quot;: [],
+          &quot;bonus&quot;: {},
+          &quot;elementBonus&quot;: {},
+          &quot;wins&quot;: 0,
+          &quot;pre&quot;: [],
+          &quot;loadout&quot;: [
+            &quot;纏繞&quot;
+          ]
+        },
+        &quot;maxhp&quot;: 70,
+        &quot;maxmp&quot;: 30,
+        &quot;hp&quot;: 70,
+        &quot;mp&quot;: 30
+      }
+    ],
+    &quot;known&quot;: [
+      &quot;陸景和&quot;,
+      &quot;黑潮禁岸線索&quot;
+    ],
+    &quot;story&quot;: {
+      &quot;towerClosed&quot;: true,
+      &quot;restored035A&quot;: true,
+      &quot;items&quot;: {
+        &quot;命符&quot;: true
+      },
+      &quot;luJingRemembers&quot;: true,
+      &quot;digClue&quot;: true,
+      &quot;npcPlaces&quot;: {
+        &quot;林夏于&quot;: &quot;落星谷&quot;,
+        &quot;邱山河&quot;: &quot;東州傳送塔&quot;
+      }
+    }
+  },
+  &quot;token&quot;: 1,
+  &quot;after&quot;: 1,
+  &quot;phase&quot;: &quot;travel&quot;,
+  &quot;bClaimed&quot;: false
+}</pre></details><details><summary>✓ L21 035A普通黑衣人固定八核、無裝備、3至5合法物理／雷功法</summary><pre>{
+  &quot;samples&quot;: 100,
+  &quot;first&quot;: {
+    &quot;stats&quot;: [
+      350,
+      160,
+      49,
+      32,
+      34,
+      29,
+      45,
+      41
+    ],
+    &quot;gear&quot;: [],
+    &quot;count&quot;: 3,
+    &quot;physical&quot;: 2,
+    &quot;illegal&quot;: []
+  }
+}</pre></details><details><summary>✓ L22 035A失敗不完成；勝利只發主線修為200，不掉戰利品</summary><pre>{
+  &quot;noReward&quot;: {
+    &quot;claimed&quot;: false,
+    &quot;phase&quot;: &quot;fight&quot;
+  },
+  &quot;lin&quot;: true,
+  &quot;after&quot;: {
+    &quot;exp&quot;: 200,
+    &quot;coins&quot;: 0,
+    &quot;materials&quot;: true,
+    &quot;claimed&quot;: true,
+    &quot;next&quot;: true
+  },
+  &quot;double&quot;: 200,
+  &quot;linPlace&quot;: &quot;同行中&quot;
+}</pre></details><details><summary>✓ L22 036A實際傳送、五人世界位置與四人出戰、無B線獎勵</summary><pre>{
+  &quot;missing&quot;: true,
+  &quot;array&quot;: {
+    &quot;place&quot;: &quot;雷鳴沼&quot;,
+    &quot;phase&quot;: &quot;array&quot;,
+    &quot;party&quot;: [
+      &quot;林夏于&quot;,
+      &quot;沈玄川&quot;,
+      &quot;柳清妍&quot;
+    ],
+    &quot;pets&quot;: [
+      false
+    ]
+  },
+  &quot;end&quot;: {
+    &quot;place&quot;: &quot;雷鳴沼地下深窟&quot;,
+    &quot;coins&quot;: 10000,
+    &quot;realm&quot;: &quot;築基圓滿&quot;,
+    &quot;hp&quot;: 110,
+    &quot;mp&quot;: 39,
+    &quot;party&quot;: [
+      &quot;林夏于&quot;,
+      &quot;沈玄川&quot;,
+      &quot;柳清妍&quot;
+    ],
+    &quot;formation&quot;: {
+      &quot;front1&quot;: &quot;player&quot;,
+      &quot;front2&quot;: &quot;npc:林夏于&quot;,
+      &quot;back1&quot;: &quot;npc:沈玄川&quot;,
+      &quot;back2&quot;: &quot;npc:柳清妍&quot;
+    },
+    &quot;pets&quot;: [
+      {
+        &quot;name&quot;: &quot;青靈蛇&quot;,
+        &quot;species&quot;: &quot;青靈蛇&quot;,
+        &quot;realm&quot;: &quot;練氣一層&quot;,
+        &quot;tier&quot;: &quot;一般種&quot;,
+        &quot;stars&quot;: 0,
+        &quot;affection&quot;: 0,
+        &quot;skills&quot;: [
+          &quot;揮擊&quot;,
+          &quot;纏繞&quot;
+        ],
+        &quot;jzr&quot;: {
+          &quot;species&quot;: &quot;青靈蛇&quot;,
+          &quot;realm&quot;: &quot;練氣一層&quot;,
+          &quot;tier&quot;: &quot;一般種&quot;,
+          &quot;stars&quot;: 0,
+          &quot;affection&quot;: 0,
+          &quot;skills&quot;: [
+            &quot;揮擊&quot;,
+            &quot;纏繞&quot;
+          ],
+          &quot;gear&quot;: [],
+          &quot;bonus&quot;: {},
+          &quot;elementBonus&quot;: {},
+          &quot;wins&quot;: 0,
+          &quot;pre&quot;: [],
+          &quot;loadout&quot;: [
+            &quot;纏繞&quot;
+          ]
+        },
+        &quot;maxhp&quot;: 70,
+        &quot;maxmp&quot;: 30,
+        &quot;hp&quot;: 70,
+        &quot;mp&quot;: 30,
+        &quot;deployed&quot;: false
+      }
+    ],
+    &quot;known&quot;: [
+      &quot;災獸長右&quot;,
+      &quot;落星谷龍胤之陣靈力爆破&quot;,
+      &quot;混沌魔宗&quot;,
+      &quot;傳送塔靈力被導向雷鳴沼&quot;
+    ],
+    &quot;story&quot;: {
+      &quot;savedFormation&quot;: {
+        &quot;front1&quot;: &quot;player&quot;,
+        &quot;front2&quot;: null,
+        &quot;back1&quot;: null,
+        &quot;back2&quot;: null
+      },
+      &quot;towerClosed&quot;: true,
+      &quot;digClue&quot;: true,
+      &quot;luJingRemembers&quot;: true,
+      &quot;luXingRemembers&quot;: true,
+      &quot;items&quot;: {
+        &quot;命符&quot;: true
+      },
+      &quot;valleyBurst&quot;: true,
+      &quot;qiuMissing&quot;: false,
+      &quot;npcPlaces&quot;: {
+        &quot;邱山河&quot;: &quot;雷鳴沼地下深窟&quot;,
+        &quot;沈玄川&quot;: &quot;同行中&quot;,
+        &quot;柳清妍&quot;: &quot;同行中&quot;
+      },
+      &quot;caveOpened&quot;: true,
+      &quot;qiuReunited&quot;: true
+    }
+  },
+  &quot;token&quot;: 1,
+  &quot;next&quot;: true,
+  &quot;done&quot;: true,
+  &quot;bClaimed&quot;: false,
+  &quot;qiu&quot;: &quot;雷鳴沼地下深窟&quot;,
+  &quot;dbPlaces&quot;: [
+    {
+      &quot;邱山河&quot;: &quot;雷鳴沼地下深窟&quot;,
+      &quot;林夏于&quot;: &quot;同行中&quot;,
+      &quot;沈玄川&quot;: &quot;同行中&quot;,
+      &quot;柳清妍&quot;: &quot;同行中&quot;
+    },
+    {
+      &quot;邱山河&quot;: &quot;雷鳴沼地下深窟&quot;,
+      &quot;林夏于&quot;: &quot;同行中&quot;,
+      &quot;沈玄川&quot;: &quot;同行中&quot;,
+      &quot;柳清妍&quot;: &quot;同行中&quot;
+    },
+    {
+      &quot;邱山河&quot;: &quot;雷鳴沼地下深窟&quot;,
+      &quot;林夏于&quot;: &quot;同行中&quot;,
+      &quot;沈玄川&quot;: &quot;同行中&quot;,
+      &quot;柳清妍&quot;: &quot;同行中&quot;
+    },
+    {
+      &quot;邱山河&quot;: &quot;雷鳴沼地下深窟&quot;,
+      &quot;林夏于&quot;: &quot;同行中&quot;,
+      &quot;沈玄川&quot;: &quot;同行中&quot;,
+      &quot;柳清妍&quot;: &quot;同行中&quot;
+    }
+  ],
+  &quot;bChat&quot;: false
+}</pre></details><details><summary>✓ L30 80組NPC基線保留八個獨立欄位，築基／金丹九層正確</summary><pre>{
+  &quot;rows&quot;: 80,
+  &quot;nine&quot;: [
+    [
+      1139,
+      617,
+      95,
+      95,
+      68,
+      68,
+      66,
+      66
+    ],
+    [
+      2705,
+      1572,
+      208,
+      208,
+      149,
+      149,
+      127,
+      127
+    ]
+  ],
+  &quot;source&quot;: &quot;使用者本輪提供原表；未改玩家／妖物基線&quot;
+}</pre></details><details><summary>✓ L30 六品質與八流派倍率、隱藏值及每核獨立±5%</summary><pre>{
+  &quot;rows&quot;: [
+    {
+      &quot;quality&quot;: &quot;弱者&quot;,
+      &quot;flow&quot;: &quot;物理型&quot;,
+      &quot;stats&quot;: [
+        1017,
+        472,
+        95,
+        61,
+        61,
+        55,
+        59,
+        59
+      ],
+      &quot;expected&quot;: [
+        1017,
+        472,
+        95,
+        61,
+        61,
+        55,
+        59,
+        59
+      ],
+      &quot;hit&quot;: 95,
+      &quot;resist&quot;: 95,
+      &quot;crit&quot;: 7,
+      &quot;expect&quot;: [
+        95,
+        95,
+        7
+      ]
+    },
+    {
+      &quot;quality&quot;: &quot;弱者&quot;,
+      &quot;flow&quot;: &quot;道術型&quot;,
+      &quot;stats&quot;: [
+        920,
+        603,
+        61,
+        95,
+        52,
+        62,
+        56,
+        59
+      ],
+      &quot;expected&quot;: [
+        920,
+        603,
+        61,
+        95,
+        52,
+        62,
+        56,
+        59
+      ],
+      &quot;hit&quot;: 95,
+      &quot;resist&quot;: 95,
+      &quot;crit&quot;: 5,
+      &quot;expect&quot;: [
+        95,
+        95,
+        5
+      ]
+    },
+    {
+      &quot;quality&quot;: &quot;弱者&quot;,
+      &quot;flow&quot;: &quot;坦型&quot;,
+      &quot;stats&quot;: [
+        1210,
+        498,
+        73,
+        73,
+        71,
+        71,
+        46,
+        53
+      ],
+      &quot;expected&quot;: [
+        1210,
+        498,
+        73,
+        73,
+        71,
+        71,
+        46,
+        53
+      ],
+      &quot;hit&quot;: 95,
+      &quot;resist&quot;: 103,
+      &quot;crit&quot;: 5,
+      &quot;expect&quot;: [
+        95,
+        103,
+        5
+      ]
+    },
+    {
+      &quot;quality&quot;: &quot;弱者&quot;,
+      &quot;flow&quot;: &quot;身法型&quot;,
+      &quot;stats&quot;: [
+        891,
+        498,
+        85,
+        81,
+        52,
+        52,
+        70,
+        63
+      ],
+      &quot;expected&quot;: [
+        891,
+        498,
+        85,
+        81,
+        52,
+        52,
+        70,
+        63
+      ],
+      &quot;hit&quot;: 95,
+      &quot;resist&quot;: 95,
+      &quot;crit&quot;: 10,
+      &quot;expect&quot;: [
+        95,
+        95,
+        10
+      ]
+    },
+    {
+      &quot;quality&quot;: &quot;弱者&quot;,
+      &quot;flow&quot;: &quot;控制型&quot;,
+      &quot;stats&quot;: [
+        920,
+        587,
+        65,
+        85,
+        53,
+        58,
+        59,
+        61
+      ],
+      &quot;expected&quot;: [
+        920,
+        587,
+        65,
+        85,
+        53,
+        58,
+        59,
+        61
+      ],
+      &quot;hit&quot;: 110,
+      &quot;resist&quot;: 95,
+      &quot;crit&quot;: 5,
+      &quot;expect&quot;: [
+        110,
+        95,
+        5
+      ]
+    },
+    {
+      &quot;quality&quot;: &quot;弱者&quot;,
+      &quot;flow&quot;: &quot;治療／輔助型&quot;,
+      &quot;stats&quot;: [
+        1017,
+        629,
+        61,
+        81,
+        58,
+        65,
+        53,
+        56
+      ],
+      &quot;expected&quot;: [
+        1017,
+        629,
+        61,
+        81,
+        58,
+        65,
+        53,
+        56
+      ],
+      &quot;hit&quot;: 95,
+      &quot;resist&quot;: 103,
+      &quot;crit&quot;: 5,
+      &quot;expect&quot;: [
+        95,
+        103,
+        5
+      ]
+    },
+    {
+      &quot;quality&quot;: &quot;弱者&quot;,
+      &quot;flow&quot;: &quot;雙修型&quot;,
+      &quot;stats&quot;: [
+        968,
+        551,
+        87,
+        87,
+        57,
+        57,
+        56,
+        56
+      ],
+      &quot;expected&quot;: [
+        968,
+        551,
+        87,
+        87,
+        57,
+        57,
+        56,
+        56
+      ],
+      &quot;hit&quot;: 95,
+      &quot;resist&quot;: 95,
+      &quot;crit&quot;: 5,
+      &quot;expect&quot;: [
+        95,
+        95,
+        5
+      ]
+    },
+    {
+      &quot;quality&quot;: &quot;弱者&quot;,
+      &quot;flow&quot;: &quot;均衡型&quot;,
+      &quot;stats&quot;: [
+        968,
+        524,
+        81,
+        81,
+        58,
+        58,
+        56,
+        56
+      ],
+      &quot;expected&quot;: [
+        968,
+        524,
+        81,
+        81,
+        58,
+        58,
+        56,
+        56
+      ],
+      &quot;hit&quot;: 95,
+      &quot;resist&quot;: 95,
+      &quot;crit&quot;: 5,
+      &quot;expect&quot;: [
+        95,
+        95,
+        5
+      ]
+    },
+    {
+      &quot;quality&quot;: &quot;普通&quot;,
+      &quot;flow&quot;: &quot;物理型&quot;,
+      &quot;stats&quot;: [
+        1196,
+        555,
+        112,
+        71,
+        71,
+        65,
+        69,
+        69
+      ],
+      &quot;expected&quot;: [
+        1196,
+        555,
+        112,
+        71,
+        71,
+        65,
+        69,
+        69
+      ],
+      &quot;hit&quot;: 103,
+      &quot;resist&quot;: 103,
+      &quot;crit&quot;: 7,
+      &quot;expect&quot;: [
+        103,
+        103,
+        7
+      ]
+    },
+    {
+      &quot;quality&quot;: &quot;普通&quot;,
+      &quot;flow&quot;: &quot;道術型&quot;,
+      &quot;stats&quot;: [
+        1082,
+        710,
+        71,
+        112,
+        61,
+        73,
+        66,
+        69
+      ],
+      &quot;expected&quot;: [
+        1082,
+        710,
+        71,
+        112,
+        61,
+        73,
+        66,
+        69
+      ],
+      &quot;hit&quot;: 103,
+      &quot;resist&quot;: 103,
+      &quot;crit&quot;: 5,
+      &quot;expect&quot;: [
+        103,
+        103,
+        5
+      ]
+    },
+    {
+      &quot;quality&quot;: &quot;普通&quot;,
+      &quot;flow&quot;: &quot;坦型&quot;,
+      &quot;stats&quot;: [
+        1424,
+        586,
+        86,
+        86,
+        83,
+        83,
+        54,
+        63
+      ],
+      &quot;expected&quot;: [
+        1424,
+        586,
+        86,
+        86,
+        83,
+        83,
+        54,
+        63
+      ],
+      &quot;hit&quot;: 103,
+      &quot;resist&quot;: 111,
+      &quot;crit&quot;: 5,
+      &quot;expect&quot;: [
+        103,
+        111,
+        5
+      ]
+    },
+    {
+      &quot;quality&quot;: &quot;普通&quot;,
+      &quot;flow&quot;: &quot;身法型&quot;,
+      &quot;stats&quot;: [
+        1048,
+        586,
+        100,
+        95,
+        61,
+        61,
+        83,
+        74
+      ],
+      &quot;expected&quot;: [
+        1048,
+        586,
+        100,
+        95,
+        61,
+        61,
+        83,
+        74
+      ],
+      &quot;hit&quot;: 103,
+      &quot;resist&quot;: 103,
+      &quot;crit&quot;: 10,
+      &quot;expect&quot;: [
+        103,
+        103,
+        10
+      ]
+    },
+    {
+      &quot;quality&quot;: &quot;普通&quot;,
+      &quot;flow&quot;: &quot;控制型&quot;,
+      &quot;stats&quot;: [
+        1082,
+        691,
+        76,
+        100,
+        63,
+        68,
+        69,
+        71
+      ],
+      &quot;expected&quot;: [
+        1082,
+        691,
+        76,
+        100,
+        63,
+        68,
+        69,
+        71
+      ],
+      &quot;hit&quot;: 118,
+      &quot;resist&quot;: 103,
+      &quot;crit&quot;: 5,
+      &quot;expect&quot;: [
+        118,
+        103,
+        5
+      ]
+    },
+    {
+      &quot;quality&quot;: &quot;普通&quot;,
+      &quot;flow&quot;: &quot;治療／輔助型&quot;,
+      &quot;stats&quot;: [
+        1196,
+        740,
+        71,
+        95,
+        68,
+        76,
+        63,
+        66
+      ],
+      &quot;expected&quot;: [
+        1196,
+        740,
+        71,
+        95,
+        68,
+        76,
+        63,
+        66
+      ],
+      &quot;hit&quot;: 103,
+      &quot;resist&quot;: 111,
+      &quot;crit&quot;: 5,
+      &quot;expect&quot;: [
+        103,
+        111,
+        5
+      ]
+    },
+    {
+      &quot;quality&quot;: &quot;普通&quot;,
+      &quot;flow&quot;: &quot;雙修型&quot;,
+      &quot;stats&quot;: [
+        1139,
+        648,
+        103,
+        103,
+        67,
+        67,
+        66,
+        66
+      ],
+      &quot;expected&quot;: [
+        1139,
+        648,
+        103,
+        103,
+        67,
+        67,
+        66,
+        66
+      ],
+      &quot;hit&quot;: 103,
+      &quot;resist&quot;: 103,
+      &quot;crit&quot;: 5,
+      &quot;expect&quot;: [
+        103,
+        103,
+        5
+      ]
+    },
+    {
+      &quot;quality&quot;: &quot;普通&quot;,
+      &quot;flow&quot;: &quot;均衡型&quot;,
+      &quot;stats&quot;: [
+        1139,
+        617,
+        95,
+        95,
+        68,
+        68,
+        66,
+        66
+      ],
+      &quot;expected&quot;: [
+        1139,
+        617,
+        95,
+        95,
+        68,
+        68,
+        66,
+        66
+      ],
+      &quot;hit&quot;: 103,
+      &quot;resist&quot;: 103,
+      &quot;crit&quot;: 5,
+      &quot;expect&quot;: [
+        103,
+        103,
+        5
+      ]
+    },
+    {
+      &quot;quality&quot;: &quot;優秀&quot;,
+      &quot;flow&quot;: &quot;物理型&quot;,
+      &quot;stats&quot;: [
+        1316,
+        611,
+        123,
+        78,
+        79,
+        71,
+        76,
+        76
+      ],
+      &quot;expected&quot;: [
+        1316,
+        611,
+        123,
+        78,
+        79,
+        71,
+        76,
+        76
+      ],
+      &quot;hit&quot;: 108,
+      &quot;resist&quot;: 108,
+      &quot;crit&quot;: 7,
+      &quot;expect&quot;: [
+        108,
+        108,
+        7
+      ]
+    },
+    {
+      &quot;quality&quot;: &quot;優秀&quot;,
+      &quot;flow&quot;: &quot;道術型&quot;,
+      &quot;stats&quot;: [
+        1190,
+        781,
+        78,
+        123,
+        67,
+        81,
+        73,
+        76
+      ],
+      &quot;expected&quot;: [
+        1190,
+        781,
+        78,
+        123,
+        67,
+        81,
+        73,
+        76
+      ],
+      &quot;hit&quot;: 108,
+      &quot;resist&quot;: 108,
+      &quot;crit&quot;: 5,
+      &quot;expect&quot;: [
+        108,
+        108,
+        5
+      ]
+    },
+    {
+      &quot;quality&quot;: &quot;優秀&quot;,
+      &quot;flow&quot;: &quot;坦型&quot;,
+      &quot;stats&quot;: [
+        1566,
+        645,
+        94,
+        94,
+        91,
+        91,
+        60,
+        69
+      ],
+      &quot;expected&quot;: [
+        1566,
+        645,
+        94,
+        94,
+        91,
+        91,
+        60,
+        69
+      ],
+      &quot;hit&quot;: 108,
+      &quot;resist&quot;: 116,
+      &quot;crit&quot;: 5,
+      &quot;expect&quot;: [
+        108,
+        116,
+        5
+      ]
+    },
+    {
+      &quot;quality&quot;: &quot;優秀&quot;,
+      &quot;flow&quot;: &quot;身法型&quot;,
+      &quot;stats&quot;: [
+        1153,
+        645,
+        110,
+        105,
+        67,
+        67,
+        91,
+        81
+      ],
+      &quot;expected&quot;: [
+        1153,
+        645,
+        110,
+        105,
+        67,
+        67,
+        91,
+        81
+      ],
+      &quot;hit&quot;: 108,
+      &quot;resist&quot;: 108,
+      &quot;crit&quot;: 10,
+      &quot;expect&quot;: [
+        108,
+        108,
+        10
+      ]
+    },
+    {
+      &quot;quality&quot;: &quot;優秀&quot;,
+      &quot;flow&quot;: &quot;控制型&quot;,
+      &quot;stats&quot;: [
+        1190,
+        760,
+        84,
+        110,
+        69,
+        75,
+        76,
+        78
+      ],
+      &quot;expected&quot;: [
+        1190,
+        760,
+        84,
+        110,
+        69,
+        75,
+        76,
+        78
+      ],
+      &quot;hit&quot;: 123,
+      &quot;resist&quot;: 108,
+      &quot;crit&quot;: 5,
+      &quot;expect&quot;: [
+        123,
+        108,
+        5
+      ]
+    },
+    {
+      &quot;quality&quot;: &quot;優秀&quot;,
+      &quot;flow&quot;: &quot;治療／輔助型&quot;,
+      &quot;stats&quot;: [
+        1316,
+        814,
+        78,
+        105,
+        75,
+        84,
+        69,
+        73
+      ],
+      &quot;expected&quot;: [
+        1316,
+        814,
+        78,
+        105,
+        75,
+        84,
+        69,
+        73
+      ],
+      &quot;hit&quot;: 108,
+      &quot;resist&quot;: 116,
+      &quot;crit&quot;: 5,
+      &quot;expect&quot;: [
+        108,
+        116,
+        5
+      ]
+    },
+    {
+      &quot;quality&quot;: &quot;優秀&quot;,
+      &quot;flow&quot;: &quot;雙修型&quot;,
+      &quot;stats&quot;: [
+        1253,
+        713,
+        113,
+        113,
+        73,
+        73,
+        73,
+        73
+      ],
+      &quot;expected&quot;: [
+        1253,
+        713,
+        113,
+        113,
+        73,
+        73,
+        73,
+        73
+      ],
+      &quot;hit&quot;: 108,
+      &quot;resist&quot;: 108,
+      &quot;crit&quot;: 5,
+      &quot;expect&quot;: [
+        108,
+        108,
+        5
+      ]
+    },
+    {
+      &quot;quality&quot;: &quot;優秀&quot;,
+      &quot;flow&quot;: &quot;均衡型&quot;,
+      &quot;stats&quot;: [
+        1253,
+        679,
+        105,
+        105,
+        75,
+        75,
+        73,
+        73
+      ],
+      &quot;expected&quot;: [
+        1253,
+        679,
+        105,
+        105,
+        75,
+        75,
+        73,
+        73
+      ],
+      &quot;hit&quot;: 108,
+      &quot;resist&quot;: 108,
+      &quot;crit&quot;: 5,
+      &quot;expect&quot;: [
+        108,
+        108,
+        5
+      ]
+    },
+    {
+      &quot;quality&quot;: &quot;精英&quot;,
+      &quot;flow&quot;: &quot;物理型&quot;,
+      &quot;stats&quot;: [
+        1459,
+        677,
+        137,
+        87,
+        87,
+        79,
+        85,
+        85
+      ],
+      &quot;expected&quot;: [
+        1459,
+        677,
+        137,
+        87,
+        87,
+        79,
+        85,
+        85
+      ],
+      &quot;hit&quot;: 113,
+      &quot;resist&quot;: 113,
+      &quot;crit&quot;: 7,
+      &quot;expect&quot;: [
+        113,
+        113,
+        7
+      ]
+    },
+    {
+      &quot;quality&quot;: &quot;精英&quot;,
+      &quot;flow&quot;: &quot;道術型&quot;,
+      &quot;stats&quot;: [
+        1320,
+        866,
+        87,
+        137,
+        75,
+        90,
+        81,
+        85
+      ],
+      &quot;expected&quot;: [
+        1320,
+        866,
+        87,
+        137,
+        75,
+        90,
+        81,
+        85
+      ],
+      &quot;hit&quot;: 113,
+      &quot;resist&quot;: 113,
+      &quot;crit&quot;: 5,
+      &quot;expect&quot;: [
+        113,
+        113,
+        5
+      ]
+    },
+    {
+      &quot;quality&quot;: &quot;精英&quot;,
+      &quot;flow&quot;: &quot;坦型&quot;,
+      &quot;stats&quot;: [
+        1737,
+        715,
+        104,
+        104,
+        101,
+        101,
+        66,
+        76
+      ],
+      &quot;expected&quot;: [
+        1737,
+        715,
+        104,
+        104,
+        101,
+        101,
+        66,
+        76
+      ],
+      &quot;hit&quot;: 113,
+      &quot;resist&quot;: 121,
+      &quot;crit&quot;: 5,
+      &quot;expect&quot;: [
+        113,
+        121,
+        5
+      ]
+    },
+    {
+      &quot;quality&quot;: &quot;精英&quot;,
+      &quot;flow&quot;: &quot;身法型&quot;,
+      &quot;stats&quot;: [
+        1278,
+        715,
+        122,
+        116,
+        75,
+        75,
+        101,
+        90
+      ],
+      &quot;expected&quot;: [
+        1278,
+        715,
+        122,
+        116,
+        75,
+        75,
+        101,
+        90
+      ],
+      &quot;hit&quot;: 113,
+      &quot;resist&quot;: 113,
+      &quot;crit&quot;: 10,
+      &quot;expect&quot;: [
+        113,
+        113,
+        10
+      ]
+    },
+    {
+      &quot;quality&quot;: &quot;精英&quot;,
+      &quot;flow&quot;: &quot;控制型&quot;,
+      &quot;stats&quot;: [
+        1320,
+        843,
+        93,
+        122,
+        76,
+        83,
+        85,
+        87
+      ],
+      &quot;expected&quot;: [
+        1320,
+        843,
+        93,
+        122,
+        76,
+        83,
+        85,
+        87
+      ],
+      &quot;hit&quot;: 128,
+      &quot;resist&quot;: 113,
+      &quot;crit&quot;: 5,
+      &quot;expect&quot;: [
+        128,
+        113,
+        5
+      ]
+    },
+    {
+      &quot;quality&quot;: &quot;精英&quot;,
+      &quot;flow&quot;: &quot;治療／輔助型&quot;,
+      &quot;stats&quot;: [
+        1459,
+        903,
+        87,
+        116,
+        83,
+        93,
+        76,
+        81
+      ],
+      &quot;expected&quot;: [
+        1459,
+        903,
+        87,
+        116,
+        83,
+        93,
+        76,
+        81
+      ],
+      &quot;hit&quot;: 113,
+      &quot;resist&quot;: 121,
+      &quot;crit&quot;: 5,
+      &quot;expect&quot;: [
+        113,
+        121,
+        5
+      ]
+    },
+    {
+      &quot;quality&quot;: &quot;精英&quot;,
+      &quot;flow&quot;: &quot;雙修型&quot;,
+      &quot;stats&quot;: [
+        1390,
+        790,
+        125,
+        125,
+        81,
+        81,
+        81,
+        81
+      ],
+      &quot;expected&quot;: [
+        1390,
+        790,
+        125,
+        125,
+        81,
+        81,
+        81,
+        81
+      ],
+      &quot;hit&quot;: 113,
+      &quot;resist&quot;: 113,
+      &quot;crit&quot;: 5,
+      &quot;expect&quot;: [
+        113,
+        113,
+        5
+      ]
+    },
+    {
+      &quot;quality&quot;: &quot;精英&quot;,
+      &quot;flow&quot;: &quot;均衡型&quot;,
+      &quot;stats&quot;: [
+        1390,
+        753,
+        116,
+        116,
+        83,
+        83,
+        81,
+        81
+      ],
+      &quot;expected&quot;: [
+        1390,
+        753,
+        116,
+        116,
+        83,
+        83,
+        81,
+        81
+      ],
+      &quot;hit&quot;: 113,
+      &quot;resist&quot;: 113,
+      &quot;crit&quot;: 5,
+      &quot;expect&quot;: [
+        113,
+        113,
+        5
+      ]
+    },
+    {
+      &quot;quality&quot;: &quot;天才&quot;,
+      &quot;flow&quot;: &quot;物理型&quot;,
+      &quot;stats&quot;: [
+        1650,
+        766,
+        155,
+        98,
+        99,
+        89,
+        96,
+        96
+      ],
+      &quot;expected&quot;: [
+        1650,
+        766,
+        155,
+        98,
+        99,
+        89,
+        96,
+        96
+      ],
+      &quot;hit&quot;: 119,
+      &quot;resist&quot;: 119,
+      &quot;crit&quot;: 7,
+      &quot;expect&quot;: [
+        119,
+        119,
+        7
+      ]
+    },
+    {
+      &quot;quality&quot;: &quot;天才&quot;,
+      &quot;flow&quot;: &quot;道術型&quot;,
+      &quot;stats&quot;: [
+        1493,
+        979,
+        98,
+        155,
+        84,
+        101,
+        91,
+        96
+      ],
+      &quot;expected&quot;: [
+        1493,
+        979,
+        98,
+        155,
+        84,
+        101,
+        91,
+        96
+      ],
+      &quot;hit&quot;: 119,
+      &quot;resist&quot;: 119,
+      &quot;crit&quot;: 5,
+      &quot;expect&quot;: [
+        119,
+        119,
+        5
+      ]
+    },
+    {
+      &quot;quality&quot;: &quot;天才&quot;,
+      &quot;flow&quot;: &quot;坦型&quot;,
+      &quot;stats&quot;: [
+        1965,
+        809,
+        118,
+        118,
+        114,
+        114,
+        75,
+        87
+      ],
+      &quot;expected&quot;: [
+        1965,
+        809,
+        118,
+        118,
+        114,
+        114,
+        75,
+        87
+      ],
+      &quot;hit&quot;: 119,
+      &quot;resist&quot;: 127,
+      &quot;crit&quot;: 5,
+      &quot;expect&quot;: [
+        119,
+        127,
+        5
+      ]
+    },
+    {
+      &quot;quality&quot;: &quot;天才&quot;,
+      &quot;flow&quot;: &quot;身法型&quot;,
+      &quot;stats&quot;: [
+        1446,
+        809,
+        138,
+        131,
+        84,
+        84,
+        114,
+        102
+      ],
+      &quot;expected&quot;: [
+        1446,
+        809,
+        138,
+        131,
+        84,
+        84,
+        114,
+        102
+      ],
+      &quot;hit&quot;: 119,
+      &quot;resist&quot;: 119,
+      &quot;crit&quot;: 10,
+      &quot;expect&quot;: [
+        119,
+        119,
+        10
+      ]
+    },
+    {
+      &quot;quality&quot;: &quot;天才&quot;,
+      &quot;flow&quot;: &quot;控制型&quot;,
+      &quot;stats&quot;: [
+        1493,
+        954,
+        105,
+        138,
+        86,
+        94,
+        96,
+        98
+      ],
+      &quot;expected&quot;: [
+        1493,
+        954,
+        105,
+        138,
+        86,
+        94,
+        96,
+        98
+      ],
+      &quot;hit&quot;: 134,
+      &quot;resist&quot;: 119,
+      &quot;crit&quot;: 5,
+      &quot;expect&quot;: [
+        134,
+        119,
+        5
+      ]
+    },
+    {
+      &quot;quality&quot;: &quot;天才&quot;,
+      &quot;flow&quot;: &quot;治療／輔助型&quot;,
+      &quot;stats&quot;: [
+        1650,
+        1022,
+        98,
+        131,
+        94,
+        105,
+        87,
+        91
+      ],
+      &quot;expected&quot;: [
+        1650,
+        1022,
+        98,
+        131,
+        94,
+        105,
+        87,
+        91
+      ],
+      &quot;hit&quot;: 119,
+      &quot;resist&quot;: 127,
+      &quot;crit&quot;: 5,
+      &quot;expect&quot;: [
+        119,
+        127,
+        5
+      ]
+    },
+    {
+      &quot;quality&quot;: &quot;天才&quot;,
+      &quot;flow&quot;: &quot;雙修型&quot;,
+      &quot;stats&quot;: [
+        1572,
+        894,
+        142,
+        142,
+        92,
+        92,
+        91,
+        91
+      ],
+      &quot;expected&quot;: [
+        1572,
+        894,
+        142,
+        142,
+        92,
+        92,
+        91,
+        91
+      ],
+      &quot;hit&quot;: 119,
+      &quot;resist&quot;: 119,
+      &quot;crit&quot;: 5,
+      &quot;expect&quot;: [
+        119,
+        119,
+        5
+      ]
+    },
+    {
+      &quot;quality&quot;: &quot;天才&quot;,
+      &quot;flow&quot;: &quot;均衡型&quot;,
+      &quot;stats&quot;: [
+        1572,
+        851,
+        131,
+        131,
+        94,
+        94,
+        91,
+        91
+      ],
+      &quot;expected&quot;: [
+        1572,
+        851,
+        131,
+        131,
+        94,
+        94,
+        91,
+        91
+      ],
+      &quot;hit&quot;: 119,
+      &quot;resist&quot;: 119,
+      &quot;crit&quot;: 5,
+      &quot;expect&quot;: [
+        119,
+        119,
+        5
+      ]
+    },
+    {
+      &quot;quality&quot;: &quot;妖孽&quot;,
+      &quot;flow&quot;: &quot;物理型&quot;,
+      &quot;stats&quot;: [
+        1890,
+        877,
+        177,
+        113,
+        113,
+        102,
+        109,
+        109
+      ],
+      &quot;expected&quot;: [
+        1890,
+        877,
+        177,
+        113,
+        113,
+        102,
+        109,
+        109
+      ],
+      &quot;hit&quot;: 127,
+      &quot;resist&quot;: 127,
+      &quot;crit&quot;: 7,
+      &quot;expect&quot;: [
+        127,
+        127,
+        7
+      ]
+    },
+    {
+      &quot;quality&quot;: &quot;妖孽&quot;,
+      &quot;flow&quot;: &quot;道術型&quot;,
+      &quot;stats&quot;: [
+        1710,
+        1121,
+        113,
+        177,
+        97,
+        116,
+        104,
+        109
+      ],
+      &quot;expected&quot;: [
+        1710,
+        1121,
+        113,
+        177,
+        97,
+        116,
+        104,
+        109
+      ],
+      &quot;hit&quot;: 127,
+      &quot;resist&quot;: 127,
+      &quot;crit&quot;: 5,
+      &quot;expect&quot;: [
+        127,
+        127,
+        5
+      ]
+    },
+    {
+      &quot;quality&quot;: &quot;妖孽&quot;,
+      &quot;flow&quot;: &quot;坦型&quot;,
+      &quot;stats&quot;: [
+        2250,
+        926,
+        135,
+        135,
+        131,
+        131,
+        86,
+        99
+      ],
+      &quot;expected&quot;: [
+        2250,
+        926,
+        135,
+        135,
+        131,
+        131,
+        86,
+        99
+      ],
+      &quot;hit&quot;: 127,
+      &quot;resist&quot;: 135,
+      &quot;crit&quot;: 5,
+      &quot;expect&quot;: [
+        127,
+        135,
+        5
+      ]
+    },
+    {
+      &quot;quality&quot;: &quot;妖孽&quot;,
+      &quot;flow&quot;: &quot;身法型&quot;,
+      &quot;stats&quot;: [
+        1656,
+        926,
+        158,
+        150,
+        97,
+        97,
+        130,
+        117
+      ],
+      &quot;expected&quot;: [
+        1656,
+        926,
+        158,
+        150,
+        97,
+        97,
+        130,
+        117
+      ],
+      &quot;hit&quot;: 127,
+      &quot;resist&quot;: 127,
+      &quot;crit&quot;: 10,
+      &quot;expect&quot;: [
+        127,
+        127,
+        10
+      ]
+    },
+    {
+      &quot;quality&quot;: &quot;妖孽&quot;,
+      &quot;flow&quot;: &quot;控制型&quot;,
+      &quot;stats&quot;: [
+        1710,
+        1092,
+        120,
+        158,
+        99,
+        107,
+        109,
+        113
+      ],
+      &quot;expected&quot;: [
+        1710,
+        1092,
+        120,
+        158,
+        99,
+        107,
+        109,
+        113
+      ],
+      &quot;hit&quot;: 142,
+      &quot;resist&quot;: 127,
+      &quot;crit&quot;: 5,
+      &quot;expect&quot;: [
+        142,
+        127,
+        5
+      ]
+    },
+    {
+      &quot;quality&quot;: &quot;妖孽&quot;,
+      &quot;flow&quot;: &quot;治療／輔助型&quot;,
+      &quot;stats&quot;: [
+        1890,
+        1170,
+        113,
+        150,
+        107,
+        120,
+        99,
+        104
+      ],
+      &quot;expected&quot;: [
+        1890,
+        1170,
+        113,
+        150,
+        107,
+        120,
+        99,
+        104
+      ],
+      &quot;hit&quot;: 127,
+      &quot;resist&quot;: 135,
+      &quot;crit&quot;: 5,
+      &quot;expect&quot;: [
+        127,
+        135,
+        5
+      ]
+    },
+    {
+      &quot;quality&quot;: &quot;妖孽&quot;,
+      &quot;flow&quot;: &quot;雙修型&quot;,
+      &quot;stats&quot;: [
+        1800,
+        1024,
+        162,
+        162,
+        105,
+        105,
+        104,
+        104
+      ],
+      &quot;expected&quot;: [
+        1800,
+        1024,
+        162,
+        162,
+        105,
+        105,
+        104,
+        104
+      ],
+      &quot;hit&quot;: 127,
+      &quot;resist&quot;: 127,
+      &quot;crit&quot;: 5,
+      &quot;expect&quot;: [
+        127,
+        127,
+        5
+      ]
+    },
+    {
+      &quot;quality&quot;: &quot;妖孽&quot;,
+      &quot;flow&quot;: &quot;均衡型&quot;,
+      &quot;stats&quot;: [
+        1800,
+        975,
+        150,
+        150,
+        107,
+        107,
+        104,
+        104
+      ],
+      &quot;expected&quot;: [
+        1800,
+        975,
+        150,
+        150,
+        107,
+        107,
+        104,
+        104
+      ],
+      &quot;hit&quot;: 127,
+      &quot;resist&quot;: 127,
+      &quot;crit&quot;: 5,
+      &quot;expect&quot;: [
+        127,
+        127,
+        5
+      ]
+    }
+  ],
+  &quot;min&quot;: 0.9500267224386334,
+  &quot;max&quot;: 1.049996399320662,
+  &quot;distinct&quot;: true
+}</pre></details><details><summary>✓ L30 八流派合法武器偏好70/30抽樣與空池後備</summary><pre>[
+  {
+    &quot;flow&quot;: &quot;物理型&quot;,
+    &quot;counts&quot;: {
+      &quot;錘&quot;: 2380,
+      &quot;刀&quot;: 2242,
+      &quot;葫蘆&quot;: 1465,
+      &quot;長槍&quot;: 2375,
+      &quot;傘&quot;: 1568,
+      &quot;寶珠&quot;: 1514,
+      &quot;拳套&quot;: 2330,
+      &quot;劍&quot;: 2365,
+      &quot;弓&quot;: 2275,
+      &quot;扇&quot;: 1486
+    },
+    &quot;preferred&quot;: 69.835,
+    &quot;fallback&quot;: &quot;劍&quot;
+  },
+  {
+    &quot;flow&quot;: &quot;道術型&quot;,
+    &quot;counts&quot;: {
+      &quot;扇&quot;: 3490,
+      &quot;拳套&quot;: 944,
+      &quot;葫蘆&quot;: 3531,
+      &quot;傘&quot;: 3490,
+      &quot;寶珠&quot;: 3515,
+      &quot;劍&quot;: 1007,
+      &quot;刀&quot;: 1024,
+      &quot;錘&quot;: 980,
+      &quot;弓&quot;: 1018,
+      &quot;長槍&quot;: 1001
+    },
+    &quot;preferred&quot;: 70.13,
+    &quot;fallback&quot;: &quot;劍&quot;
+  },
+  {
+    &quot;flow&quot;: &quot;坦型&quot;,
+    &quot;counts&quot;: {
+      &quot;寶珠&quot;: 1019,
+      &quot;葫蘆&quot;: 3580,
+      &quot;傘&quot;: 3381,
+      &quot;長槍&quot;: 3476,
+      &quot;拳套&quot;: 1014,
+      &quot;錘&quot;: 3484,
+      &quot;劍&quot;: 986,
+      &quot;扇&quot;: 1007,
+      &quot;刀&quot;: 1002,
+      &quot;弓&quot;: 1051
+    },
+    &quot;preferred&quot;: 69.605,
+    &quot;fallback&quot;: &quot;劍&quot;
+  },
+  {
+    &quot;flow&quot;: &quot;身法型&quot;,
+    &quot;counts&quot;: {
+      &quot;拳套&quot;: 3497,
+      &quot;扇&quot;: 3517,
+      &quot;傘&quot;: 3555,
+      &quot;劍&quot;: 978,
+      &quot;葫蘆&quot;: 1005,
+      &quot;錘&quot;: 1022,
+      &quot;弓&quot;: 3440,
+      &quot;刀&quot;: 1024,
+      &quot;寶珠&quot;: 1004,
+      &quot;長槍&quot;: 958
+    },
+    &quot;preferred&quot;: 70.045,
+    &quot;fallback&quot;: &quot;劍&quot;
+  },
+  {
+    &quot;flow&quot;: &quot;控制型&quot;,
+    &quot;counts&quot;: {
+      &quot;寶珠&quot;: 3447,
+      &quot;錘&quot;: 1041,
+      &quot;傘&quot;: 3554,
+      &quot;劍&quot;: 1017,
+      &quot;扇&quot;: 3490,
+      &quot;葫蘆&quot;: 3525,
+      &quot;刀&quot;: 960,
+      &quot;拳套&quot;: 965,
+      &quot;弓&quot;: 985,
+      &quot;長槍&quot;: 1016
+    },
+    &quot;preferred&quot;: 70.08,
+    &quot;fallback&quot;: &quot;劍&quot;
+  },
+  {
+    &quot;flow&quot;: &quot;治療／輔助型&quot;,
+    &quot;counts&quot;: {
+      &quot;寶珠&quot;: 3497,
+      &quot;劍&quot;: 1018,
+      &quot;扇&quot;: 3566,
+      &quot;錘&quot;: 1014,
+      &quot;傘&quot;: 3419,
+      &quot;葫蘆&quot;: 3459,
+      &quot;長槍&quot;: 1053,
+      &quot;弓&quot;: 1031,
+      &quot;拳套&quot;: 961,
+      &quot;刀&quot;: 982
+    },
+    &quot;preferred&quot;: 69.705,
+    &quot;fallback&quot;: &quot;劍&quot;
+  },
+  {
+    &quot;flow&quot;: &quot;雙修型&quot;,
+    &quot;counts&quot;: {
+      &quot;長槍&quot;: 3610,
+      &quot;傘&quot;: 3516,
+      &quot;弓&quot;: 3485,
+      &quot;劍&quot;: 3399,
+      &quot;葫蘆&quot;: 1048,
+      &quot;寶珠&quot;: 983,
+      &quot;拳套&quot;: 987,
+      &quot;刀&quot;: 989,
+      &quot;錘&quot;: 973,
+      &quot;扇&quot;: 1010
+    },
+    &quot;preferred&quot;: 70.05,
+    &quot;fallback&quot;: &quot;劍&quot;
+  },
+  {
+    &quot;flow&quot;: &quot;均衡型&quot;,
+    &quot;counts&quot;: {
+      &quot;長槍&quot;: 2830,
+      &quot;葫蘆&quot;: 1143,
+      &quot;寶珠&quot;: 1179,
+      &quot;扇&quot;: 2785,
+      &quot;弓&quot;: 2874,
+      &quot;劍&quot;: 2776,
+      &quot;刀&quot;: 1173,
+      &quot;傘&quot;: 2860,
+      &quot;錘&quot;: 1184,
+      &quot;拳套&quot;: 1196
+    },
+    &quot;preferred&quot;: 70.625,
+    &quot;fallback&quot;: &quot;劍&quot;
+  }
+]</pre></details><details><summary>✓ L30 1200個完整對手生成：五品質八流派、合法裝備與3至10相容招式</summary><pre>{
+  &quot;quality&quot;: {
+    &quot;普通&quot;: 233,
+    &quot;精英&quot;: 227,
+    &quot;優秀&quot;: 231,
+    &quot;妖孽&quot;: 219,
+    &quot;天才&quot;: 290
+  },
+  &quot;flows&quot;: {
+    &quot;控制型&quot;: 147,
+    &quot;坦型&quot;: 150,
+    &quot;雙修型&quot;: 143,
+    &quot;物理型&quot;: 165,
+    &quot;均衡型&quot;: 146,
+    &quot;身法型&quot;: 146,
+    &quot;道術型&quot;: 139,
+    &quot;治療／輔助型&quot;: 164
+  },
+  &quot;levels&quot;: {
+    &quot;築基三層&quot;: 53,
+    &quot;金丹三層&quot;: 64,
+    &quot;金丹七層&quot;: 70,
+    &quot;築基二層&quot;: 57,
+    &quot;築基八層&quot;: 60,
+    &quot;築基四層&quot;: 69,
+    &quot;金丹六層&quot;: 68,
+    &quot;金丹二層&quot;: 47,
+    &quot;築基六層&quot;: 61,
+    &quot;築基一層&quot;: 56,
+    &quot;築基七層&quot;: 73,
+    &quot;金丹五層&quot;: 57,
+    &quot;金丹圓滿&quot;: 60,
+    &quot;築基五層&quot;: 62,
+    &quot;金丹四層&quot;: 57,
+    &quot;築基九層&quot;: 52,
+    &quot;金丹九層&quot;: 53,
+    &quot;金丹一層&quot;: 56,
+    &quot;金丹八層&quot;: 68,
+    &quot;築基圓滿&quot;: 57
+  },
+  &quot;bad&quot;: [],
+  &quot;range&quot;: [
+    623,
+    3862
+  ],
+  &quot;weapon&quot;: {
+    &quot;扇&quot;: 148,
+    &quot;葫蘆&quot;: 143,
+    &quot;傘&quot;: 176,
+    &quot;錘&quot;: 94,
+    &quot;弓&quot;: 126,
+    &quot;長槍&quot;: 125,
+    &quot;拳套&quot;: 101,
+    &quot;寶珠&quot;: 116,
+    &quot;劍&quot;: 91,
+    &quot;刀&quot;: 80
+  }
+}</pre></details><details><summary>✓ L30 問道入口開放、金丹停用；預覽保密及問道令只可重抽一次</summary><pre>{
+  &quot;enabled&quot;: true,
+  &quot;text&quot;: &quot;對手境界：築基圓滿。詳細戰鬥資訊於開戰後揭示。開始戰鬥問道令×1・重抽一次返回&quot;,
+  &quot;different&quot;: true,
+  &quot;spent&quot;: 1,
+  &quot;same&quot;: true,
+  &quot;disabled&quot;: true
+}</pre></details><details><summary>✓ L30 跨境1V1真實戰鬥：只有玩家、禁物品逃跑，勝利33問道點</summary><pre>{
+  &quot;before&quot;: {
+    &quot;team&quot;: [
+      &quot;player&quot;
+    ],
+    &quot;enemyRealm&quot;: &quot;金丹七層&quot;,
+    &quot;mode&quot;: &quot;cross&quot;,
+    &quot;noRun&quot;: true,
+    &quot;items&quot;: null,
+    &quot;ui&quot;: &quot;\n    詳細戰鬥資訊測試999其他資訊氣血 10000/10018靈力 500/508攻 5004道 5001防 9道防 9身 10000命 10004境界 築基一層戰力 45344主靈根：水Buff無Debuff無問道修士其他資訊氣血 2847/2847靈力 1820/1820攻 247道 261防 160道防 184身 193命 174境界 金丹七層戰力 2685主靈根：雷Buff無Debuff無\n      \n      \n      敵方\n      \n    \n    \n\n    \n      問道修士\n    \n\n    \n      \n        氣血\n        \n        2847/2847\n      \n      \n        靈力\n        \n        1820/1820\n      \n    \n\n    後排1\n  \n      空位\n      後排2\n    \n      空位\n      前排1\n    \n      空位\n      前排2\n    \n      我方\n      \n    \n    \n\n    \n      測試999\n    \n\n    \n      \n        氣血\n        \n        10000/10018\n      \n      \n        靈力\n        \n        500/508\n      \n    \n\n    前排1\n  \n      空位\n      前排2\n    \n      空位\n      後排1\n    \n      空位\n      後排2\n    \n    \n    \n\n    \n    普攻\n    功法\n    背包\n    防禦\n    逃跑\n    自動戰鬥速度 1.0×1.5×\n  \n\n    \n      第 1 回合一般戰鬥\n      \n        行動順序\n        ▶ 測試9992 問道修士\n      \n      \n        戰鬥日誌\n        問道檯・境界相符戰輪到測試999行動。\n      \n    \n\n    主戰場 1300×800 / 中心 X=650\n    底部操作區 1300×100\n    右側資訊區 300×900\n  &quot;
+  },
+  &quot;points&quot;: 33,
+  &quot;streak&quot;: 1,
+  &quot;win&quot;: true,
+  &quot;previewRemaining&quot;: false,
+  &quot;hp&quot;: 10000,
+  &quot;mp&quot;: 500,
+  &quot;realm&quot;: &quot;金丹七層&quot;,
+  &quot;skills&quot;: [
+    &quot;小周天回流&quot;,
+    &quot;擾神訣&quot;,
+    &quot;散元訣&quot;,
+    &quot;照心訣&quot;,
+    &quot;驚神震&quot;,
+    &quot;震膽喝聲&quot;,
+    &quot;定息養元&quot;,
+    &quot;封生絕脈&quot;,
+    &quot;渡氣療傷&quot;
+  ],
+  &quot;round&quot;: 1
+}</pre></details><details><summary>✓ L30 跨境連勝加成上限37、敗北連勝歸0且不發野外獎勵</summary><pre>{
+  &quot;rows&quot;: [
+    33,
+    34,
+    35,
+    36,
+    37,
+    37,
+    37
+  ],
+  &quot;total&quot;: 249,
+  &quot;streak&quot;: 0,
+  &quot;coins&quot;: 0,
+  &quot;exp&quot;: 0,
+  &quot;hp&quot;: 10,
+  &quot;mp&quot;: 5
+}</pre></details><details><summary>✓ L30 裝備品質55/25/12/5/2/1獨立抽樣、缺品質重分配、僅使用現有成品</summary><pre>{
+  &quot;counts&quot;: {
+    &quot;普通&quot;: 54902,
+    &quot;優良&quot;: 25186,
+    &quot;精品&quot;: 11945,
+    &quot;珍稀&quot;: 4942,
+    &quot;極品&quot;: 2046,
+    &quot;完美&quot;: 979
+  },
+  &quot;counts2&quot;: {
+    &quot;優良&quot;: 24981,
+    &quot;完美&quot;: 1019
+  },
+  &quot;empty&quot;: null,
+  &quot;noInvent&quot;: true,
+  &quot;values&quot;: [
+    31,
+    32,
+    33,
+    34,
+    35,
+    36
+  ],
+  &quot;candidates&quot;: {
+    &quot;普通&quot;: 1,
+    &quot;優良&quot;: 1.1,
+    &quot;精品&quot;: 1.2,
+    &quot;珍稀&quot;: 1.35,
+    &quot;極品&quot;: 1.5,
+    &quot;完美&quot;: 1.7
+  },
+  &quot;fixture&quot;: &quot;只在隔離案例加入六筆成品記錄以驗證抽樣；結束即移除，未加入遊戲裝備。&quot;
+}</pre></details><details><summary>✓ L30 NPC品質只乘自身基線，裝備最終記錄值加入一次且無候選倍率覆乘</summary><pre>[
+  {
+    &quot;quality&quot;: &quot;普通&quot;,
+    &quot;base&quot;: {
+      &quot;maxhp&quot;: 1114,
+      &quot;maxmp&quot;: 634,
+      &quot;atk&quot;: 100,
+      &quot;dao&quot;: 93,
+      &quot;def&quot;: 67,
+      &quot;daoDef&quot;: 68,
+      &quot;agi&quot;: 67,
+      &quot;hit&quot;: 68
+    },
+    &quot;bonus&quot;: {
+      &quot;maxhp&quot;: 145,
+      &quot;maxmp&quot;: 38,
+      &quot;atk&quot;: 21,
+      &quot;dao&quot;: 12,
+      &quot;def&quot;: 15,
+      &quot;daoDef&quot;: 14,
+      &quot;agi&quot;: 31,
+      &quot;hit&quot;: 21
+    },
+    &quot;final&quot;: {
+      &quot;maxhp&quot;: 1259,
+      &quot;maxmp&quot;: 672,
+      &quot;atk&quot;: 121,
+      &quot;dao&quot;: 105,
+      &quot;def&quot;: 82,
+      &quot;daoDef&quot;: 82,
+      &quot;agi&quot;: 98,
+      &quot;hit&quot;: 89
+    },
+    &quot;gear&quot;: {
+      &quot;武&quot;: &quot;［中階］玄水拳套&quot;,
+      &quot;頭&quot;: &quot;［初階］青羽道帽&quot;,
+      &quot;身&quot;: &quot;［初階］狐絨衣&quot;,
+      &quot;褲&quot;: &quot;［初階］靈鐵護腿&quot;,
+      &quot;鞋&quot;: &quot;［初階］硬骨戰靴&quot;,
+      &quot;項&quot;: &quot;［初階］蛇鱗墜&quot;,
+      &quot;戒&quot;: &quot;［初階］赤銅指環&quot;,
+      &quot;飾&quot;: &quot;［初階］妖羽耳飾&quot;
+    },
+    &quot;gearQualities&quot;: {
+      &quot;武&quot;: &quot;普通&quot;,
+      &quot;頭&quot;: &quot;普通&quot;,
+      &quot;身&quot;: &quot;普通&quot;,
+      &quot;褲&quot;: &quot;普通&quot;,
+      &quot;鞋&quot;: &quot;普通&quot;,
+      &quot;項&quot;: &quot;普通&quot;,
+      &quot;戒&quot;: &quot;普通&quot;,
+      &quot;飾&quot;: &quot;普通&quot;
+    }
+  },
+  {
+    &quot;quality&quot;: &quot;妖孽&quot;,
+    &quot;base&quot;: {
+      &quot;maxhp&quot;: 1760,
+      &quot;maxmp&quot;: 1002,
+      &quot;atk&quot;: 157,
+      &quot;dao&quot;: 147,
+      &quot;def&quot;: 106,
+      &quot;daoDef&quot;: 107,
+      &quot;agi&quot;: 106,
+      &quot;hit&quot;: 108
+    },
+    &quot;bonus&quot;: {
+      &quot;maxhp&quot;: 145,
+      &quot;maxmp&quot;: 38,
+      &quot;atk&quot;: 21,
+      &quot;dao&quot;: 12,
+      &quot;def&quot;: 15,
+      &quot;daoDef&quot;: 14,
+      &quot;agi&quot;: 31,
+      &quot;hit&quot;: 21
+    },
+    &quot;final&quot;: {
+      &quot;maxhp&quot;: 1905,
+      &quot;maxmp&quot;: 1040,
+      &quot;atk&quot;: 178,
+      &quot;dao&quot;: 159,
+      &quot;def&quot;: 121,
+      &quot;daoDef&quot;: 121,
+      &quot;agi&quot;: 137,
+      &quot;hit&quot;: 129
+    },
+    &quot;gear&quot;: {
+      &quot;武&quot;: &quot;［中階］玄水拳套&quot;,
+      &quot;頭&quot;: &quot;［初階］青羽道帽&quot;,
+      &quot;身&quot;: &quot;［初階］狐絨衣&quot;,
+      &quot;褲&quot;: &quot;［初階］靈鐵護腿&quot;,
+      &quot;鞋&quot;: &quot;［初階］硬骨戰靴&quot;,
+      &quot;項&quot;: &quot;［初階］蛇鱗墜&quot;,
+      &quot;戒&quot;: &quot;［初階］赤銅指環&quot;,
+      &quot;飾&quot;: &quot;［初階］妖羽耳飾&quot;
+    },
+    &quot;gearQualities&quot;: {
+      &quot;武&quot;: &quot;普通&quot;,
+      &quot;頭&quot;: &quot;普通&quot;,
+      &quot;身&quot;: &quot;普通&quot;,
+      &quot;褲&quot;: &quot;普通&quot;,
+      &quot;鞋&quot;: &quot;普通&quot;,
+      &quot;項&quot;: &quot;普通&quot;,
+      &quot;戒&quot;: &quot;普通&quot;,
+      &quot;飾&quot;: &quot;普通&quot;
+    }
+  }
+]</pre></details><details><summary>✓ L22 034A可由柳清妍任務入口接續；035A落星谷對話立繪隨角色切換</summary><pre>{
+  &quot;button&quot;: true,
+  &quot;section&quot;: &quot;034A-intro&quot;,
+  &quot;linArt&quot;: true,
+  &quot;luArt&quot;: false
+}</pre></details><details><summary>✓ L30 跨境禁止物品、藥水、戰前效果與逃跑；不扣玩家庫存</summary><pre>{
+  &quot;team&quot;: 1,
+  &quot;sameBattle&quot;: true,
+  &quot;noRun&quot;: true,
+  &quot;alerts&quot;: [
+    &quot;隨機挑戰禁止所有道具、藥水與丹藥。&quot;,
+    &quot;隨機挑戰禁用道具。&quot;,
+    &quot;問道挑戰不可逃跑。&quot;
+  ],
+  &quot;count&quot;: 0,
+  &quot;pre&quot;: [
+    &quot;［初階］凝力丹&quot;
+  ],
+  &quot;preApplied&quot;: false,
+  &quot;playerPills&quot;: [],
+  &quot;initialAtk&quot;: 15,
+  &quot;stat&quot;: 15
+}</pre></details><details><summary>✓ L21 A線032選擇至038完整連續實戰、保留A專屬旗標並不完成B線</summary><pre>{
+  &quot;quests&quot;: [
+    {
+      &quot;key&quot;: &quot;032&quot;,
+      &quot;claimed&quot;: true
+    },
+    {
+      &quot;key&quot;: &quot;033A&quot;,
+      &quot;claimed&quot;: true
+    },
+    {
+      &quot;key&quot;: &quot;034A&quot;,
+      &quot;claimed&quot;: true
+    },
+    {
+      &quot;key&quot;: &quot;035A&quot;,
+      &quot;claimed&quot;: true
+    },
+    {
+      &quot;key&quot;: &quot;036A&quot;,
+      &quot;claimed&quot;: true
+    },
+    {
+      &quot;key&quot;: &quot;037&quot;,
+      &quot;claimed&quot;: true
+    },
+    {
+      &quot;key&quot;: &quot;038&quot;,
+      &quot;claimed&quot;: true
+    }
+  ],
+  &quot;bClaimed&quot;: false,
+  &quot;waves&quot;: [
+    {
+      &quot;round&quot;: 3,
+      &quot;win&quot;: true
+    },
+    {
+      &quot;round&quot;: 3,
+      &quot;win&quot;: true
+    },
+    {
+      &quot;round&quot;: 1,
+      &quot;win&quot;: true
+    }
+  ],
+  &quot;reunion&quot;: [
+    &quot;林夏于&quot;,
+    &quot;沈玄川&quot;,
+    &quot;柳清妍&quot;
+  ],
+  &quot;token&quot;: 1,
+  &quot;heart&quot;: 1,
+  &quot;dig&quot;: true,
+  &quot;remembers&quot;: [
+    true,
+    true
+  ],
+  &quot;bChat&quot;: false,
+  &quot;boss&quot;: {
+    &quot;round&quot;: 15,
+    &quot;phase&quot;: 2,
+    &quot;win&quot;: true
+  },
+  &quot;place&quot;: &quot;雷鳴沼地下深窟&quot;,
+  &quot;towerClosed&quot;: false,
+  &quot;fixture&quot;: &quot;隔離流程測試使用提升八核角色；用於驗證流程，不作BOSS數值平衡結論。&quot;
+}</pre></details><details><summary>✓ L36 測試999實際入口可重設A/B，保留寵物與庫存且前置導航可走</summary><pre>{
+  &quot;a&quot;: {
+    &quot;branch&quot;: &quot;A&quot;,
+    &quot;place&quot;: &quot;青陽山&quot;,
+    &quot;confirm&quot;: true,
+    &quot;quest&quot;: true
+  },
+  &quot;b&quot;: {
+    &quot;branch&quot;: &quot;B&quot;,
+    &quot;place&quot;: &quot;東州傳送塔&quot;,
+    &quot;phase&quot;: &quot;investigate&quot;
+  },
+  &quot;pets&quot;: true,
+  &quot;gear&quot;: true,
+  &quot;cross&quot;: true
+}</pre></details><details><summary>✓ L36 A線交談中與問道對手存檔重載保持一致</summary><pre>{
+  &quot;a&quot;: {
+    &quot;section&quot;: &quot;035A-rescue&quot;,
+    &quot;index&quot;: 1,
+    &quot;hp&quot;: 1,
+    &quot;mp&quot;: 9
+  },
+  &quot;cross&quot;: {
+    &quot;equal&quot;: true
+  }
+}</pre></details><h2>離線與畫面</h2><p>單檔500865091位元組（約477.7 MiB），file://開啟且封鎖HTTP/HTTPS；0外網請求、0頁面執行錯誤，14張新圖皆為內嵌且成功解碼。四視窗1440×1000、1024×768、768×1024、390×844確認特殊／高危／高危特角尾叉可見、頁面無水平溢出。390寬沿既有全景縮放，並非新增手機版佈局。</p><p><a href="單檔離線驗收.json">離線結果</a>　<a href="四尺寸畫面驗收.json">四尺寸紀錄</a></p><img src="東州新地圖.png" alt="新東州地圖"><img src="圖鑑素材反查.png" alt="火尾毛來源反查"><h2>正式檔保護</h2><p>正式main仍為a420a7772dcbb75de52b87c6e2628fa87937495a，正式工作目錄乾淨；下列五檔SHA-256前後一致。只建立本地test/v0.7.3-20261017分支，尚未commit或push，未變更GitHub設定或發布。</p><pre>[
+  {
+    &quot;path&quot;: &quot;九州修仙錄_測試分支.html&quot;,
+    &quot;bytes&quot;: 452436272,
+    &quot;before&quot;: &quot;58ce74be8922d4d0bc5e702fde0ebc8823649f560f00d12c8d843a5954a3ca50&quot;,
+    &quot;after&quot;: &quot;58ce74be8922d4d0bc5e702fde0ebc8823649f560f00d12c8d843a5954a3ca50&quot;,
+    &quot;unchanged&quot;: true
+  },
+  {
+    &quot;path&quot;: &quot;九州修仙錄_正式母檔_0.7.2.html&quot;,
+    &quot;bytes&quot;: 452436272,
+    &quot;before&quot;: &quot;58ce74be8922d4d0bc5e702fde0ebc8823649f560f00d12c8d843a5954a3ca50&quot;,
+    &quot;after&quot;: &quot;58ce74be8922d4d0bc5e702fde0ebc8823649f560f00d12c8d843a5954a3ca50&quot;,
+    &quot;unchanged&quot;: true
+  },
+  {
+    &quot;path&quot;: &quot;最新定案母檔_0.7.2.json&quot;,
+    &quot;bytes&quot;: 1138076,
+    &quot;before&quot;: &quot;692a8e04a80f9719d3a633979ace2bb6d0bd26dc6fd0cc9dab1179940dd853f8&quot;,
+    &quot;after&quot;: &quot;692a8e04a80f9719d3a633979ace2bb6d0bd26dc6fd0cc9dab1179940dd853f8&quot;,
+    &quot;unchanged&quot;: true
+  },
+  {
+    &quot;path&quot;: &quot;github-release\\index.html&quot;,
+    &quot;bytes&quot;: 3246465,
+    &quot;before&quot;: &quot;42dfd58730135682c4a47500e25f6a841a31a5245da2557f82155880b67747f4&quot;,
+    &quot;after&quot;: &quot;42dfd58730135682c4a47500e25f6a841a31a5245da2557f82155880b67747f4&quot;,
+    &quot;unchanged&quot;: true
+  },
+  {
+    &quot;path&quot;: &quot;github-release\\定案規則_0.7.2.json&quot;,
+    &quot;bytes&quot;: 1138076,
+    &quot;before&quot;: &quot;692a8e04a80f9719d3a633979ace2bb6d0bd26dc6fd0cc9dab1179940dd853f8&quot;,
+    &quot;after&quot;: &quot;692a8e04a80f9719d3a633979ace2bb6d0bd26dc6fd0cc9dab1179940dd853f8&quot;,
+    &quot;unchanged&quot;: true
+  }
+]</pre><h2>交付檔驗證</h2><pre>{
+  &quot;version&quot;: &quot;0.7.3&quot;,
+  &quot;phase&quot;: &quot;獨立測試／尚未玩家驗收／未發布&quot;,
+  &quot;createdAt&quot;: &quot;2026-10-17T22:17:41+08:00&quot;,
+  &quot;branch&quot;: &quot;test/v0.7.3-20261017&quot;,
+  &quot;baseCommit&quot;: &quot;a420a7772dcbb75de52b87c6e2628fa87937495a&quot;,
+  &quot;baselineHtmlSha256&quot;: &quot;58ce74be8922d4d0bc5e702fde0ebc8823649f560f00d12c8d843a5954a3ca50&quot;,
+  &quot;game&quot;: {
+    &quot;name&quot;: &quot;index.html&quot;,
+    &quot;bytes&quot;: 500865091,
+    &quot;sha256&quot;: &quot;a76c17ab8f2a35cd097bda9643e14d6078ada2281f3f6c32ea4c6e98ff989820&quot;
+  },
+  &quot;formalFilesUnchanged&quot;: true,
+  &quot;formalWorktreeClean&quot;: true,
+  &quot;published&quot;: false,
+  &quot;committed&quot;: false,
+  &quot;publication&quot;: null,
+  &quot;coverageCounts&quot;: {
+    &quot;已實裝&quot;: 31,
+    &quot;部分實裝&quot;: 7
+  },
+  &quot;newChecks&quot;: 97,
+  &quot;newPassed&quot;: 97,
+  &quot;regression&quot;: [
+    {
+      &quot;name&quot;: &quot;舊主線&quot;,
+      &quot;file&quot;: &quot;r1011-reg-main-results.json&quot;,
+      &quot;checks&quot;: 31,
+      &quot;passed&quot;: 31
+    },
+    {
+      &quot;name&quot;: &quot;舊支線&quot;,
+      &quot;file&quot;: &quot;reg-sides-results.json&quot;,
+      &quot;checks&quot;: 21,
+      &quot;passed&quot;: 21
+    },
+    {
+      &quot;name&quot;: &quot;舊25委託&quot;,
+      &quot;file&quot;: &quot;reg-commissions-results.json&quot;,
+      &quot;checks&quot;: 25,
+      &quot;passed&quot;: 25
+    },
+    {
+      &quot;name&quot;: &quot;既有系統&quot;,
+      &quot;file&quot;: &quot;reg-systems-results.json&quot;,
+      &quot;checks&quot;: 18,
+      &quot;passed&quot;: 18
+    }
+  ],
+  &quot;bossRuns&quot;: 16,
+  &quot;bossRoundRange&quot;: [
+    15,
+    18
+  ],
+  &quot;liveBossRound&quot;: 16,
+  &quot;offlinePass&quot;: true
+}</pre></main><script></script></html>

@@ -1,0 +1,1287 @@
+{
+  "version": "0.7.3",
+  "baseline": "0.7.2",
+  "rows": [
+    {
+      "id": "L38",
+      "name": "載入、版本與存檔隔離",
+      "pass": true,
+      "detail": {
+        "version": "0.7.3",
+        "title": "九州修仙錄 0.7.3 獨立測試",
+        "prefix": "jz073-independent-20261017:",
+        "formalMusic": false,
+        "storage": [],
+        "count": 38
+      },
+      "ms": 3
+    },
+    {
+      "id": "L26",
+      "name": "原25條委託逐欄不變；新增編號完整50條",
+      "pass": true,
+      "detail": {
+        "same": true,
+        "ids": [
+          "CQ-DZ-001",
+          "CQ-DZ-002",
+          "CQ-DZ-003",
+          "CQ-DZ-004",
+          "CQ-DZ-005",
+          "CQ-DZ-006",
+          "CQ-DZ-007",
+          "CQ-DZ-008",
+          "CQ-DZ-009",
+          "CQ-DZ-010",
+          "CQ-DZ-011",
+          "CQ-DZ-012",
+          "CQ-DZ-013",
+          "CQ-DZ-014",
+          "CQ-DZ-015",
+          "CQ-DZ-016",
+          "CQ-DZ-017",
+          "CQ-DZ-018",
+          "CQ-DZ-019",
+          "CQ-DZ-020",
+          "CQ-DZ-021",
+          "CQ-DZ-022",
+          "CQ-DZ-023",
+          "CQ-DZ-024",
+          "CQ-DZ-025",
+          "CQ-DZ-026",
+          "CQ-DZ-027",
+          "CQ-DZ-028",
+          "CQ-DZ-029",
+          "CQ-DZ-030",
+          "CQ-DZ-031",
+          "CQ-DZ-032",
+          "CQ-DZ-033",
+          "CQ-DZ-034",
+          "CQ-DZ-035",
+          "CQ-DZ-036",
+          "CQ-DZ-037",
+          "CQ-DZ-038",
+          "CQ-DZ-039",
+          "CQ-DZ-040",
+          "CQ-DZ-041",
+          "CQ-DZ-042",
+          "CQ-DZ-043",
+          "CQ-DZ-044",
+          "CQ-DZ-045",
+          "CQ-DZ-046",
+          "CQ-DZ-047",
+          "CQ-DZ-048",
+          "CQ-DZ-049",
+          "CQ-DZ-050"
+        ],
+        "newRewards": [
+          {
+            "id": "CQ-DZ-046",
+            "reward": {
+              "rep": 7,
+              "cult": 55,
+              "coins": 500,
+              "items": [
+                [
+                  "［特殊］自選二階妖物素材箱",
+                  1,
+                  "special"
+                ]
+              ]
+            }
+          },
+          {
+            "id": "CQ-DZ-047",
+            "reward": {
+              "rep": 7,
+              "coins": 2000
+            }
+          },
+          {
+            "id": "CQ-DZ-048",
+            "reward": {
+              "rep": 12,
+              "cult": 60,
+              "coins": 2000,
+              "items": [
+                [
+                  "［特殊］隨機功法書",
+                  1,
+                  "special"
+                ],
+                [
+                  "［初階］靈根丹",
+                  1
+                ]
+              ]
+            }
+          },
+          {
+            "id": "CQ-DZ-049",
+            "reward": {
+              "rep": 10,
+              "coins": 3000,
+              "items": [
+                [
+                  "［特殊］綜合二階素材箱",
+                  5,
+                  "special"
+                ],
+                [
+                  "功法殘卷",
+                  2,
+                  "special"
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "ms": 4
+    },
+    {
+      "id": "L28",
+      "name": "80級靈幣表、全部種級、人形與玩家境界無關",
+      "pass": true,
+      "detail": {
+        "errors": [],
+        "checks": 1600,
+        "example": [
+          2,
+          31,
+          130
+        ]
+      },
+      "ms": 6
+    },
+    {
+      "id": "L27",
+      "name": "修為同級、跨境、差10與11，角色獨立",
+      "pass": true,
+      "detail": {
+        "values": [
+          10,
+          9,
+          5,
+          1,
+          0
+        ],
+        "higher": 2,
+        "levels": [
+          6,
+          7,
+          8,
+          8,
+          9,
+          9,
+          10,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          21,
+          23,
+          25,
+          40,
+          45,
+          50,
+          55,
+          60,
+          67,
+          74,
+          80,
+          87,
+          95,
+          105,
+          120,
+          135,
+          150,
+          165,
+          185,
+          200,
+          225,
+          250,
+          275,
+          285,
+          330,
+          370,
+          430,
+          485,
+          555,
+          630,
+          715,
+          800,
+          870,
+          840,
+          950,
+          1080,
+          1240,
+          1420,
+          1630,
+          1870,
+          2130,
+          2420,
+          2650,
+          2750,
+          3125,
+          3500,
+          4000,
+          4500,
+          5125,
+          5750,
+          6500,
+          7375,
+          8100,
+          7800,
+          8900,
+          10000,
+          11300,
+          12900,
+          14700,
+          16700,
+          18900,
+          21300,
+          23500
+        ]
+      },
+      "ms": 3
+    },
+    {
+      "id": "L15",
+      "name": "新妖物合法境界、種級、機率及正式公式候選戰力",
+      "pass": true,
+      "detail": {
+        "counts": {
+          "靈珠蝶": 3347,
+          "硬黑蠍": 3314,
+          "燐火狼": 3339
+        },
+        "bad": 0,
+        "values": [
+          {
+            "name": "燐火狼",
+            "realm": "築基五層",
+            "stats": [
+              585,
+              159,
+              47,
+              38,
+              33,
+              31,
+              39,
+              38
+            ],
+            "power": 475
+          },
+          {
+            "name": "燐火狼",
+            "realm": "築基六層",
+            "stats": [
+              644,
+              174,
+              50,
+              41,
+              35,
+              33,
+              41,
+              42
+            ],
+            "power": 510
+          },
+          {
+            "name": "燐火狼",
+            "realm": "築基七層",
+            "stats": [
+              702,
+              189,
+              55,
+              44,
+              38,
+              36,
+              44,
+              45
+            ],
+            "power": 554
+          },
+          {
+            "name": "燐火狼",
+            "realm": "築基八層",
+            "stats": [
+              760,
+              204,
+              59,
+              48,
+              41,
+              39,
+              47,
+              48
+            ],
+            "power": 597
+          },
+          {
+            "name": "燐火狼",
+            "realm": "築基圓滿",
+            "stats": [
+              878,
+              234,
+              67,
+              54,
+              47,
+              45,
+              54,
+              54
+            ],
+            "power": 681
+          },
+          {
+            "name": "硬黑蠍",
+            "realm": "築基五層",
+            "stats": [
+              485,
+              159,
+              38,
+              36,
+              44,
+              44,
+              28,
+              33
+            ],
+            "power": 467
+          },
+          {
+            "name": "硬黑蠍",
+            "realm": "築基七層",
+            "stats": [
+              582,
+              189,
+              44,
+              42,
+              51,
+              51,
+              32,
+              39
+            ],
+            "power": 544
+          },
+          {
+            "name": "硬黑蠍",
+            "realm": "築基九層",
+            "stats": [
+              680,
+              219,
+              50,
+              48,
+              59,
+              59,
+              37,
+              44
+            ],
+            "power": 626
+          },
+          {
+            "name": "硬黑蠍",
+            "realm": "築基圓滿",
+            "stats": [
+              728,
+              234,
+              54,
+              51,
+              63,
+              63,
+              39,
+              47
+            ],
+            "power": 669
+          },
+          {
+            "name": "靈珠蝶",
+            "realm": "築基五層",
+            "stats": [
+              476,
+              276,
+              41,
+              75,
+              34,
+              41,
+              51,
+              51
+            ],
+            "power": 630
+          },
+          {
+            "name": "靈珠蝶",
+            "realm": "築基圓滿",
+            "stats": [
+              715,
+              406,
+              59,
+              106,
+              49,
+              59,
+              71,
+              71
+            ],
+            "power": 898
+          },
+          {
+            "name": "財寶怨靈",
+            "realm": "築基圓滿",
+            "stats": [
+              2600,
+              390,
+              75,
+              79,
+              69,
+              69,
+              56,
+              69
+            ],
+            "power": 1084
+          },
+          {
+            "name": "長右",
+            "realm": "築基圓滿",
+            "stats": [
+              4500,
+              1200,
+              115,
+              180,
+              80,
+              90,
+              48,
+              70
+            ],
+            "power": 1957
+          }
+        ]
+      },
+      "ms": 52
+    },
+    {
+      "id": "L08",
+      "name": "實際chosen入口10000次前60%後40%，指定／嘲諷例外",
+      "pass": true,
+      "detail": {
+        "front": 6051,
+        "back": 3949,
+        "selected": true,
+        "taunted": true
+      },
+      "ms": 11
+    },
+    {
+      "id": "L16",
+      "name": "長右50%同體鎖血、靈力全滿、指定兩動及潮濕優先",
+      "pass": true,
+      "detail": {
+        "transition": {
+          "hp": 2250,
+          "mp": 1200,
+          "phase": 2,
+          "count": 1
+        },
+        "first": "轟雷",
+        "second": "洪水",
+        "third": "潮閃引雷",
+        "cast1": true,
+        "cast2": true,
+        "wet": [
+          true,
+          true
+        ]
+      },
+      "ms": 5
+    },
+    {
+      "id": "L16",
+      "name": "災獸之體在控制判定前攔截",
+      "pass": true,
+      "detail": [
+        {
+          "name": "暈眩",
+          "added": false,
+          "hard": 0,
+          "has": false
+        },
+        {
+          "name": "麻痺",
+          "added": false,
+          "hard": 0,
+          "has": false
+        },
+        {
+          "name": "冰凍",
+          "added": false,
+          "hard": 0,
+          "has": false
+        },
+        {
+          "name": "睡眠",
+          "added": false,
+          "hard": 0,
+          "has": false
+        },
+        {
+          "name": "特殊睡眠",
+          "added": false,
+          "hard": 0,
+          "has": false
+        },
+        {
+          "name": "束縛",
+          "added": false,
+          "hard": 0,
+          "has": false
+        },
+        {
+          "name": "混亂",
+          "added": false,
+          "hard": 0,
+          "has": false
+        },
+        {
+          "name": "恐懼",
+          "added": false,
+          "hard": 0,
+          "has": false
+        },
+        {
+          "name": "魅惑",
+          "added": false,
+          "hard": 0,
+          "has": false
+        }
+      ],
+      "ms": 2
+    },
+    {
+      "id": "L29",
+      "name": "財寶怨靈實際施放扣幣；0MP及最低0",
+      "pass": true,
+      "detail": {
+        "casts": 35,
+        "purse": 0,
+        "coins": 0,
+        "cd": 0,
+        "mp": 0
+      },
+      "ms": 6
+    },
+    {
+      "id": "L18",
+      "name": "八種狀態獨立於增減益，雷傷消耗一次及同招順序",
+      "pass": true,
+      "detail": {
+        "before": {
+          "states": 8,
+          "buff": 0,
+          "debuff": 0
+        },
+        "wet": false,
+        "paralysis": 2,
+        "states": [
+          "灼熱",
+          "纏身",
+          "泥身",
+          "風蝕",
+          "光明",
+          "黑暗"
+        ],
+        "after": 9768
+      },
+      "ms": 2
+    },
+    {
+      "id": "L10",
+      "name": "護盾直接破盾反擊一次；DoT不反擊",
+      "pass": true,
+      "detail": {
+        "direct": {
+          "counter": 60,
+          "total": 60,
+          "stun": true,
+          "shield": false
+        },
+        "dot": {
+          "counter": 0,
+          "total": 0,
+          "stun": false,
+          "shield": false
+        }
+      },
+      "ms": 3
+    },
+    {
+      "id": "L18",
+      "name": "破夢先判睡眠、喚醒後仍施加混亂；非睡眠弱傷",
+      "pass": true,
+      "detail": {
+        "sleep": {
+          "lost": 195,
+          "sleep": false,
+          "confused": true
+        },
+        "awake": {
+          "lost": 45,
+          "sleep": false,
+          "confused": false
+        }
+      },
+      "ms": 2
+    },
+    {
+      "id": "L27",
+      "name": "一般多敵勝利真實發放合計修為與靈幣",
+      "pass": true,
+      "detail": {
+        "coins": 5,
+        "exp": 13
+      },
+      "ms": 95
+    },
+    {
+      "id": "L25",
+      "name": "CQ046特殊種區分與三獸數量；領獎不重複",
+      "pass": true,
+      "detail": {
+        "initial": [
+          0,
+          0,
+          0
+        ],
+        "counts": [
+          3,
+          3,
+          2
+        ],
+        "done": true,
+        "claimed": true,
+        "once": {
+          "coins": 500,
+          "box": 1
+        },
+        "twice": false
+      },
+      "ms": 77
+    },
+    {
+      "id": "L25",
+      "name": "CQ047僅實得怨靈靈幣累計，不讀身上總額",
+      "pass": true,
+      "detail": {
+        "before": {
+          "done": false,
+          "kills": 3,
+          "coins": 5700
+        },
+        "done": true,
+        "claimed": true,
+        "coins": 6000,
+        "reward": 2000
+      },
+      "ms": 37
+    },
+    {
+      "id": "L25",
+      "name": "CQ048圓滿條件、CQ049戰敗重置",
+      "pass": true,
+      "detail": {
+        "low": false,
+        "right": true,
+        "one": 1,
+        "loss": 0,
+        "streak": 2,
+        "done": true
+      },
+      "ms": 10
+    },
+    {
+      "id": "L24",
+      "name": "CQ033三選二靈幣是選項；選足才發放",
+      "pass": true,
+      "detail": {
+        "opened": 0,
+        "invalid": false,
+        "ok": true,
+        "coins": 1500,
+        "scroll": 2,
+        "ghost": 0
+      },
+      "ms": 12
+    },
+    {
+      "id": "L25",
+      "name": "新委託多項提交選擇、取消、不足與正確扣除",
+      "pass": true,
+      "detail": {
+        "before": [
+          5,
+          5
+        ],
+        "invalid": false,
+        "afterBad": [
+          5,
+          5
+        ],
+        "ok": true,
+        "after": [
+          2,
+          2
+        ],
+        "done": true,
+        "claimed": false
+      },
+      "ms": 6
+    },
+    {
+      "id": "L24",
+      "name": "製作寵物裝備需接取後製作證明",
+      "pass": true,
+      "detail": {
+        "name": "［初階］狼皮護頸",
+        "before": [],
+        "after": [
+          "［初階］狼皮護頸"
+        ],
+        "proof": {
+          "［初階］狼皮護頸": 1
+        }
+      },
+      "ms": 42
+    },
+    {
+      "id": "L25",
+      "name": "四紙不重複、8小時、已接取與完成等待",
+      "pass": true,
+      "detail": {
+        "ids": [
+          "CQ-DZ-012",
+          "CQ-DZ-006",
+          "CQ-DZ-044",
+          "CQ-DZ-015"
+        ],
+        "intervals": [
+          480,
+          480,
+          480,
+          480
+        ],
+        "same": true,
+        "remaining": 480,
+        "refill": 480,
+        "status": "empty"
+      },
+      "ms": 4
+    },
+    {
+      "id": "L13",
+      "name": "黑潮解鎖、境界、主線關塔及導航不繞鎖",
+      "pass": true,
+      "detail": {
+        "a": "需完成［支線］危險區",
+        "b": "最低境界：築基五層",
+        "c": "傳送通道異常，暫時無法前往。",
+        "d": "傳送通道異常，暫時無法前往。",
+        "path": null
+      },
+      "ms": 2
+    },
+    {
+      "id": "L14",
+      "name": "地下深窟3日野外化與每日回復1最多2",
+      "pass": true,
+      "detail": {
+        "before": false,
+        "wild": true,
+        "one": 1,
+        "max": 2
+      },
+      "ms": 1
+    },
+    {
+      "id": "L13",
+      "name": "A線永久挖掘3次與B線隔離",
+      "pass": true,
+      "detail": {
+        "b": false,
+        "one": true,
+        "early": false,
+        "two": true,
+        "early2": false,
+        "three": true,
+        "four": false,
+        "count": 3,
+        "bone": 1
+      },
+      "ms": 108
+    },
+    {
+      "id": "L22",
+      "name": "A/B分支選項鎖定、同行位置與B線無陸家情報",
+      "pass": true,
+      "detail": [
+        {
+          "branch": "A",
+          "done": true,
+          "party": [
+            "沈玄川",
+            "柳清妍"
+          ],
+          "known": [],
+          "second": false,
+          "places": {
+            "沈玄川": "同行中",
+            "柳清妍": "同行中",
+            "邱山河": "朝御城",
+            "林夏于": "朝御城"
+          }
+        },
+        {
+          "branch": "B",
+          "done": true,
+          "party": [
+            "邱山河",
+            "林夏于"
+          ],
+          "known": [],
+          "second": false,
+          "places": {
+            "沈玄川": "青陽山",
+            "柳清妍": "青陽山",
+            "邱山河": "同行中",
+            "林夏于": "同行中"
+          }
+        }
+      ],
+      "ms": 95
+    },
+    {
+      "id": "L21",
+      "name": "主線029等待門檻、逐字流程與多敵回報",
+      "pass": true,
+      "detail": {
+        "early": false,
+        "ready": true,
+        "battleDone": true,
+        "claimed": true,
+        "coins": 10838,
+        "reportLines": 15
+      },
+      "ms": 120
+    },
+    {
+      "id": "L17",
+      "name": "長右戰敗實際復原、醫館、免費、進度可重試",
+      "pass": true,
+      "detail": {
+        "place": "朝御城",
+        "coins": 0,
+        "hp": 128,
+        "max": 128,
+        "claimed": false,
+        "partners": [
+          {
+            "name": "邱山河",
+            "hp": 2706,
+            "max": 2706,
+            "dead": false
+          },
+          {
+            "name": "林夏于",
+            "hp": 1413,
+            "max": 1413,
+            "dead": false
+          },
+          {
+            "name": "沈玄川",
+            "hp": 265,
+            "max": 265,
+            "dead": false
+          }
+        ]
+      },
+      "ms": 35
+    },
+    {
+      "id": "L35",
+      "name": "長右勝後公告、交談、心臟及完整獎勵僅一次",
+      "pass": true,
+      "detail": {
+        "still": true,
+        "coin": 5000,
+        "heart": 1,
+        "soul": 1,
+        "pack": 1,
+        "twice": false,
+        "claimed": true,
+        "dir": "NE",
+        "place": "雷鳴沼地下深窟"
+      },
+      "ms": 39
+    },
+    {
+      "id": "L09",
+      "name": "實際個人合成100%成功、不扣能、不加經驗、材料無品質",
+      "pass": true,
+      "detail": {
+        "ok": true,
+        "before": {
+          "level": 1,
+          "core": 0,
+          "aura": 0,
+          "lastAt": 480,
+          "aux": null
+        },
+        "after": {
+          "level": 1,
+          "core": 0,
+          "aura": 0,
+          "lastAt": 480,
+          "aux": null
+        },
+        "gained": 1
+      },
+      "ms": 65
+    },
+    {
+      "id": "L11",
+      "name": "箱分類、階級、多箱確認與取消防重複",
+      "pass": true,
+      "detail": {
+        "list": [
+          "［一階］靈草",
+          "［一階］梨草",
+          "［一階］精草",
+          "［一階］靈露",
+          "［一階］碧萃枝",
+          "［一階］藥草",
+          "［一階］靈石",
+          "［一階］靈原鐵",
+          "［一階］靈木",
+          "［一階］靈果",
+          "［一階］脆脆果",
+          "［一階］破布",
+          "［一階］靈藥粉",
+          "［一階］精靈液",
+          "［一階］碧木芯",
+          "［一階］導靈粉",
+          "［一階］靈鐵錠",
+          "［一階］獸骨粉",
+          "［一階］妖血精華",
+          "［一階］魂粉",
+          "［一階］妖丹粉末",
+          "［一階］皮毛",
+          "［一階］蛇鱗",
+          "［一階］硬蟲甲",
+          "［一階］妖鳥羽",
+          "［一階］獸骨",
+          "［一階］獸牙",
+          "［一階］妖獸精血",
+          "［一階］殘缺妖丹",
+          "［一階］殘魂",
+          "［一階］毒囊",
+          "［一階］蛛絲",
+          "［一階］獸角",
+          "［一階］靈粉",
+          "［一階］龜殼"
+        ],
+        "tabs": [
+          "全部",
+          "植物",
+          "礦物",
+          "木材",
+          "靈果",
+          "妖物"
+        ],
+        "notYet": true,
+        "before": 3,
+        "once": {
+          "box": 1,
+          "items": 2
+        },
+        "twice": false
+      },
+      "ms": 30
+    },
+    {
+      "id": "L03",
+      "name": "品質裝備比較、同槽數值與保存字串",
+      "pass": true,
+      "detail": {
+        "body": "目前穿戴：［無階］新手劍欲穿戴：優良［初階］靈楊長弓數值目前基礎已記錄品質加成欲穿戴差額氣血00000靈力00000攻3808+5道0505+5防00000道防00000身0202+2命2707+5暴擊率00000暴擊傷害00000效果命中00000效果抵抗00000火屬性傷害00000水屬性傷害00000木屬性傷害00000土屬性傷害00000雷屬性傷害00000風屬性傷害00000光屬性傷害00000暗屬性傷害00000目前效果：無欲穿戴效果：無依物品現有資料顯示，不另補造品質倍率。返回背包",
+        "rows": 20,
+        "registered": true
+      },
+      "ms": 3
+    },
+    {
+      "id": "L04",
+      "name": "平民無愛心／贈禮、功能NPC保留",
+      "pass": true,
+      "detail": {
+        "civilHearts": 0,
+        "civilGift": false,
+        "qiuGift": true
+      },
+      "ms": 11
+    },
+    {
+      "id": "L30",
+      "name": "跨境範圍與根值邊界，正式表補齊後入口開放",
+      "pass": true,
+      "detail": {
+        "realmMin": 11,
+        "realmMax": 20,
+        "goldMin": 21,
+        "goldMax": 30,
+        "stopped": true,
+        "bad": 0,
+        "disabled": false,
+        "title": "對手為下一大境界一層～圓滿；最高金丹圓滿。",
+        "acceptance": "原表已補入，另有完整對手與跨境實戰驗收"
+      },
+      "ms": 14
+    },
+    {
+      "id": "L31",
+      "name": "火尾毛來源反查燐火狼／黑潮，圖示共用",
+      "pass": true,
+      "detail": {
+        "body": "妖物素材NPC地區裝備丹藥禮物任務物品功法篩選：［二階］火尾毛 查看全部［二階］火尾毛分類：妖物｜材料不分品質火系妖物尾部留下的特殊毛束，可用於任務需求、鍛造、寵物鍛造、鑄飾。取得來源黑潮禁岸・燐火狼 35%查看妖物［委託］尾巴著火啦！（固定獎勵）用途裝備・［初階］赤尾披衣、裝備・［初階］赤尾靈袍、飾品・［初階］赤尾玉佩、寵物裝備・［初階］赤尾靈飾、［委託］火尾毛收購！、［委託］燐火與靈蝶",
+        "shared": true,
+        "sources": [
+          {
+            "kind": "妖物",
+            "name": "燐火狼",
+            "text": "黑潮禁岸・燐火狼 35%"
+          },
+          {
+            "kind": "委託",
+            "name": "CQ-DZ-035",
+            "text": "［委託］尾巴著火啦！（固定獎勵）"
+          }
+        ]
+      },
+      "ms": 107
+    },
+    {
+      "id": "L33",
+      "name": "所有圖鑑分類實際開啟，缺來源明示、圖片可載入",
+      "pass": true,
+      "detail": [
+        {
+          "tab": "妖物",
+          "cards": 29,
+          "images": 130,
+          "secret": false,
+          "broken": 0
+        },
+        {
+          "tab": "素材",
+          "cards": 68,
+          "images": 68,
+          "secret": false,
+          "broken": 0
+        },
+        {
+          "tab": "NPC",
+          "cards": 26,
+          "images": 26,
+          "secret": false,
+          "broken": 0
+        },
+        {
+          "tab": "地區",
+          "cards": 16,
+          "images": 16,
+          "secret": false,
+          "broken": 0
+        },
+        {
+          "tab": "裝備",
+          "cards": 254,
+          "images": 254,
+          "secret": false,
+          "broken": 0
+        },
+        {
+          "tab": "丹藥",
+          "cards": 28,
+          "images": 28,
+          "secret": false,
+          "broken": 0
+        },
+        {
+          "tab": "禮物",
+          "cards": 67,
+          "images": 67,
+          "secret": false,
+          "broken": 0
+        },
+        {
+          "tab": "任務物品",
+          "cards": 0,
+          "images": 0,
+          "secret": false,
+          "broken": 0
+        },
+        {
+          "tab": "功法",
+          "cards": 369,
+          "images": 0,
+          "secret": false,
+          "broken": 0
+        }
+      ],
+      "ms": 1858
+    },
+    {
+      "id": "L19",
+      "name": "新寵五星與10心技能分離、長右專屬不可學",
+      "pass": true,
+      "detail": {
+        "before": false,
+        "choice": true,
+        "after": true,
+        "heartBefore": false,
+        "heartAccepted": true,
+        "task": {
+          "id": "P07307",
+          "acceptedAt": 480,
+          "counts": [
+            0,
+            0
+          ],
+          "claimed": false
+        },
+        "exclusive": false,
+        "core": "dualdef"
+      },
+      "ms": 11
+    },
+    {
+      "id": "L34",
+      "name": "25種神秘蛋選單；新種資料不足不扣蛋",
+      "pass": true,
+      "detail": {
+        "species": 25,
+        "no": false,
+        "before": 1,
+        "after": 1,
+        "body": "工作檔提供野外候選境界八核，但未提供練氣一層孵化起始及完整成長偏科倍率。保留蛋，不消耗、不建立無法顯示的寵物。關閉"
+      },
+      "ms": 3
+    },
+    {
+      "id": "L16",
+      "name": "長右實際戰鬥畫面、整體立繪與連續血條",
+      "pass": true,
+      "detail": {
+        "saved": [
+          {
+            "name": "蘇璃",
+            "hp": 322,
+            "max": 322
+          },
+          {
+            "name": "邱山河",
+            "hp": 2706,
+            "max": 2706,
+            "story": true
+          },
+          {
+            "name": "林夏于",
+            "hp": 1413,
+            "max": 1413,
+            "story": true
+          },
+          {
+            "name": "沈玄川",
+            "hp": 265,
+            "max": 265,
+            "story": true
+          }
+        ],
+        "formation": {
+          "front1": "player",
+          "front2": "npc:邱山河",
+          "back1": "npc:林夏于",
+          "back2": "npc:沈玄川"
+        },
+        "team": [
+          {
+            "name": "測試999",
+            "hp": 128,
+            "atk": 15,
+            "dao": 15
+          },
+          {
+            "name": "邱山河",
+            "realm": "金丹五層",
+            "hp": 2706,
+            "atk": 236,
+            "dao": 135,
+            "skills": [
+              "［中階］貫陣龍槍",
+              "［中階］鎮岳金身",
+              "［初階］蓄槍訣",
+              "［初階］穿雲直刺",
+              "［初階］掃陣槍",
+              "［初階］長槍守界",
+              "［初階］挑燈截脈"
+            ]
+          },
+          {
+            "name": "林夏于",
+            "realm": "築基圓滿",
+            "hp": 1413,
+            "atk": 139,
+            "dao": 81,
+            "skills": [
+              "［初階］玄刀斬",
+              "［初階］斷潮刀式",
+              "［初階］赤痕追斬",
+              "［初階］逆鋒截擊",
+              "［初階］藏刃訣",
+              "［初階］刀背鎮魂"
+            ]
+          },
+          {
+            "name": "沈玄川",
+            "realm": "練氣五層",
+            "hp": 265,
+            "atk": 36,
+            "dao": 35,
+            "skills": [
+              "［初階］劍氣斬",
+              "［初階］削甲劍訣",
+              "［初階］回劍護身"
+            ]
+          }
+        ],
+        "bosses": 1,
+        "bars": 1,
+        "images": 1,
+        "box": {
+          "x": 315,
+          "y": 108.5,
+          "width": 792,
+          "height": 455.4000244140625,
+          "top": 108.5,
+          "right": 1107,
+          "bottom": 563.9000244140625,
+          "left": 315
+        },
+        "body": "\n    詳細戰鬥資訊測試999其他資訊氣血 110/128靈力 39/47攻 15道 15防 9道防 9身 9命 15境界 築基圓滿戰力 132主靈根：水Buff無Debuff無邱山河其他資訊氣血 2706/2706靈力 1188/1188攻 236道 135防 178道防 146身 130命 141境界 金丹五層戰力 2164主靈根：土Buff無Debuff無林夏于其他資訊氣血 1413/1413靈力 684/684攻 139道 81防 84道防 81身 78命 84境界 築基圓滿戰力 11"
+      },
+      "ms": 638
+    }
+  ],
+  "errors": []
+}

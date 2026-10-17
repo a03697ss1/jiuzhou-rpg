@@ -1,0 +1,121 @@
+{
+  "screens": [
+    {
+      "width": 1440,
+      "height": 1000,
+      "frames": [
+        {
+          "label": "特殊種",
+          "width": 185.39996337890625,
+          "height": 68.39999389648438,
+          "paths": 1,
+          "visible": true
+        },
+        {
+          "label": "高危種",
+          "width": 185.39999389648438,
+          "height": 68.4000244140625,
+          "paths": 2,
+          "visible": true
+        },
+        {
+          "label": "高危種（特）",
+          "width": 185.39996337890625,
+          "height": 68.4000244140625,
+          "paths": 3,
+          "visible": true
+        }
+      ],
+      "scroll": 1440,
+      "view": 1440
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "frames": [
+        {
+          "label": "特殊種",
+          "width": 131.83999633789062,
+          "height": 48.63999938964844,
+          "paths": 1,
+          "visible": true
+        },
+        {
+          "label": "高危種",
+          "width": 131.83999633789062,
+          "height": 48.6400146484375,
+          "paths": 2,
+          "visible": true
+        },
+        {
+          "label": "高危種（特）",
+          "width": 131.83999633789062,
+          "height": 48.6400146484375,
+          "paths": 3,
+          "visible": true
+        }
+      ],
+      "scroll": 1024,
+      "view": 1024
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "frames": [
+        {
+          "label": "特殊種",
+          "width": 98.8800048828125,
+          "height": 36.47998046875,
+          "paths": 1,
+          "visible": true
+        },
+        {
+          "label": "高危種",
+          "width": 98.87998962402344,
+          "height": 36.480010986328125,
+          "paths": 2,
+          "visible": true
+        },
+        {
+          "label": "高危種（特）",
+          "width": 98.8800048828125,
+          "height": 36.480010986328125,
+          "paths": 3,
+          "visible": true
+        }
+      ],
+      "scroll": 768,
+      "view": 768
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "frames": [
+        {
+          "label": "特殊種",
+          "width": 50.21250915527344,
+          "height": 18.524993896484375,
+          "paths": 1,
+          "visible": true
+        },
+        {
+          "label": "高危種",
+          "width": 50.212501525878906,
+          "height": 18.524993896484375,
+          "paths": 2,
+          "visible": true
+        },
+        {
+          "label": "高危種（特）",
+          "width": 50.21250915527344,
+          "height": 18.524993896484375,
+          "paths": 3,
+          "visible": true
+        }
+      ],
+      "scroll": 390,
+      "view": 390
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,94 @@
+{
+  "mode": "單檔file://離線實測；攔截全部HTTP/HTTPS",
+  "first": {
+    "title": "九州修仙錄 0.7.3 獨立測試",
+    "version": "0.7.3",
+    "prefix": "jz073-independent-20261017:",
+    "body": "九州修仙錄\nV0.7.2\n\n上仙之戰已成遠古傳說。九州在歲月中重建秩序，而你的修仙之路，將從東州・朝御城開始。\n\n姓名\n身份\n選擇角色外觀\n已選擇\n少男\n成男\n少女\n成女\n遊戲介面使用清晰胸像立繪；完整全身圖保留給後續角色圖鑑。\n踏入九州\n💾 存檔管理\n正式版 0.7.2\n\\n"
+  },
+  "boss": {
+    "whole": true,
+    "bar": 1,
+    "party": 4,
+    "src": true
+  },
+  "art": [
+    {
+      "name": "長右",
+      "ok": true,
+      "data": true
+    },
+    {
+      "name": "財寶怨靈",
+      "ok": true,
+      "data": true
+    },
+    {
+      "name": "燐火狼",
+      "ok": true,
+      "data": true
+    },
+    {
+      "name": "硬黑蠍",
+      "ok": true,
+      "data": true
+    },
+    {
+      "name": "靈珠蝶",
+      "ok": true,
+      "data": true
+    },
+    {
+      "name": "陸刑舟",
+      "ok": true,
+      "data": true
+    },
+    {
+      "name": "陸景和",
+      "ok": true,
+      "data": true
+    },
+    {
+      "name": "黑衣人01",
+      "ok": true,
+      "data": true
+    },
+    {
+      "name": "黑衣人02",
+      "ok": true,
+      "data": true
+    },
+    {
+      "name": "黑衣人03",
+      "ok": true,
+      "data": true
+    },
+    {
+      "name": "黑潮禁岸",
+      "ok": true,
+      "data": true
+    },
+    {
+      "name": "深窟",
+      "ok": true,
+      "data": true
+    },
+    {
+      "name": "黑潮戰鬥",
+      "ok": true,
+      "data": true
+    },
+    {
+      "name": "深窟戰鬥",
+      "ok": true,
+      "data": true
+    }
+  ],
+  "map": {
+    "coast": true,
+    "cave": true
+  },
+  "network": [],
+  "errors": [],
+  "pass": true
+}

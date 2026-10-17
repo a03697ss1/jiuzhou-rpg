@@ -1,0 +1,57 @@
+{
+  "version": "0.7.3",
+  "phase": "獨立測試／尚未玩家驗收／未發布",
+  "createdAt": "2026-10-17T22:17:41+08:00",
+  "branch": "test/v0.7.3-20261017",
+  "baseCommit": "a420a7772dcbb75de52b87c6e2628fa87937495a",
+  "baselineHtmlSha256": "58ce74be8922d4d0bc5e702fde0ebc8823649f560f00d12c8d843a5954a3ca50",
+  "game": {
+    "name": "九州修仙錄_V0.7.3_獨立測試版.html",
+    "bytes": 500865091,
+    "sha256": "a76c17ab8f2a35cd097bda9643e14d6078ada2281f3f6c32ea4c6e98ff989820"
+  },
+  "formalFilesUnchanged": true,
+  "formalWorktreeClean": true,
+  "published": false,
+  "committed": false,
+  "publication": null,
+  "coverageCounts": {
+    "已實裝": 31,
+    "部分實裝": 7
+  },
+  "newChecks": 97,
+  "newPassed": 97,
+  "regression": [
+    {
+      "name": "舊主線",
+      "file": "r1011-reg-main-results.json",
+      "checks": 31,
+      "passed": 31
+    },
+    {
+      "name": "舊支線",
+      "file": "reg-sides-results.json",
+      "checks": 21,
+      "passed": 21
+    },
+    {
+      "name": "舊25委託",
+      "file": "reg-commissions-results.json",
+      "checks": 25,
+      "passed": 25
+    },
+    {
+      "name": "既有系統",
+      "file": "reg-systems-results.json",
+      "checks": 18,
+      "passed": 18
+    }
+  ],
+  "bossRuns": 16,
+  "bossRoundRange": [
+    15,
+    18
+  ],
+  "liveBossRound": 16,
+  "offlinePass": true
+}

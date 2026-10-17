@@ -1,0 +1,38 @@
+{
+  "pages": [
+    {
+      "name": "閱讀我_先看這裡.html",
+      "title": "《九州修仙錄》0.7.3 獨立測試交付",
+      "rows": 0,
+      "broken": [],
+      "images": 0
+    },
+    {
+      "name": "逐項施工工程覆蓋表.html",
+      "title": "V0.7.3 逐項施工工程覆蓋表",
+      "rows": 38,
+      "broken": [],
+      "images": 0
+    },
+    {
+      "name": "BUG修復與待補清單.html",
+      "title": "V0.7.3 BUG修復與待補清單",
+      "rows": 0,
+      "broken": [],
+      "images": 0
+    },
+    {
+      "name": "完整測試及驗收報告.html",
+      "title": "V0.7.3 完整測試及驗收報告",
+      "rows": 0,
+      "broken": [],
+      "images": 0
+    }
+  ],
+  "worktree": {
+    "version": "0.7.3",
+    "art": true
+  },
+  "errors": [],
+  "pass": true
+}

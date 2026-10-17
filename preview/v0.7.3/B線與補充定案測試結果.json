@@ -1,0 +1,658 @@
+{
+  "version": "0.7.3",
+  "baseline": "0.7.2",
+  "rows": [
+    {
+      "id": "L21",
+      "name": "B線完整原稿805節點載入，舊缺稿標記解除",
+      "pass": true,
+      "detail": {
+        "lines": 805,
+        "sections": 23,
+        "reward": {
+          "cult": 180
+        },
+        "place": "朝御城",
+        "partial": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "pending": [
+          "素材提交分類",
+          "長右與新妖物數值",
+          "新寵物全境界八核",
+          "圖鑑缺少原始來源欄位",
+          "長右隱藏戰鬥值",
+          "B線支線016記載衝突",
+          "裝備品質候選倍率（未啟用）"
+        ]
+      },
+      "ms": 2
+    },
+    {
+      "id": "L27",
+      "name": "差10級七種保底與12人形向上取整；差11級全部0",
+      "pass": true,
+      "detail": {
+        "rows": [
+          {
+            "tier": "一般種",
+            "expected": 1,
+            "ten": 1,
+            "eleven": 0
+          },
+          {
+            "tier": "特殊種",
+            "expected": 2,
+            "ten": 2,
+            "eleven": 0
+          },
+          {
+            "tier": "高危種",
+            "expected": 4,
+            "ten": 4,
+            "eleven": 0
+          },
+          {
+            "tier": "高危種（特）",
+            "expected": 5,
+            "ten": 5,
+            "eleven": 0
+          },
+          {
+            "tier": "高危種(特)",
+            "expected": 5,
+            "ten": 5,
+            "eleven": 0
+          },
+          {
+            "tier": "妖王種",
+            "expected": 8,
+            "ten": 8,
+            "eleven": 0
+          },
+          {
+            "tier": "神獸種",
+            "expected": 15,
+            "ten": 15,
+            "eleven": 0
+          },
+          {
+            "tier": "災獸種",
+            "expected": 15,
+            "ten": 15,
+            "eleven": 0
+          }
+        ],
+        "humans": [
+          {
+            "hostileKind": "山賊",
+            "expected": 2,
+            "ten": 2,
+            "eleven": 0
+          },
+          {
+            "hostileKind": "盜賊",
+            "expected": 2,
+            "ten": 2,
+            "eleven": 0
+          },
+          {
+            "hostileKind": "逃犯",
+            "expected": 2,
+            "ten": 2,
+            "eleven": 0
+          },
+          {
+            "hostileKind": "海盜",
+            "expected": 2,
+            "ten": 2,
+            "eleven": 0
+          },
+          {
+            "hostileKind": "邪修",
+            "expected": 2,
+            "ten": 2,
+            "eleven": 0
+          },
+          {
+            "hostileKind": "劫修",
+            "expected": 2,
+            "ten": 2,
+            "eleven": 0
+          },
+          {
+            "hostileKind": "魔修",
+            "expected": 3,
+            "ten": 3,
+            "eleven": 0
+          },
+          {
+            "hostileKind": "殺手",
+            "expected": 3,
+            "ten": 3,
+            "eleven": 0
+          },
+          {
+            "hostileKind": "邪教徒",
+            "expected": 3,
+            "ten": 3,
+            "eleven": 0
+          },
+          {
+            "hostileKind": "叛宗弟子",
+            "expected": 3,
+            "ten": 3,
+            "eleven": 0
+          },
+          {
+            "hostileKind": "長老級",
+            "expected": 4,
+            "ten": 4,
+            "eleven": 0
+          },
+          {
+            "hostileKind": "道祖級",
+            "expected": 8,
+            "ten": 8,
+            "eleven": 0
+          }
+        ]
+      },
+      "ms": 4
+    },
+    {
+      "id": "L27",
+      "name": "差10級特殊種實際戰勝發放2修為且無待結算",
+      "pass": true,
+      "detail": {
+        "gained": 2,
+        "pending": []
+      },
+      "ms": 78
+    },
+    {
+      "id": "L30",
+      "name": "主根四段55/30/12/3抽樣與六元素／雙高上限",
+      "pass": true,
+      "detail": {
+        "counts": [
+          54987,
+          29989,
+          12105,
+          2919
+        ],
+        "double": 2959,
+        "bad": 0
+      },
+      "ms": 26
+    },
+    {
+      "id": "L30",
+      "name": "合法武器偏好70/30與空池後備；不虛構流派偏好表",
+      "pass": true,
+      "detail": {
+        "counts": {
+          "扇": 34996,
+          "寶珠": 35126,
+          "劍": 29878
+        },
+        "noPreferred": "劍",
+        "noOther": "扇",
+        "empty": null,
+        "pending": []
+      },
+      "ms": 20
+    },
+    {
+      "id": "L21",
+      "name": "033B三處調查六種順序皆可完成，回報180僅一次",
+      "pass": true,
+      "detail": [
+        {
+          "order": [
+            "core",
+            "lines",
+            "channel"
+          ],
+          "early": false,
+          "repeat": false,
+          "twice": false,
+          "gained": 180,
+          "claimed": true,
+          "place": "東州傳送塔",
+          "next": true,
+          "known": [
+            "黑色陌生陣紋",
+            "傳送塔核心未完全毀壞",
+            "傳送塔靈力流向被改變",
+            "黑衣人目的不止破壞傳送功能"
+          ],
+          "party": [
+            "邱山河",
+            "林夏于"
+          ]
+        },
+        {
+          "order": [
+            "core",
+            "channel",
+            "lines"
+          ],
+          "early": false,
+          "repeat": false,
+          "twice": false,
+          "gained": 180,
+          "claimed": true,
+          "place": "東州傳送塔",
+          "next": true,
+          "known": [
+            "黑色陌生陣紋",
+            "傳送塔核心未完全毀壞",
+            "傳送塔靈力流向被改變",
+            "黑衣人目的不止破壞傳送功能"
+          ],
+          "party": [
+            "邱山河",
+            "林夏于"
+          ]
+        },
+        {
+          "order": [
+            "lines",
+            "core",
+            "channel"
+          ],
+          "early": false,
+          "repeat": false,
+          "twice": false,
+          "gained": 180,
+          "claimed": true,
+          "place": "東州傳送塔",
+          "next": true,
+          "known": [
+            "黑色陌生陣紋",
+            "傳送塔核心未完全毀壞",
+            "傳送塔靈力流向被改變",
+            "黑衣人目的不止破壞傳送功能"
+          ],
+          "party": [
+            "邱山河",
+            "林夏于"
+          ]
+        },
+        {
+          "order": [
+            "lines",
+            "channel",
+            "core"
+          ],
+          "early": false,
+          "repeat": false,
+          "twice": false,
+          "gained": 180,
+          "claimed": true,
+          "place": "東州傳送塔",
+          "next": true,
+          "known": [
+            "黑色陌生陣紋",
+            "傳送塔核心未完全毀壞",
+            "傳送塔靈力流向被改變",
+            "黑衣人目的不止破壞傳送功能"
+          ],
+          "party": [
+            "邱山河",
+            "林夏于"
+          ]
+        },
+        {
+          "order": [
+            "channel",
+            "core",
+            "lines"
+          ],
+          "early": false,
+          "repeat": false,
+          "twice": false,
+          "gained": 180,
+          "claimed": true,
+          "place": "東州傳送塔",
+          "next": true,
+          "known": [
+            "黑色陌生陣紋",
+            "傳送塔核心未完全毀壞",
+            "傳送塔靈力流向被改變",
+            "黑衣人目的不止破壞傳送功能"
+          ],
+          "party": [
+            "邱山河",
+            "林夏于"
+          ]
+        },
+        {
+          "order": [
+            "channel",
+            "lines",
+            "core"
+          ],
+          "early": false,
+          "repeat": false,
+          "twice": false,
+          "gained": 180,
+          "claimed": true,
+          "place": "東州傳送塔",
+          "next": true,
+          "known": [
+            "黑色陌生陣紋",
+            "傳送塔核心未完全毀壞",
+            "傳送塔靈力流向被改變",
+            "黑衣人目的不止破壞傳送功能"
+          ],
+          "party": [
+            "邱山河",
+            "林夏于"
+          ]
+        }
+      ],
+      "ms": 1390
+    },
+    {
+      "id": "L22",
+      "name": "034B追擊離隊與世界位置，全入口操作鎖至必敗戰",
+      "pass": true,
+      "detail": {
+        "phase": "fight",
+        "locked": true,
+        "checks": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "place": "東州傳送塔",
+        "before": "東州傳送塔",
+        "party": [
+          "邱山河"
+        ],
+        "lin": "追擊黑衣人中（東嶺鎮方向）",
+        "shen": "青陽山",
+        "liu": "青陽山",
+        "body": "神秘黑衣人擋住了所有去路。與???戰鬥"
+      },
+      "ms": 277
+    },
+    {
+      "id": "L22",
+      "name": "034B九珠陰雷真實UI強制首動全倒，免費特殊結算且不污染寵物任務",
+      "pass": true,
+      "detail": {
+        "before": {
+          "first": "???",
+          "enemy": [
+            {
+              "name": "???",
+              "keys": [
+                999999,
+                999999,
+                999999,
+                999999,
+                999999,
+                999999,
+                999999,
+                999999
+              ]
+            }
+          ],
+          "allies": [
+            "測試999",
+            "邱山河",
+            "劇情測試狼"
+          ],
+          "symbol": false,
+          "image": true,
+          "detail": "???氣血 999999靈力 999999攻 999999道 999999防 999999道防 999999身 999999命 999999"
+        },
+        "after": {
+          "cutscene": true,
+          "allZero": true,
+          "logs": [
+            "遭遇 ???！",
+            "輪到???行動。",
+            "測試999獲得「護盾」3回合。",
+            "測試999獲得「堅毅」3回合。",
+            "???緩緩抬起雙手。",
+            "天空中突然傳來低沉雷鳴。",
+            "大量陰暗雷光在黑衣人上方迅速凝聚。",
+            "???：消失吧。",
+            "［天階］九珠陰雷",
+            "九道陰雷從天空轟然落下！",
+            "直接命中我方全體。",
+            "［天階］九珠陰雷命中我方全體。"
+          ],
+          "hp": 1,
+          "qiu": 1,
+          "coins": 0,
+          "ward": 0,
+          "pet": {
+            "hp": 78,
+            "mp": 34,
+            "max": 78,
+            "maxmp": 34,
+            "exp": 12,
+            "affection": 60,
+            "dead": false
+          },
+          "petUnchanged": true,
+          "commissionStreak": 1,
+          "claimed": false,
+          "phase": "post"
+        },
+        "completed": {
+          "claimed": true,
+          "hp": 1,
+          "locked": false,
+          "next": true
+        }
+      },
+      "ms": 2247
+    },
+    {
+      "id": "L21",
+      "name": "035B滿貫丹在服下節點才回滿，跳過／重開不複製丹藥",
+      "pass": true,
+      "detail": {
+        "before": 1,
+        "at": {
+          "hp": 128,
+          "mp": 47
+        },
+        "max": 128,
+        "maxmp": 47,
+        "pills": 0,
+        "phase": "travel",
+        "known": [
+          "傳送塔靈力被導向雷鳴沼"
+        ]
+      },
+      "ms": 115
+    },
+    {
+      "id": "L21",
+      "name": "035B三波站位／每場獨立結算／第二場失敗可重試且不重領",
+      "pass": true,
+      "detail": {
+        "waves": [
+          {
+            "count": 3,
+            "slots": [
+              "front1",
+              "front2",
+              "back1"
+            ]
+          },
+          {
+            "count": 2,
+            "slots": [
+              "front1",
+              "front2"
+            ]
+          },
+          {
+            "count": 3,
+            "slots": [
+              "front1",
+              "front2",
+              "back2"
+            ]
+          }
+        ],
+        "rewards": [
+          59,
+          62,
+          73
+        ],
+        "failed": {
+          "step": 1,
+          "fee": 13,
+          "place": "朝御城"
+        },
+        "double": 0,
+        "notYet": true,
+        "claimed": true,
+        "next": true,
+        "place": "碧潮鎮"
+      },
+      "ms": 490
+    },
+    {
+      "id": "L22",
+      "name": "036B實際引導、調查傳送陣、深窟會合，無A線秘密或命符",
+      "pass": true,
+      "detail": {
+        "array": {
+          "place": "雷鳴沼",
+          "phase": "array",
+          "bChat": true,
+          "cave": false
+        },
+        "place": "雷鳴沼地下深窟",
+        "claimed": true,
+        "next": true,
+        "nextClaimed": false,
+        "known": [
+          "災獸長右",
+          "龍胤之陣",
+          "混沌魔宗",
+          "雷鳴沼地下深窟的異常靈力",
+          "妖物逃離雷鳴沼"
+        ],
+        "token": 0,
+        "dig": false,
+        "party": [
+          "邱山河",
+          "林夏于"
+        ],
+        "shen": "雷鳴沼地下深窟",
+        "liu": "雷鳴沼地下深窟",
+        "lin": "同行中"
+      },
+      "ms": 262
+    },
+    {
+      "id": "L21",
+      "name": "B線032選擇至038長右完整連續實戰與結算",
+      "pass": true,
+      "detail": {
+        "quests": [
+          {
+            "key": "032",
+            "claimed": true
+          },
+          {
+            "key": "033B",
+            "claimed": true
+          },
+          {
+            "key": "034B",
+            "claimed": true
+          },
+          {
+            "key": "035B",
+            "claimed": true
+          },
+          {
+            "key": "036B",
+            "claimed": true
+          },
+          {
+            "key": "037",
+            "claimed": true
+          },
+          {
+            "key": "038",
+            "claimed": true
+          }
+        ],
+        "waves": [
+          {
+            "round": 3,
+            "won": true,
+            "step": 1
+          },
+          {
+            "round": 2,
+            "won": true,
+            "step": 2
+          },
+          {
+            "round": 3,
+            "won": true,
+            "step": 3
+          }
+        ],
+        "boss": {
+          "round": 12,
+          "phase": 2,
+          "won": true
+        },
+        "place": "雷鳴沼地下深窟",
+        "towerClosed": false,
+        "token": 0,
+        "heart": 1,
+        "party": [],
+        "bChat": true,
+        "fixture": "隔離測試角色提升八核以滿足地圖門檻；此案例測完整流程，不作數值平衡結論。"
+      },
+      "ms": 23082
+    },
+    {
+      "id": "L36",
+      "name": "033B調查中存檔重載，進度／對話位置與獎勵可接續",
+      "pass": true,
+      "detail": {
+        "before": {
+          "investigated": [
+            "channel"
+          ],
+          "dialogue": {
+            "section": "033B-core",
+            "index": 1
+          }
+        },
+        "flow": true,
+        "section": "033B-core",
+        "index": 1,
+        "phase": "investigate"
+      },
+      "ms": 221
+    }
+  ],
+  "errors": []
+}

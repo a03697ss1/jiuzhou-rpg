@@ -1,0 +1,23 @@
+<!doctype html><html lang="zh-Hant"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>《九州修仙錄》0.7.3 獨立測試交付</title><style>body{margin:0;background:#0c1720;color:#dbe5ed;font:16px/1.7 "Microsoft JhengHei",sans-serif}main{max-width:1280px;margin:auto;padding:26px}a{color:#93caff}h1{color:#f2d68b;font-size:28px}h2{margin-top:32px;color:#c8dded}nav{display:flex;flex-wrap:wrap;gap:16px;margin:18px 0}.note{border:1px solid #b88c44;background:#33291a;padding:15px;border-radius:10px}.ok{color:#9be3ad}.pending{color:#ffcf84}.summary{display:flex;gap:16px;flex-wrap:wrap}.summary>div{padding:16px;background:#182b39;border-radius:8px}table{border-collapse:collapse;width:100%;font-size:14px}th,td{border:1px solid #355266;padding:10px;vertical-align:top}th{background:#1c3343;position:sticky;top:0}tr:nth-child(even){background:#12232f}pre{white-space:pre-wrap;overflow-wrap:anywhere;font:12px/1.6 Consolas,monospace}img{max-width:100%;border:1px solid #375367;border-radius:8px}button,select,input{font:inherit;color:inherit;background:#203749;border:1px solid #59758a;border-radius:6px;padding:8px;margin:5px}details{margin:9px 0}li{margin:7px 0}.scroll{overflow:auto}.muted{color:#a9bccb}@media(max-width:700px){main{padding:14px}table{min-width:900px}}</style><main><h1>《九州修仙錄》0.7.3 獨立測試交付</h1><nav><a href="閱讀我_先看這裡.html">交付入口</a><a href="index.html">單檔遊戲</a><a href="逐項施工工程覆蓋表.html">38項覆蓋表</a><a href="BUG修復與待補清單.html">BUG／待補</a><a href="完整測試及驗收報告.html">測試報告</a></nav><p class="note">本檔是可玩的0.7.3獨立測試交付，尚未整版驗收通過。正式母檔、正式0.7.2及GitHub均未修改。測試通過包含「缺資料時保護鎖正常」；不代表待補功能已完成。</p><div class="summary"><div>施工項目：38</div><div>新增測試：97／97</div><div>既有回歸：95／95</div><div>長右固定種子：16／16<br>15～18回合</div></div><pre>《九州修仙錄》0.7.3 獨立測試交付
+
+基準：最新0.7.2「九州修仙錄_測試分支.html」，未使用舊HTML重做。
+本地Git分支：test/v0.7.3-20261017；未commit、未push、未發布。
+正式0.7.2母檔及GitHub保持不變。
+
+遊玩：開啟「index.html」。此單一HTML已包含圖片，可離線遊玩，約500.7MB。
+也可開啟「Git測試分支/index.html」；這是同一版的拆分資源形式，必須保留該資料夾內assets與new-assets。
+
+快速驗收：建立角色時名稱填「測試999」。進遊戲後按主介面「本輪測試入口」，可選長右、A/B分支、或新地圖與委託情境。這些僅是隔離測試入口，會改動該測試角色進度，不會改正式存檔。
+普通角色可沿既有主線遊玩，再接新增主線；A／B兩線均已完成032至038連續流程實戰。問道檯跨境界入口已開放，金丹玩家暫關；對手是下一個大境界一層至圓滿。
+
+存檔：測試HTML採獨立儲存前綴。若要帶入原角色，請使用遊戲內匯入原存檔副本；仍請自行保留原匯出檔。瀏覽器不會自動把正式版角色寫入此測試空間。
+
+請先看「逐項施工工程覆蓋表.html」「BUG修復與待補清單.html」「完整測試及驗收報告.html」。
+新增37項系統檢查、26項擴充流程、13項B線／補充定案及21項A線／NPC檢查通過；既有95項回歸保留。
+長右16組候選數值實戰15～18回合通過，另實際操作自動戰鬥第16回合獲勝。
+測試通過不代表待補功能完成；玩家尚未驗收整版。
+
+主要待補：新三寵起始及連續成長八核、部分圖鑑來源與美術驗收、新狀態非潮濕取得方式、支線016記載衝突。A／B完整主線、修為差10級保底、問道NPC正式原表及裝備抽樣均已補齊。裝備新能力倍率僅保存未來候選，不作用於現有成品。
+CQ046～049本輪最終目標及報酬已實裝，已從待補移除。
+潮閃引雷限制長右專屬；沒有重加音樂。
+</pre><h2>來源與驗證</h2><p>施工規格：使用者2026-10-17工作檔＋本輪潮閃引雷專屬及四條委託最終修正。另已併入使用者本輪補充的A線034A～036A709節點、B線033B～036B805節點、差10級保底、NPC正式基線／品質／八流派與裝備品質抽樣；文件內舊待補標記已按本輪明確指示覆蓋；未把文件內其他未定提議升格定案。</p><p>測試基準SHA-256：<code>58ce74be8922d4d0bc5e702fde0ebc8823649f560f00d12c8d843a5954a3ca50</code></p><p><a href="交付驗證清單.json">交付驗證清單</a>　<a href="正式檔案保護驗證.json">正式檔保護驗證</a></p></main><script></script></html>

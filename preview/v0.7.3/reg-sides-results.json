@@ -1,0 +1,166 @@
+{
+  "results": [
+    {
+      "id": "SQ001購買後回報",
+      "pass": true,
+      "detail": {
+        "pass": true
+      }
+    },
+    {
+      "id": "SQ002不足未扣除",
+      "pass": true,
+      "detail": {
+        "pass": true
+      }
+    },
+    {
+      "id": "SQ002提交回報",
+      "pass": true,
+      "detail": {
+        "pass": true
+      }
+    },
+    {
+      "id": "SQ003靈幣不足",
+      "pass": true,
+      "detail": {
+        "pass": true
+      }
+    },
+    {
+      "id": "SQ003支付50與通行證",
+      "pass": true,
+      "detail": {
+        "pass": true
+      }
+    },
+    {
+      "id": "SQ004/005對話善值獎勵",
+      "pass": true,
+      "detail": {
+        "pass": true
+      }
+    },
+    {
+      "id": "SQ006境界條件",
+      "pass": true,
+      "detail": {
+        "pass": true
+      }
+    },
+    {
+      "id": "SQ006～008浮島往程",
+      "pass": true,
+      "detail": {
+        "pass": true
+      }
+    },
+    {
+      "id": "SQ008返程耗丹",
+      "pass": true,
+      "detail": {
+        "pass": true
+      }
+    },
+    {
+      "id": "SQ009正確NPC與箱獎勵",
+      "pass": true,
+      "detail": {
+        "pass": true
+      }
+    },
+    {
+      "id": "SQ010未出戰不達標",
+      "pass": true,
+      "detail": {
+        "pass": true
+      }
+    },
+    {
+      "id": "SQ010出戰交談回報",
+      "pass": true,
+      "detail": {
+        "pass": true
+      }
+    },
+    {
+      "id": "SQ011境界不足",
+      "pass": true,
+      "detail": {
+        "pass": true
+      }
+    },
+    {
+      "id": "SQ011詢問任意順序與柑橘移動",
+      "pass": true,
+      "detail": {
+        "pass": true
+      }
+    },
+    {
+      "id": "SQ011特殊戰位與種級",
+      "pass": true,
+      "detail": {
+        "pass": true,
+        "formation": {
+          "front1": {
+            "name": "冥雷蛟",
+            "tier": "特殊種",
+            "realm": "築基五層"
+          },
+          "back2": {
+            "name": "鳴雀",
+            "tier": "一般種",
+            "realm": "築基三層"
+          }
+        }
+      }
+    },
+    {
+      "id": "SQ011實際敗戰送醫保留可重試",
+      "pass": true,
+      "detail": {
+        "pass": true,
+        "place": "朝御城",
+        "injuries": []
+      }
+    },
+    {
+      "id": "SQ011勝利團聚與永久位置",
+      "pass": true,
+      "detail": {
+        "pass": true
+      }
+    },
+    {
+      "id": "SQ012等待不足",
+      "pass": true,
+      "detail": {
+        "pass": true
+      }
+    },
+    {
+      "id": "SQ0121439分鐘仍鎖",
+      "pass": true,
+      "detail": {
+        "pass": true
+      }
+    },
+    {
+      "id": "SQ012第一選項善惡",
+      "pass": true,
+      "detail": {
+        "pass": true
+      }
+    },
+    {
+      "id": "SQ012提交與10瓶綜合藥水",
+      "pass": true,
+      "detail": {
+        "pass": true
+      }
+    }
+  ],
+  "errors": []
+}
