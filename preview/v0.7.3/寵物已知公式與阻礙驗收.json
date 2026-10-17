@@ -1,0 +1,1859 @@
+{
+  "rows": [
+    {
+      "id": "L19",
+      "name": "正式築基五層0★基礎、逐階升星、五星核心及二選一畫面",
+      "evidenceLevel": "已知正式八核的公式與操作測試，未經正常孵化取得",
+      "pass": true,
+      "detail": [
+        {
+          "species": "燐火狼",
+          "phases": [
+            [
+              731,
+              199,
+              59,
+              48,
+              41,
+              39,
+              49,
+              48
+            ],
+            [
+              768,
+              209,
+              62,
+              50,
+              43,
+              41,
+              51,
+              50
+            ],
+            [
+              819,
+              223,
+              66,
+              54,
+              46,
+              44,
+              55,
+              54
+            ],
+            [
+              892,
+              243,
+              72,
+              59,
+              50,
+              48,
+              60,
+              59
+            ],
+            [
+              1001,
+              273,
+              81,
+              66,
+              56,
+              53,
+              67,
+              66
+            ],
+            [
+              1148,
+              312,
+              93,
+              75,
+              64,
+              61,
+              77,
+              75
+            ]
+          ],
+          "broken": [
+            1452,
+            359,
+            107,
+            87,
+            74,
+            70,
+            88,
+            87
+          ],
+          "expected": [
+            1452,
+            359,
+            107,
+            87,
+            74,
+            70,
+            88,
+            87
+          ],
+          "cost": 50,
+          "selected": true,
+          "again": false,
+          "info": "A 燐火噬魂130%物理火傷；灼燒目標追加40%火傷。MP22／CD4；占1格編招槽選擇此技能B 燐火守誓給玩家燐火庇護2回合：直接傷害－20%，敵方直接攻擊者50%灼燒2回合。MP25／CD5；占1格編招槽選擇此技能"
+        },
+        {
+          "species": "硬黑蠍",
+          "phases": [
+            [
+              606,
+              199,
+              48,
+              45,
+              55,
+              55,
+              35,
+              41
+            ],
+            [
+              636,
+              209,
+              50,
+              47,
+              58,
+              58,
+              37,
+              43
+            ],
+            [
+              679,
+              223,
+              54,
+              50,
+              62,
+              62,
+              39,
+              46
+            ],
+            [
+              739,
+              243,
+              59,
+              55,
+              67,
+              67,
+              43,
+              50
+            ],
+            [
+              830,
+              273,
+              66,
+              62,
+              75,
+              75,
+              48,
+              56
+            ],
+            [
+              951,
+              312,
+              75,
+              71,
+              86,
+              86,
+              55,
+              64
+            ]
+          ],
+          "broken": [
+            1094,
+            359,
+            87,
+            81,
+            106,
+            106,
+            63,
+            74
+          ],
+          "expected": [
+            1094,
+            359,
+            87,
+            81,
+            106,
+            106,
+            63,
+            74
+          ],
+          "cost": 50,
+          "selected": true,
+          "again": false,
+          "info": "A 玄甲護主友方單體護盾＝施術者最大HP25%，2回合；盾在時雙防＋15%。MP24／CD4；占1格編招槽選擇此技能B 蠍尾毒獄100%物理；80%中毒3回合，50%破甲2回合。MP22／CD4；占1格編招槽選擇此技能"
+        },
+        {
+          "species": "靈珠蝶",
+          "phases": [
+            [
+              476,
+              276,
+              41,
+              75,
+              34,
+              41,
+              51,
+              51
+            ],
+            [
+              500,
+              290,
+              43,
+              79,
+              36,
+              43,
+              54,
+              54
+            ],
+            [
+              533,
+              309,
+              46,
+              84,
+              38,
+              46,
+              57,
+              57
+            ],
+            [
+              581,
+              337,
+              50,
+              92,
+              41,
+              50,
+              62,
+              62
+            ],
+            [
+              652,
+              378,
+              56,
+              103,
+              47,
+              56,
+              70,
+              70
+            ],
+            [
+              747,
+              433,
+              64,
+              118,
+              53,
+              64,
+              80,
+              80
+            ]
+          ],
+          "broken": [
+            859,
+            498,
+            74,
+            149,
+            61,
+            74,
+            92,
+            92
+          ],
+          "expected": [
+            859,
+            498,
+            74,
+            149,
+            61,
+            74,
+            92,
+            92
+          ],
+          "cost": 50,
+          "selected": true,
+          "again": false,
+          "info": "A 珠光回春回血＝道100%＋自身最大MP5%；清除1種可驅散減益。MP25／CD4；占1格編招槽選擇此技能B 蝶夢沉眠70%睡眠2回合；成功後抵抗－15%2回合。MP27／CD5；占1格編招槽選擇此技能"
+        }
+      ]
+    },
+    {
+      "id": "L19/L20",
+      "name": "合法新三寵技能池及非法高危種保護",
+      "evidenceLevel": "合法性檢查，未代替正常任務完成",
+      "pass": true,
+      "detail": [
+        {
+          "species": "燐火狼",
+          "skills": [
+            "揮擊",
+            "撞擊",
+            "撕咬",
+            "尾擊",
+            "狼嚎",
+            "用力",
+            "飲水",
+            "休息",
+            "爪擊",
+            "烈爪",
+            "餘火",
+            "破夢",
+            "毒襲"
+          ],
+          "illegal": "此物種未定案此種級"
+        },
+        {
+          "species": "硬黑蠍",
+          "skills": [
+            "轟泥",
+            "用力",
+            "岩封",
+            "休息",
+            "反彈",
+            "鐵甲",
+            "護盾反擊",
+            "夾擊",
+            "固態甲殼",
+            "破夢",
+            "毒襲"
+          ],
+          "illegal": "此物種未定案此種級"
+        },
+        {
+          "species": "靈珠蝶",
+          "skills": [
+            "翅擊",
+            "用力",
+            "風翅",
+            "撲粉",
+            "擾亂風流",
+            "灑粉",
+            "飲水",
+            "休息",
+            "風流",
+            "飛速一擊",
+            "破夢",
+            "沉默粉",
+            "毒襲"
+          ],
+          "illegal": "此物種未定案此種級"
+        }
+      ]
+    },
+    {
+      "id": "L34",
+      "name": "25種選單；既有22種由正常使用蛋到6小時開啟，三種缺表保持不扣蛋",
+      "evidenceLevel": "正常蛋選擇／計時／開啟流程；新三寵負向保護驗證",
+      "pass": true,
+      "detail": [
+        {
+          "species": "青木狼",
+          "accepted": true,
+          "duration": 360,
+          "early": false,
+          "opened": true,
+          "actual": "青木狼",
+          "realm": "練氣一層",
+          "finite": true
+        },
+        {
+          "species": "青靈蛇",
+          "accepted": true,
+          "duration": 360,
+          "early": false,
+          "opened": true,
+          "actual": "青靈蛇",
+          "realm": "練氣一層",
+          "finite": true
+        },
+        {
+          "species": "青翠蝶",
+          "accepted": true,
+          "duration": 360,
+          "early": false,
+          "opened": true,
+          "actual": "青翠蝶",
+          "realm": "練氣一層",
+          "finite": true
+        },
+        {
+          "species": "青臭蟲",
+          "accepted": true,
+          "duration": 360,
+          "early": false,
+          "opened": true,
+          "actual": "青臭蟲",
+          "realm": "練氣一層",
+          "finite": true
+        },
+        {
+          "species": "朝東鳥",
+          "accepted": true,
+          "duration": 360,
+          "early": false,
+          "opened": true,
+          "actual": "朝東鳥",
+          "realm": "練氣一層",
+          "finite": true
+        },
+        {
+          "species": "朝陽狐",
+          "accepted": true,
+          "duration": 360,
+          "early": false,
+          "opened": true,
+          "actual": "朝陽狐",
+          "realm": "練氣一層",
+          "finite": true
+        },
+        {
+          "species": "重翅蝶",
+          "accepted": true,
+          "duration": 360,
+          "early": false,
+          "opened": true,
+          "actual": "重翅蝶",
+          "realm": "練氣一層",
+          "finite": true
+        },
+        {
+          "species": "小圓蛛",
+          "accepted": true,
+          "duration": 360,
+          "early": false,
+          "opened": true,
+          "actual": "小圓蛛",
+          "realm": "練氣一層",
+          "finite": true
+        },
+        {
+          "species": "雷角鹿",
+          "accepted": true,
+          "duration": 360,
+          "early": false,
+          "opened": true,
+          "actual": "雷角鹿",
+          "realm": "練氣一層",
+          "finite": true
+        },
+        {
+          "species": "轟轟鯰",
+          "accepted": true,
+          "duration": 360,
+          "early": false,
+          "opened": true,
+          "actual": "轟轟鯰",
+          "realm": "練氣一層",
+          "finite": true
+        },
+        {
+          "species": "噴水蟲",
+          "accepted": true,
+          "duration": 360,
+          "early": false,
+          "opened": true,
+          "actual": "噴水蟲",
+          "realm": "練氣一層",
+          "finite": true
+        },
+        {
+          "species": "冥雷蛟",
+          "accepted": true,
+          "duration": 360,
+          "early": false,
+          "opened": true,
+          "actual": "冥雷蛟",
+          "realm": "練氣一層",
+          "finite": true
+        },
+        {
+          "species": "鳴雀",
+          "accepted": true,
+          "duration": 360,
+          "early": false,
+          "opened": true,
+          "actual": "鳴雀",
+          "realm": "練氣一層",
+          "finite": true
+        },
+        {
+          "species": "潮汐龜",
+          "accepted": true,
+          "duration": 360,
+          "early": false,
+          "opened": true,
+          "actual": "潮汐龜",
+          "realm": "練氣一層",
+          "finite": true
+        },
+        {
+          "species": "水蛇",
+          "accepted": true,
+          "duration": 360,
+          "early": false,
+          "opened": true,
+          "actual": "水蛇",
+          "realm": "練氣一層",
+          "finite": true
+        },
+        {
+          "species": "水刃狼",
+          "accepted": true,
+          "duration": 360,
+          "early": false,
+          "opened": true,
+          "actual": "水刃狼",
+          "realm": "練氣一層",
+          "finite": true
+        },
+        {
+          "species": "風粉蝶",
+          "accepted": true,
+          "duration": 360,
+          "early": false,
+          "opened": true,
+          "actual": "風粉蝶",
+          "realm": "練氣一層",
+          "finite": true
+        },
+        {
+          "species": "千針蜂",
+          "accepted": true,
+          "duration": 360,
+          "early": false,
+          "opened": true,
+          "actual": "千針蜂",
+          "realm": "練氣一層",
+          "finite": true
+        },
+        {
+          "species": "自爆毒蛛",
+          "accepted": true,
+          "duration": 360,
+          "early": false,
+          "opened": true,
+          "actual": "自爆毒蛛",
+          "realm": "練氣一層",
+          "finite": true
+        },
+        {
+          "species": "天翼鷹",
+          "accepted": true,
+          "duration": 360,
+          "early": false,
+          "opened": true,
+          "actual": "天翼鷹",
+          "realm": "練氣一層",
+          "finite": true
+        },
+        {
+          "species": "飛蛇",
+          "accepted": true,
+          "duration": 360,
+          "early": false,
+          "opened": true,
+          "actual": "飛蛇",
+          "realm": "練氣一層",
+          "finite": true
+        },
+        {
+          "species": "反彈盔甲蟲",
+          "accepted": true,
+          "duration": 360,
+          "early": false,
+          "opened": true,
+          "actual": "反彈盔甲蟲",
+          "realm": "練氣一層",
+          "finite": true
+        },
+        {
+          "species": "燐火狼",
+          "accepted": false,
+          "notConsumed": true,
+          "blocked": true
+        },
+        {
+          "species": "硬黑蠍",
+          "accepted": false,
+          "notConsumed": true,
+          "blocked": true
+        },
+        {
+          "species": "靈珠蝶",
+          "accepted": false,
+          "notConsumed": true,
+          "blocked": true
+        }
+      ]
+    },
+    {
+      "id": "L19",
+      "name": "缺表逐列清單與既有高境成長公式可用",
+      "evidenceLevel": "資料查核／公式測試",
+      "pass": true,
+      "detail": {
+        "audit": [
+          {
+            "species": "燐火狼",
+            "core": "maxhp",
+            "stars": [
+              1,
+              1.05,
+              1.12,
+              1.22,
+              1.37,
+              1.57
+            ],
+            "wildBase": {
+              "5": [
+                585,
+                159,
+                47,
+                38,
+                33,
+                31,
+                39,
+                38
+              ],
+              "6": [
+                644,
+                174,
+                50,
+                41,
+                35,
+                33,
+                41,
+                42
+              ],
+              "7": [
+                702,
+                189,
+                55,
+                44,
+                38,
+                36,
+                44,
+                45
+              ],
+              "8": [
+                760,
+                204,
+                59,
+                48,
+                41,
+                39,
+                47,
+                48
+              ],
+              "10": [
+                878,
+                234,
+                67,
+                54,
+                47,
+                45,
+                54,
+                54
+              ]
+            },
+            "missing": [
+              {
+                "major": "練氣",
+                "layer": 1
+              },
+              {
+                "major": "練氣",
+                "layer": 2
+              },
+              {
+                "major": "練氣",
+                "layer": 3
+              },
+              {
+                "major": "練氣",
+                "layer": 4
+              },
+              {
+                "major": "練氣",
+                "layer": 5
+              },
+              {
+                "major": "練氣",
+                "layer": 6
+              },
+              {
+                "major": "練氣",
+                "layer": 7
+              },
+              {
+                "major": "練氣",
+                "layer": 8
+              },
+              {
+                "major": "練氣",
+                "layer": 9
+              },
+              {
+                "major": "練氣",
+                "layer": 10
+              },
+              {
+                "major": "築基",
+                "layer": 1
+              },
+              {
+                "major": "築基",
+                "layer": 2
+              },
+              {
+                "major": "築基",
+                "layer": 3
+              },
+              {
+                "major": "築基",
+                "layer": 4
+              },
+              {
+                "major": "築基",
+                "layer": 9
+              }
+            ],
+            "higherRealmFormula": "沿用101-jzp-20261005.js的築基圓滿基準、境界成長與層位倍率；不倒推練氣／築基缺列。"
+          },
+          {
+            "species": "硬黑蠍",
+            "core": "dualdef",
+            "stars": [
+              1,
+              1.05,
+              1.12,
+              1.22,
+              1.37,
+              1.57
+            ],
+            "wildBase": {
+              "5": [
+                485,
+                159,
+                38,
+                36,
+                44,
+                44,
+                28,
+                33
+              ],
+              "7": [
+                582,
+                189,
+                44,
+                42,
+                51,
+                51,
+                32,
+                39
+              ],
+              "9": [
+                680,
+                219,
+                50,
+                48,
+                59,
+                59,
+                37,
+                44
+              ],
+              "10": [
+                728,
+                234,
+                54,
+                51,
+                63,
+                63,
+                39,
+                47
+              ]
+            },
+            "missing": [
+              {
+                "major": "練氣",
+                "layer": 1
+              },
+              {
+                "major": "練氣",
+                "layer": 2
+              },
+              {
+                "major": "練氣",
+                "layer": 3
+              },
+              {
+                "major": "練氣",
+                "layer": 4
+              },
+              {
+                "major": "練氣",
+                "layer": 5
+              },
+              {
+                "major": "練氣",
+                "layer": 6
+              },
+              {
+                "major": "練氣",
+                "layer": 7
+              },
+              {
+                "major": "練氣",
+                "layer": 8
+              },
+              {
+                "major": "練氣",
+                "layer": 9
+              },
+              {
+                "major": "練氣",
+                "layer": 10
+              },
+              {
+                "major": "築基",
+                "layer": 1
+              },
+              {
+                "major": "築基",
+                "layer": 2
+              },
+              {
+                "major": "築基",
+                "layer": 3
+              },
+              {
+                "major": "築基",
+                "layer": 4
+              },
+              {
+                "major": "築基",
+                "layer": 6
+              },
+              {
+                "major": "築基",
+                "layer": 8
+              }
+            ],
+            "higherRealmFormula": "沿用101-jzp-20261005.js的築基圓滿基準、境界成長與層位倍率；不倒推練氣／築基缺列。"
+          },
+          {
+            "species": "靈珠蝶",
+            "core": "dao",
+            "stars": [
+              1,
+              1.05,
+              1.12,
+              1.22,
+              1.37,
+              1.57
+            ],
+            "wildBase": {
+              "5": [
+                476,
+                276,
+                41,
+                75,
+                34,
+                41,
+                51,
+                51
+              ],
+              "10": [
+                715,
+                406,
+                59,
+                106,
+                49,
+                59,
+                71,
+                71
+              ]
+            },
+            "missing": [
+              {
+                "major": "練氣",
+                "layer": 1
+              },
+              {
+                "major": "練氣",
+                "layer": 2
+              },
+              {
+                "major": "練氣",
+                "layer": 3
+              },
+              {
+                "major": "練氣",
+                "layer": 4
+              },
+              {
+                "major": "練氣",
+                "layer": 5
+              },
+              {
+                "major": "練氣",
+                "layer": 6
+              },
+              {
+                "major": "練氣",
+                "layer": 7
+              },
+              {
+                "major": "練氣",
+                "layer": 8
+              },
+              {
+                "major": "練氣",
+                "layer": 9
+              },
+              {
+                "major": "練氣",
+                "layer": 10
+              },
+              {
+                "major": "築基",
+                "layer": 1
+              },
+              {
+                "major": "築基",
+                "layer": 2
+              },
+              {
+                "major": "築基",
+                "layer": 3
+              },
+              {
+                "major": "築基",
+                "layer": 4
+              },
+              {
+                "major": "築基",
+                "layer": 6
+              },
+              {
+                "major": "築基",
+                "layer": 7
+              },
+              {
+                "major": "築基",
+                "layer": 8
+              },
+              {
+                "major": "築基",
+                "layer": 9
+              }
+            ],
+            "higherRealmFormula": "沿用101-jzp-20261005.js的築基圓滿基準、境界成長與層位倍率；不倒推練氣／築基缺列。"
+          }
+        ],
+        "stats": [
+          {
+            "species": "燐火狼",
+            "realm": "金丹一層",
+            "finite": true
+          },
+          {
+            "species": "燐火狼",
+            "realm": "金丹二層",
+            "finite": true
+          },
+          {
+            "species": "燐火狼",
+            "realm": "金丹三層",
+            "finite": true
+          },
+          {
+            "species": "燐火狼",
+            "realm": "金丹四層",
+            "finite": true
+          },
+          {
+            "species": "燐火狼",
+            "realm": "金丹五層",
+            "finite": true
+          },
+          {
+            "species": "燐火狼",
+            "realm": "金丹六層",
+            "finite": true
+          },
+          {
+            "species": "燐火狼",
+            "realm": "金丹七層",
+            "finite": true
+          },
+          {
+            "species": "燐火狼",
+            "realm": "金丹八層",
+            "finite": true
+          },
+          {
+            "species": "燐火狼",
+            "realm": "金丹九層",
+            "finite": true
+          },
+          {
+            "species": "燐火狼",
+            "realm": "金丹圓滿",
+            "finite": true
+          },
+          {
+            "species": "燐火狼",
+            "realm": "元嬰一層",
+            "finite": true
+          },
+          {
+            "species": "燐火狼",
+            "realm": "元嬰二層",
+            "finite": true
+          },
+          {
+            "species": "燐火狼",
+            "realm": "元嬰三層",
+            "finite": true
+          },
+          {
+            "species": "燐火狼",
+            "realm": "元嬰四層",
+            "finite": true
+          },
+          {
+            "species": "燐火狼",
+            "realm": "元嬰五層",
+            "finite": true
+          },
+          {
+            "species": "燐火狼",
+            "realm": "元嬰六層",
+            "finite": true
+          },
+          {
+            "species": "燐火狼",
+            "realm": "元嬰七層",
+            "finite": true
+          },
+          {
+            "species": "燐火狼",
+            "realm": "元嬰八層",
+            "finite": true
+          },
+          {
+            "species": "燐火狼",
+            "realm": "元嬰九層",
+            "finite": true
+          },
+          {
+            "species": "燐火狼",
+            "realm": "元嬰圓滿",
+            "finite": true
+          },
+          {
+            "species": "燐火狼",
+            "realm": "化神一層",
+            "finite": true
+          },
+          {
+            "species": "燐火狼",
+            "realm": "化神二層",
+            "finite": true
+          },
+          {
+            "species": "燐火狼",
+            "realm": "化神三層",
+            "finite": true
+          },
+          {
+            "species": "燐火狼",
+            "realm": "化神四層",
+            "finite": true
+          },
+          {
+            "species": "燐火狼",
+            "realm": "化神五層",
+            "finite": true
+          },
+          {
+            "species": "燐火狼",
+            "realm": "化神六層",
+            "finite": true
+          },
+          {
+            "species": "燐火狼",
+            "realm": "化神七層",
+            "finite": true
+          },
+          {
+            "species": "燐火狼",
+            "realm": "化神八層",
+            "finite": true
+          },
+          {
+            "species": "燐火狼",
+            "realm": "化神九層",
+            "finite": true
+          },
+          {
+            "species": "燐火狼",
+            "realm": "化神圓滿",
+            "finite": true
+          },
+          {
+            "species": "燐火狼",
+            "realm": "煉虛一層",
+            "finite": true
+          },
+          {
+            "species": "燐火狼",
+            "realm": "煉虛二層",
+            "finite": true
+          },
+          {
+            "species": "燐火狼",
+            "realm": "煉虛三層",
+            "finite": true
+          },
+          {
+            "species": "燐火狼",
+            "realm": "煉虛四層",
+            "finite": true
+          },
+          {
+            "species": "燐火狼",
+            "realm": "煉虛五層",
+            "finite": true
+          },
+          {
+            "species": "燐火狼",
+            "realm": "煉虛六層",
+            "finite": true
+          },
+          {
+            "species": "燐火狼",
+            "realm": "煉虛七層",
+            "finite": true
+          },
+          {
+            "species": "燐火狼",
+            "realm": "煉虛八層",
+            "finite": true
+          },
+          {
+            "species": "燐火狼",
+            "realm": "煉虛九層",
+            "finite": true
+          },
+          {
+            "species": "燐火狼",
+            "realm": "煉虛圓滿",
+            "finite": true
+          },
+          {
+            "species": "燐火狼",
+            "realm": "合體一層",
+            "finite": true
+          },
+          {
+            "species": "燐火狼",
+            "realm": "合體二層",
+            "finite": true
+          },
+          {
+            "species": "燐火狼",
+            "realm": "合體三層",
+            "finite": true
+          },
+          {
+            "species": "燐火狼",
+            "realm": "合體四層",
+            "finite": true
+          },
+          {
+            "species": "燐火狼",
+            "realm": "合體五層",
+            "finite": true
+          },
+          {
+            "species": "燐火狼",
+            "realm": "合體六層",
+            "finite": true
+          },
+          {
+            "species": "燐火狼",
+            "realm": "合體七層",
+            "finite": true
+          },
+          {
+            "species": "燐火狼",
+            "realm": "合體八層",
+            "finite": true
+          },
+          {
+            "species": "燐火狼",
+            "realm": "合體九層",
+            "finite": true
+          },
+          {
+            "species": "燐火狼",
+            "realm": "合體圓滿",
+            "finite": true
+          },
+          {
+            "species": "燐火狼",
+            "realm": "大乘一層",
+            "finite": true
+          },
+          {
+            "species": "燐火狼",
+            "realm": "大乘二層",
+            "finite": true
+          },
+          {
+            "species": "燐火狼",
+            "realm": "大乘三層",
+            "finite": true
+          },
+          {
+            "species": "燐火狼",
+            "realm": "大乘四層",
+            "finite": true
+          },
+          {
+            "species": "燐火狼",
+            "realm": "大乘五層",
+            "finite": true
+          },
+          {
+            "species": "燐火狼",
+            "realm": "大乘六層",
+            "finite": true
+          },
+          {
+            "species": "燐火狼",
+            "realm": "大乘七層",
+            "finite": true
+          },
+          {
+            "species": "燐火狼",
+            "realm": "大乘八層",
+            "finite": true
+          },
+          {
+            "species": "燐火狼",
+            "realm": "大乘九層",
+            "finite": true
+          },
+          {
+            "species": "燐火狼",
+            "realm": "大乘圓滿",
+            "finite": true
+          },
+          {
+            "species": "硬黑蠍",
+            "realm": "金丹一層",
+            "finite": true
+          },
+          {
+            "species": "硬黑蠍",
+            "realm": "金丹二層",
+            "finite": true
+          },
+          {
+            "species": "硬黑蠍",
+            "realm": "金丹三層",
+            "finite": true
+          },
+          {
+            "species": "硬黑蠍",
+            "realm": "金丹四層",
+            "finite": true
+          },
+          {
+            "species": "硬黑蠍",
+            "realm": "金丹五層",
+            "finite": true
+          },
+          {
+            "species": "硬黑蠍",
+            "realm": "金丹六層",
+            "finite": true
+          },
+          {
+            "species": "硬黑蠍",
+            "realm": "金丹七層",
+            "finite": true
+          },
+          {
+            "species": "硬黑蠍",
+            "realm": "金丹八層",
+            "finite": true
+          },
+          {
+            "species": "硬黑蠍",
+            "realm": "金丹九層",
+            "finite": true
+          },
+          {
+            "species": "硬黑蠍",
+            "realm": "金丹圓滿",
+            "finite": true
+          },
+          {
+            "species": "硬黑蠍",
+            "realm": "元嬰一層",
+            "finite": true
+          },
+          {
+            "species": "硬黑蠍",
+            "realm": "元嬰二層",
+            "finite": true
+          },
+          {
+            "species": "硬黑蠍",
+            "realm": "元嬰三層",
+            "finite": true
+          },
+          {
+            "species": "硬黑蠍",
+            "realm": "元嬰四層",
+            "finite": true
+          },
+          {
+            "species": "硬黑蠍",
+            "realm": "元嬰五層",
+            "finite": true
+          },
+          {
+            "species": "硬黑蠍",
+            "realm": "元嬰六層",
+            "finite": true
+          },
+          {
+            "species": "硬黑蠍",
+            "realm": "元嬰七層",
+            "finite": true
+          },
+          {
+            "species": "硬黑蠍",
+            "realm": "元嬰八層",
+            "finite": true
+          },
+          {
+            "species": "硬黑蠍",
+            "realm": "元嬰九層",
+            "finite": true
+          },
+          {
+            "species": "硬黑蠍",
+            "realm": "元嬰圓滿",
+            "finite": true
+          },
+          {
+            "species": "硬黑蠍",
+            "realm": "化神一層",
+            "finite": true
+          },
+          {
+            "species": "硬黑蠍",
+            "realm": "化神二層",
+            "finite": true
+          },
+          {
+            "species": "硬黑蠍",
+            "realm": "化神三層",
+            "finite": true
+          },
+          {
+            "species": "硬黑蠍",
+            "realm": "化神四層",
+            "finite": true
+          },
+          {
+            "species": "硬黑蠍",
+            "realm": "化神五層",
+            "finite": true
+          },
+          {
+            "species": "硬黑蠍",
+            "realm": "化神六層",
+            "finite": true
+          },
+          {
+            "species": "硬黑蠍",
+            "realm": "化神七層",
+            "finite": true
+          },
+          {
+            "species": "硬黑蠍",
+            "realm": "化神八層",
+            "finite": true
+          },
+          {
+            "species": "硬黑蠍",
+            "realm": "化神九層",
+            "finite": true
+          },
+          {
+            "species": "硬黑蠍",
+            "realm": "化神圓滿",
+            "finite": true
+          },
+          {
+            "species": "硬黑蠍",
+            "realm": "煉虛一層",
+            "finite": true
+          },
+          {
+            "species": "硬黑蠍",
+            "realm": "煉虛二層",
+            "finite": true
+          },
+          {
+            "species": "硬黑蠍",
+            "realm": "煉虛三層",
+            "finite": true
+          },
+          {
+            "species": "硬黑蠍",
+            "realm": "煉虛四層",
+            "finite": true
+          },
+          {
+            "species": "硬黑蠍",
+            "realm": "煉虛五層",
+            "finite": true
+          },
+          {
+            "species": "硬黑蠍",
+            "realm": "煉虛六層",
+            "finite": true
+          },
+          {
+            "species": "硬黑蠍",
+            "realm": "煉虛七層",
+            "finite": true
+          },
+          {
+            "species": "硬黑蠍",
+            "realm": "煉虛八層",
+            "finite": true
+          },
+          {
+            "species": "硬黑蠍",
+            "realm": "煉虛九層",
+            "finite": true
+          },
+          {
+            "species": "硬黑蠍",
+            "realm": "煉虛圓滿",
+            "finite": true
+          },
+          {
+            "species": "硬黑蠍",
+            "realm": "合體一層",
+            "finite": true
+          },
+          {
+            "species": "硬黑蠍",
+            "realm": "合體二層",
+            "finite": true
+          },
+          {
+            "species": "硬黑蠍",
+            "realm": "合體三層",
+            "finite": true
+          },
+          {
+            "species": "硬黑蠍",
+            "realm": "合體四層",
+            "finite": true
+          },
+          {
+            "species": "硬黑蠍",
+            "realm": "合體五層",
+            "finite": true
+          },
+          {
+            "species": "硬黑蠍",
+            "realm": "合體六層",
+            "finite": true
+          },
+          {
+            "species": "硬黑蠍",
+            "realm": "合體七層",
+            "finite": true
+          },
+          {
+            "species": "硬黑蠍",
+            "realm": "合體八層",
+            "finite": true
+          },
+          {
+            "species": "硬黑蠍",
+            "realm": "合體九層",
+            "finite": true
+          },
+          {
+            "species": "硬黑蠍",
+            "realm": "合體圓滿",
+            "finite": true
+          },
+          {
+            "species": "硬黑蠍",
+            "realm": "大乘一層",
+            "finite": true
+          },
+          {
+            "species": "硬黑蠍",
+            "realm": "大乘二層",
+            "finite": true
+          },
+          {
+            "species": "硬黑蠍",
+            "realm": "大乘三層",
+            "finite": true
+          },
+          {
+            "species": "硬黑蠍",
+            "realm": "大乘四層",
+            "finite": true
+          },
+          {
+            "species": "硬黑蠍",
+            "realm": "大乘五層",
+            "finite": true
+          },
+          {
+            "species": "硬黑蠍",
+            "realm": "大乘六層",
+            "finite": true
+          },
+          {
+            "species": "硬黑蠍",
+            "realm": "大乘七層",
+            "finite": true
+          },
+          {
+            "species": "硬黑蠍",
+            "realm": "大乘八層",
+            "finite": true
+          },
+          {
+            "species": "硬黑蠍",
+            "realm": "大乘九層",
+            "finite": true
+          },
+          {
+            "species": "硬黑蠍",
+            "realm": "大乘圓滿",
+            "finite": true
+          },
+          {
+            "species": "靈珠蝶",
+            "realm": "金丹一層",
+            "finite": true
+          },
+          {
+            "species": "靈珠蝶",
+            "realm": "金丹二層",
+            "finite": true
+          },
+          {
+            "species": "靈珠蝶",
+            "realm": "金丹三層",
+            "finite": true
+          },
+          {
+            "species": "靈珠蝶",
+            "realm": "金丹四層",
+            "finite": true
+          },
+          {
+            "species": "靈珠蝶",
+            "realm": "金丹五層",
+            "finite": true
+          },
+          {
+            "species": "靈珠蝶",
+            "realm": "金丹六層",
+            "finite": true
+          },
+          {
+            "species": "靈珠蝶",
+            "realm": "金丹七層",
+            "finite": true
+          },
+          {
+            "species": "靈珠蝶",
+            "realm": "金丹八層",
+            "finite": true
+          },
+          {
+            "species": "靈珠蝶",
+            "realm": "金丹九層",
+            "finite": true
+          },
+          {
+            "species": "靈珠蝶",
+            "realm": "金丹圓滿",
+            "finite": true
+          },
+          {
+            "species": "靈珠蝶",
+            "realm": "元嬰一層",
+            "finite": true
+          },
+          {
+            "species": "靈珠蝶",
+            "realm": "元嬰二層",
+            "finite": true
+          },
+          {
+            "species": "靈珠蝶",
+            "realm": "元嬰三層",
+            "finite": true
+          },
+          {
+            "species": "靈珠蝶",
+            "realm": "元嬰四層",
+            "finite": true
+          },
+          {
+            "species": "靈珠蝶",
+            "realm": "元嬰五層",
+            "finite": true
+          },
+          {
+            "species": "靈珠蝶",
+            "realm": "元嬰六層",
+            "finite": true
+          },
+          {
+            "species": "靈珠蝶",
+            "realm": "元嬰七層",
+            "finite": true
+          },
+          {
+            "species": "靈珠蝶",
+            "realm": "元嬰八層",
+            "finite": true
+          },
+          {
+            "species": "靈珠蝶",
+            "realm": "元嬰九層",
+            "finite": true
+          },
+          {
+            "species": "靈珠蝶",
+            "realm": "元嬰圓滿",
+            "finite": true
+          },
+          {
+            "species": "靈珠蝶",
+            "realm": "化神一層",
+            "finite": true
+          },
+          {
+            "species": "靈珠蝶",
+            "realm": "化神二層",
+            "finite": true
+          },
+          {
+            "species": "靈珠蝶",
+            "realm": "化神三層",
+            "finite": true
+          },
+          {
+            "species": "靈珠蝶",
+            "realm": "化神四層",
+            "finite": true
+          },
+          {
+            "species": "靈珠蝶",
+            "realm": "化神五層",
+            "finite": true
+          },
+          {
+            "species": "靈珠蝶",
+            "realm": "化神六層",
+            "finite": true
+          },
+          {
+            "species": "靈珠蝶",
+            "realm": "化神七層",
+            "finite": true
+          },
+          {
+            "species": "靈珠蝶",
+            "realm": "化神八層",
+            "finite": true
+          },
+          {
+            "species": "靈珠蝶",
+            "realm": "化神九層",
+            "finite": true
+          },
+          {
+            "species": "靈珠蝶",
+            "realm": "化神圓滿",
+            "finite": true
+          },
+          {
+            "species": "靈珠蝶",
+            "realm": "煉虛一層",
+            "finite": true
+          },
+          {
+            "species": "靈珠蝶",
+            "realm": "煉虛二層",
+            "finite": true
+          },
+          {
+            "species": "靈珠蝶",
+            "realm": "煉虛三層",
+            "finite": true
+          },
+          {
+            "species": "靈珠蝶",
+            "realm": "煉虛四層",
+            "finite": true
+          },
+          {
+            "species": "靈珠蝶",
+            "realm": "煉虛五層",
+            "finite": true
+          },
+          {
+            "species": "靈珠蝶",
+            "realm": "煉虛六層",
+            "finite": true
+          },
+          {
+            "species": "靈珠蝶",
+            "realm": "煉虛七層",
+            "finite": true
+          },
+          {
+            "species": "靈珠蝶",
+            "realm": "煉虛八層",
+            "finite": true
+          },
+          {
+            "species": "靈珠蝶",
+            "realm": "煉虛九層",
+            "finite": true
+          },
+          {
+            "species": "靈珠蝶",
+            "realm": "煉虛圓滿",
+            "finite": true
+          },
+          {
+            "species": "靈珠蝶",
+            "realm": "合體一層",
+            "finite": true
+          },
+          {
+            "species": "靈珠蝶",
+            "realm": "合體二層",
+            "finite": true
+          },
+          {
+            "species": "靈珠蝶",
+            "realm": "合體三層",
+            "finite": true
+          },
+          {
+            "species": "靈珠蝶",
+            "realm": "合體四層",
+            "finite": true
+          },
+          {
+            "species": "靈珠蝶",
+            "realm": "合體五層",
+            "finite": true
+          },
+          {
+            "species": "靈珠蝶",
+            "realm": "合體六層",
+            "finite": true
+          },
+          {
+            "species": "靈珠蝶",
+            "realm": "合體七層",
+            "finite": true
+          },
+          {
+            "species": "靈珠蝶",
+            "realm": "合體八層",
+            "finite": true
+          },
+          {
+            "species": "靈珠蝶",
+            "realm": "合體九層",
+            "finite": true
+          },
+          {
+            "species": "靈珠蝶",
+            "realm": "合體圓滿",
+            "finite": true
+          },
+          {
+            "species": "靈珠蝶",
+            "realm": "大乘一層",
+            "finite": true
+          },
+          {
+            "species": "靈珠蝶",
+            "realm": "大乘二層",
+            "finite": true
+          },
+          {
+            "species": "靈珠蝶",
+            "realm": "大乘三層",
+            "finite": true
+          },
+          {
+            "species": "靈珠蝶",
+            "realm": "大乘四層",
+            "finite": true
+          },
+          {
+            "species": "靈珠蝶",
+            "realm": "大乘五層",
+            "finite": true
+          },
+          {
+            "species": "靈珠蝶",
+            "realm": "大乘六層",
+            "finite": true
+          },
+          {
+            "species": "靈珠蝶",
+            "realm": "大乘七層",
+            "finite": true
+          },
+          {
+            "species": "靈珠蝶",
+            "realm": "大乘八層",
+            "finite": true
+          },
+          {
+            "species": "靈珠蝶",
+            "realm": "大乘九層",
+            "finite": true
+          },
+          {
+            "species": "靈珠蝶",
+            "realm": "大乘圓滿",
+            "finite": true
+          }
+        ]
+      }
+    }
+  ],
+  "errors": [],
+  "completionClaim": "未通過新三寵正常取得全流程；公式測試不替代正常孵化／10心驗收。"
+}

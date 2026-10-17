@@ -1,0 +1,59 @@
+{
+  "searchedHistoricalSources": [
+    {
+      "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\最新定案母檔_0.7.0.json",
+      "sha256": "a1a4af97638f336459d5aa62950114ddf31fc4cecdf6dac0ccbb41b930ec8a6a",
+      "speciesMentions": {
+        "燐火狼": 0,
+        "硬黑蠍": 0,
+        "靈珠蝶": 0
+      }
+    },
+    {
+      "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\最新定案母檔_0.7.1.json",
+      "sha256": "2d051e18d0c6e4d23a1bfa65aae33ca054952958ba22dd92817b6063629c4768",
+      "speciesMentions": {
+        "燐火狼": 0,
+        "硬黑蠍": 0,
+        "靈珠蝶": 0
+      }
+    },
+    {
+      "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\最新定案母檔_0.7.2.json",
+      "sha256": "692a8e04a80f9719d3a633979ace2bb6d0bd26dc6fd0cc9dab1179940dd853f8",
+      "speciesMentions": {
+        "燐火狼": 0,
+        "硬黑蠍": 0,
+        "靈珠蝶": 0
+      }
+    },
+    {
+      "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄_設定母檔_V0.3.md",
+      "sha256": "931be381a1ed4ed9f3a524be79d2e2f7745885a0c3585a0242369b442ea2a261",
+      "speciesMentions": {
+        "燐火狼": 0,
+        "硬黑蠍": 0,
+        "靈珠蝶": 0
+      }
+    }
+  ],
+  "wordEvidence": "新寵物原稿交叉查核.json",
+  "currentSpeciesTable": "release-tools/v073/monsters.js",
+  "knownCoreRows": 11,
+  "missingQiAndFoundationRows": 49,
+  "existingFormalRules": [
+    {
+      "file": "baseline-scripts/88-jz360-integration.js",
+      "found": "妖物通用練氣／築基八核基準；不是新三寵個體偏科表。"
+    },
+    {
+      "file": "baseline-scripts/101-jzp-20261005.js",
+      "found": "金丹～大乘既有寵物成長公式與0★直接乘星倍率。"
+    },
+    {
+      "file": "baseline-scripts/115-jz-round26.js",
+      "found": "升星成本3／5／7／15／20獸魂晶。"
+    }
+  ],
+  "conclusion": "未找到新三寵完整練氣／築基個體八核或可直接引用的個體倍率。未將野外片段數值倒推為正式定案。"
+}

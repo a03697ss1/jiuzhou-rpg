@@ -1,0 +1,2466 @@
+[
+  {
+    "category": "equipment",
+    "name": "［無階］新手護符",
+    "key": "equipment-e20a1726",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［無階］新手項鍊",
+    "key": "equipment-e20bb47c",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［無階］新手戒指",
+    "key": "equipment-e204fbcc",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［無階］新手劍",
+    "key": "equipment-2852ab16",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［無階］新手刀",
+    "key": "equipment-2852aa89",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［無階］新手長槍",
+    "key": "equipment-e20b3bcd",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［無階］新手弓",
+    "key": "equipment-2852b79c",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［無階］新手拳套",
+    "key": "equipment-e2050d5b",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［無階］新手錘",
+    "key": "equipment-2852eba1",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［無階］新手寶珠",
+    "key": "equipment-e2044f41",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［無階］新手扇",
+    "key": "equipment-2852bad0",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［無階］新手葫蘆",
+    "key": "equipment-e2094792",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［無階］新手傘",
+    "key": "equipment-2852a921",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］靈鐵劍",
+    "key": "equipment-3c043e88",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］靈鐵刀",
+    "key": "equipment-3c043dfb",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］靈鐵長槍",
+    "key": "equipment-448c169b",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］靈鐵弓",
+    "key": "equipment-3c044b0e",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］靈鐵拳套",
+    "key": "equipment-4485e829",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］靈鐵錘",
+    "key": "equipment-3c047f13",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］靈鐵寶珠",
+    "key": "equipment-44852a0f",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］靈鐵扇",
+    "key": "equipment-3c044e42",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］靈鐵葫蘆",
+    "key": "equipment-448a2260",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］靈鐵傘",
+    "key": "equipment-3c043c93",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］青鋒劍",
+    "key": "equipment-3c043915",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］斷木刀",
+    "key": "equipment-3b44b817",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］鐵脊長槍",
+    "key": "equipment-42de6223",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］青藤弓",
+    "key": "equipment-3c02b4c9",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］硬革拳套",
+    "key": "equipment-368acab9",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］沉鐵錘",
+    "key": "equipment-3b640814",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］霜月劍",
+    "key": "equipment-3bfe20e9",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］赤紋刀",
+    "key": "equipment-3bdc4f01",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］月牙長槍",
+    "key": "equipment-2e1e13ff",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］青木弓",
+    "key": "equipment-3bfefc05",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］流雲拳套",
+    "key": "equipment-31756b0d",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］聚氣錘",
+    "key": "equipment-3ba99177",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］聚靈寶珠",
+    "key": "equipment-3a245a10",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］青紋寶珠",
+    "key": "equipment-4432c11b",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］清風羽扇",
+    "key": "equipment-31d87565",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］靈紋道扇",
+    "key": "equipment-44347b0f",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］聚氣葫蘆",
+    "key": "equipment-39875c7c",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］養靈葫蘆",
+    "key": "equipment-45623bb1",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］青竹靈傘",
+    "key": "equipment-4432072f",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］流雲道傘",
+    "key": "equipment-317ae0ee",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］青藤劍",
+    "key": "equipment-3c02a843",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］赤銅刀",
+    "key": "equipment-3bdee8c7",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］玄鐵重錘",
+    "key": "equipment-3449b894",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］碧木弓",
+    "key": "equipment-3b8bdc1a",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］楊木長槍",
+    "key": "equipment-2efacf8c",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］羽爪拳套",
+    "key": "equipment-39526449",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］雀羽弓",
+    "key": "equipment-3bffd1fe",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］毒牙短刀",
+    "key": "equipment-3047b772",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］蛛絲靈弓",
+    "key": "equipment-3cbf55ba",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］角鋒槍",
+    "key": "equipment-3bd1a2d5",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］雷角槍",
+    "key": "equipment-3c01e3ba",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］碧芯劍",
+    "key": "equipment-3b8f24ed",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］導靈劍",
+    "key": "equipment-3b26491b",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］玄靈戰刀",
+    "key": "equipment-344f3dcc",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］靈楊長弓",
+    "key": "equipment-43eaefb6",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］碧芯寶珠",
+    "key": "equipment-3657104a",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］玄靈寶珠",
+    "key": "equipment-344e9ea6",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］雷角寶珠",
+    "key": "equipment-44395a5d",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］青藤羽扇",
+    "key": "equipment-44583b34",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］雀羽靈扇",
+    "key": "equipment-44019e74",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］玄羽道扇",
+    "key": "equipment-33fc8385",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］碧木葫蘆",
+    "key": "equipment-35f4b2d4",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］凝魂葫蘆",
+    "key": "equipment-25165b78",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］血靈葫蘆",
+    "key": "equipment-3dc078bb",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］蛛絲靈傘",
+    "key": "equipment-3cbf473f",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］青羽道傘",
+    "key": "equipment-44431348",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］玄靈法傘",
+    "key": "equipment-3450865f",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］玄水扇",
+    "key": "equipment-3b79335f",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］赤銅斬刀",
+    "key": "equipment-4000e3ed",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］毒囊葫蘆",
+    "key": "equipment-2fe1faeb",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］鍛造大錘",
+    "key": "equipment-42acc66e",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］流雲槍",
+    "key": "equipment-3b66e664",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］水舞扇",
+    "key": "equipment-3b606765",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］讓力大錘",
+    "key": "equipment-3e3c52f1",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］流水劍",
+    "key": "equipment-3b61a222",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］青木長弦弓",
+    "key": "equipment-390820d6",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］輪輪刀",
+    "key": "equipment-3be52908",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［中階］岩茗槍",
+    "key": "equipment-83114237",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［中階］玄水拳套",
+    "key": "equipment-e92456bc",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］粗布頭盔",
+    "key": "equipment-379eea4b",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］粗布衣",
+    "key": "equipment-3b99b1df",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］粗布褲",
+    "key": "equipment-3b99b2ae",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］粗布鞋",
+    "key": "equipment-3b99c107",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］青紋布帽",
+    "key": "equipment-4432eb0b",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］青紋短袍",
+    "key": "equipment-443638b1",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］青紋長褲",
+    "key": "equipment-4439cd0c",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］青紋布靴",
+    "key": "equipment-44332442",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］鐵邊布帽",
+    "key": "equipment-4311cf07",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］護身布衣",
+    "key": "equipment-3f119c8c",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］韌布長褲",
+    "key": "equipment-43fcc54a",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］輕行布靴",
+    "key": "equipment-409eb0a0",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］雲紋束冠",
+    "key": "equipment-44085cf2",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］素靈法帽",
+    "key": "equipment-38aed4e8",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］雲紋短衣",
+    "key": "equipment-440a94e7",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］素靈法袍",
+    "key": "equipment-38aeff38",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］雲紋護腿",
+    "key": "equipment-440cebb9",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］素靈長褲",
+    "key": "equipment-38b3eb7b",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］雲紋輕靴",
+    "key": "equipment-440d71d0",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］素靈步履",
+    "key": "equipment-38aea680",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］羽行帽",
+    "key": "equipment-3baa7836",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］狼皮帽",
+    "key": "equipment-3b787593",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］獸骨戰盔",
+    "key": "equipment-3456998c",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］玄靈戰盔",
+    "key": "equipment-344f62a0",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］狐絨衣",
+    "key": "equipment-3b78cb13",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］蟲甲護衣",
+    "key": "equipment-3d1dec04",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］硬骨護衣",
+    "key": "equipment-369c1140",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］赤尾披衣",
+    "key": "equipment-3f34fcaa",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］蛛絲輕衣",
+    "key": "equipment-3cbe80dd",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］黑蠍護腿",
+    "key": "equipment-47ca35fc",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］毒囊護腿",
+    "key": "equipment-2fe2d0d8",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］靈鐵護腿",
+    "key": "equipment-448af84d",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］雀羽靴",
+    "key": "equipment-3c000a5f",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］硬骨戰靴",
+    "key": "equipment-369720b8",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］龜甲帽",
+    "key": "equipment-3c1fcc2f",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］龜甲衣",
+    "key": "equipment-3c1ff655",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］龜甲靴",
+    "key": "equipment-3c200566",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］玄靈道衣",
+    "key": "equipment-34550a6c",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］碧木道衣",
+    "key": "equipment-35f62649",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］凝魂靈袍",
+    "key": "equipment-2518a6c2",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］赤尾靈袍",
+    "key": "equipment-3f3b5bd7",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］青羽道帽",
+    "key": "equipment-444320ed",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］碧芯靈帽",
+    "key": "equipment-365e2995",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］凝魂道帽",
+    "key": "equipment-2517a4c7",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］玄靈道褲",
+    "key": "equipment-34550b3b",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］玄靈步履",
+    "key": "equipment-3450659c",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］碧魂靈褲",
+    "key": "equipment-36ba945d",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］碧魂輕履",
+    "key": "equipment-36b96963",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］凝魂道褲",
+    "key": "equipment-2517cfbc",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］凝魂靈靴",
+    "key": "equipment-2518b5a9",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］靈羽法褲",
+    "key": "equipment-443a73ea",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］靈羽踏雲靴",
+    "key": "equipment-439305c4",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］流風靴",
+    "key": "equipment-3b674915",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］水紋靈衣",
+    "key": "equipment-30a06c6a",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］踏浪靴",
+    "key": "equipment-3bdd31e1",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］厚岩戰衣",
+    "key": "equipment-24f1857a",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］岩紋護腿",
+    "key": "equipment-298e36a2",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］赤炎戰衣",
+    "key": "equipment-3f812e15",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］烈行戰靴",
+    "key": "equipment-32d90f80",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］青木額冠",
+    "key": "equipment-43e7c441",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］翠藤衣",
+    "key": "equipment-3baadb27",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］藤影靴",
+    "key": "equipment-3bbcd74f",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］雷紋護額",
+    "key": "equipment-440f4862",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］紫電戰衣",
+    "key": "equipment-38b1941b",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］疾雷靴",
+    "key": "equipment-3b86f1e3",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］回瀾冠",
+    "key": "equipment-3b0e14c8",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］玄水靈衣",
+    "key": "equipment-33b42c03",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］潮生護腿",
+    "key": "equipment-31f8b4d1",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］土靈頭盔",
+    "key": "equipment-276d9ec8",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］勁地靴",
+    "key": "equipment-3afbe10d",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［中階］赤炎戰衣",
+    "key": "equipment-f4f7de25",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［中階］厚岩戰衣",
+    "key": "equipment-da68358a",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［中階］水紋靈衣",
+    "key": "equipment-e6171c7a",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［中階］流風靴",
+    "key": "equipment-83525705",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［中階］踏浪靴",
+    "key": "equipment-83c83fd1",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［中階］土晶戰衣",
+    "key": "equipment-dc269272",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］青玉指環",
+    "key": "equipment-440febf8",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］靈紋項鍊",
+    "key": "equipment-44359aa0",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］聚靈護符",
+    "key": "equipment-3a2a21f5",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］赤銅吊墜",
+    "key": "equipment-3ffec7eb",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］赤銅指環",
+    "key": "equipment-4000b4a2",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］蛇鱗墜",
+    "key": "equipment-3bc74c74",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］蛟鱗戒",
+    "key": "equipment-3bc7b002",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］妖羽耳飾",
+    "key": "equipment-28314f0a",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］雀羽墜",
+    "key": "equipment-3bffcb87",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］獸牙項鍊",
+    "key": "equipment-33c5ea3e",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］利爪戒",
+    "key": "equipment-3afcb559",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］赤尾玉佩",
+    "key": "equipment-3f36ce92",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］碧芯吊墜",
+    "key": "equipment-3655ff72",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］導靈指環",
+    "key": "equipment-29a54dbb",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］魂紋佩",
+    "key": "equipment-3c105ac8",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］凝魂墜",
+    "key": "equipment-3b00887f",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］玄靈道戒",
+    "key": "equipment-3454e41b",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］碧魂靈墜",
+    "key": "equipment-36ba63c7",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］羽靈玉佩",
+    "key": "equipment-39dfb223",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］血靈墜",
+    "key": "equipment-3bcc36dc",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］玄魂指環",
+    "key": "equipment-345e67ff",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］雷紋項鍊",
+    "key": "equipment-4410c891",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］潤生指環",
+    "key": "equipment-31ef36bc",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］回瀾項鍊",
+    "key": "equipment-26bd9dbd",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［中階］雷紋項鍊",
+    "key": "equipment-f98778a1",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［中階］潤生指環",
+    "key": "equipment-e765e6cc",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［中階］回瀾項鍊",
+    "key": "equipment-dc344dcd",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］狼皮護頸",
+    "key": "equipment-339c4f0b",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］蟲甲護片",
+    "key": "equipment-3d1dd5e8",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］黑蠍甲環",
+    "key": "equipment-47c776d2",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］獸骨頸甲",
+    "key": "equipment-345d22e2",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］硬骨獸甲",
+    "key": "equipment-3699162e",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］血獸環",
+    "key": "equipment-3bc7fcc0",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］濃血戰環",
+    "key": "equipment-32621ad5",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］赤尾靈飾",
+    "key": "equipment-3f3b6c48",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］骨粉護符",
+    "key": "equipment-45bad5e8",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］血精獸符",
+    "key": "equipment-3d5ac064",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］靈楊獸牌",
+    "key": "equipment-43e6e50e",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］硬骨戰甲",
+    "key": "equipment-3696fe76",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］血魄獸環",
+    "key": "equipment-3dcd4ef4",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］凝魂獸佩",
+    "key": "equipment-2514176e",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］妖元靈核",
+    "key": "equipment-278571d5",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］龜甲護片",
+    "key": "equipment-47dfa5fe",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］龜甲背甲",
+    "key": "equipment-47de5e34",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］碧靈獸環",
+    "key": "equipment-36a73c31",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］玄靈獸甲",
+    "key": "equipment-345178b6",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］凝魂獸鈴",
+    "key": "equipment-25145a39",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［特殊］靈水劍",
+    "key": "equipment-15e61689",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［特殊］秘術弓",
+    "key": "equipment-157b0960",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［特殊］鹿絞槍",
+    "key": "equipment-16035756",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［特殊］火霞刀",
+    "key": "equipment-155964b5",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［特殊］問心劍",
+    "key": "equipment-14eced21",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［特殊］破軍刀",
+    "key": "equipment-15759c6f",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［特殊］問道槍",
+    "key": "equipment-14f2e5d1",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［特殊］逐星弓",
+    "key": "equipment-15ca4d4c",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［特殊］破境拳套",
+    "key": "equipment-98748c6b",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［特殊］鎮岳錘",
+    "key": "equipment-15d6f15b",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［特殊］問靈寶珠",
+    "key": "equipment-8982b8db",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［特殊］清虛道扇",
+    "key": "equipment-94851862",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［特殊］納靈葫蘆",
+    "key": "equipment-9b9888ae",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［特殊］玄機靈傘",
+    "key": "equipment-969c6783",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［特殊］土靈盔",
+    "key": "equipment-14fa9853",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［特殊］元華斗笠",
+    "key": "equipment-8764590d",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［特殊］忡靈頭盔",
+    "key": "equipment-8e581aa6",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［特殊］忡靈戰甲",
+    "key": "equipment-8e518f61",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［特殊］忡靈鎖褲",
+    "key": "equipment-8e579ebb",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［特殊］忡靈戰靴",
+    "key": "equipment-8e51b1a3",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［特殊］問道戰衣",
+    "key": "equipment-896970af",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［特殊］問道戰靴",
+    "key": "equipment-89697fc0",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［特殊］問靈道冠",
+    "key": "equipment-8988edde",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［特殊］玄心道袍",
+    "key": "equipment-9673f431",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［特殊］踏虛靈履",
+    "key": "equipment-a31655e1",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［特殊］問天戰衣",
+    "key": "equipment-889a5c05",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［特殊］水心靈墜",
+    "key": "equipment-9321a53b",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［特殊］厚土護佩",
+    "key": "equipment-87d0d4ef",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［特殊］問道護符",
+    "key": "equipment-896e630b",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［特殊］戰心指環",
+    "key": "equipment-8e8de5f4",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［特殊］問心戒",
+    "key": "equipment-14ecfca6",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［特殊］問道佩",
+    "key": "equipment-14f2cb6d",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［特殊］破境項鍊",
+    "key": "equipment-987b338c",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［特殊］道心靈墜",
+    "key": "equipment-a38d18bc",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［特殊］問天玉佩",
+    "key": "equipment-889c3cd2",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［特殊］破天戰佩",
+    "key": "equipment-9876da06",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［特殊］獸牙護符",
+    "key": "equipment-96b3a0c8",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［特殊］靈獸頸環",
+    "key": "equipment-a700e540",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［特殊］戰獸爪環",
+    "key": "equipment-8ed9b5a6",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［特殊］護獸靈甲",
+    "key": "equipment-a1a1b223",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［特殊］疾獸鈴",
+    "key": "equipment-15695062",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［特殊］萬獸靈環",
+    "key": "equipment-9e5100cc",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［特殊］破天獸牙",
+    "key": "equipment-987914ae",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［特殊］萬靈道珠",
+    "key": "equipment-9ed69821",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［特殊］不滅獸甲",
+    "key": "equipment-85a0e5aa",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［特殊］天獸靈鈴",
+    "key": "equipment-8ac3cc33",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［初階］狐絨靈環",
+    "key": "equipment-33a2d9b8",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［特殊］清風靈葫",
+    "key": "equipment-94cac53e",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "equipment",
+    "name": "［特殊］靈水傘",
+    "key": "equipment-15e61494",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "medicine",
+    "name": "［初階］治癒丹",
+    "key": "medicine-3b60e06a",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "medicine",
+    "name": "［初階］靈癒丹",
+    "key": "medicine-3c009bb7",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "medicine",
+    "name": "［初階］提靈丹",
+    "key": "medicine-3b436409",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "medicine",
+    "name": "［初階］碧元丹",
+    "key": "medicine-3b892485",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "medicine",
+    "name": "［初階］百草丹",
+    "key": "medicine-3b871756",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "medicine",
+    "name": "［初階］養元丹",
+    "key": "medicine-3c02b828",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "medicine",
+    "name": "［初階］血氣丹",
+    "key": "medicine-3bc6f2fe",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "medicine",
+    "name": "［初階］淬體丹",
+    "key": "medicine-3b69c519",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "medicine",
+    "name": "［初階］聚靈丹",
+    "key": "medicine-3bae8613",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "medicine",
+    "name": "［初階］凝元丹",
+    "key": "medicine-3af7883b",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "medicine",
+    "name": "［初階］避毒丹",
+    "key": "medicine-3be5ddae",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "medicine",
+    "name": "［初階］血靈丹",
+    "key": "medicine-3bcc2c79",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "medicine",
+    "name": "［初階］獸元丹",
+    "key": "medicine-3b75af16",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "medicine",
+    "name": "［初階］妖元丹",
+    "key": "medicine-3b1485b4",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "medicine",
+    "name": "［初階］醒神丹",
+    "key": "medicine-3beb89f5",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "medicine",
+    "name": "［初階］明目丹",
+    "key": "medicine-3b47e3e1",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "medicine",
+    "name": "［初階］靈息丹",
+    "key": "medicine-3bfdf53a",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "medicine",
+    "name": "［特殊］獸靈果丹",
+    "key": "medicine-9739c185",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "medicine",
+    "name": "［特殊］靈獸露丹",
+    "key": "medicine-a7009f0f",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "medicine",
+    "name": "［初階］氣血藥水",
+    "key": "medicine-30c08ce4",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "medicine",
+    "name": "［初階］靈力藥水",
+    "key": "medicine-4393f33a",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "medicine",
+    "name": "［初階］清露藥水",
+    "key": "medicine-31d3c234",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "medicine",
+    "name": "［初階］凝靈藥水",
+    "key": "medicine-250781f2",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "medicine",
+    "name": "［初階］百靈藥水",
+    "key": "medicine-35ae0db1",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "medicine",
+    "name": "［初階］濃縮氣血藥水",
+    "key": "medicine-993de82f",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "medicine",
+    "name": "［初階］清神藥水",
+    "key": "medicine-3163c960",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "medicine",
+    "name": "［初階］醒目藥水",
+    "key": "medicine-4183b843",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "medicine",
+    "name": "［初階］寧息藥水",
+    "key": "medicine-28c9df0f",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "gift",
+    "name": "［禮物］匠心木槌",
+    "key": "gift-809afc15",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "gift",
+    "name": "［禮物］厚土酒杯",
+    "key": "gift-80b71a70",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "gift",
+    "name": "［禮物］古方丹冊",
+    "key": "gift-81075814",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "gift",
+    "name": "［禮物］墨香書冊",
+    "key": "gift-83f7a7d1",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "gift",
+    "name": "［禮物］山水畫卷",
+    "key": "gift-85077d1d",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "gift",
+    "name": "［禮物］山紋護腕",
+    "key": "gift-85498d86",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "gift",
+    "name": "［禮物］山茶花束",
+    "key": "gift-855f8b01",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "gift",
+    "name": "［禮物］彩繪紙鳶",
+    "key": "gift-86a68b6c",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "gift",
+    "name": "［禮物］彩羽風車",
+    "key": "gift-86aecc24",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "gift",
+    "name": "［禮物］手繪山河圖",
+    "key": "gift-764a8c47",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "gift",
+    "name": "［禮物］招財玉算盤",
+    "key": "gift-850695c2",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "gift",
+    "name": "［禮物］星砂琉璃珠",
+    "key": "gift-a9aca615",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "gift",
+    "name": "［禮物］星紋棋譜",
+    "key": "gift-89abd44b",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "gift",
+    "name": "［禮物］暖玉煙斗",
+    "key": "gift-89bf1edf",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "gift",
+    "name": "［禮物］月紋燈籠",
+    "key": "gift-8a16c669",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "gift",
+    "name": "［禮物］木蘭髮帶",
+    "key": "gift-8a4c785b",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "gift",
+    "name": "［禮物］東海貝雕",
+    "key": "gift-8a0f610c",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "gift",
+    "name": "［禮物］桂花糕",
+    "key": "gift-c26925b8",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "gift",
+    "name": "［禮物］桂花香囊",
+    "key": "gift-8abf63ce",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "gift",
+    "name": "［禮物］水月髮釵",
+    "key": "gift-8c2311a9",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "gift",
+    "name": "［禮物］清心茶壺",
+    "key": "gift-8cd80ff0",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "gift",
+    "name": "［禮物］清香茶葉",
+    "key": "gift-8db15795",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "gift",
+    "name": "［禮物］烈陽酒葫",
+    "key": "gift-8ee8c35c",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "gift",
+    "name": "［禮物］熱血戰旗",
+    "key": "gift-8f176724",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "gift",
+    "name": "［禮物］獸紋護符",
+    "key": "gift-8fc13ef0",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "gift",
+    "name": "［禮物］獸紋鈴鐺",
+    "key": "gift-8fc228e7",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "gift",
+    "name": "［禮物］玄木算籌",
+    "key": "gift-8f729f47",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "gift",
+    "name": "［禮物］玄鐵鎮紙",
+    "key": "gift-901ea8aa",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "gift",
+    "name": "［禮物］玉石棋子",
+    "key": "gift-8fb1877d",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "gift",
+    "name": "［禮物］琉璃小瓶",
+    "key": "gift-8fdd5e6f",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "gift",
+    "name": "［禮物］琉璃藥瓶",
+    "key": "gift-8fe26f59",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "gift",
+    "name": "［禮物］白玉髮簪",
+    "key": "gift-90fed136",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "gift",
+    "name": "［禮物］百味藥香",
+    "key": "gift-90882557",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "gift",
+    "name": "［禮物］百花蜜糕",
+    "key": "gift-9135c4fa",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "gift",
+    "name": "［禮物］百草香盒",
+    "key": "gift-913a36b2",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "gift",
+    "name": "［禮物］竹編小籃",
+    "key": "gift-9327fcf1",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "gift",
+    "name": "［禮物］精緻禮盒",
+    "key": "gift-93f9c12f",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "gift",
+    "name": "［禮物］糖葫蘆",
+    "key": "gift-c2b6a403",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "gift",
+    "name": "［禮物］糖霜靈果串",
+    "key": "gift-f86a75ca",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "gift",
+    "name": "［禮物］紅繩手串",
+    "key": "gift-9418a6d9",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "gift",
+    "name": "［禮物］紙鶴",
+    "key": "gift-e53fcfc9",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "gift",
+    "name": "［禮物］繡紋香囊",
+    "key": "gift-94b87129",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "gift",
+    "name": "［禮物］老釀竹酒",
+    "key": "gift-95bfcc26",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "gift",
+    "name": "［禮物］聚財銅錢串",
+    "key": "gift-2524dce0",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "gift",
+    "name": "［禮物］落星花燈",
+    "key": "gift-970996c7",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "gift",
+    "name": "［禮物］蜜漬靈果",
+    "key": "gift-987c2172",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "gift",
+    "name": "［禮物］赤紋刀穗",
+    "key": "gift-9b82d74c",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "gift",
+    "name": "［禮物］道衛令匣",
+    "key": "gift-9d0229b5",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "gift",
+    "name": "［禮物］金絲酒盞",
+    "key": "gift-9d8f09db",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "gift",
+    "name": "［禮物］錦紋錢袋",
+    "key": "gift-9e28d39c",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "gift",
+    "name": "［禮物］錦繡禮冊",
+    "key": "gift-9e2a8b65",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "gift",
+    "name": "［禮物］鎮岳茶磚",
+    "key": "gift-9deb3e77",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "gift",
+    "name": "［禮物］雕紋酒壺",
+    "key": "gift-9fd515cc",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "gift",
+    "name": "［禮物］雕花木簪",
+    "key": "gift-9fe5520c",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "gift",
+    "name": "［禮物］雲紋手帕",
+    "key": "gift-9fdc97d1",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "gift",
+    "name": "［禮物］雲紋折扇匣",
+    "key": "gift-5bb8588d",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "gift",
+    "name": "［禮物］雲遊筆記",
+    "key": "gift-a02809b8",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "gift",
+    "name": "［禮物］靈木棋盤",
+    "key": "gift-9fb268e7",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "gift",
+    "name": "［禮物］靈獸木雕",
+    "key": "gift-9fe08e6b",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "gift",
+    "name": "［禮物］靈香木盒",
+    "key": "gift-a06f9049",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "gift",
+    "name": "［禮物］靈香禮盒",
+    "key": "gift-a071ce83",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "gift",
+    "name": "［禮物］青玉小佩",
+    "key": "gift-9fe3ba7f",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "gift",
+    "name": "［禮物］青瓷茶杯",
+    "key": "gift-9fedee2c",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "gift",
+    "name": "［禮物］青羽箭飾",
+    "key": "gift-a015a76a",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "gift",
+    "name": "［禮物］青鋒劍穗",
+    "key": "gift-a0582fb8",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "gift",
+    "name": "［禮物］風鈴掛飾",
+    "key": "gift-a0f384dd",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "gift",
+    "name": "［禮物］鴛鴦糕",
+    "key": "gift-c332bc7c",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "quest-item",
+    "name": "［任務］命符",
+    "key": "quest-item-7d2c32b4",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "quest-item",
+    "name": "［任務］無名靈印",
+    "key": "quest-item-ef6f26df",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  },
+  {
+    "category": "quest-item",
+    "name": "［任務］無聲黑珠",
+    "key": "quest-item-f016d80b",
+    "status": "後續獨立圖示待補；目前保留原占位",
+    "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+  }
+]

@@ -1,0 +1,15 @@
+(function(){'use strict';const N=JZ073,R=JZR,U=JZ071,D=JZ073_SIDE1018;
+const side=d=>d?.type==='支線'&&['015','016'].includes(d.key);
+N.sideEligible=d=>side(d)&&N.done('038')&&N.now()-(N.quest('038').completedAt??N.quest('038').claimedAt??Infinity)>=2880&&(d.key==='015'||N.state().branch==='B'&&N.done('036B')&&N.state().story.bChat);
+const offer=N.canOffer;N.canOffer=function(d){return side(d)?!battle&&!N.quest(d.id)&&N.sideEligible(d):offer.apply(this,arguments);};
+for(const d of N.side){d.partial=false;Object.assign(R56_QUESTS[d.id],d,{reward:U.rewardText(d.reward)});}
+N.playSide1018=key=>{const d=N.side.find(d=>d.key===key);if(!d||battle||S.place!==d.place||!N.sideEligible(d)||N.quest(d.id)?.progress.sideComplete)return false;const q=N.makeQuest(d),p=q.progress;p.started=true;p.sideCursor??=0;const rows=N.clone(D[key]);N.flow={rows,index:Math.min(rows.length,p.sideCursor),title:'［支線］'+d.title,sideKey:key,finish:()=>{p.sideCursor=rows.length;p.sideComplete=true;if(q.claimed){if(key==='016'){N.state().story.qiuTenGift=true;N.state().story.familyQuestionKnown=true;}else N.state().story.dangerZoneKnown=true;closeModal();R.save();render();}else N.complete(d.id);}};N.paintStory();return true;};
+const accept=N.acceptStory;N.acceptStory=function(key,type){return side(N.def(key))&&type==='支線'?N.playSide1018(key):accept.apply(this,arguments);};
+const report=N.reportStory;N.reportStory=function(id){const d=N.def(id);return side(d)?N.playSide1018(d.key):report.apply(this,arguments);};
+const npcTasks=r56OpenNpcTasks;r56OpenNpcTasks=function(name){const out=npcTasks.apply(this,arguments);for(const d of N.side){const q=N.quest(d.id);if(q?.claimed&&!q.progress.sideComplete&&d.npc===name&&S.place===d.place&&N.sideEligible(d))document.getElementById('modalBody')?.insertAdjacentHTML('beforeend','<button onclick="JZ073.playSide1018(\''+d.key+'\')">補讀完整［支線］'+d.title+'（不重複領獎）</button>');}return out;};
+const paint=N.paintStory;N.paintStory=function(){const f=N.flow;if(f?.sideKey){const q=N.quest('jz073-S'+f.sideKey);if(q){q.progress.sideCursor=f.index;R.save();}}return paint.apply(this,arguments);};
+const complete=N.complete;N.complete=function(id){const d=N.def(id);if(side(d)&&(!N.sideEligible(d)||!N.quest(id)?.progress.sideComplete))return false;const out=complete.apply(this,arguments);if(out&&d?.key==='015')N.state().story.dangerZoneKnown=true;if(out&&d?.key==='016'){const s=N.state().story;s.qiuTenGift=true;s.familyQuestionKnown=true;s.fatherAliveConfirmed=false;R.save();}return out;};
+const receive=r58ReceiveGift;r58ReceiveGift=function(name){if(name!=='邱山河')return receive.apply(this,arguments);const s=N.state().story,allowed=N.sideEligible(N.def('SQ-DZ-016'))&&N.quest('jz073-S016')?.progress.sideComplete,flag=s.qiuTenGift;if(!allowed)s.qiuTenGift=false;try{return receive.apply(this,arguments);}finally{if(!allowed)s.qiuTenGift=flag;}};
+N.pending=N.pending.filter(x=>x.id!=='B線支線016記載衝突'&&!/支線.*原稿|015\/016|與山河聊聊.*原稿/.test(x.id+' '+x.reason));
+N.note('L23','已實裝','015／016完整原稿逐句接入、可存檔續讀；038後兩日、B線036B、一次性獎勵與邱山河10心收禮資格。');
+})();

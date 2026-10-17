@@ -1,6 +1,6 @@
 from pathlib import Path
 import json,re,base64,hashlib
-P=Path(__file__).resolve().parent;R=P.parents[1];O=R/'V0.7.3_獨立測試_2026-10-17'
+P=Path(__file__).resolve().parent;R=P.parents[1];O=R/'V0.7.3_部分項目補完_2026-10-18'
 baseline=json.loads((P/'baseline.json').read_text('utf8'))
 assets=R/'新增美術_2026-10-16'
 art={k:assets/v for k,v in {'長右':'災獸長右_完整透明立繪.png','財寶怨靈':'財寶怨靈_完整透明立繪.png','燐火狼':'燐火狼_完整透明立繪.png','硬黑蠍':'硬黑蠍_完整透明立繪.png','靈珠蝶':'靈珠蝶_完整透明立繪.png','陸刑舟':'陸刑舟_完整透明立繪.png','陸景和':'陸景和_完整透明立繪.png','黑衣人01':'黑衣人01_完整透明立繪.png','黑衣人02':'黑衣人02_完整透明立繪.png','黑衣人03':'黑衣人03_完整透明立繪.png','黑潮禁岸':'黑潮禁岸_地圖場景.png','深窟':'雷鳴沼地下深窟_地圖場景.png','黑潮戰鬥':'黑潮禁岸_戰鬥背景.png','深窟戰鬥':'雷鳴沼地下深窟_戰鬥背景.png'}.items()}
@@ -27,7 +27,9 @@ def apply(text,standalone):
  code='\n<style id="jz073-style">'+(P/'style.css').read_text('utf8')+'</style>\n'
  images={k:('data:image/png;base64,'+base64.b64encode(v.read_bytes()).decode() if standalone else '/新增美術_2026-10-16/'+v.name) for k,v in art.items()}
  code+='<script id="jz073-assets">window.JZ073_ART='+json.dumps(images,ensure_ascii=False).replace('</','<\\/')+';</script>\n'
- for name in ['core','economy','monsters','combat','story-data','humans','quests','world','commissions','pets','codex','ui','completion','clarifications','b-data','b-story','a-data','a-story','npc-generation','test-entry']:
+ materials={v.stem:('data:image/png;base64,'+base64.b64encode(v.read_bytes()).decode() if standalone else '/素材美術_2026-10-18/'+v.name) for v in (R/'素材美術_2026-10-18').glob('*.png')}
+ code+='<script id="jz073-material-assets">window.JZ073_MATERIAL_ART='+json.dumps(materials,ensure_ascii=False).replace('</','<\\/')+';</script>\n'
+ for name in ['core','economy','monsters','combat','story-data','humans','quests','world','commissions','pets','codex','ui','completion','clarifications','b-data','b-story','a-data','a-story','npc-generation','test-entry','side1018-data','side1018','material1018','pet1018','status1018','release1018']:
   f=P/(name+'.js')
   if f.exists():code+='<script id="jz073-'+name+'">'+f.read_text('utf8')+'</script>\n'
  return text+code

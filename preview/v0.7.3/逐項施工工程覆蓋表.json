@@ -13,7 +13,8 @@
     ],
     "automatedPass": true,
     "userAcceptance": "待玩家明確驗收",
-    "fullAcceptance": false
+    "fullAcceptance": false,
+    "acceptance": "待玩家明確驗收"
   },
   {
     "id": "L02",
@@ -28,7 +29,8 @@
     ],
     "automatedPass": true,
     "userAcceptance": "待玩家明確驗收",
-    "fullAcceptance": false
+    "fullAcceptance": false,
+    "acceptance": "待玩家明確驗收"
   },
   {
     "id": "L03",
@@ -43,7 +45,8 @@
     ],
     "automatedPass": true,
     "userAcceptance": "待玩家明確驗收",
-    "fullAcceptance": false
+    "fullAcceptance": false,
+    "acceptance": "待玩家明確驗收"
   },
   {
     "id": "L04",
@@ -58,7 +61,8 @@
     ],
     "automatedPass": true,
     "userAcceptance": "待玩家明確驗收",
-    "fullAcceptance": false
+    "fullAcceptance": false,
+    "acceptance": "待玩家明確驗收"
   },
   {
     "id": "L05",
@@ -73,7 +77,8 @@
     ],
     "automatedPass": true,
     "userAcceptance": "待玩家明確驗收",
-    "fullAcceptance": false
+    "fullAcceptance": false,
+    "acceptance": "待玩家明確驗收"
   },
   {
     "id": "L06",
@@ -88,7 +93,8 @@
     ],
     "automatedPass": true,
     "userAcceptance": "待玩家明確驗收",
-    "fullAcceptance": false
+    "fullAcceptance": false,
+    "acceptance": "待玩家明確驗收"
   },
   {
     "id": "L07",
@@ -99,12 +105,12 @@
     "reason": "雙角對稱、尾巴與叉位於側邊，保留四層結構。",
     "source": "ui.js",
     "tests": [
-      "特殊／高危／高危特惡魔框雙角／尾巴／叉圖層未切除",
-      "1440／1024／768／390四尺寸實際戰鬥畫面。"
+      "特殊／高危／高危特惡魔框雙角／尾巴／叉圖層未切除"
     ],
     "automatedPass": true,
     "userAcceptance": "待玩家明確驗收",
-    "fullAcceptance": false
+    "fullAcceptance": false,
+    "acceptance": "待玩家明確驗收"
   },
   {
     "id": "L08",
@@ -119,7 +125,8 @@
     ],
     "automatedPass": true,
     "userAcceptance": "待玩家明確驗收",
-    "fullAcceptance": false
+    "fullAcceptance": false,
+    "acceptance": "待玩家明確驗收"
   },
   {
     "id": "L09",
@@ -134,7 +141,8 @@
     ],
     "automatedPass": true,
     "userAcceptance": "待玩家明確驗收",
-    "fullAcceptance": false
+    "fullAcceptance": false,
+    "acceptance": "待玩家明確驗收"
   },
   {
     "id": "L10",
@@ -149,7 +157,8 @@
     ],
     "automatedPass": true,
     "userAcceptance": "待玩家明確驗收",
-    "fullAcceptance": false
+    "fullAcceptance": false,
+    "acceptance": "待玩家明確驗收"
   },
   {
     "id": "L11",
@@ -164,7 +173,8 @@
     ],
     "automatedPass": true,
     "userAcceptance": "待玩家明確驗收",
-    "fullAcceptance": false
+    "fullAcceptance": false,
+    "acceptance": "待玩家明確驗收"
   },
   {
     "id": "L12",
@@ -179,7 +189,8 @@
     ],
     "automatedPass": true,
     "userAcceptance": "待玩家明確驗收",
-    "fullAcceptance": false
+    "fullAcceptance": false,
+    "acceptance": "待玩家明確驗收"
   },
   {
     "id": "L13",
@@ -196,7 +207,8 @@
     ],
     "automatedPass": true,
     "userAcceptance": "待玩家明確驗收",
-    "fullAcceptance": false
+    "fullAcceptance": false,
+    "acceptance": "待玩家明確驗收"
   },
   {
     "id": "L14",
@@ -212,7 +224,8 @@
     ],
     "automatedPass": true,
     "userAcceptance": "待玩家明確驗收",
-    "fullAcceptance": false
+    "fullAcceptance": false,
+    "acceptance": "待玩家明確驗收"
   },
   {
     "id": "L15",
@@ -227,7 +240,8 @@
     ],
     "automatedPass": true,
     "userAcceptance": "待玩家明確驗收",
-    "fullAcceptance": false
+    "fullAcceptance": false,
+    "acceptance": "待玩家明確驗收"
   },
   {
     "id": "L16",
@@ -244,7 +258,8 @@
     ],
     "automatedPass": true,
     "userAcceptance": "待玩家明確驗收",
-    "fullAcceptance": false
+    "fullAcceptance": false,
+    "acceptance": "待玩家明確驗收"
   },
   {
     "id": "L17",
@@ -260,23 +275,26 @@
     ],
     "automatedPass": true,
     "userAcceptance": "待玩家明確驗收",
-    "fullAcceptance": false
+    "fullAcceptance": false,
+    "acceptance": "待玩家明確驗收"
   },
   {
     "id": "L18",
     "item": "8種新狀態",
     "area": "戰位框/傷害結算",
     "requiredAcceptance": "唯一消耗+3%，圖示懸停",
-    "implementation": "部分實裝",
-    "reason": "八種獨立狀態與消耗；洪水明確附加潮濕，其餘施加來源未定。",
-    "source": "combat.js",
+    "implementation": "已實裝",
+    "reason": "八種獨立狀態、必定施加、3%互動、單次消耗、獨立上限與圖示懸停；正式施加來源僅洪水→潮濕，其餘七種依本輪要求保留接口。",
+    "source": "status1018.js",
     "tests": [
       "八種狀態獨立於增減益，雷傷消耗一次及同招順序",
-      "破夢先判睡眠、喚醒後仍施加混亂；非睡眠弱傷"
+      "破夢先判睡眠、喚醒後仍施加混亂；非睡眠弱傷",
+      "正式長右戰鬥畫面中洪水必定潮濕、圖示名稱、雷傷單次消耗"
     ],
     "automatedPass": true,
     "userAcceptance": "待玩家明確驗收",
-    "fullAcceptance": false
+    "fullAcceptance": false,
+    "acceptance": "待玩家明確驗收"
   },
   {
     "id": "L19",
@@ -284,15 +302,19 @@
     "area": "寵物/突破/技能欄",
     "requiredAcceptance": "二選一獨立10心",
     "implementation": "部分實裝",
-    "reason": "六個五星技能已實際施放驗證；與10心分離、4格規則保持。新三寵正常孵化／連續成長因八核原表不足尚未開放。",
-    "source": "pets.js",
+    "reason": "星倍率與五星特殊突破沿用正式公式；修復新三寵核心顯示、已定MP／CD選招畫面及技能家族。正常孵化仍受練氣八核缺口阻擋，不冒稱全流程通過。",
+    "source": "pet1018.js",
     "tests": [
       "新寵五星與10心技能分離、長右專屬不可學",
-      "六個五星技能實際施放與三個10心被動實際觸發"
+      "六個五星技能實際施放與三個10心被動實際觸發",
+      "正式築基五層0★基礎、逐階升星、五星核心及二選一畫面",
+      "合法新三寵技能池及非法高危種保護",
+      "缺表逐列清單與既有高境成長公式可用"
     ],
     "automatedPass": true,
     "userAcceptance": "待玩家明確驗收",
-    "fullAcceptance": false
+    "fullAcceptance": false,
+    "acceptance": "待玩家明確驗收"
   },
   {
     "id": "L20",
@@ -300,15 +322,17 @@
     "area": "寵物任務/進度",
     "requiredAcceptance": "三項條件與計數起點",
     "implementation": "部分實裝",
-    "reason": "三項10心任務、接取後計數與被動已用隔離測試寵實驗；新三寵正常取得與完整成長仍待正式八核。",
-    "source": "pets.js",
+    "reason": "保留已定三條10心任務與技能，修復新三寵合法學習池；正常孵化後的完整任務驗收待起始八核。",
+    "source": "pet1018.js",
     "tests": [
       "三寵10心計數接取後開始，失敗條件及學5招門檻",
-      "三寵10心15擊殺／15束縛／20撲粉實際行動累計"
+      "三寵10心15擊殺／15束縛／20撲粉實際行動累計",
+      "合法新三寵技能池及非法高危種保護"
     ],
     "automatedPass": true,
     "userAcceptance": "待玩家明確驗收",
-    "fullAcceptance": false
+    "fullAcceptance": false,
+    "acceptance": "待玩家明確驗收"
   },
   {
     "id": "L21",
@@ -324,20 +348,21 @@
       "031關塔與三人實際同行，返城自動完成",
       "034A未完成入口事件不得跳過直接開戰",
       "035A完成救援交談後滿回復，不產生滿貫丹",
-      "B線完整原稿805節點載入，舊缺稿標記解除",
-      "033B三處調查六種順序皆可完成，回報180僅一次",
-      "035B滿貫丹在服下節點才回滿，跳過／重開不複製丹藥",
-      "035B三波站位／每場獨立結算／第二場失敗可重試且不重領",
-      "B線032選擇至038長右完整連續實戰與結算",
       "A線完整709節點與保密原稿接入",
       "034A火紅蓮實際首動必敗，玩家1HP、寵物免費回滿不改成長",
       "035A救援到正確節點才回滿、命符與線索不重複發放",
       "035A普通黑衣人固定八核、無裝備、3至5合法物理／雷功法",
-      "A線032選擇至038完整連續實戰、保留A專屬旗標並不完成B線"
+      "A線032選擇至038完整連續實戰、保留A專屬旗標並不完成B線",
+      "B線完整原稿805節點載入，舊缺稿標記解除",
+      "033B三處調查六種順序皆可完成，回報180僅一次",
+      "035B滿貫丹在服下節點才回滿，跳過／重開不複製丹藥",
+      "035B三波站位／每場獨立結算／第二場失敗可重試且不重領",
+      "B線032選擇至038長右完整連續實戰與結算"
     ],
     "automatedPass": true,
     "userAcceptance": "待玩家明確驗收",
-    "fullAcceptance": false
+    "fullAcceptance": false,
+    "acceptance": "待玩家明確驗收"
   },
   {
     "id": "L22",
@@ -351,32 +376,40 @@
       "A/B分支選項鎖定、同行位置與B線無陸家情報",
       "033A雙戰站位及調查回報，B線以本次正式對話接續",
       "035A黑衣人正式368功法與零戰鬥獎勵",
-      "034B追擊離隊與世界位置，全入口操作鎖至必敗戰",
-      "034B九珠陰雷真實UI強制首動全倒，免費特殊結算且不污染寵物任務",
-      "036B實際引導、調查傳送陣、深窟會合，無A線秘密或命符",
       "034A山上交談後留守；青陽鎮入口事件封鎖所有移動",
       "035A失敗不完成；勝利只發主線修為200，不掉戰利品",
       "036A實際傳送、五人世界位置與四人出戰、無B線獎勵",
-      "034A可由柳清妍任務入口接續；035A落星谷對話立繪隨角色切換"
+      "034A可由柳清妍任務入口接續；035A落星谷對話立繪隨角色切換",
+      "034B追擊離隊與世界位置，全入口操作鎖至必敗戰",
+      "034B九珠陰雷真實UI強制首動全倒，免費特殊結算且不污染寵物任務",
+      "036B實際引導、調查傳送陣、深窟會合，無A線秘密或命符"
     ],
     "automatedPass": true,
     "userAcceptance": "待玩家明確驗收",
-    "fullAcceptance": false
+    "fullAcceptance": false,
+    "acceptance": "待玩家明確驗收"
   },
   {
     "id": "L23",
     "item": "新增支線015/016",
     "area": "支線任務/好感",
     "requiredAcceptance": "B線專屬權限與兩天門檻",
-    "implementation": "部分實裝",
-    "reason": "015/016前置與獎勵；支線逐字稿不足，採原工作檔事件文字並列待補。",
-    "source": "quests.js",
+    "implementation": "已實裝",
+    "reason": "015／016完整原稿逐句接入、可存檔續讀；038後兩日、B線036B、一次性獎勵與邱山河10心收禮資格。",
+    "source": "side1018.js",
     "tests": [
-      "新增支線兩日門檻與B線閒聊權限，完成危險區解鎖"
+      "新增支線兩日門檻與B線閒聊權限，完成危險區解鎖",
+      "015正常NPC接取、兩日硬鎖、88節點與獎勵一次",
+      "016正式B線門檻、逐字212節點、10心收禮與防重領",
+      "A線永久無法接取016與取得專屬贈禮",
+      "舊摘要已領獎存檔可補讀原稿，未補讀前不發10心禮物",
+      "A線及未完成036B即使舊存檔留收禮旗標仍不可越權",
+      "016對話正常存檔重載續讀與尚未領獎"
     ],
     "automatedPass": true,
     "userAcceptance": "待玩家明確驗收",
-    "fullAcceptance": false
+    "fullAcceptance": false,
+    "acceptance": "待玩家明確驗收"
   },
   {
     "id": "L24",
@@ -393,7 +426,8 @@
     ],
     "automatedPass": true,
     "userAcceptance": "待玩家明確驗收",
-    "fullAcceptance": false
+    "fullAcceptance": false,
+    "acceptance": "待玩家明確驗收"
   },
   {
     "id": "L25",
@@ -413,7 +447,8 @@
     ],
     "automatedPass": true,
     "userAcceptance": "待玩家明確驗收",
-    "fullAcceptance": false
+    "fullAcceptance": false,
+    "acceptance": "待玩家明確驗收"
   },
   {
     "id": "L26",
@@ -424,12 +459,12 @@
     "reason": "原25條資料不改，沿用四紙、8小時、提交與領獎流程。",
     "source": "commissions.js",
     "tests": [
-      "原25條委託逐欄不變；新增編號完整50條",
-      "既有25委託全部實際完成／領獎回歸通過。"
+      "原25條委託逐欄不變；新增編號完整50條"
     ],
     "automatedPass": true,
     "userAcceptance": "待玩家明確驗收",
-    "fullAcceptance": false
+    "fullAcceptance": false,
+    "acceptance": "待玩家明確驗收"
   },
   {
     "id": "L27",
@@ -448,7 +483,8 @@
     ],
     "automatedPass": true,
     "userAcceptance": "待玩家明確驗收",
-    "fullAcceptance": false
+    "fullAcceptance": false,
+    "acceptance": "待玩家明確驗收"
   },
   {
     "id": "L28",
@@ -463,7 +499,8 @@
     ],
     "automatedPass": true,
     "userAcceptance": "待玩家明確驗收",
-    "fullAcceptance": false
+    "fullAcceptance": false,
+    "acceptance": "待玩家明確驗收"
   },
   {
     "id": "L29",
@@ -478,7 +515,8 @@
     ],
     "automatedPass": true,
     "userAcceptance": "待玩家明確驗收",
-    "fullAcceptance": false
+    "fullAcceptance": false,
+    "acceptance": "待玩家明確驗收"
   },
   {
     "id": "L30",
@@ -490,8 +528,6 @@
     "source": "npc-generation.js",
     "tests": [
       "跨境範圍與根值邊界，正式表補齊後入口開放",
-      "主根四段55/30/12/3抽樣與六元素／雙高上限",
-      "合法武器偏好70/30與空池後備；不虛構流派偏好表",
       "80組NPC基線保留八個獨立欄位，築基／金丹九層正確",
       "六品質與八流派倍率、隱藏值及每核獨立±5%",
       "八流派合法武器偏好70/30抽樣與空池後備",
@@ -501,26 +537,36 @@
       "跨境連勝加成上限37、敗北連勝歸0且不發野外獎勵",
       "裝備品質55/25/12/5/2/1獨立抽樣、缺品質重分配、僅使用現有成品",
       "NPC品質只乘自身基線，裝備最終記錄值加入一次且無候選倍率覆乘",
-      "跨境禁止物品、藥水、戰前效果與逃跑；不扣玩家庫存"
+      "跨境禁止物品、藥水、戰前效果與逃跑；不扣玩家庫存",
+      "主根四段55/30/12/3抽樣與六元素／雙高上限",
+      "合法武器偏好70/30與空池後備；不虛構流派偏好表"
     ],
     "automatedPass": true,
     "userAcceptance": "待玩家明確驗收",
-    "fullAcceptance": false
+    "fullAcceptance": false,
+    "acceptance": "待玩家明確驗收"
   },
   {
     "id": "L31",
     "item": "圖鑑素材反查",
     "area": "圖鑑/背包/鍛造",
     "requiredAcceptance": "從火尾毛能追到燐火狼/黑潮",
-    "implementation": "部分實裝",
-    "reason": "同一圖示映射、掉落／採集／配方／委託反查；舊原稿未登錄來源標待補。",
-    "source": "codex.js",
+    "implementation": "已實裝",
+    "reason": "全目錄＋正式合成產物來源反查；含天穹掉落、晶礦分池、採集、配方、商店、舊新任務、委託及素材箱。泛用委託仍51項。",
+    "source": "material1018.js",
     "tests": [
-      "火尾毛來源反查燐火狼／黑潮，圖示共用"
+      "火尾毛來源反查燐火狼／黑潮，圖示共用",
+      "69項正式素材來源與17項原未分類素材完整可見、提交池51不變",
+      "正常材料商店購買→背包→圖鑑，圖片同源",
+      "正常鑄造台合成龜甲片、配方與背包圖片共用",
+      "委託紙獎勵、布告箱提交與素材圖同源，未擴增資格",
+      "天穹掉落與晶石來源依正式掉落函式核對",
+      "所有配方正式素材均在圖鑑，龜甲片仍非泛用提交資格"
     ],
     "automatedPass": true,
     "userAcceptance": "待玩家明確驗收",
-    "fullAcceptance": false
+    "fullAcceptance": false,
+    "acceptance": "待玩家明確驗收"
   },
   {
     "id": "L32",
@@ -535,7 +581,8 @@
     ],
     "automatedPass": true,
     "userAcceptance": "待玩家明確驗收",
-    "fullAcceptance": false
+    "fullAcceptance": false,
+    "acceptance": "待玩家明確驗收"
   },
   {
     "id": "L33",
@@ -543,14 +590,18 @@
     "area": "素材/NPC/妖物/地區",
     "requiredAcceptance": "同一圖源且不洩露秘密",
     "implementation": "部分實裝",
-    "reason": "妖物／NPC／地區重用正式圖，素材獨立SVG；未有正式圖片欄位明示待補，不宣稱全部美術已驗收。",
-    "source": "codex.js",
+    "reason": "素材69／69張獨立PNG已接入共用圖源；妖物／NPC／地區沿用正式圖片。裝備、丹藥、禮物與任務物品依原工作檔後續階段保留獨立圖片目標與命名占位清單。",
+    "source": "material1018.js",
     "tests": [
-      "所有圖鑑分類實際開啟，缺來源明示、圖片可載入"
+      "所有圖鑑分類實際開啟，缺來源明示、圖片可載入",
+      "正常材料商店購買→背包→圖鑑，圖片同源",
+      "正常鑄造台合成龜甲片、配方與背包圖片共用",
+      "委託紙獎勵、布告箱提交與素材圖同源，未擴增資格"
     ],
     "automatedPass": true,
     "userAcceptance": "待玩家明確驗收",
-    "fullAcceptance": false
+    "fullAcceptance": false,
+    "acceptance": "待玩家明確驗收"
   },
   {
     "id": "L34",
@@ -561,11 +612,13 @@
     "reason": "25種選單，合法種級與6小時；新三種孵化因起始八核缺口保護性鎖定，不消耗蛋。",
     "source": "pets.js",
     "tests": [
-      "25種神秘蛋選單；新種資料不足不扣蛋"
+      "25種神秘蛋選單；新種資料不足不扣蛋",
+      "25種選單；既有22種由正常使用蛋到6小時開啟，三種缺表保持不扣蛋"
     ],
     "automatedPass": true,
     "userAcceptance": "待玩家明確驗收",
-    "fullAcceptance": false
+    "fullAcceptance": false,
+    "acceptance": "待玩家明確驗收"
   },
   {
     "id": "L35",
@@ -580,7 +633,8 @@
     ],
     "automatedPass": true,
     "userAcceptance": "待玩家明確驗收",
-    "fullAcceptance": false
+    "fullAcceptance": false,
+    "acceptance": "待玩家明確驗收"
   },
   {
     "id": "L36",
@@ -593,14 +647,15 @@
     "tests": [
       "原0.7.2舊存檔匯入保留裝備及任務，不混用正式儲存區",
       "實際存檔重載保留分支／挖掘／委託，正式名稱空間不變",
-      "033B調查中存檔重載，進度／對話位置與獎勵可接續",
       "測試999實際入口可重設A/B，保留寵物與庫存且前置導航可走",
       "NPC品質裝備記錄隨對手保存，重載後成品效果不遺失且不改玩家庫存",
-      "A線交談中與問道對手存檔重載保持一致"
+      "A線交談中與問道對手存檔重載保持一致",
+      "033B調查中存檔重載，進度／對話位置與獎勵可接續"
     ],
     "automatedPass": true,
     "userAcceptance": "待玩家明確驗收",
-    "fullAcceptance": false
+    "fullAcceptance": false,
+    "acceptance": "待玩家明確驗收"
   },
   {
     "id": "L37",
@@ -610,12 +665,11 @@
     "implementation": "已實裝",
     "reason": "重用10月16日新圖與現有正式NPC／妖物圖。",
     "source": "build.py",
-    "tests": [
-      "14張新增資源全部離線解碼成功，引用10月16日既有PNG；未重生美術。"
-    ],
+    "tests": [],
     "automatedPass": true,
     "userAcceptance": "待玩家明確驗收",
-    "fullAcceptance": false
+    "fullAcceptance": false,
+    "acceptance": "待玩家明確驗收"
   },
   {
     "id": "L38",
@@ -626,11 +680,11 @@
     "reason": "獨立目錄、存檔前綴與受保護檔案雜湊；正式GitHub不動。",
     "source": "baseline.json",
     "tests": [
-      "載入、版本與存檔隔離",
-      "5個受保護檔案SHA-256未變；正式main提交與工作目錄未變。"
+      "載入、版本與存檔隔離"
     ],
     "automatedPass": true,
     "userAcceptance": "待玩家明確驗收",
-    "fullAcceptance": false
+    "fullAcceptance": false,
+    "acceptance": "待玩家明確驗收"
   }
 ]

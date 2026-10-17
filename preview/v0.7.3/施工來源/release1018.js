@@ -1,0 +1,10 @@
+(function(){'use strict';const N=JZ073,U=JZ071,E=N.esc;
+N.supplement='2026-10-18';N.retainedRules1018=['泛用委託素材資格維持原51項，圖鑑目錄與提交資格分開。','正式母檔、正式版本與GitHub發布內容維持施工前狀態。'];
+const decorate=N.decorate;N.decorate=function(){const out=decorate.apply(this,arguments);for(const banner of document.querySelectorAll('.jz073-banner'))if(banner.dataset.supplement!==N.supplement){banner.dataset.supplement=N.supplement;if(banner.firstChild?.nodeType===3)banner.firstChild.nodeValue='V0.7.3・10/18 本地補完・待玩家驗收 ';}return out;};
+N.pending=N.pending.filter(x=>x.id!=='素材提交分類');
+N.missingMaterialImages1018=U.materialCatalog.filter(n=>!window.JZ073_MATERIAL_ART?.[U.short(n)]);
+N.note('L33','部分實裝','素材'+(U.materialCatalog.length-N.missingMaterialImages1018.length)+'／'+U.materialCatalog.length+'張獨立PNG已接入共用圖源；妖物／NPC／地區沿用正式圖片。裝備、丹藥、禮物與任務物品依原工作檔後續階段保留獨立圖片目標與命名占位清單。');
+const reserved=(category,names)=>[...new Set(names)].map(name=>({category,name,key:category+'-'+Array.from(name).reduce((h,c)=>(h*31+c.charCodeAt(0))>>>0,7).toString(16),status:'後續獨立圖示待補；目前保留原占位',source:'既有正式資料庫，僅建立資源命名，不生成新物品'}));
+N.remainingCodexImages1018=()=>[...reserved('equipment',Object.keys(R546_GEAR_FULL).filter(n=>!JZ072.qualities.some(q=>n.startsWith(q)))),...reserved('medicine',[...(RECIPES.丹藥||[]),...(RECIPES.藥品||[])].map(r=>r[0])),...reserved('gift',JZ072.data.gifts),...reserved('quest-item',['［任務］命符','［任務］無名靈印','［任務］無聲黑珠'])];
+N.previousVersionHistory1018=JZ072.versionHistory;JZ072.versionHistory=()=>showModal('版本更新','<h3>V0.7.3・2026-10-18・本地獨立測試補完</h3><h4>新增</h4><p>危險區88節點、與山河聊聊212節點完整對話；素材獨立PNG與八種狀態說明。</p><h4>改動</h4><p>圖鑑完整涵蓋68項原素材及正式合成產物龜甲片；來源反查涵蓋掉落、採集、配方、商店、任務、委託與素材箱。</p><h4>BUG修復</h4><p>補回遺漏素材與天穹／晶礦掉落來源；共用圖片接入商店、工坊及委託；支線讀檔續讀與獎勵防重領；新寵技能家族與五星選技能畫面。</p><h4>待補</h4><p>新三寵正常孵化所需練氣八核與部分築基層位原表未找到。保留不扣蛋保護，未宣稱正常取得、完整成長與10心流程通過。其餘七種狀態目前沒有正式施加技能，依本輪要求保留狀態及接口。</p><p>正式母檔與GitHub未更新。</p><button onclick="JZ073.previousVersionHistory1018()">查看先前更新內容與完整待補</button>');
+})();

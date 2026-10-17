@@ -1,94 +1,518 @@
 {
-  "mode": "單檔file://離線實測；攔截全部HTTP/HTTPS",
-  "first": {
-    "title": "九州修仙錄 0.7.3 獨立測試",
-    "version": "0.7.3",
-    "prefix": "jz073-independent-20261017:",
-    "body": "九州修仙錄\nV0.7.2\n\n上仙之戰已成遠古傳說。九州在歲月中重建秩序，而你的修仙之路，將從東州・朝御城開始。\n\n姓名\n身份\n選擇角色外觀\n已選擇\n少男\n成男\n少女\n成女\n遊戲介面使用清晰胸像立繪；完整全身圖保留給後續角色圖鑑。\n踏入九州\n💾 存檔管理\n正式版 0.7.2\n\\n"
-  },
-  "boss": {
-    "whole": true,
-    "bar": 1,
-    "party": 4,
-    "src": true
-  },
-  "art": [
+  "pass": true,
+  "version": "0.7.3",
+  "supplement": "2026-10-18",
+  "materials": 69,
+  "cards": 69,
+  "images": [
     {
-      "name": "長右",
-      "ok": true,
-      "data": true
+      "name": "［一階］靈草圖示",
+      "width": 1254,
+      "embedded": true
     },
     {
-      "name": "財寶怨靈",
-      "ok": true,
-      "data": true
+      "name": "［一階］梨草圖示",
+      "width": 1254,
+      "embedded": true
     },
     {
-      "name": "燐火狼",
-      "ok": true,
-      "data": true
+      "name": "［一階］精草圖示",
+      "width": 1254,
+      "embedded": true
     },
     {
-      "name": "硬黑蠍",
-      "ok": true,
-      "data": true
+      "name": "［一階］靈露圖示",
+      "width": 1254,
+      "embedded": true
     },
     {
-      "name": "靈珠蝶",
-      "ok": true,
-      "data": true
+      "name": "［一階］碧萃枝圖示",
+      "width": 1254,
+      "embedded": true
     },
     {
-      "name": "陸刑舟",
-      "ok": true,
-      "data": true
+      "name": "［一階］藥草圖示",
+      "width": 1254,
+      "embedded": true
     },
     {
-      "name": "陸景和",
-      "ok": true,
-      "data": true
+      "name": "［一階］靈石圖示",
+      "width": 1254,
+      "embedded": true
     },
     {
-      "name": "黑衣人01",
-      "ok": true,
-      "data": true
+      "name": "［一階］靈原鐵圖示",
+      "width": 1254,
+      "embedded": true
     },
     {
-      "name": "黑衣人02",
-      "ok": true,
-      "data": true
+      "name": "［一階］靈木圖示",
+      "width": 1254,
+      "embedded": true
     },
     {
-      "name": "黑衣人03",
-      "ok": true,
-      "data": true
+      "name": "［一階］靈果圖示",
+      "width": 1254,
+      "embedded": true
     },
     {
-      "name": "黑潮禁岸",
-      "ok": true,
-      "data": true
+      "name": "［一階］脆脆果圖示",
+      "width": 1254,
+      "embedded": true
     },
     {
-      "name": "深窟",
-      "ok": true,
-      "data": true
+      "name": "［一階］破布圖示",
+      "width": 1254,
+      "embedded": true
     },
     {
-      "name": "黑潮戰鬥",
-      "ok": true,
-      "data": true
+      "name": "［一階］靈藥粉圖示",
+      "width": 1254,
+      "embedded": true
     },
     {
-      "name": "深窟戰鬥",
-      "ok": true,
-      "data": true
+      "name": "［一階］精靈液圖示",
+      "width": 1254,
+      "embedded": true
+    },
+    {
+      "name": "［一階］碧木芯圖示",
+      "width": 1254,
+      "embedded": true
+    },
+    {
+      "name": "［一階］導靈粉圖示",
+      "width": 1254,
+      "embedded": true
+    },
+    {
+      "name": "［一階］靈鐵錠圖示",
+      "width": 1254,
+      "embedded": true
+    },
+    {
+      "name": "［一階］獸骨粉圖示",
+      "width": 1254,
+      "embedded": true
+    },
+    {
+      "name": "［一階］妖血精華圖示",
+      "width": 1254,
+      "embedded": true
+    },
+    {
+      "name": "［一階］魂粉圖示",
+      "width": 1254,
+      "embedded": true
+    },
+    {
+      "name": "［一階］妖丹粉末圖示",
+      "width": 1254,
+      "embedded": true
+    },
+    {
+      "name": "［一階］皮毛圖示",
+      "width": 1254,
+      "embedded": true
+    },
+    {
+      "name": "［一階］蛇鱗圖示",
+      "width": 1254,
+      "embedded": true
+    },
+    {
+      "name": "［一階］硬蟲甲圖示",
+      "width": 1254,
+      "embedded": true
+    },
+    {
+      "name": "［一階］妖鳥羽圖示",
+      "width": 1254,
+      "embedded": true
+    },
+    {
+      "name": "［一階］獸骨圖示",
+      "width": 1254,
+      "embedded": true
+    },
+    {
+      "name": "［一階］獸牙圖示",
+      "width": 1254,
+      "embedded": true
+    },
+    {
+      "name": "［一階］妖獸精血圖示",
+      "width": 1254,
+      "embedded": true
+    },
+    {
+      "name": "［一階］殘缺妖丹圖示",
+      "width": 1254,
+      "embedded": true
+    },
+    {
+      "name": "［一階］殘魂圖示",
+      "width": 1254,
+      "embedded": true
+    },
+    {
+      "name": "［一階］毒囊圖示",
+      "width": 1254,
+      "embedded": true
+    },
+    {
+      "name": "［一階］蛛絲圖示",
+      "width": 1254,
+      "embedded": true
+    },
+    {
+      "name": "［一階］獸角圖示",
+      "width": 1254,
+      "embedded": true
+    },
+    {
+      "name": "［一階］靈粉圖示",
+      "width": 1254,
+      "embedded": true
+    },
+    {
+      "name": "［一階］龜殼圖示",
+      "width": 1254,
+      "embedded": true
+    },
+    {
+      "name": "［二階］凝露花圖示",
+      "width": 1254,
+      "embedded": true
+    },
+    {
+      "name": "［二階］百年靈草圖示",
+      "width": 1254,
+      "embedded": true
+    },
+    {
+      "name": "［二階］青紋藤圖示",
+      "width": 1254,
+      "embedded": true
+    },
+    {
+      "name": "［二階］赤銅礦圖示",
+      "width": 1254,
+      "embedded": true
+    },
+    {
+      "name": "［二階］玄鐵圖示",
+      "width": 1254,
+      "embedded": true
+    },
+    {
+      "name": "［二階］火晶石圖示",
+      "width": 1254,
+      "embedded": true
+    },
+    {
+      "name": "［二階］水晶石圖示",
+      "width": 1254,
+      "embedded": true
+    },
+    {
+      "name": "［二階］木晶石圖示",
+      "width": 1254,
+      "embedded": true
+    },
+    {
+      "name": "［二階］風晶石圖示",
+      "width": 1254,
+      "embedded": true
+    },
+    {
+      "name": "［二階］雷晶石圖示",
+      "width": 1254,
+      "embedded": true
+    },
+    {
+      "name": "［二階］土晶石圖示",
+      "width": 1254,
+      "embedded": true
+    },
+    {
+      "name": "［二階］光晶石圖示",
+      "width": 1254,
+      "embedded": true
+    },
+    {
+      "name": "［二階］暗晶石圖示",
+      "width": 1254,
+      "embedded": true
+    },
+    {
+      "name": "［二階］碧綠木圖示",
+      "width": 1254,
+      "embedded": true
+    },
+    {
+      "name": "［二階］楊木圖示",
+      "width": 1254,
+      "embedded": true
+    },
+    {
+      "name": "［二階］玉葉果圖示",
+      "width": 1254,
+      "embedded": true
+    },
+    {
+      "name": "［二階］玄靈鐵錠圖示",
+      "width": 1254,
+      "embedded": true
+    },
+    {
+      "name": "［二階］靈楊木板圖示",
+      "width": 1254,
+      "embedded": true
+    },
+    {
+      "name": "［二階］硬骨板圖示",
+      "width": 1254,
+      "embedded": true
+    },
+    {
+      "name": "［二階］濃靈血精圖示",
+      "width": 1254,
+      "embedded": true
+    },
+    {
+      "name": "［二階］凝魂砂圖示",
+      "width": 1254,
+      "embedded": true
+    },
+    {
+      "name": "［二階］妖丹精華圖示",
+      "width": 1254,
+      "embedded": true
+    },
+    {
+      "name": "［二階］狐毛圖示",
+      "width": 1254,
+      "embedded": true
+    },
+    {
+      "name": "［二階］蛟鱗圖示",
+      "width": 1254,
+      "embedded": true
+    },
+    {
+      "name": "［二階］黑蠍甲圖示",
+      "width": 1254,
+      "embedded": true
+    },
+    {
+      "name": "［二階］雀羽圖示",
+      "width": 1254,
+      "embedded": true
+    },
+    {
+      "name": "［二階］硬獸骨圖示",
+      "width": 1254,
+      "embedded": true
+    },
+    {
+      "name": "［二階］利爪圖示",
+      "width": 1254,
+      "embedded": true
+    },
+    {
+      "name": "［二階］濃縮妖血圖示",
+      "width": 1254,
+      "embedded": true
+    },
+    {
+      "name": "［二階］妖丹圖示",
+      "width": 1254,
+      "embedded": true
+    },
+    {
+      "name": "［二階］妖魂碎片圖示",
+      "width": 1254,
+      "embedded": true
+    },
+    {
+      "name": "［二階］雷角圖示",
+      "width": 1254,
+      "embedded": true
+    },
+    {
+      "name": "［二階］火尾毛圖示",
+      "width": 1254,
+      "embedded": true
+    },
+    {
+      "name": "［一階］龜甲片圖示",
+      "width": 1254,
+      "embedded": true
     }
   ],
-  "map": {
-    "coast": true,
-    "cave": true
+  "assetCount": 69,
+  "dialogues": {
+    "015": 88,
+    "016": 212
   },
-  "network": [],
+  "missing": [],
+  "coverage": {
+    "L38": {
+      "state": "已實裝",
+      "reason": "獨立目錄、存檔前綴與受保護檔案雜湊；正式GitHub不動。"
+    },
+    "L27": {
+      "state": "已實裝",
+      "reason": "差10級按一般1／特殊2／高危4／高危特5／妖王8／神獸與災獸15保底；12類敵對人形倍率向上取整；差11級全部0，各出戰角色獨立結算。"
+    },
+    "L28": {
+      "state": "已實裝",
+      "reason": "80級靈幣表與12人形倍率；財寶怨靈依餘額。"
+    },
+    "L15": {
+      "state": "已實裝",
+      "reason": "五隻新妖物、候選八核、合法種級與境界、立繪；須玩家驗收平衡。"
+    },
+    "L29": {
+      "state": "已實裝",
+      "reason": "財寶怨靈每次靈幣打擊才減100，最低0。"
+    },
+    "L34": {
+      "state": "部分實裝",
+      "reason": "25種選單，合法種級與6小時；新三種孵化因起始八核缺口保護性鎖定，不消耗蛋。"
+    },
+    "L16": {
+      "state": "已實裝",
+      "reason": "50%鎖血、同一敵人、回滿MP、第二階段前兩動、潮濕優先與硬控免疫。"
+    },
+    "L18": {
+      "state": "已實裝",
+      "reason": "八種獨立狀態、必定施加、3%互動、單次消耗、獨立上限與圖示懸停；正式施加來源僅洪水→潮濕，其餘七種依本輪要求保留接口。"
+    },
+    "L30": {
+      "state": "已實裝",
+      "reason": "NPC80境界基線、九層獨立值、6品質、8流派、根值、合法武器與3～10招、跨境1V1及存檔對手；每件裝備獨立按55／25／12／5／2／1在既有合法品質間重分配，只套成品記錄值一次。"
+    },
+    "L21": {
+      "state": "已實裝",
+      "reason": "A線034A～036A與B線033B～036B均接入使用者完整原稿、固定劇情必敗演出及實際事件流程；未補造一般火紅蓮功法或命符復活。"
+    },
+    "L22": {
+      "state": "已實裝",
+      "reason": "A／B路線各自獎勵、情報、任務物與旗標保存；A線四人會合不自動加入邱山河，037明確換人；同一NPC不重複出現。"
+    },
+    "L23": {
+      "state": "已實裝",
+      "reason": "015／016完整原稿逐句接入、可存檔續讀；038後兩日、B線036B、一次性獎勵與邱山河10心收禮資格。"
+    },
+    "L17": {
+      "state": "已實裝",
+      "reason": "長右敗北醫館免費全滿，保留038挑戰進度。"
+    },
+    "L35": {
+      "state": "已實裝",
+      "reason": "心臟劇情只給一次，結算另給魂、大禮包及500／5000。"
+    },
+    "L13": {
+      "state": "已實裝",
+      "reason": "黑潮入口、境界、候選戰力、三種遭遇與A線永久挖掘。"
+    },
+    "L14": {
+      "state": "已實裝",
+      "reason": "深窟主線入口、3遊戲日野外化、每日遭遇回復與6次採集。"
+    },
+    "L01": {
+      "state": "已實裝",
+      "reason": "任務按合法道路逐步移動；呼叫既有移動檢查及傳送費。"
+    },
+    "L32": {
+      "state": "已實裝",
+      "reason": "主線同行／鎮守位置覆蓋舊列表，保留華安既有動態位置。"
+    },
+    "L37": {
+      "state": "已實裝",
+      "reason": "重用10月16日新圖與現有正式NPC／妖物圖。"
+    },
+    "L24": {
+      "state": "已實裝",
+      "reason": "CQ026～034含動態物種、製作證明與夜間神秘戰鬥。"
+    },
+    "L25": {
+      "state": "已實裝",
+      "reason": "CQ035～050含使用者本輪046～049最終目標與獎勵；四條已解除待補。"
+    },
+    "L26": {
+      "state": "已實裝",
+      "reason": "原25條資料不改，沿用四紙、8小時、提交與領獎流程。"
+    },
+    "L19": {
+      "state": "部分實裝",
+      "reason": "星倍率與五星特殊突破沿用正式公式；修復新三寵核心顯示、已定MP／CD選招畫面及技能家族。正常孵化仍受練氣八核缺口阻擋，不冒稱全流程通過。"
+    },
+    "L20": {
+      "state": "部分實裝",
+      "reason": "保留已定三條10心任務與技能，修復新三寵合法學習池；正常孵化後的完整任務驗收待起始八核。"
+    },
+    "L31": {
+      "state": "已實裝",
+      "reason": "全目錄＋正式合成產物來源反查；含天穹掉落、晶礦分池、採集、配方、商店、舊新任務、委託及素材箱。泛用委託仍51項。"
+    },
+    "L33": {
+      "state": "部分實裝",
+      "reason": "素材69／69張獨立PNG已接入共用圖源；妖物／NPC／地區沿用正式圖片。裝備、丹藥、禮物與任務物品依原工作檔後續階段保留獨立圖片目標與命名占位清單。"
+    },
+    "L02": {
+      "state": "已實裝",
+      "reason": "新舊對話跳過，重要情報與選項停止；保留原有推進副作用。"
+    },
+    "L03": {
+      "state": "已實裝",
+      "reason": "品質名稱、保存、同槽八核與衍生值比較使用現有成品實際記錄值；本輪新增候選品質倍率依使用者指示未啟用，不重乘或改玩家裝備。"
+    },
+    "L04": {
+      "state": "已實裝",
+      "reason": "平民互動／詳情／列表不顯示愛心與送禮。"
+    },
+    "L05": {
+      "state": "已實裝",
+      "reason": "主黃、支藍、委綠跨清單、對話與追蹤。"
+    },
+    "L06": {
+      "state": "已實裝",
+      "reason": "各製作配方依材料及按鈕資格排序，可製作置頂。"
+    },
+    "L07": {
+      "state": "已實裝",
+      "reason": "雙角對稱、尾巴與叉位於側邊，保留四層結構。"
+    },
+    "L08": {
+      "state": "已實裝",
+      "reason": "一般隨機敵方選取前排60／後排40；嘲諷及指定不覆寫。"
+    },
+    "L09": {
+      "state": "已實裝",
+      "reason": "個人合成成本改0，公共合成本來不扣能；100%／無經驗保持。"
+    },
+    "L10": {
+      "state": "已實裝",
+      "reason": "沿既有直接破盾反擊，技能說明補特殊種限制。"
+    },
+    "L11": {
+      "state": "已實裝",
+      "reason": "自選箱植物／礦物／木材／靈果分類，保留合法目錄與多箱確認。"
+    },
+    "L12": {
+      "state": "已實裝",
+      "reason": "正式素材階級沿同一目錄，火尾毛說明更新。"
+    },
+    "L36": {
+      "state": "已實裝",
+      "reason": "獨立存檔命名空間與v073新狀態持久化。"
+    }
+  },
+  "sourceRows": 492,
+  "music": false,
   "errors": [],
-  "pass": true
+  "blocked": []
 }

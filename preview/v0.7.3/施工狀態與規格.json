@@ -1,4 +1,6 @@
 {
+  "version": "0.7.3",
+  "supplement": "2026-10-18",
   "coverage": {
     "L38": {
       "state": "已實裝",
@@ -29,8 +31,8 @@
       "reason": "50%鎖血、同一敵人、回滿MP、第二階段前兩動、潮濕優先與硬控免疫。"
     },
     "L18": {
-      "state": "部分實裝",
-      "reason": "八種獨立狀態與消耗；洪水明確附加潮濕，其餘施加來源未定。"
+      "state": "已實裝",
+      "reason": "八種獨立狀態、必定施加、3%互動、單次消耗、獨立上限與圖示懸停；正式施加來源僅洪水→潮濕，其餘七種依本輪要求保留接口。"
     },
     "L30": {
       "state": "已實裝",
@@ -45,8 +47,8 @@
       "reason": "A／B路線各自獎勵、情報、任務物與旗標保存；A線四人會合不自動加入邱山河，037明確換人；同一NPC不重複出現。"
     },
     "L23": {
-      "state": "部分實裝",
-      "reason": "015/016前置與獎勵；支線逐字稿不足，採原工作檔事件文字並列待補。"
+      "state": "已實裝",
+      "reason": "015／016完整原稿逐句接入、可存檔續讀；038後兩日、B線036B、一次性獎勵與邱山河10心收禮資格。"
     },
     "L17": {
       "state": "已實裝",
@@ -90,19 +92,19 @@
     },
     "L19": {
       "state": "部分實裝",
-      "reason": "六個五星技能已實際施放驗證；與10心分離、4格規則保持。新三寵正常孵化／連續成長因八核原表不足尚未開放。"
+      "reason": "星倍率與五星特殊突破沿用正式公式；修復新三寵核心顯示、已定MP／CD選招畫面及技能家族。正常孵化仍受練氣八核缺口阻擋，不冒稱全流程通過。"
     },
     "L20": {
       "state": "部分實裝",
-      "reason": "三項10心任務、接取後計數與被動已用隔離測試寵實驗；新三寵正常取得與完整成長仍待正式八核。"
+      "reason": "保留已定三條10心任務與技能，修復新三寵合法學習池；正常孵化後的完整任務驗收待起始八核。"
     },
     "L31": {
-      "state": "部分實裝",
-      "reason": "同一圖示映射、掉落／採集／配方／委託反查；舊原稿未登錄來源標待補。"
+      "state": "已實裝",
+      "reason": "全目錄＋正式合成產物來源反查；含天穹掉落、晶礦分池、採集、配方、商店、舊新任務、委託及素材箱。泛用委託仍51項。"
     },
     "L33": {
       "state": "部分實裝",
-      "reason": "妖物／NPC／地區重用正式圖，素材獨立SVG；未有正式圖片欄位明示待補，不宣稱全部美術已驗收。"
+      "reason": "素材69／69張獨立PNG已接入共用圖源；妖物／NPC／地區沿用正式圖片。裝備、丹藥、禮物與任務物品依原工作檔後續階段保留獨立圖片目標與命名占位清單。"
     },
     "L02": {
       "state": "已實裝",
@@ -155,1048 +157,6722 @@
   },
   "pending": [
     {
-      "id": "素材提交分類",
-      "reason": "保留0.7.2現有合法提交集合；未擅自將原未分類素材加入泛用提交池。"
-    },
-    {
       "id": "長右與新妖物數值",
       "reason": "依工作檔候選八核與地圖門檻在測試版試算，須玩家實戰驗收；不寫入正式母檔。"
     },
     {
       "id": "新寵物全境界八核",
-      "reason": "新三寵僅有部分築基野外試算表，練氣一層孵化與連續成長偏科倍率未提供；新三種孵化保留選項但鎖定且不扣蛋。五星／10心技能與任務機制可獨立驗收。"
-    },
-    {
-      "id": "圖鑑缺少原始來源欄位",
-      "reason": "未在現有資料登錄的個別物品用途、店鋪來源及部分掉率均標示待補；素材圖示為本輪獨立SVG圖示，待美術驗收。未洩露隱藏人物／伏筆。"
+      "reason": "已查目前工作區、歷次定案JSON、原始Word及可找到的母檔；新三寵共60個練氣／築基層位僅11個原表記錄，49個未列。已接入既有金丹～大乘成長公式、星倍率及五星核心；不倒推缺列為正式數值。正常孵化保持不扣蛋保護。"
     },
     {
       "id": "長右隱藏戰鬥值",
       "reason": "工作檔的長右八核與1957戰力為候選試算，未列獨立BOSS隱藏命中／抵抗／暴擊明細；使用既有引擎缺省判定，顯示候選1957，尚不能核為正式戰力。"
     },
     {
-      "id": "B線支線016記載衝突",
-      "reason": "本次036B文本仍寫支線解鎖時機與禮物待設計，但10月17日工作檔已列015／016條件與回報。保留既有本輪實裝及B線資格，未再自行改寫支線內容，待使用者核對。"
-    },
-    {
       "id": "裝備品質候選倍率（未啟用）",
       "reason": "使用者本輪提供普通1／優良1.1／精品1.2／珍稀1.35／極品1.5／完美1.7作未來候選表；本輪依指示只用現有成品最終記錄值，不重乘、不修改玩家裝備。"
+    },
+    {
+      "id": "素材原生來源",
+      "reason": "獸角、狐毛等若僅有正式素材箱來源，圖鑑照實列出；未添加不存在的妖物掉落或商店。完整逐項清單見素材來源映射。"
+    },
+    {
+      "id": "萬獸塔二階隨機素材",
+      "reason": "現有第4／6～10層二階隨機素材獎勵仍僅寫入待領記錄，未實際發放。圖鑑不將此待領紀錄冒列為可取得素材的來源；未自行新增兌領規則。"
+    },
+    {
+      "id": "七種狀態未指定施加技能",
+      "reason": "依本輪確認，灼熱、纏身、泥身、風蝕、電能、光明、黑暗保留獨立狀態、互動與測試接口；正式施加技能尚未指定。洪水必定附加潮濕。未更改368功法庫，未讓同屬性招式自動附加。"
     }
   ],
-  "version": "0.7.3",
-  "commissions": [
+  "retainedRules": [
+    "泛用委託素材資格維持原51項，圖鑑目錄與提交資格分開。",
+    "正式母檔、正式版本與GitHub發布內容維持施工前狀態。"
+  ],
+  "sources": [
     {
-      "id": "CQ-DZ-026",
-      "title": "是鷹還是雕？",
-      "difficulty": "簡易",
-      "description": "天穹浮島上面的鳥妖！管他是鷹還是雕還是什麼鳥，請幫我擊殺那些臭鳥。",
-      "goal": {
-        "g73": true,
-        "kind": "kills",
-        "area": "天穹浮島",
-        "species": [
-          "天翼鷹"
-        ],
-        "count": 5
-      },
-      "reward": {
-        "rep": 3,
-        "cult": 30,
-        "coins": 150,
-        "items": [
-          [
-            "［一階］利爪",
-            1,
-            "materials"
-          ]
-        ]
-      },
-      "unlock": "sky",
-      "realm": "練氣七層"
+      "name": "［一階］靈草",
+      "category": "植物",
+      "commissionEligible": true,
+      "sources": [
+        {
+          "kind": "地區",
+          "name": "青陽山",
+          "text": "青陽山採集：23.33%",
+          "source": "R4_GATHER_CFG／136-jz072-integration.js:12"
+        },
+        {
+          "kind": "地區",
+          "name": "落星谷",
+          "text": "落星谷採集：16.67%",
+          "source": "R4_GATHER_CFG／136-jz072-integration.js:12"
+        },
+        {
+          "kind": "地區",
+          "name": "雷鳴沼",
+          "text": "雷鳴沼採集：13.33%",
+          "source": "R4_GATHER_CFG／136-jz072-integration.js:12"
+        },
+        {
+          "kind": "地區",
+          "name": "潮汐秘境",
+          "text": "潮汐秘境採集：21.67%",
+          "source": "R4_GATHER_CFG／136-jz072-integration.js:12"
+        },
+        {
+          "kind": "地區",
+          "name": "天穹浮島",
+          "text": "天穹浮島採集：4.55%",
+          "source": "R4_GATHER_CFG／136-jz072-integration.js:12"
+        },
+        {
+          "kind": "商店",
+          "name": "李大發",
+          "area": "朝御城",
+          "text": "朝御城・李大發：18靈幣",
+          "source": "JZR.stock"
+        },
+        {
+          "kind": "挑戰",
+          "name": "問道檯2",
+          "text": "問道檯・逐步挑戰第2層首通×5",
+          "source": "99-jzw-word-integration.js・floors"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］綜合一階素材箱",
+          "text": "［特殊］綜合一階素材箱：使用時可自選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選一階材料箱",
+          "text": "［特殊］自選一階材料箱：現有素材箱選單可選此素材×1",
+          "source": "ui.js:15"
+        }
+      ],
+      "pending": [],
+      "image": "/素材美術_2026-10-18/靈草.png"
     },
     {
-      "id": "CQ-DZ-027",
-      "title": "礦物動起來了！",
-      "difficulty": "稀有",
-      "description": "天穹浮島的礦物動起來了！會不會攻擊人啊？希望有人能處理。",
-      "goal": {
-        "g73": true,
-        "kind": "kills",
-        "area": "天穹浮島",
-        "species": [
-          "臂巨礦"
-        ],
-        "count": 3
-      },
-      "reward": {
-        "rep": 10,
-        "cult": 30,
-        "coins": 500,
-        "items": [
-          [
-            "［特殊］自選一階礦物箱",
-            3,
-            "special"
-          ],
-          [
-            "功法殘卷",
-            1,
-            "special"
-          ]
-        ]
-      },
-      "unlock": "sky",
-      "realm": "練氣七層"
+      "name": "［一階］梨草",
+      "category": "植物",
+      "commissionEligible": true,
+      "sources": [
+        {
+          "kind": "地區",
+          "name": "青陽山",
+          "text": "青陽山採集：23.33%",
+          "source": "R4_GATHER_CFG／136-jz072-integration.js:12"
+        },
+        {
+          "kind": "地區",
+          "name": "天穹浮島",
+          "text": "天穹浮島採集：4.55%",
+          "source": "R4_GATHER_CFG／136-jz072-integration.js:12"
+        },
+        {
+          "kind": "商店",
+          "name": "李大發",
+          "area": "朝御城",
+          "text": "朝御城・李大發：15靈幣",
+          "source": "JZR.stock"
+        },
+        {
+          "kind": "任務",
+          "name": "alchemy2",
+          "text": "［主線］煉製之路2：靈幣+350，梨草ｘ９。",
+          "source": "R56_QUESTS／JZ071.mainRewards／sideRewards"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］綜合一階素材箱",
+          "text": "［特殊］綜合一階素材箱：使用時可自選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選一階材料箱",
+          "text": "［特殊］自選一階材料箱：現有素材箱選單可選此素材×1",
+          "source": "ui.js:15"
+        }
+      ],
+      "pending": [],
+      "image": "/素材美術_2026-10-18/梨草.png"
     },
     {
-      "id": "CQ-DZ-028",
-      "title": "為甚麼會有會飛的蛇啊！",
-      "difficulty": "簡易",
-      "description": "天穹浮島怎麼有飛起來的蛇！蛇怎麼會飛！拜託誰能處理一下。",
-      "goal": {
-        "g73": true,
-        "kind": "kills",
-        "area": "天穹浮島",
-        "species": [
-          "飛蛇"
-        ],
-        "count": 5
-      },
-      "reward": {
-        "rep": 3,
-        "cult": 30,
-        "coins": 150,
-        "choose": [
-          [
-            "［一階］蛇鱗",
-            1,
-            "materials"
-          ],
-          [
-            "［一階］獸牙",
-            1,
-            "materials"
-          ]
-        ],
-        "pick": 1
-      },
-      "unlock": "sky",
-      "realm": "練氣七層"
+      "name": "［一階］精草",
+      "category": "植物",
+      "commissionEligible": true,
+      "sources": [
+        {
+          "kind": "地區",
+          "name": "天穹浮島",
+          "text": "天穹浮島採集：4.55%",
+          "source": "R4_GATHER_CFG／136-jz072-integration.js:12"
+        },
+        {
+          "kind": "商店",
+          "name": "李大發",
+          "area": "朝御城",
+          "text": "朝御城・李大發：35靈幣",
+          "source": "JZR.stock"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］綜合一階素材箱",
+          "text": "［特殊］綜合一階素材箱：使用時可自選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選一階材料箱",
+          "text": "［特殊］自選一階材料箱：現有素材箱選單可選此素材×1",
+          "source": "ui.js:15"
+        }
+      ],
+      "pending": [],
+      "image": "/素材美術_2026-10-18/精草.png"
     },
     {
-      "id": "CQ-DZ-029",
-      "title": "打不動的蟲！",
-      "difficulty": "困難",
-      "description": "天穹浮島出現了看起來超級硬的甲蟲，誰能把牠打死？",
-      "goal": {
-        "g73": true,
-        "kind": "kills",
-        "area": "天穹浮島",
-        "species": [
-          "反彈盔甲蟲"
-        ],
-        "count": 2
-      },
-      "reward": {
-        "rep": 7,
-        "cult": 50,
-        "coins": 300,
-        "choose": [
-          [
-            "［初階］治癒丹",
-            8
-          ],
-          [
-            "［初階］靈癒丹",
-            8
-          ]
-        ],
-        "pick": 1
-      },
-      "unlock": "sky",
-      "realm": "練氣七層"
+      "name": "［一階］靈露",
+      "category": "植物",
+      "commissionEligible": true,
+      "sources": [
+        {
+          "kind": "地區",
+          "name": "雷鳴沼",
+          "text": "雷鳴沼採集：13.33%",
+          "source": "R4_GATHER_CFG／136-jz072-integration.js:12"
+        },
+        {
+          "kind": "地區",
+          "name": "潮汐秘境",
+          "text": "潮汐秘境採集：21.67%",
+          "source": "R4_GATHER_CFG／136-jz072-integration.js:12"
+        },
+        {
+          "kind": "地區",
+          "name": "天穹浮島",
+          "text": "天穹浮島採集：4.55%",
+          "source": "R4_GATHER_CFG／136-jz072-integration.js:12"
+        },
+        {
+          "kind": "商店",
+          "name": "李大發",
+          "area": "朝御城",
+          "text": "朝御城・李大發：30靈幣",
+          "source": "JZR.stock"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］綜合一階素材箱",
+          "text": "［特殊］綜合一階素材箱：使用時可自選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選一階材料箱",
+          "text": "［特殊］自選一階材料箱：現有素材箱選單可選此素材×1",
+          "source": "ui.js:15"
+        }
+      ],
+      "pending": [],
+      "image": "/素材美術_2026-10-18/靈露.png"
     },
     {
-      "id": "CQ-DZ-030",
-      "title": "擊殺！",
-      "difficulty": "普通",
-      "description": "請為民除害，擊殺5隻{妖物}。",
-      "goal": {
-        "g73": true,
-        "kind": "kills",
-        "randomSpecies": [
-          "青木狼",
-          "青靈蛇",
-          "青臭蟲",
-          "朝陽狐",
-          "朝東鳥",
-          "重翅蝶",
-          "小圓蛛"
-        ],
-        "count": 5
-      },
-      "reward": {
-        "rep": 5,
-        "cult": 40,
-        "coins": 200
-      },
-      "unlock": null,
-      "realm": null
+      "name": "［一階］碧萃枝",
+      "category": "木材",
+      "commissionEligible": true,
+      "sources": [
+        {
+          "kind": "地區",
+          "name": "天穹浮島",
+          "text": "天穹浮島採集：4.55%",
+          "source": "R4_GATHER_CFG／136-jz072-integration.js:12"
+        },
+        {
+          "kind": "商店",
+          "name": "李大發",
+          "area": "朝御城",
+          "text": "朝御城・李大發：24靈幣",
+          "source": "JZR.stock"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］綜合一階素材箱",
+          "text": "［特殊］綜合一階素材箱：使用時可自選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選一階材料箱",
+          "text": "［特殊］自選一階材料箱：現有素材箱選單可選此素材×1",
+          "source": "ui.js:15"
+        }
+      ],
+      "pending": [],
+      "image": "/素材美術_2026-10-18/碧萃枝.png"
     },
     {
-      "id": "CQ-DZ-031",
-      "title": "擊殺！",
-      "difficulty": "普通",
-      "description": "請為民除害，擊殺5隻潮汐秘境的任何妖物。",
-      "goal": {
-        "g73": true,
-        "kind": "kills",
-        "area": "潮汐秘境",
-        "any": true,
-        "count": 5
-      },
-      "reward": {
-        "rep": 5,
-        "cult": 40,
-        "coins": 200
-      },
-      "unlock": "tide",
-      "realm": null
+      "name": "［一階］藥草",
+      "category": "植物",
+      "commissionEligible": true,
+      "sources": [
+        {
+          "kind": "地區",
+          "name": "青陽山",
+          "text": "青陽山採集：23.33%",
+          "source": "R4_GATHER_CFG／136-jz072-integration.js:12"
+        },
+        {
+          "kind": "地區",
+          "name": "落星谷",
+          "text": "落星谷採集：16.67%",
+          "source": "R4_GATHER_CFG／136-jz072-integration.js:12"
+        },
+        {
+          "kind": "地區",
+          "name": "雷鳴沼",
+          "text": "雷鳴沼採集：13.33%",
+          "source": "R4_GATHER_CFG／136-jz072-integration.js:12"
+        },
+        {
+          "kind": "地區",
+          "name": "潮汐秘境",
+          "text": "潮汐秘境採集：21.67%",
+          "source": "R4_GATHER_CFG／136-jz072-integration.js:12"
+        },
+        {
+          "kind": "地區",
+          "name": "天穹浮島",
+          "text": "天穹浮島採集：4.55%",
+          "source": "R4_GATHER_CFG／136-jz072-integration.js:12"
+        },
+        {
+          "kind": "商店",
+          "name": "李大發",
+          "area": "朝御城",
+          "text": "朝御城・李大發：18靈幣",
+          "source": "JZR.stock"
+        },
+        {
+          "kind": "任務",
+          "name": "alchemy1",
+          "text": "［主線］煉製之路：靈幣+350、藥草ｘ3、脆脆果ｘ1、小型煉金爐。（完成後開啟煉金爐介面）",
+          "source": "R56_QUESTS／JZ071.mainRewards／sideRewards"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］綜合一階素材箱",
+          "text": "［特殊］綜合一階素材箱：使用時可自選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選一階材料箱",
+          "text": "［特殊］自選一階材料箱：現有素材箱選單可選此素材×1",
+          "source": "ui.js:15"
+        }
+      ],
+      "pending": [],
+      "image": "/素材美術_2026-10-18/藥草.png"
     },
     {
-      "id": "CQ-DZ-032",
-      "title": "寵物穿裝備很可愛對吧！",
-      "difficulty": "困難",
-      "description": "請鍛造一件寵物裝備給我，我想給我的可愛蛇蛇穿戴。",
-      "goal": {
-        "g73": true,
-        "kind": "craftedPet",
-        "count": 1
-      },
-      "reward": {
-        "rep": 7,
-        "items": [
-          [
-            "寵物飼料",
-            5
-          ]
-        ],
-        "choose": [
-          [
-            "［初階］迅獸丹",
-            3
-          ],
-          [
-            "［初階］獸戰丹",
-            3
-          ],
-          [
-            "［初階］護獸丹",
-            3
-          ]
-        ],
-        "pick": 2
-      },
-      "unlock": null,
-      "realm": null
+      "name": "［一階］靈石",
+      "category": "礦物",
+      "commissionEligible": true,
+      "sources": [
+        {
+          "kind": "妖物",
+          "name": "臂巨礦",
+          "area": "天穹浮島",
+          "text": "天穹浮島・臂巨礦：50%先選一階礦物池，再從3項等機率選取",
+          "source": "133-jz072-island.js:41"
+        },
+        {
+          "kind": "妖物",
+          "name": "精晶礦靈",
+          "area": "晶礦秘境",
+          "text": "晶礦秘境・精晶礦靈：20%選四種礦物池，再四選一（單項5%）",
+          "source": "99-jzw-word-integration.js:1652"
+        },
+        {
+          "kind": "地區",
+          "name": "晶礦秘境",
+          "text": "晶礦秘境採集：27.50%",
+          "source": "R4_GATHER_CFG／136-jz072-integration.js:12"
+        },
+        {
+          "kind": "地區",
+          "name": "天穹浮島",
+          "text": "天穹浮島採集：4.55%",
+          "source": "R4_GATHER_CFG／136-jz072-integration.js:12"
+        },
+        {
+          "kind": "商店",
+          "name": "李大發",
+          "area": "朝御城",
+          "text": "朝御城・李大發：28靈幣",
+          "source": "JZR.stock"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］綜合一階素材箱",
+          "text": "［特殊］綜合一階素材箱：使用時可自選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選一階材料箱",
+          "text": "［特殊］自選一階材料箱：現有素材箱選單可選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選一階礦物箱",
+          "text": "［特殊］自選一階礦物箱：可選此一階礦物×1",
+          "source": "commissions.js／ui.js:15"
+        }
+      ],
+      "pending": [],
+      "image": "/素材美術_2026-10-18/靈石.png"
     },
     {
-      "id": "CQ-DZ-033",
-      "title": "異常凶狠的甲蟲！",
-      "difficulty": "稀有",
-      "description": "天穹浮島出現了比一般甲蟲還兇狠的種級妖物，請高手去擊殺！",
-      "goal": {
-        "g73": true,
-        "kind": "kills",
-        "area": "天穹浮島",
-        "species": [
-          "反彈盔甲蟲"
-        ],
-        "tier": "特殊種",
-        "count": 1
-      },
-      "reward": {
-        "rep": 10,
-        "cult": 50,
-        "choose": [
-          [
-            "靈幣",
-            1500,
-            "coins"
-          ],
-          [
-            "功法殘卷",
-            2,
-            "special"
-          ],
-          [
-            "［初階］百靈藥水",
-            10
-          ]
-        ],
-        "pick": 2
-      },
-      "unlock": "sky",
-      "realm": "練氣七層"
+      "name": "［一階］靈原鐵",
+      "category": "礦物",
+      "commissionEligible": true,
+      "sources": [
+        {
+          "kind": "妖物",
+          "name": "臂巨礦",
+          "area": "天穹浮島",
+          "text": "天穹浮島・臂巨礦：50%先選一階礦物池，再從3項等機率選取",
+          "source": "133-jz072-island.js:41"
+        },
+        {
+          "kind": "妖物",
+          "name": "精晶礦靈",
+          "area": "晶礦秘境",
+          "text": "晶礦秘境・精晶礦靈：20%選四種礦物池，再四選一（單項5%）",
+          "source": "99-jzw-word-integration.js:1652"
+        },
+        {
+          "kind": "地區",
+          "name": "晶礦秘境",
+          "text": "晶礦秘境採集：27.50%",
+          "source": "R4_GATHER_CFG／136-jz072-integration.js:12"
+        },
+        {
+          "kind": "地區",
+          "name": "天穹浮島",
+          "text": "天穹浮島採集：4.55%",
+          "source": "R4_GATHER_CFG／136-jz072-integration.js:12"
+        },
+        {
+          "kind": "商店",
+          "name": "李大發",
+          "area": "朝御城",
+          "text": "朝御城・李大發：30靈幣",
+          "source": "JZR.stock"
+        },
+        {
+          "kind": "任務",
+          "name": "craft2",
+          "text": "［主線］合成與鑄造2：靈原鐵ｘ１。",
+          "source": "R56_QUESTS／JZ071.mainRewards／sideRewards"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］綜合一階素材箱",
+          "text": "［特殊］綜合一階素材箱：使用時可自選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選一階材料箱",
+          "text": "［特殊］自選一階材料箱：現有素材箱選單可選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選一階礦物箱",
+          "text": "［特殊］自選一階礦物箱：可選此一階礦物×1",
+          "source": "commissions.js／ui.js:15"
+        }
+      ],
+      "pending": [],
+      "image": "/素材美術_2026-10-18/靈原鐵.png"
     },
     {
-      "id": "CQ-DZ-034",
-      "title": "天空傳來的敲擊聲",
-      "difficulty": "神秘",
-      "description": "天穹浮島……靈泉附近……晚上會有人敲東西。不要回頭。如果你聽到了三次，就去找聲音的來源。",
-      "goal": {
-        "g73": true,
-        "kind": "event",
-        "event": "sky",
-        "area": "天穹浮島",
-        "item": "［任務］無名刻紋石"
-      },
-      "reward": {
-        "rep": 50,
-        "cult": 100,
-        "coins": 1200,
-        "items": [
-          [
-            "［特殊］自選一階礦物箱",
-            3,
-            "special"
-          ],
-          [
-            "功法殘卷",
-            2,
-            "special"
-          ]
-        ]
-      },
-      "unlock": "sky",
-      "realm": "練氣七層"
+      "name": "［一階］靈木",
+      "category": "木材",
+      "commissionEligible": true,
+      "sources": [
+        {
+          "kind": "地區",
+          "name": "天穹浮島",
+          "text": "天穹浮島採集：4.55%",
+          "source": "R4_GATHER_CFG／136-jz072-integration.js:12"
+        },
+        {
+          "kind": "商店",
+          "name": "李大發",
+          "area": "朝御城",
+          "text": "朝御城・李大發：22靈幣",
+          "source": "JZR.stock"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］綜合一階素材箱",
+          "text": "［特殊］綜合一階素材箱：使用時可自選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選一階材料箱",
+          "text": "［特殊］自選一階材料箱：現有素材箱選單可選此素材×1",
+          "source": "ui.js:15"
+        }
+      ],
+      "pending": [],
+      "image": "/素材美術_2026-10-18/靈木.png"
     },
     {
-      "id": "CQ-DZ-035",
-      "title": "尾巴著火啦！",
-      "difficulty": "簡易",
-      "description": "黑潮禁岸的狼竟然全身冒著火！尤其是尾巴，看起來隨時會燒起來！拜託處理那些燐火狼！",
-      "goal": {
-        "g73": true,
-        "kind": "kills",
-        "area": "黑潮禁岸",
-        "species": [
-          "燐火狼"
-        ],
-        "count": 3
-      },
-      "reward": {
-        "rep": 3,
-        "cult": 40,
-        "coins": 200,
-        "items": [
-          [
-            "［二階］火尾毛",
-            1,
-            "materials"
-          ]
-        ]
-      },
-      "unlock": "black",
-      "realm": "築基五層"
+      "name": "［一階］靈果",
+      "category": "靈果",
+      "commissionEligible": true,
+      "sources": [
+        {
+          "kind": "地區",
+          "name": "落星谷",
+          "text": "落星谷採集：16.67%",
+          "source": "R4_GATHER_CFG／136-jz072-integration.js:12"
+        },
+        {
+          "kind": "地區",
+          "name": "天穹浮島",
+          "text": "天穹浮島採集：4.55%",
+          "source": "R4_GATHER_CFG／136-jz072-integration.js:12"
+        },
+        {
+          "kind": "商店",
+          "name": "李大發",
+          "area": "朝御城",
+          "text": "朝御城・李大發：20靈幣",
+          "source": "JZR.stock"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］綜合一階素材箱",
+          "text": "［特殊］綜合一階素材箱：使用時可自選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選一階材料箱",
+          "text": "［特殊］自選一階材料箱：現有素材箱選單可選此素材×1",
+          "source": "ui.js:15"
+        }
+      ],
+      "pending": [],
+      "image": "/素材美術_2026-10-18/靈果.png"
     },
     {
-      "id": "CQ-DZ-036",
-      "title": "這蠍子也太硬了吧！",
-      "difficulty": "簡易",
-      "description": "黑潮禁岸有黑色大蠍子，甲殼硬得連刀都砍不動！誰能幫忙處理掉幾隻？",
-      "goal": {
-        "g73": true,
-        "kind": "kills",
-        "area": "黑潮禁岸",
-        "species": [
-          "硬黑蠍"
-        ],
-        "count": 3
-      },
-      "reward": {
-        "rep": 3,
-        "cult": 40,
-        "coins": 200,
-        "items": [
-          [
-            "［二階］黑蠍甲",
-            1,
-            "materials"
-          ]
-        ]
-      },
-      "unlock": "black",
-      "realm": "築基五層"
+      "name": "［一階］脆脆果",
+      "category": "靈果",
+      "commissionEligible": true,
+      "sources": [
+        {
+          "kind": "地區",
+          "name": "天穹浮島",
+          "text": "天穹浮島採集：4.55%",
+          "source": "R4_GATHER_CFG／136-jz072-integration.js:12"
+        },
+        {
+          "kind": "商店",
+          "name": "李大發",
+          "area": "朝御城",
+          "text": "朝御城・李大發：18靈幣",
+          "source": "JZR.stock"
+        },
+        {
+          "kind": "任務",
+          "name": "alchemy1",
+          "text": "［主線］煉製之路：靈幣+350、藥草ｘ3、脆脆果ｘ1、小型煉金爐。（完成後開啟煉金爐介面）",
+          "source": "R56_QUESTS／JZ071.mainRewards／sideRewards"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］綜合一階素材箱",
+          "text": "［特殊］綜合一階素材箱：使用時可自選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選一階材料箱",
+          "text": "［特殊］自選一階材料箱：現有素材箱選單可選此素材×1",
+          "source": "ui.js:15"
+        }
+      ],
+      "pending": [],
+      "image": "/素材美術_2026-10-18/脆脆果.png"
     },
     {
-      "id": "CQ-DZ-037",
-      "title": "漂亮的蝴蝶也會打人？",
-      "difficulty": "簡易",
-      "description": "發光的蝴蝶很好看，靠近卻差點被牠打暈！請幫我趕走牠們。",
-      "goal": {
-        "g73": true,
-        "kind": "kills",
-        "area": "黑潮禁岸",
-        "species": [
-          "靈珠蝶"
-        ],
-        "count": 2
-      },
-      "reward": {
-        "rep": 3,
-        "cult": 40,
-        "coins": 220,
-        "items": [
-          [
-            "［一階］靈粉",
-            2,
-            "materials"
-          ]
-        ]
-      },
-      "unlock": "black",
-      "realm": "築基五層"
+      "name": "［一階］破布",
+      "category": "合成素材",
+      "commissionEligible": true,
+      "sources": [
+        {
+          "kind": "配方",
+          "name": "［一階］破布",
+          "text": "工坊・合成：梨草×3",
+          "source": "RECIPES.合成"
+        },
+        {
+          "kind": "委託",
+          "name": "CQ-DZ-007",
+          "text": "［委託］收集！（選擇獎勵×1）",
+          "source": "JZ071.commissions:CQ-DZ-007"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］綜合一階素材箱",
+          "text": "［特殊］綜合一階素材箱：使用時可自選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選一階材料箱",
+          "text": "［特殊］自選一階材料箱：現有素材箱選單可選此素材×1",
+          "source": "ui.js:15"
+        }
+      ],
+      "pending": [],
+      "image": "/素材美術_2026-10-18/破布.png"
     },
     {
-      "id": "CQ-DZ-038",
-      "title": "火尾毛收購！",
-      "difficulty": "簡易",
-      "description": "急需燐火狼尾部火屬性毛束作研究。",
-      "goal": {
-        "g73": true,
-        "kind": "submit",
-        "requirements": [
-          {
-            "name": "［二階］火尾毛",
-            "count": 5
-          }
-        ]
-      },
-      "reward": {
-        "rep": 3,
-        "cult": 30,
-        "coins": 300,
-        "items": [
-          [
-            "［特殊］自選二階素材箱",
-            1,
-            "special"
-          ]
-        ]
-      },
-      "unlock": "black",
-      "realm": "築基五層"
+      "name": "［一階］靈藥粉",
+      "category": "合成素材",
+      "commissionEligible": true,
+      "sources": [
+        {
+          "kind": "配方",
+          "name": "［一階］靈藥粉",
+          "text": "工坊・合成：靈草×2＋藥草×1",
+          "source": "RECIPES.合成"
+        },
+        {
+          "kind": "委託",
+          "name": "CQ-DZ-007",
+          "text": "［委託］收集！（選擇獎勵×1）",
+          "source": "JZ071.commissions:CQ-DZ-007"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］綜合一階素材箱",
+          "text": "［特殊］綜合一階素材箱：使用時可自選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選一階材料箱",
+          "text": "［特殊］自選一階材料箱：現有素材箱選單可選此素材×1",
+          "source": "ui.js:15"
+        }
+      ],
+      "pending": [],
+      "image": "/素材美術_2026-10-18/靈藥粉.png"
     },
     {
-      "id": "CQ-DZ-039",
-      "title": "甲殼收購！",
-      "difficulty": "簡易",
-      "description": "想研究硬黑蠍的防具甲殼。",
-      "goal": {
-        "g73": true,
-        "kind": "submit",
-        "requirements": [
-          {
-            "name": "［二階］黑蠍甲",
-            "count": 5
-          }
-        ]
-      },
-      "reward": {
-        "rep": 3,
-        "cult": 30,
-        "coins": 300,
-        "items": [
-          [
-            "［二階］硬獸骨",
-            2,
-            "materials"
-          ]
-        ]
-      },
-      "unlock": "black",
-      "realm": "築基五層"
+      "name": "［一階］精靈液",
+      "category": "合成素材",
+      "commissionEligible": true,
+      "sources": [
+        {
+          "kind": "配方",
+          "name": "［一階］精靈液",
+          "text": "工坊・合成：精草×1＋靈露×2",
+          "source": "RECIPES.合成"
+        },
+        {
+          "kind": "委託",
+          "name": "CQ-DZ-007",
+          "text": "［委託］收集！（選擇獎勵×1）",
+          "source": "JZ071.commissions:CQ-DZ-007"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］綜合一階素材箱",
+          "text": "［特殊］綜合一階素材箱：使用時可自選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選一階材料箱",
+          "text": "［特殊］自選一階材料箱：現有素材箱選單可選此素材×1",
+          "source": "ui.js:15"
+        }
+      ],
+      "pending": [],
+      "image": "/素材美術_2026-10-18/精靈液.png"
     },
     {
-      "id": "CQ-DZ-040",
-      "title": "靈粉不夠用了！",
-      "difficulty": "簡易",
-      "description": "煉丹急需靈粉。",
-      "goal": {
-        "g73": true,
-        "kind": "submit",
-        "requirements": [
-          {
-            "name": "［一階］靈粉",
-            "count": 5
-          }
-        ]
-      },
-      "reward": {
-        "rep": 3,
-        "cult": 30,
-        "coins": 250,
-        "items": [
-          [
-            "［初階］靈力藥水",
-            5
-          ]
-        ]
-      },
-      "unlock": "black",
-      "realm": "築基五層"
+      "name": "［一階］碧木芯",
+      "category": "合成素材",
+      "commissionEligible": true,
+      "sources": [
+        {
+          "kind": "配方",
+          "name": "［一階］碧木芯",
+          "text": "工坊・合成：碧萃枝×3",
+          "source": "RECIPES.合成"
+        },
+        {
+          "kind": "委託",
+          "name": "CQ-DZ-007",
+          "text": "［委託］收集！（選擇獎勵×1）",
+          "source": "JZ071.commissions:CQ-DZ-007"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］綜合一階素材箱",
+          "text": "［特殊］綜合一階素材箱：使用時可自選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選一階材料箱",
+          "text": "［特殊］自選一階材料箱：現有素材箱選單可選此素材×1",
+          "source": "ui.js:15"
+        }
+      ],
+      "pending": [],
+      "image": "/素材美術_2026-10-18/碧木芯.png"
     },
     {
-      "id": "CQ-DZ-041",
-      "title": "深窟裡有鬼！",
-      "difficulty": "簡易",
-      "description": "地下深窟傳出怨靈消息，還有人說牠帶了很多靈幣。",
-      "goal": {
-        "g73": true,
-        "kind": "kills",
-        "area": "雷鳴沼地下深窟",
-        "species": [
-          "財寶怨靈"
-        ],
-        "count": 1
-      },
-      "reward": {
-        "rep": 3,
-        "cult": 50,
-        "coins": 250,
-        "items": [
-          [
-            "［初階］百靈藥水",
-            3
-          ]
-        ]
-      },
-      "unlock": "cave",
-      "realm": "築基圓滿"
+      "name": "［一階］導靈粉",
+      "category": "合成素材",
+      "commissionEligible": true,
+      "sources": [
+        {
+          "kind": "配方",
+          "name": "［一階］導靈粉",
+          "text": "工坊・合成：靈石×2＋靈草×1",
+          "source": "RECIPES.合成"
+        },
+        {
+          "kind": "委託",
+          "name": "CQ-DZ-007",
+          "text": "［委託］收集！（選擇獎勵×1）",
+          "source": "JZ071.commissions:CQ-DZ-007"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］綜合一階素材箱",
+          "text": "［特殊］綜合一階素材箱：使用時可自選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選一階材料箱",
+          "text": "［特殊］自選一階材料箱：現有素材箱選單可選此素材×1",
+          "source": "ui.js:15"
+        }
+      ],
+      "pending": [],
+      "image": "/素材美術_2026-10-18/導靈粉.png"
     },
     {
-      "id": "CQ-DZ-042",
-      "title": "黑潮清剿！",
-      "difficulty": "普通",
-      "description": "危險區妖物增多，請修士協助清剿。",
-      "goal": {
-        "g73": true,
-        "kind": "kills",
-        "area": "黑潮禁岸",
-        "species": [
-          "燐火狼",
-          "硬黑蠍",
-          "靈珠蝶"
-        ],
-        "count": 5
-      },
-      "reward": {
-        "rep": 5,
-        "cult": 50,
-        "coins": 300
-      },
-      "unlock": "black",
-      "realm": "築基五層"
+      "name": "［一階］靈鐵錠",
+      "category": "合成素材",
+      "commissionEligible": true,
+      "sources": [
+        {
+          "kind": "妖物",
+          "name": "臂巨礦",
+          "area": "天穹浮島",
+          "text": "天穹浮島・臂巨礦：50%先選一階礦物池，再從3項等機率選取",
+          "source": "133-jz072-island.js:41"
+        },
+        {
+          "kind": "配方",
+          "name": "［一階］靈鐵錠",
+          "text": "工坊・合成：靈原鐵×3",
+          "source": "RECIPES.合成"
+        },
+        {
+          "kind": "委託",
+          "name": "CQ-DZ-007",
+          "text": "［委託］收集！（選擇獎勵×1）",
+          "source": "JZ071.commissions:CQ-DZ-007"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］綜合一階素材箱",
+          "text": "［特殊］綜合一階素材箱：使用時可自選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選一階材料箱",
+          "text": "［特殊］自選一階材料箱：現有素材箱選單可選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選一階礦物箱",
+          "text": "［特殊］自選一階礦物箱：可選此一階礦物×1",
+          "source": "commissions.js／ui.js:15"
+        }
+      ],
+      "pending": [],
+      "image": "/素材美術_2026-10-18/靈鐵錠.png"
     },
     {
-      "id": "CQ-DZ-043",
-      "title": "需要更堅硬的材料！",
-      "difficulty": "普通",
-      "description": "鑄造防具研究需要硬黑蠍甲殼。",
-      "goal": {
-        "g73": true,
-        "kind": "submit",
-        "requirements": [
-          {
-            "name": "［二階］黑蠍甲",
-            "count": 8
-          }
-        ]
-      },
-      "reward": {
-        "rep": 5,
-        "cult": 40,
-        "coins": 500,
-        "items": [
-          [
-            "［特殊］自選二階素材箱",
-            1,
-            "special"
-          ]
-        ]
-      },
-      "unlock": "black",
-      "realm": "築基五層"
+      "name": "［一階］獸骨粉",
+      "category": "合成素材",
+      "commissionEligible": true,
+      "sources": [
+        {
+          "kind": "配方",
+          "name": "［一階］獸骨粉",
+          "text": "工坊・合成：獸骨×3",
+          "source": "RECIPES.合成"
+        },
+        {
+          "kind": "委託",
+          "name": "CQ-DZ-007",
+          "text": "［委託］收集！（選擇獎勵×1）",
+          "source": "JZ071.commissions:CQ-DZ-007"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］綜合一階素材箱",
+          "text": "［特殊］綜合一階素材箱：使用時可自選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選一階材料箱",
+          "text": "［特殊］自選一階材料箱：現有素材箱選單可選此素材×1",
+          "source": "ui.js:15"
+        }
+      ],
+      "pending": [],
+      "image": "/素材美術_2026-10-18/獸骨粉.png"
     },
     {
-      "id": "CQ-DZ-044",
-      "title": "燐火與靈蝶",
-      "difficulty": "普通",
-      "description": "研究冒火的狼與操縱靈力的蝴蝶。",
-      "goal": {
-        "g73": true,
-        "kind": "submit",
-        "requirements": [
-          {
-            "name": "［二階］火尾毛",
-            "count": 3
-          },
-          {
-            "name": "［一階］靈粉",
-            "count": 3
-          }
-        ]
-      },
-      "reward": {
-        "rep": 5,
-        "cult": 40,
-        "coins": 500,
-        "items": [
-          [
-            "［初階］百靈藥水",
-            5
-          ]
-        ]
-      },
-      "unlock": "black",
-      "realm": "築基五層"
+      "name": "［一階］妖血精華",
+      "category": "合成素材",
+      "commissionEligible": false,
+      "sources": [
+        {
+          "kind": "配方",
+          "name": "［一階］妖血精華",
+          "text": "工坊・合成：妖獸精血×2＋靈草×1",
+          "source": "RECIPES.合成"
+        },
+        {
+          "kind": "任務",
+          "name": "improve",
+          "text": "［主線］提升實力：修為＋70、靈幣＋300、妖血精華×1。",
+          "source": "R56_QUESTS／JZ071.mainRewards／sideRewards"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］綜合一階素材箱",
+          "text": "［特殊］綜合一階素材箱：使用時可自選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選一階材料箱",
+          "text": "［特殊］自選一階材料箱：現有素材箱選單可選此素材×1",
+          "source": "ui.js:15"
+        }
+      ],
+      "pending": [],
+      "image": "/素材美術_2026-10-18/妖血精華.png"
     },
     {
-      "id": "CQ-DZ-045",
-      "title": "深窟的礦物",
-      "difficulty": "普通",
-      "description": "研究地下深窟二階礦物。",
-      "goal": {
-        "g73": true,
-        "kind": "submit",
-        "requirements": [
-          {
-            "category": "二階礦物",
-            "count": 5
-          }
-        ]
-      },
-      "reward": {
-        "rep": 5,
-        "cult": 50,
-        "coins": 650,
-        "items": [
-          [
-            "［特殊］自選二階素材箱",
-            1,
-            "special"
-          ]
-        ]
-      },
-      "unlock": "cave",
-      "realm": "築基圓滿"
+      "name": "［一階］魂粉",
+      "category": "合成素材",
+      "commissionEligible": false,
+      "sources": [
+        {
+          "kind": "配方",
+          "name": "［一階］魂粉",
+          "text": "工坊・合成：殘魂×3",
+          "source": "RECIPES.合成"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］綜合一階素材箱",
+          "text": "［特殊］綜合一階素材箱：使用時可自選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選一階材料箱",
+          "text": "［特殊］自選一階材料箱：現有素材箱選單可選此素材×1",
+          "source": "ui.js:15"
+        }
+      ],
+      "pending": [],
+      "image": "/素材美術_2026-10-18/魂粉.png"
     },
     {
-      "id": "CQ-DZ-046",
-      "title": "黑潮清剿",
-      "difficulty": "困難",
-      "description": "擊敗特殊種燐火狼×3、特殊種硬黑蠍×3、靈珠蝶×2。",
-      "goal": {
-        "g73": true,
-        "kind": "multiKills",
-        "area": "黑潮禁岸",
-        "requirements": [
-          {
-            "species": "燐火狼",
-            "tier": "特殊種",
-            "count": 3
-          },
-          {
-            "species": "硬黑蠍",
-            "tier": "特殊種",
-            "count": 3
-          },
-          {
-            "species": "靈珠蝶",
-            "count": 2
-          }
-        ]
-      },
-      "reward": {
-        "rep": 7,
-        "cult": 55,
-        "coins": 500,
-        "items": [
-          [
-            "［特殊］自選二階妖物素材箱",
-            1,
-            "special"
-          ]
-        ]
-      },
-      "unlock": "black",
-      "realm": "築基五層"
+      "name": "［一階］妖丹粉末",
+      "category": "合成素材",
+      "commissionEligible": false,
+      "sources": [
+        {
+          "kind": "配方",
+          "name": "［一階］妖丹粉末",
+          "text": "工坊・合成：殘缺妖丹×2＋靈石×1",
+          "source": "RECIPES.合成"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］綜合一階素材箱",
+          "text": "［特殊］綜合一階素材箱：使用時可自選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選一階材料箱",
+          "text": "［特殊］自選一階材料箱：現有素材箱選單可選此素材×1",
+          "source": "ui.js:15"
+        }
+      ],
+      "pending": [],
+      "image": "/素材美術_2026-10-18/妖丹粉末.png"
     },
     {
-      "id": "CQ-DZ-047",
-      "title": "怨靈的財寶",
-      "difficulty": "困難",
-      "description": "擊敗財寶怨靈×3，累計從財寶怨靈戰鬥中取得至少6,000靈幣。",
-      "goal": {
-        "g73": true,
-        "kind": "treasureCoins",
-        "area": "雷鳴沼地下深窟",
-        "species": [
-          "財寶怨靈"
-        ],
-        "count": 3,
-        "coins": 6000
-      },
-      "reward": {
-        "rep": 7,
-        "coins": 2000
-      },
-      "unlock": "cave",
-      "realm": "築基圓滿"
+      "name": "［一階］皮毛",
+      "category": "妖物素材",
+      "commissionEligible": true,
+      "sources": [
+        {
+          "kind": "妖物",
+          "name": "青木狼",
+          "area": "青陽山",
+          "text": "青陽山・青木狼：30%",
+          "source": "99-jzw-word-integration.js:1649"
+        },
+        {
+          "kind": "妖物",
+          "name": "朝陽狐",
+          "area": "落星谷",
+          "text": "落星谷・朝陽狐：30%",
+          "source": "99-jzw-word-integration.js:1649"
+        },
+        {
+          "kind": "妖物",
+          "name": "雷角鹿",
+          "area": "雷鳴沼",
+          "text": "雷鳴沼・雷角鹿：32.5%",
+          "source": "99-jzw-word-integration.js:1649"
+        },
+        {
+          "kind": "妖物",
+          "name": "水刃狼",
+          "area": "潮汐秘境",
+          "text": "潮汐秘境・水刃狼：30%",
+          "source": "99-jzw-word-integration.js:1649"
+        },
+        {
+          "kind": "委託",
+          "name": "CQ-DZ-001",
+          "text": "［委託］可怕的狼！（選擇獎勵×1）",
+          "source": "JZ071.commissions:CQ-DZ-001"
+        },
+        {
+          "kind": "委託",
+          "name": "CQ-DZ-015",
+          "text": "［委託］狡猾的狐狸！（選擇獎勵×1）",
+          "source": "JZ071.commissions:CQ-DZ-015"
+        },
+        {
+          "kind": "委託",
+          "name": "CQ-DZ-018",
+          "text": "［委託］可怕的雷電！（選擇獎勵×2）",
+          "source": "JZ071.commissions:CQ-DZ-018"
+        },
+        {
+          "kind": "挑戰",
+          "name": "萬獸塔3",
+          "text": "萬獸檯・萬獸塔第3層首通：一階妖物素材隨機×2之既有候選",
+          "source": "100-jzr-20261004.js:124"
+        },
+        {
+          "kind": "挑戰",
+          "name": "萬獸塔5",
+          "text": "萬獸檯・萬獸塔第5層首通：一階妖物素材隨機×3之既有候選",
+          "source": "100-jzr-20261004.js:124"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］綜合一階素材箱",
+          "text": "［特殊］綜合一階素材箱：使用時可自選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選一階材料箱",
+          "text": "［特殊］自選一階材料箱：現有素材箱選單可選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選一階妖物素材箱",
+          "text": "［特殊］自選一階妖物素材箱：現有合法選單可選此素材×1",
+          "source": "ui.js:15"
+        }
+      ],
+      "pending": [],
+      "image": "/素材美術_2026-10-18/皮毛.png"
     },
     {
-      "id": "CQ-DZ-048",
-      "title": "黑潮三獸試煉",
-      "difficulty": "稀有",
-      "description": "分別擊敗築基圓滿燐火狼、硬黑蠍、靈珠蝶各1隻。",
-      "goal": {
-        "g73": true,
-        "kind": "multiKills",
-        "area": "黑潮禁岸",
-        "requirements": [
-          {
-            "species": "燐火狼",
-            "realm": "築基圓滿",
-            "count": 1
-          },
-          {
-            "species": "硬黑蠍",
-            "realm": "築基圓滿",
-            "count": 1
-          },
-          {
-            "species": "靈珠蝶",
-            "realm": "築基圓滿",
-            "count": 1
-          }
-        ]
-      },
-      "reward": {
-        "rep": 12,
-        "cult": 60,
-        "coins": 2000,
-        "items": [
-          [
-            "［特殊］隨機功法書",
-            1,
-            "special"
-          ],
-          [
-            "［初階］靈根丹",
-            1
-          ]
-        ]
-      },
-      "unlock": "black",
-      "realm": "築基五層"
+      "name": "［一階］蛇鱗",
+      "category": "妖物素材",
+      "commissionEligible": true,
+      "sources": [
+        {
+          "kind": "妖物",
+          "name": "青靈蛇",
+          "area": "青陽山",
+          "text": "青陽山・青靈蛇：45%",
+          "source": "99-jzw-word-integration.js:1649"
+        },
+        {
+          "kind": "妖物",
+          "name": "水蛇",
+          "area": "潮汐秘境",
+          "text": "潮汐秘境・水蛇：45%",
+          "source": "99-jzw-word-integration.js:1649"
+        },
+        {
+          "kind": "妖物",
+          "name": "飛蛇",
+          "area": "天穹浮島",
+          "text": "天穹浮島・飛蛇：40%",
+          "source": "133-jz072-island.js:41"
+        },
+        {
+          "kind": "委託",
+          "name": "CQ-DZ-003",
+          "text": "［委託］可怕的蛇！（選擇獎勵×1）",
+          "source": "JZ071.commissions:CQ-DZ-003"
+        },
+        {
+          "kind": "委託",
+          "name": "CQ-DZ-028",
+          "text": "［委託］為甚麼會有會飛的蛇啊！（選擇獎勵×1）",
+          "source": "JZ071.commissions:CQ-DZ-028"
+        },
+        {
+          "kind": "挑戰",
+          "name": "萬獸塔3",
+          "text": "萬獸檯・萬獸塔第3層首通：一階妖物素材隨機×2之既有候選",
+          "source": "100-jzr-20261004.js:124"
+        },
+        {
+          "kind": "挑戰",
+          "name": "萬獸塔5",
+          "text": "萬獸檯・萬獸塔第5層首通：一階妖物素材隨機×3之既有候選",
+          "source": "100-jzr-20261004.js:124"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］綜合一階素材箱",
+          "text": "［特殊］綜合一階素材箱：使用時可自選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選一階材料箱",
+          "text": "［特殊］自選一階材料箱：現有素材箱選單可選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選一階妖物素材箱",
+          "text": "［特殊］自選一階妖物素材箱：現有合法選單可選此素材×1",
+          "source": "ui.js:15"
+        }
+      ],
+      "pending": [],
+      "image": "/素材美術_2026-10-18/蛇鱗.png"
     },
     {
-      "id": "CQ-DZ-049",
-      "title": "深窟生還者",
-      "difficulty": "稀有",
-      "description": "連續兩場擊敗財寶怨靈，期間玩家不可戰敗。",
-      "goal": {
-        "g73": true,
-        "kind": "streak",
-        "area": "雷鳴沼地下深窟",
-        "species": [
-          "財寶怨靈"
-        ],
-        "count": 2
-      },
-      "reward": {
-        "rep": 10,
-        "coins": 3000,
-        "items": [
-          [
-            "［特殊］綜合二階素材箱",
-            5,
-            "special"
-          ],
-          [
-            "功法殘卷",
-            2,
-            "special"
-          ]
-        ]
-      },
-      "unlock": "cave",
-      "realm": "築基圓滿"
+      "name": "［一階］硬蟲甲",
+      "category": "妖物素材",
+      "commissionEligible": true,
+      "sources": [
+        {
+          "kind": "妖物",
+          "name": "青臭蟲",
+          "area": "青陽山",
+          "text": "青陽山・青臭蟲：60%",
+          "source": "99-jzw-word-integration.js:1649"
+        },
+        {
+          "kind": "妖物",
+          "name": "噴水蟲",
+          "area": "雷鳴沼",
+          "text": "雷鳴沼・噴水蟲：50%",
+          "source": "99-jzw-word-integration.js:1649"
+        },
+        {
+          "kind": "妖物",
+          "name": "反彈盔甲蟲",
+          "area": "天穹浮島",
+          "text": "天穹浮島・反彈盔甲蟲：60%",
+          "source": "133-jz072-island.js:41"
+        },
+        {
+          "kind": "委託",
+          "name": "CQ-DZ-004",
+          "text": "［委託］可怕的蟲！（選擇獎勵×1）",
+          "source": "JZ071.commissions:CQ-DZ-004"
+        },
+        {
+          "kind": "挑戰",
+          "name": "萬獸塔3",
+          "text": "萬獸檯・萬獸塔第3層首通：一階妖物素材隨機×2之既有候選",
+          "source": "100-jzr-20261004.js:124"
+        },
+        {
+          "kind": "挑戰",
+          "name": "萬獸塔5",
+          "text": "萬獸檯・萬獸塔第5層首通：一階妖物素材隨機×3之既有候選",
+          "source": "100-jzr-20261004.js:124"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］綜合一階素材箱",
+          "text": "［特殊］綜合一階素材箱：使用時可自選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選一階材料箱",
+          "text": "［特殊］自選一階材料箱：現有素材箱選單可選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選一階妖物素材箱",
+          "text": "［特殊］自選一階妖物素材箱：現有合法選單可選此素材×1",
+          "source": "ui.js:15"
+        }
+      ],
+      "pending": [],
+      "image": "/素材美術_2026-10-18/硬蟲甲.png"
     },
     {
-      "id": "CQ-DZ-050",
-      "title": "黑潮中的第三道聲音",
-      "difficulty": "神秘",
-      "description": "黑潮禁岸……夜晚……會有人呼喚你的名字。第一次，別回答。第二次，別回頭。如果你聽見第三次……千萬不要相信那個聲音。",
-      "goal": {
-        "g73": true,
-        "kind": "event",
-        "event": "black",
-        "area": "黑潮禁岸",
-        "item": "［任務］無聲黑珠"
-      },
-      "reward": {
-        "rep": 50,
-        "cult": 150,
-        "coins": 1800,
-        "items": [
-          [
-            "［特殊］自選二階妖物素材箱",
-            3,
-            "special"
-          ],
-          [
-            "功法殘卷",
-            2,
-            "special"
-          ],
-          [
-            "［特殊］滿貫丹",
-            1,
-            "special"
-          ]
-        ]
-      },
-      "unlock": "black",
-      "realm": "築基五層"
+      "name": "［一階］妖鳥羽",
+      "category": "妖物素材",
+      "commissionEligible": true,
+      "sources": [
+        {
+          "kind": "妖物",
+          "name": "朝東鳥",
+          "area": "落星谷",
+          "text": "落星谷・朝東鳥：89%",
+          "source": "99-jzw-word-integration.js:1649"
+        },
+        {
+          "kind": "委託",
+          "name": "CQ-DZ-016",
+          "text": "［委託］可愛的小鳥！（固定獎勵×2）",
+          "source": "JZ071.commissions:CQ-DZ-016"
+        },
+        {
+          "kind": "挑戰",
+          "name": "萬獸塔3",
+          "text": "萬獸檯・萬獸塔第3層首通：一階妖物素材隨機×2之既有候選",
+          "source": "100-jzr-20261004.js:124"
+        },
+        {
+          "kind": "挑戰",
+          "name": "萬獸塔5",
+          "text": "萬獸檯・萬獸塔第5層首通：一階妖物素材隨機×3之既有候選",
+          "source": "100-jzr-20261004.js:124"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］綜合一階素材箱",
+          "text": "［特殊］綜合一階素材箱：使用時可自選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選一階材料箱",
+          "text": "［特殊］自選一階材料箱：現有素材箱選單可選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選一階妖物素材箱",
+          "text": "［特殊］自選一階妖物素材箱：現有合法選單可選此素材×1",
+          "source": "ui.js:15"
+        }
+      ],
+      "pending": [],
+      "image": "/素材美術_2026-10-18/妖鳥羽.png"
+    },
+    {
+      "name": "［一階］獸骨",
+      "category": "妖物素材",
+      "commissionEligible": true,
+      "sources": [
+        {
+          "kind": "妖物",
+          "name": "青木狼",
+          "area": "青陽山",
+          "text": "青陽山・青木狼：30%",
+          "source": "99-jzw-word-integration.js:1649"
+        },
+        {
+          "kind": "妖物",
+          "name": "朝陽狐",
+          "area": "落星谷",
+          "text": "落星谷・朝陽狐：30%",
+          "source": "99-jzw-word-integration.js:1649"
+        },
+        {
+          "kind": "妖物",
+          "name": "雷角鹿",
+          "area": "雷鳴沼",
+          "text": "雷鳴沼・雷角鹿：32.5%",
+          "source": "99-jzw-word-integration.js:1649"
+        },
+        {
+          "kind": "妖物",
+          "name": "潮汐龜",
+          "area": "潮汐秘境",
+          "text": "潮汐秘境・潮汐龜：44%",
+          "source": "99-jzw-word-integration.js:1649"
+        },
+        {
+          "kind": "妖物",
+          "name": "水刃狼",
+          "area": "潮汐秘境",
+          "text": "潮汐秘境・水刃狼：30%",
+          "source": "99-jzw-word-integration.js:1649"
+        },
+        {
+          "kind": "委託",
+          "name": "CQ-DZ-001",
+          "text": "［委託］可怕的狼！（選擇獎勵×1）",
+          "source": "JZ071.commissions:CQ-DZ-001"
+        },
+        {
+          "kind": "委託",
+          "name": "CQ-DZ-015",
+          "text": "［委託］狡猾的狐狸！（選擇獎勵×1）",
+          "source": "JZ071.commissions:CQ-DZ-015"
+        },
+        {
+          "kind": "委託",
+          "name": "CQ-DZ-018",
+          "text": "［委託］可怕的雷電！（選擇獎勵×2）",
+          "source": "JZ071.commissions:CQ-DZ-018"
+        },
+        {
+          "kind": "挑戰",
+          "name": "問道檯6",
+          "text": "問道檯・逐步挑戰第6層首通×3",
+          "source": "99-jzw-word-integration.js・floors"
+        },
+        {
+          "kind": "挑戰",
+          "name": "萬獸塔3",
+          "text": "萬獸檯・萬獸塔第3層首通：一階妖物素材隨機×2之既有候選",
+          "source": "100-jzr-20261004.js:124"
+        },
+        {
+          "kind": "挑戰",
+          "name": "萬獸塔5",
+          "text": "萬獸檯・萬獸塔第5層首通：一階妖物素材隨機×3之既有候選",
+          "source": "100-jzr-20261004.js:124"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］綜合一階素材箱",
+          "text": "［特殊］綜合一階素材箱：使用時可自選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選一階材料箱",
+          "text": "［特殊］自選一階材料箱：現有素材箱選單可選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選一階妖物素材箱",
+          "text": "［特殊］自選一階妖物素材箱：現有合法選單可選此素材×1",
+          "source": "ui.js:15"
+        }
+      ],
+      "pending": [],
+      "image": "/素材美術_2026-10-18/獸骨.png"
+    },
+    {
+      "name": "［一階］獸牙",
+      "category": "妖物素材",
+      "commissionEligible": true,
+      "sources": [
+        {
+          "kind": "妖物",
+          "name": "青木狼",
+          "area": "青陽山",
+          "text": "青陽山・青木狼：30%",
+          "source": "99-jzw-word-integration.js:1649"
+        },
+        {
+          "kind": "妖物",
+          "name": "青靈蛇",
+          "area": "青陽山",
+          "text": "青陽山・青靈蛇：45%",
+          "source": "99-jzw-word-integration.js:1649"
+        },
+        {
+          "kind": "妖物",
+          "name": "朝陽狐",
+          "area": "落星谷",
+          "text": "落星谷・朝陽狐：30%",
+          "source": "99-jzw-word-integration.js:1649"
+        },
+        {
+          "kind": "妖物",
+          "name": "冥雷蛟",
+          "area": "雷鳴沼",
+          "text": "雷鳴沼・冥雷蛟：35%",
+          "source": "99-jzw-word-integration.js:1649"
+        },
+        {
+          "kind": "妖物",
+          "name": "水蛇",
+          "area": "潮汐秘境",
+          "text": "潮汐秘境・水蛇：45%",
+          "source": "99-jzw-word-integration.js:1649"
+        },
+        {
+          "kind": "妖物",
+          "name": "水刃狼",
+          "area": "潮汐秘境",
+          "text": "潮汐秘境・水刃狼：30%",
+          "source": "99-jzw-word-integration.js:1649"
+        },
+        {
+          "kind": "妖物",
+          "name": "飛蛇",
+          "area": "天穹浮島",
+          "text": "天穹浮島・飛蛇：20%",
+          "source": "133-jz072-island.js:41"
+        },
+        {
+          "kind": "妖物",
+          "name": "燐火狼",
+          "area": "黑潮禁岸",
+          "text": "黑潮禁岸・燐火狼：5%",
+          "source": "monsters.js:17"
+        },
+        {
+          "kind": "委託",
+          "name": "CQ-DZ-001",
+          "text": "［委託］可怕的狼！（選擇獎勵×1）",
+          "source": "JZ071.commissions:CQ-DZ-001"
+        },
+        {
+          "kind": "委託",
+          "name": "CQ-DZ-003",
+          "text": "［委託］可怕的蛇！（選擇獎勵×1）",
+          "source": "JZ071.commissions:CQ-DZ-003"
+        },
+        {
+          "kind": "委託",
+          "name": "CQ-DZ-015",
+          "text": "［委託］狡猾的狐狸！（選擇獎勵×1）",
+          "source": "JZ071.commissions:CQ-DZ-015"
+        },
+        {
+          "kind": "委託",
+          "name": "CQ-DZ-020",
+          "text": "［委託］奇怪的蛇！（固定獎勵×1）",
+          "source": "JZ071.commissions:CQ-DZ-020"
+        },
+        {
+          "kind": "委託",
+          "name": "CQ-DZ-028",
+          "text": "［委託］為甚麼會有會飛的蛇啊！（選擇獎勵×1）",
+          "source": "JZ071.commissions:CQ-DZ-028"
+        },
+        {
+          "kind": "挑戰",
+          "name": "萬獸塔3",
+          "text": "萬獸檯・萬獸塔第3層首通：一階妖物素材隨機×2之既有候選",
+          "source": "100-jzr-20261004.js:124"
+        },
+        {
+          "kind": "挑戰",
+          "name": "萬獸塔5",
+          "text": "萬獸檯・萬獸塔第5層首通：一階妖物素材隨機×3之既有候選",
+          "source": "100-jzr-20261004.js:124"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］綜合一階素材箱",
+          "text": "［特殊］綜合一階素材箱：使用時可自選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選一階材料箱",
+          "text": "［特殊］自選一階材料箱：現有素材箱選單可選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選一階妖物素材箱",
+          "text": "［特殊］自選一階妖物素材箱：現有合法選單可選此素材×1",
+          "source": "ui.js:15"
+        }
+      ],
+      "pending": [],
+      "image": "/素材美術_2026-10-18/獸牙.png"
+    },
+    {
+      "name": "［一階］妖獸精血",
+      "category": "妖物素材",
+      "commissionEligible": true,
+      "sources": [
+        {
+          "kind": "妖物",
+          "name": "青木狼",
+          "area": "青陽山",
+          "text": "青陽山・青木狼：5%",
+          "source": "99-jzw-word-integration.js:1649"
+        },
+        {
+          "kind": "妖物",
+          "name": "青靈蛇",
+          "area": "青陽山",
+          "text": "青陽山・青靈蛇：5%",
+          "source": "99-jzw-word-integration.js:1649"
+        },
+        {
+          "kind": "妖物",
+          "name": "青翠蝶",
+          "area": "青陽山",
+          "text": "青陽山・青翠蝶：55%",
+          "source": "99-jzw-word-integration.js:1649"
+        },
+        {
+          "kind": "妖物",
+          "name": "青臭蟲",
+          "area": "青陽山",
+          "text": "青陽山・青臭蟲：5%",
+          "source": "99-jzw-word-integration.js:1649"
+        },
+        {
+          "kind": "妖物",
+          "name": "朝東鳥",
+          "area": "落星谷",
+          "text": "落星谷・朝東鳥：5%",
+          "source": "99-jzw-word-integration.js:1649"
+        },
+        {
+          "kind": "妖物",
+          "name": "朝陽狐",
+          "area": "落星谷",
+          "text": "落星谷・朝陽狐：5%",
+          "source": "99-jzw-word-integration.js:1649"
+        },
+        {
+          "kind": "妖物",
+          "name": "重翅蝶",
+          "area": "落星谷",
+          "text": "落星谷・重翅蝶：5%",
+          "source": "99-jzw-word-integration.js:1649"
+        },
+        {
+          "kind": "妖物",
+          "name": "小圓蛛",
+          "area": "落星谷",
+          "text": "落星谷・小圓蛛：4%",
+          "source": "99-jzw-word-integration.js:1649"
+        },
+        {
+          "kind": "妖物",
+          "name": "雷角鹿",
+          "area": "雷鳴沼",
+          "text": "雷鳴沼・雷角鹿：7%",
+          "source": "99-jzw-word-integration.js:1649"
+        },
+        {
+          "kind": "妖物",
+          "name": "轟轟鯰",
+          "area": "雷鳴沼",
+          "text": "雷鳴沼・轟轟鯰：70%",
+          "source": "99-jzw-word-integration.js:1649"
+        },
+        {
+          "kind": "妖物",
+          "name": "噴水蟲",
+          "area": "雷鳴沼",
+          "text": "雷鳴沼・噴水蟲：50%",
+          "source": "99-jzw-word-integration.js:1649"
+        },
+        {
+          "kind": "妖物",
+          "name": "冥雷蛟",
+          "area": "雷鳴沼",
+          "text": "雷鳴沼・冥雷蛟：4%",
+          "source": "99-jzw-word-integration.js:1649"
+        },
+        {
+          "kind": "妖物",
+          "name": "鳴雀",
+          "area": "雷鳴沼",
+          "text": "雷鳴沼・鳴雀：4%",
+          "source": "99-jzw-word-integration.js:1649"
+        },
+        {
+          "kind": "妖物",
+          "name": "潮汐龜",
+          "area": "潮汐秘境",
+          "text": "潮汐秘境・潮汐龜：5%",
+          "source": "99-jzw-word-integration.js:1649"
+        },
+        {
+          "kind": "妖物",
+          "name": "水蛇",
+          "area": "潮汐秘境",
+          "text": "潮汐秘境・水蛇：5%",
+          "source": "99-jzw-word-integration.js:1649"
+        },
+        {
+          "kind": "妖物",
+          "name": "水刃狼",
+          "area": "潮汐秘境",
+          "text": "潮汐秘境・水刃狼：5%",
+          "source": "99-jzw-word-integration.js:1649"
+        },
+        {
+          "kind": "妖物",
+          "name": "風粉蝶",
+          "area": "潮汐秘境",
+          "text": "潮汐秘境・風粉蝶：20%",
+          "source": "99-jzw-word-integration.js:1649"
+        },
+        {
+          "kind": "妖物",
+          "name": "千針蜂",
+          "area": "潮汐秘境",
+          "text": "潮汐秘境・千針蜂：35%",
+          "source": "99-jzw-word-integration.js:1649"
+        },
+        {
+          "kind": "妖物",
+          "name": "自爆毒蛛",
+          "area": "潮汐秘境",
+          "text": "潮汐秘境・自爆毒蛛：1%",
+          "source": "99-jzw-word-integration.js:1649"
+        },
+        {
+          "kind": "妖物",
+          "name": "天翼鷹",
+          "area": "天穹浮島",
+          "text": "天穹浮島・天翼鷹：25%",
+          "source": "133-jz072-island.js:41"
+        },
+        {
+          "kind": "妖物",
+          "name": "飛蛇",
+          "area": "天穹浮島",
+          "text": "天穹浮島・飛蛇：4%",
+          "source": "133-jz072-island.js:41"
+        },
+        {
+          "kind": "妖物",
+          "name": "反彈盔甲蟲",
+          "area": "天穹浮島",
+          "text": "天穹浮島・反彈盔甲蟲：4%",
+          "source": "133-jz072-island.js:41"
+        },
+        {
+          "kind": "委託",
+          "name": "CQ-DZ-019",
+          "text": "［委託］胖嘟嘟的鯰魚！（固定獎勵×1）",
+          "source": "JZ071.commissions:CQ-DZ-019"
+        },
+        {
+          "kind": "挑戰",
+          "name": "萬獸塔3",
+          "text": "萬獸檯・萬獸塔第3層首通：一階妖物素材隨機×2之既有候選",
+          "source": "100-jzr-20261004.js:124"
+        },
+        {
+          "kind": "挑戰",
+          "name": "萬獸塔5",
+          "text": "萬獸檯・萬獸塔第5層首通：一階妖物素材隨機×3之既有候選",
+          "source": "100-jzr-20261004.js:124"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］綜合一階素材箱",
+          "text": "［特殊］綜合一階素材箱：使用時可自選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選一階材料箱",
+          "text": "［特殊］自選一階材料箱：現有素材箱選單可選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選一階妖物素材箱",
+          "text": "［特殊］自選一階妖物素材箱：現有合法選單可選此素材×1",
+          "source": "ui.js:15"
+        }
+      ],
+      "pending": [],
+      "image": "/素材美術_2026-10-18/妖獸精血.png"
+    },
+    {
+      "name": "［一階］殘缺妖丹",
+      "category": "妖物素材",
+      "commissionEligible": true,
+      "sources": [
+        {
+          "kind": "妖物",
+          "name": "青木狼",
+          "area": "青陽山",
+          "text": "青陽山・青木狼：4%",
+          "source": "99-jzw-word-integration.js:1649"
+        },
+        {
+          "kind": "妖物",
+          "name": "青靈蛇",
+          "area": "青陽山",
+          "text": "青陽山・青靈蛇：4%",
+          "source": "99-jzw-word-integration.js:1649"
+        },
+        {
+          "kind": "妖物",
+          "name": "青翠蝶",
+          "area": "青陽山",
+          "text": "青陽山・青翠蝶：40%",
+          "source": "99-jzw-word-integration.js:1649"
+        },
+        {
+          "kind": "妖物",
+          "name": "青臭蟲",
+          "area": "青陽山",
+          "text": "青陽山・青臭蟲：5%",
+          "source": "99-jzw-word-integration.js:1649"
+        },
+        {
+          "kind": "妖物",
+          "name": "朝東鳥",
+          "area": "落星谷",
+          "text": "落星谷・朝東鳥：5%",
+          "source": "99-jzw-word-integration.js:1649"
+        },
+        {
+          "kind": "妖物",
+          "name": "朝陽狐",
+          "area": "落星谷",
+          "text": "落星谷・朝陽狐：4%",
+          "source": "99-jzw-word-integration.js:1649"
+        },
+        {
+          "kind": "妖物",
+          "name": "重翅蝶",
+          "area": "落星谷",
+          "text": "落星谷・重翅蝶：5%",
+          "source": "99-jzw-word-integration.js:1649"
+        },
+        {
+          "kind": "妖物",
+          "name": "小圓蛛",
+          "area": "落星谷",
+          "text": "落星谷・小圓蛛：5%",
+          "source": "99-jzw-word-integration.js:1649"
+        },
+        {
+          "kind": "妖物",
+          "name": "雷角鹿",
+          "area": "雷鳴沼",
+          "text": "雷鳴沼・雷角鹿：7%",
+          "source": "99-jzw-word-integration.js:1649"
+        },
+        {
+          "kind": "妖物",
+          "name": "轟轟鯰",
+          "area": "雷鳴沼",
+          "text": "雷鳴沼・轟轟鯰：20%",
+          "source": "99-jzw-word-integration.js:1649"
+        },
+        {
+          "kind": "妖物",
+          "name": "冥雷蛟",
+          "area": "雷鳴沼",
+          "text": "雷鳴沼・冥雷蛟：5%",
+          "source": "99-jzw-word-integration.js:1649"
+        },
+        {
+          "kind": "妖物",
+          "name": "鳴雀",
+          "area": "雷鳴沼",
+          "text": "雷鳴沼・鳴雀：3%",
+          "source": "99-jzw-word-integration.js:1649"
+        },
+        {
+          "kind": "妖物",
+          "name": "潮汐龜",
+          "area": "潮汐秘境",
+          "text": "潮汐秘境・潮汐龜：6%",
+          "source": "99-jzw-word-integration.js:1649"
+        },
+        {
+          "kind": "妖物",
+          "name": "水蛇",
+          "area": "潮汐秘境",
+          "text": "潮汐秘境・水蛇：4%",
+          "source": "99-jzw-word-integration.js:1649"
+        },
+        {
+          "kind": "妖物",
+          "name": "水刃狼",
+          "area": "潮汐秘境",
+          "text": "潮汐秘境・水刃狼：4%",
+          "source": "99-jzw-word-integration.js:1649"
+        },
+        {
+          "kind": "妖物",
+          "name": "風粉蝶",
+          "area": "潮汐秘境",
+          "text": "潮汐秘境・風粉蝶：20%",
+          "source": "99-jzw-word-integration.js:1649"
+        },
+        {
+          "kind": "妖物",
+          "name": "千針蜂",
+          "area": "潮汐秘境",
+          "text": "潮汐秘境・千針蜂：35%",
+          "source": "99-jzw-word-integration.js:1649"
+        },
+        {
+          "kind": "妖物",
+          "name": "自爆毒蛛",
+          "area": "潮汐秘境",
+          "text": "潮汐秘境・自爆毒蛛：1%",
+          "source": "99-jzw-word-integration.js:1649"
+        },
+        {
+          "kind": "妖物",
+          "name": "天翼鷹",
+          "area": "天穹浮島",
+          "text": "天穹浮島・天翼鷹：40%",
+          "source": "133-jz072-island.js:41"
+        },
+        {
+          "kind": "妖物",
+          "name": "飛蛇",
+          "area": "天穹浮島",
+          "text": "天穹浮島・飛蛇：35%",
+          "source": "133-jz072-island.js:41"
+        },
+        {
+          "kind": "妖物",
+          "name": "反彈盔甲蟲",
+          "area": "天穹浮島",
+          "text": "天穹浮島・反彈盔甲蟲：35%",
+          "source": "133-jz072-island.js:41"
+        },
+        {
+          "kind": "挑戰",
+          "name": "萬獸塔3",
+          "text": "萬獸檯・萬獸塔第3層首通：一階妖物素材隨機×2之既有候選",
+          "source": "100-jzr-20261004.js:124"
+        },
+        {
+          "kind": "挑戰",
+          "name": "萬獸塔5",
+          "text": "萬獸檯・萬獸塔第5層首通：一階妖物素材隨機×3之既有候選",
+          "source": "100-jzr-20261004.js:124"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］綜合一階素材箱",
+          "text": "［特殊］綜合一階素材箱：使用時可自選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選一階材料箱",
+          "text": "［特殊］自選一階材料箱：現有素材箱選單可選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選一階妖物素材箱",
+          "text": "［特殊］自選一階妖物素材箱：現有合法選單可選此素材×1",
+          "source": "ui.js:15"
+        }
+      ],
+      "pending": [],
+      "image": "/素材美術_2026-10-18/殘缺妖丹.png"
+    },
+    {
+      "name": "［一階］殘魂",
+      "category": "妖物素材",
+      "commissionEligible": true,
+      "sources": [
+        {
+          "kind": "妖物",
+          "name": "青木狼",
+          "area": "青陽山",
+          "text": "青陽山・青木狼：1%",
+          "source": "99-jzw-word-integration.js:1649"
+        },
+        {
+          "kind": "妖物",
+          "name": "青靈蛇",
+          "area": "青陽山",
+          "text": "青陽山・青靈蛇：1%",
+          "source": "99-jzw-word-integration.js:1649"
+        },
+        {
+          "kind": "妖物",
+          "name": "青翠蝶",
+          "area": "青陽山",
+          "text": "青陽山・青翠蝶：5%",
+          "source": "99-jzw-word-integration.js:1649"
+        },
+        {
+          "kind": "妖物",
+          "name": "青臭蟲",
+          "area": "青陽山",
+          "text": "青陽山・青臭蟲：1%",
+          "source": "99-jzw-word-integration.js:1649"
+        },
+        {
+          "kind": "妖物",
+          "name": "朝東鳥",
+          "area": "落星谷",
+          "text": "落星谷・朝東鳥：1%",
+          "source": "99-jzw-word-integration.js:1649"
+        },
+        {
+          "kind": "妖物",
+          "name": "朝陽狐",
+          "area": "落星谷",
+          "text": "落星谷・朝陽狐：1%",
+          "source": "99-jzw-word-integration.js:1649"
+        },
+        {
+          "kind": "妖物",
+          "name": "重翅蝶",
+          "area": "落星谷",
+          "text": "落星谷・重翅蝶：3%",
+          "source": "99-jzw-word-integration.js:1649"
+        },
+        {
+          "kind": "妖物",
+          "name": "小圓蛛",
+          "area": "落星谷",
+          "text": "落星谷・小圓蛛：1%",
+          "source": "99-jzw-word-integration.js:1649"
+        },
+        {
+          "kind": "妖物",
+          "name": "雷角鹿",
+          "area": "雷鳴沼",
+          "text": "雷鳴沼・雷角鹿：1%",
+          "source": "99-jzw-word-integration.js:1649"
+        },
+        {
+          "kind": "妖物",
+          "name": "轟轟鯰",
+          "area": "雷鳴沼",
+          "text": "雷鳴沼・轟轟鯰：10%",
+          "source": "99-jzw-word-integration.js:1649"
+        },
+        {
+          "kind": "妖物",
+          "name": "冥雷蛟",
+          "area": "雷鳴沼",
+          "text": "雷鳴沼・冥雷蛟：1%",
+          "source": "99-jzw-word-integration.js:1649"
+        },
+        {
+          "kind": "妖物",
+          "name": "鳴雀",
+          "area": "雷鳴沼",
+          "text": "雷鳴沼・鳴雀：1%",
+          "source": "99-jzw-word-integration.js:1649"
+        },
+        {
+          "kind": "妖物",
+          "name": "潮汐龜",
+          "area": "潮汐秘境",
+          "text": "潮汐秘境・潮汐龜：1%",
+          "source": "99-jzw-word-integration.js:1649"
+        },
+        {
+          "kind": "妖物",
+          "name": "水蛇",
+          "area": "潮汐秘境",
+          "text": "潮汐秘境・水蛇：1%",
+          "source": "99-jzw-word-integration.js:1649"
+        },
+        {
+          "kind": "妖物",
+          "name": "水刃狼",
+          "area": "潮汐秘境",
+          "text": "潮汐秘境・水刃狼：1%",
+          "source": "99-jzw-word-integration.js:1649"
+        },
+        {
+          "kind": "妖物",
+          "name": "風粉蝶",
+          "area": "潮汐秘境",
+          "text": "潮汐秘境・風粉蝶：7%",
+          "source": "99-jzw-word-integration.js:1649"
+        },
+        {
+          "kind": "妖物",
+          "name": "千針蜂",
+          "area": "潮汐秘境",
+          "text": "潮汐秘境・千針蜂：30%",
+          "source": "99-jzw-word-integration.js:1649"
+        },
+        {
+          "kind": "妖物",
+          "name": "自爆毒蛛",
+          "area": "潮汐秘境",
+          "text": "潮汐秘境・自爆毒蛛：1%",
+          "source": "99-jzw-word-integration.js:1649"
+        },
+        {
+          "kind": "妖物",
+          "name": "天翼鷹",
+          "area": "天穹浮島",
+          "text": "天穹浮島・天翼鷹：5%",
+          "source": "133-jz072-island.js:41"
+        },
+        {
+          "kind": "妖物",
+          "name": "飛蛇",
+          "area": "天穹浮島",
+          "text": "天穹浮島・飛蛇：1%",
+          "source": "133-jz072-island.js:41"
+        },
+        {
+          "kind": "妖物",
+          "name": "反彈盔甲蟲",
+          "area": "天穹浮島",
+          "text": "天穹浮島・反彈盔甲蟲：1%",
+          "source": "133-jz072-island.js:41"
+        },
+        {
+          "kind": "委託",
+          "name": "CQ-DZ-013",
+          "text": "［委託］可怕的蝴蝶！（固定獎勵×1）",
+          "source": "JZ071.commissions:CQ-DZ-013"
+        },
+        {
+          "kind": "任務",
+          "name": "sideFang",
+          "text": "［支線］能順便幫幫忙嗎？：修為＋２０、靈幣＋１００、［一階］殘魂×１。",
+          "source": "R56_QUESTS／JZ071.mainRewards／sideRewards"
+        },
+        {
+          "kind": "挑戰",
+          "name": "萬獸塔3",
+          "text": "萬獸檯・萬獸塔第3層首通：一階妖物素材隨機×2之既有候選",
+          "source": "100-jzr-20261004.js:124"
+        },
+        {
+          "kind": "挑戰",
+          "name": "萬獸塔5",
+          "text": "萬獸檯・萬獸塔第5層首通：一階妖物素材隨機×3之既有候選",
+          "source": "100-jzr-20261004.js:124"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］綜合一階素材箱",
+          "text": "［特殊］綜合一階素材箱：使用時可自選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選一階材料箱",
+          "text": "［特殊］自選一階材料箱：現有素材箱選單可選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選一階妖物素材箱",
+          "text": "［特殊］自選一階妖物素材箱：現有合法選單可選此素材×1",
+          "source": "ui.js:15"
+        }
+      ],
+      "pending": [],
+      "image": "/素材美術_2026-10-18/殘魂.png"
+    },
+    {
+      "name": "［一階］毒囊",
+      "category": "妖物素材",
+      "commissionEligible": true,
+      "sources": [
+        {
+          "kind": "妖物",
+          "name": "青臭蟲",
+          "area": "青陽山",
+          "text": "青陽山・青臭蟲：29%",
+          "source": "99-jzw-word-integration.js:1649"
+        },
+        {
+          "kind": "妖物",
+          "name": "自爆毒蛛",
+          "area": "潮汐秘境",
+          "text": "潮汐秘境・自爆毒蛛：48.5%",
+          "source": "99-jzw-word-integration.js:1649"
+        },
+        {
+          "kind": "委託",
+          "name": "CQ-DZ-002",
+          "text": "［委託］我愛甲殼！甲殼愛我！（固定獎勵×1）",
+          "source": "JZ071.commissions:CQ-DZ-002"
+        },
+        {
+          "kind": "委託",
+          "name": "CQ-DZ-004",
+          "text": "［委託］可怕的蟲！（選擇獎勵×1）",
+          "source": "JZ071.commissions:CQ-DZ-004"
+        },
+        {
+          "kind": "挑戰",
+          "name": "萬獸塔3",
+          "text": "萬獸檯・萬獸塔第3層首通：一階妖物素材隨機×2之既有候選",
+          "source": "100-jzr-20261004.js:124"
+        },
+        {
+          "kind": "挑戰",
+          "name": "萬獸塔5",
+          "text": "萬獸檯・萬獸塔第5層首通：一階妖物素材隨機×3之既有候選",
+          "source": "100-jzr-20261004.js:124"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］綜合一階素材箱",
+          "text": "［特殊］綜合一階素材箱：使用時可自選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選一階材料箱",
+          "text": "［特殊］自選一階材料箱：現有素材箱選單可選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選一階妖物素材箱",
+          "text": "［特殊］自選一階妖物素材箱：現有合法選單可選此素材×1",
+          "source": "ui.js:15"
+        }
+      ],
+      "pending": [],
+      "image": "/素材美術_2026-10-18/毒囊.png"
+    },
+    {
+      "name": "［一階］蛛絲",
+      "category": "妖物素材",
+      "commissionEligible": true,
+      "sources": [
+        {
+          "kind": "妖物",
+          "name": "小圓蛛",
+          "area": "落星谷",
+          "text": "落星谷・小圓蛛：90%",
+          "source": "99-jzw-word-integration.js:1649"
+        },
+        {
+          "kind": "妖物",
+          "name": "自爆毒蛛",
+          "area": "潮汐秘境",
+          "text": "潮汐秘境・自爆毒蛛：48.5%",
+          "source": "99-jzw-word-integration.js:1649"
+        },
+        {
+          "kind": "委託",
+          "name": "CQ-DZ-017",
+          "text": "［委託］既可愛又可怕！（固定獎勵×2）",
+          "source": "JZ071.commissions:CQ-DZ-017"
+        },
+        {
+          "kind": "挑戰",
+          "name": "萬獸塔3",
+          "text": "萬獸檯・萬獸塔第3層首通：一階妖物素材隨機×2之既有候選",
+          "source": "100-jzr-20261004.js:124"
+        },
+        {
+          "kind": "挑戰",
+          "name": "萬獸塔5",
+          "text": "萬獸檯・萬獸塔第5層首通：一階妖物素材隨機×3之既有候選",
+          "source": "100-jzr-20261004.js:124"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］綜合一階素材箱",
+          "text": "［特殊］綜合一階素材箱：使用時可自選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選一階材料箱",
+          "text": "［特殊］自選一階材料箱：現有素材箱選單可選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選一階妖物素材箱",
+          "text": "［特殊］自選一階妖物素材箱：現有合法選單可選此素材×1",
+          "source": "ui.js:15"
+        }
+      ],
+      "pending": [],
+      "image": "/素材美術_2026-10-18/蛛絲.png"
+    },
+    {
+      "name": "［一階］獸角",
+      "category": "素材",
+      "commissionEligible": false,
+      "sources": [
+        {
+          "kind": "素材箱",
+          "name": "［特殊］綜合一階素材箱",
+          "text": "［特殊］綜合一階素材箱：使用時可自選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選一階材料箱",
+          "text": "［特殊］自選一階材料箱：現有素材箱選單可選此素材×1",
+          "source": "ui.js:15"
+        }
+      ],
+      "pending": [
+        "原生掉落／採集／配方／商店／任務來源未登錄；目前僅能確認素材箱選取。"
+      ],
+      "image": "/素材美術_2026-10-18/獸角.png"
+    },
+    {
+      "name": "［一階］靈粉",
+      "category": "妖物素材",
+      "commissionEligible": true,
+      "sources": [
+        {
+          "kind": "妖物",
+          "name": "重翅蝶",
+          "area": "落星谷",
+          "text": "落星谷・重翅蝶：87%",
+          "source": "99-jzw-word-integration.js:1649"
+        },
+        {
+          "kind": "妖物",
+          "name": "風粉蝶",
+          "area": "潮汐秘境",
+          "text": "潮汐秘境・風粉蝶：53%",
+          "source": "99-jzw-word-integration.js:1649"
+        },
+        {
+          "kind": "妖物",
+          "name": "靈珠蝶",
+          "area": "黑潮禁岸",
+          "text": "黑潮禁岸・靈珠蝶：25%",
+          "source": "monsters.js:17"
+        },
+        {
+          "kind": "委託",
+          "name": "CQ-DZ-037",
+          "text": "［委託］漂亮的蝴蝶也會打人？（固定獎勵×2）",
+          "source": "JZ071.commissions:CQ-DZ-037"
+        },
+        {
+          "kind": "挑戰",
+          "name": "萬獸塔3",
+          "text": "萬獸檯・萬獸塔第3層首通：一階妖物素材隨機×2之既有候選",
+          "source": "100-jzr-20261004.js:124"
+        },
+        {
+          "kind": "挑戰",
+          "name": "萬獸塔5",
+          "text": "萬獸檯・萬獸塔第5層首通：一階妖物素材隨機×3之既有候選",
+          "source": "100-jzr-20261004.js:124"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］綜合一階素材箱",
+          "text": "［特殊］綜合一階素材箱：使用時可自選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選一階材料箱",
+          "text": "［特殊］自選一階材料箱：現有素材箱選單可選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選一階妖物素材箱",
+          "text": "［特殊］自選一階妖物素材箱：現有合法選單可選此素材×1",
+          "source": "ui.js:15"
+        }
+      ],
+      "pending": [],
+      "image": "/素材美術_2026-10-18/靈粉.png"
+    },
+    {
+      "name": "［一階］龜殼",
+      "category": "妖物素材",
+      "commissionEligible": true,
+      "sources": [
+        {
+          "kind": "妖物",
+          "name": "潮汐龜",
+          "area": "潮汐秘境",
+          "text": "潮汐秘境・潮汐龜：44%",
+          "source": "99-jzw-word-integration.js:1649"
+        },
+        {
+          "kind": "挑戰",
+          "name": "萬獸塔3",
+          "text": "萬獸檯・萬獸塔第3層首通：一階妖物素材隨機×2之既有候選",
+          "source": "100-jzr-20261004.js:124"
+        },
+        {
+          "kind": "挑戰",
+          "name": "萬獸塔5",
+          "text": "萬獸檯・萬獸塔第5層首通：一階妖物素材隨機×3之既有候選",
+          "source": "100-jzr-20261004.js:124"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］綜合一階素材箱",
+          "text": "［特殊］綜合一階素材箱：使用時可自選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選一階材料箱",
+          "text": "［特殊］自選一階材料箱：現有素材箱選單可選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選一階妖物素材箱",
+          "text": "［特殊］自選一階妖物素材箱：現有合法選單可選此素材×1",
+          "source": "ui.js:15"
+        }
+      ],
+      "pending": [],
+      "image": "/素材美術_2026-10-18/龜殼.png"
+    },
+    {
+      "name": "［二階］凝露花",
+      "category": "植物",
+      "commissionEligible": true,
+      "sources": [
+        {
+          "kind": "地區",
+          "name": "青陽山",
+          "text": "青陽山採集：15.00%",
+          "source": "R4_GATHER_CFG／136-jz072-integration.js:12"
+        },
+        {
+          "kind": "地區",
+          "name": "雷鳴沼",
+          "text": "雷鳴沼採集：30.00%",
+          "source": "R4_GATHER_CFG／136-jz072-integration.js:12"
+        },
+        {
+          "kind": "地區",
+          "name": "潮汐秘境",
+          "text": "潮汐秘境採集：17.50%",
+          "source": "R4_GATHER_CFG／136-jz072-integration.js:12"
+        },
+        {
+          "kind": "地區",
+          "name": "天穹浮島",
+          "text": "天穹浮島採集：6.25%",
+          "source": "R4_GATHER_CFG／136-jz072-integration.js:12"
+        },
+        {
+          "kind": "地區",
+          "name": "雷鳴沼地下深窟",
+          "text": "雷鳴沼地下深窟野外化後：採集類25%，類內3項等機率",
+          "source": "world.js:23"
+        },
+        {
+          "kind": "挑戰",
+          "name": "問道檯5",
+          "text": "問道檯・逐步挑戰第5層首通×2",
+          "source": "99-jzw-word-integration.js・floors"
+        },
+        {
+          "kind": "任務",
+          "name": "eastResolved",
+          "text": "［主線］事情解決了，嗎？：二階採集素材隨機×3之正式候選",
+          "source": "124-jz071-implementation.js:1192"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］綜合二階素材箱",
+          "text": "［特殊］綜合二階素材箱：使用時可自選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選二階材料箱",
+          "text": "［特殊］自選二階材料箱：現有素材箱選單可選此素材×1",
+          "source": "ui.js:15"
+        }
+      ],
+      "pending": [],
+      "image": "/素材美術_2026-10-18/凝露花.png"
+    },
+    {
+      "name": "［二階］百年靈草",
+      "category": "植物",
+      "commissionEligible": true,
+      "sources": [
+        {
+          "kind": "地區",
+          "name": "落星谷",
+          "text": "落星谷採集：25.00%",
+          "source": "R4_GATHER_CFG／136-jz072-integration.js:12"
+        },
+        {
+          "kind": "地區",
+          "name": "天穹浮島",
+          "text": "天穹浮島採集：6.25%",
+          "source": "R4_GATHER_CFG／136-jz072-integration.js:12"
+        },
+        {
+          "kind": "地區",
+          "name": "雷鳴沼地下深窟",
+          "text": "雷鳴沼地下深窟野外化後：採集類25%，類內3項等機率",
+          "source": "world.js:23"
+        },
+        {
+          "kind": "任務",
+          "name": "eastResolved",
+          "text": "［主線］事情解決了，嗎？：二階採集素材隨機×3之正式候選",
+          "source": "124-jz071-implementation.js:1192"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］綜合二階素材箱",
+          "text": "［特殊］綜合二階素材箱：使用時可自選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選二階材料箱",
+          "text": "［特殊］自選二階材料箱：現有素材箱選單可選此素材×1",
+          "source": "ui.js:15"
+        }
+      ],
+      "pending": [],
+      "image": "/素材美術_2026-10-18/百年靈草.png"
+    },
+    {
+      "name": "［二階］青紋藤",
+      "category": "植物",
+      "commissionEligible": true,
+      "sources": [
+        {
+          "kind": "地區",
+          "name": "青陽山",
+          "text": "青陽山採集：15.00%",
+          "source": "R4_GATHER_CFG／136-jz072-integration.js:12"
+        },
+        {
+          "kind": "地區",
+          "name": "天穹浮島",
+          "text": "天穹浮島採集：6.25%",
+          "source": "R4_GATHER_CFG／136-jz072-integration.js:12"
+        },
+        {
+          "kind": "地區",
+          "name": "雷鳴沼地下深窟",
+          "text": "雷鳴沼地下深窟野外化後：採集類25%，類內3項等機率",
+          "source": "world.js:23"
+        },
+        {
+          "kind": "挑戰",
+          "name": "問道檯8",
+          "text": "問道檯・逐步挑戰第8層首通×2",
+          "source": "99-jzw-word-integration.js・floors"
+        },
+        {
+          "kind": "任務",
+          "name": "eastResolved",
+          "text": "［主線］事情解決了，嗎？：二階採集素材隨機×3之正式候選",
+          "source": "124-jz071-implementation.js:1192"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］綜合二階素材箱",
+          "text": "［特殊］綜合二階素材箱：使用時可自選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選二階材料箱",
+          "text": "［特殊］自選二階材料箱：現有素材箱選單可選此素材×1",
+          "source": "ui.js:15"
+        }
+      ],
+      "pending": [],
+      "image": "/素材美術_2026-10-18/青紋藤.png"
+    },
+    {
+      "name": "［二階］赤銅礦",
+      "category": "礦物",
+      "commissionEligible": true,
+      "sources": [
+        {
+          "kind": "妖物",
+          "name": "臂巨礦",
+          "area": "天穹浮島",
+          "text": "天穹浮島・臂巨礦：20%先選二階礦物池，再從10項等機率選取",
+          "source": "133-jz072-island.js:41"
+        },
+        {
+          "kind": "妖物",
+          "name": "精晶礦靈",
+          "area": "晶礦秘境",
+          "text": "晶礦秘境・精晶礦靈：20%選四種礦物池，再四選一（單項5%）",
+          "source": "99-jzw-word-integration.js:1652"
+        },
+        {
+          "kind": "地區",
+          "name": "晶礦秘境",
+          "text": "晶礦秘境採集：22.50%",
+          "source": "R4_GATHER_CFG／136-jz072-integration.js:12"
+        },
+        {
+          "kind": "地區",
+          "name": "天穹浮島",
+          "text": "天穹浮島採集：6.25%",
+          "source": "R4_GATHER_CFG／136-jz072-integration.js:12"
+        },
+        {
+          "kind": "地區",
+          "name": "雷鳴沼地下深窟",
+          "text": "雷鳴沼地下深窟野外化後：礦物類25%，類內10項等機率",
+          "source": "world.js:23"
+        },
+        {
+          "kind": "任務",
+          "name": "eastResolved",
+          "text": "［主線］事情解決了，嗎？：二階採集素材隨機×3之正式候選",
+          "source": "124-jz071-implementation.js:1192"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］綜合二階素材箱",
+          "text": "［特殊］綜合二階素材箱：使用時可自選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選二階材料箱",
+          "text": "［特殊］自選二階材料箱：現有素材箱選單可選此素材×1",
+          "source": "ui.js:15"
+        }
+      ],
+      "pending": [],
+      "image": "/素材美術_2026-10-18/赤銅礦.png"
+    },
+    {
+      "name": "［二階］玄鐵",
+      "category": "礦物",
+      "commissionEligible": true,
+      "sources": [
+        {
+          "kind": "妖物",
+          "name": "臂巨礦",
+          "area": "天穹浮島",
+          "text": "天穹浮島・臂巨礦：20%先選二階礦物池，再從10項等機率選取",
+          "source": "133-jz072-island.js:41"
+        },
+        {
+          "kind": "妖物",
+          "name": "精晶礦靈",
+          "area": "晶礦秘境",
+          "text": "晶礦秘境・精晶礦靈：20%選四種礦物池，再四選一（單項5%）",
+          "source": "99-jzw-word-integration.js:1652"
+        },
+        {
+          "kind": "地區",
+          "name": "晶礦秘境",
+          "text": "晶礦秘境採集：22.50%",
+          "source": "R4_GATHER_CFG／136-jz072-integration.js:12"
+        },
+        {
+          "kind": "地區",
+          "name": "天穹浮島",
+          "text": "天穹浮島採集：6.25%",
+          "source": "R4_GATHER_CFG／136-jz072-integration.js:12"
+        },
+        {
+          "kind": "地區",
+          "name": "雷鳴沼地下深窟",
+          "text": "雷鳴沼地下深窟野外化後：礦物類25%，類內10項等機率",
+          "source": "world.js:23"
+        },
+        {
+          "kind": "挑戰",
+          "name": "問道檯6",
+          "text": "問道檯・逐步挑戰第6層首通×2",
+          "source": "99-jzw-word-integration.js・floors"
+        },
+        {
+          "kind": "任務",
+          "name": "eastResolved",
+          "text": "［主線］事情解決了，嗎？：二階採集素材隨機×3之正式候選",
+          "source": "124-jz071-implementation.js:1192"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］綜合二階素材箱",
+          "text": "［特殊］綜合二階素材箱：使用時可自選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選二階材料箱",
+          "text": "［特殊］自選二階材料箱：現有素材箱選單可選此素材×1",
+          "source": "ui.js:15"
+        }
+      ],
+      "pending": [],
+      "image": "/素材美術_2026-10-18/玄鐵.png"
+    },
+    {
+      "name": "［二階］火晶石",
+      "category": "礦物",
+      "commissionEligible": true,
+      "sources": [
+        {
+          "kind": "妖物",
+          "name": "臂巨礦",
+          "area": "天穹浮島",
+          "text": "天穹浮島・臂巨礦：20%先選二階礦物池，再從10項等機率選取",
+          "source": "133-jz072-island.js:41"
+        },
+        {
+          "kind": "妖物",
+          "name": "精晶礦靈",
+          "area": "晶礦秘境",
+          "text": "晶礦秘境・精晶礦靈：80%選元素晶石池，再八選一（單項10%）",
+          "source": "99-jzw-word-integration.js:1652"
+        },
+        {
+          "kind": "地區",
+          "name": "雷鳴沼地下深窟",
+          "text": "雷鳴沼地下深窟野外化後：礦物類25%，類內10項等機率",
+          "source": "world.js:23"
+        },
+        {
+          "kind": "挑戰",
+          "name": "問道檯7",
+          "text": "問道檯・逐步挑戰第7層首通×2",
+          "source": "99-jzw-word-integration.js・floors"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］綜合二階素材箱",
+          "text": "［特殊］綜合二階素材箱：使用時可自選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選二階材料箱",
+          "text": "［特殊］自選二階材料箱：現有素材箱選單可選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選晶石箱",
+          "text": "［特殊］自選晶石箱：八種正式元素晶石選一",
+          "source": "99-jzw-word-integration.js:381,1675"
+        }
+      ],
+      "pending": [],
+      "image": "/素材美術_2026-10-18/火晶石.png"
+    },
+    {
+      "name": "［二階］水晶石",
+      "category": "礦物",
+      "commissionEligible": true,
+      "sources": [
+        {
+          "kind": "妖物",
+          "name": "臂巨礦",
+          "area": "天穹浮島",
+          "text": "天穹浮島・臂巨礦：20%先選二階礦物池，再從10項等機率選取",
+          "source": "133-jz072-island.js:41"
+        },
+        {
+          "kind": "妖物",
+          "name": "精晶礦靈",
+          "area": "晶礦秘境",
+          "text": "晶礦秘境・精晶礦靈：80%選元素晶石池，再八選一（單項10%）",
+          "source": "99-jzw-word-integration.js:1652"
+        },
+        {
+          "kind": "地區",
+          "name": "潮汐秘境",
+          "text": "潮汐秘境採集：17.50%",
+          "source": "R4_GATHER_CFG／136-jz072-integration.js:12"
+        },
+        {
+          "kind": "地區",
+          "name": "雷鳴沼地下深窟",
+          "text": "雷鳴沼地下深窟野外化後：礦物類25%，類內10項等機率",
+          "source": "world.js:23"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］綜合二階素材箱",
+          "text": "［特殊］綜合二階素材箱：使用時可自選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選二階材料箱",
+          "text": "［特殊］自選二階材料箱：現有素材箱選單可選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選晶石箱",
+          "text": "［特殊］自選晶石箱：八種正式元素晶石選一",
+          "source": "99-jzw-word-integration.js:381,1675"
+        }
+      ],
+      "pending": [],
+      "image": "/素材美術_2026-10-18/水晶石.png"
+    },
+    {
+      "name": "［二階］木晶石",
+      "category": "礦物",
+      "commissionEligible": true,
+      "sources": [
+        {
+          "kind": "妖物",
+          "name": "臂巨礦",
+          "area": "天穹浮島",
+          "text": "天穹浮島・臂巨礦：20%先選二階礦物池，再從10項等機率選取",
+          "source": "133-jz072-island.js:41"
+        },
+        {
+          "kind": "妖物",
+          "name": "精晶礦靈",
+          "area": "晶礦秘境",
+          "text": "晶礦秘境・精晶礦靈：80%選元素晶石池，再八選一（單項10%）",
+          "source": "99-jzw-word-integration.js:1652"
+        },
+        {
+          "kind": "地區",
+          "name": "雷鳴沼地下深窟",
+          "text": "雷鳴沼地下深窟野外化後：礦物類25%，類內10項等機率",
+          "source": "world.js:23"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］綜合二階素材箱",
+          "text": "［特殊］綜合二階素材箱：使用時可自選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選二階材料箱",
+          "text": "［特殊］自選二階材料箱：現有素材箱選單可選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選晶石箱",
+          "text": "［特殊］自選晶石箱：八種正式元素晶石選一",
+          "source": "99-jzw-word-integration.js:381,1675"
+        }
+      ],
+      "pending": [],
+      "image": "/素材美術_2026-10-18/木晶石.png"
+    },
+    {
+      "name": "［二階］風晶石",
+      "category": "礦物",
+      "commissionEligible": true,
+      "sources": [
+        {
+          "kind": "妖物",
+          "name": "臂巨礦",
+          "area": "天穹浮島",
+          "text": "天穹浮島・臂巨礦：20%先選二階礦物池，再從10項等機率選取",
+          "source": "133-jz072-island.js:41"
+        },
+        {
+          "kind": "妖物",
+          "name": "精晶礦靈",
+          "area": "晶礦秘境",
+          "text": "晶礦秘境・精晶礦靈：80%選元素晶石池，再八選一（單項10%）",
+          "source": "99-jzw-word-integration.js:1652"
+        },
+        {
+          "kind": "地區",
+          "name": "雷鳴沼地下深窟",
+          "text": "雷鳴沼地下深窟野外化後：礦物類25%，類內10項等機率",
+          "source": "world.js:23"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］綜合二階素材箱",
+          "text": "［特殊］綜合二階素材箱：使用時可自選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選二階材料箱",
+          "text": "［特殊］自選二階材料箱：現有素材箱選單可選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選晶石箱",
+          "text": "［特殊］自選晶石箱：八種正式元素晶石選一",
+          "source": "99-jzw-word-integration.js:381,1675"
+        }
+      ],
+      "pending": [],
+      "image": "/素材美術_2026-10-18/風晶石.png"
+    },
+    {
+      "name": "［二階］雷晶石",
+      "category": "礦物",
+      "commissionEligible": true,
+      "sources": [
+        {
+          "kind": "妖物",
+          "name": "臂巨礦",
+          "area": "天穹浮島",
+          "text": "天穹浮島・臂巨礦：20%先選二階礦物池，再從10項等機率選取",
+          "source": "133-jz072-island.js:41"
+        },
+        {
+          "kind": "妖物",
+          "name": "精晶礦靈",
+          "area": "晶礦秘境",
+          "text": "晶礦秘境・精晶礦靈：80%選元素晶石池，再八選一（單項10%）",
+          "source": "99-jzw-word-integration.js:1652"
+        },
+        {
+          "kind": "地區",
+          "name": "雷鳴沼地下深窟",
+          "text": "雷鳴沼地下深窟野外化後：礦物類25%，類內10項等機率",
+          "source": "world.js:23"
+        },
+        {
+          "kind": "挑戰",
+          "name": "問道檯9",
+          "text": "問道檯・逐步挑戰第9層首通×3",
+          "source": "99-jzw-word-integration.js・floors"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］綜合二階素材箱",
+          "text": "［特殊］綜合二階素材箱：使用時可自選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選二階材料箱",
+          "text": "［特殊］自選二階材料箱：現有素材箱選單可選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選晶石箱",
+          "text": "［特殊］自選晶石箱：八種正式元素晶石選一",
+          "source": "99-jzw-word-integration.js:381,1675"
+        }
+      ],
+      "pending": [],
+      "image": "/素材美術_2026-10-18/雷晶石.png"
+    },
+    {
+      "name": "［二階］土晶石",
+      "category": "礦物",
+      "commissionEligible": true,
+      "sources": [
+        {
+          "kind": "妖物",
+          "name": "臂巨礦",
+          "area": "天穹浮島",
+          "text": "天穹浮島・臂巨礦：20%先選二階礦物池，再從10項等機率選取",
+          "source": "133-jz072-island.js:41"
+        },
+        {
+          "kind": "妖物",
+          "name": "精晶礦靈",
+          "area": "晶礦秘境",
+          "text": "晶礦秘境・精晶礦靈：80%選元素晶石池，再八選一（單項10%）",
+          "source": "99-jzw-word-integration.js:1652"
+        },
+        {
+          "kind": "地區",
+          "name": "雷鳴沼地下深窟",
+          "text": "雷鳴沼地下深窟野外化後：礦物類25%，類內10項等機率",
+          "source": "world.js:23"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］綜合二階素材箱",
+          "text": "［特殊］綜合二階素材箱：使用時可自選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選二階材料箱",
+          "text": "［特殊］自選二階材料箱：現有素材箱選單可選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選晶石箱",
+          "text": "［特殊］自選晶石箱：八種正式元素晶石選一",
+          "source": "99-jzw-word-integration.js:381,1675"
+        }
+      ],
+      "pending": [],
+      "image": "/素材美術_2026-10-18/土晶石.png"
+    },
+    {
+      "name": "［二階］光晶石",
+      "category": "礦物",
+      "commissionEligible": true,
+      "sources": [
+        {
+          "kind": "妖物",
+          "name": "臂巨礦",
+          "area": "天穹浮島",
+          "text": "天穹浮島・臂巨礦：20%先選二階礦物池，再從10項等機率選取",
+          "source": "133-jz072-island.js:41"
+        },
+        {
+          "kind": "妖物",
+          "name": "精晶礦靈",
+          "area": "晶礦秘境",
+          "text": "晶礦秘境・精晶礦靈：80%選元素晶石池，再八選一（單項10%）",
+          "source": "99-jzw-word-integration.js:1652"
+        },
+        {
+          "kind": "地區",
+          "name": "雷鳴沼地下深窟",
+          "text": "雷鳴沼地下深窟野外化後：礦物類25%，類內10項等機率",
+          "source": "world.js:23"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］綜合二階素材箱",
+          "text": "［特殊］綜合二階素材箱：使用時可自選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選二階材料箱",
+          "text": "［特殊］自選二階材料箱：現有素材箱選單可選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選晶石箱",
+          "text": "［特殊］自選晶石箱：八種正式元素晶石選一",
+          "source": "99-jzw-word-integration.js:381,1675"
+        }
+      ],
+      "pending": [],
+      "image": "/素材美術_2026-10-18/光晶石.png"
+    },
+    {
+      "name": "［二階］暗晶石",
+      "category": "礦物",
+      "commissionEligible": true,
+      "sources": [
+        {
+          "kind": "妖物",
+          "name": "臂巨礦",
+          "area": "天穹浮島",
+          "text": "天穹浮島・臂巨礦：20%先選二階礦物池，再從10項等機率選取",
+          "source": "133-jz072-island.js:41"
+        },
+        {
+          "kind": "妖物",
+          "name": "精晶礦靈",
+          "area": "晶礦秘境",
+          "text": "晶礦秘境・精晶礦靈：80%選元素晶石池，再八選一（單項10%）",
+          "source": "99-jzw-word-integration.js:1652"
+        },
+        {
+          "kind": "地區",
+          "name": "雷鳴沼地下深窟",
+          "text": "雷鳴沼地下深窟野外化後：礦物類25%，類內10項等機率",
+          "source": "world.js:23"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］綜合二階素材箱",
+          "text": "［特殊］綜合二階素材箱：使用時可自選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選二階材料箱",
+          "text": "［特殊］自選二階材料箱：現有素材箱選單可選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選晶石箱",
+          "text": "［特殊］自選晶石箱：八種正式元素晶石選一",
+          "source": "99-jzw-word-integration.js:381,1675"
+        }
+      ],
+      "pending": [],
+      "image": "/素材美術_2026-10-18/暗晶石.png"
+    },
+    {
+      "name": "［二階］碧綠木",
+      "category": "木材",
+      "commissionEligible": true,
+      "sources": [
+        {
+          "kind": "地區",
+          "name": "天穹浮島",
+          "text": "天穹浮島採集：6.25%",
+          "source": "R4_GATHER_CFG／136-jz072-integration.js:12"
+        },
+        {
+          "kind": "挑戰",
+          "name": "問道檯8",
+          "text": "問道檯・逐步挑戰第8層首通×2",
+          "source": "99-jzw-word-integration.js・floors"
+        },
+        {
+          "kind": "任務",
+          "name": "eastResolved",
+          "text": "［主線］事情解決了，嗎？：二階採集素材隨機×3之正式候選",
+          "source": "124-jz071-implementation.js:1192"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］綜合二階素材箱",
+          "text": "［特殊］綜合二階素材箱：使用時可自選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選二階材料箱",
+          "text": "［特殊］自選二階材料箱：現有素材箱選單可選此素材×1",
+          "source": "ui.js:15"
+        }
+      ],
+      "pending": [],
+      "image": "/素材美術_2026-10-18/碧綠木.png"
+    },
+    {
+      "name": "［二階］楊木",
+      "category": "木材",
+      "commissionEligible": true,
+      "sources": [
+        {
+          "kind": "地區",
+          "name": "天穹浮島",
+          "text": "天穹浮島採集：6.25%",
+          "source": "R4_GATHER_CFG／136-jz072-integration.js:12"
+        },
+        {
+          "kind": "地區",
+          "name": "雷鳴沼地下深窟",
+          "text": "雷鳴沼地下深窟野外化後：木材類25%，類內1項等機率",
+          "source": "world.js:23"
+        },
+        {
+          "kind": "任務",
+          "name": "eastResolved",
+          "text": "［主線］事情解決了，嗎？：二階採集素材隨機×3之正式候選",
+          "source": "124-jz071-implementation.js:1192"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］綜合二階素材箱",
+          "text": "［特殊］綜合二階素材箱：使用時可自選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選二階材料箱",
+          "text": "［特殊］自選二階材料箱：現有素材箱選單可選此素材×1",
+          "source": "ui.js:15"
+        }
+      ],
+      "pending": [],
+      "image": "/素材美術_2026-10-18/楊木.png"
+    },
+    {
+      "name": "［二階］玉葉果",
+      "category": "靈果",
+      "commissionEligible": true,
+      "sources": [
+        {
+          "kind": "地區",
+          "name": "落星谷",
+          "text": "落星谷採集：25.00%",
+          "source": "R4_GATHER_CFG／136-jz072-integration.js:12"
+        },
+        {
+          "kind": "地區",
+          "name": "雷鳴沼",
+          "text": "雷鳴沼採集：30.00%",
+          "source": "R4_GATHER_CFG／136-jz072-integration.js:12"
+        },
+        {
+          "kind": "地區",
+          "name": "天穹浮島",
+          "text": "天穹浮島採集：6.25%",
+          "source": "R4_GATHER_CFG／136-jz072-integration.js:12"
+        },
+        {
+          "kind": "地區",
+          "name": "雷鳴沼地下深窟",
+          "text": "雷鳴沼地下深窟野外化後：靈果類25%，類內1項等機率",
+          "source": "world.js:23"
+        },
+        {
+          "kind": "任務",
+          "name": "eastResolved",
+          "text": "［主線］事情解決了，嗎？：二階採集素材隨機×3之正式候選",
+          "source": "124-jz071-implementation.js:1192"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］綜合二階素材箱",
+          "text": "［特殊］綜合二階素材箱：使用時可自選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選二階材料箱",
+          "text": "［特殊］自選二階材料箱：現有素材箱選單可選此素材×1",
+          "source": "ui.js:15"
+        }
+      ],
+      "pending": [],
+      "image": "/素材美術_2026-10-18/玉葉果.png"
+    },
+    {
+      "name": "［二階］玄靈鐵錠",
+      "category": "合成素材",
+      "commissionEligible": false,
+      "sources": [
+        {
+          "kind": "配方",
+          "name": "［二階］玄靈鐵錠",
+          "text": "工坊・合成：玄鐵×2＋靈石×2",
+          "source": "RECIPES.合成"
+        },
+        {
+          "kind": "挑戰",
+          "name": "問道檯9",
+          "text": "問道檯・逐步挑戰第9層首通×1",
+          "source": "99-jzw-word-integration.js・floors"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］綜合二階素材箱",
+          "text": "［特殊］綜合二階素材箱：使用時可自選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選二階材料箱",
+          "text": "［特殊］自選二階材料箱：現有素材箱選單可選此素材×1",
+          "source": "ui.js:15"
+        }
+      ],
+      "pending": [],
+      "image": "/素材美術_2026-10-18/玄靈鐵錠.png"
+    },
+    {
+      "name": "［二階］靈楊木板",
+      "category": "合成素材",
+      "commissionEligible": false,
+      "sources": [
+        {
+          "kind": "配方",
+          "name": "［二階］靈楊木板",
+          "text": "工坊・合成：楊木×3＋靈石×1",
+          "source": "RECIPES.合成"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］綜合二階素材箱",
+          "text": "［特殊］綜合二階素材箱：使用時可自選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選二階材料箱",
+          "text": "［特殊］自選二階材料箱：現有素材箱選單可選此素材×1",
+          "source": "ui.js:15"
+        }
+      ],
+      "pending": [],
+      "image": "/素材美術_2026-10-18/靈楊木板.png"
+    },
+    {
+      "name": "［二階］硬骨板",
+      "category": "合成素材",
+      "commissionEligible": false,
+      "sources": [
+        {
+          "kind": "配方",
+          "name": "［二階］硬骨板",
+          "text": "工坊・合成：硬獸骨×2＋玄鐵×1",
+          "source": "RECIPES.合成"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］綜合二階素材箱",
+          "text": "［特殊］綜合二階素材箱：使用時可自選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選二階材料箱",
+          "text": "［特殊］自選二階材料箱：現有素材箱選單可選此素材×1",
+          "source": "ui.js:15"
+        }
+      ],
+      "pending": [],
+      "image": "/素材美術_2026-10-18/硬骨板.png"
+    },
+    {
+      "name": "［二階］濃靈血精",
+      "category": "合成素材",
+      "commissionEligible": false,
+      "sources": [
+        {
+          "kind": "配方",
+          "name": "［二階］濃靈血精",
+          "text": "工坊・合成：濃縮妖血×2＋妖丹×1",
+          "source": "RECIPES.合成"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］綜合二階素材箱",
+          "text": "［特殊］綜合二階素材箱：使用時可自選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選二階材料箱",
+          "text": "［特殊］自選二階材料箱：現有素材箱選單可選此素材×1",
+          "source": "ui.js:15"
+        }
+      ],
+      "pending": [],
+      "image": "/素材美術_2026-10-18/濃靈血精.png"
+    },
+    {
+      "name": "［二階］凝魂砂",
+      "category": "合成素材",
+      "commissionEligible": false,
+      "sources": [
+        {
+          "kind": "配方",
+          "name": "［二階］凝魂砂",
+          "text": "工坊・合成：妖魂碎片×2＋靈石×2",
+          "source": "RECIPES.合成"
+        },
+        {
+          "kind": "挑戰",
+          "name": "問道檯10",
+          "text": "問道檯・逐步挑戰第10層首通×2",
+          "source": "99-jzw-word-integration.js・floors"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］綜合二階素材箱",
+          "text": "［特殊］綜合二階素材箱：使用時可自選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選二階材料箱",
+          "text": "［特殊］自選二階材料箱：現有素材箱選單可選此素材×1",
+          "source": "ui.js:15"
+        }
+      ],
+      "pending": [],
+      "image": "/素材美術_2026-10-18/凝魂砂.png"
+    },
+    {
+      "name": "［二階］妖丹精華",
+      "category": "合成素材",
+      "commissionEligible": false,
+      "sources": [
+        {
+          "kind": "配方",
+          "name": "［二階］妖丹精華",
+          "text": "工坊・合成：妖丹×2＋濃縮妖血×1",
+          "source": "RECIPES.合成"
+        },
+        {
+          "kind": "任務",
+          "name": "MQ-DZ-024-A",
+          "text": "［主線］通報－落星谷：戰勝所選特殊種並回報柳清妍，固定×1",
+          "source": "124-jz071-implementation.js:1158"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］綜合二階素材箱",
+          "text": "［特殊］綜合二階素材箱：使用時可自選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選二階材料箱",
+          "text": "［特殊］自選二階材料箱：現有素材箱選單可選此素材×1",
+          "source": "ui.js:15"
+        }
+      ],
+      "pending": [],
+      "image": "/素材美術_2026-10-18/妖丹精華.png"
+    },
+    {
+      "name": "［二階］狐毛",
+      "category": "素材",
+      "commissionEligible": false,
+      "sources": [
+        {
+          "kind": "素材箱",
+          "name": "［特殊］綜合二階素材箱",
+          "text": "［特殊］綜合二階素材箱：使用時可自選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選二階材料箱",
+          "text": "［特殊］自選二階材料箱：現有素材箱選單可選此素材×1",
+          "source": "ui.js:15"
+        }
+      ],
+      "pending": [
+        "原生掉落／採集／配方／商店／任務來源未登錄；目前僅能確認素材箱選取。"
+      ],
+      "image": "/素材美術_2026-10-18/狐毛.png"
+    },
+    {
+      "name": "［二階］蛟鱗",
+      "category": "妖物素材",
+      "commissionEligible": true,
+      "sources": [
+        {
+          "kind": "妖物",
+          "name": "冥雷蛟",
+          "area": "雷鳴沼",
+          "text": "雷鳴沼・冥雷蛟：55%",
+          "source": "99-jzw-word-integration.js:1649"
+        },
+        {
+          "kind": "委託",
+          "name": "CQ-DZ-020",
+          "text": "［委託］奇怪的蛇！（固定獎勵×1）",
+          "source": "JZ071.commissions:CQ-DZ-020"
+        },
+        {
+          "kind": "任務",
+          "name": "eastResolved",
+          "text": "［主線］事情解決了，嗎？：二階妖物素材隨機×3之正式候選",
+          "source": "124-jz071-implementation.js:1192"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］綜合二階素材箱",
+          "text": "［特殊］綜合二階素材箱：使用時可自選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選二階材料箱",
+          "text": "［特殊］自選二階材料箱：現有素材箱選單可選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選二階妖物素材箱",
+          "text": "［特殊］自選二階妖物素材箱：現有合法選單可選此素材×1",
+          "source": "ui.js:15"
+        }
+      ],
+      "pending": [],
+      "image": "/素材美術_2026-10-18/蛟鱗.png"
+    },
+    {
+      "name": "［二階］黑蠍甲",
+      "category": "妖物素材",
+      "commissionEligible": false,
+      "sources": [
+        {
+          "kind": "妖物",
+          "name": "硬黑蠍",
+          "area": "黑潮禁岸",
+          "text": "黑潮禁岸・硬黑蠍：90%",
+          "source": "monsters.js:17"
+        },
+        {
+          "kind": "委託",
+          "name": "CQ-DZ-036",
+          "text": "［委託］這蠍子也太硬了吧！（固定獎勵×1）",
+          "source": "JZ071.commissions:CQ-DZ-036"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］綜合二階素材箱",
+          "text": "［特殊］綜合二階素材箱：使用時可自選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選二階材料箱",
+          "text": "［特殊］自選二階材料箱：現有素材箱選單可選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選二階妖物素材箱",
+          "text": "［特殊］自選二階妖物素材箱：現有合法選單可選此素材×1",
+          "source": "ui.js:15"
+        }
+      ],
+      "pending": [],
+      "image": "/素材美術_2026-10-18/黑蠍甲.png"
+    },
+    {
+      "name": "［二階］雀羽",
+      "category": "妖物素材",
+      "commissionEligible": true,
+      "sources": [
+        {
+          "kind": "妖物",
+          "name": "鳴雀",
+          "area": "雷鳴沼",
+          "text": "雷鳴沼・鳴雀：46%",
+          "source": "99-jzw-word-integration.js:1649"
+        },
+        {
+          "kind": "任務",
+          "name": "eastResolved",
+          "text": "［主線］事情解決了，嗎？：二階妖物素材隨機×3之正式候選",
+          "source": "124-jz071-implementation.js:1192"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］綜合二階素材箱",
+          "text": "［特殊］綜合二階素材箱：使用時可自選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選二階材料箱",
+          "text": "［特殊］自選二階材料箱：現有素材箱選單可選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選二階妖物素材箱",
+          "text": "［特殊］自選二階妖物素材箱：現有合法選單可選此素材×1",
+          "source": "ui.js:15"
+        }
+      ],
+      "pending": [],
+      "image": "/素材美術_2026-10-18/雀羽.png"
+    },
+    {
+      "name": "［二階］硬獸骨",
+      "category": "妖物素材",
+      "commissionEligible": false,
+      "sources": [
+        {
+          "kind": "妖物",
+          "name": "燐火狼",
+          "area": "黑潮禁岸",
+          "text": "黑潮禁岸・燐火狼：20%",
+          "source": "monsters.js:17"
+        },
+        {
+          "kind": "委託",
+          "name": "CQ-DZ-039",
+          "text": "［委託］甲殼收購！（固定獎勵×2）",
+          "source": "JZ071.commissions:CQ-DZ-039"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］綜合二階素材箱",
+          "text": "［特殊］綜合二階素材箱：使用時可自選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選二階材料箱",
+          "text": "［特殊］自選二階材料箱：現有素材箱選單可選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選二階妖物素材箱",
+          "text": "［特殊］自選二階妖物素材箱：現有合法選單可選此素材×1",
+          "source": "ui.js:15"
+        }
+      ],
+      "pending": [],
+      "image": "/素材美術_2026-10-18/硬獸骨.png"
+    },
+    {
+      "name": "［二階］利爪",
+      "category": "妖物素材",
+      "commissionEligible": true,
+      "sources": [
+        {
+          "kind": "妖物",
+          "name": "鳴雀",
+          "area": "雷鳴沼",
+          "text": "雷鳴沼・鳴雀：46%",
+          "source": "99-jzw-word-integration.js:1649"
+        },
+        {
+          "kind": "妖物",
+          "name": "天翼鷹",
+          "area": "天穹浮島",
+          "text": "天穹浮島・天翼鷹：30%",
+          "source": "133-jz072-island.js:41"
+        },
+        {
+          "kind": "妖物",
+          "name": "蠱雕",
+          "area": "天穹浮島",
+          "text": "天穹浮島・蠱雕：100%，固定×2",
+          "source": "133-jz072-island.js:41"
+        },
+        {
+          "kind": "妖物",
+          "name": "燐火狼",
+          "area": "黑潮禁岸",
+          "text": "黑潮禁岸・燐火狼：30%",
+          "source": "monsters.js:17"
+        },
+        {
+          "kind": "委託",
+          "name": "CQ-DZ-026",
+          "text": "［委託］是鷹還是雕？（固定獎勵×1）",
+          "source": "JZ071.commissions:CQ-DZ-026"
+        },
+        {
+          "kind": "任務",
+          "name": "eastResolved",
+          "text": "［主線］事情解決了，嗎？：二階妖物素材隨機×3之正式候選",
+          "source": "124-jz071-implementation.js:1192"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］綜合二階素材箱",
+          "text": "［特殊］綜合二階素材箱：使用時可自選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選二階材料箱",
+          "text": "［特殊］自選二階材料箱：現有素材箱選單可選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選二階妖物素材箱",
+          "text": "［特殊］自選二階妖物素材箱：現有合法選單可選此素材×1",
+          "source": "ui.js:15"
+        }
+      ],
+      "pending": [],
+      "image": "/素材美術_2026-10-18/利爪.png"
+    },
+    {
+      "name": "［二階］濃縮妖血",
+      "category": "妖物素材",
+      "commissionEligible": false,
+      "sources": [
+        {
+          "kind": "妖物",
+          "name": "蠱雕",
+          "area": "天穹浮島",
+          "text": "天穹浮島・蠱雕：100%",
+          "source": "133-jz072-island.js:41"
+        },
+        {
+          "kind": "妖物",
+          "name": "燐火狼",
+          "area": "黑潮禁岸",
+          "text": "黑潮禁岸・燐火狼：5%",
+          "source": "monsters.js:17"
+        },
+        {
+          "kind": "妖物",
+          "name": "硬黑蠍",
+          "area": "黑潮禁岸",
+          "text": "黑潮禁岸・硬黑蠍：5%",
+          "source": "monsters.js:17"
+        },
+        {
+          "kind": "妖物",
+          "name": "靈珠蝶",
+          "area": "黑潮禁岸",
+          "text": "黑潮禁岸・靈珠蝶：25%",
+          "source": "monsters.js:17"
+        },
+        {
+          "kind": "挑戰",
+          "name": "問道檯7",
+          "text": "問道檯・逐步挑戰第7層首通×1",
+          "source": "99-jzw-word-integration.js・floors"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］綜合二階素材箱",
+          "text": "［特殊］綜合二階素材箱：使用時可自選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選二階材料箱",
+          "text": "［特殊］自選二階材料箱：現有素材箱選單可選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選二階妖物素材箱",
+          "text": "［特殊］自選二階妖物素材箱：現有合法選單可選此素材×1",
+          "source": "ui.js:15"
+        }
+      ],
+      "pending": [],
+      "image": "/素材美術_2026-10-18/濃縮妖血.png"
+    },
+    {
+      "name": "［二階］妖丹",
+      "category": "妖物素材",
+      "commissionEligible": false,
+      "sources": [
+        {
+          "kind": "妖物",
+          "name": "蠱雕",
+          "area": "天穹浮島",
+          "text": "天穹浮島・蠱雕：100%",
+          "source": "133-jz072-island.js:41"
+        },
+        {
+          "kind": "妖物",
+          "name": "燐火狼",
+          "area": "黑潮禁岸",
+          "text": "黑潮禁岸・燐火狼：4%",
+          "source": "monsters.js:17"
+        },
+        {
+          "kind": "妖物",
+          "name": "硬黑蠍",
+          "area": "黑潮禁岸",
+          "text": "黑潮禁岸・硬黑蠍：4%",
+          "source": "monsters.js:17"
+        },
+        {
+          "kind": "妖物",
+          "name": "靈珠蝶",
+          "area": "黑潮禁岸",
+          "text": "黑潮禁岸・靈珠蝶：25%",
+          "source": "monsters.js:17"
+        },
+        {
+          "kind": "挑戰",
+          "name": "問道檯10",
+          "text": "問道檯・逐步挑戰第10層首通×1",
+          "source": "99-jzw-word-integration.js・floors"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］綜合二階素材箱",
+          "text": "［特殊］綜合二階素材箱：使用時可自選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選二階材料箱",
+          "text": "［特殊］自選二階材料箱：現有素材箱選單可選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選二階妖物素材箱",
+          "text": "［特殊］自選二階妖物素材箱：現有合法選單可選此素材×1",
+          "source": "ui.js:15"
+        }
+      ],
+      "pending": [],
+      "image": "/素材美術_2026-10-18/妖丹.png"
+    },
+    {
+      "name": "［二階］妖魂碎片",
+      "category": "妖物素材",
+      "commissionEligible": false,
+      "sources": [
+        {
+          "kind": "妖物",
+          "name": "蠱雕",
+          "area": "天穹浮島",
+          "text": "天穹浮島・蠱雕：100%",
+          "source": "133-jz072-island.js:41"
+        },
+        {
+          "kind": "妖物",
+          "name": "燐火狼",
+          "area": "黑潮禁岸",
+          "text": "黑潮禁岸・燐火狼：1%",
+          "source": "monsters.js:17"
+        },
+        {
+          "kind": "妖物",
+          "name": "硬黑蠍",
+          "area": "黑潮禁岸",
+          "text": "黑潮禁岸・硬黑蠍：1%",
+          "source": "monsters.js:17"
+        },
+        {
+          "kind": "妖物",
+          "name": "靈珠蝶",
+          "area": "黑潮禁岸",
+          "text": "黑潮禁岸・靈珠蝶：25%",
+          "source": "monsters.js:17"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］綜合二階素材箱",
+          "text": "［特殊］綜合二階素材箱：使用時可自選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選二階材料箱",
+          "text": "［特殊］自選二階材料箱：現有素材箱選單可選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選二階妖物素材箱",
+          "text": "［特殊］自選二階妖物素材箱：現有合法選單可選此素材×1",
+          "source": "ui.js:15"
+        }
+      ],
+      "pending": [],
+      "image": "/素材美術_2026-10-18/妖魂碎片.png"
+    },
+    {
+      "name": "［二階］雷角",
+      "category": "妖物素材",
+      "commissionEligible": true,
+      "sources": [
+        {
+          "kind": "妖物",
+          "name": "雷角鹿",
+          "area": "雷鳴沼",
+          "text": "雷鳴沼・雷角鹿：20%",
+          "source": "99-jzw-word-integration.js:1649"
+        },
+        {
+          "kind": "委託",
+          "name": "CQ-DZ-018",
+          "text": "［委託］可怕的雷電！（固定獎勵×1）",
+          "source": "JZ071.commissions:CQ-DZ-018"
+        },
+        {
+          "kind": "任務",
+          "name": "eastResolved",
+          "text": "［主線］事情解決了，嗎？：二階妖物素材隨機×3之正式候選",
+          "source": "124-jz071-implementation.js:1192"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］綜合二階素材箱",
+          "text": "［特殊］綜合二階素材箱：使用時可自選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選二階材料箱",
+          "text": "［特殊］自選二階材料箱：現有素材箱選單可選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選二階妖物素材箱",
+          "text": "［特殊］自選二階妖物素材箱：現有合法選單可選此素材×1",
+          "source": "ui.js:15"
+        }
+      ],
+      "pending": [],
+      "image": "/素材美術_2026-10-18/雷角.png"
+    },
+    {
+      "name": "［二階］火尾毛",
+      "category": "妖物素材",
+      "commissionEligible": false,
+      "sources": [
+        {
+          "kind": "妖物",
+          "name": "燐火狼",
+          "area": "黑潮禁岸",
+          "text": "黑潮禁岸・燐火狼：35%",
+          "source": "monsters.js:17"
+        },
+        {
+          "kind": "委託",
+          "name": "CQ-DZ-035",
+          "text": "［委託］尾巴著火啦！（固定獎勵×1）",
+          "source": "JZ071.commissions:CQ-DZ-035"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］綜合二階素材箱",
+          "text": "［特殊］綜合二階素材箱：使用時可自選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選二階材料箱",
+          "text": "［特殊］自選二階材料箱：現有素材箱選單可選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選二階妖物素材箱",
+          "text": "［特殊］自選二階妖物素材箱：現有合法選單可選此素材×1",
+          "source": "ui.js:15"
+        }
+      ],
+      "pending": [],
+      "image": "/素材美術_2026-10-18/火尾毛.png"
+    },
+    {
+      "name": "［一階］龜甲片",
+      "category": "合成素材",
+      "commissionEligible": false,
+      "sources": [
+        {
+          "kind": "配方",
+          "name": "［一階］龜甲片",
+          "text": "工坊・合成：龜殼×3＋靈石×1",
+          "source": "RECIPES.合成"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］綜合一階素材箱",
+          "text": "［特殊］綜合一階素材箱：使用時可自選此素材×1",
+          "source": "ui.js:15"
+        },
+        {
+          "kind": "素材箱",
+          "name": "［特殊］自選一階材料箱",
+          "text": "［特殊］自選一階材料箱：現有素材箱選單可選此素材×1",
+          "source": "ui.js:15"
+        }
+      ],
+      "pending": [],
+      "image": "/素材美術_2026-10-18/龜甲片.png"
     }
   ],
-  "coreTables": {
-    "coins": [
-      [
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        9,
-        10,
-        12
+  "missingImages": [],
+  "remainingCodexArt": [
+    {
+      "category": "equipment",
+      "name": "［無階］新手護符",
+      "key": "equipment-e20a1726",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［無階］新手項鍊",
+      "key": "equipment-e20bb47c",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［無階］新手戒指",
+      "key": "equipment-e204fbcc",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［無階］新手劍",
+      "key": "equipment-2852ab16",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［無階］新手刀",
+      "key": "equipment-2852aa89",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［無階］新手長槍",
+      "key": "equipment-e20b3bcd",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［無階］新手弓",
+      "key": "equipment-2852b79c",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［無階］新手拳套",
+      "key": "equipment-e2050d5b",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［無階］新手錘",
+      "key": "equipment-2852eba1",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［無階］新手寶珠",
+      "key": "equipment-e2044f41",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［無階］新手扇",
+      "key": "equipment-2852bad0",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［無階］新手葫蘆",
+      "key": "equipment-e2094792",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［無階］新手傘",
+      "key": "equipment-2852a921",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］靈鐵劍",
+      "key": "equipment-3c043e88",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］靈鐵刀",
+      "key": "equipment-3c043dfb",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］靈鐵長槍",
+      "key": "equipment-448c169b",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］靈鐵弓",
+      "key": "equipment-3c044b0e",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］靈鐵拳套",
+      "key": "equipment-4485e829",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］靈鐵錘",
+      "key": "equipment-3c047f13",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］靈鐵寶珠",
+      "key": "equipment-44852a0f",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］靈鐵扇",
+      "key": "equipment-3c044e42",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］靈鐵葫蘆",
+      "key": "equipment-448a2260",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］靈鐵傘",
+      "key": "equipment-3c043c93",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］青鋒劍",
+      "key": "equipment-3c043915",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］斷木刀",
+      "key": "equipment-3b44b817",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］鐵脊長槍",
+      "key": "equipment-42de6223",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］青藤弓",
+      "key": "equipment-3c02b4c9",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］硬革拳套",
+      "key": "equipment-368acab9",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］沉鐵錘",
+      "key": "equipment-3b640814",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］霜月劍",
+      "key": "equipment-3bfe20e9",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］赤紋刀",
+      "key": "equipment-3bdc4f01",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］月牙長槍",
+      "key": "equipment-2e1e13ff",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］青木弓",
+      "key": "equipment-3bfefc05",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］流雲拳套",
+      "key": "equipment-31756b0d",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］聚氣錘",
+      "key": "equipment-3ba99177",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］聚靈寶珠",
+      "key": "equipment-3a245a10",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］青紋寶珠",
+      "key": "equipment-4432c11b",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］清風羽扇",
+      "key": "equipment-31d87565",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］靈紋道扇",
+      "key": "equipment-44347b0f",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］聚氣葫蘆",
+      "key": "equipment-39875c7c",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］養靈葫蘆",
+      "key": "equipment-45623bb1",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］青竹靈傘",
+      "key": "equipment-4432072f",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］流雲道傘",
+      "key": "equipment-317ae0ee",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］青藤劍",
+      "key": "equipment-3c02a843",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］赤銅刀",
+      "key": "equipment-3bdee8c7",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］玄鐵重錘",
+      "key": "equipment-3449b894",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］碧木弓",
+      "key": "equipment-3b8bdc1a",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］楊木長槍",
+      "key": "equipment-2efacf8c",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］羽爪拳套",
+      "key": "equipment-39526449",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］雀羽弓",
+      "key": "equipment-3bffd1fe",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］毒牙短刀",
+      "key": "equipment-3047b772",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］蛛絲靈弓",
+      "key": "equipment-3cbf55ba",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］角鋒槍",
+      "key": "equipment-3bd1a2d5",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］雷角槍",
+      "key": "equipment-3c01e3ba",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］碧芯劍",
+      "key": "equipment-3b8f24ed",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］導靈劍",
+      "key": "equipment-3b26491b",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］玄靈戰刀",
+      "key": "equipment-344f3dcc",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］靈楊長弓",
+      "key": "equipment-43eaefb6",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］碧芯寶珠",
+      "key": "equipment-3657104a",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］玄靈寶珠",
+      "key": "equipment-344e9ea6",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］雷角寶珠",
+      "key": "equipment-44395a5d",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］青藤羽扇",
+      "key": "equipment-44583b34",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］雀羽靈扇",
+      "key": "equipment-44019e74",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］玄羽道扇",
+      "key": "equipment-33fc8385",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］碧木葫蘆",
+      "key": "equipment-35f4b2d4",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］凝魂葫蘆",
+      "key": "equipment-25165b78",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］血靈葫蘆",
+      "key": "equipment-3dc078bb",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］蛛絲靈傘",
+      "key": "equipment-3cbf473f",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］青羽道傘",
+      "key": "equipment-44431348",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］玄靈法傘",
+      "key": "equipment-3450865f",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］玄水扇",
+      "key": "equipment-3b79335f",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］赤銅斬刀",
+      "key": "equipment-4000e3ed",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］毒囊葫蘆",
+      "key": "equipment-2fe1faeb",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］鍛造大錘",
+      "key": "equipment-42acc66e",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］流雲槍",
+      "key": "equipment-3b66e664",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］水舞扇",
+      "key": "equipment-3b606765",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］讓力大錘",
+      "key": "equipment-3e3c52f1",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］流水劍",
+      "key": "equipment-3b61a222",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］青木長弦弓",
+      "key": "equipment-390820d6",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］輪輪刀",
+      "key": "equipment-3be52908",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［中階］岩茗槍",
+      "key": "equipment-83114237",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［中階］玄水拳套",
+      "key": "equipment-e92456bc",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］粗布頭盔",
+      "key": "equipment-379eea4b",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］粗布衣",
+      "key": "equipment-3b99b1df",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］粗布褲",
+      "key": "equipment-3b99b2ae",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］粗布鞋",
+      "key": "equipment-3b99c107",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］青紋布帽",
+      "key": "equipment-4432eb0b",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］青紋短袍",
+      "key": "equipment-443638b1",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］青紋長褲",
+      "key": "equipment-4439cd0c",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］青紋布靴",
+      "key": "equipment-44332442",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］鐵邊布帽",
+      "key": "equipment-4311cf07",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］護身布衣",
+      "key": "equipment-3f119c8c",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］韌布長褲",
+      "key": "equipment-43fcc54a",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］輕行布靴",
+      "key": "equipment-409eb0a0",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］雲紋束冠",
+      "key": "equipment-44085cf2",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］素靈法帽",
+      "key": "equipment-38aed4e8",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］雲紋短衣",
+      "key": "equipment-440a94e7",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］素靈法袍",
+      "key": "equipment-38aeff38",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］雲紋護腿",
+      "key": "equipment-440cebb9",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］素靈長褲",
+      "key": "equipment-38b3eb7b",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］雲紋輕靴",
+      "key": "equipment-440d71d0",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］素靈步履",
+      "key": "equipment-38aea680",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］羽行帽",
+      "key": "equipment-3baa7836",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］狼皮帽",
+      "key": "equipment-3b787593",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］獸骨戰盔",
+      "key": "equipment-3456998c",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］玄靈戰盔",
+      "key": "equipment-344f62a0",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］狐絨衣",
+      "key": "equipment-3b78cb13",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］蟲甲護衣",
+      "key": "equipment-3d1dec04",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］硬骨護衣",
+      "key": "equipment-369c1140",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］赤尾披衣",
+      "key": "equipment-3f34fcaa",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］蛛絲輕衣",
+      "key": "equipment-3cbe80dd",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］黑蠍護腿",
+      "key": "equipment-47ca35fc",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］毒囊護腿",
+      "key": "equipment-2fe2d0d8",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］靈鐵護腿",
+      "key": "equipment-448af84d",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］雀羽靴",
+      "key": "equipment-3c000a5f",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］硬骨戰靴",
+      "key": "equipment-369720b8",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］龜甲帽",
+      "key": "equipment-3c1fcc2f",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］龜甲衣",
+      "key": "equipment-3c1ff655",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］龜甲靴",
+      "key": "equipment-3c200566",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］玄靈道衣",
+      "key": "equipment-34550a6c",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］碧木道衣",
+      "key": "equipment-35f62649",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］凝魂靈袍",
+      "key": "equipment-2518a6c2",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］赤尾靈袍",
+      "key": "equipment-3f3b5bd7",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］青羽道帽",
+      "key": "equipment-444320ed",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］碧芯靈帽",
+      "key": "equipment-365e2995",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］凝魂道帽",
+      "key": "equipment-2517a4c7",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］玄靈道褲",
+      "key": "equipment-34550b3b",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］玄靈步履",
+      "key": "equipment-3450659c",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］碧魂靈褲",
+      "key": "equipment-36ba945d",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］碧魂輕履",
+      "key": "equipment-36b96963",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］凝魂道褲",
+      "key": "equipment-2517cfbc",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］凝魂靈靴",
+      "key": "equipment-2518b5a9",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］靈羽法褲",
+      "key": "equipment-443a73ea",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］靈羽踏雲靴",
+      "key": "equipment-439305c4",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］流風靴",
+      "key": "equipment-3b674915",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］水紋靈衣",
+      "key": "equipment-30a06c6a",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］踏浪靴",
+      "key": "equipment-3bdd31e1",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］厚岩戰衣",
+      "key": "equipment-24f1857a",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］岩紋護腿",
+      "key": "equipment-298e36a2",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］赤炎戰衣",
+      "key": "equipment-3f812e15",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］烈行戰靴",
+      "key": "equipment-32d90f80",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］青木額冠",
+      "key": "equipment-43e7c441",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］翠藤衣",
+      "key": "equipment-3baadb27",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］藤影靴",
+      "key": "equipment-3bbcd74f",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］雷紋護額",
+      "key": "equipment-440f4862",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］紫電戰衣",
+      "key": "equipment-38b1941b",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］疾雷靴",
+      "key": "equipment-3b86f1e3",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］回瀾冠",
+      "key": "equipment-3b0e14c8",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］玄水靈衣",
+      "key": "equipment-33b42c03",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］潮生護腿",
+      "key": "equipment-31f8b4d1",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］土靈頭盔",
+      "key": "equipment-276d9ec8",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］勁地靴",
+      "key": "equipment-3afbe10d",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［中階］赤炎戰衣",
+      "key": "equipment-f4f7de25",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［中階］厚岩戰衣",
+      "key": "equipment-da68358a",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［中階］水紋靈衣",
+      "key": "equipment-e6171c7a",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［中階］流風靴",
+      "key": "equipment-83525705",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［中階］踏浪靴",
+      "key": "equipment-83c83fd1",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［中階］土晶戰衣",
+      "key": "equipment-dc269272",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］青玉指環",
+      "key": "equipment-440febf8",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］靈紋項鍊",
+      "key": "equipment-44359aa0",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］聚靈護符",
+      "key": "equipment-3a2a21f5",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］赤銅吊墜",
+      "key": "equipment-3ffec7eb",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］赤銅指環",
+      "key": "equipment-4000b4a2",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］蛇鱗墜",
+      "key": "equipment-3bc74c74",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］蛟鱗戒",
+      "key": "equipment-3bc7b002",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］妖羽耳飾",
+      "key": "equipment-28314f0a",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］雀羽墜",
+      "key": "equipment-3bffcb87",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］獸牙項鍊",
+      "key": "equipment-33c5ea3e",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］利爪戒",
+      "key": "equipment-3afcb559",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］赤尾玉佩",
+      "key": "equipment-3f36ce92",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］碧芯吊墜",
+      "key": "equipment-3655ff72",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］導靈指環",
+      "key": "equipment-29a54dbb",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］魂紋佩",
+      "key": "equipment-3c105ac8",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］凝魂墜",
+      "key": "equipment-3b00887f",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］玄靈道戒",
+      "key": "equipment-3454e41b",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］碧魂靈墜",
+      "key": "equipment-36ba63c7",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］羽靈玉佩",
+      "key": "equipment-39dfb223",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］血靈墜",
+      "key": "equipment-3bcc36dc",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］玄魂指環",
+      "key": "equipment-345e67ff",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］雷紋項鍊",
+      "key": "equipment-4410c891",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］潤生指環",
+      "key": "equipment-31ef36bc",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］回瀾項鍊",
+      "key": "equipment-26bd9dbd",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［中階］雷紋項鍊",
+      "key": "equipment-f98778a1",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［中階］潤生指環",
+      "key": "equipment-e765e6cc",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［中階］回瀾項鍊",
+      "key": "equipment-dc344dcd",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］狼皮護頸",
+      "key": "equipment-339c4f0b",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］蟲甲護片",
+      "key": "equipment-3d1dd5e8",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］黑蠍甲環",
+      "key": "equipment-47c776d2",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］獸骨頸甲",
+      "key": "equipment-345d22e2",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］硬骨獸甲",
+      "key": "equipment-3699162e",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］血獸環",
+      "key": "equipment-3bc7fcc0",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］濃血戰環",
+      "key": "equipment-32621ad5",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］赤尾靈飾",
+      "key": "equipment-3f3b6c48",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］骨粉護符",
+      "key": "equipment-45bad5e8",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］血精獸符",
+      "key": "equipment-3d5ac064",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］靈楊獸牌",
+      "key": "equipment-43e6e50e",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］硬骨戰甲",
+      "key": "equipment-3696fe76",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］血魄獸環",
+      "key": "equipment-3dcd4ef4",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］凝魂獸佩",
+      "key": "equipment-2514176e",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］妖元靈核",
+      "key": "equipment-278571d5",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］龜甲護片",
+      "key": "equipment-47dfa5fe",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］龜甲背甲",
+      "key": "equipment-47de5e34",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］碧靈獸環",
+      "key": "equipment-36a73c31",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］玄靈獸甲",
+      "key": "equipment-345178b6",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］凝魂獸鈴",
+      "key": "equipment-25145a39",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［特殊］靈水劍",
+      "key": "equipment-15e61689",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［特殊］秘術弓",
+      "key": "equipment-157b0960",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［特殊］鹿絞槍",
+      "key": "equipment-16035756",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［特殊］火霞刀",
+      "key": "equipment-155964b5",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［特殊］問心劍",
+      "key": "equipment-14eced21",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［特殊］破軍刀",
+      "key": "equipment-15759c6f",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［特殊］問道槍",
+      "key": "equipment-14f2e5d1",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［特殊］逐星弓",
+      "key": "equipment-15ca4d4c",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［特殊］破境拳套",
+      "key": "equipment-98748c6b",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［特殊］鎮岳錘",
+      "key": "equipment-15d6f15b",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［特殊］問靈寶珠",
+      "key": "equipment-8982b8db",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［特殊］清虛道扇",
+      "key": "equipment-94851862",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［特殊］納靈葫蘆",
+      "key": "equipment-9b9888ae",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［特殊］玄機靈傘",
+      "key": "equipment-969c6783",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［特殊］土靈盔",
+      "key": "equipment-14fa9853",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［特殊］元華斗笠",
+      "key": "equipment-8764590d",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［特殊］忡靈頭盔",
+      "key": "equipment-8e581aa6",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［特殊］忡靈戰甲",
+      "key": "equipment-8e518f61",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［特殊］忡靈鎖褲",
+      "key": "equipment-8e579ebb",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［特殊］忡靈戰靴",
+      "key": "equipment-8e51b1a3",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［特殊］問道戰衣",
+      "key": "equipment-896970af",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［特殊］問道戰靴",
+      "key": "equipment-89697fc0",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［特殊］問靈道冠",
+      "key": "equipment-8988edde",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［特殊］玄心道袍",
+      "key": "equipment-9673f431",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［特殊］踏虛靈履",
+      "key": "equipment-a31655e1",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［特殊］問天戰衣",
+      "key": "equipment-889a5c05",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［特殊］水心靈墜",
+      "key": "equipment-9321a53b",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［特殊］厚土護佩",
+      "key": "equipment-87d0d4ef",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［特殊］問道護符",
+      "key": "equipment-896e630b",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［特殊］戰心指環",
+      "key": "equipment-8e8de5f4",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［特殊］問心戒",
+      "key": "equipment-14ecfca6",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［特殊］問道佩",
+      "key": "equipment-14f2cb6d",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［特殊］破境項鍊",
+      "key": "equipment-987b338c",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［特殊］道心靈墜",
+      "key": "equipment-a38d18bc",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［特殊］問天玉佩",
+      "key": "equipment-889c3cd2",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［特殊］破天戰佩",
+      "key": "equipment-9876da06",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［特殊］獸牙護符",
+      "key": "equipment-96b3a0c8",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［特殊］靈獸頸環",
+      "key": "equipment-a700e540",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［特殊］戰獸爪環",
+      "key": "equipment-8ed9b5a6",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［特殊］護獸靈甲",
+      "key": "equipment-a1a1b223",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［特殊］疾獸鈴",
+      "key": "equipment-15695062",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［特殊］萬獸靈環",
+      "key": "equipment-9e5100cc",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［特殊］破天獸牙",
+      "key": "equipment-987914ae",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［特殊］萬靈道珠",
+      "key": "equipment-9ed69821",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［特殊］不滅獸甲",
+      "key": "equipment-85a0e5aa",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［特殊］天獸靈鈴",
+      "key": "equipment-8ac3cc33",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［初階］狐絨靈環",
+      "key": "equipment-33a2d9b8",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［特殊］清風靈葫",
+      "key": "equipment-94cac53e",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "equipment",
+      "name": "［特殊］靈水傘",
+      "key": "equipment-15e61494",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "medicine",
+      "name": "［初階］治癒丹",
+      "key": "medicine-3b60e06a",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "medicine",
+      "name": "［初階］靈癒丹",
+      "key": "medicine-3c009bb7",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "medicine",
+      "name": "［初階］提靈丹",
+      "key": "medicine-3b436409",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "medicine",
+      "name": "［初階］碧元丹",
+      "key": "medicine-3b892485",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "medicine",
+      "name": "［初階］百草丹",
+      "key": "medicine-3b871756",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "medicine",
+      "name": "［初階］養元丹",
+      "key": "medicine-3c02b828",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "medicine",
+      "name": "［初階］血氣丹",
+      "key": "medicine-3bc6f2fe",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "medicine",
+      "name": "［初階］淬體丹",
+      "key": "medicine-3b69c519",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "medicine",
+      "name": "［初階］聚靈丹",
+      "key": "medicine-3bae8613",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "medicine",
+      "name": "［初階］凝元丹",
+      "key": "medicine-3af7883b",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "medicine",
+      "name": "［初階］避毒丹",
+      "key": "medicine-3be5ddae",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "medicine",
+      "name": "［初階］血靈丹",
+      "key": "medicine-3bcc2c79",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "medicine",
+      "name": "［初階］獸元丹",
+      "key": "medicine-3b75af16",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "medicine",
+      "name": "［初階］妖元丹",
+      "key": "medicine-3b1485b4",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "medicine",
+      "name": "［初階］醒神丹",
+      "key": "medicine-3beb89f5",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "medicine",
+      "name": "［初階］明目丹",
+      "key": "medicine-3b47e3e1",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "medicine",
+      "name": "［初階］靈息丹",
+      "key": "medicine-3bfdf53a",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "medicine",
+      "name": "［特殊］獸靈果丹",
+      "key": "medicine-9739c185",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "medicine",
+      "name": "［特殊］靈獸露丹",
+      "key": "medicine-a7009f0f",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "medicine",
+      "name": "［初階］氣血藥水",
+      "key": "medicine-30c08ce4",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "medicine",
+      "name": "［初階］靈力藥水",
+      "key": "medicine-4393f33a",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "medicine",
+      "name": "［初階］清露藥水",
+      "key": "medicine-31d3c234",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "medicine",
+      "name": "［初階］凝靈藥水",
+      "key": "medicine-250781f2",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "medicine",
+      "name": "［初階］百靈藥水",
+      "key": "medicine-35ae0db1",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "medicine",
+      "name": "［初階］濃縮氣血藥水",
+      "key": "medicine-993de82f",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "medicine",
+      "name": "［初階］清神藥水",
+      "key": "medicine-3163c960",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "medicine",
+      "name": "［初階］醒目藥水",
+      "key": "medicine-4183b843",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "medicine",
+      "name": "［初階］寧息藥水",
+      "key": "medicine-28c9df0f",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "gift",
+      "name": "［禮物］匠心木槌",
+      "key": "gift-809afc15",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "gift",
+      "name": "［禮物］厚土酒杯",
+      "key": "gift-80b71a70",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "gift",
+      "name": "［禮物］古方丹冊",
+      "key": "gift-81075814",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "gift",
+      "name": "［禮物］墨香書冊",
+      "key": "gift-83f7a7d1",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "gift",
+      "name": "［禮物］山水畫卷",
+      "key": "gift-85077d1d",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "gift",
+      "name": "［禮物］山紋護腕",
+      "key": "gift-85498d86",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "gift",
+      "name": "［禮物］山茶花束",
+      "key": "gift-855f8b01",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "gift",
+      "name": "［禮物］彩繪紙鳶",
+      "key": "gift-86a68b6c",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "gift",
+      "name": "［禮物］彩羽風車",
+      "key": "gift-86aecc24",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "gift",
+      "name": "［禮物］手繪山河圖",
+      "key": "gift-764a8c47",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "gift",
+      "name": "［禮物］招財玉算盤",
+      "key": "gift-850695c2",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "gift",
+      "name": "［禮物］星砂琉璃珠",
+      "key": "gift-a9aca615",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "gift",
+      "name": "［禮物］星紋棋譜",
+      "key": "gift-89abd44b",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "gift",
+      "name": "［禮物］暖玉煙斗",
+      "key": "gift-89bf1edf",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "gift",
+      "name": "［禮物］月紋燈籠",
+      "key": "gift-8a16c669",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "gift",
+      "name": "［禮物］木蘭髮帶",
+      "key": "gift-8a4c785b",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "gift",
+      "name": "［禮物］東海貝雕",
+      "key": "gift-8a0f610c",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "gift",
+      "name": "［禮物］桂花糕",
+      "key": "gift-c26925b8",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "gift",
+      "name": "［禮物］桂花香囊",
+      "key": "gift-8abf63ce",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "gift",
+      "name": "［禮物］水月髮釵",
+      "key": "gift-8c2311a9",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "gift",
+      "name": "［禮物］清心茶壺",
+      "key": "gift-8cd80ff0",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "gift",
+      "name": "［禮物］清香茶葉",
+      "key": "gift-8db15795",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "gift",
+      "name": "［禮物］烈陽酒葫",
+      "key": "gift-8ee8c35c",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "gift",
+      "name": "［禮物］熱血戰旗",
+      "key": "gift-8f176724",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "gift",
+      "name": "［禮物］獸紋護符",
+      "key": "gift-8fc13ef0",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "gift",
+      "name": "［禮物］獸紋鈴鐺",
+      "key": "gift-8fc228e7",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "gift",
+      "name": "［禮物］玄木算籌",
+      "key": "gift-8f729f47",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "gift",
+      "name": "［禮物］玄鐵鎮紙",
+      "key": "gift-901ea8aa",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "gift",
+      "name": "［禮物］玉石棋子",
+      "key": "gift-8fb1877d",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "gift",
+      "name": "［禮物］琉璃小瓶",
+      "key": "gift-8fdd5e6f",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "gift",
+      "name": "［禮物］琉璃藥瓶",
+      "key": "gift-8fe26f59",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "gift",
+      "name": "［禮物］白玉髮簪",
+      "key": "gift-90fed136",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "gift",
+      "name": "［禮物］百味藥香",
+      "key": "gift-90882557",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "gift",
+      "name": "［禮物］百花蜜糕",
+      "key": "gift-9135c4fa",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "gift",
+      "name": "［禮物］百草香盒",
+      "key": "gift-913a36b2",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "gift",
+      "name": "［禮物］竹編小籃",
+      "key": "gift-9327fcf1",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "gift",
+      "name": "［禮物］精緻禮盒",
+      "key": "gift-93f9c12f",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "gift",
+      "name": "［禮物］糖葫蘆",
+      "key": "gift-c2b6a403",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "gift",
+      "name": "［禮物］糖霜靈果串",
+      "key": "gift-f86a75ca",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "gift",
+      "name": "［禮物］紅繩手串",
+      "key": "gift-9418a6d9",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "gift",
+      "name": "［禮物］紙鶴",
+      "key": "gift-e53fcfc9",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "gift",
+      "name": "［禮物］繡紋香囊",
+      "key": "gift-94b87129",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "gift",
+      "name": "［禮物］老釀竹酒",
+      "key": "gift-95bfcc26",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "gift",
+      "name": "［禮物］聚財銅錢串",
+      "key": "gift-2524dce0",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "gift",
+      "name": "［禮物］落星花燈",
+      "key": "gift-970996c7",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "gift",
+      "name": "［禮物］蜜漬靈果",
+      "key": "gift-987c2172",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "gift",
+      "name": "［禮物］赤紋刀穗",
+      "key": "gift-9b82d74c",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "gift",
+      "name": "［禮物］道衛令匣",
+      "key": "gift-9d0229b5",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "gift",
+      "name": "［禮物］金絲酒盞",
+      "key": "gift-9d8f09db",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "gift",
+      "name": "［禮物］錦紋錢袋",
+      "key": "gift-9e28d39c",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "gift",
+      "name": "［禮物］錦繡禮冊",
+      "key": "gift-9e2a8b65",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "gift",
+      "name": "［禮物］鎮岳茶磚",
+      "key": "gift-9deb3e77",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "gift",
+      "name": "［禮物］雕紋酒壺",
+      "key": "gift-9fd515cc",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "gift",
+      "name": "［禮物］雕花木簪",
+      "key": "gift-9fe5520c",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "gift",
+      "name": "［禮物］雲紋手帕",
+      "key": "gift-9fdc97d1",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "gift",
+      "name": "［禮物］雲紋折扇匣",
+      "key": "gift-5bb8588d",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "gift",
+      "name": "［禮物］雲遊筆記",
+      "key": "gift-a02809b8",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "gift",
+      "name": "［禮物］靈木棋盤",
+      "key": "gift-9fb268e7",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "gift",
+      "name": "［禮物］靈獸木雕",
+      "key": "gift-9fe08e6b",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "gift",
+      "name": "［禮物］靈香木盒",
+      "key": "gift-a06f9049",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "gift",
+      "name": "［禮物］靈香禮盒",
+      "key": "gift-a071ce83",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "gift",
+      "name": "［禮物］青玉小佩",
+      "key": "gift-9fe3ba7f",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "gift",
+      "name": "［禮物］青瓷茶杯",
+      "key": "gift-9fedee2c",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "gift",
+      "name": "［禮物］青羽箭飾",
+      "key": "gift-a015a76a",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "gift",
+      "name": "［禮物］青鋒劍穗",
+      "key": "gift-a0582fb8",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "gift",
+      "name": "［禮物］風鈴掛飾",
+      "key": "gift-a0f384dd",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "gift",
+      "name": "［禮物］鴛鴦糕",
+      "key": "gift-c332bc7c",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "quest-item",
+      "name": "［任務］命符",
+      "key": "quest-item-7d2c32b4",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "quest-item",
+      "name": "［任務］無名靈印",
+      "key": "quest-item-ef6f26df",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    },
+    {
+      "category": "quest-item",
+      "name": "［任務］無聲黑珠",
+      "key": "quest-item-f016d80b",
+      "status": "後續獨立圖示待補；目前保留原占位",
+      "source": "既有正式資料庫，僅建立資源命名，不生成新物品"
+    }
+  ],
+  "petAudit": [
+    {
+      "species": "燐火狼",
+      "core": "maxhp",
+      "stars": [
+        1,
+        1.05,
+        1.12,
+        1.22,
+        1.37,
+        1.57
       ],
-      [
-        13,
-        15,
-        17,
-        19,
-        21,
-        23,
-        25,
-        27,
-        30,
-        34
+      "wildBase": {
+        "5": [
+          585,
+          159,
+          47,
+          38,
+          33,
+          31,
+          39,
+          38
+        ],
+        "6": [
+          644,
+          174,
+          50,
+          41,
+          35,
+          33,
+          41,
+          42
+        ],
+        "7": [
+          702,
+          189,
+          55,
+          44,
+          38,
+          36,
+          44,
+          45
+        ],
+        "8": [
+          760,
+          204,
+          59,
+          48,
+          41,
+          39,
+          47,
+          48
+        ],
+        "10": [
+          878,
+          234,
+          67,
+          54,
+          47,
+          45,
+          54,
+          54
+        ]
+      },
+      "missing": [
+        {
+          "major": "練氣",
+          "layer": 1
+        },
+        {
+          "major": "練氣",
+          "layer": 2
+        },
+        {
+          "major": "練氣",
+          "layer": 3
+        },
+        {
+          "major": "練氣",
+          "layer": 4
+        },
+        {
+          "major": "練氣",
+          "layer": 5
+        },
+        {
+          "major": "練氣",
+          "layer": 6
+        },
+        {
+          "major": "練氣",
+          "layer": 7
+        },
+        {
+          "major": "練氣",
+          "layer": 8
+        },
+        {
+          "major": "練氣",
+          "layer": 9
+        },
+        {
+          "major": "練氣",
+          "layer": 10
+        },
+        {
+          "major": "築基",
+          "layer": 1
+        },
+        {
+          "major": "築基",
+          "layer": 2
+        },
+        {
+          "major": "築基",
+          "layer": 3
+        },
+        {
+          "major": "築基",
+          "layer": 4
+        },
+        {
+          "major": "築基",
+          "layer": 9
+        }
       ],
-      [
-        36,
-        40,
-        44,
-        48,
-        52,
-        56,
-        60,
-        65,
-        70,
-        80
+      "higherRealmFormula": "沿用101-jzp-20261005.js的築基圓滿基準、境界成長與層位倍率；不倒推練氣／築基缺列。"
+    },
+    {
+      "species": "硬黑蠍",
+      "core": "dualdef",
+      "stars": [
+        1,
+        1.05,
+        1.12,
+        1.22,
+        1.37,
+        1.57
       ],
-      [
-        85,
-        95,
-        105,
-        115,
-        125,
-        135,
-        150,
-        165,
-        180,
-        200
+      "wildBase": {
+        "5": [
+          485,
+          159,
+          38,
+          36,
+          44,
+          44,
+          28,
+          33
+        ],
+        "7": [
+          582,
+          189,
+          44,
+          42,
+          51,
+          51,
+          32,
+          39
+        ],
+        "9": [
+          680,
+          219,
+          50,
+          48,
+          59,
+          59,
+          37,
+          44
+        ],
+        "10": [
+          728,
+          234,
+          54,
+          51,
+          63,
+          63,
+          39,
+          47
+        ]
+      },
+      "missing": [
+        {
+          "major": "練氣",
+          "layer": 1
+        },
+        {
+          "major": "練氣",
+          "layer": 2
+        },
+        {
+          "major": "練氣",
+          "layer": 3
+        },
+        {
+          "major": "練氣",
+          "layer": 4
+        },
+        {
+          "major": "練氣",
+          "layer": 5
+        },
+        {
+          "major": "練氣",
+          "layer": 6
+        },
+        {
+          "major": "練氣",
+          "layer": 7
+        },
+        {
+          "major": "練氣",
+          "layer": 8
+        },
+        {
+          "major": "練氣",
+          "layer": 9
+        },
+        {
+          "major": "練氣",
+          "layer": 10
+        },
+        {
+          "major": "築基",
+          "layer": 1
+        },
+        {
+          "major": "築基",
+          "layer": 2
+        },
+        {
+          "major": "築基",
+          "layer": 3
+        },
+        {
+          "major": "築基",
+          "layer": 4
+        },
+        {
+          "major": "築基",
+          "layer": 6
+        },
+        {
+          "major": "築基",
+          "layer": 8
+        }
       ],
-      [
-        220,
-        250,
-        280,
-        310,
-        340,
-        370,
-        400,
-        440,
-        480,
-        550
+      "higherRealmFormula": "沿用101-jzp-20261005.js的築基圓滿基準、境界成長與層位倍率；不倒推練氣／築基缺列。"
+    },
+    {
+      "species": "靈珠蝶",
+      "core": "dao",
+      "stars": [
+        1,
+        1.05,
+        1.12,
+        1.22,
+        1.37,
+        1.57
       ],
-      [
-        600,
-        680,
-        760,
-        840,
-        920,
-        1000,
-        1150,
-        1300,
-        1450,
-        1600
+      "wildBase": {
+        "5": [
+          476,
+          276,
+          41,
+          75,
+          34,
+          41,
+          51,
+          51
+        ],
+        "10": [
+          715,
+          406,
+          59,
+          106,
+          49,
+          59,
+          71,
+          71
+        ]
+      },
+      "missing": [
+        {
+          "major": "練氣",
+          "layer": 1
+        },
+        {
+          "major": "練氣",
+          "layer": 2
+        },
+        {
+          "major": "練氣",
+          "layer": 3
+        },
+        {
+          "major": "練氣",
+          "layer": 4
+        },
+        {
+          "major": "練氣",
+          "layer": 5
+        },
+        {
+          "major": "練氣",
+          "layer": 6
+        },
+        {
+          "major": "練氣",
+          "layer": 7
+        },
+        {
+          "major": "練氣",
+          "layer": 8
+        },
+        {
+          "major": "練氣",
+          "layer": 9
+        },
+        {
+          "major": "練氣",
+          "layer": 10
+        },
+        {
+          "major": "築基",
+          "layer": 1
+        },
+        {
+          "major": "築基",
+          "layer": 2
+        },
+        {
+          "major": "築基",
+          "layer": 3
+        },
+        {
+          "major": "築基",
+          "layer": 4
+        },
+        {
+          "major": "築基",
+          "layer": 6
+        },
+        {
+          "major": "築基",
+          "layer": 7
+        },
+        {
+          "major": "築基",
+          "layer": 8
+        },
+        {
+          "major": "築基",
+          "layer": 9
+        }
       ],
-      [
-        1700,
-        1950,
-        2200,
-        2450,
-        2700,
-        3000,
-        3350,
-        3700,
-        4050,
-        4500
-      ],
-      [
-        4800,
-        5400,
-        6000,
-        6600,
-        7200,
-        8000,
-        8800,
-        9600,
-        10800,
-        12000
-      ]
-    ],
-    "exp": [
-      [
-        6,
-        7,
-        8,
-        8,
-        9,
-        9,
-        10,
-        10,
-        11,
-        12
-      ],
-      [
-        13,
-        14,
-        15,
-        16,
-        17,
-        18,
-        19,
-        21,
-        23,
-        25
-      ],
-      [
-        40,
-        45,
-        50,
-        55,
-        60,
-        67,
-        74,
-        80,
-        87,
-        95
-      ],
-      [
-        105,
-        120,
-        135,
-        150,
-        165,
-        185,
-        200,
-        225,
-        250,
-        275
-      ],
-      [
-        285,
-        330,
-        370,
-        430,
-        485,
-        555,
-        630,
-        715,
-        800,
-        870
-      ],
-      [
-        840,
-        950,
-        1080,
-        1240,
-        1420,
-        1630,
-        1870,
-        2130,
-        2420,
-        2650
-      ],
-      [
-        2750,
-        3125,
-        3500,
-        4000,
-        4500,
-        5125,
-        5750,
-        6500,
-        7375,
-        8100
-      ],
-      [
-        7800,
-        8900,
-        10000,
-        11300,
-        12900,
-        14700,
-        16700,
-        18900,
-        21300,
-        23500
-      ]
-    ]
-  },
-  "npcKeys": [
-    "邱山河",
-    "林夏于",
-    "賈金發",
-    "林熙",
-    "林旺",
-    "李大發",
-    "萬錢坤",
-    "金燦燦",
-    "東方算",
-    "張榕真",
-    "蘇璃",
-    "蘇項",
-    "沈玄川",
-    "柳清妍",
-    "黃蕭",
-    "韓鐵生",
-    "雲知秋",
-    "阿禾",
-    "寧寧",
-    "小燕",
-    "沈菜芳",
-    "陳蘭",
-    "吳大海",
-    "陳東娘",
-    "柑橘",
-    "？？？",
-    "華安"
-  ]
+      "higherRealmFormula": "沿用101-jzp-20261005.js的築基圓滿基準、境界成長與層位倍率；不倒推練氣／築基缺列。"
+    }
+  ],
+  "beforeCatalogue": [
+    "［一階］靈草",
+    "［一階］梨草",
+    "［一階］精草",
+    "［一階］靈露",
+    "［一階］碧萃枝",
+    "［一階］藥草",
+    "［一階］靈石",
+    "［一階］靈原鐵",
+    "［一階］靈木",
+    "［一階］靈果",
+    "［一階］脆脆果",
+    "［一階］破布",
+    "［一階］靈藥粉",
+    "［一階］精靈液",
+    "［一階］碧木芯",
+    "［一階］導靈粉",
+    "［一階］靈鐵錠",
+    "［一階］獸骨粉",
+    "［一階］妖血精華",
+    "［一階］魂粉",
+    "［一階］妖丹粉末",
+    "［一階］皮毛",
+    "［一階］蛇鱗",
+    "［一階］硬蟲甲",
+    "［一階］妖鳥羽",
+    "［一階］獸骨",
+    "［一階］獸牙",
+    "［一階］妖獸精血",
+    "［一階］殘缺妖丹",
+    "［一階］殘魂",
+    "［一階］毒囊",
+    "［一階］蛛絲",
+    "［一階］獸角",
+    "［一階］靈粉",
+    "［一階］龜殼",
+    "［二階］凝露花",
+    "［二階］百年靈草",
+    "［二階］青紋藤",
+    "［二階］赤銅礦",
+    "［二階］玄鐵",
+    "［二階］火晶石",
+    "［二階］水晶石",
+    "［二階］木晶石",
+    "［二階］風晶石",
+    "［二階］雷晶石",
+    "［二階］土晶石",
+    "［二階］光晶石",
+    "［二階］暗晶石",
+    "［二階］碧綠木",
+    "［二階］楊木",
+    "［二階］玉葉果",
+    "［二階］玄靈鐵錠",
+    "［二階］靈楊木板",
+    "［二階］硬骨板",
+    "［二階］濃靈血精",
+    "［二階］凝魂砂",
+    "［二階］妖丹精華",
+    "［二階］狐毛",
+    "［二階］蛟鱗",
+    "［二階］黑蠍甲",
+    "［二階］雀羽",
+    "［二階］硬獸骨",
+    "［二階］利爪",
+    "［二階］濃縮妖血",
+    "［二階］妖丹",
+    "［二階］妖魂碎片",
+    "［二階］雷角",
+    "［二階］火尾毛"
+  ],
+  "eligible": [
+    "［一階］靈草",
+    "［一階］梨草",
+    "［一階］精草",
+    "［一階］靈露",
+    "［一階］碧萃枝",
+    "［一階］藥草",
+    "［一階］靈石",
+    "［一階］靈原鐵",
+    "［一階］靈木",
+    "［一階］靈果",
+    "［一階］脆脆果",
+    "［一階］破布",
+    "［一階］靈藥粉",
+    "［一階］精靈液",
+    "［一階］碧木芯",
+    "［一階］導靈粉",
+    "［一階］靈鐵錠",
+    "［一階］獸骨粉",
+    "［一階］皮毛",
+    "［一階］蛇鱗",
+    "［一階］硬蟲甲",
+    "［一階］妖鳥羽",
+    "［一階］獸骨",
+    "［一階］獸牙",
+    "［一階］妖獸精血",
+    "［一階］殘缺妖丹",
+    "［一階］殘魂",
+    "［一階］毒囊",
+    "［一階］蛛絲",
+    "［一階］靈粉",
+    "［一階］龜殼",
+    "［二階］凝露花",
+    "［二階］百年靈草",
+    "［二階］青紋藤",
+    "［二階］赤銅礦",
+    "［二階］玄鐵",
+    "［二階］火晶石",
+    "［二階］水晶石",
+    "［二階］木晶石",
+    "［二階］風晶石",
+    "［二階］雷晶石",
+    "［二階］土晶石",
+    "［二階］光晶石",
+    "［二階］暗晶石",
+    "［二階］碧綠木",
+    "［二階］楊木",
+    "［二階］玉葉果",
+    "［二階］蛟鱗",
+    "［二階］雀羽",
+    "［二階］利爪",
+    "［二階］雷角"
+  ],
+  "dialogues": {
+    "015": 88,
+    "016": 212
+  }
 }

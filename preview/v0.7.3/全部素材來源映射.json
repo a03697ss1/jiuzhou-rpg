@@ -1,0 +1,3733 @@
+[
+  {
+    "name": "［一階］靈草",
+    "category": "植物",
+    "commissionEligible": true,
+    "sources": [
+      {
+        "kind": "地區",
+        "name": "青陽山",
+        "text": "青陽山採集：23.33%",
+        "source": "R4_GATHER_CFG／136-jz072-integration.js:12"
+      },
+      {
+        "kind": "地區",
+        "name": "落星谷",
+        "text": "落星谷採集：16.67%",
+        "source": "R4_GATHER_CFG／136-jz072-integration.js:12"
+      },
+      {
+        "kind": "地區",
+        "name": "雷鳴沼",
+        "text": "雷鳴沼採集：13.33%",
+        "source": "R4_GATHER_CFG／136-jz072-integration.js:12"
+      },
+      {
+        "kind": "地區",
+        "name": "潮汐秘境",
+        "text": "潮汐秘境採集：21.67%",
+        "source": "R4_GATHER_CFG／136-jz072-integration.js:12"
+      },
+      {
+        "kind": "地區",
+        "name": "天穹浮島",
+        "text": "天穹浮島採集：4.55%",
+        "source": "R4_GATHER_CFG／136-jz072-integration.js:12"
+      },
+      {
+        "kind": "商店",
+        "name": "李大發",
+        "area": "朝御城",
+        "text": "朝御城・李大發：18靈幣",
+        "source": "JZR.stock"
+      },
+      {
+        "kind": "挑戰",
+        "name": "問道檯2",
+        "text": "問道檯・逐步挑戰第2層首通×5",
+        "source": "99-jzw-word-integration.js・floors"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］綜合一階素材箱",
+        "text": "［特殊］綜合一階素材箱：使用時可自選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選一階材料箱",
+        "text": "［特殊］自選一階材料箱：現有素材箱選單可選此素材×1",
+        "source": "ui.js:15"
+      }
+    ],
+    "pending": [],
+    "image": "/素材美術_2026-10-18/靈草.png"
+  },
+  {
+    "name": "［一階］梨草",
+    "category": "植物",
+    "commissionEligible": true,
+    "sources": [
+      {
+        "kind": "地區",
+        "name": "青陽山",
+        "text": "青陽山採集：23.33%",
+        "source": "R4_GATHER_CFG／136-jz072-integration.js:12"
+      },
+      {
+        "kind": "地區",
+        "name": "天穹浮島",
+        "text": "天穹浮島採集：4.55%",
+        "source": "R4_GATHER_CFG／136-jz072-integration.js:12"
+      },
+      {
+        "kind": "商店",
+        "name": "李大發",
+        "area": "朝御城",
+        "text": "朝御城・李大發：15靈幣",
+        "source": "JZR.stock"
+      },
+      {
+        "kind": "任務",
+        "name": "alchemy2",
+        "text": "［主線］煉製之路2：靈幣+350，梨草ｘ９。",
+        "source": "R56_QUESTS／JZ071.mainRewards／sideRewards"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］綜合一階素材箱",
+        "text": "［特殊］綜合一階素材箱：使用時可自選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選一階材料箱",
+        "text": "［特殊］自選一階材料箱：現有素材箱選單可選此素材×1",
+        "source": "ui.js:15"
+      }
+    ],
+    "pending": [],
+    "image": "/素材美術_2026-10-18/梨草.png"
+  },
+  {
+    "name": "［一階］精草",
+    "category": "植物",
+    "commissionEligible": true,
+    "sources": [
+      {
+        "kind": "地區",
+        "name": "天穹浮島",
+        "text": "天穹浮島採集：4.55%",
+        "source": "R4_GATHER_CFG／136-jz072-integration.js:12"
+      },
+      {
+        "kind": "商店",
+        "name": "李大發",
+        "area": "朝御城",
+        "text": "朝御城・李大發：35靈幣",
+        "source": "JZR.stock"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］綜合一階素材箱",
+        "text": "［特殊］綜合一階素材箱：使用時可自選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選一階材料箱",
+        "text": "［特殊］自選一階材料箱：現有素材箱選單可選此素材×1",
+        "source": "ui.js:15"
+      }
+    ],
+    "pending": [],
+    "image": "/素材美術_2026-10-18/精草.png"
+  },
+  {
+    "name": "［一階］靈露",
+    "category": "植物",
+    "commissionEligible": true,
+    "sources": [
+      {
+        "kind": "地區",
+        "name": "雷鳴沼",
+        "text": "雷鳴沼採集：13.33%",
+        "source": "R4_GATHER_CFG／136-jz072-integration.js:12"
+      },
+      {
+        "kind": "地區",
+        "name": "潮汐秘境",
+        "text": "潮汐秘境採集：21.67%",
+        "source": "R4_GATHER_CFG／136-jz072-integration.js:12"
+      },
+      {
+        "kind": "地區",
+        "name": "天穹浮島",
+        "text": "天穹浮島採集：4.55%",
+        "source": "R4_GATHER_CFG／136-jz072-integration.js:12"
+      },
+      {
+        "kind": "商店",
+        "name": "李大發",
+        "area": "朝御城",
+        "text": "朝御城・李大發：30靈幣",
+        "source": "JZR.stock"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］綜合一階素材箱",
+        "text": "［特殊］綜合一階素材箱：使用時可自選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選一階材料箱",
+        "text": "［特殊］自選一階材料箱：現有素材箱選單可選此素材×1",
+        "source": "ui.js:15"
+      }
+    ],
+    "pending": [],
+    "image": "/素材美術_2026-10-18/靈露.png"
+  },
+  {
+    "name": "［一階］碧萃枝",
+    "category": "木材",
+    "commissionEligible": true,
+    "sources": [
+      {
+        "kind": "地區",
+        "name": "天穹浮島",
+        "text": "天穹浮島採集：4.55%",
+        "source": "R4_GATHER_CFG／136-jz072-integration.js:12"
+      },
+      {
+        "kind": "商店",
+        "name": "李大發",
+        "area": "朝御城",
+        "text": "朝御城・李大發：24靈幣",
+        "source": "JZR.stock"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］綜合一階素材箱",
+        "text": "［特殊］綜合一階素材箱：使用時可自選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選一階材料箱",
+        "text": "［特殊］自選一階材料箱：現有素材箱選單可選此素材×1",
+        "source": "ui.js:15"
+      }
+    ],
+    "pending": [],
+    "image": "/素材美術_2026-10-18/碧萃枝.png"
+  },
+  {
+    "name": "［一階］藥草",
+    "category": "植物",
+    "commissionEligible": true,
+    "sources": [
+      {
+        "kind": "地區",
+        "name": "青陽山",
+        "text": "青陽山採集：23.33%",
+        "source": "R4_GATHER_CFG／136-jz072-integration.js:12"
+      },
+      {
+        "kind": "地區",
+        "name": "落星谷",
+        "text": "落星谷採集：16.67%",
+        "source": "R4_GATHER_CFG／136-jz072-integration.js:12"
+      },
+      {
+        "kind": "地區",
+        "name": "雷鳴沼",
+        "text": "雷鳴沼採集：13.33%",
+        "source": "R4_GATHER_CFG／136-jz072-integration.js:12"
+      },
+      {
+        "kind": "地區",
+        "name": "潮汐秘境",
+        "text": "潮汐秘境採集：21.67%",
+        "source": "R4_GATHER_CFG／136-jz072-integration.js:12"
+      },
+      {
+        "kind": "地區",
+        "name": "天穹浮島",
+        "text": "天穹浮島採集：4.55%",
+        "source": "R4_GATHER_CFG／136-jz072-integration.js:12"
+      },
+      {
+        "kind": "商店",
+        "name": "李大發",
+        "area": "朝御城",
+        "text": "朝御城・李大發：18靈幣",
+        "source": "JZR.stock"
+      },
+      {
+        "kind": "任務",
+        "name": "alchemy1",
+        "text": "［主線］煉製之路：靈幣+350、藥草ｘ3、脆脆果ｘ1、小型煉金爐。（完成後開啟煉金爐介面）",
+        "source": "R56_QUESTS／JZ071.mainRewards／sideRewards"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］綜合一階素材箱",
+        "text": "［特殊］綜合一階素材箱：使用時可自選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選一階材料箱",
+        "text": "［特殊］自選一階材料箱：現有素材箱選單可選此素材×1",
+        "source": "ui.js:15"
+      }
+    ],
+    "pending": [],
+    "image": "/素材美術_2026-10-18/藥草.png"
+  },
+  {
+    "name": "［一階］靈石",
+    "category": "礦物",
+    "commissionEligible": true,
+    "sources": [
+      {
+        "kind": "妖物",
+        "name": "臂巨礦",
+        "area": "天穹浮島",
+        "text": "天穹浮島・臂巨礦：50%先選一階礦物池，再從3項等機率選取",
+        "source": "133-jz072-island.js:41"
+      },
+      {
+        "kind": "妖物",
+        "name": "精晶礦靈",
+        "area": "晶礦秘境",
+        "text": "晶礦秘境・精晶礦靈：20%選四種礦物池，再四選一（單項5%）",
+        "source": "99-jzw-word-integration.js:1652"
+      },
+      {
+        "kind": "地區",
+        "name": "晶礦秘境",
+        "text": "晶礦秘境採集：27.50%",
+        "source": "R4_GATHER_CFG／136-jz072-integration.js:12"
+      },
+      {
+        "kind": "地區",
+        "name": "天穹浮島",
+        "text": "天穹浮島採集：4.55%",
+        "source": "R4_GATHER_CFG／136-jz072-integration.js:12"
+      },
+      {
+        "kind": "商店",
+        "name": "李大發",
+        "area": "朝御城",
+        "text": "朝御城・李大發：28靈幣",
+        "source": "JZR.stock"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］綜合一階素材箱",
+        "text": "［特殊］綜合一階素材箱：使用時可自選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選一階材料箱",
+        "text": "［特殊］自選一階材料箱：現有素材箱選單可選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選一階礦物箱",
+        "text": "［特殊］自選一階礦物箱：可選此一階礦物×1",
+        "source": "commissions.js／ui.js:15"
+      }
+    ],
+    "pending": [],
+    "image": "/素材美術_2026-10-18/靈石.png"
+  },
+  {
+    "name": "［一階］靈原鐵",
+    "category": "礦物",
+    "commissionEligible": true,
+    "sources": [
+      {
+        "kind": "妖物",
+        "name": "臂巨礦",
+        "area": "天穹浮島",
+        "text": "天穹浮島・臂巨礦：50%先選一階礦物池，再從3項等機率選取",
+        "source": "133-jz072-island.js:41"
+      },
+      {
+        "kind": "妖物",
+        "name": "精晶礦靈",
+        "area": "晶礦秘境",
+        "text": "晶礦秘境・精晶礦靈：20%選四種礦物池，再四選一（單項5%）",
+        "source": "99-jzw-word-integration.js:1652"
+      },
+      {
+        "kind": "地區",
+        "name": "晶礦秘境",
+        "text": "晶礦秘境採集：27.50%",
+        "source": "R4_GATHER_CFG／136-jz072-integration.js:12"
+      },
+      {
+        "kind": "地區",
+        "name": "天穹浮島",
+        "text": "天穹浮島採集：4.55%",
+        "source": "R4_GATHER_CFG／136-jz072-integration.js:12"
+      },
+      {
+        "kind": "商店",
+        "name": "李大發",
+        "area": "朝御城",
+        "text": "朝御城・李大發：30靈幣",
+        "source": "JZR.stock"
+      },
+      {
+        "kind": "任務",
+        "name": "craft2",
+        "text": "［主線］合成與鑄造2：靈原鐵ｘ１。",
+        "source": "R56_QUESTS／JZ071.mainRewards／sideRewards"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］綜合一階素材箱",
+        "text": "［特殊］綜合一階素材箱：使用時可自選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選一階材料箱",
+        "text": "［特殊］自選一階材料箱：現有素材箱選單可選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選一階礦物箱",
+        "text": "［特殊］自選一階礦物箱：可選此一階礦物×1",
+        "source": "commissions.js／ui.js:15"
+      }
+    ],
+    "pending": [],
+    "image": "/素材美術_2026-10-18/靈原鐵.png"
+  },
+  {
+    "name": "［一階］靈木",
+    "category": "木材",
+    "commissionEligible": true,
+    "sources": [
+      {
+        "kind": "地區",
+        "name": "天穹浮島",
+        "text": "天穹浮島採集：4.55%",
+        "source": "R4_GATHER_CFG／136-jz072-integration.js:12"
+      },
+      {
+        "kind": "商店",
+        "name": "李大發",
+        "area": "朝御城",
+        "text": "朝御城・李大發：22靈幣",
+        "source": "JZR.stock"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］綜合一階素材箱",
+        "text": "［特殊］綜合一階素材箱：使用時可自選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選一階材料箱",
+        "text": "［特殊］自選一階材料箱：現有素材箱選單可選此素材×1",
+        "source": "ui.js:15"
+      }
+    ],
+    "pending": [],
+    "image": "/素材美術_2026-10-18/靈木.png"
+  },
+  {
+    "name": "［一階］靈果",
+    "category": "靈果",
+    "commissionEligible": true,
+    "sources": [
+      {
+        "kind": "地區",
+        "name": "落星谷",
+        "text": "落星谷採集：16.67%",
+        "source": "R4_GATHER_CFG／136-jz072-integration.js:12"
+      },
+      {
+        "kind": "地區",
+        "name": "天穹浮島",
+        "text": "天穹浮島採集：4.55%",
+        "source": "R4_GATHER_CFG／136-jz072-integration.js:12"
+      },
+      {
+        "kind": "商店",
+        "name": "李大發",
+        "area": "朝御城",
+        "text": "朝御城・李大發：20靈幣",
+        "source": "JZR.stock"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］綜合一階素材箱",
+        "text": "［特殊］綜合一階素材箱：使用時可自選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選一階材料箱",
+        "text": "［特殊］自選一階材料箱：現有素材箱選單可選此素材×1",
+        "source": "ui.js:15"
+      }
+    ],
+    "pending": [],
+    "image": "/素材美術_2026-10-18/靈果.png"
+  },
+  {
+    "name": "［一階］脆脆果",
+    "category": "靈果",
+    "commissionEligible": true,
+    "sources": [
+      {
+        "kind": "地區",
+        "name": "天穹浮島",
+        "text": "天穹浮島採集：4.55%",
+        "source": "R4_GATHER_CFG／136-jz072-integration.js:12"
+      },
+      {
+        "kind": "商店",
+        "name": "李大發",
+        "area": "朝御城",
+        "text": "朝御城・李大發：18靈幣",
+        "source": "JZR.stock"
+      },
+      {
+        "kind": "任務",
+        "name": "alchemy1",
+        "text": "［主線］煉製之路：靈幣+350、藥草ｘ3、脆脆果ｘ1、小型煉金爐。（完成後開啟煉金爐介面）",
+        "source": "R56_QUESTS／JZ071.mainRewards／sideRewards"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］綜合一階素材箱",
+        "text": "［特殊］綜合一階素材箱：使用時可自選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選一階材料箱",
+        "text": "［特殊］自選一階材料箱：現有素材箱選單可選此素材×1",
+        "source": "ui.js:15"
+      }
+    ],
+    "pending": [],
+    "image": "/素材美術_2026-10-18/脆脆果.png"
+  },
+  {
+    "name": "［一階］破布",
+    "category": "合成素材",
+    "commissionEligible": true,
+    "sources": [
+      {
+        "kind": "配方",
+        "name": "［一階］破布",
+        "text": "工坊・合成：梨草×3",
+        "source": "RECIPES.合成"
+      },
+      {
+        "kind": "委託",
+        "name": "CQ-DZ-007",
+        "text": "［委託］收集！（選擇獎勵×1）",
+        "source": "JZ071.commissions:CQ-DZ-007"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］綜合一階素材箱",
+        "text": "［特殊］綜合一階素材箱：使用時可自選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選一階材料箱",
+        "text": "［特殊］自選一階材料箱：現有素材箱選單可選此素材×1",
+        "source": "ui.js:15"
+      }
+    ],
+    "pending": [],
+    "image": "/素材美術_2026-10-18/破布.png"
+  },
+  {
+    "name": "［一階］靈藥粉",
+    "category": "合成素材",
+    "commissionEligible": true,
+    "sources": [
+      {
+        "kind": "配方",
+        "name": "［一階］靈藥粉",
+        "text": "工坊・合成：靈草×2＋藥草×1",
+        "source": "RECIPES.合成"
+      },
+      {
+        "kind": "委託",
+        "name": "CQ-DZ-007",
+        "text": "［委託］收集！（選擇獎勵×1）",
+        "source": "JZ071.commissions:CQ-DZ-007"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］綜合一階素材箱",
+        "text": "［特殊］綜合一階素材箱：使用時可自選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選一階材料箱",
+        "text": "［特殊］自選一階材料箱：現有素材箱選單可選此素材×1",
+        "source": "ui.js:15"
+      }
+    ],
+    "pending": [],
+    "image": "/素材美術_2026-10-18/靈藥粉.png"
+  },
+  {
+    "name": "［一階］精靈液",
+    "category": "合成素材",
+    "commissionEligible": true,
+    "sources": [
+      {
+        "kind": "配方",
+        "name": "［一階］精靈液",
+        "text": "工坊・合成：精草×1＋靈露×2",
+        "source": "RECIPES.合成"
+      },
+      {
+        "kind": "委託",
+        "name": "CQ-DZ-007",
+        "text": "［委託］收集！（選擇獎勵×1）",
+        "source": "JZ071.commissions:CQ-DZ-007"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］綜合一階素材箱",
+        "text": "［特殊］綜合一階素材箱：使用時可自選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選一階材料箱",
+        "text": "［特殊］自選一階材料箱：現有素材箱選單可選此素材×1",
+        "source": "ui.js:15"
+      }
+    ],
+    "pending": [],
+    "image": "/素材美術_2026-10-18/精靈液.png"
+  },
+  {
+    "name": "［一階］碧木芯",
+    "category": "合成素材",
+    "commissionEligible": true,
+    "sources": [
+      {
+        "kind": "配方",
+        "name": "［一階］碧木芯",
+        "text": "工坊・合成：碧萃枝×3",
+        "source": "RECIPES.合成"
+      },
+      {
+        "kind": "委託",
+        "name": "CQ-DZ-007",
+        "text": "［委託］收集！（選擇獎勵×1）",
+        "source": "JZ071.commissions:CQ-DZ-007"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］綜合一階素材箱",
+        "text": "［特殊］綜合一階素材箱：使用時可自選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選一階材料箱",
+        "text": "［特殊］自選一階材料箱：現有素材箱選單可選此素材×1",
+        "source": "ui.js:15"
+      }
+    ],
+    "pending": [],
+    "image": "/素材美術_2026-10-18/碧木芯.png"
+  },
+  {
+    "name": "［一階］導靈粉",
+    "category": "合成素材",
+    "commissionEligible": true,
+    "sources": [
+      {
+        "kind": "配方",
+        "name": "［一階］導靈粉",
+        "text": "工坊・合成：靈石×2＋靈草×1",
+        "source": "RECIPES.合成"
+      },
+      {
+        "kind": "委託",
+        "name": "CQ-DZ-007",
+        "text": "［委託］收集！（選擇獎勵×1）",
+        "source": "JZ071.commissions:CQ-DZ-007"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］綜合一階素材箱",
+        "text": "［特殊］綜合一階素材箱：使用時可自選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選一階材料箱",
+        "text": "［特殊］自選一階材料箱：現有素材箱選單可選此素材×1",
+        "source": "ui.js:15"
+      }
+    ],
+    "pending": [],
+    "image": "/素材美術_2026-10-18/導靈粉.png"
+  },
+  {
+    "name": "［一階］靈鐵錠",
+    "category": "合成素材",
+    "commissionEligible": true,
+    "sources": [
+      {
+        "kind": "妖物",
+        "name": "臂巨礦",
+        "area": "天穹浮島",
+        "text": "天穹浮島・臂巨礦：50%先選一階礦物池，再從3項等機率選取",
+        "source": "133-jz072-island.js:41"
+      },
+      {
+        "kind": "配方",
+        "name": "［一階］靈鐵錠",
+        "text": "工坊・合成：靈原鐵×3",
+        "source": "RECIPES.合成"
+      },
+      {
+        "kind": "委託",
+        "name": "CQ-DZ-007",
+        "text": "［委託］收集！（選擇獎勵×1）",
+        "source": "JZ071.commissions:CQ-DZ-007"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］綜合一階素材箱",
+        "text": "［特殊］綜合一階素材箱：使用時可自選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選一階材料箱",
+        "text": "［特殊］自選一階材料箱：現有素材箱選單可選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選一階礦物箱",
+        "text": "［特殊］自選一階礦物箱：可選此一階礦物×1",
+        "source": "commissions.js／ui.js:15"
+      }
+    ],
+    "pending": [],
+    "image": "/素材美術_2026-10-18/靈鐵錠.png"
+  },
+  {
+    "name": "［一階］獸骨粉",
+    "category": "合成素材",
+    "commissionEligible": true,
+    "sources": [
+      {
+        "kind": "配方",
+        "name": "［一階］獸骨粉",
+        "text": "工坊・合成：獸骨×3",
+        "source": "RECIPES.合成"
+      },
+      {
+        "kind": "委託",
+        "name": "CQ-DZ-007",
+        "text": "［委託］收集！（選擇獎勵×1）",
+        "source": "JZ071.commissions:CQ-DZ-007"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］綜合一階素材箱",
+        "text": "［特殊］綜合一階素材箱：使用時可自選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選一階材料箱",
+        "text": "［特殊］自選一階材料箱：現有素材箱選單可選此素材×1",
+        "source": "ui.js:15"
+      }
+    ],
+    "pending": [],
+    "image": "/素材美術_2026-10-18/獸骨粉.png"
+  },
+  {
+    "name": "［一階］妖血精華",
+    "category": "合成素材",
+    "commissionEligible": false,
+    "sources": [
+      {
+        "kind": "配方",
+        "name": "［一階］妖血精華",
+        "text": "工坊・合成：妖獸精血×2＋靈草×1",
+        "source": "RECIPES.合成"
+      },
+      {
+        "kind": "任務",
+        "name": "improve",
+        "text": "［主線］提升實力：修為＋70、靈幣＋300、妖血精華×1。",
+        "source": "R56_QUESTS／JZ071.mainRewards／sideRewards"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］綜合一階素材箱",
+        "text": "［特殊］綜合一階素材箱：使用時可自選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選一階材料箱",
+        "text": "［特殊］自選一階材料箱：現有素材箱選單可選此素材×1",
+        "source": "ui.js:15"
+      }
+    ],
+    "pending": [],
+    "image": "/素材美術_2026-10-18/妖血精華.png"
+  },
+  {
+    "name": "［一階］魂粉",
+    "category": "合成素材",
+    "commissionEligible": false,
+    "sources": [
+      {
+        "kind": "配方",
+        "name": "［一階］魂粉",
+        "text": "工坊・合成：殘魂×3",
+        "source": "RECIPES.合成"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］綜合一階素材箱",
+        "text": "［特殊］綜合一階素材箱：使用時可自選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選一階材料箱",
+        "text": "［特殊］自選一階材料箱：現有素材箱選單可選此素材×1",
+        "source": "ui.js:15"
+      }
+    ],
+    "pending": [],
+    "image": "/素材美術_2026-10-18/魂粉.png"
+  },
+  {
+    "name": "［一階］妖丹粉末",
+    "category": "合成素材",
+    "commissionEligible": false,
+    "sources": [
+      {
+        "kind": "配方",
+        "name": "［一階］妖丹粉末",
+        "text": "工坊・合成：殘缺妖丹×2＋靈石×1",
+        "source": "RECIPES.合成"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］綜合一階素材箱",
+        "text": "［特殊］綜合一階素材箱：使用時可自選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選一階材料箱",
+        "text": "［特殊］自選一階材料箱：現有素材箱選單可選此素材×1",
+        "source": "ui.js:15"
+      }
+    ],
+    "pending": [],
+    "image": "/素材美術_2026-10-18/妖丹粉末.png"
+  },
+  {
+    "name": "［一階］皮毛",
+    "category": "妖物素材",
+    "commissionEligible": true,
+    "sources": [
+      {
+        "kind": "妖物",
+        "name": "青木狼",
+        "area": "青陽山",
+        "text": "青陽山・青木狼：30%",
+        "source": "99-jzw-word-integration.js:1649"
+      },
+      {
+        "kind": "妖物",
+        "name": "朝陽狐",
+        "area": "落星谷",
+        "text": "落星谷・朝陽狐：30%",
+        "source": "99-jzw-word-integration.js:1649"
+      },
+      {
+        "kind": "妖物",
+        "name": "雷角鹿",
+        "area": "雷鳴沼",
+        "text": "雷鳴沼・雷角鹿：32.5%",
+        "source": "99-jzw-word-integration.js:1649"
+      },
+      {
+        "kind": "妖物",
+        "name": "水刃狼",
+        "area": "潮汐秘境",
+        "text": "潮汐秘境・水刃狼：30%",
+        "source": "99-jzw-word-integration.js:1649"
+      },
+      {
+        "kind": "委託",
+        "name": "CQ-DZ-001",
+        "text": "［委託］可怕的狼！（選擇獎勵×1）",
+        "source": "JZ071.commissions:CQ-DZ-001"
+      },
+      {
+        "kind": "委託",
+        "name": "CQ-DZ-015",
+        "text": "［委託］狡猾的狐狸！（選擇獎勵×1）",
+        "source": "JZ071.commissions:CQ-DZ-015"
+      },
+      {
+        "kind": "委託",
+        "name": "CQ-DZ-018",
+        "text": "［委託］可怕的雷電！（選擇獎勵×2）",
+        "source": "JZ071.commissions:CQ-DZ-018"
+      },
+      {
+        "kind": "挑戰",
+        "name": "萬獸塔3",
+        "text": "萬獸檯・萬獸塔第3層首通：一階妖物素材隨機×2之既有候選",
+        "source": "100-jzr-20261004.js:124"
+      },
+      {
+        "kind": "挑戰",
+        "name": "萬獸塔5",
+        "text": "萬獸檯・萬獸塔第5層首通：一階妖物素材隨機×3之既有候選",
+        "source": "100-jzr-20261004.js:124"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］綜合一階素材箱",
+        "text": "［特殊］綜合一階素材箱：使用時可自選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選一階材料箱",
+        "text": "［特殊］自選一階材料箱：現有素材箱選單可選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選一階妖物素材箱",
+        "text": "［特殊］自選一階妖物素材箱：現有合法選單可選此素材×1",
+        "source": "ui.js:15"
+      }
+    ],
+    "pending": [],
+    "image": "/素材美術_2026-10-18/皮毛.png"
+  },
+  {
+    "name": "［一階］蛇鱗",
+    "category": "妖物素材",
+    "commissionEligible": true,
+    "sources": [
+      {
+        "kind": "妖物",
+        "name": "青靈蛇",
+        "area": "青陽山",
+        "text": "青陽山・青靈蛇：45%",
+        "source": "99-jzw-word-integration.js:1649"
+      },
+      {
+        "kind": "妖物",
+        "name": "水蛇",
+        "area": "潮汐秘境",
+        "text": "潮汐秘境・水蛇：45%",
+        "source": "99-jzw-word-integration.js:1649"
+      },
+      {
+        "kind": "妖物",
+        "name": "飛蛇",
+        "area": "天穹浮島",
+        "text": "天穹浮島・飛蛇：40%",
+        "source": "133-jz072-island.js:41"
+      },
+      {
+        "kind": "委託",
+        "name": "CQ-DZ-003",
+        "text": "［委託］可怕的蛇！（選擇獎勵×1）",
+        "source": "JZ071.commissions:CQ-DZ-003"
+      },
+      {
+        "kind": "委託",
+        "name": "CQ-DZ-028",
+        "text": "［委託］為甚麼會有會飛的蛇啊！（選擇獎勵×1）",
+        "source": "JZ071.commissions:CQ-DZ-028"
+      },
+      {
+        "kind": "挑戰",
+        "name": "萬獸塔3",
+        "text": "萬獸檯・萬獸塔第3層首通：一階妖物素材隨機×2之既有候選",
+        "source": "100-jzr-20261004.js:124"
+      },
+      {
+        "kind": "挑戰",
+        "name": "萬獸塔5",
+        "text": "萬獸檯・萬獸塔第5層首通：一階妖物素材隨機×3之既有候選",
+        "source": "100-jzr-20261004.js:124"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］綜合一階素材箱",
+        "text": "［特殊］綜合一階素材箱：使用時可自選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選一階材料箱",
+        "text": "［特殊］自選一階材料箱：現有素材箱選單可選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選一階妖物素材箱",
+        "text": "［特殊］自選一階妖物素材箱：現有合法選單可選此素材×1",
+        "source": "ui.js:15"
+      }
+    ],
+    "pending": [],
+    "image": "/素材美術_2026-10-18/蛇鱗.png"
+  },
+  {
+    "name": "［一階］硬蟲甲",
+    "category": "妖物素材",
+    "commissionEligible": true,
+    "sources": [
+      {
+        "kind": "妖物",
+        "name": "青臭蟲",
+        "area": "青陽山",
+        "text": "青陽山・青臭蟲：60%",
+        "source": "99-jzw-word-integration.js:1649"
+      },
+      {
+        "kind": "妖物",
+        "name": "噴水蟲",
+        "area": "雷鳴沼",
+        "text": "雷鳴沼・噴水蟲：50%",
+        "source": "99-jzw-word-integration.js:1649"
+      },
+      {
+        "kind": "妖物",
+        "name": "反彈盔甲蟲",
+        "area": "天穹浮島",
+        "text": "天穹浮島・反彈盔甲蟲：60%",
+        "source": "133-jz072-island.js:41"
+      },
+      {
+        "kind": "委託",
+        "name": "CQ-DZ-004",
+        "text": "［委託］可怕的蟲！（選擇獎勵×1）",
+        "source": "JZ071.commissions:CQ-DZ-004"
+      },
+      {
+        "kind": "挑戰",
+        "name": "萬獸塔3",
+        "text": "萬獸檯・萬獸塔第3層首通：一階妖物素材隨機×2之既有候選",
+        "source": "100-jzr-20261004.js:124"
+      },
+      {
+        "kind": "挑戰",
+        "name": "萬獸塔5",
+        "text": "萬獸檯・萬獸塔第5層首通：一階妖物素材隨機×3之既有候選",
+        "source": "100-jzr-20261004.js:124"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］綜合一階素材箱",
+        "text": "［特殊］綜合一階素材箱：使用時可自選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選一階材料箱",
+        "text": "［特殊］自選一階材料箱：現有素材箱選單可選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選一階妖物素材箱",
+        "text": "［特殊］自選一階妖物素材箱：現有合法選單可選此素材×1",
+        "source": "ui.js:15"
+      }
+    ],
+    "pending": [],
+    "image": "/素材美術_2026-10-18/硬蟲甲.png"
+  },
+  {
+    "name": "［一階］妖鳥羽",
+    "category": "妖物素材",
+    "commissionEligible": true,
+    "sources": [
+      {
+        "kind": "妖物",
+        "name": "朝東鳥",
+        "area": "落星谷",
+        "text": "落星谷・朝東鳥：89%",
+        "source": "99-jzw-word-integration.js:1649"
+      },
+      {
+        "kind": "委託",
+        "name": "CQ-DZ-016",
+        "text": "［委託］可愛的小鳥！（固定獎勵×2）",
+        "source": "JZ071.commissions:CQ-DZ-016"
+      },
+      {
+        "kind": "挑戰",
+        "name": "萬獸塔3",
+        "text": "萬獸檯・萬獸塔第3層首通：一階妖物素材隨機×2之既有候選",
+        "source": "100-jzr-20261004.js:124"
+      },
+      {
+        "kind": "挑戰",
+        "name": "萬獸塔5",
+        "text": "萬獸檯・萬獸塔第5層首通：一階妖物素材隨機×3之既有候選",
+        "source": "100-jzr-20261004.js:124"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］綜合一階素材箱",
+        "text": "［特殊］綜合一階素材箱：使用時可自選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選一階材料箱",
+        "text": "［特殊］自選一階材料箱：現有素材箱選單可選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選一階妖物素材箱",
+        "text": "［特殊］自選一階妖物素材箱：現有合法選單可選此素材×1",
+        "source": "ui.js:15"
+      }
+    ],
+    "pending": [],
+    "image": "/素材美術_2026-10-18/妖鳥羽.png"
+  },
+  {
+    "name": "［一階］獸骨",
+    "category": "妖物素材",
+    "commissionEligible": true,
+    "sources": [
+      {
+        "kind": "妖物",
+        "name": "青木狼",
+        "area": "青陽山",
+        "text": "青陽山・青木狼：30%",
+        "source": "99-jzw-word-integration.js:1649"
+      },
+      {
+        "kind": "妖物",
+        "name": "朝陽狐",
+        "area": "落星谷",
+        "text": "落星谷・朝陽狐：30%",
+        "source": "99-jzw-word-integration.js:1649"
+      },
+      {
+        "kind": "妖物",
+        "name": "雷角鹿",
+        "area": "雷鳴沼",
+        "text": "雷鳴沼・雷角鹿：32.5%",
+        "source": "99-jzw-word-integration.js:1649"
+      },
+      {
+        "kind": "妖物",
+        "name": "潮汐龜",
+        "area": "潮汐秘境",
+        "text": "潮汐秘境・潮汐龜：44%",
+        "source": "99-jzw-word-integration.js:1649"
+      },
+      {
+        "kind": "妖物",
+        "name": "水刃狼",
+        "area": "潮汐秘境",
+        "text": "潮汐秘境・水刃狼：30%",
+        "source": "99-jzw-word-integration.js:1649"
+      },
+      {
+        "kind": "委託",
+        "name": "CQ-DZ-001",
+        "text": "［委託］可怕的狼！（選擇獎勵×1）",
+        "source": "JZ071.commissions:CQ-DZ-001"
+      },
+      {
+        "kind": "委託",
+        "name": "CQ-DZ-015",
+        "text": "［委託］狡猾的狐狸！（選擇獎勵×1）",
+        "source": "JZ071.commissions:CQ-DZ-015"
+      },
+      {
+        "kind": "委託",
+        "name": "CQ-DZ-018",
+        "text": "［委託］可怕的雷電！（選擇獎勵×2）",
+        "source": "JZ071.commissions:CQ-DZ-018"
+      },
+      {
+        "kind": "挑戰",
+        "name": "問道檯6",
+        "text": "問道檯・逐步挑戰第6層首通×3",
+        "source": "99-jzw-word-integration.js・floors"
+      },
+      {
+        "kind": "挑戰",
+        "name": "萬獸塔3",
+        "text": "萬獸檯・萬獸塔第3層首通：一階妖物素材隨機×2之既有候選",
+        "source": "100-jzr-20261004.js:124"
+      },
+      {
+        "kind": "挑戰",
+        "name": "萬獸塔5",
+        "text": "萬獸檯・萬獸塔第5層首通：一階妖物素材隨機×3之既有候選",
+        "source": "100-jzr-20261004.js:124"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］綜合一階素材箱",
+        "text": "［特殊］綜合一階素材箱：使用時可自選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選一階材料箱",
+        "text": "［特殊］自選一階材料箱：現有素材箱選單可選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選一階妖物素材箱",
+        "text": "［特殊］自選一階妖物素材箱：現有合法選單可選此素材×1",
+        "source": "ui.js:15"
+      }
+    ],
+    "pending": [],
+    "image": "/素材美術_2026-10-18/獸骨.png"
+  },
+  {
+    "name": "［一階］獸牙",
+    "category": "妖物素材",
+    "commissionEligible": true,
+    "sources": [
+      {
+        "kind": "妖物",
+        "name": "青木狼",
+        "area": "青陽山",
+        "text": "青陽山・青木狼：30%",
+        "source": "99-jzw-word-integration.js:1649"
+      },
+      {
+        "kind": "妖物",
+        "name": "青靈蛇",
+        "area": "青陽山",
+        "text": "青陽山・青靈蛇：45%",
+        "source": "99-jzw-word-integration.js:1649"
+      },
+      {
+        "kind": "妖物",
+        "name": "朝陽狐",
+        "area": "落星谷",
+        "text": "落星谷・朝陽狐：30%",
+        "source": "99-jzw-word-integration.js:1649"
+      },
+      {
+        "kind": "妖物",
+        "name": "冥雷蛟",
+        "area": "雷鳴沼",
+        "text": "雷鳴沼・冥雷蛟：35%",
+        "source": "99-jzw-word-integration.js:1649"
+      },
+      {
+        "kind": "妖物",
+        "name": "水蛇",
+        "area": "潮汐秘境",
+        "text": "潮汐秘境・水蛇：45%",
+        "source": "99-jzw-word-integration.js:1649"
+      },
+      {
+        "kind": "妖物",
+        "name": "水刃狼",
+        "area": "潮汐秘境",
+        "text": "潮汐秘境・水刃狼：30%",
+        "source": "99-jzw-word-integration.js:1649"
+      },
+      {
+        "kind": "妖物",
+        "name": "飛蛇",
+        "area": "天穹浮島",
+        "text": "天穹浮島・飛蛇：20%",
+        "source": "133-jz072-island.js:41"
+      },
+      {
+        "kind": "妖物",
+        "name": "燐火狼",
+        "area": "黑潮禁岸",
+        "text": "黑潮禁岸・燐火狼：5%",
+        "source": "monsters.js:17"
+      },
+      {
+        "kind": "委託",
+        "name": "CQ-DZ-001",
+        "text": "［委託］可怕的狼！（選擇獎勵×1）",
+        "source": "JZ071.commissions:CQ-DZ-001"
+      },
+      {
+        "kind": "委託",
+        "name": "CQ-DZ-003",
+        "text": "［委託］可怕的蛇！（選擇獎勵×1）",
+        "source": "JZ071.commissions:CQ-DZ-003"
+      },
+      {
+        "kind": "委託",
+        "name": "CQ-DZ-015",
+        "text": "［委託］狡猾的狐狸！（選擇獎勵×1）",
+        "source": "JZ071.commissions:CQ-DZ-015"
+      },
+      {
+        "kind": "委託",
+        "name": "CQ-DZ-020",
+        "text": "［委託］奇怪的蛇！（固定獎勵×1）",
+        "source": "JZ071.commissions:CQ-DZ-020"
+      },
+      {
+        "kind": "委託",
+        "name": "CQ-DZ-028",
+        "text": "［委託］為甚麼會有會飛的蛇啊！（選擇獎勵×1）",
+        "source": "JZ071.commissions:CQ-DZ-028"
+      },
+      {
+        "kind": "挑戰",
+        "name": "萬獸塔3",
+        "text": "萬獸檯・萬獸塔第3層首通：一階妖物素材隨機×2之既有候選",
+        "source": "100-jzr-20261004.js:124"
+      },
+      {
+        "kind": "挑戰",
+        "name": "萬獸塔5",
+        "text": "萬獸檯・萬獸塔第5層首通：一階妖物素材隨機×3之既有候選",
+        "source": "100-jzr-20261004.js:124"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］綜合一階素材箱",
+        "text": "［特殊］綜合一階素材箱：使用時可自選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選一階材料箱",
+        "text": "［特殊］自選一階材料箱：現有素材箱選單可選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選一階妖物素材箱",
+        "text": "［特殊］自選一階妖物素材箱：現有合法選單可選此素材×1",
+        "source": "ui.js:15"
+      }
+    ],
+    "pending": [],
+    "image": "/素材美術_2026-10-18/獸牙.png"
+  },
+  {
+    "name": "［一階］妖獸精血",
+    "category": "妖物素材",
+    "commissionEligible": true,
+    "sources": [
+      {
+        "kind": "妖物",
+        "name": "青木狼",
+        "area": "青陽山",
+        "text": "青陽山・青木狼：5%",
+        "source": "99-jzw-word-integration.js:1649"
+      },
+      {
+        "kind": "妖物",
+        "name": "青靈蛇",
+        "area": "青陽山",
+        "text": "青陽山・青靈蛇：5%",
+        "source": "99-jzw-word-integration.js:1649"
+      },
+      {
+        "kind": "妖物",
+        "name": "青翠蝶",
+        "area": "青陽山",
+        "text": "青陽山・青翠蝶：55%",
+        "source": "99-jzw-word-integration.js:1649"
+      },
+      {
+        "kind": "妖物",
+        "name": "青臭蟲",
+        "area": "青陽山",
+        "text": "青陽山・青臭蟲：5%",
+        "source": "99-jzw-word-integration.js:1649"
+      },
+      {
+        "kind": "妖物",
+        "name": "朝東鳥",
+        "area": "落星谷",
+        "text": "落星谷・朝東鳥：5%",
+        "source": "99-jzw-word-integration.js:1649"
+      },
+      {
+        "kind": "妖物",
+        "name": "朝陽狐",
+        "area": "落星谷",
+        "text": "落星谷・朝陽狐：5%",
+        "source": "99-jzw-word-integration.js:1649"
+      },
+      {
+        "kind": "妖物",
+        "name": "重翅蝶",
+        "area": "落星谷",
+        "text": "落星谷・重翅蝶：5%",
+        "source": "99-jzw-word-integration.js:1649"
+      },
+      {
+        "kind": "妖物",
+        "name": "小圓蛛",
+        "area": "落星谷",
+        "text": "落星谷・小圓蛛：4%",
+        "source": "99-jzw-word-integration.js:1649"
+      },
+      {
+        "kind": "妖物",
+        "name": "雷角鹿",
+        "area": "雷鳴沼",
+        "text": "雷鳴沼・雷角鹿：7%",
+        "source": "99-jzw-word-integration.js:1649"
+      },
+      {
+        "kind": "妖物",
+        "name": "轟轟鯰",
+        "area": "雷鳴沼",
+        "text": "雷鳴沼・轟轟鯰：70%",
+        "source": "99-jzw-word-integration.js:1649"
+      },
+      {
+        "kind": "妖物",
+        "name": "噴水蟲",
+        "area": "雷鳴沼",
+        "text": "雷鳴沼・噴水蟲：50%",
+        "source": "99-jzw-word-integration.js:1649"
+      },
+      {
+        "kind": "妖物",
+        "name": "冥雷蛟",
+        "area": "雷鳴沼",
+        "text": "雷鳴沼・冥雷蛟：4%",
+        "source": "99-jzw-word-integration.js:1649"
+      },
+      {
+        "kind": "妖物",
+        "name": "鳴雀",
+        "area": "雷鳴沼",
+        "text": "雷鳴沼・鳴雀：4%",
+        "source": "99-jzw-word-integration.js:1649"
+      },
+      {
+        "kind": "妖物",
+        "name": "潮汐龜",
+        "area": "潮汐秘境",
+        "text": "潮汐秘境・潮汐龜：5%",
+        "source": "99-jzw-word-integration.js:1649"
+      },
+      {
+        "kind": "妖物",
+        "name": "水蛇",
+        "area": "潮汐秘境",
+        "text": "潮汐秘境・水蛇：5%",
+        "source": "99-jzw-word-integration.js:1649"
+      },
+      {
+        "kind": "妖物",
+        "name": "水刃狼",
+        "area": "潮汐秘境",
+        "text": "潮汐秘境・水刃狼：5%",
+        "source": "99-jzw-word-integration.js:1649"
+      },
+      {
+        "kind": "妖物",
+        "name": "風粉蝶",
+        "area": "潮汐秘境",
+        "text": "潮汐秘境・風粉蝶：20%",
+        "source": "99-jzw-word-integration.js:1649"
+      },
+      {
+        "kind": "妖物",
+        "name": "千針蜂",
+        "area": "潮汐秘境",
+        "text": "潮汐秘境・千針蜂：35%",
+        "source": "99-jzw-word-integration.js:1649"
+      },
+      {
+        "kind": "妖物",
+        "name": "自爆毒蛛",
+        "area": "潮汐秘境",
+        "text": "潮汐秘境・自爆毒蛛：1%",
+        "source": "99-jzw-word-integration.js:1649"
+      },
+      {
+        "kind": "妖物",
+        "name": "天翼鷹",
+        "area": "天穹浮島",
+        "text": "天穹浮島・天翼鷹：25%",
+        "source": "133-jz072-island.js:41"
+      },
+      {
+        "kind": "妖物",
+        "name": "飛蛇",
+        "area": "天穹浮島",
+        "text": "天穹浮島・飛蛇：4%",
+        "source": "133-jz072-island.js:41"
+      },
+      {
+        "kind": "妖物",
+        "name": "反彈盔甲蟲",
+        "area": "天穹浮島",
+        "text": "天穹浮島・反彈盔甲蟲：4%",
+        "source": "133-jz072-island.js:41"
+      },
+      {
+        "kind": "委託",
+        "name": "CQ-DZ-019",
+        "text": "［委託］胖嘟嘟的鯰魚！（固定獎勵×1）",
+        "source": "JZ071.commissions:CQ-DZ-019"
+      },
+      {
+        "kind": "挑戰",
+        "name": "萬獸塔3",
+        "text": "萬獸檯・萬獸塔第3層首通：一階妖物素材隨機×2之既有候選",
+        "source": "100-jzr-20261004.js:124"
+      },
+      {
+        "kind": "挑戰",
+        "name": "萬獸塔5",
+        "text": "萬獸檯・萬獸塔第5層首通：一階妖物素材隨機×3之既有候選",
+        "source": "100-jzr-20261004.js:124"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］綜合一階素材箱",
+        "text": "［特殊］綜合一階素材箱：使用時可自選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選一階材料箱",
+        "text": "［特殊］自選一階材料箱：現有素材箱選單可選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選一階妖物素材箱",
+        "text": "［特殊］自選一階妖物素材箱：現有合法選單可選此素材×1",
+        "source": "ui.js:15"
+      }
+    ],
+    "pending": [],
+    "image": "/素材美術_2026-10-18/妖獸精血.png"
+  },
+  {
+    "name": "［一階］殘缺妖丹",
+    "category": "妖物素材",
+    "commissionEligible": true,
+    "sources": [
+      {
+        "kind": "妖物",
+        "name": "青木狼",
+        "area": "青陽山",
+        "text": "青陽山・青木狼：4%",
+        "source": "99-jzw-word-integration.js:1649"
+      },
+      {
+        "kind": "妖物",
+        "name": "青靈蛇",
+        "area": "青陽山",
+        "text": "青陽山・青靈蛇：4%",
+        "source": "99-jzw-word-integration.js:1649"
+      },
+      {
+        "kind": "妖物",
+        "name": "青翠蝶",
+        "area": "青陽山",
+        "text": "青陽山・青翠蝶：40%",
+        "source": "99-jzw-word-integration.js:1649"
+      },
+      {
+        "kind": "妖物",
+        "name": "青臭蟲",
+        "area": "青陽山",
+        "text": "青陽山・青臭蟲：5%",
+        "source": "99-jzw-word-integration.js:1649"
+      },
+      {
+        "kind": "妖物",
+        "name": "朝東鳥",
+        "area": "落星谷",
+        "text": "落星谷・朝東鳥：5%",
+        "source": "99-jzw-word-integration.js:1649"
+      },
+      {
+        "kind": "妖物",
+        "name": "朝陽狐",
+        "area": "落星谷",
+        "text": "落星谷・朝陽狐：4%",
+        "source": "99-jzw-word-integration.js:1649"
+      },
+      {
+        "kind": "妖物",
+        "name": "重翅蝶",
+        "area": "落星谷",
+        "text": "落星谷・重翅蝶：5%",
+        "source": "99-jzw-word-integration.js:1649"
+      },
+      {
+        "kind": "妖物",
+        "name": "小圓蛛",
+        "area": "落星谷",
+        "text": "落星谷・小圓蛛：5%",
+        "source": "99-jzw-word-integration.js:1649"
+      },
+      {
+        "kind": "妖物",
+        "name": "雷角鹿",
+        "area": "雷鳴沼",
+        "text": "雷鳴沼・雷角鹿：7%",
+        "source": "99-jzw-word-integration.js:1649"
+      },
+      {
+        "kind": "妖物",
+        "name": "轟轟鯰",
+        "area": "雷鳴沼",
+        "text": "雷鳴沼・轟轟鯰：20%",
+        "source": "99-jzw-word-integration.js:1649"
+      },
+      {
+        "kind": "妖物",
+        "name": "冥雷蛟",
+        "area": "雷鳴沼",
+        "text": "雷鳴沼・冥雷蛟：5%",
+        "source": "99-jzw-word-integration.js:1649"
+      },
+      {
+        "kind": "妖物",
+        "name": "鳴雀",
+        "area": "雷鳴沼",
+        "text": "雷鳴沼・鳴雀：3%",
+        "source": "99-jzw-word-integration.js:1649"
+      },
+      {
+        "kind": "妖物",
+        "name": "潮汐龜",
+        "area": "潮汐秘境",
+        "text": "潮汐秘境・潮汐龜：6%",
+        "source": "99-jzw-word-integration.js:1649"
+      },
+      {
+        "kind": "妖物",
+        "name": "水蛇",
+        "area": "潮汐秘境",
+        "text": "潮汐秘境・水蛇：4%",
+        "source": "99-jzw-word-integration.js:1649"
+      },
+      {
+        "kind": "妖物",
+        "name": "水刃狼",
+        "area": "潮汐秘境",
+        "text": "潮汐秘境・水刃狼：4%",
+        "source": "99-jzw-word-integration.js:1649"
+      },
+      {
+        "kind": "妖物",
+        "name": "風粉蝶",
+        "area": "潮汐秘境",
+        "text": "潮汐秘境・風粉蝶：20%",
+        "source": "99-jzw-word-integration.js:1649"
+      },
+      {
+        "kind": "妖物",
+        "name": "千針蜂",
+        "area": "潮汐秘境",
+        "text": "潮汐秘境・千針蜂：35%",
+        "source": "99-jzw-word-integration.js:1649"
+      },
+      {
+        "kind": "妖物",
+        "name": "自爆毒蛛",
+        "area": "潮汐秘境",
+        "text": "潮汐秘境・自爆毒蛛：1%",
+        "source": "99-jzw-word-integration.js:1649"
+      },
+      {
+        "kind": "妖物",
+        "name": "天翼鷹",
+        "area": "天穹浮島",
+        "text": "天穹浮島・天翼鷹：40%",
+        "source": "133-jz072-island.js:41"
+      },
+      {
+        "kind": "妖物",
+        "name": "飛蛇",
+        "area": "天穹浮島",
+        "text": "天穹浮島・飛蛇：35%",
+        "source": "133-jz072-island.js:41"
+      },
+      {
+        "kind": "妖物",
+        "name": "反彈盔甲蟲",
+        "area": "天穹浮島",
+        "text": "天穹浮島・反彈盔甲蟲：35%",
+        "source": "133-jz072-island.js:41"
+      },
+      {
+        "kind": "挑戰",
+        "name": "萬獸塔3",
+        "text": "萬獸檯・萬獸塔第3層首通：一階妖物素材隨機×2之既有候選",
+        "source": "100-jzr-20261004.js:124"
+      },
+      {
+        "kind": "挑戰",
+        "name": "萬獸塔5",
+        "text": "萬獸檯・萬獸塔第5層首通：一階妖物素材隨機×3之既有候選",
+        "source": "100-jzr-20261004.js:124"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］綜合一階素材箱",
+        "text": "［特殊］綜合一階素材箱：使用時可自選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選一階材料箱",
+        "text": "［特殊］自選一階材料箱：現有素材箱選單可選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選一階妖物素材箱",
+        "text": "［特殊］自選一階妖物素材箱：現有合法選單可選此素材×1",
+        "source": "ui.js:15"
+      }
+    ],
+    "pending": [],
+    "image": "/素材美術_2026-10-18/殘缺妖丹.png"
+  },
+  {
+    "name": "［一階］殘魂",
+    "category": "妖物素材",
+    "commissionEligible": true,
+    "sources": [
+      {
+        "kind": "妖物",
+        "name": "青木狼",
+        "area": "青陽山",
+        "text": "青陽山・青木狼：1%",
+        "source": "99-jzw-word-integration.js:1649"
+      },
+      {
+        "kind": "妖物",
+        "name": "青靈蛇",
+        "area": "青陽山",
+        "text": "青陽山・青靈蛇：1%",
+        "source": "99-jzw-word-integration.js:1649"
+      },
+      {
+        "kind": "妖物",
+        "name": "青翠蝶",
+        "area": "青陽山",
+        "text": "青陽山・青翠蝶：5%",
+        "source": "99-jzw-word-integration.js:1649"
+      },
+      {
+        "kind": "妖物",
+        "name": "青臭蟲",
+        "area": "青陽山",
+        "text": "青陽山・青臭蟲：1%",
+        "source": "99-jzw-word-integration.js:1649"
+      },
+      {
+        "kind": "妖物",
+        "name": "朝東鳥",
+        "area": "落星谷",
+        "text": "落星谷・朝東鳥：1%",
+        "source": "99-jzw-word-integration.js:1649"
+      },
+      {
+        "kind": "妖物",
+        "name": "朝陽狐",
+        "area": "落星谷",
+        "text": "落星谷・朝陽狐：1%",
+        "source": "99-jzw-word-integration.js:1649"
+      },
+      {
+        "kind": "妖物",
+        "name": "重翅蝶",
+        "area": "落星谷",
+        "text": "落星谷・重翅蝶：3%",
+        "source": "99-jzw-word-integration.js:1649"
+      },
+      {
+        "kind": "妖物",
+        "name": "小圓蛛",
+        "area": "落星谷",
+        "text": "落星谷・小圓蛛：1%",
+        "source": "99-jzw-word-integration.js:1649"
+      },
+      {
+        "kind": "妖物",
+        "name": "雷角鹿",
+        "area": "雷鳴沼",
+        "text": "雷鳴沼・雷角鹿：1%",
+        "source": "99-jzw-word-integration.js:1649"
+      },
+      {
+        "kind": "妖物",
+        "name": "轟轟鯰",
+        "area": "雷鳴沼",
+        "text": "雷鳴沼・轟轟鯰：10%",
+        "source": "99-jzw-word-integration.js:1649"
+      },
+      {
+        "kind": "妖物",
+        "name": "冥雷蛟",
+        "area": "雷鳴沼",
+        "text": "雷鳴沼・冥雷蛟：1%",
+        "source": "99-jzw-word-integration.js:1649"
+      },
+      {
+        "kind": "妖物",
+        "name": "鳴雀",
+        "area": "雷鳴沼",
+        "text": "雷鳴沼・鳴雀：1%",
+        "source": "99-jzw-word-integration.js:1649"
+      },
+      {
+        "kind": "妖物",
+        "name": "潮汐龜",
+        "area": "潮汐秘境",
+        "text": "潮汐秘境・潮汐龜：1%",
+        "source": "99-jzw-word-integration.js:1649"
+      },
+      {
+        "kind": "妖物",
+        "name": "水蛇",
+        "area": "潮汐秘境",
+        "text": "潮汐秘境・水蛇：1%",
+        "source": "99-jzw-word-integration.js:1649"
+      },
+      {
+        "kind": "妖物",
+        "name": "水刃狼",
+        "area": "潮汐秘境",
+        "text": "潮汐秘境・水刃狼：1%",
+        "source": "99-jzw-word-integration.js:1649"
+      },
+      {
+        "kind": "妖物",
+        "name": "風粉蝶",
+        "area": "潮汐秘境",
+        "text": "潮汐秘境・風粉蝶：7%",
+        "source": "99-jzw-word-integration.js:1649"
+      },
+      {
+        "kind": "妖物",
+        "name": "千針蜂",
+        "area": "潮汐秘境",
+        "text": "潮汐秘境・千針蜂：30%",
+        "source": "99-jzw-word-integration.js:1649"
+      },
+      {
+        "kind": "妖物",
+        "name": "自爆毒蛛",
+        "area": "潮汐秘境",
+        "text": "潮汐秘境・自爆毒蛛：1%",
+        "source": "99-jzw-word-integration.js:1649"
+      },
+      {
+        "kind": "妖物",
+        "name": "天翼鷹",
+        "area": "天穹浮島",
+        "text": "天穹浮島・天翼鷹：5%",
+        "source": "133-jz072-island.js:41"
+      },
+      {
+        "kind": "妖物",
+        "name": "飛蛇",
+        "area": "天穹浮島",
+        "text": "天穹浮島・飛蛇：1%",
+        "source": "133-jz072-island.js:41"
+      },
+      {
+        "kind": "妖物",
+        "name": "反彈盔甲蟲",
+        "area": "天穹浮島",
+        "text": "天穹浮島・反彈盔甲蟲：1%",
+        "source": "133-jz072-island.js:41"
+      },
+      {
+        "kind": "委託",
+        "name": "CQ-DZ-013",
+        "text": "［委託］可怕的蝴蝶！（固定獎勵×1）",
+        "source": "JZ071.commissions:CQ-DZ-013"
+      },
+      {
+        "kind": "任務",
+        "name": "sideFang",
+        "text": "［支線］能順便幫幫忙嗎？：修為＋２０、靈幣＋１００、［一階］殘魂×１。",
+        "source": "R56_QUESTS／JZ071.mainRewards／sideRewards"
+      },
+      {
+        "kind": "挑戰",
+        "name": "萬獸塔3",
+        "text": "萬獸檯・萬獸塔第3層首通：一階妖物素材隨機×2之既有候選",
+        "source": "100-jzr-20261004.js:124"
+      },
+      {
+        "kind": "挑戰",
+        "name": "萬獸塔5",
+        "text": "萬獸檯・萬獸塔第5層首通：一階妖物素材隨機×3之既有候選",
+        "source": "100-jzr-20261004.js:124"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］綜合一階素材箱",
+        "text": "［特殊］綜合一階素材箱：使用時可自選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選一階材料箱",
+        "text": "［特殊］自選一階材料箱：現有素材箱選單可選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選一階妖物素材箱",
+        "text": "［特殊］自選一階妖物素材箱：現有合法選單可選此素材×1",
+        "source": "ui.js:15"
+      }
+    ],
+    "pending": [],
+    "image": "/素材美術_2026-10-18/殘魂.png"
+  },
+  {
+    "name": "［一階］毒囊",
+    "category": "妖物素材",
+    "commissionEligible": true,
+    "sources": [
+      {
+        "kind": "妖物",
+        "name": "青臭蟲",
+        "area": "青陽山",
+        "text": "青陽山・青臭蟲：29%",
+        "source": "99-jzw-word-integration.js:1649"
+      },
+      {
+        "kind": "妖物",
+        "name": "自爆毒蛛",
+        "area": "潮汐秘境",
+        "text": "潮汐秘境・自爆毒蛛：48.5%",
+        "source": "99-jzw-word-integration.js:1649"
+      },
+      {
+        "kind": "委託",
+        "name": "CQ-DZ-002",
+        "text": "［委託］我愛甲殼！甲殼愛我！（固定獎勵×1）",
+        "source": "JZ071.commissions:CQ-DZ-002"
+      },
+      {
+        "kind": "委託",
+        "name": "CQ-DZ-004",
+        "text": "［委託］可怕的蟲！（選擇獎勵×1）",
+        "source": "JZ071.commissions:CQ-DZ-004"
+      },
+      {
+        "kind": "挑戰",
+        "name": "萬獸塔3",
+        "text": "萬獸檯・萬獸塔第3層首通：一階妖物素材隨機×2之既有候選",
+        "source": "100-jzr-20261004.js:124"
+      },
+      {
+        "kind": "挑戰",
+        "name": "萬獸塔5",
+        "text": "萬獸檯・萬獸塔第5層首通：一階妖物素材隨機×3之既有候選",
+        "source": "100-jzr-20261004.js:124"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］綜合一階素材箱",
+        "text": "［特殊］綜合一階素材箱：使用時可自選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選一階材料箱",
+        "text": "［特殊］自選一階材料箱：現有素材箱選單可選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選一階妖物素材箱",
+        "text": "［特殊］自選一階妖物素材箱：現有合法選單可選此素材×1",
+        "source": "ui.js:15"
+      }
+    ],
+    "pending": [],
+    "image": "/素材美術_2026-10-18/毒囊.png"
+  },
+  {
+    "name": "［一階］蛛絲",
+    "category": "妖物素材",
+    "commissionEligible": true,
+    "sources": [
+      {
+        "kind": "妖物",
+        "name": "小圓蛛",
+        "area": "落星谷",
+        "text": "落星谷・小圓蛛：90%",
+        "source": "99-jzw-word-integration.js:1649"
+      },
+      {
+        "kind": "妖物",
+        "name": "自爆毒蛛",
+        "area": "潮汐秘境",
+        "text": "潮汐秘境・自爆毒蛛：48.5%",
+        "source": "99-jzw-word-integration.js:1649"
+      },
+      {
+        "kind": "委託",
+        "name": "CQ-DZ-017",
+        "text": "［委託］既可愛又可怕！（固定獎勵×2）",
+        "source": "JZ071.commissions:CQ-DZ-017"
+      },
+      {
+        "kind": "挑戰",
+        "name": "萬獸塔3",
+        "text": "萬獸檯・萬獸塔第3層首通：一階妖物素材隨機×2之既有候選",
+        "source": "100-jzr-20261004.js:124"
+      },
+      {
+        "kind": "挑戰",
+        "name": "萬獸塔5",
+        "text": "萬獸檯・萬獸塔第5層首通：一階妖物素材隨機×3之既有候選",
+        "source": "100-jzr-20261004.js:124"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］綜合一階素材箱",
+        "text": "［特殊］綜合一階素材箱：使用時可自選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選一階材料箱",
+        "text": "［特殊］自選一階材料箱：現有素材箱選單可選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選一階妖物素材箱",
+        "text": "［特殊］自選一階妖物素材箱：現有合法選單可選此素材×1",
+        "source": "ui.js:15"
+      }
+    ],
+    "pending": [],
+    "image": "/素材美術_2026-10-18/蛛絲.png"
+  },
+  {
+    "name": "［一階］獸角",
+    "category": "素材",
+    "commissionEligible": false,
+    "sources": [
+      {
+        "kind": "素材箱",
+        "name": "［特殊］綜合一階素材箱",
+        "text": "［特殊］綜合一階素材箱：使用時可自選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選一階材料箱",
+        "text": "［特殊］自選一階材料箱：現有素材箱選單可選此素材×1",
+        "source": "ui.js:15"
+      }
+    ],
+    "pending": [
+      "原生掉落／採集／配方／商店／任務來源未登錄；目前僅能確認素材箱選取。"
+    ],
+    "image": "/素材美術_2026-10-18/獸角.png"
+  },
+  {
+    "name": "［一階］靈粉",
+    "category": "妖物素材",
+    "commissionEligible": true,
+    "sources": [
+      {
+        "kind": "妖物",
+        "name": "重翅蝶",
+        "area": "落星谷",
+        "text": "落星谷・重翅蝶：87%",
+        "source": "99-jzw-word-integration.js:1649"
+      },
+      {
+        "kind": "妖物",
+        "name": "風粉蝶",
+        "area": "潮汐秘境",
+        "text": "潮汐秘境・風粉蝶：53%",
+        "source": "99-jzw-word-integration.js:1649"
+      },
+      {
+        "kind": "妖物",
+        "name": "靈珠蝶",
+        "area": "黑潮禁岸",
+        "text": "黑潮禁岸・靈珠蝶：25%",
+        "source": "monsters.js:17"
+      },
+      {
+        "kind": "委託",
+        "name": "CQ-DZ-037",
+        "text": "［委託］漂亮的蝴蝶也會打人？（固定獎勵×2）",
+        "source": "JZ071.commissions:CQ-DZ-037"
+      },
+      {
+        "kind": "挑戰",
+        "name": "萬獸塔3",
+        "text": "萬獸檯・萬獸塔第3層首通：一階妖物素材隨機×2之既有候選",
+        "source": "100-jzr-20261004.js:124"
+      },
+      {
+        "kind": "挑戰",
+        "name": "萬獸塔5",
+        "text": "萬獸檯・萬獸塔第5層首通：一階妖物素材隨機×3之既有候選",
+        "source": "100-jzr-20261004.js:124"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］綜合一階素材箱",
+        "text": "［特殊］綜合一階素材箱：使用時可自選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選一階材料箱",
+        "text": "［特殊］自選一階材料箱：現有素材箱選單可選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選一階妖物素材箱",
+        "text": "［特殊］自選一階妖物素材箱：現有合法選單可選此素材×1",
+        "source": "ui.js:15"
+      }
+    ],
+    "pending": [],
+    "image": "/素材美術_2026-10-18/靈粉.png"
+  },
+  {
+    "name": "［一階］龜殼",
+    "category": "妖物素材",
+    "commissionEligible": true,
+    "sources": [
+      {
+        "kind": "妖物",
+        "name": "潮汐龜",
+        "area": "潮汐秘境",
+        "text": "潮汐秘境・潮汐龜：44%",
+        "source": "99-jzw-word-integration.js:1649"
+      },
+      {
+        "kind": "挑戰",
+        "name": "萬獸塔3",
+        "text": "萬獸檯・萬獸塔第3層首通：一階妖物素材隨機×2之既有候選",
+        "source": "100-jzr-20261004.js:124"
+      },
+      {
+        "kind": "挑戰",
+        "name": "萬獸塔5",
+        "text": "萬獸檯・萬獸塔第5層首通：一階妖物素材隨機×3之既有候選",
+        "source": "100-jzr-20261004.js:124"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］綜合一階素材箱",
+        "text": "［特殊］綜合一階素材箱：使用時可自選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選一階材料箱",
+        "text": "［特殊］自選一階材料箱：現有素材箱選單可選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選一階妖物素材箱",
+        "text": "［特殊］自選一階妖物素材箱：現有合法選單可選此素材×1",
+        "source": "ui.js:15"
+      }
+    ],
+    "pending": [],
+    "image": "/素材美術_2026-10-18/龜殼.png"
+  },
+  {
+    "name": "［二階］凝露花",
+    "category": "植物",
+    "commissionEligible": true,
+    "sources": [
+      {
+        "kind": "地區",
+        "name": "青陽山",
+        "text": "青陽山採集：15.00%",
+        "source": "R4_GATHER_CFG／136-jz072-integration.js:12"
+      },
+      {
+        "kind": "地區",
+        "name": "雷鳴沼",
+        "text": "雷鳴沼採集：30.00%",
+        "source": "R4_GATHER_CFG／136-jz072-integration.js:12"
+      },
+      {
+        "kind": "地區",
+        "name": "潮汐秘境",
+        "text": "潮汐秘境採集：17.50%",
+        "source": "R4_GATHER_CFG／136-jz072-integration.js:12"
+      },
+      {
+        "kind": "地區",
+        "name": "天穹浮島",
+        "text": "天穹浮島採集：6.25%",
+        "source": "R4_GATHER_CFG／136-jz072-integration.js:12"
+      },
+      {
+        "kind": "地區",
+        "name": "雷鳴沼地下深窟",
+        "text": "雷鳴沼地下深窟野外化後：採集類25%，類內3項等機率",
+        "source": "world.js:23"
+      },
+      {
+        "kind": "挑戰",
+        "name": "問道檯5",
+        "text": "問道檯・逐步挑戰第5層首通×2",
+        "source": "99-jzw-word-integration.js・floors"
+      },
+      {
+        "kind": "任務",
+        "name": "eastResolved",
+        "text": "［主線］事情解決了，嗎？：二階採集素材隨機×3之正式候選",
+        "source": "124-jz071-implementation.js:1192"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］綜合二階素材箱",
+        "text": "［特殊］綜合二階素材箱：使用時可自選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選二階材料箱",
+        "text": "［特殊］自選二階材料箱：現有素材箱選單可選此素材×1",
+        "source": "ui.js:15"
+      }
+    ],
+    "pending": [],
+    "image": "/素材美術_2026-10-18/凝露花.png"
+  },
+  {
+    "name": "［二階］百年靈草",
+    "category": "植物",
+    "commissionEligible": true,
+    "sources": [
+      {
+        "kind": "地區",
+        "name": "落星谷",
+        "text": "落星谷採集：25.00%",
+        "source": "R4_GATHER_CFG／136-jz072-integration.js:12"
+      },
+      {
+        "kind": "地區",
+        "name": "天穹浮島",
+        "text": "天穹浮島採集：6.25%",
+        "source": "R4_GATHER_CFG／136-jz072-integration.js:12"
+      },
+      {
+        "kind": "地區",
+        "name": "雷鳴沼地下深窟",
+        "text": "雷鳴沼地下深窟野外化後：採集類25%，類內3項等機率",
+        "source": "world.js:23"
+      },
+      {
+        "kind": "任務",
+        "name": "eastResolved",
+        "text": "［主線］事情解決了，嗎？：二階採集素材隨機×3之正式候選",
+        "source": "124-jz071-implementation.js:1192"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］綜合二階素材箱",
+        "text": "［特殊］綜合二階素材箱：使用時可自選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選二階材料箱",
+        "text": "［特殊］自選二階材料箱：現有素材箱選單可選此素材×1",
+        "source": "ui.js:15"
+      }
+    ],
+    "pending": [],
+    "image": "/素材美術_2026-10-18/百年靈草.png"
+  },
+  {
+    "name": "［二階］青紋藤",
+    "category": "植物",
+    "commissionEligible": true,
+    "sources": [
+      {
+        "kind": "地區",
+        "name": "青陽山",
+        "text": "青陽山採集：15.00%",
+        "source": "R4_GATHER_CFG／136-jz072-integration.js:12"
+      },
+      {
+        "kind": "地區",
+        "name": "天穹浮島",
+        "text": "天穹浮島採集：6.25%",
+        "source": "R4_GATHER_CFG／136-jz072-integration.js:12"
+      },
+      {
+        "kind": "地區",
+        "name": "雷鳴沼地下深窟",
+        "text": "雷鳴沼地下深窟野外化後：採集類25%，類內3項等機率",
+        "source": "world.js:23"
+      },
+      {
+        "kind": "挑戰",
+        "name": "問道檯8",
+        "text": "問道檯・逐步挑戰第8層首通×2",
+        "source": "99-jzw-word-integration.js・floors"
+      },
+      {
+        "kind": "任務",
+        "name": "eastResolved",
+        "text": "［主線］事情解決了，嗎？：二階採集素材隨機×3之正式候選",
+        "source": "124-jz071-implementation.js:1192"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］綜合二階素材箱",
+        "text": "［特殊］綜合二階素材箱：使用時可自選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選二階材料箱",
+        "text": "［特殊］自選二階材料箱：現有素材箱選單可選此素材×1",
+        "source": "ui.js:15"
+      }
+    ],
+    "pending": [],
+    "image": "/素材美術_2026-10-18/青紋藤.png"
+  },
+  {
+    "name": "［二階］赤銅礦",
+    "category": "礦物",
+    "commissionEligible": true,
+    "sources": [
+      {
+        "kind": "妖物",
+        "name": "臂巨礦",
+        "area": "天穹浮島",
+        "text": "天穹浮島・臂巨礦：20%先選二階礦物池，再從10項等機率選取",
+        "source": "133-jz072-island.js:41"
+      },
+      {
+        "kind": "妖物",
+        "name": "精晶礦靈",
+        "area": "晶礦秘境",
+        "text": "晶礦秘境・精晶礦靈：20%選四種礦物池，再四選一（單項5%）",
+        "source": "99-jzw-word-integration.js:1652"
+      },
+      {
+        "kind": "地區",
+        "name": "晶礦秘境",
+        "text": "晶礦秘境採集：22.50%",
+        "source": "R4_GATHER_CFG／136-jz072-integration.js:12"
+      },
+      {
+        "kind": "地區",
+        "name": "天穹浮島",
+        "text": "天穹浮島採集：6.25%",
+        "source": "R4_GATHER_CFG／136-jz072-integration.js:12"
+      },
+      {
+        "kind": "地區",
+        "name": "雷鳴沼地下深窟",
+        "text": "雷鳴沼地下深窟野外化後：礦物類25%，類內10項等機率",
+        "source": "world.js:23"
+      },
+      {
+        "kind": "任務",
+        "name": "eastResolved",
+        "text": "［主線］事情解決了，嗎？：二階採集素材隨機×3之正式候選",
+        "source": "124-jz071-implementation.js:1192"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］綜合二階素材箱",
+        "text": "［特殊］綜合二階素材箱：使用時可自選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選二階材料箱",
+        "text": "［特殊］自選二階材料箱：現有素材箱選單可選此素材×1",
+        "source": "ui.js:15"
+      }
+    ],
+    "pending": [],
+    "image": "/素材美術_2026-10-18/赤銅礦.png"
+  },
+  {
+    "name": "［二階］玄鐵",
+    "category": "礦物",
+    "commissionEligible": true,
+    "sources": [
+      {
+        "kind": "妖物",
+        "name": "臂巨礦",
+        "area": "天穹浮島",
+        "text": "天穹浮島・臂巨礦：20%先選二階礦物池，再從10項等機率選取",
+        "source": "133-jz072-island.js:41"
+      },
+      {
+        "kind": "妖物",
+        "name": "精晶礦靈",
+        "area": "晶礦秘境",
+        "text": "晶礦秘境・精晶礦靈：20%選四種礦物池，再四選一（單項5%）",
+        "source": "99-jzw-word-integration.js:1652"
+      },
+      {
+        "kind": "地區",
+        "name": "晶礦秘境",
+        "text": "晶礦秘境採集：22.50%",
+        "source": "R4_GATHER_CFG／136-jz072-integration.js:12"
+      },
+      {
+        "kind": "地區",
+        "name": "天穹浮島",
+        "text": "天穹浮島採集：6.25%",
+        "source": "R4_GATHER_CFG／136-jz072-integration.js:12"
+      },
+      {
+        "kind": "地區",
+        "name": "雷鳴沼地下深窟",
+        "text": "雷鳴沼地下深窟野外化後：礦物類25%，類內10項等機率",
+        "source": "world.js:23"
+      },
+      {
+        "kind": "挑戰",
+        "name": "問道檯6",
+        "text": "問道檯・逐步挑戰第6層首通×2",
+        "source": "99-jzw-word-integration.js・floors"
+      },
+      {
+        "kind": "任務",
+        "name": "eastResolved",
+        "text": "［主線］事情解決了，嗎？：二階採集素材隨機×3之正式候選",
+        "source": "124-jz071-implementation.js:1192"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］綜合二階素材箱",
+        "text": "［特殊］綜合二階素材箱：使用時可自選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選二階材料箱",
+        "text": "［特殊］自選二階材料箱：現有素材箱選單可選此素材×1",
+        "source": "ui.js:15"
+      }
+    ],
+    "pending": [],
+    "image": "/素材美術_2026-10-18/玄鐵.png"
+  },
+  {
+    "name": "［二階］火晶石",
+    "category": "礦物",
+    "commissionEligible": true,
+    "sources": [
+      {
+        "kind": "妖物",
+        "name": "臂巨礦",
+        "area": "天穹浮島",
+        "text": "天穹浮島・臂巨礦：20%先選二階礦物池，再從10項等機率選取",
+        "source": "133-jz072-island.js:41"
+      },
+      {
+        "kind": "妖物",
+        "name": "精晶礦靈",
+        "area": "晶礦秘境",
+        "text": "晶礦秘境・精晶礦靈：80%選元素晶石池，再八選一（單項10%）",
+        "source": "99-jzw-word-integration.js:1652"
+      },
+      {
+        "kind": "地區",
+        "name": "雷鳴沼地下深窟",
+        "text": "雷鳴沼地下深窟野外化後：礦物類25%，類內10項等機率",
+        "source": "world.js:23"
+      },
+      {
+        "kind": "挑戰",
+        "name": "問道檯7",
+        "text": "問道檯・逐步挑戰第7層首通×2",
+        "source": "99-jzw-word-integration.js・floors"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］綜合二階素材箱",
+        "text": "［特殊］綜合二階素材箱：使用時可自選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選二階材料箱",
+        "text": "［特殊］自選二階材料箱：現有素材箱選單可選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選晶石箱",
+        "text": "［特殊］自選晶石箱：八種正式元素晶石選一",
+        "source": "99-jzw-word-integration.js:381,1675"
+      }
+    ],
+    "pending": [],
+    "image": "/素材美術_2026-10-18/火晶石.png"
+  },
+  {
+    "name": "［二階］水晶石",
+    "category": "礦物",
+    "commissionEligible": true,
+    "sources": [
+      {
+        "kind": "妖物",
+        "name": "臂巨礦",
+        "area": "天穹浮島",
+        "text": "天穹浮島・臂巨礦：20%先選二階礦物池，再從10項等機率選取",
+        "source": "133-jz072-island.js:41"
+      },
+      {
+        "kind": "妖物",
+        "name": "精晶礦靈",
+        "area": "晶礦秘境",
+        "text": "晶礦秘境・精晶礦靈：80%選元素晶石池，再八選一（單項10%）",
+        "source": "99-jzw-word-integration.js:1652"
+      },
+      {
+        "kind": "地區",
+        "name": "潮汐秘境",
+        "text": "潮汐秘境採集：17.50%",
+        "source": "R4_GATHER_CFG／136-jz072-integration.js:12"
+      },
+      {
+        "kind": "地區",
+        "name": "雷鳴沼地下深窟",
+        "text": "雷鳴沼地下深窟野外化後：礦物類25%，類內10項等機率",
+        "source": "world.js:23"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］綜合二階素材箱",
+        "text": "［特殊］綜合二階素材箱：使用時可自選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選二階材料箱",
+        "text": "［特殊］自選二階材料箱：現有素材箱選單可選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選晶石箱",
+        "text": "［特殊］自選晶石箱：八種正式元素晶石選一",
+        "source": "99-jzw-word-integration.js:381,1675"
+      }
+    ],
+    "pending": [],
+    "image": "/素材美術_2026-10-18/水晶石.png"
+  },
+  {
+    "name": "［二階］木晶石",
+    "category": "礦物",
+    "commissionEligible": true,
+    "sources": [
+      {
+        "kind": "妖物",
+        "name": "臂巨礦",
+        "area": "天穹浮島",
+        "text": "天穹浮島・臂巨礦：20%先選二階礦物池，再從10項等機率選取",
+        "source": "133-jz072-island.js:41"
+      },
+      {
+        "kind": "妖物",
+        "name": "精晶礦靈",
+        "area": "晶礦秘境",
+        "text": "晶礦秘境・精晶礦靈：80%選元素晶石池，再八選一（單項10%）",
+        "source": "99-jzw-word-integration.js:1652"
+      },
+      {
+        "kind": "地區",
+        "name": "雷鳴沼地下深窟",
+        "text": "雷鳴沼地下深窟野外化後：礦物類25%，類內10項等機率",
+        "source": "world.js:23"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］綜合二階素材箱",
+        "text": "［特殊］綜合二階素材箱：使用時可自選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選二階材料箱",
+        "text": "［特殊］自選二階材料箱：現有素材箱選單可選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選晶石箱",
+        "text": "［特殊］自選晶石箱：八種正式元素晶石選一",
+        "source": "99-jzw-word-integration.js:381,1675"
+      }
+    ],
+    "pending": [],
+    "image": "/素材美術_2026-10-18/木晶石.png"
+  },
+  {
+    "name": "［二階］風晶石",
+    "category": "礦物",
+    "commissionEligible": true,
+    "sources": [
+      {
+        "kind": "妖物",
+        "name": "臂巨礦",
+        "area": "天穹浮島",
+        "text": "天穹浮島・臂巨礦：20%先選二階礦物池，再從10項等機率選取",
+        "source": "133-jz072-island.js:41"
+      },
+      {
+        "kind": "妖物",
+        "name": "精晶礦靈",
+        "area": "晶礦秘境",
+        "text": "晶礦秘境・精晶礦靈：80%選元素晶石池，再八選一（單項10%）",
+        "source": "99-jzw-word-integration.js:1652"
+      },
+      {
+        "kind": "地區",
+        "name": "雷鳴沼地下深窟",
+        "text": "雷鳴沼地下深窟野外化後：礦物類25%，類內10項等機率",
+        "source": "world.js:23"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］綜合二階素材箱",
+        "text": "［特殊］綜合二階素材箱：使用時可自選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選二階材料箱",
+        "text": "［特殊］自選二階材料箱：現有素材箱選單可選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選晶石箱",
+        "text": "［特殊］自選晶石箱：八種正式元素晶石選一",
+        "source": "99-jzw-word-integration.js:381,1675"
+      }
+    ],
+    "pending": [],
+    "image": "/素材美術_2026-10-18/風晶石.png"
+  },
+  {
+    "name": "［二階］雷晶石",
+    "category": "礦物",
+    "commissionEligible": true,
+    "sources": [
+      {
+        "kind": "妖物",
+        "name": "臂巨礦",
+        "area": "天穹浮島",
+        "text": "天穹浮島・臂巨礦：20%先選二階礦物池，再從10項等機率選取",
+        "source": "133-jz072-island.js:41"
+      },
+      {
+        "kind": "妖物",
+        "name": "精晶礦靈",
+        "area": "晶礦秘境",
+        "text": "晶礦秘境・精晶礦靈：80%選元素晶石池，再八選一（單項10%）",
+        "source": "99-jzw-word-integration.js:1652"
+      },
+      {
+        "kind": "地區",
+        "name": "雷鳴沼地下深窟",
+        "text": "雷鳴沼地下深窟野外化後：礦物類25%，類內10項等機率",
+        "source": "world.js:23"
+      },
+      {
+        "kind": "挑戰",
+        "name": "問道檯9",
+        "text": "問道檯・逐步挑戰第9層首通×3",
+        "source": "99-jzw-word-integration.js・floors"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］綜合二階素材箱",
+        "text": "［特殊］綜合二階素材箱：使用時可自選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選二階材料箱",
+        "text": "［特殊］自選二階材料箱：現有素材箱選單可選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選晶石箱",
+        "text": "［特殊］自選晶石箱：八種正式元素晶石選一",
+        "source": "99-jzw-word-integration.js:381,1675"
+      }
+    ],
+    "pending": [],
+    "image": "/素材美術_2026-10-18/雷晶石.png"
+  },
+  {
+    "name": "［二階］土晶石",
+    "category": "礦物",
+    "commissionEligible": true,
+    "sources": [
+      {
+        "kind": "妖物",
+        "name": "臂巨礦",
+        "area": "天穹浮島",
+        "text": "天穹浮島・臂巨礦：20%先選二階礦物池，再從10項等機率選取",
+        "source": "133-jz072-island.js:41"
+      },
+      {
+        "kind": "妖物",
+        "name": "精晶礦靈",
+        "area": "晶礦秘境",
+        "text": "晶礦秘境・精晶礦靈：80%選元素晶石池，再八選一（單項10%）",
+        "source": "99-jzw-word-integration.js:1652"
+      },
+      {
+        "kind": "地區",
+        "name": "雷鳴沼地下深窟",
+        "text": "雷鳴沼地下深窟野外化後：礦物類25%，類內10項等機率",
+        "source": "world.js:23"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］綜合二階素材箱",
+        "text": "［特殊］綜合二階素材箱：使用時可自選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選二階材料箱",
+        "text": "［特殊］自選二階材料箱：現有素材箱選單可選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選晶石箱",
+        "text": "［特殊］自選晶石箱：八種正式元素晶石選一",
+        "source": "99-jzw-word-integration.js:381,1675"
+      }
+    ],
+    "pending": [],
+    "image": "/素材美術_2026-10-18/土晶石.png"
+  },
+  {
+    "name": "［二階］光晶石",
+    "category": "礦物",
+    "commissionEligible": true,
+    "sources": [
+      {
+        "kind": "妖物",
+        "name": "臂巨礦",
+        "area": "天穹浮島",
+        "text": "天穹浮島・臂巨礦：20%先選二階礦物池，再從10項等機率選取",
+        "source": "133-jz072-island.js:41"
+      },
+      {
+        "kind": "妖物",
+        "name": "精晶礦靈",
+        "area": "晶礦秘境",
+        "text": "晶礦秘境・精晶礦靈：80%選元素晶石池，再八選一（單項10%）",
+        "source": "99-jzw-word-integration.js:1652"
+      },
+      {
+        "kind": "地區",
+        "name": "雷鳴沼地下深窟",
+        "text": "雷鳴沼地下深窟野外化後：礦物類25%，類內10項等機率",
+        "source": "world.js:23"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］綜合二階素材箱",
+        "text": "［特殊］綜合二階素材箱：使用時可自選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選二階材料箱",
+        "text": "［特殊］自選二階材料箱：現有素材箱選單可選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選晶石箱",
+        "text": "［特殊］自選晶石箱：八種正式元素晶石選一",
+        "source": "99-jzw-word-integration.js:381,1675"
+      }
+    ],
+    "pending": [],
+    "image": "/素材美術_2026-10-18/光晶石.png"
+  },
+  {
+    "name": "［二階］暗晶石",
+    "category": "礦物",
+    "commissionEligible": true,
+    "sources": [
+      {
+        "kind": "妖物",
+        "name": "臂巨礦",
+        "area": "天穹浮島",
+        "text": "天穹浮島・臂巨礦：20%先選二階礦物池，再從10項等機率選取",
+        "source": "133-jz072-island.js:41"
+      },
+      {
+        "kind": "妖物",
+        "name": "精晶礦靈",
+        "area": "晶礦秘境",
+        "text": "晶礦秘境・精晶礦靈：80%選元素晶石池，再八選一（單項10%）",
+        "source": "99-jzw-word-integration.js:1652"
+      },
+      {
+        "kind": "地區",
+        "name": "雷鳴沼地下深窟",
+        "text": "雷鳴沼地下深窟野外化後：礦物類25%，類內10項等機率",
+        "source": "world.js:23"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］綜合二階素材箱",
+        "text": "［特殊］綜合二階素材箱：使用時可自選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選二階材料箱",
+        "text": "［特殊］自選二階材料箱：現有素材箱選單可選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選晶石箱",
+        "text": "［特殊］自選晶石箱：八種正式元素晶石選一",
+        "source": "99-jzw-word-integration.js:381,1675"
+      }
+    ],
+    "pending": [],
+    "image": "/素材美術_2026-10-18/暗晶石.png"
+  },
+  {
+    "name": "［二階］碧綠木",
+    "category": "木材",
+    "commissionEligible": true,
+    "sources": [
+      {
+        "kind": "地區",
+        "name": "天穹浮島",
+        "text": "天穹浮島採集：6.25%",
+        "source": "R4_GATHER_CFG／136-jz072-integration.js:12"
+      },
+      {
+        "kind": "挑戰",
+        "name": "問道檯8",
+        "text": "問道檯・逐步挑戰第8層首通×2",
+        "source": "99-jzw-word-integration.js・floors"
+      },
+      {
+        "kind": "任務",
+        "name": "eastResolved",
+        "text": "［主線］事情解決了，嗎？：二階採集素材隨機×3之正式候選",
+        "source": "124-jz071-implementation.js:1192"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］綜合二階素材箱",
+        "text": "［特殊］綜合二階素材箱：使用時可自選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選二階材料箱",
+        "text": "［特殊］自選二階材料箱：現有素材箱選單可選此素材×1",
+        "source": "ui.js:15"
+      }
+    ],
+    "pending": [],
+    "image": "/素材美術_2026-10-18/碧綠木.png"
+  },
+  {
+    "name": "［二階］楊木",
+    "category": "木材",
+    "commissionEligible": true,
+    "sources": [
+      {
+        "kind": "地區",
+        "name": "天穹浮島",
+        "text": "天穹浮島採集：6.25%",
+        "source": "R4_GATHER_CFG／136-jz072-integration.js:12"
+      },
+      {
+        "kind": "地區",
+        "name": "雷鳴沼地下深窟",
+        "text": "雷鳴沼地下深窟野外化後：木材類25%，類內1項等機率",
+        "source": "world.js:23"
+      },
+      {
+        "kind": "任務",
+        "name": "eastResolved",
+        "text": "［主線］事情解決了，嗎？：二階採集素材隨機×3之正式候選",
+        "source": "124-jz071-implementation.js:1192"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］綜合二階素材箱",
+        "text": "［特殊］綜合二階素材箱：使用時可自選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選二階材料箱",
+        "text": "［特殊］自選二階材料箱：現有素材箱選單可選此素材×1",
+        "source": "ui.js:15"
+      }
+    ],
+    "pending": [],
+    "image": "/素材美術_2026-10-18/楊木.png"
+  },
+  {
+    "name": "［二階］玉葉果",
+    "category": "靈果",
+    "commissionEligible": true,
+    "sources": [
+      {
+        "kind": "地區",
+        "name": "落星谷",
+        "text": "落星谷採集：25.00%",
+        "source": "R4_GATHER_CFG／136-jz072-integration.js:12"
+      },
+      {
+        "kind": "地區",
+        "name": "雷鳴沼",
+        "text": "雷鳴沼採集：30.00%",
+        "source": "R4_GATHER_CFG／136-jz072-integration.js:12"
+      },
+      {
+        "kind": "地區",
+        "name": "天穹浮島",
+        "text": "天穹浮島採集：6.25%",
+        "source": "R4_GATHER_CFG／136-jz072-integration.js:12"
+      },
+      {
+        "kind": "地區",
+        "name": "雷鳴沼地下深窟",
+        "text": "雷鳴沼地下深窟野外化後：靈果類25%，類內1項等機率",
+        "source": "world.js:23"
+      },
+      {
+        "kind": "任務",
+        "name": "eastResolved",
+        "text": "［主線］事情解決了，嗎？：二階採集素材隨機×3之正式候選",
+        "source": "124-jz071-implementation.js:1192"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］綜合二階素材箱",
+        "text": "［特殊］綜合二階素材箱：使用時可自選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選二階材料箱",
+        "text": "［特殊］自選二階材料箱：現有素材箱選單可選此素材×1",
+        "source": "ui.js:15"
+      }
+    ],
+    "pending": [],
+    "image": "/素材美術_2026-10-18/玉葉果.png"
+  },
+  {
+    "name": "［二階］玄靈鐵錠",
+    "category": "合成素材",
+    "commissionEligible": false,
+    "sources": [
+      {
+        "kind": "配方",
+        "name": "［二階］玄靈鐵錠",
+        "text": "工坊・合成：玄鐵×2＋靈石×2",
+        "source": "RECIPES.合成"
+      },
+      {
+        "kind": "挑戰",
+        "name": "問道檯9",
+        "text": "問道檯・逐步挑戰第9層首通×1",
+        "source": "99-jzw-word-integration.js・floors"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］綜合二階素材箱",
+        "text": "［特殊］綜合二階素材箱：使用時可自選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選二階材料箱",
+        "text": "［特殊］自選二階材料箱：現有素材箱選單可選此素材×1",
+        "source": "ui.js:15"
+      }
+    ],
+    "pending": [],
+    "image": "/素材美術_2026-10-18/玄靈鐵錠.png"
+  },
+  {
+    "name": "［二階］靈楊木板",
+    "category": "合成素材",
+    "commissionEligible": false,
+    "sources": [
+      {
+        "kind": "配方",
+        "name": "［二階］靈楊木板",
+        "text": "工坊・合成：楊木×3＋靈石×1",
+        "source": "RECIPES.合成"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］綜合二階素材箱",
+        "text": "［特殊］綜合二階素材箱：使用時可自選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選二階材料箱",
+        "text": "［特殊］自選二階材料箱：現有素材箱選單可選此素材×1",
+        "source": "ui.js:15"
+      }
+    ],
+    "pending": [],
+    "image": "/素材美術_2026-10-18/靈楊木板.png"
+  },
+  {
+    "name": "［二階］硬骨板",
+    "category": "合成素材",
+    "commissionEligible": false,
+    "sources": [
+      {
+        "kind": "配方",
+        "name": "［二階］硬骨板",
+        "text": "工坊・合成：硬獸骨×2＋玄鐵×1",
+        "source": "RECIPES.合成"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］綜合二階素材箱",
+        "text": "［特殊］綜合二階素材箱：使用時可自選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選二階材料箱",
+        "text": "［特殊］自選二階材料箱：現有素材箱選單可選此素材×1",
+        "source": "ui.js:15"
+      }
+    ],
+    "pending": [],
+    "image": "/素材美術_2026-10-18/硬骨板.png"
+  },
+  {
+    "name": "［二階］濃靈血精",
+    "category": "合成素材",
+    "commissionEligible": false,
+    "sources": [
+      {
+        "kind": "配方",
+        "name": "［二階］濃靈血精",
+        "text": "工坊・合成：濃縮妖血×2＋妖丹×1",
+        "source": "RECIPES.合成"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］綜合二階素材箱",
+        "text": "［特殊］綜合二階素材箱：使用時可自選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選二階材料箱",
+        "text": "［特殊］自選二階材料箱：現有素材箱選單可選此素材×1",
+        "source": "ui.js:15"
+      }
+    ],
+    "pending": [],
+    "image": "/素材美術_2026-10-18/濃靈血精.png"
+  },
+  {
+    "name": "［二階］凝魂砂",
+    "category": "合成素材",
+    "commissionEligible": false,
+    "sources": [
+      {
+        "kind": "配方",
+        "name": "［二階］凝魂砂",
+        "text": "工坊・合成：妖魂碎片×2＋靈石×2",
+        "source": "RECIPES.合成"
+      },
+      {
+        "kind": "挑戰",
+        "name": "問道檯10",
+        "text": "問道檯・逐步挑戰第10層首通×2",
+        "source": "99-jzw-word-integration.js・floors"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］綜合二階素材箱",
+        "text": "［特殊］綜合二階素材箱：使用時可自選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選二階材料箱",
+        "text": "［特殊］自選二階材料箱：現有素材箱選單可選此素材×1",
+        "source": "ui.js:15"
+      }
+    ],
+    "pending": [],
+    "image": "/素材美術_2026-10-18/凝魂砂.png"
+  },
+  {
+    "name": "［二階］妖丹精華",
+    "category": "合成素材",
+    "commissionEligible": false,
+    "sources": [
+      {
+        "kind": "配方",
+        "name": "［二階］妖丹精華",
+        "text": "工坊・合成：妖丹×2＋濃縮妖血×1",
+        "source": "RECIPES.合成"
+      },
+      {
+        "kind": "任務",
+        "name": "MQ-DZ-024-A",
+        "text": "［主線］通報－落星谷：戰勝所選特殊種並回報柳清妍，固定×1",
+        "source": "124-jz071-implementation.js:1158"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］綜合二階素材箱",
+        "text": "［特殊］綜合二階素材箱：使用時可自選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選二階材料箱",
+        "text": "［特殊］自選二階材料箱：現有素材箱選單可選此素材×1",
+        "source": "ui.js:15"
+      }
+    ],
+    "pending": [],
+    "image": "/素材美術_2026-10-18/妖丹精華.png"
+  },
+  {
+    "name": "［二階］狐毛",
+    "category": "素材",
+    "commissionEligible": false,
+    "sources": [
+      {
+        "kind": "素材箱",
+        "name": "［特殊］綜合二階素材箱",
+        "text": "［特殊］綜合二階素材箱：使用時可自選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選二階材料箱",
+        "text": "［特殊］自選二階材料箱：現有素材箱選單可選此素材×1",
+        "source": "ui.js:15"
+      }
+    ],
+    "pending": [
+      "原生掉落／採集／配方／商店／任務來源未登錄；目前僅能確認素材箱選取。"
+    ],
+    "image": "/素材美術_2026-10-18/狐毛.png"
+  },
+  {
+    "name": "［二階］蛟鱗",
+    "category": "妖物素材",
+    "commissionEligible": true,
+    "sources": [
+      {
+        "kind": "妖物",
+        "name": "冥雷蛟",
+        "area": "雷鳴沼",
+        "text": "雷鳴沼・冥雷蛟：55%",
+        "source": "99-jzw-word-integration.js:1649"
+      },
+      {
+        "kind": "委託",
+        "name": "CQ-DZ-020",
+        "text": "［委託］奇怪的蛇！（固定獎勵×1）",
+        "source": "JZ071.commissions:CQ-DZ-020"
+      },
+      {
+        "kind": "任務",
+        "name": "eastResolved",
+        "text": "［主線］事情解決了，嗎？：二階妖物素材隨機×3之正式候選",
+        "source": "124-jz071-implementation.js:1192"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］綜合二階素材箱",
+        "text": "［特殊］綜合二階素材箱：使用時可自選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選二階材料箱",
+        "text": "［特殊］自選二階材料箱：現有素材箱選單可選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選二階妖物素材箱",
+        "text": "［特殊］自選二階妖物素材箱：現有合法選單可選此素材×1",
+        "source": "ui.js:15"
+      }
+    ],
+    "pending": [],
+    "image": "/素材美術_2026-10-18/蛟鱗.png"
+  },
+  {
+    "name": "［二階］黑蠍甲",
+    "category": "妖物素材",
+    "commissionEligible": false,
+    "sources": [
+      {
+        "kind": "妖物",
+        "name": "硬黑蠍",
+        "area": "黑潮禁岸",
+        "text": "黑潮禁岸・硬黑蠍：90%",
+        "source": "monsters.js:17"
+      },
+      {
+        "kind": "委託",
+        "name": "CQ-DZ-036",
+        "text": "［委託］這蠍子也太硬了吧！（固定獎勵×1）",
+        "source": "JZ071.commissions:CQ-DZ-036"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］綜合二階素材箱",
+        "text": "［特殊］綜合二階素材箱：使用時可自選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選二階材料箱",
+        "text": "［特殊］自選二階材料箱：現有素材箱選單可選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選二階妖物素材箱",
+        "text": "［特殊］自選二階妖物素材箱：現有合法選單可選此素材×1",
+        "source": "ui.js:15"
+      }
+    ],
+    "pending": [],
+    "image": "/素材美術_2026-10-18/黑蠍甲.png"
+  },
+  {
+    "name": "［二階］雀羽",
+    "category": "妖物素材",
+    "commissionEligible": true,
+    "sources": [
+      {
+        "kind": "妖物",
+        "name": "鳴雀",
+        "area": "雷鳴沼",
+        "text": "雷鳴沼・鳴雀：46%",
+        "source": "99-jzw-word-integration.js:1649"
+      },
+      {
+        "kind": "任務",
+        "name": "eastResolved",
+        "text": "［主線］事情解決了，嗎？：二階妖物素材隨機×3之正式候選",
+        "source": "124-jz071-implementation.js:1192"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］綜合二階素材箱",
+        "text": "［特殊］綜合二階素材箱：使用時可自選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選二階材料箱",
+        "text": "［特殊］自選二階材料箱：現有素材箱選單可選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選二階妖物素材箱",
+        "text": "［特殊］自選二階妖物素材箱：現有合法選單可選此素材×1",
+        "source": "ui.js:15"
+      }
+    ],
+    "pending": [],
+    "image": "/素材美術_2026-10-18/雀羽.png"
+  },
+  {
+    "name": "［二階］硬獸骨",
+    "category": "妖物素材",
+    "commissionEligible": false,
+    "sources": [
+      {
+        "kind": "妖物",
+        "name": "燐火狼",
+        "area": "黑潮禁岸",
+        "text": "黑潮禁岸・燐火狼：20%",
+        "source": "monsters.js:17"
+      },
+      {
+        "kind": "委託",
+        "name": "CQ-DZ-039",
+        "text": "［委託］甲殼收購！（固定獎勵×2）",
+        "source": "JZ071.commissions:CQ-DZ-039"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］綜合二階素材箱",
+        "text": "［特殊］綜合二階素材箱：使用時可自選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選二階材料箱",
+        "text": "［特殊］自選二階材料箱：現有素材箱選單可選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選二階妖物素材箱",
+        "text": "［特殊］自選二階妖物素材箱：現有合法選單可選此素材×1",
+        "source": "ui.js:15"
+      }
+    ],
+    "pending": [],
+    "image": "/素材美術_2026-10-18/硬獸骨.png"
+  },
+  {
+    "name": "［二階］利爪",
+    "category": "妖物素材",
+    "commissionEligible": true,
+    "sources": [
+      {
+        "kind": "妖物",
+        "name": "鳴雀",
+        "area": "雷鳴沼",
+        "text": "雷鳴沼・鳴雀：46%",
+        "source": "99-jzw-word-integration.js:1649"
+      },
+      {
+        "kind": "妖物",
+        "name": "天翼鷹",
+        "area": "天穹浮島",
+        "text": "天穹浮島・天翼鷹：30%",
+        "source": "133-jz072-island.js:41"
+      },
+      {
+        "kind": "妖物",
+        "name": "蠱雕",
+        "area": "天穹浮島",
+        "text": "天穹浮島・蠱雕：100%，固定×2",
+        "source": "133-jz072-island.js:41"
+      },
+      {
+        "kind": "妖物",
+        "name": "燐火狼",
+        "area": "黑潮禁岸",
+        "text": "黑潮禁岸・燐火狼：30%",
+        "source": "monsters.js:17"
+      },
+      {
+        "kind": "委託",
+        "name": "CQ-DZ-026",
+        "text": "［委託］是鷹還是雕？（固定獎勵×1）",
+        "source": "JZ071.commissions:CQ-DZ-026"
+      },
+      {
+        "kind": "任務",
+        "name": "eastResolved",
+        "text": "［主線］事情解決了，嗎？：二階妖物素材隨機×3之正式候選",
+        "source": "124-jz071-implementation.js:1192"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］綜合二階素材箱",
+        "text": "［特殊］綜合二階素材箱：使用時可自選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選二階材料箱",
+        "text": "［特殊］自選二階材料箱：現有素材箱選單可選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選二階妖物素材箱",
+        "text": "［特殊］自選二階妖物素材箱：現有合法選單可選此素材×1",
+        "source": "ui.js:15"
+      }
+    ],
+    "pending": [],
+    "image": "/素材美術_2026-10-18/利爪.png"
+  },
+  {
+    "name": "［二階］濃縮妖血",
+    "category": "妖物素材",
+    "commissionEligible": false,
+    "sources": [
+      {
+        "kind": "妖物",
+        "name": "蠱雕",
+        "area": "天穹浮島",
+        "text": "天穹浮島・蠱雕：100%",
+        "source": "133-jz072-island.js:41"
+      },
+      {
+        "kind": "妖物",
+        "name": "燐火狼",
+        "area": "黑潮禁岸",
+        "text": "黑潮禁岸・燐火狼：5%",
+        "source": "monsters.js:17"
+      },
+      {
+        "kind": "妖物",
+        "name": "硬黑蠍",
+        "area": "黑潮禁岸",
+        "text": "黑潮禁岸・硬黑蠍：5%",
+        "source": "monsters.js:17"
+      },
+      {
+        "kind": "妖物",
+        "name": "靈珠蝶",
+        "area": "黑潮禁岸",
+        "text": "黑潮禁岸・靈珠蝶：25%",
+        "source": "monsters.js:17"
+      },
+      {
+        "kind": "挑戰",
+        "name": "問道檯7",
+        "text": "問道檯・逐步挑戰第7層首通×1",
+        "source": "99-jzw-word-integration.js・floors"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］綜合二階素材箱",
+        "text": "［特殊］綜合二階素材箱：使用時可自選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選二階材料箱",
+        "text": "［特殊］自選二階材料箱：現有素材箱選單可選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選二階妖物素材箱",
+        "text": "［特殊］自選二階妖物素材箱：現有合法選單可選此素材×1",
+        "source": "ui.js:15"
+      }
+    ],
+    "pending": [],
+    "image": "/素材美術_2026-10-18/濃縮妖血.png"
+  },
+  {
+    "name": "［二階］妖丹",
+    "category": "妖物素材",
+    "commissionEligible": false,
+    "sources": [
+      {
+        "kind": "妖物",
+        "name": "蠱雕",
+        "area": "天穹浮島",
+        "text": "天穹浮島・蠱雕：100%",
+        "source": "133-jz072-island.js:41"
+      },
+      {
+        "kind": "妖物",
+        "name": "燐火狼",
+        "area": "黑潮禁岸",
+        "text": "黑潮禁岸・燐火狼：4%",
+        "source": "monsters.js:17"
+      },
+      {
+        "kind": "妖物",
+        "name": "硬黑蠍",
+        "area": "黑潮禁岸",
+        "text": "黑潮禁岸・硬黑蠍：4%",
+        "source": "monsters.js:17"
+      },
+      {
+        "kind": "妖物",
+        "name": "靈珠蝶",
+        "area": "黑潮禁岸",
+        "text": "黑潮禁岸・靈珠蝶：25%",
+        "source": "monsters.js:17"
+      },
+      {
+        "kind": "挑戰",
+        "name": "問道檯10",
+        "text": "問道檯・逐步挑戰第10層首通×1",
+        "source": "99-jzw-word-integration.js・floors"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］綜合二階素材箱",
+        "text": "［特殊］綜合二階素材箱：使用時可自選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選二階材料箱",
+        "text": "［特殊］自選二階材料箱：現有素材箱選單可選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選二階妖物素材箱",
+        "text": "［特殊］自選二階妖物素材箱：現有合法選單可選此素材×1",
+        "source": "ui.js:15"
+      }
+    ],
+    "pending": [],
+    "image": "/素材美術_2026-10-18/妖丹.png"
+  },
+  {
+    "name": "［二階］妖魂碎片",
+    "category": "妖物素材",
+    "commissionEligible": false,
+    "sources": [
+      {
+        "kind": "妖物",
+        "name": "蠱雕",
+        "area": "天穹浮島",
+        "text": "天穹浮島・蠱雕：100%",
+        "source": "133-jz072-island.js:41"
+      },
+      {
+        "kind": "妖物",
+        "name": "燐火狼",
+        "area": "黑潮禁岸",
+        "text": "黑潮禁岸・燐火狼：1%",
+        "source": "monsters.js:17"
+      },
+      {
+        "kind": "妖物",
+        "name": "硬黑蠍",
+        "area": "黑潮禁岸",
+        "text": "黑潮禁岸・硬黑蠍：1%",
+        "source": "monsters.js:17"
+      },
+      {
+        "kind": "妖物",
+        "name": "靈珠蝶",
+        "area": "黑潮禁岸",
+        "text": "黑潮禁岸・靈珠蝶：25%",
+        "source": "monsters.js:17"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］綜合二階素材箱",
+        "text": "［特殊］綜合二階素材箱：使用時可自選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選二階材料箱",
+        "text": "［特殊］自選二階材料箱：現有素材箱選單可選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選二階妖物素材箱",
+        "text": "［特殊］自選二階妖物素材箱：現有合法選單可選此素材×1",
+        "source": "ui.js:15"
+      }
+    ],
+    "pending": [],
+    "image": "/素材美術_2026-10-18/妖魂碎片.png"
+  },
+  {
+    "name": "［二階］雷角",
+    "category": "妖物素材",
+    "commissionEligible": true,
+    "sources": [
+      {
+        "kind": "妖物",
+        "name": "雷角鹿",
+        "area": "雷鳴沼",
+        "text": "雷鳴沼・雷角鹿：20%",
+        "source": "99-jzw-word-integration.js:1649"
+      },
+      {
+        "kind": "委託",
+        "name": "CQ-DZ-018",
+        "text": "［委託］可怕的雷電！（固定獎勵×1）",
+        "source": "JZ071.commissions:CQ-DZ-018"
+      },
+      {
+        "kind": "任務",
+        "name": "eastResolved",
+        "text": "［主線］事情解決了，嗎？：二階妖物素材隨機×3之正式候選",
+        "source": "124-jz071-implementation.js:1192"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］綜合二階素材箱",
+        "text": "［特殊］綜合二階素材箱：使用時可自選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選二階材料箱",
+        "text": "［特殊］自選二階材料箱：現有素材箱選單可選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選二階妖物素材箱",
+        "text": "［特殊］自選二階妖物素材箱：現有合法選單可選此素材×1",
+        "source": "ui.js:15"
+      }
+    ],
+    "pending": [],
+    "image": "/素材美術_2026-10-18/雷角.png"
+  },
+  {
+    "name": "［二階］火尾毛",
+    "category": "妖物素材",
+    "commissionEligible": false,
+    "sources": [
+      {
+        "kind": "妖物",
+        "name": "燐火狼",
+        "area": "黑潮禁岸",
+        "text": "黑潮禁岸・燐火狼：35%",
+        "source": "monsters.js:17"
+      },
+      {
+        "kind": "委託",
+        "name": "CQ-DZ-035",
+        "text": "［委託］尾巴著火啦！（固定獎勵×1）",
+        "source": "JZ071.commissions:CQ-DZ-035"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］綜合二階素材箱",
+        "text": "［特殊］綜合二階素材箱：使用時可自選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選二階材料箱",
+        "text": "［特殊］自選二階材料箱：現有素材箱選單可選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選二階妖物素材箱",
+        "text": "［特殊］自選二階妖物素材箱：現有合法選單可選此素材×1",
+        "source": "ui.js:15"
+      }
+    ],
+    "pending": [],
+    "image": "/素材美術_2026-10-18/火尾毛.png"
+  },
+  {
+    "name": "［一階］龜甲片",
+    "category": "合成素材",
+    "commissionEligible": false,
+    "sources": [
+      {
+        "kind": "配方",
+        "name": "［一階］龜甲片",
+        "text": "工坊・合成：龜殼×3＋靈石×1",
+        "source": "RECIPES.合成"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］綜合一階素材箱",
+        "text": "［特殊］綜合一階素材箱：使用時可自選此素材×1",
+        "source": "ui.js:15"
+      },
+      {
+        "kind": "素材箱",
+        "name": "［特殊］自選一階材料箱",
+        "text": "［特殊］自選一階材料箱：現有素材箱選單可選此素材×1",
+        "source": "ui.js:15"
+      }
+    ],
+    "pending": [],
+    "image": "/素材美術_2026-10-18/龜甲片.png"
+  }
+]

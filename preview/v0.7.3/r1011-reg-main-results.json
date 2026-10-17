@@ -317,7 +317,7 @@
           "claimed": true,
           "acceptedAt": 820,
           "progress": {},
-          "completedAt": 832
+          "completedAt": 828
         },
         "next": "craft2"
       }
@@ -337,10 +337,10 @@
           "pinned": false,
           "done": true,
           "claimed": true,
-          "acceptedAt": 832,
+          "acceptedAt": 828,
           "progress": {},
           "craftedCloth": 3,
-          "completedAt": 832
+          "completedAt": 828
         },
         "next": "craft3"
       }
@@ -360,9 +360,9 @@
           "pinned": false,
           "done": true,
           "claimed": true,
-          "acceptedAt": 832,
+          "acceptedAt": 828,
           "progress": {},
-          "completedAt": 832
+          "completedAt": 828
         },
         "next": "duel"
       }
@@ -382,9 +382,9 @@
           "pinned": false,
           "done": true,
           "claimed": true,
-          "acceptedAt": 832,
+          "acceptedAt": 828,
           "progress": {},
-          "completedAt": 852
+          "completedAt": 848
         },
         "next": "petIntro"
       }
@@ -404,10 +404,10 @@
           "pinned": false,
           "done": true,
           "claimed": true,
-          "acceptedAt": 852,
+          "acceptedAt": 848,
           "progress": {},
           "petChoice": "青木狼",
-          "completedAt": 852
+          "completedAt": 848
         },
         "next": "pet1"
       }
@@ -427,9 +427,9 @@
           "pinned": false,
           "done": true,
           "claimed": true,
-          "acceptedAt": 852,
+          "acceptedAt": 848,
           "progress": {},
-          "completedAt": 857
+          "completedAt": 853
         },
         "next": "pet2"
       }
@@ -449,10 +449,10 @@
           "pinned": false,
           "done": true,
           "claimed": true,
-          "acceptedAt": 857,
+          "acceptedAt": 853,
           "progress": {},
-          "completedAt": 877,
-          "claimedAt": 877
+          "completedAt": 873,
+          "claimedAt": 873
         },
         "next": "strength"
       }
@@ -476,7 +476,7 @@
           "pinned": false,
           "done": true,
           "claimed": true,
-          "acceptedAt": 877,
+          "acceptedAt": 873,
           "progress": {
             "stage": "kill",
             "stageIds": [
@@ -484,8 +484,8 @@
             ],
             "kills": 5
           },
-          "completedAt": 957,
-          "claimedAt": 957
+          "completedAt": 977,
+          "claimedAt": 977
         },
         "next": "improve"
       }
@@ -512,12 +512,12 @@
           "pinned": false,
           "done": true,
           "claimed": true,
-          "acceptedAt": 957,
+          "acceptedAt": 977,
           "progress": {
             "victory": true
           },
-          "completedAt": 984,
-          "claimedAt": 984
+          "completedAt": 1002,
+          "claimedAt": 1002
         },
         "next": "report"
       }
@@ -537,7 +537,7 @@
           "pinned": false,
           "done": true,
           "claimed": true,
-          "acceptedAt": 984,
+          "acceptedAt": 1002,
           "progress": {
             "stage": "branches",
             "stageIds": [
@@ -551,8 +551,8 @@
             "A": true,
             "B": true
           },
-          "completedAt": 1004,
-          "claimedAt": 1004
+          "completedAt": 1013,
+          "claimedAt": 1013
         },
         "next": "eastResolved"
       }
@@ -572,27 +572,22 @@
           "pinned": false,
           "done": true,
           "claimed": true,
-          "acceptedAt": 1004,
+          "acceptedAt": 1013,
           "progress": {
             "materialReward": [
               [
-                "［二階］利爪",
+                "［二階］雀羽",
                 2,
                 "materials"
               ],
               [
-                "［二階］雷角",
+                "［二階］蛟鱗",
                 1,
                 "materials"
               ],
               [
-                "［二階］玄鐵",
-                1,
-                "materials"
-              ],
-              [
-                "［二階］碧綠木",
-                1,
+                "［二階］楊木",
+                2,
                 "materials"
               ],
               [
@@ -602,8 +597,8 @@
               ]
             ]
           },
-          "completedAt": 1004,
-          "claimedAt": 1004
+          "completedAt": 1013,
+          "claimedAt": 1013
         },
         "next": "eastTraining"
       }
@@ -627,9 +622,9 @@
           "pinned": false,
           "done": true,
           "claimed": true,
-          "acceptedAt": 2444,
+          "acceptedAt": 2453,
           "progress": {},
-          "completedAt": 2444
+          "completedAt": 2453
         },
         "next": "eastTraining2"
       }
@@ -649,9 +644,9 @@
           "pinned": false,
           "done": true,
           "claimed": true,
-          "acceptedAt": 2444,
+          "acceptedAt": 2453,
           "progress": {},
-          "completedAt": 2598
+          "completedAt": 2653
         },
         "next": "realmBreakQuest"
       }
@@ -671,10 +666,10 @@
           "pinned": false,
           "done": true,
           "claimed": true,
-          "acceptedAt": 2598,
+          "acceptedAt": 2653,
           "progress": {},
-          "completedAt": 2598,
-          "claimedAt": 2598
+          "completedAt": 2653,
+          "claimedAt": 2653
         }
       }
     }

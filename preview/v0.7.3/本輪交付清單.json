@@ -1,0 +1,118 @@
+{
+  "version": "0.7.3",
+  "supplement": "2026-10-18",
+  "published": true,
+  "formalUpdated": false,
+  "basis": "目前最新test/v0.7.3-20261017測試來源，增量模組補完",
+  "coverage": {
+    "已實裝": 34,
+    "部分實裝": 4
+  },
+  "tests": [
+    {
+      "name": "施工測試結果.json",
+      "total": 37,
+      "passed": 37
+    },
+    {
+      "name": "擴充流程測試結果.json",
+      "total": 26,
+      "passed": 26
+    },
+    {
+      "name": "A線與NPC公式測試結果.json",
+      "total": 22,
+      "passed": 22
+    },
+    {
+      "name": "B線與補充定案測試結果.json",
+      "total": 13,
+      "passed": 13
+    },
+    {
+      "name": "本輪正常流程驗收.json",
+      "total": 8,
+      "passed": 8
+    },
+    {
+      "name": "素材正常流程驗收.json",
+      "total": 5,
+      "passed": 5
+    },
+    {
+      "name": "寵物已知公式與阻礙驗收.json",
+      "total": 4,
+      "passed": 4
+    },
+    {
+      "name": "r1011-reg-main-results.json",
+      "total": 31,
+      "passed": 31
+    },
+    {
+      "name": "reg-sides-results.json",
+      "total": 21,
+      "passed": 21
+    },
+    {
+      "name": "reg-commissions-results.json",
+      "total": 25,
+      "passed": 25
+    },
+    {
+      "name": "reg-systems-results.json",
+      "total": 18,
+      "passed": 18
+    }
+  ],
+  "passedChecks": 210,
+  "materials": 69,
+  "sourceRows": 492,
+  "genericCommissionMaterials": 51,
+  "petMissingRows": 49,
+  "protected": [
+    {
+      "path": "九州修仙錄_正式母檔_0.7.2.html",
+      "before": "58ce74be8922d4d0bc5e702fde0ebc8823649f560f00d12c8d843a5954a3ca50",
+      "after": "58ce74be8922d4d0bc5e702fde0ebc8823649f560f00d12c8d843a5954a3ca50",
+      "unchanged": true
+    },
+    {
+      "path": "最新定案母檔_0.7.2.json",
+      "before": "692a8e04a80f9719d3a633979ace2bb6d0bd26dc6fd0cc9dab1179940dd853f8",
+      "after": "692a8e04a80f9719d3a633979ace2bb6d0bd26dc6fd0cc9dab1179940dd853f8",
+      "unchanged": true
+    },
+    {
+      "path": "github-release\\index.html",
+      "before": "42dfd58730135682c4a47500e25f6a841a31a5245da2557f82155880b67747f4",
+      "after": "42dfd58730135682c4a47500e25f6a841a31a5245da2557f82155880b67747f4",
+      "unchanged": true
+    },
+    {
+      "path": "github-release\\定案規則_0.7.2.json",
+      "before": "692a8e04a80f9719d3a633979ace2bb6d0bd26dc6fd0cc9dab1179940dd853f8",
+      "after": "692a8e04a80f9719d3a633979ace2bb6d0bd26dc6fd0cc9dab1179940dd853f8",
+      "unchanged": true
+    },
+    {
+      "path": "V0.7.3_獨立測試_2026-10-17\\GitHub測試發布\\preview\\v0.7.3\\index.html",
+      "before": "cc17a72d22efb68a759dce6c2b5e95b89c4d4cf455690eff9c93130ccd02f468",
+      "after": "cc17a72d22efb68a759dce6c2b5e95b89c4d4cf455690eff9c93130ccd02f468",
+      "unchanged": true
+    }
+  ],
+  "standalone": {
+    "file": "九州修仙錄_V0.7.3_獨立測試版.html",
+    "sha256": "d87a2db8f23325c39533934a142b81739941f91b315fe75e86ff94061fe36fef"
+  },
+  "localTestCommit": {
+    "commit": "4dd585eb54e48b94b711b0793d83d2e861e22bec",
+    "branch": "test/v0.7.3-20261017",
+    "formalUpdated": false,
+    "pushed": false
+  },
+  "url": "https://a03697ss1.github.io/jiuzhou-rpg/preview/v0.7.3/",
+  "build": "20261018-material-side-preview-1",
+  "publicationScope": "preview/v0.7.3 only"
+}

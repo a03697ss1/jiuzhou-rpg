@@ -1,0 +1,1520 @@
+[
+  {
+    "name": "［一階］靈草",
+    "path": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\靈草.png",
+    "exists": true,
+    "source": "built-in image_gen",
+    "sharedKey": "靈草",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "bbox": [
+      25,
+      21,
+      1236,
+      1254
+    ],
+    "bytes": 820209,
+    "sha256": "bb44104d19662cbdecec89bfc694e9345d226bb4669ddcabc8d93873d24f99f1"
+  },
+  {
+    "name": "［一階］梨草",
+    "path": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\梨草.png",
+    "exists": true,
+    "source": "built-in image_gen",
+    "sharedKey": "梨草",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "bbox": [
+      0,
+      26,
+      1214,
+      1254
+    ],
+    "bytes": 1107587,
+    "sha256": "ae058c4010d867dd18f4e6daa57d22f7cf7adda027d4e8bc29868b9bb41285b3"
+  },
+  {
+    "name": "［一階］精草",
+    "path": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\精草.png",
+    "exists": true,
+    "source": "built-in image_gen",
+    "sharedKey": "精草",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "bbox": [
+      0,
+      7,
+      1236,
+      1254
+    ],
+    "bytes": 1321949,
+    "sha256": "54bd453de975f5c085fecd6c9cf80ea34034032ac066c0763414d62da8501b9f"
+  },
+  {
+    "name": "［一階］靈露",
+    "path": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\靈露.png",
+    "exists": true,
+    "source": "built-in image_gen",
+    "sharedKey": "靈露",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "bbox": [
+      0,
+      3,
+      1240,
+      1254
+    ],
+    "bytes": 1198384,
+    "sha256": "a47b08e8a6b422c164eb86b36d378bc28069af0d0f3f47a70914c19d71ead970"
+  },
+  {
+    "name": "［一階］碧萃枝",
+    "path": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\碧萃枝.png",
+    "exists": true,
+    "source": "built-in image_gen",
+    "sharedKey": "碧萃枝",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "bbox": [
+      0,
+      7,
+      1244,
+      1254
+    ],
+    "bytes": 993089,
+    "sha256": "4d2a020fc7f0f6ce7435ee34b38bec74905de904f5c23b427b26bf3d8946fdd3"
+  },
+  {
+    "name": "［一階］藥草",
+    "path": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\藥草.png",
+    "exists": true,
+    "source": "built-in image_gen",
+    "sharedKey": "藥草",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "bbox": [
+      39,
+      27,
+      1216,
+      1254
+    ],
+    "bytes": 1567474,
+    "sha256": "bee3c6f331d06cff32c5a84ce1217ec072ac8f4a5a9f30b296b9b38fe0ea3c4e"
+  },
+  {
+    "name": "［一階］靈石",
+    "path": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\靈石.png",
+    "exists": true,
+    "source": "built-in image_gen",
+    "sharedKey": "靈石",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "bbox": [
+      33,
+      19,
+      1254,
+      1254
+    ],
+    "bytes": 1239020,
+    "sha256": "45f06ab83e9331d43a47451c76313babbc9bcefcea4114af743ee1b514aa67ee"
+  },
+  {
+    "name": "［一階］靈原鐵",
+    "path": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\靈原鐵.png",
+    "exists": true,
+    "source": "built-in image_gen",
+    "sharedKey": "靈原鐵",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "bbox": [
+      0,
+      23,
+      1232,
+      1254
+    ],
+    "bytes": 2099787,
+    "sha256": "a9033f09d22ba48e73397892ece5ae03da0c8dd7c4243f9940fc2e5438b8260f"
+  },
+  {
+    "name": "［一階］靈木",
+    "path": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\靈木.png",
+    "exists": true,
+    "source": "built-in image_gen",
+    "sharedKey": "靈木",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "bbox": [
+      0,
+      20,
+      1236,
+      1238
+    ],
+    "bytes": 1528086,
+    "sha256": "275cbd5e312d5e93f5f4847bf12b7d9cc0453e9056677a7b437fbaf81687e7e2"
+  },
+  {
+    "name": "［一階］靈果",
+    "path": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\靈果.png",
+    "exists": true,
+    "source": "built-in image_gen",
+    "sharedKey": "靈果",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "bbox": [
+      0,
+      24,
+      1198,
+      1254
+    ],
+    "bytes": 1259223,
+    "sha256": "802b8f1d767c4f7d3a5b2d4e5f0e34c5350c2ec4fb832876f22ec8436d0c73c9"
+  },
+  {
+    "name": "［一階］脆脆果",
+    "path": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\脆脆果.png",
+    "exists": true,
+    "source": "built-in image_gen",
+    "sharedKey": "脆脆果",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "bbox": [
+      0,
+      21,
+      1238,
+      1254
+    ],
+    "bytes": 1160589,
+    "sha256": "101bb092565dbeb2bd78b59515ac2597ca3a864d2d5531122597ea016fbe5468"
+  },
+  {
+    "name": "［一階］破布",
+    "path": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\破布.png",
+    "exists": true,
+    "source": "built-in image_gen",
+    "sharedKey": "破布",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "bbox": [
+      0,
+      19,
+      1224,
+      1254
+    ],
+    "bytes": 1690710,
+    "sha256": "1d3240a79ea537cf202e4052543b17ccd93bf5445a1cfb272005302dcd5f4f83"
+  },
+  {
+    "name": "［一階］靈藥粉",
+    "path": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\靈藥粉.png",
+    "exists": true,
+    "source": "built-in image_gen",
+    "sharedKey": "靈藥粉",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "bbox": [
+      0,
+      15,
+      1240,
+      1254
+    ],
+    "bytes": 1372817,
+    "sha256": "14e0dd27c01e2b3be6ed7c3c674cd950d69fc65ea5b27d9263cae0a78e5488a7"
+  },
+  {
+    "name": "［一階］精靈液",
+    "path": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\精靈液.png",
+    "exists": true,
+    "source": "built-in image_gen",
+    "sharedKey": "精靈液",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "bbox": [
+      35,
+      39,
+      1218,
+      1254
+    ],
+    "bytes": 941623,
+    "sha256": "f56247705c884ee3fcb8a5633effcc83f8d00bc23f31b83b18f979f9cfa9b630"
+  },
+  {
+    "name": "［一階］碧木芯",
+    "path": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\碧木芯.png",
+    "exists": true,
+    "source": "built-in image_gen",
+    "sharedKey": "碧木芯",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "bbox": [
+      0,
+      37,
+      1234,
+      1254
+    ],
+    "bytes": 1717186,
+    "sha256": "5cca0112e41025b3870ffec75ece09d53ae45c2c2f0b93f017c9fae288c5f92a"
+  },
+  {
+    "name": "［一階］導靈粉",
+    "path": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\導靈粉.png",
+    "exists": true,
+    "source": "built-in image_gen",
+    "sharedKey": "導靈粉",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "bbox": [
+      0,
+      2,
+      1224,
+      1254
+    ],
+    "bytes": 1166752,
+    "sha256": "78568510f94c816a989b76efae90041aac136e35af892e13fea2f79a5a9d3ca8"
+  },
+  {
+    "name": "［一階］靈鐵錠",
+    "path": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\靈鐵錠.png",
+    "exists": true,
+    "source": "built-in image_gen",
+    "sharedKey": "靈鐵錠",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "bbox": [
+      0,
+      19,
+      1224,
+      1240
+    ],
+    "bytes": 1357100,
+    "sha256": "0f70afb4afbae3000381fc227501d927bbb9439771e448f0729f1ac668090da5"
+  },
+  {
+    "name": "［一階］獸骨粉",
+    "path": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\獸骨粉.png",
+    "exists": true,
+    "source": "built-in image_gen",
+    "sharedKey": "獸骨粉",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "bbox": [
+      0,
+      17,
+      1218,
+      1254
+    ],
+    "bytes": 1481422,
+    "sha256": "3035d5f5800f805bb78b93d16eb26c06b558c61dab5abb399d6b23c2be4ae71b"
+  },
+  {
+    "name": "［一階］妖血精華",
+    "path": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\妖血精華.png",
+    "exists": true,
+    "source": "built-in image_gen",
+    "sharedKey": "妖血精華",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "bbox": [
+      49,
+      23,
+      1218,
+      1245
+    ],
+    "bytes": 837764,
+    "sha256": "7d1e16acee268cb8f1d23d18c08769a0961f3e9503c57a8fc7e0756606b21305"
+  },
+  {
+    "name": "［一階］魂粉",
+    "path": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\魂粉.png",
+    "exists": true,
+    "source": "built-in image_gen",
+    "sharedKey": "魂粉",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "bbox": [
+      0,
+      15,
+      1240,
+      1254
+    ],
+    "bytes": 1085666,
+    "sha256": "94aa8dc6d2332ee065b7da05e93ad73794b8dc819a37abc856a9a3e2204803d8"
+  },
+  {
+    "name": "［一階］妖丹粉末",
+    "path": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\妖丹粉末.png",
+    "exists": true,
+    "source": "built-in image_gen",
+    "sharedKey": "妖丹粉末",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "bbox": [
+      19,
+      23,
+      1238,
+      1254
+    ],
+    "bytes": 1358122,
+    "sha256": "da469051b7b302d9b05a7df9f2df39a2db5fefd722e5554f9237cb7d6df886d3"
+  },
+  {
+    "name": "［一階］皮毛",
+    "path": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\皮毛.png",
+    "exists": true,
+    "source": "built-in image_gen",
+    "sharedKey": "皮毛",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "bbox": [
+      0,
+      19,
+      1210,
+      1254
+    ],
+    "bytes": 1793001,
+    "sha256": "025a0e57bcc87df989ed1b83ee7e903a807548df126a077b5899c30fd8f52400"
+  },
+  {
+    "name": "［一階］蛇鱗",
+    "path": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\蛇鱗.png",
+    "exists": true,
+    "source": "built-in image_gen",
+    "sharedKey": "蛇鱗",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "bbox": [
+      0,
+      17,
+      1232,
+      1254
+    ],
+    "bytes": 1615218,
+    "sha256": "002e258111fdbd2aaa8447c9e7474a247c250416abd030a060ff8d5aa2067ee6"
+  },
+  {
+    "name": "［一階］硬蟲甲",
+    "path": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\硬蟲甲.png",
+    "exists": true,
+    "source": "built-in image_gen",
+    "sharedKey": "硬蟲甲",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "bbox": [
+      0,
+      20,
+      1216,
+      1254
+    ],
+    "bytes": 1436070,
+    "sha256": "36cda42f3ffed0e657811ed4353abc4037bf30f8995d473e8cc91c5d2759692e"
+  },
+  {
+    "name": "［一階］妖鳥羽",
+    "path": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\妖鳥羽.png",
+    "exists": true,
+    "source": "built-in image_gen",
+    "sharedKey": "妖鳥羽",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "bbox": [
+      0,
+      23,
+      1232,
+      1220
+    ],
+    "bytes": 1372243,
+    "sha256": "074f05b001f139cf0bfe110d25759c9ee01f33bf7e7fc810500ae5f89c80fe48"
+  },
+  {
+    "name": "［一階］獸骨",
+    "path": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\獸骨.png",
+    "exists": true,
+    "source": "built-in image_gen",
+    "sharedKey": "獸骨",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "bbox": [
+      31,
+      23,
+      1218,
+      1254
+    ],
+    "bytes": 935374,
+    "sha256": "bf5027b4fdf0fa9b4d4d37f095b61cb25a273d35837ec0a6e7792269cd31aff7"
+  },
+  {
+    "name": "［一階］獸牙",
+    "path": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\獸牙.png",
+    "exists": true,
+    "source": "built-in image_gen",
+    "sharedKey": "獸牙",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "bbox": [
+      23,
+      23,
+      1238,
+      1230
+    ],
+    "bytes": 1234277,
+    "sha256": "e64935a79436e042f5e240f1d3b0984071d71a1599a0118cd74545fac9788123"
+  },
+  {
+    "name": "［一階］妖獸精血",
+    "path": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\妖獸精血.png",
+    "exists": true,
+    "source": "built-in image_gen",
+    "sharedKey": "妖獸精血",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "bbox": [
+      33,
+      35,
+      1230,
+      1222
+    ],
+    "bytes": 1069693,
+    "sha256": "b7f22fca0907ff6164ff7b05168dccc176521f9f9834b6c99df6de58be0f6746"
+  },
+  {
+    "name": "［一階］殘缺妖丹",
+    "path": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\殘缺妖丹.png",
+    "exists": true,
+    "source": "built-in image_gen",
+    "sharedKey": "殘缺妖丹",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "bbox": [
+      0,
+      19,
+      1238,
+      1254
+    ],
+    "bytes": 1319258,
+    "sha256": "55845e5f259078d73c2885dd40af7e5d859bf443042805727d87a0a5eb643809"
+  },
+  {
+    "name": "［一階］殘魂",
+    "path": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\殘魂.png",
+    "exists": true,
+    "source": "built-in image_gen",
+    "sharedKey": "殘魂",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "bbox": [
+      33,
+      9,
+      1212,
+      1254
+    ],
+    "bytes": 972964,
+    "sha256": "9b21d2594f28e3390193d2cf176d931bba8fbcc8d863d4a95e09c027f83d0e1d"
+  },
+  {
+    "name": "［一階］毒囊",
+    "path": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\毒囊.png",
+    "exists": true,
+    "source": "built-in image_gen",
+    "sharedKey": "毒囊",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "bbox": [
+      25,
+      23,
+      1222,
+      1232
+    ],
+    "bytes": 1111207,
+    "sha256": "aa1df1bcd01845412ffabfe68cab1d520f846341e6261dc531969c871507da81"
+  },
+  {
+    "name": "［一階］蛛絲",
+    "path": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\蛛絲.png",
+    "exists": true,
+    "source": "built-in image_gen",
+    "sharedKey": "蛛絲",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "bbox": [
+      0,
+      21,
+      1242,
+      1254
+    ],
+    "bytes": 1609308,
+    "sha256": "c1d813b93cb01dd84c85d9cfa0597ab6faa19dbf3610238be4e74c65209b284f"
+  },
+  {
+    "name": "［一階］獸角",
+    "path": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\獸角.png",
+    "exists": true,
+    "source": "built-in image_gen",
+    "sharedKey": "獸角",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "bbox": [
+      0,
+      33,
+      1226,
+      1254
+    ],
+    "bytes": 969172,
+    "sha256": "bc170fec65e347796106c9c596b33685a3c2b05e8bca8851e76b86b6cf56512a"
+  },
+  {
+    "name": "［一階］靈粉",
+    "path": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\靈粉.png",
+    "exists": true,
+    "source": "built-in image_gen",
+    "sharedKey": "靈粉",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "bbox": [
+      0,
+      20,
+      1234,
+      1212
+    ],
+    "bytes": 1170911,
+    "sha256": "6ed494d9e2f381b7b3dbb34209dececb4ac7c1d001e522a8be90d180dae6ad5f"
+  },
+  {
+    "name": "［一階］龜殼",
+    "path": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\龜殼.png",
+    "exists": true,
+    "source": "built-in image_gen",
+    "sharedKey": "龜殼",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "bbox": [
+      0,
+      3,
+      1220,
+      1254
+    ],
+    "bytes": 1642742,
+    "sha256": "93021889f9ab3f0fd58fe3815a3dc80d51439cdeecd8725e43ca1587c7e692cd"
+  },
+  {
+    "name": "［二階］凝露花",
+    "path": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\凝露花.png",
+    "exists": true,
+    "source": "built-in image_gen",
+    "sharedKey": "凝露花",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "bbox": [
+      29,
+      24,
+      1240,
+      1254
+    ],
+    "bytes": 1222988,
+    "sha256": "79687a370fc0e81113256de115ed8dc496364908eb23f7fef052a2f39bca6451"
+  },
+  {
+    "name": "［二階］百年靈草",
+    "path": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\百年靈草.png",
+    "exists": true,
+    "source": "built-in image_gen",
+    "sharedKey": "百年靈草",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "bbox": [
+      0,
+      17,
+      1218,
+      1240
+    ],
+    "bytes": 1625192,
+    "sha256": "6eb94f01d8b3b03d386bf1016cf85a58f773820ca07245adfe9e930202e1d873"
+  },
+  {
+    "name": "［二階］青紋藤",
+    "path": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\青紋藤.png",
+    "exists": true,
+    "source": "built-in image_gen",
+    "sharedKey": "青紋藤",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "bbox": [
+      21,
+      9,
+      1244,
+      1254
+    ],
+    "bytes": 1210415,
+    "sha256": "cdb89f0de489cbd66568455f8547a770c873fd519c66d26a27332d6d2b6c7381"
+  },
+  {
+    "name": "［二階］赤銅礦",
+    "path": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\赤銅礦.png",
+    "exists": true,
+    "source": "built-in image_gen",
+    "sharedKey": "赤銅礦",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "bbox": [
+      0,
+      21,
+      1218,
+      1254
+    ],
+    "bytes": 1917674,
+    "sha256": "2563b4a30ec20eceb44f7a85e6f68710981214c7840ba749c1f57b57f0af94d2"
+  },
+  {
+    "name": "［二階］玄鐵",
+    "path": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\玄鐵.png",
+    "exists": true,
+    "source": "built-in image_gen",
+    "sharedKey": "玄鐵",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "bbox": [
+      33,
+      0,
+      1245,
+      1254
+    ],
+    "bytes": 1824082,
+    "sha256": "952975f69fe1bc06e0f2da3abb47e718437eef54ac3afbd2ceeca875df7eca73"
+  },
+  {
+    "name": "［二階］火晶石",
+    "path": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\火晶石.png",
+    "exists": true,
+    "source": "built-in image_gen",
+    "sharedKey": "火晶石",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "bbox": [
+      23,
+      19,
+      1224,
+      1254
+    ],
+    "bytes": 1220734,
+    "sha256": "eafde781ac6635c7b779a40b9a4905810690c12c25f6a5c37957b698a18b9a03"
+  },
+  {
+    "name": "［二階］水晶石",
+    "path": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\水晶石.png",
+    "exists": true,
+    "source": "built-in image_gen",
+    "sharedKey": "水晶石",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "bbox": [
+      19,
+      23,
+      1234,
+      1232
+    ],
+    "bytes": 1365630,
+    "sha256": "c54464e5af5fc95e893705dd01a7014e07f6b2be480f4e13c998647b007687e6"
+  },
+  {
+    "name": "［二階］木晶石",
+    "path": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\木晶石.png",
+    "exists": true,
+    "source": "built-in image_gen",
+    "sharedKey": "木晶石",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "bbox": [
+      0,
+      10,
+      1236,
+      1244
+    ],
+    "bytes": 1621627,
+    "sha256": "e719b73af73ed50c9d18bb0021b414386a708eef2bdb16aa16e63f83a5151353"
+  },
+  {
+    "name": "［二階］風晶石",
+    "path": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\風晶石.png",
+    "exists": true,
+    "source": "built-in image_gen",
+    "sharedKey": "風晶石",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "bbox": [
+      0,
+      33,
+      1236,
+      1254
+    ],
+    "bytes": 1160117,
+    "sha256": "021fbfc7db408b4ee86c11cbf0be7935a03164ab5f6fe4194ec74b66e209af3a"
+  },
+  {
+    "name": "［二階］雷晶石",
+    "path": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\雷晶石.png",
+    "exists": true,
+    "source": "built-in image_gen",
+    "sharedKey": "雷晶石",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "bbox": [
+      0,
+      20,
+      1242,
+      1254
+    ],
+    "bytes": 1472535,
+    "sha256": "f57a09d5a58bf30b9166a9fe726d69605e3900f09f3dadeff8e4442467b83907"
+  },
+  {
+    "name": "［二階］土晶石",
+    "path": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\土晶石.png",
+    "exists": true,
+    "source": "built-in image_gen",
+    "sharedKey": "土晶石",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "bbox": [
+      0,
+      21,
+      1245,
+      1254
+    ],
+    "bytes": 1721274,
+    "sha256": "e930af66c3d79eaf8c1b7b4c088e88d272f203c45d5b63357e0e22378fb8ef5f"
+  },
+  {
+    "name": "［二階］光晶石",
+    "path": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\光晶石.png",
+    "exists": true,
+    "source": "built-in image_gen",
+    "sharedKey": "光晶石",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "bbox": [
+      0,
+      23,
+      1240,
+      1254
+    ],
+    "bytes": 1284700,
+    "sha256": "9c1b96256bda447eea353a389928f8f531df385c6bb2070076df90a8a33a8be8"
+  },
+  {
+    "name": "［二階］暗晶石",
+    "path": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\暗晶石.png",
+    "exists": true,
+    "source": "built-in image_gen",
+    "sharedKey": "暗晶石",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "bbox": [
+      41,
+      70,
+      1208,
+      1238
+    ],
+    "bytes": 1370142,
+    "sha256": "1a161e184e03b8cfa1d949153a96eef59199e77ff3b4d139ea44e5053b6aba34"
+  },
+  {
+    "name": "［二階］碧綠木",
+    "path": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\碧綠木.png",
+    "exists": true,
+    "source": "built-in image_gen",
+    "sharedKey": "碧綠木",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "bbox": [
+      0,
+      9,
+      1234,
+      1254
+    ],
+    "bytes": 2027108,
+    "sha256": "f21c2ab4635d004d1bc6f15455e1bff1cbe93a206549be9427dbef2c5a7cc422"
+  },
+  {
+    "name": "［二階］楊木",
+    "path": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\楊木.png",
+    "exists": true,
+    "source": "built-in image_gen",
+    "sharedKey": "楊木",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "bbox": [
+      33,
+      17,
+      1216,
+      1254
+    ],
+    "bytes": 1407891,
+    "sha256": "1b299f8b70b49981e612b03d20b7fa4dd069c8f01604ba44c9ec7406dea0f8e7"
+  },
+  {
+    "name": "［二階］玉葉果",
+    "path": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\玉葉果.png",
+    "exists": true,
+    "source": "built-in image_gen",
+    "sharedKey": "玉葉果",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "bbox": [
+      0,
+      0,
+      1238,
+      1254
+    ],
+    "bytes": 1381512,
+    "sha256": "2ea2bba54b050f56688778d3647c93b9d68a0b20f2fea0cdc18d9d9418ee2954"
+  },
+  {
+    "name": "［二階］玄靈鐵錠",
+    "path": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\玄靈鐵錠.png",
+    "exists": true,
+    "source": "built-in image_gen",
+    "sharedKey": "玄靈鐵錠",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "bbox": [
+      0,
+      29,
+      1216,
+      1213
+    ],
+    "bytes": 1453537,
+    "sha256": "c51a2184cb3bae6d1ea10388bdf0de64a4657aff33e856729522c53fef7d17c1"
+  },
+  {
+    "name": "［二階］靈楊木板",
+    "path": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\靈楊木板.png",
+    "exists": true,
+    "source": "built-in image_gen",
+    "sharedKey": "靈楊木板",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "bbox": [
+      41,
+      69,
+      1210,
+      1228
+    ],
+    "bytes": 1477780,
+    "sha256": "533c73a7beacec7d35501db079fe03351bddd4ecf739d61832227f3bec3f2dc1"
+  },
+  {
+    "name": "［二階］硬骨板",
+    "path": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\硬骨板.png",
+    "exists": true,
+    "source": "built-in image_gen",
+    "sharedKey": "硬骨板",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "bbox": [
+      0,
+      38,
+      1250,
+      1254
+    ],
+    "bytes": 1502027,
+    "sha256": "c3bbacaa904596b95c47ff161542bddc290bd9bdd11978b754b80fb3cdc89eb0"
+  },
+  {
+    "name": "［二階］濃靈血精",
+    "path": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\濃靈血精.png",
+    "exists": true,
+    "source": "built-in image_gen",
+    "sharedKey": "濃靈血精",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "bbox": [
+      33,
+      33,
+      1246,
+      1254
+    ],
+    "bytes": 1210331,
+    "sha256": "c723826316ca394f40e96736c67292b2574b2d2637426a2cb047aac90212b5b4"
+  },
+  {
+    "name": "［二階］凝魂砂",
+    "path": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\凝魂砂.png",
+    "exists": true,
+    "source": "built-in image_gen",
+    "sharedKey": "凝魂砂",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "bbox": [
+      0,
+      19,
+      1216,
+      1254
+    ],
+    "bytes": 1095848,
+    "sha256": "436a391ee3f862a950fd8386e484b1c8eda7f3dd4e570f831043080a359aa3a0"
+  },
+  {
+    "name": "［二階］妖丹精華",
+    "path": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\妖丹精華.png",
+    "exists": true,
+    "source": "built-in image_gen",
+    "sharedKey": "妖丹精華",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "bbox": [
+      33,
+      35,
+      1208,
+      1213
+    ],
+    "bytes": 762815,
+    "sha256": "8245ccfe8aa7e41e32a720cf3de094a077476cb3a4dac928dda3704a43216e1f"
+  },
+  {
+    "name": "［二階］狐毛",
+    "path": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\狐毛.png",
+    "exists": true,
+    "source": "built-in image_gen",
+    "sharedKey": "狐毛",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "bbox": [
+      0,
+      21,
+      1253,
+      1254
+    ],
+    "bytes": 1840524,
+    "sha256": "f01d46365f73f4284ae4f2ae231d0a936d93d6b628b6c5525dcf4c7a9f1bae3d"
+  },
+  {
+    "name": "［二階］蛟鱗",
+    "path": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\蛟鱗.png",
+    "exists": true,
+    "source": "built-in image_gen",
+    "sharedKey": "蛟鱗",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "bbox": [
+      25,
+      21,
+      1242,
+      1196
+    ],
+    "bytes": 1545712,
+    "sha256": "c3fba0e011491009f06779030a1c7b8b86caf6eaf4315fa800c001e26fa2c54b"
+  },
+  {
+    "name": "［二階］黑蠍甲",
+    "path": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\黑蠍甲.png",
+    "exists": true,
+    "source": "built-in image_gen",
+    "sharedKey": "黑蠍甲",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "bbox": [
+      85,
+      57,
+      1121,
+      1222
+    ],
+    "bytes": 1585777,
+    "sha256": "420229b717c6ee1917a8739c44d46c10f6fa288543e0a4b0c593e4e36c9272db"
+  },
+  {
+    "name": "［二階］雀羽",
+    "path": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\雀羽.png",
+    "exists": true,
+    "source": "built-in image_gen",
+    "sharedKey": "雀羽",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "bbox": [
+      97,
+      32,
+      1240,
+      1227
+    ],
+    "bytes": 1442294,
+    "sha256": "dda8be108d62b2e4e734596d608728956b90133b8aa68d6c966826b3307fd2a8"
+  },
+  {
+    "name": "［二階］硬獸骨",
+    "path": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\硬獸骨.png",
+    "exists": true,
+    "source": "built-in image_gen",
+    "sharedKey": "硬獸骨",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "bbox": [
+      0,
+      49,
+      1224,
+      1254
+    ],
+    "bytes": 1388472,
+    "sha256": "a8a54372d317111982c37d2fa489ff85a05dd03d0c9bb22c62d959ccb91dcd49"
+  },
+  {
+    "name": "［二階］利爪",
+    "path": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\利爪.png",
+    "exists": true,
+    "source": "built-in image_gen",
+    "sharedKey": "利爪",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "bbox": [
+      37,
+      19,
+      1238,
+      1254
+    ],
+    "bytes": 1245945,
+    "sha256": "c976a86c8e9b3af74fb4d30d07096da20482a5fe3e70897b882a1792b9ee9814"
+  },
+  {
+    "name": "［二階］濃縮妖血",
+    "path": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\濃縮妖血.png",
+    "exists": true,
+    "source": "built-in image_gen",
+    "sharedKey": "濃縮妖血",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "bbox": [
+      0,
+      21,
+      1244,
+      1254
+    ],
+    "bytes": 1123978,
+    "sha256": "9ec5e81ccbc93c77de2f7e85e8b9fbcefa8a61433846ccb3dfac97a26b921dcd"
+  },
+  {
+    "name": "［二階］妖丹",
+    "path": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\妖丹.png",
+    "exists": true,
+    "source": "built-in image_gen",
+    "sharedKey": "妖丹",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "bbox": [
+      0,
+      21,
+      1232,
+      1254
+    ],
+    "bytes": 1554698,
+    "sha256": "d294f73ac6af3345b1da8a614049adb744ec9f955f475783c39421a3b90d5b5a"
+  },
+  {
+    "name": "［二階］妖魂碎片",
+    "path": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\妖魂碎片.png",
+    "exists": true,
+    "source": "built-in image_gen",
+    "sharedKey": "妖魂碎片",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "bbox": [
+      0,
+      19,
+      1222,
+      1254
+    ],
+    "bytes": 1274435,
+    "sha256": "d0c89ca96c23445c367c7163d95003d8376af25b615daa54e03b44b044fd6de7"
+  },
+  {
+    "name": "［二階］雷角",
+    "path": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\雷角.png",
+    "exists": true,
+    "source": "built-in image_gen",
+    "sharedKey": "雷角",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "bbox": [
+      21,
+      31,
+      1240,
+      1254
+    ],
+    "bytes": 684176,
+    "sha256": "a54ad4d52948c9a52dfaeae6bc6af5df639e88837412e2e35554b8f34bfa4182"
+  },
+  {
+    "name": "［二階］火尾毛",
+    "path": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\火尾毛.png",
+    "exists": true,
+    "source": "built-in image_gen",
+    "sharedKey": "火尾毛",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "bbox": [
+      0,
+      23,
+      1236,
+      1254
+    ],
+    "bytes": 1671013,
+    "sha256": "45e26c186eefe310bcc04317b6118182747ac4f88c4eb5e998670dca9459863e"
+  },
+  {
+    "name": "［一階］龜甲片",
+    "path": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\龜甲片.png",
+    "exists": true,
+    "source": "built-in image_gen",
+    "sharedKey": "龜甲片",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "bbox": [
+      0,
+      0,
+      1253,
+      1254
+    ],
+    "bytes": 1466965,
+    "sha256": "9b81d092bd7a57e3a32c7da115666bf5019db5a3b968e8df67d5343a23af04b2"
+  }
+]
