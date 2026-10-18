@@ -25000,7 +25000,7 @@ N.ensureHiddenSteal1019=()=>{if(!S)return null;const claimed=N.state().hiddenSte
 };
 const ensure=R.ensure;R.ensure=function(){const out=ensure.apply(this,arguments);N.ensureHiddenSteal1019();return out;};
 N.tryHiddenSteal1019=(b,rng=Math.random)=>{const h=b?.hostile,item=drops[h?.name];
- if(!item||h.type!=='搶奪'||!h.stealPending||b.jz1019HiddenStealSettled||b.jzSpar||b.jzLab||b.jzWendao||b.jz073Story||!b.enemyTeam?.length||b.enemyTeam.some(f=>Number(f.hp)>0)||!b.enemyTeam.some(f=>f.name===h.name)||!b.playerTeam?.some(f=>f.type==='player'&&Number(f.hp)>0))return null;
+ if(!item||h.type!=='搶奪'||!h.stealPending||b.jz1019HiddenStealSettled||b.jzSpar||b.jzLab||b.jzWendao||b.jz073Story||!b.enemyTeam?.length||b.enemyTeam.some(f=>Number(f.hp)>0)||!b.enemyTeam.some(f=>f.name===h.name)||!b.playerTeam?.some(f=>f.type==='player'))return null;
  b.jz1019HiddenStealSettled=true;
  const claimed=N.ensureHiddenSteal1019();if(claimed[item]||rng()>=0.05)return null;
  claimed[item]=true;R.give(item,1,'gearInventory');log('獲得'+item+'×1。');return item;
@@ -25013,5 +25013,6 @@ const card=N.catalogCard1018;N.catalogCard1018=function(row){const out=card.appl
 const history=JZ072.versionHistory;JZ072.versionHistory=function(){history.apply(this,arguments);document.getElementById('modalBody')?.insertAdjacentHTML('afterbegin','<section class="card"><h3>10/19 BUG修復</h3><p>修復部分特殊裝備的取得結算，並避免重複發放。</p></section>');};
 const decorate=N.decorate;N.decorate=()=>{decorate();const banner=document.querySelector('.jz073-banner');if(banner&&!banner.dataset.hidden1019){banner.dataset.hidden1019='true';banner.insertAdjacentHTML('beforeend','<span class="jz18-build">10/19 修正</span>');}};
 })();
+
 </script>
-<script>window.JZ073_BUILD_ID="20261019-hidden-steal-1";</script>
+<script>window.JZ073_BUILD_ID="20261019-hidden-steal-2";</script>
