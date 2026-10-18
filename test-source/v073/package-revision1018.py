@@ -10,6 +10,18 @@ reports=['逐項修正驗收.json','物品美術與介面驗收.json','施工測
 results={name:load(name) for name in reports}
 for name,d in results.items():assert d['rows'] and all(r['pass'] for r in d['rows']) and not d.get('errors'),name
 total=sum(len(d['rows']) for d in results.values())
+origins={r['name']:r for f in P.glob('revision-art-batch*.json') for r in json.loads(f.read_text('utf-8'))}
+people={r['name']:r for r in json.loads((P/'revision-fullbody-manifest.json').read_text('utf-8'))}
+people['邱山河']=json.loads((P/'revision-fullbody-correction.json').read_text('utf-8'))
+art=[]
+from PIL import Image
+for folder,kind in [('物品美術_2026-10-18','物品類型共用'),('人物全身_2026-10-18','長右戰全身人物'),('素材美術_2026-10-18','沿用素材原圖')]:
+ for p in sorted((R/folder).glob('*.png')):
+  im=Image.open(p);origin=(people if kind=='長右戰全身人物' else origins).get(p.stem,{})
+  art.append({'name':p.stem,'category':kind,'path':folder+'/'+p.name,'originalSource':origin.get('source','沿用既有素材原圖'),'prompt':origin.get('prompt',''),'sha256':hashlib.sha256(p.read_bytes()).hexdigest(),'width':im.width,'height':im.height,'alpha':im.mode=='RGBA' and im.getchannel('A').getextrema()[0]==0})
+assert len(art)==147 and all(r['alpha'] for r in art)
+(O/'物品圖片來源與檔案清單.json').write_text(json.dumps(art,ensure_ascii=False,indent=2),'utf-8')
+(O/'缺圖清單.json').write_text(json.dumps({'registeredItems':872,'missing':[],'note':'同類物品共用圖片，逐件映射見完整物品圖片映射。'},ensure_ascii=False,indent=2),'utf-8')
 cov=[]
 for id,title in zip(ids,labels):
  tests=[f for f in reports for r in results[f]['rows'] if id in list(map(str,r.get('ids',[])))]
@@ -46,7 +58,8 @@ for a,b in [('/github-release/assets/','assets/'),('/新增美術_2026-10-16/','
 for folder,target in [('物品美術_2026-10-18','item-assets'),('人物全身_2026-10-18','fullbody-assets')]:shutil.copytree(R/folder,W/target,dirs_exist_ok=True)
 for f in source.iterdir():shutil.copy2(f,W/'test-source/v073'/f.name)
 spec=importlib.util.spec_from_file_location('pub',P/'publish-preview.py');m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m)
-m.git(W,'add','--','index.html','test-source/v073','item-assets','fullbody-assets');m.git(W,'commit','-m','Implement October 18 catalogue help boss and item art revisions on 0.7.3 test branch')
+m.git(W,'add','--','index.html','test-source/v073','item-assets','fullbody-assets')
+if m.git(W,'diff','--cached','--name-only'):m.git(W,'commit','-m','Implement October 18 catalogue help boss and item art revisions on 0.7.3 test branch')
 receipt={'commit':m.git(W,'rev-parse','HEAD'),'branch':m.git(W,'branch','--show-current'),'formalUpdated':False,'pushed':False}
 (O/'本地測試分支保存紀錄.json').write_text(json.dumps(receipt,ensure_ascii=False,indent=2),'utf-8')
 print(json.dumps({'tests':total,'rows':52,'commit':receipt['commit']},ensure_ascii=False))
