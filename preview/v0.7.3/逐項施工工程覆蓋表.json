@@ -1,525 +1,165 @@
 [
   {
-    "id": "1",
-    "title": "深窟座標與道路",
-    "state": "已實裝；自動驗收通過；待玩家驗收",
-    "source": "revision-world1018.js",
+    "id": 1,
+    "title": "狐尾與獸角歸妖物素材",
+    "state": "已實裝；驗收測試通過；待玩家檢查",
+    "source": "review18-fixes.js",
     "tests": [
-      "逐項修正驗收.json"
-    ],
-    "remaining": ""
+      "18項功能驗收.json"
+    ]
   },
   {
-    "id": "2",
-    "title": "野外妖物境界與東州顯示",
-    "state": "已實裝；自動驗收通過；待玩家驗收",
-    "source": "revision-world1018.js",
+    "id": 2,
+    "title": "蘇璃圖鑑優先顯示同行位置",
+    "state": "已實裝；驗收測試通過；待玩家檢查",
+    "source": "review18-fixes.js",
     "tests": [
-      "逐項修正驗收.json"
-    ],
-    "remaining": ""
+      "18項功能驗收.json"
+    ]
   },
   {
-    "id": "3",
-    "title": "七種製作功能顯示成品圖",
-    "state": "已實裝；自動驗收通過；待玩家驗收",
-    "source": "revision-items1018.js",
+    "id": 3,
+    "title": "裝備逐件獨立圖片",
+    "state": "已實裝；驗收測試通過；待玩家檢查",
+    "source": "review18-art.js",
     "tests": [
-      "物品美術與介面驗收.json"
-    ],
-    "remaining": ""
+      "獨立物品美術驗收.json"
+    ]
   },
   {
-    "id": "4",
-    "title": "全部物品補圖",
-    "state": "已實裝；自動驗收通過；待玩家驗收",
-    "source": "revision-items1018.js",
+    "id": 4,
+    "title": "藥品逐件圖片與階級裝飾",
+    "state": "已實裝；驗收測試通過；待玩家檢查",
+    "source": "review18-art.js",
     "tests": [
-      "物品美術與介面驗收.json"
-    ],
-    "remaining": "美術與文字呈現待玩家逐項確認；來源未知條目未新增取得途徑。"
+      "獨立物品美術驗收.json"
+    ]
   },
   {
-    "id": "5",
-    "title": "背包裝備比較",
-    "state": "已實裝；自動驗收通過；待玩家驗收",
-    "source": "revision-items1018.js",
+    "id": 5,
+    "title": "精確階級取得來源",
+    "state": "已實裝；驗收測試通過；待玩家檢查",
+    "source": "review18-fixes.js",
     "tests": [
-      "物品美術與介面驗收.json"
-    ],
-    "remaining": ""
+      "18項功能驗收.json",
+      "獨立物品美術驗收.json"
+    ]
   },
   {
-    "id": "6",
-    "title": "背包物品圖片",
-    "state": "已實裝；自動驗收通過；待玩家驗收",
-    "source": "revision-items1018.js",
+    "id": 6,
+    "title": "移除未設計的三階凝靈妖丹",
+    "state": "已實裝；驗收測試通過；待玩家檢查",
+    "source": "review18-fixes.js",
     "tests": [
-      "物品美術與介面驗收.json"
-    ],
-    "remaining": ""
+      "18項功能驗收.json"
+    ]
   },
   {
-    "id": "7",
-    "title": "圖鑑返回保留捲動",
-    "state": "已實裝；自動驗收通過；待玩家驗收",
-    "source": "revision-codex1018.js",
+    "id": 7,
+    "title": "靈根丹3～5點及25種藥水正式效果",
+    "state": "已實裝；驗收測試通過；待玩家檢查",
+    "source": "review18-fixes.js",
     "tests": [
-      "逐項修正驗收.json"
-    ],
-    "remaining": ""
+      "18項功能驗收.json"
+    ]
   },
   {
-    "id": "8",
-    "title": "圖鑑返回按鈕",
-    "state": "已實裝；自動驗收通過；待玩家驗收",
-    "source": "revision-codex1018.js",
+    "id": 8,
+    "title": "功法圖鑑醒目階級",
+    "state": "已實裝；驗收測試通過；待玩家檢查",
+    "source": "review18-art.js",
     "tests": [
-      "逐項修正驗收.json"
-    ],
-    "remaining": ""
+      "18項功能驗收.json"
+    ]
   },
   {
-    "id": "9",
-    "title": "圖鑑視窗加大",
-    "state": "已實裝；自動驗收通過；待玩家驗收",
-    "source": "revision-codex1018.js",
+    "id": 9,
+    "title": "柳清妍任務／委託入口",
+    "state": "已實裝；驗收測試通過；待玩家檢查",
+    "source": "review18-fixes.js",
     "tests": [
-      "逐項修正驗收.json"
-    ],
-    "remaining": ""
+      "18項功能驗收.json"
+    ]
   },
   {
-    "id": "10",
-    "title": "任務物品移出圖鑑但保留圖片",
-    "state": "已實裝；自動驗收通過；待玩家驗收",
-    "source": "revision-codex1018.js",
+    "id": 10,
+    "title": "戰鬥戰位與權威血量同步",
+    "state": "已實裝；驗收測試通過；待玩家檢查",
+    "source": "review18-fixes.js",
     "tests": [
-      "物品美術與介面驗收.json",
-      "逐項修正驗收.json"
-    ],
-    "remaining": ""
+      "18項功能驗收.json"
+    ]
   },
   {
-    "id": "11",
-    "title": "四隻新妖物背景",
-    "state": "已實裝；自動驗收通過；待玩家驗收",
-    "source": "revision-codex1018.js",
+    "id": 11,
+    "title": "背包移除查看來源按鈕",
+    "state": "已實裝；驗收測試通過；待玩家檢查",
+    "source": "review18-fixes.js",
     "tests": [
-      "物品美術與介面驗收.json"
-    ],
-    "remaining": ""
+      "18項功能驗收.json"
+    ]
   },
   {
-    "id": "12",
-    "title": "新寵物合法技能隨機取得",
-    "state": "已實裝；自動驗收通過；待玩家驗收",
-    "source": "revision-world1018.js",
+    "id": 12,
+    "title": "特殊道具獨立圖片",
+    "state": "已實裝；驗收測試通過；待玩家檢查",
+    "source": "review18-art.js",
     "tests": [
-      "逐項修正驗收.json"
-    ],
-    "remaining": ""
+      "獨立物品美術驗收.json"
+    ]
   },
   {
-    "id": "13",
-    "title": "圖鑑卡片分格美化",
-    "state": "已實裝；自動驗收通過；待玩家驗收",
-    "source": "revision-codex1018.js",
+    "id": 13,
+    "title": "主線戰鬥按鈕限定正確地點",
+    "state": "已實裝；驗收測試通過；待玩家檢查",
+    "source": "review18-fixes.js",
     "tests": [
-      "逐項修正驗收.json"
-    ],
-    "remaining": ""
+      "18項功能驗收.json"
+    ]
   },
   {
-    "id": "14",
-    "title": "妖物技能可點選詳情",
-    "state": "已實裝；自動驗收通過；待玩家驗收",
-    "source": "revision-codex1018.js",
+    "id": 14,
+    "title": "18名NPC靈根與平民無靈根",
+    "state": "已實裝；驗收測試通過；待玩家檢查",
+    "source": "review18-fixes.js",
     "tests": [
-      "逐項修正驗收.json"
-    ],
-    "remaining": ""
+      "18項功能驗收.json"
+    ]
   },
   {
-    "id": "15",
-    "title": "精晶礦靈掉落",
-    "state": "已實裝；自動驗收通過；待玩家驗收",
-    "source": "revision-world1018.js",
+    "id": 15,
+    "title": "必敗戰手動1倍與玩家確認",
+    "state": "已實裝；驗收測試通過；待玩家檢查",
+    "source": "review18-fixes.js",
     "tests": [
-      "逐項修正驗收.json"
-    ],
-    "remaining": ""
+      "18項功能驗收.json"
+    ]
   },
   {
-    "id": "16",
-    "title": "臂巨礦掉落",
-    "state": "已實裝；自動驗收通過；待玩家驗收",
-    "source": "revision-world1018.js",
+    "id": 16,
+    "title": "交談保留暫時離開並隱藏關閉",
+    "state": "已實裝；驗收測試通過；待玩家檢查",
+    "source": "review18-fixes.js",
     "tests": [
-      "逐項修正驗收.json"
-    ],
-    "remaining": ""
+      "18項功能驗收.json"
+    ]
   },
   {
-    "id": "17",
-    "title": "素材來源機率四捨五入",
-    "state": "已實裝；自動驗收通過；待玩家驗收",
-    "source": "revision-world1018.js",
+    "id": 17,
+    "title": "放大布告欄與下方布告箱",
+    "state": "已實裝；驗收測試通過；待玩家檢查",
+    "source": "review18-fixes.js",
     "tests": [
-      "逐項修正驗收.json"
-    ],
-    "remaining": ""
+      "正常介面與藥品效果驗收.json"
+    ]
   },
   {
-    "id": "18",
-    "title": "妖物全區與東州分頁",
-    "state": "已實裝；自動驗收通過；待玩家驗收",
-    "source": "revision-codex1018.js",
+    "id": 18,
+    "title": "測試999可重複開啟長右",
+    "state": "已實裝；驗收測試通過；待玩家檢查",
+    "source": "review18-fixes.js",
     "tests": [
-      "逐項修正驗收.json"
-    ],
-    "remaining": ""
-  },
-  {
-    "id": "19",
-    "title": "素材類型與階級組合篩選",
-    "state": "已實裝；自動驗收通過；待玩家驗收",
-    "source": "revision-codex1018.js",
-    "tests": [
-      "逐項修正驗收.json"
-    ],
-    "remaining": ""
-  },
-  {
-    "id": "20",
-    "title": "圖鑑依類型及階級排序",
-    "state": "已實裝；自動驗收通過；待玩家驗收",
-    "source": "revision-codex1018.js",
-    "tests": [
-      "逐項修正驗收.json"
-    ],
-    "remaining": ""
-  },
-  {
-    "id": "21",
-    "title": "圖鑑搜尋",
-    "state": "已實裝；自動驗收通過；待玩家驗收",
-    "source": "revision-codex1018.js",
-    "tests": [
-      "逐項修正驗收.json"
-    ],
-    "remaining": ""
-  },
-  {
-    "id": "22",
-    "title": "NPC分頁與人物順位",
-    "state": "已實裝；自動驗收通過；待玩家驗收",
-    "source": "revision-codex1018.js",
-    "tests": [
-      "逐項修正驗收.json"
-    ],
-    "remaining": ""
-  },
-  {
-    "id": "23",
-    "title": "地區分頁與類型順位",
-    "state": "已實裝；自動驗收通過；待玩家驗收",
-    "source": "revision-codex1018.js",
-    "tests": [
-      "逐項修正驗收.json"
-    ],
-    "remaining": ""
-  },
-  {
-    "id": "24",
-    "title": "裝備部位分頁",
-    "state": "已實裝；自動驗收通過；待玩家驗收",
-    "source": "revision-codex1018.js",
-    "tests": [
-      "逐項修正驗收.json"
-    ],
-    "remaining": ""
-  },
-  {
-    "id": "25",
-    "title": "飾品分頁",
-    "state": "已實裝；自動驗收通過；待玩家驗收",
-    "source": "revision-codex1018.js",
-    "tests": [
-      "逐項修正驗收.json"
-    ],
-    "remaining": ""
-  },
-  {
-    "id": "26",
-    "title": "藥水丹藥合併分類",
-    "state": "已實裝；自動驗收通過；待玩家驗收",
-    "source": "revision-codex1018.js",
-    "tests": [
-      "逐項修正驗收.json"
-    ],
-    "remaining": ""
-  },
-  {
-    "id": "27",
-    "title": "丹藥百分比浮點文字",
-    "state": "已實裝；自動驗收通過；待玩家驗收",
-    "source": "revision-world1018.js",
-    "tests": [
-      "逐項修正驗收.json"
-    ],
-    "remaining": ""
-  },
-  {
-    "id": "28",
-    "title": "禮物用途文字",
-    "state": "已實裝；自動驗收通過；待玩家驗收",
-    "source": "revision-world1018.js",
-    "tests": [
-      "逐項修正驗收.json"
-    ],
-    "remaining": ""
-  },
-  {
-    "id": "29",
-    "title": "物品實際來源與來源未知",
-    "state": "已實裝；自動驗收通過；待玩家驗收",
-    "source": "revision-items1018.js",
-    "tests": [
-      "逐項修正驗收.json"
-    ],
-    "remaining": "美術與文字呈現待玩家逐項確認；來源未知條目未新增取得途徑。"
-  },
-  {
-    "id": "30",
-    "title": "八狀態移至幫助",
-    "state": "已實裝；自動驗收通過；待玩家驗收",
-    "source": "revision-help1018.js",
-    "tests": [
-      "逐項修正驗收.json"
-    ],
-    "remaining": ""
-  },
-  {
-    "id": "31",
-    "title": "功法階級分頁",
-    "state": "已實裝；自動驗收通過；待玩家驗收",
-    "source": "revision-codex1018.js",
-    "tests": [
-      "逐項修正驗收.json"
-    ],
-    "remaining": ""
-  },
-  {
-    "id": "32",
-    "title": "功法階級排序",
-    "state": "已實裝；自動驗收通過；待玩家驗收",
-    "source": "revision-codex1018.js",
-    "tests": [
-      "逐項修正驗收.json"
-    ],
-    "remaining": ""
-  },
-  {
-    "id": "33",
-    "title": "功法階級顯示",
-    "state": "已實裝；自動驗收通過；待玩家驗收",
-    "source": "revision-codex1018.js",
-    "tests": [
-      "逐項修正驗收.json"
-    ],
-    "remaining": ""
-  },
-  {
-    "id": "34",
-    "title": "幫助可捲至最下方",
-    "state": "已實裝；自動驗收通過；待玩家驗收",
-    "source": "revision-help1018.js",
-    "tests": [
-      "逐項修正驗收.json"
-    ],
-    "remaining": ""
-  },
-  {
-    "id": "35",
-    "title": "幫助相關連結黃字",
-    "state": "已實裝；自動驗收通過；待玩家驗收",
-    "source": "revision-help1018.js",
-    "tests": [
-      "逐項修正驗收.json"
-    ],
-    "remaining": ""
-  },
-  {
-    "id": "36",
-    "title": "幫助詳述玩法",
-    "state": "已實裝；自動驗收通過；待玩家驗收",
-    "source": "revision-help1018.js",
-    "tests": [
-      "逐項修正驗收.json"
-    ],
-    "remaining": ""
-  },
-  {
-    "id": "37",
-    "title": "移除幫助開發用詞",
-    "state": "已實裝；自動驗收通過；待玩家驗收",
-    "source": "revision-help1018.js",
-    "tests": [
-      "逐項修正驗收.json"
-    ],
-    "remaining": ""
-  },
-  {
-    "id": "38",
-    "title": "治療境界倍率與範例",
-    "state": "已實裝；自動驗收通過；待玩家驗收",
-    "source": "revision-help1018.js",
-    "tests": [
-      "逐項修正驗收.json"
-    ],
-    "remaining": ""
-  },
-  {
-    "id": "39",
-    "title": "移除NPC美術池內部說明",
-    "state": "已實裝；自動驗收通過；待玩家驗收",
-    "source": "revision-help1018.js",
-    "tests": [
-      "逐項修正驗收.json"
-    ],
-    "remaining": ""
-  },
-  {
-    "id": "40",
-    "title": "八狀態整合一頁與幫助重寫",
-    "state": "已實裝；自動驗收通過；待玩家驗收",
-    "source": "revision-help1018.js",
-    "tests": [
-      "逐項修正驗收.json"
-    ],
-    "remaining": ""
-  },
-  {
-    "id": "41",
-    "title": "補齊問道檯與已開放玩法",
-    "state": "已實裝；自動驗收通過；待玩家驗收",
-    "source": "revision-help1018.js",
-    "tests": [
-      "逐項修正驗收.json"
-    ],
-    "remaining": ""
-  },
-  {
-    "id": "42",
-    "title": "長右專屬血條內數字",
-    "state": "已實裝；自動驗收通過；待玩家驗收",
-    "source": "revision-boss1018.js",
-    "tests": [
-      "逐項修正驗收.json"
-    ],
-    "remaining": ""
-  },
-  {
-    "id": "43",
-    "title": "長右戰我方全身立繪",
-    "state": "已實裝；自動驗收通過；待玩家驗收",
-    "source": "revision-boss1018.js",
-    "tests": [
-      "物品美術與介面驗收.json",
-      "逐項修正驗收.json"
-    ],
-    "remaining": "美術與文字呈現待玩家逐項確認；來源未知條目未新增取得途徑。"
-  },
-  {
-    "id": "44a",
-    "title": "狀態移至氣血左上",
-    "state": "已實裝；自動驗收通過；待玩家驗收",
-    "source": "revision-boss1018.js",
-    "tests": [
-      "逐項修正驗收.json"
-    ],
-    "remaining": ""
-  },
-  {
-    "id": "44b",
-    "title": "第二階段全畫面提示",
-    "state": "已實裝；自動驗收通過；待玩家驗收",
-    "source": "revision-boss1018.js",
-    "tests": [
-      "逐項修正驗收.json"
-    ],
-    "remaining": ""
-  },
-  {
-    "id": "45",
-    "title": "長右風雨雷光特效",
-    "state": "已實裝；自動驗收通過；待玩家驗收",
-    "source": "revision-boss1018.js",
-    "tests": [
-      "逐項修正驗收.json"
-    ],
-    "remaining": "美術與文字呈現待玩家逐項確認；來源未知條目未新增取得途徑。"
-  },
-  {
-    "id": "46",
-    "title": "長右禁止自動戰鬥",
-    "state": "已實裝；自動驗收通過；待玩家驗收",
-    "source": "revision-boss1018.js",
-    "tests": [
-      "逐項修正驗收.json"
-    ],
-    "remaining": ""
-  },
-  {
-    "id": "47",
-    "title": "長右我方戰位縮小並預留敵方位置",
-    "state": "已實裝；自動驗收通過；待玩家驗收",
-    "source": "revision-boss1018.js",
-    "tests": [
-      "物品美術與介面驗收.json",
-      "逐項修正驗收.json"
-    ],
-    "remaining": ""
-  },
-  {
-    "id": "48",
-    "title": "長右稱號移至詳情",
-    "state": "已實裝；自動驗收通過；待玩家驗收",
-    "source": "revision-boss1018.js",
-    "tests": [
-      "逐項修正驗收.json"
-    ],
-    "remaining": ""
-  },
-  {
-    "id": "49",
-    "title": "長右血條上方與階段位置",
-    "state": "已實裝；自動驗收通過；待玩家驗收",
-    "source": "revision-boss1018.js",
-    "tests": [
-      "逐項修正驗收.json"
-    ],
-    "remaining": ""
-  },
-  {
-    "id": "50",
-    "title": "三夥伴與兩寵上限",
-    "state": "已實裝；自動驗收通過；待玩家驗收",
-    "source": "revision-world1018.js",
-    "tests": [
-      "逐項修正驗收.json"
-    ],
-    "remaining": ""
-  },
-  {
-    "id": "51",
-    "title": "A路線測試舊任務追蹤修復",
-    "state": "已實裝；自動驗收通過；待玩家驗收",
-    "source": "revision-world1018.js",
-    "tests": [
-      "逐項修正驗收.json"
-    ],
-    "remaining": ""
+      "18項功能驗收.json"
+    ]
   }
 ]

@@ -1,27 +1,26 @@
 {
+  "pass": true,
   "docs": [
     {
       "file": "閱讀我_先看這裡.html",
-      "ok": true
+      "pass": true
     },
     {
       "file": "逐項施工工程覆蓋表.html",
-      "ok": true
+      "pass": true
     },
     {
       "file": "BUG修復與待補清單.html",
-      "ok": true
+      "pass": true
     },
     {
       "file": "完整測試及驗收報告.html",
-      "ok": true
+      "pass": true
     },
     {
       "file": "素材圖片清單與預覽.html",
-      "ok": true
+      "pass": true
     }
   ],
-  "errors": [],
-  "blocked": [],
-  "pass": true
+  "errors": []
 }

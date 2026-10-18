@@ -1,0 +1,64 @@
+{
+  "pass": true,
+  "url": "file:///C:/Users/User/OneDrive/%E6%A1%8C%E9%9D%A2/%E4%B9%9D%E5%B7%9E%E4%BF%AE%E4%BB%99%E9%8C%84%E6%B8%AC%E8%A9%A6%E5%88%86%E4%B9%8B/V0.7.3_18%E9%A0%85%E4%BF%AE%E6%AD%A3_2026-10-18/%E4%B9%9D%E5%B7%9E%E4%BF%AE%E4%BB%99%E9%8C%84_V0.7.3_%E7%8D%A8%E7%AB%8B%E6%B8%AC%E8%A9%A6%E7%89%88.html",
+  "version": "0.7.3",
+  "build": "20261018-review18-1",
+  "prefix": "jz073-independent-20261017:",
+  "independentImages": 384,
+  "loaded": 384,
+  "bad": [],
+  "highPotionSources": [
+    {
+      "name": "［中階］氣血藥水",
+      "sources": []
+    },
+    {
+      "name": "［中階］靈力藥水",
+      "sources": []
+    },
+    {
+      "name": "［中階］綜合藥水",
+      "sources": []
+    },
+    {
+      "name": "［高階］氣血藥水",
+      "sources": []
+    },
+    {
+      "name": "［高階］靈力藥水",
+      "sources": []
+    },
+    {
+      "name": "［高階］綜合藥水",
+      "sources": []
+    },
+    {
+      "name": "［仙階］氣血藥水",
+      "sources": []
+    },
+    {
+      "name": "［仙階］靈力藥水",
+      "sources": []
+    },
+    {
+      "name": "［仙階］綜合藥水",
+      "sources": []
+    },
+    {
+      "name": "［天階］氣血藥水",
+      "sources": []
+    },
+    {
+      "name": "［天階］靈力藥水",
+      "sources": []
+    },
+    {
+      "name": "［天階］綜合藥水",
+      "sources": []
+    }
+  ],
+  "tierBad": 0,
+  "errors": [],
+  "failed": [],
+  "localHTMLUsesWorkspaceAssets": true
+}

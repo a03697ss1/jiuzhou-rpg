@@ -1,18 +1,12 @@
 {
   "version": "0.7.3",
-  "supplement": "20261018-review-fixes-2",
-  "items": 52,
-  "tests": 105,
-  "passed": 105,
+  "build": "20261018-review18-1",
+  "items": 18,
+  "tests": 90,
+  "passed": 90,
+  "newIndependentImages": 384,
+  "baseEquipmentImages": 254,
   "published": true,
   "formalUpdated": false,
-  "savePrefix": "jz073-independent-20261017:",
-  "art": {
-    "materials": 69,
-    "itemFamilies": 71,
-    "fullbody": 8
-  },
-  "personalChromeRecordsVerified": false,
-  "url": "https://a03697ss1.github.io/jiuzhou-rpg/preview/v0.7.3/",
-  "build": "20261018-review-fixes-2"
+  "savePrefix": "jz073-independent-20261017:"
 }

@@ -1,5 +1,5 @@
 {
-  "registeredItems": 890,
+  "requestedIndependentImages": 384,
   "missing": [],
-  "note": "同類物品共用圖片，逐件映射見完整物品圖片映射。"
+  "registeredItemImages": "完整物品圖片映射.json"
 }

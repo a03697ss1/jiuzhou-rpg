@@ -1,0 +1,2300 @@
+[
+  {
+    "name": "功法殘卷",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-fe381909-72f6-4e29-8687-a2c62a13624f.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\功法殘卷.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "寵物飼料",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-6329490c-92d9-4456-b313-771fdb6e7cb8.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\寵物飼料.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "寵物餅乾",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-48feac9a-713d-4e2b-a8db-b2b7c53ba413.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\寵物餅乾.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "獸魂晶",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-bcae5154-5105-49f7-ae6a-b42299ed4ea8.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\獸魂晶.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［中階］厚岩戰衣",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-0a34c2a8-6e68-484d-8688-4961e7aff702.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［中階］厚岩戰衣.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［中階］回瀾項鍊",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-a82c366e-7ec9-42db-a7b8-309f91e59afd.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［中階］回瀾項鍊.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［中階］土晶戰衣",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-27900dd8-274c-4404-a9d9-8bceb8395c4d.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［中階］土晶戰衣.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［中階］寵物用破境丹",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-2031f316-5849-482f-9ef5-766dbdd18024.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［中階］寵物用破境丹.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［中階］岩茗槍",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-0872992d-4b7d-459b-b05f-fdafce87570f.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［中階］岩茗槍.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［中階］氣血藥水",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-4a395eeb-0044-427b-83d4-1540b9597ecb.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［中階］氣血藥水.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［中階］水紋靈衣",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-928389db-9535-4a64-a45e-5916e4417665.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［中階］水紋靈衣.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［中階］流風靴",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-a1b1a46d-0d32-4a7c-a9f7-ff81d19bcff2.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［中階］流風靴.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［中階］潤生指環",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-2b06262a-2e58-4b75-9745-a6e0b2ecbf17.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［中階］潤生指環.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［中階］玄水拳套",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-214651b6-6297-438b-90e8-4a6f0a65321a.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［中階］玄水拳套.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［中階］綜合藥水",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-afc3cbf1-7e49-49a7-b279-6830e68d79e8.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［中階］綜合藥水.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［中階］赤炎戰衣",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-a5dbbae0-9cc9-4e91-95c9-4879d6787fea.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［中階］赤炎戰衣.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［中階］踏浪靴",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-7be6ffa8-52a0-47b4-8ea5-4dd6f2a7df06.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［中階］踏浪靴.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［中階］雷紋項鍊",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-b7136506-9063-4c12-bfc5-78c58a4c2cbc.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［中階］雷紋項鍊.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［中階］靈力藥水",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-d4a7ba0d-f08e-41c8-9732-c01cb837759f.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［中階］靈力藥水.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［仙階］氣血藥水",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-9922ed56-9e5c-4bd1-a83a-67108035c348.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［仙階］氣血藥水.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［仙階］綜合藥水",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-0c2e7d15-3805-4679-a198-869806f2cae1.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［仙階］綜合藥水.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［仙階］靈力藥水",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-3d77dd0b-a823-425b-9e64-35590f24d6ba.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［仙階］靈力藥水.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］凝元丹",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-bc7e6be7-865d-4fb4-9945-625f961b2bf9.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］凝元丹.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］凝力丹",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-a8bbec07-62ee-4507-93bb-94d66d4f645c.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］凝力丹.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］凝道丹",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-611a0b37-399b-4cff-8534-36a47faa971f.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］凝道丹.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］凝靈丹",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-7f51ea27-d455-4e14-92f1-fe115f991a60.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］凝靈丹.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］凝靈藥水",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-ec9f45e2-c078-4486-984b-3b656b81b790.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］凝靈藥水.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］凝魂墜",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-f8957c18-1011-4203-ac38-492abf4e55dc.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］凝魂墜.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］凝魂獸佩",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-9d489cce-25aa-45cd-9a63-902b72f759e6.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］凝魂獸佩.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］凝魂獸鈴",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-526f80e2-c8c6-402c-97f3-a1f285774b61.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］凝魂獸鈴.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "method": "built-in imagegen",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-a6d2f75e-c220-453c-92a7-7ebd255602ea.png",
+    "name": "［初階］凝魂葫蘆",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］凝魂葫蘆.png"
+  },
+  {
+    "name": "［初階］凝魂道帽",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-3751d15c-952e-417d-aa7a-f369c7af9c82.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］凝魂道帽.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］凝魂道褲",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-8329939a-0868-4cf8-bac2-c52c61734842.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］凝魂道褲.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］凝魂靈袍",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-6158e9f7-9588-4507-bd0d-4bb78026c6ca.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］凝魂靈袍.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］凝魂靈靴",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-82c2134a-4d34-4be3-9f59-0a53998ac8b9.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］凝魂靈靴.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］利爪戒",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-a78b9886-fe67-422b-a0cd-508c79e34063.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］利爪戒.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］勁地靴",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-8889bdbd-65ca-4827-a011-ffdada17e031.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］勁地靴.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］厚岩戰衣",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-5184195a-92e9-4116-8177-e5b9fb53c797.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］厚岩戰衣.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］回瀾冠",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-c5870b88-4a55-45cb-b7b2-fc45e8c26ded.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］回瀾冠.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］回瀾項鍊",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-08bf9070-2a18-42de-958c-abf8a2d6c88e.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］回瀾項鍊.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］土靈頭盔",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-c77b00c7-ab43-43bb-9f4e-8cd17331bb79.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］土靈頭盔.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］妖元丹",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-9a6f5055-e68f-4f8e-aa46-e225ea5bb9e8.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］妖元丹.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］妖元靈核",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-ac365a52-54f1-417b-9c1b-a7a37cad892d.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］妖元靈核.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］妖羽耳飾",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-c9283e3e-91f1-420c-a2cf-7bd66bcafff8.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］妖羽耳飾.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］寧息藥水",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-aa9c4569-8d9c-4e39-9446-fd96d9d44b1c.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］寧息藥水.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］寵物用破境丹",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-f8b80052-f206-40f2-80b8-8341512c188c.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］寵物用破境丹.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "method": "built-in imagegen",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-7b9f6521-e0dc-4819-8b2a-45885b1efdba.png",
+    "name": "［初階］導靈劍",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］導靈劍.png"
+  },
+  {
+    "name": "［初階］導靈指環",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-75b8d37d-6a35-48c3-887c-a11e7d60f0c1.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］導靈指環.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］岩紋護腿",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-63e7fb67-fc17-40a6-8d14-e246e98c85b7.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］岩紋護腿.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］提靈丹",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-b83d63ca-af20-4c1c-b562-7a33caec5999.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］提靈丹.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "method": "built-in imagegen",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-54485b5b-c110-46fa-9f8e-11bf66505c14.png",
+    "name": "［初階］斷木刀",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］斷木刀.png"
+  },
+  {
+    "name": "［初階］明目丹",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-b36fbdb0-0a14-446f-9c0e-632e60f13818.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］明目丹.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "method": "built-in imagegen",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-9c9c55be-b924-4cb2-9d2c-6e1c823aa335.png",
+    "name": "［初階］月牙長槍",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］月牙長槍.png"
+  },
+  {
+    "name": "［初階］楊木長槍",
+    "method": "built-in imagegen",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-128a78ab-d132-454e-ae30-62321f642bec.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］楊木長槍.png"
+  },
+  {
+    "name": "［初階］止血藥水",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-14341ba4-e982-4f0b-985e-21f23eac3459.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］止血藥水.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-a9ca81c4-b684-4feb-b86b-48982766d399.png",
+    "method": "built-in imagegen",
+    "name": "［初階］毒囊葫蘆",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］毒囊葫蘆.png"
+  },
+  {
+    "name": "［初階］毒囊護腿",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-1f3fe957-6a24-416d-ad45-e7dcfd3542aa.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］毒囊護腿.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-c339cabb-b9a4-4541-b257-7942aa9d1adf.png",
+    "method": "built-in imagegen",
+    "name": "［初階］毒牙短刀",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］毒牙短刀.png"
+  },
+  {
+    "name": "［初階］氣血藥水",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-c67aaa4e-6c9d-4dae-b35d-d4764a8ac67a.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］氣血藥水.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］水紋靈衣",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-9d90680b-2945-419a-a69d-d0d103959fdc.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］水紋靈衣.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］水舞扇",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-15a25628-258f-42fb-8e59-5d4a8939254a.png",
+    "method": "built-in imagegen",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］水舞扇.png"
+  },
+  {
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-8396880c-6333-4752-9e67-2f0157e60397.png",
+    "method": "built-in imagegen",
+    "name": "［初階］沉鐵錘",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］沉鐵錘.png"
+  },
+  {
+    "name": "［初階］治癒丹",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-5b58dba2-5eca-41cb-9f5c-aba72be77df3.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］治癒丹.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-95a21119-77a7-4498-ab12-8446950e3605.png",
+    "name": "［初階］流水劍",
+    "method": "built-in imagegen",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］流水劍.png"
+  },
+  {
+    "name": "［初階］流雲拳套",
+    "method": "built-in imagegen",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-7ee01bc4-1ef5-44eb-9d6d-e2558c2a70ea.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］流雲拳套.png"
+  },
+  {
+    "name": "［初階］流雲槍",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-ced2d3ac-bda9-404a-8f29-b421de4b1449.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］流雲槍.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "method": "built-in imagegen",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-5d2b01b6-d298-4bbb-9005-8ecbcfa93554.png",
+    "name": "［初階］流雲道傘",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］流雲道傘.png"
+  },
+  {
+    "name": "［初階］流風靴",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-30dba659-851a-4179-a838-0f72925256b2.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］流風靴.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］淬體丹",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-543a29ee-840c-4d09-864f-bf7863afcca0.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］淬體丹.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］清神藥水",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-d6f15ed1-96fe-43c5-b0ba-26e7ce1614c2.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］清神藥水.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］清露藥水",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-1bd615f7-06fe-414a-b3af-c1172f1cfcc2.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］清露藥水.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］清靈丹",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-d5124bf5-7089-42cf-a98f-bd5b4e5026f3.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］清靈丹.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "method": "built-in imagegen",
+    "name": "［初階］清風羽扇",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-7ba06f33-0dff-4200-9918-fc3f85ea5d4c.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］清風羽扇.png"
+  },
+  {
+    "name": "［初階］潤生指環",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-0e7ac332-0b22-415f-adc0-a9b3d7906127.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］潤生指環.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］潮生護腿",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-36ab4388-5526-482e-bb45-ca1126f233f5.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］潮生護腿.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］濃縮氣血藥水",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-68ad7507-278f-4bb3-bcb2-7b92f8954c69.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］濃縮氣血藥水.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］濃血戰環",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-cc4a13e8-c01a-4cf8-9862-c40a34a83b32.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］濃血戰環.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］烈行戰靴",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-98bc57fe-3b94-4cbe-94fa-951f01132326.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］烈行戰靴.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］狐絨衣",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-9ce92743-3415-43c6-a3d9-951b88d25f37.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］狐絨衣.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］狐絨靈環",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-1eb998c5-21a7-4e77-b0e4-0f420bea25e7.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］狐絨靈環.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］狼皮帽",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-e27c0760-a529-4c5a-bcf3-8fd167cb3c44.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］狼皮帽.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］狼皮護頸",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-ab968602-15b5-48c6-9dc5-c89b21fd548d.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］狼皮護頸.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］獸元丹",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-dde75670-20d2-421b-a580-5d30c3306107.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］獸元丹.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］獸戰丹",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-a5ad6b85-0a75-476b-aa63-31e25b78ee81.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］獸戰丹.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］獸牙項鍊",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-a5f401ef-3d1d-4d63-bc00-f0a55c6aca72.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］獸牙項鍊.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］獸骨戰盔",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-0c8d7374-0abf-46c7-9d86-4b0922e236c4.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］獸骨戰盔.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］獸骨頸甲",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-8e617c71-5845-414d-9a81-f72a61b4cfcb.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］獸骨頸甲.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］玄水扇",
+    "method": "built-in imagegen",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-ce5411e5-ace5-45cc-aa4d-afc7f64f7643.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］玄水扇.png"
+  },
+  {
+    "name": "［初階］玄水靈衣",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-95cbec18-dc31-42a0-873e-9f8fec6588e4.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］玄水靈衣.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］玄羽道扇",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-c5aac8ce-57ed-4d46-af3c-4b3b42712423.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］玄羽道扇.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］玄鐵重錘",
+    "method": "built-in imagegen",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-4db7ad5a-6699-4894-ab26-56a6ec48a248.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］玄鐵重錘.png"
+  },
+  {
+    "name": "［初階］玄靈寶珠",
+    "method": "built-in imagegen",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-6550ebd1-52fe-4895-99a2-c8e104112282.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］玄靈寶珠.png"
+  },
+  {
+    "name": "［初階］玄靈戰刀",
+    "method": "built-in imagegen",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-3bc6c17c-ea53-4a70-a2ba-7f83d8ce0538.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］玄靈戰刀.png"
+  },
+  {
+    "name": "［初階］玄靈戰盔",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-72aec052-f76d-441b-9488-10f36113ddc6.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］玄靈戰盔.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］玄靈步履",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-11682562-8982-469a-a448-1ce2afb6ea16.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］玄靈步履.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］玄靈法傘",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-957f87f0-fd3e-442a-92e2-232dc2747e09.png",
+    "method": "built-in imagegen",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］玄靈法傘.png"
+  },
+  {
+    "name": "［初階］玄靈獸甲",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-17d928d8-607b-4812-9bca-3ca336d63bf5.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］玄靈獸甲.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］玄靈道戒",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-1b3f35f9-5a36-4d88-a461-191ea1742d80.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］玄靈道戒.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］玄靈道衣",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-caeffb37-8e91-4993-b9b4-11be4582b938.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］玄靈道衣.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］玄靈道褲",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-d524e68d-abf2-410d-8c8f-77a9595fa82c.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］玄靈道褲.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］玄魂指環",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-c59496b8-0003-4631-b297-7ad0c5eace61.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］玄魂指環.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］疾雷靴",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-bd8f8376-f4db-4df1-bbf5-2bed6aa6b5fa.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］疾雷靴.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］百草丹",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-bc83583e-8078-41bf-859c-e5b11c44a4a4.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］百草丹.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］百靈藥水",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-5b005a75-f3b2-4f5e-b21f-80c6bf4a10ca.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］百靈藥水.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］硬革拳套",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-2adc7ae9-11ca-46df-b20d-a29720b1e407.png",
+    "method": "built-in imagegen",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］硬革拳套.png"
+  },
+  {
+    "name": "［初階］硬骨戰甲",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-bed8fe3f-bb0e-4aa8-a3fb-ca96d607ab8c.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］硬骨戰甲.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］硬骨戰靴",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-0cee747f-48a6-4b90-b583-553cb2ad86c3.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］硬骨戰靴.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］硬骨獸甲",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-2f7d5b0d-476e-43e2-8dfb-f68fff6f106e.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］硬骨獸甲.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］硬骨護衣",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-c411880a-0eb3-452e-9e2a-c09dac45fa21.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］硬骨護衣.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］碧元丹",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-b66bfabf-e55c-478b-b7f6-52d9f3030e49.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］碧元丹.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］碧木弓",
+    "method": "built-in imagegen",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-d68f5420-a613-4373-8dbc-c940e964a191.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］碧木弓.png"
+  },
+  {
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-b75fdbec-6384-4493-8fd5-c9e39ce6ce61.png",
+    "name": "［初階］碧木葫蘆",
+    "method": "built-in imagegen",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］碧木葫蘆.png"
+  },
+  {
+    "name": "［初階］碧木道衣",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-d5370d5b-71aa-4d95-90b8-0f106388cb09.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］碧木道衣.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-0c784c00-2fba-42cc-afa1-92c3d64acc2a.png",
+    "method": "built-in imagegen",
+    "name": "［初階］碧芯劍",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］碧芯劍.png"
+  },
+  {
+    "name": "［初階］碧芯吊墜",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-8c223704-723a-47ed-96d5-e3a872b260bb.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］碧芯吊墜.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "method": "built-in imagegen",
+    "name": "［初階］碧芯寶珠",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-71a7931e-6861-4344-8031-a2193940c023.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］碧芯寶珠.png"
+  },
+  {
+    "name": "［初階］碧芯靈帽",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-85b3625a-4e6b-459e-a9a1-45113a8e92cf.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］碧芯靈帽.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］碧靈獸環",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-3ce50fb4-de73-49ce-ab4f-d3d29b0e7326.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］碧靈獸環.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］碧魂輕履",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-dbfb803c-d43d-44cb-82bf-69a868a5617b.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］碧魂輕履.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］碧魂靈墜",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-1326eef5-5870-47b2-89e7-17fcf25e04aa.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］碧魂靈墜.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］碧魂靈褲",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-34742472-64d3-4fe5-9481-16971c70af38.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］碧魂靈褲.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "method": "built-in imagegen",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-7a54e60b-aad7-4ec8-b14e-ce13ec83c59a.png",
+    "name": "［初階］粗布衣",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］粗布衣.png"
+  },
+  {
+    "name": "［初階］粗布褲",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-69b566f4-b9cb-4386-8ddb-dba5f3dc4890.png",
+    "method": "built-in imagegen",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］粗布褲.png"
+  },
+  {
+    "name": "［初階］粗布鞋",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-abc60a27-a7e4-40a6-8991-61707f83556d.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］粗布鞋.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-953f47a1-9090-4a74-b508-6f088f5e2c9b.png",
+    "name": "［初階］粗布頭盔",
+    "method": "built-in imagegen",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］粗布頭盔.png"
+  },
+  {
+    "name": "［初階］素靈步履",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-31df078c-867e-464a-8e47-be591d6f74cb.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］素靈步履.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］素靈法帽",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-5389cf71-7aeb-400e-9079-fe3129b39833.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］素靈法帽.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］素靈法袍",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-37500065-47ef-4d0c-a867-514b3238980d.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］素靈法袍.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］素靈長褲",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-f142674c-3f3e-49e2-8ef5-c39dd97ef3f2.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］素靈長褲.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］紫電戰衣",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-9ee85fc7-c455-4942-b0f3-550c3272bacc.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］紫電戰衣.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］綜合藥水",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-a6bc9c45-4e70-4d2e-8ebc-f1bc0d38c178.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］綜合藥水.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］續擊丹",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-8b2194bb-98df-40e7-ac73-c3968688f819.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］續擊丹.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "method": "built-in imagegen",
+    "name": "［初階］羽爪拳套",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-c43adc97-94e4-4df4-a31a-1a017df3db23.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］羽爪拳套.png"
+  },
+  {
+    "name": "［初階］羽行帽",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-4175b39d-a214-45c4-afdb-0981cc2f5235.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］羽行帽.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］羽靈玉佩",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-6c43da22-2f2c-48a0-a770-14587639706a.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］羽靈玉佩.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］翠藤衣",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-55ff7eb8-0bb1-41a4-8f6b-3104712fe63d.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］翠藤衣.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-4878cf9c-a625-4280-a207-e0d7974fe239.png",
+    "name": "［初階］聚氣葫蘆",
+    "method": "built-in imagegen",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］聚氣葫蘆.png"
+  },
+  {
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-8d69fdf5-b9ea-401e-9f70-84b38f6b0a37.png",
+    "name": "［初階］聚氣錘",
+    "method": "built-in imagegen",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］聚氣錘.png"
+  },
+  {
+    "name": "［初階］聚靈丹",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-cb7a8640-e999-40b5-a786-6110b36bff2f.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］聚靈丹.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-bae83810-09fb-4aeb-aced-ce75475a620a.png",
+    "name": "［初階］聚靈寶珠",
+    "method": "built-in imagegen",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］聚靈寶珠.png"
+  },
+  {
+    "name": "［初階］聚靈護符",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-f4635106-0b86-4485-bf90-64df0ade52f1.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］聚靈護符.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］藤影靴",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-319636b8-1983-429f-898a-a933977efd00.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］藤影靴.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］蛇鱗墜",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-3db6020d-3690-40bc-9939-6a1cdfd17e29.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］蛇鱗墜.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］蛛絲輕衣",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-572a0848-5d9f-4f53-b25c-ab92454f0895.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］蛛絲輕衣.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-ec035a54-43a7-4dcb-ad93-e2ec3dded655.png",
+    "name": "［初階］蛛絲靈傘",
+    "method": "built-in imagegen",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］蛛絲靈傘.png"
+  },
+  {
+    "name": "［初階］蛛絲靈弓",
+    "method": "built-in imagegen",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-500e51ea-9e2a-4aad-867a-057bebd59b4a.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］蛛絲靈弓.png"
+  },
+  {
+    "name": "［初階］蛟鱗戒",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-334d5797-3293-4ca8-8997-26b2a7f985aa.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］蛟鱗戒.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］蟲甲護片",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-49d42232-b99d-4536-90ea-09edeb30013b.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］蟲甲護片.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］蟲甲護衣",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-722fdab0-bde4-45d9-bec1-8d6c89c3b9dd.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］蟲甲護衣.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］血氣丹",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-e13d26e3-67e7-441c-8943-6f4fcadb9266.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］血氣丹.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］血獸環",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-e6bb5b89-d511-45ad-962b-ca89745ef28c.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］血獸環.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］血精獸符",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-60b6d83a-694f-4174-bfe8-3dbba06dcc68.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］血精獸符.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］血靈丹",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-aa031707-e745-4708-b516-bd6503bf903e.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］血靈丹.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］血靈墜",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-b8134d88-6cb2-469a-bb90-47519e54d373.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］血靈墜.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "method": "built-in imagegen",
+    "name": "［初階］血靈葫蘆",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-edb2a316-d49f-4666-b04a-e055a41a57b5.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］血靈葫蘆.png"
+  },
+  {
+    "name": "［初階］血魄獸環",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-19b4c344-bcb7-4685-bd82-9ba7d1999006.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］血魄獸環.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "method": "built-in imagegen",
+    "name": "［初階］角鋒槍",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-99189101-bd27-4981-8807-ceec3ccbc8dc.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］角鋒槍.png"
+  },
+  {
+    "name": "［初階］解毒藥水",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-81ae7877-82ce-4b7e-8f35-ef697a37c743.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］解毒藥水.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］解燒藥水",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-b7ffbf86-ab04-41f8-be98-83b2b515f413.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］解燒藥水.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］護獸丹",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-01c50002-4833-4c45-8447-62c53c3e9746.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］護獸丹.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］護身布衣",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-3b5bd717-6a0f-47a3-8fb2-52c4a4b91ee6.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］護身布衣.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］護體丹－光",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-bbe713c4-9580-4109-be64-bd622c426311.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］護體丹－光.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］護體丹－土",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-0f7888bf-3d8e-4384-a198-ceaacc1a3572.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］護體丹－土.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］護體丹－暗",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-7fd6923f-f92a-4de0-a005-22377cbb9b1d.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］護體丹－暗.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］護體丹－木",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-a328910f-4fef-4acd-93c0-aebc2535c76f.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］護體丹－木.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］護體丹－水",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-5885d19a-f1a7-4218-a4e1-eb05757c2a3a.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］護體丹－水.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］護體丹－火",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-9b00501a-1964-4c31-a708-4b8a20ab16a1.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］護體丹－火.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］護體丹－雷",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-0e9d2360-f7dd-4366-9b8f-94a2093f338b.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］護體丹－雷.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］護體丹－風",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-41887104-f5b3-4253-abea-4382856dab5f.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］護體丹－風.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "method": "built-in imagegen",
+    "name": "［初階］讓力大錘",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-31382a10-8373-4541-89fb-b8499d3dd518.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］讓力大錘.png"
+  },
+  {
+    "name": "［初階］赤尾披衣",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-aeecd716-d28c-4208-868f-88a393096672.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］赤尾披衣.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］赤尾玉佩",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-7f68037b-31a8-4b17-94b3-f756a139b13a.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］赤尾玉佩.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］赤尾靈袍",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-a1a05852-b980-4348-b946-af9013c8f923.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］赤尾靈袍.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］赤尾靈飾",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-6f6077df-2ada-4be4-a123-05d4e2648a5b.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］赤尾靈飾.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］赤炎戰衣",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-ff428315-1606-4ce8-a789-6e9117cbc1b5.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］赤炎戰衣.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-1c059266-2ce4-41b2-9e0d-cd6c7383fd34.png",
+    "method": "built-in imagegen",
+    "name": "［初階］赤紋刀",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］赤紋刀.png"
+  },
+  {
+    "name": "［初階］赤銅刀",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-fec3193a-41e6-4ecf-a9b6-f6b3f3adea65.png",
+    "method": "built-in imagegen",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］赤銅刀.png"
+  },
+  {
+    "name": "［初階］赤銅吊墜",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-91b10ca3-c3d0-427f-b6e9-c71416e14bc7.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］赤銅吊墜.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］赤銅指環",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-1bec15a7-5ecc-49e8-97dc-a214df6faf3e.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］赤銅指環.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "method": "built-in imagegen",
+    "name": "［初階］赤銅斬刀",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-8ff0a0d4-ad03-4428-908f-0459ec48c5c9.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］赤銅斬刀.png"
+  },
+  {
+    "name": "［初階］踏浪靴",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-ccb6a05e-f5a0-41e4-b568-8c87d0b747c7.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］踏浪靴.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］輕行布靴",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-8396d6f4-17b8-4f58-a0f9-fc39341ce50e.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］輕行布靴.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "method": "built-in imagegen",
+    "name": "［初階］輪輪刀",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-00ea3093-ff50-4de3-9fed-87d8ecae8935.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］輪輪刀.png"
+  },
+  {
+    "name": "［初階］迅獸丹",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-77197001-71d9-4aef-81c4-9de8418e26da.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］迅獸丹.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］道術丹",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-6087444c-0e1f-4d61-bf85-6371f205cd17.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］道術丹.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］避毒丹",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-7a1688ed-9b6f-49ee-b530-f3efb6c73d1f.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］避毒丹.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］醒目藥水",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-db432324-591c-4e26-8345-03503ae3fbae.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］醒目藥水.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］醒神丹",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-c5e09a5a-bb7e-4888-b33b-91a575a017ff.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］醒神丹.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-e97160f7-5541-4bdc-92cb-3d39c950d2d6.png",
+    "method": "built-in imagegen",
+    "name": "［初階］鍛造大錘",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］鍛造大錘.png"
+  },
+  {
+    "name": "［初階］鎮心丹",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-120a570f-4209-4a94-ae20-da9617c88acc.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］鎮心丹.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-e4b30950-1d07-4823-99ce-b294326c3abc.png",
+    "name": "［初階］鐵脊長槍",
+    "method": "built-in imagegen",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］鐵脊長槍.png"
+  },
+  {
+    "name": "［初階］鐵邊布帽",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-d38449b1-bd56-4efc-ab4b-f6acaa1bbe9a.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］鐵邊布帽.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］雀羽墜",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-ff1854c6-dce4-498c-92a6-e314bb090843.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］雀羽墜.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-6d5ce85a-4677-4632-b86c-04b976d467a0.png",
+    "method": "built-in imagegen",
+    "name": "［初階］雀羽弓",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］雀羽弓.png"
+  },
+  {
+    "name": "［初階］雀羽靈扇",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-fc6768e9-a282-4d6b-b5c2-2612809aae0b.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］雀羽靈扇.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］雀羽靴",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-1ee4a821-5efa-4139-ba45-de684d4df8da.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］雀羽靴.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］雲紋束冠",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-b23c5461-1e05-407a-9b5b-bfa7a2c1c35f.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］雲紋束冠.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］雲紋短衣",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-6be23043-6e85-45e8-9680-08639294b70e.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］雲紋短衣.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］雲紋護腿",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-f5096618-24ae-481f-8b5f-4ae9ec25983c.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］雲紋護腿.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］雲紋輕靴",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-fe58696c-1737-4d25-b048-2d34ac6b7da5.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］雲紋輕靴.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］雷紋護額",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-fc8245eb-728d-4476-a883-f79a3414d0e9.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］雷紋護額.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］雷紋項鍊",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-e250c43c-ba00-44d7-a4eb-8e5d761ec68a.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］雷紋項鍊.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］雷角寶珠",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-d18af3e3-6084-4be8-aaa6-d90d01879d17.png",
+    "method": "built-in imagegen",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］雷角寶珠.png"
+  },
+  {
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-cf7b00af-ce0e-4df7-be07-7c68f530336e.png",
+    "name": "［初階］雷角槍",
+    "method": "built-in imagegen",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］雷角槍.png"
+  },
+  {
+    "method": "built-in imagegen",
+    "name": "［初階］霜月劍",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-4bb0adb8-1452-49fa-b2dd-34d9bcbfc9f8.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］霜月劍.png"
+  },
+  {
+    "name": "［初階］靈力藥水",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-d2d84375-c124-48fa-81f8-af6783192789.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］靈力藥水.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］靈息丹",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-e2b5d249-1587-4e5b-a135-e2bcdcbc3a8a.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］靈息丹.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］靈根丹",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-589930cd-f680-4bed-93dd-5b3c6afd1da6.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］靈根丹.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］靈楊獸牌",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-16286ea9-b06c-4844-b410-c92279bcde83.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］靈楊獸牌.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "method": "built-in imagegen",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-237ec0d6-33e5-4347-a245-f98cd530a195.png",
+    "name": "［初階］靈楊長弓",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］靈楊長弓.png"
+  },
+  {
+    "name": "［初階］靈癒丹",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-cd6899a1-b37e-4080-be97-cfdeae04b1b5.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］靈癒丹.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "method": "built-in imagegen",
+    "name": "［初階］靈紋道扇",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-83b1bb54-79df-4edf-8f45-c66fcc672f8c.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］靈紋道扇.png"
+  },
+  {
+    "name": "［初階］靈紋項鍊",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-dad8c26f-8f33-4d9c-b561-c3b17e69d888.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］靈紋項鍊.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］靈羽法褲",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-9a4d689d-825c-47c0-a0db-411ff165af94.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］靈羽法褲.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］靈羽踏雲靴",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-9eafca00-026a-47d6-b7ee-47149eda49a7.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］靈羽踏雲靴.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］靈鐵傘",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-5cbba7c0-b25d-4ef0-8bd3-6e52438b6a9c.png",
+    "method": "built-in imagegen",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］靈鐵傘.png"
+  },
+  {
+    "method": "built-in imagegen",
+    "name": "［初階］靈鐵刀",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-a28278c7-02f7-44e2-b53e-48a888c5011d.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］靈鐵刀.png"
+  },
+  {
+    "method": "built-in imagegen",
+    "name": "［初階］靈鐵劍",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-dfd06d6a-0d42-420b-8dac-dcedf57ad23f.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］靈鐵劍.png"
+  },
+  {
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-3167002a-0602-4dbc-b508-4377a49e4202.png",
+    "name": "［初階］靈鐵寶珠",
+    "method": "built-in imagegen",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］靈鐵寶珠.png"
+  },
+  {
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-ba3c9331-2b4a-45da-b670-2388c3896cc5.png",
+    "name": "［初階］靈鐵弓",
+    "method": "built-in imagegen",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］靈鐵弓.png"
+  },
+  {
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-f240ed7c-017c-4ecb-879c-6bb34e8e4028.png",
+    "name": "［初階］靈鐵扇",
+    "method": "built-in imagegen",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］靈鐵扇.png"
+  },
+  {
+    "method": "built-in imagegen",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-82e0d748-e73e-46ff-a3eb-79bed355f162.png",
+    "name": "［初階］靈鐵拳套",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］靈鐵拳套.png"
+  },
+  {
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-48f34e7a-df5f-4051-8f71-0cc08bebce57.png",
+    "name": "［初階］靈鐵葫蘆",
+    "method": "built-in imagegen",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］靈鐵葫蘆.png"
+  },
+  {
+    "name": "［初階］靈鐵護腿",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-295db4e7-f4a2-4512-b048-81354d584e9d.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］靈鐵護腿.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-b0b65e58-6a74-41b1-a86c-d87189949613.png",
+    "name": "［初階］靈鐵錘",
+    "method": "built-in imagegen",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］靈鐵錘.png"
+  },
+  {
+    "method": "built-in imagegen",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-519d3460-d042-4b3d-8e17-4294c7dc09b9.png",
+    "name": "［初階］靈鐵長槍",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］靈鐵長槍.png"
+  },
+  {
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-9e829a30-1142-4aa9-a9cd-5df9624a6e27.png",
+    "name": "［初階］青木弓",
+    "method": "built-in imagegen",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］青木弓.png"
+  },
+  {
+    "name": "［初階］青木長弦弓",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-8f189e07-3f55-493e-a7ad-c716fcec5cc1.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］青木長弦弓.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］青木額冠",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-2e14f5a4-337a-438d-8def-9186d599c270.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］青木額冠.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］青玉指環",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-5f4565c8-ab05-49e3-8c35-2588c4a1e088.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］青玉指環.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "method": "built-in imagegen",
+    "name": "［初階］青竹靈傘",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-b9459a0b-8cca-419c-b2e6-65304d4729b2.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］青竹靈傘.png"
+  },
+  {
+    "method": "built-in imagegen",
+    "name": "［初階］青紋寶珠",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-e2f00b4e-0c62-4bde-b6d2-c4054aa59985.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］青紋寶珠.png"
+  },
+  {
+    "name": "［初階］青紋布帽",
+    "method": "built-in imagegen",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-9cdb3fcf-166e-4763-be93-63cfe80cb931.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］青紋布帽.png"
+  },
+  {
+    "name": "［初階］青紋布靴",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-8ea8de2d-472e-41f3-b77b-4dcd9486ce51.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］青紋布靴.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］青紋短袍",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-b4d68162-b2e3-49cc-bf46-f1c4041b9055.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］青紋短袍.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］青紋長褲",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-436f67c6-4538-486d-b96b-25810abdbf93.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］青紋長褲.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "method": "built-in imagegen",
+    "name": "［初階］青羽道傘",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-7bc009fd-5e92-40bf-bec6-b52eb5e7b646.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］青羽道傘.png"
+  },
+  {
+    "name": "［初階］青羽道帽",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-e4eedb4a-3666-4642-b6c8-3c9bd20dfc13.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］青羽道帽.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］青藤劍",
+    "method": "built-in imagegen",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-4efff998-4742-46ac-aacf-7f38a264b55e.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］青藤劍.png"
+  },
+  {
+    "method": "built-in imagegen",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-f9fc906c-bd5b-462e-941b-4ec0231ba135.png",
+    "name": "［初階］青藤弓",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］青藤弓.png"
+  },
+  {
+    "name": "［初階］青藤羽扇",
+    "method": "built-in imagegen",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-19a9722d-7bd7-44e3-94b7-607ce957cee3.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］青藤羽扇.png"
+  },
+  {
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-eb2a38e6-ace6-46a3-b0ab-21065aed2d15.png",
+    "method": "built-in imagegen",
+    "name": "［初階］青鋒劍",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］青鋒劍.png"
+  },
+  {
+    "name": "［初階］韌布長褲",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-761e0e52-0d60-4f44-a2e1-cf473c7ce904.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］韌布長褲.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］養元丹",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-eaa77adb-c78f-4ac0-8a44-c8b73abc241a.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］養元丹.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-597af78c-f985-4a33-9e4e-2c3529ff59ff.png",
+    "method": "built-in imagegen",
+    "name": "［初階］養靈葫蘆",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］養靈葫蘆.png"
+  },
+  {
+    "name": "［初階］骨粉護符",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-49221a59-27d4-4096-87ed-ccfcc0e92dbf.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］骨粉護符.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］魂紋佩",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-0e684274-f82d-43f8-85f1-d20005865a4b.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］魂紋佩.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］黑蠍甲環",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-0bb31307-1762-4014-94b1-2db75dcbb274.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］黑蠍甲環.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］黑蠍護腿",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-52554ca3-0c03-4364-b246-a46c553caa58.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］黑蠍護腿.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］龜甲帽",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-a8826e68-b265-4190-a176-fd94224d0147.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］龜甲帽.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］龜甲背甲",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-858807e4-5fd1-4ffa-869f-e16d24515255.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］龜甲背甲.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］龜甲衣",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-6579d056-4231-474f-860b-c566269dd878.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］龜甲衣.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］龜甲護片",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-faa7d829-eb80-4b01-bc94-00d8bf15b5b7.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］龜甲護片.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［初階］龜甲靴",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-7c7faf51-88fb-4dd8-bf70-3c678f15ee2d.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［初階］龜甲靴.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［天階］氣血藥水",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-70bc7122-576f-41ac-8655-07d867255040.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［天階］氣血藥水.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［天階］綜合藥水",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-fe4e81c3-3fb8-459a-9f97-0de1fc88fe33.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［天階］綜合藥水.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［天階］靈力藥水",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-bf9d0e13-a43e-414b-97fc-dce602bc6a61.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［天階］靈力藥水.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-3cd9cdce-7c04-4e19-ba76-c0817f208bc0.png",
+    "method": "built-in imagegen",
+    "name": "［無階］新手傘",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［無階］新手傘.png"
+  },
+  {
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-7cf4a941-1185-4001-9e72-2e7e61b6983c.png",
+    "name": "［無階］新手刀",
+    "method": "built-in imagegen",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［無階］新手刀.png"
+  },
+  {
+    "method": "built-in imagegen",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-657e4ffc-8a7c-40b8-a28b-f5f50c2c0eaa.png",
+    "name": "［無階］新手劍",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［無階］新手劍.png"
+  },
+  {
+    "name": "［無階］新手寶珠",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-9fd8da23-5be0-4be7-8eab-0afc70708d3b.png",
+    "method": "built-in imagegen",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［無階］新手寶珠.png"
+  },
+  {
+    "name": "［無階］新手弓",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-5c41b250-a79f-4d4b-b62c-507e0e43a741.png",
+    "method": "built-in imagegen",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［無階］新手弓.png"
+  },
+  {
+    "name": "［無階］新手戒指",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-6dcfaaa8-11c0-4f87-be13-81b509febf7e.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［無階］新手戒指.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "method": "built-in imagegen",
+    "name": "［無階］新手扇",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-26d4befd-e71c-4cff-851a-abf4a03fe625.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［無階］新手扇.png"
+  },
+  {
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-272a89ea-a7b4-47d2-b957-d43684e49349.png",
+    "method": "built-in imagegen",
+    "name": "［無階］新手拳套",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［無階］新手拳套.png"
+  },
+  {
+    "name": "［無階］新手葫蘆",
+    "method": "built-in imagegen",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-6fbb3610-ec66-41b2-b85b-3f0d8c471a61.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［無階］新手葫蘆.png"
+  },
+  {
+    "name": "［無階］新手護符",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-feeb75cf-69c7-4fc0-8709-426b4df57a6f.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［無階］新手護符.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-ab7d4eef-8f9b-49f4-b35c-edab8277a036.png",
+    "name": "［無階］新手錘",
+    "method": "built-in imagegen",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［無階］新手錘.png"
+  },
+  {
+    "name": "［無階］新手長槍",
+    "method": "built-in imagegen",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-3adc6825-9c88-48bb-b44b-eae1c27e15c4.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［無階］新手長槍.png"
+  },
+  {
+    "name": "［無階］新手項鍊",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-28ad78fd-ccd1-4773-945b-a29069daf217.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［無階］新手項鍊.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］不屈戰意",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-17b359d3-03d9-402e-a856-d0a8b677f3d0.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］不屈戰意.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］不滅獸甲",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-f963f889-abde-450f-ada2-553b572c6785.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］不滅獸甲.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］元華斗笠",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-22c559f0-ad3b-4f6d-a701-2f7ade293075.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］元華斗笠.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］初階挑戰認證書",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-45ff33fc-6711-43d1-937a-695389edb6b3.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］初階挑戰認證書.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］半月山玉",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-7432a257-652a-497f-b58e-ed90463b1a81.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］半月山玉.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］半月水玉",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-008f01f2-5df2-4f57-9388-652a19e2c274.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］半月水玉.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］厚土護佩",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-7b1fe63c-34f4-4300-a1ed-bd66d186d6c0.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］厚土護佩.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］問天戰衣",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-6afa7dfd-5f52-4b5f-bdf0-e31aee141c66.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］問天戰衣.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］問天玉佩",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-21252b35-a31d-4c21-a5f0-3112cb48e321.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］問天玉佩.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］問心劍",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-f466621f-2078-43bc-a758-dfb19dbfc32d.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］問心劍.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］問心戒",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-f986c243-042b-4e09-87cb-a2a61ffe150c.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］問心戒.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］問道令",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-e4a39926-178e-42c6-a654-376c506dd2a0.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］問道令.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］問道佩",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-f4f849a6-19b3-4f87-84f2-e43522c9d036.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］問道佩.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］問道戰衣",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-92b23288-27e4-450d-ace9-fec9f27beb12.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］問道戰衣.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］問道戰靴",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-1a9f9f6d-0240-4acf-97f5-d752414e2bc2.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］問道戰靴.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］問道槍",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-1f8ada37-66a7-47d7-ac06-5279f84a26c6.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］問道槍.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］問道檯傳送令牌",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-f97c6577-16ba-445f-b533-42c9f541e815.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］問道檯傳送令牌.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］問道殘頁",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-924f6bf0-cef4-4a82-8a2c-c1ca3d08f484.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］問道殘頁.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］問道秘卷",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-628fce57-71d7-4e8d-a93d-282693c4f834.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］問道秘卷.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］問道茶壺",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-4006dd2e-f2af-4a59-81a1-10a686cf720f.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］問道茶壺.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］問道護符",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-d007ebd9-a8b2-4eb1-ad44-28cf4e1918a9.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］問道護符.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］問靈寶珠",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-97846f63-681b-4752-b9ef-30ace5dde33a.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］問靈寶珠.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］問靈道冠",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-a81cb5b1-1c25-4ce8-8cea-7dbe30240ba8.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］問靈道冠.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］土靈盔",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-77b76c9f-c642-448e-a2a7-4801fea01451.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］土靈盔.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］天獸靈鈴",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-c6e62e73-1eef-4d74-aaba-3bff4fcd445a.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］天獸靈鈴.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］妖物蛋",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-3bd5f8b6-69bd-4749-9d2d-9a3dcc28c60d.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］妖物蛋.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］委託刷新令",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-731e693c-e3b6-4b50-adde-2dc9cf40939c.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］委託刷新令.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］守心歸元",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-1ffda81f-8ce5-463e-bf94-4411818ced20.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］守心歸元.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］守心訣",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-29c2fb83-5d93-473e-a9b9-c09f14c0c286.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］守心訣.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］寵物擴充格",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-6989b9a9-49f4-48eb-9043-1d9e494464a6.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］寵物擴充格.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］寵物秘術卷軸",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-2f80119c-e19b-4b85-9d05-d768b5d95864.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］寵物秘術卷軸.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］寵物自選專屬技能箱",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-2f5eec4d-46e6-4e4d-8ec4-ff99f7749727.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］寵物自選專屬技能箱.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］山河護身令",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-afb1906a-12c5-4552-a3c0-428c61930172.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］山河護身令.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］忡靈戰甲",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-95ac17e1-d64a-49a6-af88-a7358a164cff.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］忡靈戰甲.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］忡靈戰靴",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-03bcdc1d-9414-42db-aaae-922dcf5a9819.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］忡靈戰靴.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］忡靈術",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-3db8b563-7117-45c3-9f09-87f39998dae1.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］忡靈術.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］忡靈鎖褲",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-7736edd6-3a3e-45b1-b8a9-6538e920ba40.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］忡靈鎖褲.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］忡靈頭盔",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-5de6db62-79fd-41ba-8877-00c42b4648a6.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］忡靈頭盔.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］成良粉",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-0dcb01e7-b7cf-434b-8310-73e4ad103fee.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］成良粉.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］戰心指環",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-ac0175c9-981e-4f0a-816a-7897723e6849.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］戰心指環.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］戰意玉",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-40c80d1a-cf9c-4059-893b-7fc9cef9e7ef.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］戰意玉.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］戰獸爪環",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-7a334d55-7110-4ff9-b62e-fa0473be974d.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］戰獸爪環.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］晶礦秘境通行證",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-1313340d-8fd6-461a-ab42-8d826c10f87e.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］晶礦秘境通行證.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］月玉珮",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-3fd790fb-2e83-4671-a68e-9775418d3751.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］月玉珮.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］東州大禮包",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-b9d3cf91-7477-465d-943b-98207f3d4ad5.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］東州大禮包.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］桂淞粉",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-297273f2-b71b-45d6-bbfb-b1aada150605.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］桂淞粉.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］水心靈墜",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-99518a3b-7517-490f-875a-4d466093a181.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］水心靈墜.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］清妍的藥囊",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-8500e440-6258-4d33-81f2-887779e7b6bf.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］清妍的藥囊.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］清虛道扇",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-647a3a13-e604-44c4-8b1b-a92e201adcc0.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］清虛道扇.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］清風靈葫",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-7896c567-88ab-4b38-91d6-2da07d58f596.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］清風靈葫.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］滿貫丹",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-f56a0302-9af3-44d8-aa14-65e7c4a97b62.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］滿貫丹.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］潮汐秘境通行證",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-9e375c5b-437d-411d-8be7-e65b552bda6f.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］潮汐秘境通行證.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］火霞刀",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-fe9e2e8c-66bc-4128-ace3-8e06d802d45e.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］火霞刀.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］災獸之魂",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-628b3c62-edab-4641-bdc2-0c5f3e490b55.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］災獸之魂.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］無心之石",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-3f7eda53-b74f-472e-b5d4-2952365785ec.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］無心之石.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］爆爆煙花",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-4e992a33-5f1d-4c07-9459-d3081877a2b0.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］爆爆煙花.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］獸技秘卷",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-3bbf3350-58b1-4189-ac66-9e2a27fcc840.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］獸技秘卷.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］獸牙護符",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-6a750164-a985-49ab-b8b6-02c1914cdbe2.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］獸牙護符.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］獸靈果丹",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-824af11d-97dd-403f-8bc8-83f9fe0bd107.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］獸靈果丹.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］玄川劍穗",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-78edffb1-5271-4f86-ad56-947699d6abea.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］玄川劍穗.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］玄川的護身符",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-92371c94-758d-46ec-bfa5-64cf3439fbbd.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］玄川的護身符.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］玄心道袍",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-2c70ce31-8249-4d89-abbc-53070994661d.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］玄心道袍.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］玄機靈傘",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-e77a2c24-d2fe-400a-9e94-769c677168dc.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］玄機靈傘.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］疾獸鈴",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-86732ca8-8bf6-4222-b184-7afec11150b0.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］疾獸鈴.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］破勢訣",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-2b2b33ab-780d-468a-b96a-cdcce79a1371.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］破勢訣.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］破境一擊",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-2f898ebe-fe65-4598-ac7d-a36aefd5e24c.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］破境一擊.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］破境拳套",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-37f377d8-2553-42b2-b9a7-8f76da073fc0.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］破境拳套.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］破境項鍊",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-af6ceff3-a9b8-46bc-88f7-5e0bd361a13a.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］破境項鍊.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］破天戰佩",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-fbfb82b7-a89b-4a90-b73c-c9771c5dacb8.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］破天戰佩.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］破天獸牙",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-e5bb2a0f-88e7-4239-8bb8-c569b0213689.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］破天獸牙.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］破軍刀",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-56e8310f-00fd-488a-b07f-ebf92f980247.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］破軍刀.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］神秘奇藥",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-7c5f3109-a885-4ce2-a319-6bd805a49545.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］神秘奇藥.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］神秘妖物蛋",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-52f230e5-36f6-4497-8959-f0a52725cd63.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］神秘妖物蛋.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］神秘粉末",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-7840286d-70d0-43e1-9549-b7c40ba5fefa.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］神秘粉末.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］秘術弓",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-0df81d03-58b1-405a-8cc7-0838e1785ce4.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］秘術弓.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］節能粉",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-6cfe48ad-3d7f-4d2c-a14e-132cc9c3b00b.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］節能粉.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］納靈葫蘆",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-4b3051ff-cce8-42e5-8ce1-67a6c97b24fa.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］納靈葫蘆.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］綜合一階素材箱",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-7804a2bf-2f4d-46d2-a377-d761490a53b9.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］綜合一階素材箱.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］綜合二階素材箱",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-11b735f1-999c-4684-9b87-01bafe9a5492.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］綜合二階素材箱.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］自選一階妖物素材箱",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-520c0aa8-2be3-4528-820a-fbdcccbb9956.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］自選一階妖物素材箱.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］自選一階材料箱",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-f16cfb6d-45c7-4e89-9cb2-e3d33cb9d91b.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］自選一階材料箱.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］自選一階礦物箱",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-0b2ac608-236d-49f0-bf1f-6b725685cafd.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］自選一階礦物箱.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］自選二階妖物素材箱",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-78fd7f09-8fdf-4b30-86b2-9e9c387316f7.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］自選二階妖物素材箱.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］自選二階材料箱",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-b54614cc-5fa8-419b-8582-96260e68c9f5.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］自選二階材料箱.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］自選二階素材箱",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-29b0e104-5cac-41e6-a65f-9b123a423c50.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］自選二階素材箱.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］自選晶石箱",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-66cba29a-a258-4738-9b05-da7f9a261060.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］自選晶石箱.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］自選護體丹箱",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-1901447b-95f0-4813-86d8-8a1213ff3454.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］自選護體丹箱.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］良護藥劑",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-36728cb2-1685-418e-a0f0-df252f4dc093.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］良護藥劑.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］萬獸徽記",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-34da3be1-cf61-4db4-b998-7c2503d4693d.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］萬獸徽記.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］萬獸檯傳送令牌",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-f2a03ef9-2d76-49c0-9f05-f62648ad2759.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］萬獸檯傳送令牌.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］萬獸靈環",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-d91597a9-b8e2-4ec9-b074-781f331c3120.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］萬獸靈環.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］萬靈藥水",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-97e812a6-a640-4cbc-b9d3-7470fabbe8af.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］萬靈藥水.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］萬靈道珠",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-6c776af5-9858-465a-9686-9b2332948df5.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］萬靈道珠.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］藏寶圖",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-e775aa20-8859-46de-be4e-818542c9825c.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］藏寶圖.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］護獸靈甲",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-2894dd8d-8b00-449f-891a-4423b37c0ab8.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］護獸靈甲.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］踏虛靈履",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-2ce33256-d8ea-4a42-82c6-cb512febfe78.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］踏虛靈履.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］逆境訣",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-0cff80cf-4053-40b0-8d15-e850a28bc077.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］逆境訣.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］逐星弓",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-78f0f63b-b1f0-44b5-a326-c04ff8f16ab8.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］逐星弓.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］道心靈墜",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-f2d82e8a-25c4-46bb-be3d-09b5b7bf1576.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］道心靈墜.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］鎮岳錘",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-ffb3af49-8e33-4431-9749-d40e12c1459f.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］鎮岳錘.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］鑄造台",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-c7471f3a-c666-4810-bfa2-8e82a8b90149.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］鑄造台.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］長右之心",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-30374732-883c-494c-931d-b660ccd5f0ef.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］長右之心.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］隨機功法書",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-a1553b44-3c2e-46a4-812a-84ce631e837c.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］隨機功法書.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］靈契玉",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-dfb733bd-1be5-47c0-bd11-c316d9e6b331.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］靈契玉.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］靈水傘",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-559f6969-8cd1-4112-8c69-6c40f62984e3.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］靈水傘.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］靈水劍",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-f0ff3a3b-ec15-4862-bb29-9ad4663bec10.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］靈水劍.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］靈獸露丹",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-e9c6e3fc-c396-4092-ad7d-77d323b5e8cc.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］靈獸露丹.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］靈獸頸環",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-39fd4547-4dfb-4fc6-96ce-b595b2df80ff.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］靈獸頸環.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］青羽箭飾",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-918c5394-40b4-481d-b49d-e55d6f8ae7a5.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］青羽箭飾.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［特殊］鹿絞槍",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-c4214727-9d6a-4e1c-a817-ee8b9c8cb5cc.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［特殊］鹿絞槍.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［高階］氣血藥水",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-0bf41ab4-c9ec-490f-b67e-5e420f04028f.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［高階］氣血藥水.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［高階］綜合藥水",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-a21172e4-ecb5-404f-b2cc-8474f75d62c6.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［高階］綜合藥水.png",
+    "method": "built-in imagegen"
+  },
+  {
+    "name": "［高階］靈力藥水",
+    "source": "C:/Users/User/.codex/generated_images/01a0fe64-95aa-7260-ba13-9d565c3bee39/exec-4c170345-fc65-45d6-a99d-a6bf503b1200.png",
+    "file": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品獨立美術_2026-10-18\\［高階］靈力藥水.png",
+    "method": "built-in imagegen"
+  }
+]

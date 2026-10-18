@@ -6,6 +6,7 @@ baseline=json.loads((P/'baseline.json').read_text('utf8'))
 assets=R/'新增美術_2026-10-16'
 art={k:assets/v for k,v in {'長右':'災獸長右_完整透明立繪.png','財寶怨靈':'財寶怨靈_完整透明立繪.png','燐火狼':'燐火狼_完整透明立繪.png','硬黑蠍':'硬黑蠍_完整透明立繪.png','靈珠蝶':'靈珠蝶_完整透明立繪.png','陸刑舟':'陸刑舟_完整透明立繪.png','陸景和':'陸景和_完整透明立繪.png','黑衣人01':'黑衣人01_完整透明立繪.png','黑衣人02':'黑衣人02_完整透明立繪.png','黑衣人03':'黑衣人03_完整透明立繪.png','黑潮禁岸':'黑潮禁岸_地圖場景.png','深窟':'雷鳴沼地下深窟_地圖場景.png','黑潮戰鬥':'黑潮禁岸_戰鬥背景.png','深窟戰鬥':'雷鳴沼地下深窟_戰鬥背景.png'}.items()}
 hooks=[
+ ("function speed(){return S?.settings?.battleSpeed===1.5?1.5:1;}","function speed(){return battle?.jz073PlotLoss||battle?.jz18Speed===1?1:S?.settings?.battleSpeed===1.5?1.5:1;}"),
  ("function startQueue(b){b.jzQueue=[...b.playerTeam,...b.enemyTeam].filter(f=>f.hp>0).sort((a,c)=>engine.stat(c,'agi')-engine.stat(a,'agi'));b.jzIndex=0;}","function startQueue(b){b.jzQueue=[...b.playerTeam,...b.enemyTeam].filter(f=>f.hp>0).sort((a,c)=>engine.stat(c,'agi')-engine.stat(a,'agi'));if(b.jz073PlotB||b.jz073PlotA)b.jzQueue.sort((a,c)=>Number(!!(c.jz073PlotB||c.jz073PlotA))-Number(!!(a.jz073PlotB||a.jz073PlotA)));b.jzIndex=0;}"),
  ("const a=selected?.length?(r.repeatTargets?selected:[...new Set(selected)]).filter(x=>p.includes(x)):p.slice(0,cap);", "const a=selected?.length?(r.repeatTargets?selected:[...new Set(selected)]).filter(x=>p.includes(x)):(globalThis.JZ073?.randomTargets(b,f,r,p,cap)??p.slice(0,cap));"),
  ("function add(b,a,t,op){if(!alive(t))return false;", "function add(b,a,t,op){if(!alive(t)||globalThis.JZ073?.preventStatus(b,a,t,op))return false;"),
@@ -31,10 +32,10 @@ def apply(text,standalone):
  code+='<script id="jz073-assets">window.JZ073_ART='+json.dumps(images,ensure_ascii=False).replace('</','<\\/')+';</script>\n'
  materials={v.stem:('data:image/png;base64,'+base64.b64encode(v.read_bytes()).decode() if standalone else '/素材美術_2026-10-18/'+v.name) for v in (R/'素材美術_2026-10-18').glob('*.png')}
  code+='<script id="jz073-material-assets">window.JZ073_MATERIAL_ART='+json.dumps(materials,ensure_ascii=False).replace('</','<\\/')+';</script>\n'
- for folder,key in [('物品美術_2026-10-18','JZ073_ITEM_ART'),('人物全身_2026-10-18','JZ073_FULLBODY_ART')]:
+ for folder,key in [('物品美術_2026-10-18','JZ073_ITEM_ART'),('人物全身_2026-10-18','JZ073_FULLBODY_ART'),('物品獨立美術_2026-10-18','JZ073_ITEM_UNIQUE_ART')]:
   pictures={v.stem:('data:image/png;base64,'+base64.b64encode(v.read_bytes()).decode() if standalone else '/'+folder+'/'+v.name) for v in (R/folder).glob('*.png')}
   code+='<script>window.'+key+'='+json.dumps(pictures,ensure_ascii=False).replace('</','<\\/')+';</script>\n'
- for name in ['core','economy','monsters','combat','story-data','humans','quests','world','commissions','pets','codex','ui','completion','clarifications','b-data','b-story','a-data','a-story','npc-generation','test-entry','side1018-data','side1018','material1018','pet-cores1018','pet1018','status1018','release1018','save-recovery1018','revision-world1018','revision-items1018','revision-codex1018','revision-help1018','revision-boss1018','revision-finish1018']:
+ for name in ['core','economy','monsters','combat','story-data','humans','quests','world','commissions','pets','codex','ui','completion','clarifications','b-data','b-story','a-data','a-story','npc-generation','test-entry','side1018-data','side1018','material1018','pet-cores1018','pet1018','status1018','release1018','save-recovery1018','revision-world1018','revision-items1018','revision-codex1018','revision-help1018','revision-boss1018','revision-finish1018','review18-fixes','review18-art']:
   f=P/(name+'.js')
   if f.exists():code+='<script id="jz073-'+name+'">'+f.read_text('utf8')+'</script>\n'
  return text+code

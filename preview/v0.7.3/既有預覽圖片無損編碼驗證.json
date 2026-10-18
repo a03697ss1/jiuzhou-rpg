@@ -1,0 +1,1232 @@
+{
+  "pass": true,
+  "rows": [
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品美術_2026-10-18\\刻紋石.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\item-assets\\刻紋石.webp",
+      "target": "item-assets",
+      "name": "刻紋石.png",
+      "originalBytes": 1713501,
+      "webBytes": 1021802,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品美術_2026-10-18\\刀穗.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\item-assets\\刀穗.webp",
+      "target": "item-assets",
+      "name": "刀穗.png",
+      "originalBytes": 1035711,
+      "webBytes": 701268,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品美術_2026-10-18\\寶珠.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\item-assets\\寶珠.webp",
+      "target": "item-assets",
+      "name": "寶珠.png",
+      "originalBytes": 1494305,
+      "webBytes": 1035348,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品美術_2026-10-18\\命符.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\item-assets\\命符.webp",
+      "target": "item-assets",
+      "name": "命符.png",
+      "originalBytes": 1204888,
+      "webBytes": 829656,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品美術_2026-10-18\\手串.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\item-assets\\手串.webp",
+      "target": "item-assets",
+      "name": "手串.png",
+      "originalBytes": 858581,
+      "webBytes": 583324,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品美術_2026-10-18\\戰旗.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\item-assets\\戰旗.webp",
+      "target": "item-assets",
+      "name": "戰旗.png",
+      "originalBytes": 1225842,
+      "webBytes": 858378,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品美術_2026-10-18\\手帕.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\item-assets\\手帕.webp",
+      "target": "item-assets",
+      "name": "手帕.png",
+      "originalBytes": 1680274,
+      "webBytes": 1007102,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品美術_2026-10-18\\書冊.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\item-assets\\書冊.webp",
+      "target": "item-assets",
+      "name": "書冊.png",
+      "originalBytes": 2183152,
+      "webBytes": 1400168,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品美術_2026-10-18\\木槌.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\item-assets\\木槌.webp",
+      "target": "item-assets",
+      "name": "木槌.png",
+      "originalBytes": 1016371,
+      "webBytes": 608948,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品美術_2026-10-18\\棋子.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\item-assets\\棋子.webp",
+      "target": "item-assets",
+      "name": "棋子.png",
+      "originalBytes": 1199988,
+      "webBytes": 761966,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品美術_2026-10-18\\木雕.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\item-assets\\木雕.webp",
+      "target": "item-assets",
+      "name": "木雕.png",
+      "originalBytes": 1840846,
+      "webBytes": 1204288,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品美術_2026-10-18\\棋盤.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\item-assets\\棋盤.webp",
+      "target": "item-assets",
+      "name": "棋盤.png",
+      "originalBytes": 1445916,
+      "webBytes": 939404,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品美術_2026-10-18\\煙斗.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\item-assets\\煙斗.webp",
+      "target": "item-assets",
+      "name": "煙斗.png",
+      "originalBytes": 1488589,
+      "webBytes": 410150,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品美術_2026-10-18\\畫卷.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\item-assets\\畫卷.webp",
+      "target": "item-assets",
+      "name": "畫卷.png",
+      "originalBytes": 1863513,
+      "webBytes": 1193218,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品美術_2026-10-18\\禮盒.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\item-assets\\禮盒.webp",
+      "target": "item-assets",
+      "name": "禮盒.png",
+      "originalBytes": 2351770,
+      "webBytes": 1614628,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品美術_2026-10-18\\竹籃.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\item-assets\\竹籃.webp",
+      "target": "item-assets",
+      "name": "竹籃.png",
+      "originalBytes": 1430391,
+      "webBytes": 901950,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品美術_2026-10-18\\算盤.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\item-assets\\算盤.webp",
+      "target": "item-assets",
+      "name": "算盤.png",
+      "originalBytes": 2191740,
+      "webBytes": 1052048,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品美術_2026-10-18\\糕點.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\item-assets\\糕點.webp",
+      "target": "item-assets",
+      "name": "糕點.png",
+      "originalBytes": 1491474,
+      "webBytes": 1070352,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品美術_2026-10-18\\糖葫蘆.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\item-assets\\糖葫蘆.webp",
+      "target": "item-assets",
+      "name": "糖葫蘆.png",
+      "originalBytes": 694165,
+      "webBytes": 500566,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品美術_2026-10-18\\紙鳶.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\item-assets\\紙鳶.webp",
+      "target": "item-assets",
+      "name": "紙鳶.png",
+      "originalBytes": 1408443,
+      "webBytes": 940640,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品美術_2026-10-18\\紙鶴.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\item-assets\\紙鶴.webp",
+      "target": "item-assets",
+      "name": "紙鶴.png",
+      "originalBytes": 1133636,
+      "webBytes": 707430,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品美術_2026-10-18\\花燈.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\item-assets\\花燈.webp",
+      "target": "item-assets",
+      "name": "花燈.png",
+      "originalBytes": 953126,
+      "webBytes": 640474,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品美術_2026-10-18\\花束.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\item-assets\\花束.webp",
+      "target": "item-assets",
+      "name": "花束.png",
+      "originalBytes": 1544101,
+      "webBytes": 1083638,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品美術_2026-10-18\\茶壺.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\item-assets\\茶壺.webp",
+      "target": "item-assets",
+      "name": "茶壺.png",
+      "originalBytes": 1467580,
+      "webBytes": 970280,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品美術_2026-10-18\\茶杯.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\item-assets\\茶杯.webp",
+      "target": "item-assets",
+      "name": "茶杯.png",
+      "originalBytes": 1415500,
+      "webBytes": 908182,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品美術_2026-10-18\\茶葉.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\item-assets\\茶葉.webp",
+      "target": "item-assets",
+      "name": "茶葉.png",
+      "originalBytes": 1186834,
+      "webBytes": 752944,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品美術_2026-10-18\\葫蘆.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\item-assets\\葫蘆.webp",
+      "target": "item-assets",
+      "name": "葫蘆.png",
+      "originalBytes": 1432412,
+      "webBytes": 991974,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品美術_2026-10-18\\藥瓶.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\item-assets\\藥瓶.webp",
+      "target": "item-assets",
+      "name": "藥瓶.png",
+      "originalBytes": 1430678,
+      "webBytes": 988866,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品美術_2026-10-18\\護符.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\item-assets\\護符.webp",
+      "target": "item-assets",
+      "name": "護符.png",
+      "originalBytes": 1050741,
+      "webBytes": 686104,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品美術_2026-10-18\\護腕.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\item-assets\\護腕.webp",
+      "target": "item-assets",
+      "name": "護腕.png",
+      "originalBytes": 1839930,
+      "webBytes": 755718,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品美術_2026-10-18\\貝雕.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\item-assets\\貝雕.webp",
+      "target": "item-assets",
+      "name": "貝雕.png",
+      "originalBytes": 1119235,
+      "webBytes": 747716,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品美術_2026-10-18\\酒壺.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\item-assets\\酒壺.webp",
+      "target": "item-assets",
+      "name": "酒壺.png",
+      "originalBytes": 1485459,
+      "webBytes": 994968,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品美術_2026-10-18\\鈴鐺.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\item-assets\\鈴鐺.webp",
+      "target": "item-assets",
+      "name": "鈴鐺.png",
+      "originalBytes": 1390151,
+      "webBytes": 922318,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品美術_2026-10-18\\銅錢.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\item-assets\\銅錢.webp",
+      "target": "item-assets",
+      "name": "銅錢.png",
+      "originalBytes": 1086354,
+      "webBytes": 741480,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品美術_2026-10-18\\鎮紙.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\item-assets\\鎮紙.webp",
+      "target": "item-assets",
+      "name": "鎮紙.png",
+      "originalBytes": 1694514,
+      "webBytes": 664114,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品美術_2026-10-18\\錢袋.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\item-assets\\錢袋.webp",
+      "target": "item-assets",
+      "name": "錢袋.png",
+      "originalBytes": 2525221,
+      "webBytes": 1629194,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品美術_2026-10-18\\錦袋.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\item-assets\\錦袋.webp",
+      "target": "item-assets",
+      "name": "錦袋.png",
+      "originalBytes": 2514471,
+      "webBytes": 1632712,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品美術_2026-10-18\\靈印.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\item-assets\\靈印.webp",
+      "target": "item-assets",
+      "name": "靈印.png",
+      "originalBytes": 1353943,
+      "webBytes": 818640,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品美術_2026-10-18\\靈獸之骨.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\item-assets\\靈獸之骨.webp",
+      "target": "item-assets",
+      "name": "靈獸之骨.png",
+      "originalBytes": 1155373,
+      "webBytes": 735384,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品美術_2026-10-18\\風車.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\item-assets\\風車.webp",
+      "target": "item-assets",
+      "name": "風車.png",
+      "originalBytes": 1268558,
+      "webBytes": 843952,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品美術_2026-10-18\\香囊.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\item-assets\\香囊.webp",
+      "target": "item-assets",
+      "name": "香囊.png",
+      "originalBytes": 2036460,
+      "webBytes": 1303250,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品美術_2026-10-18\\香盒.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\item-assets\\香盒.webp",
+      "target": "item-assets",
+      "name": "香盒.png",
+      "originalBytes": 1255333,
+      "webBytes": 822862,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品美術_2026-10-18\\髮帶.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\item-assets\\髮帶.webp",
+      "target": "item-assets",
+      "name": "髮帶.png",
+      "originalBytes": 1311117,
+      "webBytes": 819442,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品美術_2026-10-18\\髮簪.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\item-assets\\髮簪.webp",
+      "target": "item-assets",
+      "name": "髮簪.png",
+      "originalBytes": 694287,
+      "webBytes": 435360,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\物品美術_2026-10-18\\黑珠.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\item-assets\\黑珠.webp",
+      "target": "item-assets",
+      "name": "黑珠.png",
+      "originalBytes": 1124973,
+      "webBytes": 760772,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\光晶石.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\material-assets\\光晶石.webp",
+      "target": "material-assets",
+      "name": "光晶石.png",
+      "originalBytes": 1284700,
+      "webBytes": 904060,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\凝露花.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\material-assets\\凝露花.webp",
+      "target": "material-assets",
+      "name": "凝露花.png",
+      "originalBytes": 1222988,
+      "webBytes": 810840,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\凝魂砂.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\material-assets\\凝魂砂.webp",
+      "target": "material-assets",
+      "name": "凝魂砂.png",
+      "originalBytes": 1095848,
+      "webBytes": 757748,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\利爪.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\material-assets\\利爪.webp",
+      "target": "material-assets",
+      "name": "利爪.png",
+      "originalBytes": 1245945,
+      "webBytes": 786250,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\土晶石.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\material-assets\\土晶石.webp",
+      "target": "material-assets",
+      "name": "土晶石.png",
+      "originalBytes": 1721274,
+      "webBytes": 1167700,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\妖丹.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\material-assets\\妖丹.webp",
+      "target": "material-assets",
+      "name": "妖丹.png",
+      "originalBytes": 1554698,
+      "webBytes": 1110348,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\妖丹粉末.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\material-assets\\妖丹粉末.webp",
+      "target": "material-assets",
+      "name": "妖丹粉末.png",
+      "originalBytes": 1358122,
+      "webBytes": 994080,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\妖丹精華.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\material-assets\\妖丹精華.webp",
+      "target": "material-assets",
+      "name": "妖丹精華.png",
+      "originalBytes": 762815,
+      "webBytes": 559904,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\妖獸精血.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\material-assets\\妖獸精血.webp",
+      "target": "material-assets",
+      "name": "妖獸精血.png",
+      "originalBytes": 1069693,
+      "webBytes": 744504,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\妖血精華.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\material-assets\\妖血精華.webp",
+      "target": "material-assets",
+      "name": "妖血精華.png",
+      "originalBytes": 837764,
+      "webBytes": 569850,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\妖魂碎片.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\material-assets\\妖魂碎片.webp",
+      "target": "material-assets",
+      "name": "妖魂碎片.png",
+      "originalBytes": 1274435,
+      "webBytes": 891562,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\妖鳥羽.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\material-assets\\妖鳥羽.webp",
+      "target": "material-assets",
+      "name": "妖鳥羽.png",
+      "originalBytes": 1372243,
+      "webBytes": 859924,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\導靈粉.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\material-assets\\導靈粉.webp",
+      "target": "material-assets",
+      "name": "導靈粉.png",
+      "originalBytes": 1166752,
+      "webBytes": 782094,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\暗晶石.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\material-assets\\暗晶石.webp",
+      "target": "material-assets",
+      "name": "暗晶石.png",
+      "originalBytes": 1370142,
+      "webBytes": 842428,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\木晶石.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\material-assets\\木晶石.webp",
+      "target": "material-assets",
+      "name": "木晶石.png",
+      "originalBytes": 1621627,
+      "webBytes": 1097226,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\梨草.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\material-assets\\梨草.webp",
+      "target": "material-assets",
+      "name": "梨草.png",
+      "originalBytes": 1107587,
+      "webBytes": 715184,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\楊木.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\material-assets\\楊木.webp",
+      "target": "material-assets",
+      "name": "楊木.png",
+      "originalBytes": 1407891,
+      "webBytes": 883878,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\殘缺妖丹.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\material-assets\\殘缺妖丹.webp",
+      "target": "material-assets",
+      "name": "殘缺妖丹.png",
+      "originalBytes": 1319258,
+      "webBytes": 983238,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\殘魂.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\material-assets\\殘魂.webp",
+      "target": "material-assets",
+      "name": "殘魂.png",
+      "originalBytes": 972964,
+      "webBytes": 653566,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\毒囊.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\material-assets\\毒囊.webp",
+      "target": "material-assets",
+      "name": "毒囊.png",
+      "originalBytes": 1111207,
+      "webBytes": 728580,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\水晶石.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\material-assets\\水晶石.webp",
+      "target": "material-assets",
+      "name": "水晶石.png",
+      "originalBytes": 1365630,
+      "webBytes": 985542,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\濃縮妖血.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\material-assets\\濃縮妖血.webp",
+      "target": "material-assets",
+      "name": "濃縮妖血.png",
+      "originalBytes": 1123978,
+      "webBytes": 788490,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\濃靈血精.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\material-assets\\濃靈血精.webp",
+      "target": "material-assets",
+      "name": "濃靈血精.png",
+      "originalBytes": 1210331,
+      "webBytes": 841096,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\火尾毛.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\material-assets\\火尾毛.webp",
+      "target": "material-assets",
+      "name": "火尾毛.png",
+      "originalBytes": 1671013,
+      "webBytes": 998748,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\火晶石.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\material-assets\\火晶石.webp",
+      "target": "material-assets",
+      "name": "火晶石.png",
+      "originalBytes": 1220734,
+      "webBytes": 910728,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\狐毛.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\material-assets\\狐毛.webp",
+      "target": "material-assets",
+      "name": "狐毛.png",
+      "originalBytes": 1840524,
+      "webBytes": 1144482,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\獸牙.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\material-assets\\獸牙.webp",
+      "target": "material-assets",
+      "name": "獸牙.png",
+      "originalBytes": 1234277,
+      "webBytes": 785910,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\獸角.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\material-assets\\獸角.webp",
+      "target": "material-assets",
+      "name": "獸角.png",
+      "originalBytes": 969172,
+      "webBytes": 617690,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\獸骨.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\material-assets\\獸骨.webp",
+      "target": "material-assets",
+      "name": "獸骨.png",
+      "originalBytes": 935374,
+      "webBytes": 587398,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\獸骨粉.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\material-assets\\獸骨粉.webp",
+      "target": "material-assets",
+      "name": "獸骨粉.png",
+      "originalBytes": 1481422,
+      "webBytes": 971174,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\玄鐵.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\material-assets\\玄鐵.webp",
+      "target": "material-assets",
+      "name": "玄鐵.png",
+      "originalBytes": 1824082,
+      "webBytes": 1195674,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\玄靈鐵錠.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\material-assets\\玄靈鐵錠.webp",
+      "target": "material-assets",
+      "name": "玄靈鐵錠.png",
+      "originalBytes": 1453537,
+      "webBytes": 946288,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\玉葉果.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\material-assets\\玉葉果.webp",
+      "target": "material-assets",
+      "name": "玉葉果.png",
+      "originalBytes": 1381512,
+      "webBytes": 888288,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\百年靈草.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\material-assets\\百年靈草.webp",
+      "target": "material-assets",
+      "name": "百年靈草.png",
+      "originalBytes": 1625192,
+      "webBytes": 1063392,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\破布.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\material-assets\\破布.webp",
+      "target": "material-assets",
+      "name": "破布.png",
+      "originalBytes": 1690710,
+      "webBytes": 1014162,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\皮毛.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\material-assets\\皮毛.webp",
+      "target": "material-assets",
+      "name": "皮毛.png",
+      "originalBytes": 1793001,
+      "webBytes": 1094984,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\硬獸骨.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\material-assets\\硬獸骨.webp",
+      "target": "material-assets",
+      "name": "硬獸骨.png",
+      "originalBytes": 1388472,
+      "webBytes": 860376,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\硬蟲甲.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\material-assets\\硬蟲甲.webp",
+      "target": "material-assets",
+      "name": "硬蟲甲.png",
+      "originalBytes": 1436070,
+      "webBytes": 945586,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\硬骨板.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\material-assets\\硬骨板.webp",
+      "target": "material-assets",
+      "name": "硬骨板.png",
+      "originalBytes": 1502027,
+      "webBytes": 985068,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\碧木芯.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\material-assets\\碧木芯.webp",
+      "target": "material-assets",
+      "name": "碧木芯.png",
+      "originalBytes": 1717186,
+      "webBytes": 1124126,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\碧綠木.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\material-assets\\碧綠木.webp",
+      "target": "material-assets",
+      "name": "碧綠木.png",
+      "originalBytes": 2027108,
+      "webBytes": 1317432,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\碧萃枝.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\material-assets\\碧萃枝.webp",
+      "target": "material-assets",
+      "name": "碧萃枝.png",
+      "originalBytes": 993089,
+      "webBytes": 643328,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\精靈液.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\material-assets\\精靈液.webp",
+      "target": "material-assets",
+      "name": "精靈液.png",
+      "originalBytes": 941623,
+      "webBytes": 645528,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\精草.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\material-assets\\精草.webp",
+      "target": "material-assets",
+      "name": "精草.png",
+      "originalBytes": 1321949,
+      "webBytes": 841978,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\脆脆果.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\material-assets\\脆脆果.webp",
+      "target": "material-assets",
+      "name": "脆脆果.png",
+      "originalBytes": 1160589,
+      "webBytes": 828740,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\藥草.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\material-assets\\藥草.webp",
+      "target": "material-assets",
+      "name": "藥草.png",
+      "originalBytes": 1567474,
+      "webBytes": 1042822,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\蛇鱗.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\material-assets\\蛇鱗.webp",
+      "target": "material-assets",
+      "name": "蛇鱗.png",
+      "originalBytes": 1615218,
+      "webBytes": 1046716,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\蛛絲.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\material-assets\\蛛絲.webp",
+      "target": "material-assets",
+      "name": "蛛絲.png",
+      "originalBytes": 1609308,
+      "webBytes": 908592,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\蛟鱗.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\material-assets\\蛟鱗.webp",
+      "target": "material-assets",
+      "name": "蛟鱗.png",
+      "originalBytes": 1545712,
+      "webBytes": 1040340,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\雀羽.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\material-assets\\雀羽.webp",
+      "target": "material-assets",
+      "name": "雀羽.png",
+      "originalBytes": 1442294,
+      "webBytes": 841218,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\赤銅礦.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\material-assets\\赤銅礦.webp",
+      "target": "material-assets",
+      "name": "赤銅礦.png",
+      "originalBytes": 1917674,
+      "webBytes": 1349144,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\雷晶石.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\material-assets\\雷晶石.webp",
+      "target": "material-assets",
+      "name": "雷晶石.png",
+      "originalBytes": 1472535,
+      "webBytes": 986868,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\雷角.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\material-assets\\雷角.webp",
+      "target": "material-assets",
+      "name": "雷角.png",
+      "originalBytes": 684176,
+      "webBytes": 427244,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\靈原鐵.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\material-assets\\靈原鐵.webp",
+      "target": "material-assets",
+      "name": "靈原鐵.png",
+      "originalBytes": 2099787,
+      "webBytes": 1394656,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\靈木.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\material-assets\\靈木.webp",
+      "target": "material-assets",
+      "name": "靈木.png",
+      "originalBytes": 1528086,
+      "webBytes": 975788,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\靈果.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\material-assets\\靈果.webp",
+      "target": "material-assets",
+      "name": "靈果.png",
+      "originalBytes": 1259223,
+      "webBytes": 816012,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\靈楊木板.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\material-assets\\靈楊木板.webp",
+      "target": "material-assets",
+      "name": "靈楊木板.png",
+      "originalBytes": 1477780,
+      "webBytes": 881864,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\靈粉.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\material-assets\\靈粉.webp",
+      "target": "material-assets",
+      "name": "靈粉.png",
+      "originalBytes": 1170911,
+      "webBytes": 797720,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\靈石.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\material-assets\\靈石.webp",
+      "target": "material-assets",
+      "name": "靈石.png",
+      "originalBytes": 1239020,
+      "webBytes": 857250,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\靈草.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\material-assets\\靈草.webp",
+      "target": "material-assets",
+      "name": "靈草.png",
+      "originalBytes": 820209,
+      "webBytes": 523798,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\靈藥粉.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\material-assets\\靈藥粉.webp",
+      "target": "material-assets",
+      "name": "靈藥粉.png",
+      "originalBytes": 1372817,
+      "webBytes": 865714,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\靈鐵錠.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\material-assets\\靈鐵錠.webp",
+      "target": "material-assets",
+      "name": "靈鐵錠.png",
+      "originalBytes": 1357100,
+      "webBytes": 853362,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\靈露.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\material-assets\\靈露.webp",
+      "target": "material-assets",
+      "name": "靈露.png",
+      "originalBytes": 1198384,
+      "webBytes": 778062,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\青紋藤.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\material-assets\\青紋藤.webp",
+      "target": "material-assets",
+      "name": "青紋藤.png",
+      "originalBytes": 1210415,
+      "webBytes": 766398,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\風晶石.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\material-assets\\風晶石.webp",
+      "target": "material-assets",
+      "name": "風晶石.png",
+      "originalBytes": 1160117,
+      "webBytes": 724790,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\魂粉.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\material-assets\\魂粉.webp",
+      "target": "material-assets",
+      "name": "魂粉.png",
+      "originalBytes": 1085666,
+      "webBytes": 705806,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\黑蠍甲.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\material-assets\\黑蠍甲.webp",
+      "target": "material-assets",
+      "name": "黑蠍甲.png",
+      "originalBytes": 1585777,
+      "webBytes": 1015620,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\龜甲片.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\material-assets\\龜甲片.webp",
+      "target": "material-assets",
+      "name": "龜甲片.png",
+      "originalBytes": 1466965,
+      "webBytes": 943864,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\素材美術_2026-10-18\\龜殼.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\material-assets\\龜殼.webp",
+      "target": "material-assets",
+      "name": "龜殼.png",
+      "originalBytes": 1642742,
+      "webBytes": 1033558,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\人物全身_2026-10-18\\少年.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\fullbody-assets\\少年.webp",
+      "target": "fullbody-assets",
+      "name": "少年.png",
+      "originalBytes": 2483790,
+      "webBytes": 1307654,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\人物全身_2026-10-18\\少女.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\fullbody-assets\\少女.webp",
+      "target": "fullbody-assets",
+      "name": "少女.png",
+      "originalBytes": 2634384,
+      "webBytes": 1505492,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\人物全身_2026-10-18\\成男.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\fullbody-assets\\成男.webp",
+      "target": "fullbody-assets",
+      "name": "成男.png",
+      "originalBytes": 2682739,
+      "webBytes": 1506328,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\人物全身_2026-10-18\\成女.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\fullbody-assets\\成女.webp",
+      "target": "fullbody-assets",
+      "name": "成女.png",
+      "originalBytes": 2770313,
+      "webBytes": 1688748,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\人物全身_2026-10-18\\林夏于.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\fullbody-assets\\林夏于.webp",
+      "target": "fullbody-assets",
+      "name": "林夏于.png",
+      "originalBytes": 2890474,
+      "webBytes": 1631666,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\人物全身_2026-10-18\\柳清妍.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\fullbody-assets\\柳清妍.webp",
+      "target": "fullbody-assets",
+      "name": "柳清妍.png",
+      "originalBytes": 2828414,
+      "webBytes": 1656634,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\人物全身_2026-10-18\\沈玄川.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\fullbody-assets\\沈玄川.webp",
+      "target": "fullbody-assets",
+      "name": "沈玄川.png",
+      "originalBytes": 2712230,
+      "webBytes": 1518796,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\人物全身_2026-10-18\\邱山河.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\fullbody-assets\\邱山河.webp",
+      "target": "fullbody-assets",
+      "name": "邱山河.png",
+      "originalBytes": 2861874,
+      "webBytes": 1589856,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\新增美術_2026-10-16\\災獸長右_完整透明立繪.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\new-assets\\災獸長右_完整透明立繪.webp",
+      "target": "new-assets",
+      "name": "災獸長右_完整透明立繪.png",
+      "originalBytes": 3199198,
+      "webBytes": 1919072,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\新增美術_2026-10-16\\燐火狼_完整透明立繪.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\new-assets\\燐火狼_完整透明立繪.webp",
+      "target": "new-assets",
+      "name": "燐火狼_完整透明立繪.png",
+      "originalBytes": 2461689,
+      "webBytes": 1189398,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\新增美術_2026-10-16\\硬黑蠍_完整透明立繪.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\new-assets\\硬黑蠍_完整透明立繪.webp",
+      "target": "new-assets",
+      "name": "硬黑蠍_完整透明立繪.png",
+      "originalBytes": 1780141,
+      "webBytes": 1117762,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\新增美術_2026-10-16\\財寶怨靈_完整透明立繪.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\new-assets\\財寶怨靈_完整透明立繪.webp",
+      "target": "new-assets",
+      "name": "財寶怨靈_完整透明立繪.png",
+      "originalBytes": 2557162,
+      "webBytes": 1384408,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\新增美術_2026-10-16\\陸景和_完整透明立繪.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\new-assets\\陸景和_完整透明立繪.webp",
+      "target": "new-assets",
+      "name": "陸景和_完整透明立繪.png",
+      "originalBytes": 2447605,
+      "webBytes": 1206644,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\新增美術_2026-10-16\\陸刑舟_完整透明立繪.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\new-assets\\陸刑舟_完整透明立繪.webp",
+      "target": "new-assets",
+      "name": "陸刑舟_完整透明立繪.png",
+      "originalBytes": 2537145,
+      "webBytes": 1312102,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\新增美術_2026-10-16\\雷鳴沼地下深窟_地圖場景.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\new-assets\\雷鳴沼地下深窟_地圖場景.webp",
+      "target": "new-assets",
+      "name": "雷鳴沼地下深窟_地圖場景.png",
+      "originalBytes": 3159616,
+      "webBytes": 2096292,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\新增美術_2026-10-16\\雷鳴沼地下深窟_戰鬥背景.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\new-assets\\雷鳴沼地下深窟_戰鬥背景.webp",
+      "target": "new-assets",
+      "name": "雷鳴沼地下深窟_戰鬥背景.png",
+      "originalBytes": 3120754,
+      "webBytes": 2106440,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\新增美術_2026-10-16\\靈珠蝶_完整透明立繪.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\new-assets\\靈珠蝶_完整透明立繪.webp",
+      "target": "new-assets",
+      "name": "靈珠蝶_完整透明立繪.png",
+      "originalBytes": 1904976,
+      "webBytes": 1241650,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\新增美術_2026-10-16\\黑潮禁岸_地圖場景.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\new-assets\\黑潮禁岸_地圖場景.webp",
+      "target": "new-assets",
+      "name": "黑潮禁岸_地圖場景.png",
+      "originalBytes": 3297770,
+      "webBytes": 2097670,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\新增美術_2026-10-16\\黑衣人01_完整透明立繪.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\new-assets\\黑衣人01_完整透明立繪.webp",
+      "target": "new-assets",
+      "name": "黑衣人01_完整透明立繪.png",
+      "originalBytes": 2208267,
+      "webBytes": 1011164,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\新增美術_2026-10-16\\黑衣人02_完整透明立繪.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\new-assets\\黑衣人02_完整透明立繪.webp",
+      "target": "new-assets",
+      "name": "黑衣人02_完整透明立繪.png",
+      "originalBytes": 2037602,
+      "webBytes": 818148,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\新增美術_2026-10-16\\黑潮禁岸_戰鬥背景.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\new-assets\\黑潮禁岸_戰鬥背景.webp",
+      "target": "new-assets",
+      "name": "黑潮禁岸_戰鬥背景.png",
+      "originalBytes": 3223931,
+      "webBytes": 2074606,
+      "visibleAndAlphaDifferences": 0
+    },
+    {
+      "source": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\新增美術_2026-10-16\\黑衣人03_完整透明立繪.png",
+      "web": "C:\\Users\\User\\OneDrive\\桌面\\九州修仙錄測試分之\\網頁美術_2026-10-18\\new-assets\\黑衣人03_完整透明立繪.webp",
+      "target": "new-assets",
+      "name": "黑衣人03_完整透明立繪.png",
+      "originalBytes": 2121194,
+      "webBytes": 994304,
+      "visibleAndAlphaDifferences": 0
+    }
+  ],
+  "originalBytes": 216926660,
+  "webBytes": 135414190,
+  "unchangedFormalAssets": true
+}

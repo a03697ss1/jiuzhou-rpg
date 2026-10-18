@@ -1,0 +1,4588 @@
+{
+  "funcs": {
+    "startBattle": "function(m){const out=start.apply(this,arguments);if(battle)battle.v071Place=S.place;return out;}",
+    "showBattle": "function(){const out=old.apply(this,arguments);N.bossWeather1018();return out;}",
+    "r58NpcInteraction": "function(){if(N.aLocked())return false;const out=fn.apply(this,arguments);if(name==='moveTo'&&!N.aGuiding&&!battle&&!N.flow){const key=keys.find(k=>qOf(k)&&!N.done(k)),p=key&&qOf(key).progress;if(key&&(key==='034A'&&p.phase==='travel'&&S.place==='青陽鎮'||key==='035A'&&p.phase==='travel'&&S.place==='落星谷'||key==='036A'&&p.phase==='travel'&&S.place==='雷鳴沼'))N.aResume(key);}return out;}",
+    "r58NpcDetails": "function(){if(N.aLocked())return false;const out=fn.apply(this,arguments);if(name==='moveTo'&&!N.aGuiding&&!battle&&!N.flow){const key=keys.find(k=>qOf(k)&&!N.done(k)),p=key&&qOf(key).progress;if(key&&(key==='034A'&&p.phase==='travel'&&S.place==='青陽鎮'||key==='035A'&&p.phase==='travel'&&S.place==='落星谷'||key==='036A'&&p.phase==='travel'&&S.place==='雷鳴沼'))N.aResume(key);}return out;}",
+    "r56OpenNpcTasks": "function(name){const out=npcTasks.apply(this,arguments);for(const d of N.side){const q=N.quest(d.id);if(q?.claimed&&!q.progress.sideComplete&&d.npc===name&&S.place===d.place&&N.sideEligible(d))document.getElementById('modalBody')?.insertAdjacentHTML('beforeend','<button onclick=\"JZ073.playSide1018(\\''+d.key+'\\')\">補讀完整［支線］'+d.title+'（不重複領獎）</button>');}return out;}",
+    "r56BeginOffer": "function(id){return N.def(id)?N.offer(id):begin.apply(this,arguments);}",
+    "r56ReportQuest": "function(id){return N.def(id)?N.reportStory(id):report.apply(this,arguments);}",
+    "r511Debug999": "function(){const out=debug.apply(this,arguments);const old=S.npcAffinity.蘇璃;S.npcAffinity.蘇璃=Math.max(old||0,50);r58Invite('蘇璃');S.npcAffinity.蘇璃=old;const p=S.partners.find(p=>p.name==='蘇璃');if(p){p.permanent=true;delete p.leaveAt;}R.save();return out;}"
+  },
+  "partners": [
+    {
+      "age": 25,
+      "sex": "女",
+      "realm": "練氣五層",
+      "quality": "普通",
+      "identity": "修士",
+      "roots": "水",
+      "personality": "溫柔",
+      "affinity": 0,
+      "romance": true,
+      "place": "落星谷",
+      "marital": "未婚",
+      "relation": "蘇項妹妹",
+      "gift": "1心：［初階］護體丹－水×1；4心：［特殊］萬靈藥水×1；7心：［特殊］半月水玉×1（紀念品）；10心：［特殊］水心靈墜×1",
+      "weapon": "扇",
+      "actions": [
+        "對話",
+        "贈禮",
+        "切磋",
+        "約會",
+        "表白",
+        "求婚",
+        "邀請同行",
+        "收取禮物"
+      ],
+      "hostile": [
+        "偷襲",
+        "搶奪"
+      ],
+      "maxhp": 322,
+      "maxmp": 213,
+      "atk": 23,
+      "dao": 36,
+      "def": 18,
+      "daoDef": 23,
+      "hit": 29,
+      "agi": 29,
+      "battlePower": 338,
+      "critRate": 5,
+      "critDamage": 150,
+      "effectHit": 100,
+      "effectResist": 110,
+      "equipment": {
+        "武器": "［初階］水舞扇",
+        "頭盔": "無",
+        "上衣": "無",
+        "下裝": "無",
+        "鞋": "無",
+        "項鍊": "［初階］靈紋項鍊",
+        "戒指": "［初階］青玉指環",
+        "配飾": "［初階］聚靈護符"
+      },
+      "skills": [
+        "［初階］定神扇舞",
+        "［初階］清心扇",
+        "［初階］折雲扇"
+      ],
+      "flow": "治療／輔助型",
+      "rootValues": {
+        "火": 1,
+        "水": 100,
+        "土": 1,
+        "木": 1,
+        "雷": 1,
+        "風": 1,
+        "光": 0,
+        "暗": 0
+      },
+      "name": "蘇璃",
+      "hp": 322,
+      "mp": 213,
+      "mainRoot": "水",
+      "permanent": true,
+      "tavern": false,
+      "partnerType": "臨時",
+      "tempKind": "invite",
+      "inTeam": false,
+      "deployed": false,
+      "exp": 0,
+      "jz072": {
+        "shared": {
+          "武器": "［初階］水舞扇",
+          "項鍊": "［初階］靈紋項鍊",
+          "戒指": "［初階］青玉指環",
+          "配飾": "［初階］聚靈護符"
+        },
+        "base": {
+          "maxhp": 302,
+          "maxmp": 166,
+          "atk": 20,
+          "dao": 27,
+          "def": 18,
+          "daoDef": 20,
+          "agi": 19,
+          "hit": 21
+        },
+        "intrinsic": {
+          "武": "［初階］水舞扇",
+          "戒": "［初階］青玉指環",
+          "項": "［初階］靈紋項鍊",
+          "飾": "［初階］聚靈護符"
+        },
+        "learned": [
+          "［初階］定神扇舞",
+          "［初階］清心扇",
+          "［初階］折雲扇"
+        ],
+        "equipmentOwned": true
+      },
+      "learnedTechniques": [
+        "［初階］定神扇舞",
+        "［初階］清心扇",
+        "［初階］折雲扇"
+      ],
+      "loadouts": [
+        {
+          "name": "配置1",
+          "skills": [
+            "［初階］定神扇舞",
+            "［初階］清心扇",
+            "［初階］折雲扇"
+          ]
+        },
+        {
+          "name": "配置2",
+          "skills": []
+        },
+        {
+          "name": "配置3",
+          "skills": []
+        }
+      ],
+      "activeLoadout": 0,
+      "techniques": [
+        "［初階］定神扇舞",
+        "［初階］清心扇",
+        "［初階］折雲扇"
+      ]
+    }
+  ],
+  "npcs": {
+    "阿禾": {
+      "age": 13,
+      "sex": "男",
+      "personality": "善良",
+      "place": "朝御城",
+      "portraitNumber": 1,
+      "identity": "平民",
+      "actions": [
+        "對話",
+        "任務／委託"
+      ],
+      "hostile": [],
+      "noAffinity": true
+    },
+    "寧寧": {
+      "age": 11,
+      "sex": "女",
+      "personality": "乖巧",
+      "place": "朝御城",
+      "portraitNumber": 5,
+      "identity": "平民",
+      "actions": [
+        "對話",
+        "任務／委託"
+      ],
+      "hostile": [],
+      "noAffinity": true
+    },
+    "小燕": {
+      "age": 9,
+      "sex": "女",
+      "personality": "好奇",
+      "place": "雷鳴沼",
+      "portraitNumber": 6,
+      "identity": "平民",
+      "actions": [
+        "對話",
+        "任務／委託"
+      ],
+      "hostile": [],
+      "noAffinity": true
+    },
+    "沈菜芳": {
+      "age": 46,
+      "sex": "女",
+      "personality": "膽小",
+      "place": "朝御城",
+      "portraitNumber": 15,
+      "identity": "平民",
+      "actions": [
+        "對話",
+        "任務／委託"
+      ],
+      "hostile": [],
+      "noAffinity": true
+    },
+    "陳蘭": {
+      "age": 81,
+      "sex": "女",
+      "personality": "正直",
+      "place": "朝御城",
+      "portraitNumber": 19,
+      "identity": "平民",
+      "actions": [
+        "對話",
+        "任務／委託"
+      ],
+      "hostile": [],
+      "noAffinity": true
+    },
+    "吳大海": {
+      "age": 40,
+      "sex": "男",
+      "personality": "活潑",
+      "place": "朝御城",
+      "portraitNumber": 11,
+      "identity": "平民",
+      "actions": [
+        "對話",
+        "任務／委託"
+      ],
+      "hostile": [],
+      "noAffinity": true
+    },
+    "陳東娘": {
+      "age": 37,
+      "sex": "女",
+      "personality": "謹慎",
+      "place": "朝御城",
+      "portraitNumber": 13,
+      "identity": "平民",
+      "actions": [
+        "對話",
+        "任務／委託"
+      ],
+      "hostile": [],
+      "noAffinity": true
+    },
+    "柑橘": {
+      "age": 9,
+      "sex": "女",
+      "personality": "乖巧",
+      "place": "碧潮鎮",
+      "portraitNumber": 4,
+      "identity": "平民",
+      "actions": [
+        "對話",
+        "任務／委託"
+      ],
+      "hostile": [],
+      "noAffinity": true
+    },
+    "？？？": {
+      "age": "？",
+      "sex": "？",
+      "personality": "？？",
+      "place": "晶礦秘境",
+      "portraitNumber": null,
+      "identity": "？？？",
+      "actions": [
+        "對話",
+        "交易"
+      ],
+      "hostile": [],
+      "noAffinity": true
+    }
+  },
+  "nextNpcs": {
+    "邱山河": {
+      "identity": "道衛隊長",
+      "realm": "金丹五層",
+      "place": "朝御城",
+      "age": 45,
+      "sex": "男",
+      "quality": "優秀",
+      "roots": "主土／副火",
+      "personality": "正直",
+      "marital": "未婚",
+      "romance": false,
+      "weapon": "長槍",
+      "actions": [
+        "對話",
+        "贈禮",
+        "切磋",
+        "任務／委託",
+        "邀請同行",
+        "NPC職業功能"
+      ],
+      "hostile": [
+        "偷襲",
+        "搶奪"
+      ],
+      "maxhp": 2706,
+      "maxmp": 1188,
+      "atk": 236,
+      "dao": 135,
+      "def": 178,
+      "daoDef": 146,
+      "hit": 141,
+      "agi": 130,
+      "battlePower": 2113,
+      "critRate": 7,
+      "critDamage": 150,
+      "effectHit": 111,
+      "effectResist": 113,
+      "equipment": {
+        "武": "［中階］岩茗槍",
+        "頭": "［初階］土靈頭盔",
+        "身": "［中階］土晶戰衣",
+        "褲": "［初階］韌布長褲",
+        "鞋": "［初階］輕行布靴",
+        "戒": "［初階］青玉指環",
+        "項": "［初階］靈紋項鍊",
+        "飾": "［初階］聚靈護符"
+      },
+      "profession": "降低25目前惡值，僅一次。",
+      "skills": [
+        "［中階］貫陣龍槍",
+        "［中階］鎮岳金身",
+        "［初階］蓄槍訣",
+        "［初階］穿雲直刺",
+        "［初階］掃陣槍",
+        "［初階］長槍守界",
+        "［初階］挑燈截脈"
+      ],
+      "flow": "物理型"
+    },
+    "林夏于": {
+      "identity": "俠客",
+      "realm": "築基圓滿",
+      "personality": "好戰",
+      "place": "青陽鎮",
+      "age": 37,
+      "sex": "男",
+      "quality": "優秀",
+      "roots": "主火／副雷",
+      "marital": "未婚",
+      "romance": false,
+      "weapon": "刀",
+      "actions": [
+        "對話",
+        "贈禮",
+        "切磋",
+        "任務／委託",
+        "邀請同行",
+        "收取禮物"
+      ],
+      "hostile": [
+        "偷襲",
+        "搶奪"
+      ],
+      "maxhp": 1413,
+      "maxmp": 684,
+      "atk": 139,
+      "dao": 81,
+      "def": 84,
+      "daoDef": 81,
+      "hit": 84,
+      "agi": 78,
+      "battlePower": 1195,
+      "critRate": 7,
+      "critDamage": 150,
+      "effectHit": 108,
+      "effectResist": 110,
+      "equipment": {
+        "武": "［初階］赤銅斬刀",
+        "身": "［初階］青紋短袍",
+        "項": "［初階］靈紋項鍊",
+        "飾": "［初階］聚靈護符"
+      },
+      "skills": [
+        "［初階］玄刀斬",
+        "［初階］斷潮刀式",
+        "［初階］赤痕追斬",
+        "［初階］逆鋒截擊",
+        "［初階］藏刃訣",
+        "［初階］刀背鎮魂"
+      ],
+      "flow": "物理型",
+      "gift": "4心：［特殊］元華斗笠×1"
+    },
+    "賈金發": {
+      "age": 44,
+      "sex": "男",
+      "realm": "練氣一層",
+      "quality": "普通",
+      "identity": "藥水商人",
+      "roots": "木",
+      "personality": "豪爽",
+      "affinity": 0,
+      "romance": false,
+      "place": "朝御城",
+      "marital": "未婚",
+      "trade": "藥水交易",
+      "weapon": "劍",
+      "actions": [
+        "對話",
+        "贈禮",
+        "任務／委託",
+        "交易"
+      ],
+      "hostile": [
+        "偷襲",
+        "搶奪",
+        "搶劫"
+      ],
+      "maxhp": 100,
+      "maxmp": 40,
+      "atk": 10,
+      "dao": 10,
+      "def": 7,
+      "daoDef": 7,
+      "hit": 10,
+      "agi": 8,
+      "battlePower": 99,
+      "critRate": 5,
+      "critDamage": 150,
+      "effectHit": 100,
+      "effectResist": 100,
+      "equipment": {},
+      "skills": [
+        "［初階］劍氣斬"
+      ],
+      "flow": "均衡型"
+    },
+    "林熙": {
+      "age": 32,
+      "sex": "女",
+      "realm": "築基二層",
+      "quality": "普通",
+      "identity": "煉金師",
+      "roots": "主木／副土",
+      "personality": "溫柔",
+      "affinity": 0,
+      "romance": false,
+      "place": "朝御城",
+      "marital": "已婚",
+      "profession": "煉製／煉丹",
+      "hostile": [
+        "偷襲",
+        "搶奪"
+      ],
+      "weapon": "葫蘆",
+      "actions": [
+        "對話",
+        "贈禮",
+        "任務／委託",
+        "NPC職業功能"
+      ],
+      "maxhp": 572,
+      "maxmp": 381,
+      "atk": 44,
+      "dao": 73,
+      "def": 34,
+      "daoDef": 41,
+      "hit": 45,
+      "agi": 40,
+      "battlePower": 589,
+      "critRate": 5,
+      "critDamage": 150,
+      "effectHit": 113,
+      "effectResist": 103,
+      "equipment": {
+        "武": "［初階］毒囊葫蘆",
+        "戒": "［初階］青玉指環"
+      },
+      "skills": [
+        "［初階］吐靈訣",
+        "［初階］潤脈葫",
+        "［初階］霧甲葫"
+      ],
+      "flow": "道術型"
+    },
+    "林旺": {
+      "identity": "鑄造師",
+      "realm": "築基三層",
+      "place": "朝御城",
+      "profession": "煉器／鍛造／寵物鍛造／鑄飾",
+      "age": 56,
+      "sex": "男",
+      "quality": "普通",
+      "roots": "主土／副水",
+      "personality": "陰沉",
+      "marital": "已婚",
+      "romance": false,
+      "weapon": "錘",
+      "actions": [
+        "對話",
+        "贈禮",
+        "任務／委託",
+        "NPC職業功能",
+        "收取禮物"
+      ],
+      "hostile": [
+        "偷襲",
+        "搶奪"
+      ],
+      "maxhp": 759,
+      "maxmp": 326,
+      "atk": 86,
+      "dao": 45,
+      "def": 47,
+      "daoDef": 41,
+      "hit": 49,
+      "agi": 46,
+      "battlePower": 671,
+      "critRate": 7,
+      "critDamage": 150,
+      "effectHit": 103,
+      "effectResist": 103,
+      "equipment": {
+        "武": "［初階］鍛造大錘",
+        "鞋": "［初階］青紋布靴"
+      },
+      "skills": [
+        "［初階］定錘功",
+        "［初階］裂盾重錘",
+        "［初階］回錘護心"
+      ],
+      "flow": "物理型",
+      "gift": "10心：［特殊］無心之石×1"
+    },
+    "李大發": {
+      "identity": "材料商人",
+      "realm": "練氣二層",
+      "place": "朝御城",
+      "trade": "材料交易",
+      "age": 49,
+      "sex": "男",
+      "quality": "普通",
+      "roots": "雷",
+      "personality": "狡猾",
+      "marital": "未婚",
+      "romance": false,
+      "weapon": "拳套",
+      "actions": [
+        "對話",
+        "贈禮",
+        "交易",
+        "收取禮物"
+      ],
+      "hostile": [
+        "偷襲",
+        "搶奪",
+        "搶劫"
+      ],
+      "maxhp": 135,
+      "maxmp": 62,
+      "atk": 15,
+      "dao": 14,
+      "def": 9,
+      "daoDef": 9,
+      "hit": 15,
+      "agi": 14,
+      "battlePower": 183,
+      "critRate": 10,
+      "critDamage": 150,
+      "effectHit": 100,
+      "effectResist": 100,
+      "equipment": {},
+      "skills": [
+        "［初階］強風波",
+        "［初階］寸勁拳"
+      ],
+      "flow": "身法型",
+      "gift": "1心：［特殊］爆爆煙花×1"
+    },
+    "萬錢坤": {
+      "identity": "寵物商人",
+      "realm": "練氣一層",
+      "place": "朝御城",
+      "trade": "寵物相關交易",
+      "age": 61,
+      "sex": "男",
+      "quality": "普通",
+      "roots": "水",
+      "personality": "正值",
+      "marital": "未婚",
+      "romance": false,
+      "weapon": "傘",
+      "actions": [
+        "對話",
+        "贈禮",
+        "交易"
+      ],
+      "hostile": [
+        "偷襲",
+        "搶奪",
+        "搶劫"
+      ],
+      "maxhp": 95,
+      "maxmp": 45,
+      "atk": 8,
+      "dao": 11,
+      "def": 6,
+      "daoDef": 7,
+      "hit": 11,
+      "agi": 8,
+      "battlePower": 129,
+      "critRate": 5,
+      "critDamage": 150,
+      "effectHit": 115,
+      "effectResist": 100,
+      "equipment": {},
+      "skills": [
+        "［初階］旋傘訣"
+      ],
+      "flow": "控制型"
+    },
+    "金燦燦": {
+      "identity": "功法商人",
+      "realm": "築基五層",
+      "place": "青陽鎮",
+      "trade": "功法交易",
+      "age": 33,
+      "sex": "男",
+      "quality": "優秀",
+      "roots": "主水／副木",
+      "personality": "活潑",
+      "marital": "已婚",
+      "romance": false,
+      "weapon": "弓",
+      "actions": [
+        "對話",
+        "贈禮",
+        "交易",
+        "收取禮物"
+      ],
+      "hostile": [
+        "偷襲",
+        "搶奪"
+      ],
+      "maxhp": 982,
+      "maxmp": 450,
+      "atk": 95,
+      "dao": 60,
+      "def": 60,
+      "daoDef": 54,
+      "hit": 60,
+      "agi": 60,
+      "battlePower": 845,
+      "critRate": 7,
+      "critDamage": 150,
+      "effectHit": 108,
+      "effectResist": 108,
+      "equipment": {},
+      "skills": [
+        "［初階］逐星箭",
+        "［初階］穿風矢",
+        "［初階］追影箭",
+        "［初階］透甲箭",
+        "［初階］弦心定靶"
+      ],
+      "flow": "物理型",
+      "gift": "3心：［初階］續擊丹×3"
+    },
+    "東方算": {
+      "identity": "裝備商人",
+      "realm": "築基二層",
+      "place": "東嶺鎮",
+      "trade": "裝備交易",
+      "age": 75,
+      "sex": "男",
+      "quality": "優秀",
+      "roots": "主雷／副火",
+      "personality": "熱血",
+      "marital": "已婚",
+      "romance": false,
+      "weapon": "錘",
+      "actions": [
+        "對話",
+        "贈禮",
+        "交易"
+      ],
+      "hostile": [
+        "偷襲",
+        "搶奪",
+        "搶劫"
+      ],
+      "maxhp": 828,
+      "maxmp": 330,
+      "atk": 53,
+      "dao": 53,
+      "def": 51,
+      "daoDef": 51,
+      "hit": 42,
+      "agi": 36,
+      "battlePower": 630,
+      "critRate": 5,
+      "critDamage": 150,
+      "effectHit": 108,
+      "effectResist": 116,
+      "equipment": {},
+      "skills": [
+        "［初階］定錘功",
+        "［初階］落岳錘",
+        "［初階］震甲錘",
+        "［初階］重岳蓄力"
+      ],
+      "flow": "坦型",
+      "relation": "道侶：雲知秋"
+    },
+    "張榕真": {
+      "identity": "指引員",
+      "realm": "築基八層",
+      "personality": "正直",
+      "place": "天海港",
+      "age": 21,
+      "sex": "男",
+      "quality": "普通",
+      "roots": "主風",
+      "marital": "未婚",
+      "romance": false,
+      "weapon": "槍",
+      "actions": [
+        "對話",
+        "贈禮",
+        "切磋",
+        "任務／委託",
+        "邀請同行",
+        "收取禮物"
+      ],
+      "hostile": [
+        "偷襲",
+        "搶奪"
+      ],
+      "maxhp": 1083,
+      "maxmp": 680,
+      "atk": 82,
+      "dao": 97,
+      "def": 65,
+      "daoDef": 66,
+      "hit": 77,
+      "agi": 74,
+      "battlePower": 968,
+      "critRate": 5,
+      "critDamage": 150,
+      "effectHit": 118,
+      "effectResist": 103,
+      "equipment": {
+        "武": "［初階］流雲槍",
+        "頭": "［初階］鐵邊布帽",
+        "項": "［初階］靈紋項鍊"
+      },
+      "skills": [
+        "［初階］蓄槍訣",
+        "［初階］穿雲直刺",
+        "［初階］回馬槍",
+        "［初階］點星連刺",
+        "［初階］長槍守界",
+        "［初階］挑燈截脈"
+      ],
+      "flow": "控制型",
+      "gift": "2心：［特殊］節能粉×3；5心：［特殊］良護藥劑×3；10心：［特殊］成良粉×2"
+    },
+    "蘇璃": {
+      "age": 25,
+      "sex": "女",
+      "realm": "練氣五層",
+      "quality": "普通",
+      "identity": "修士",
+      "roots": "水",
+      "personality": "溫柔",
+      "affinity": 0,
+      "romance": true,
+      "place": "落星谷",
+      "marital": "未婚",
+      "relation": "蘇項妹妹",
+      "gift": "1心：［初階］護體丹－水×1；4心：［特殊］萬靈藥水×1；7心：［特殊］半月水玉×1（紀念品）；10心：［特殊］水心靈墜×1",
+      "weapon": "扇",
+      "actions": [
+        "對話",
+        "贈禮",
+        "切磋",
+        "約會",
+        "表白",
+        "求婚",
+        "邀請同行",
+        "收取禮物"
+      ],
+      "hostile": [
+        "偷襲",
+        "搶奪"
+      ],
+      "maxhp": 322,
+      "maxmp": 213,
+      "atk": 23,
+      "dao": 36,
+      "def": 18,
+      "daoDef": 23,
+      "hit": 29,
+      "agi": 29,
+      "battlePower": 338,
+      "critRate": 5,
+      "critDamage": 150,
+      "effectHit": 100,
+      "effectResist": 110,
+      "equipment": {
+        "武": "［初階］水舞扇",
+        "戒": "［初階］青玉指環",
+        "項": "［初階］靈紋項鍊",
+        "飾": "［初階］聚靈護符"
+      },
+      "skills": [
+        "［初階］定神扇舞",
+        "［初階］清心扇",
+        "［初階］折雲扇"
+      ],
+      "flow": "治療／輔助型",
+      "rootValues": {
+        "火": 1,
+        "水": 100,
+        "土": 1,
+        "木": 1,
+        "雷": 1,
+        "風": 1,
+        "光": 0,
+        "暗": 0
+      }
+    },
+    "蘇項": {
+      "age": 26,
+      "sex": "男",
+      "realm": "練氣五層",
+      "quality": "普通",
+      "identity": "修士",
+      "personality": "豪爽",
+      "affinity": 0,
+      "romance": true,
+      "place": "落星谷",
+      "marital": "未婚",
+      "relation": "蘇璃哥哥",
+      "gift": "1心：［初階］護體丹－土×1；4心：［特殊］萬靈藥水×1；7心：［特殊］半月山玉×1（紀念品）；10心：［特殊］厚土護佩×1",
+      "roots": "主土",
+      "weapon": "錘",
+      "actions": [
+        "對話",
+        "贈禮",
+        "切磋",
+        "約會",
+        "表白",
+        "求婚",
+        "邀請同行",
+        "收取禮物"
+      ],
+      "hostile": [
+        "偷襲",
+        "搶奪"
+      ],
+      "maxhp": 555,
+      "maxmp": 131,
+      "atk": 37,
+      "dao": 24,
+      "def": 47,
+      "daoDef": 31,
+      "hit": 23,
+      "agi": 14,
+      "battlePower": 398,
+      "critRate": 5,
+      "critDamage": 150,
+      "effectHit": 100,
+      "effectResist": 108,
+      "equipment": {
+        "武": "［初階］讓力大錘",
+        "身": "［初階］厚岩戰衣",
+        "褲": "［初階］岩紋護腿",
+        "鞋": "［初階］勁地靴"
+      },
+      "skills": [
+        "［初階］回錘護心",
+        "［初階］鎮地錘",
+        "［初階］落岳錘"
+      ],
+      "flow": "坦型",
+      "rootValues": {
+        "火": 1,
+        "水": 1,
+        "土": 100,
+        "木": 1,
+        "雷": 1,
+        "風": 1,
+        "光": 0,
+        "暗": 0
+      }
+    },
+    "沈玄川": {
+      "identity": "道衛隊員",
+      "realm": "練氣五層",
+      "personality": "熱血",
+      "place": "青陽山",
+      "age": 29,
+      "sex": "男",
+      "quality": "普通",
+      "roots": "水",
+      "marital": "未婚",
+      "romance": false,
+      "weapon": "劍",
+      "relation": "邱山河隊員",
+      "actions": [
+        "對話",
+        "贈禮",
+        "任務／委託",
+        "切磋",
+        "邀請同行",
+        "收取禮物"
+      ],
+      "hostile": [
+        "偷襲",
+        "搶奪"
+      ],
+      "maxhp": 265,
+      "maxmp": 176,
+      "atk": 36,
+      "dao": 35,
+      "def": 16,
+      "daoDef": 23,
+      "hit": 33,
+      "agi": 27,
+      "battlePower": 362,
+      "critRate": 10,
+      "critDamage": 150,
+      "effectHit": 100,
+      "effectResist": 102,
+      "equipment": {
+        "武": "［初階］流水劍",
+        "頭": "［初階］回瀾冠",
+        "飾": "［初階］聚靈護符"
+      },
+      "role": "道衛隊員",
+      "skills": [
+        "［初階］劍氣斬",
+        "［初階］削甲劍訣",
+        "［初階］回劍護身"
+      ],
+      "flow": "身法型",
+      "gift": "3心：［特殊］玄川的護身符×1（紀念品）；10心：［特殊］玄川劍穗×1（紀念品）",
+      "storyWard": false
+    },
+    "柳清妍": {
+      "identity": "道衛隊員",
+      "realm": "練氣圓滿",
+      "personality": "謹慎",
+      "place": "落星谷",
+      "age": 22,
+      "sex": "女",
+      "quality": "優秀",
+      "roots": "木",
+      "marital": "未婚",
+      "romance": false,
+      "weapon": "弓",
+      "relation": "邱山河隊員",
+      "actions": [
+        "對話",
+        "贈禮",
+        "切磋",
+        "邀請同行",
+        "收取禮物"
+      ],
+      "hostile": [
+        "偷襲",
+        "搶奪"
+      ],
+      "maxhp": 639,
+      "maxmp": 260,
+      "atk": 67,
+      "dao": 43,
+      "def": 41,
+      "daoDef": 38,
+      "hit": 50,
+      "agi": 39,
+      "battlePower": 600,
+      "critRate": 7,
+      "critDamage": 150,
+      "effectHit": 105,
+      "effectResist": 105,
+      "equipment": {
+        "武": "［初階］青木長弦弓",
+        "身": "［初階］護身布衣",
+        "褲": "［初階］青紋長褲",
+        "戒": "［初階］青玉指環",
+        "項": "［初階］靈紋項鍊"
+      },
+      "skills": [
+        "［初階］穿風矢",
+        "［初階］散羽齊射",
+        "［初階］斷筋矢",
+        "［初階］封喉矢",
+        "［初階］弦心定靶"
+      ],
+      "flow": "物理型",
+      "gift": "3心：［特殊］清妍的藥囊×1（紀念品）；10心：［特殊］青羽箭飾×1（紀念品）"
+    },
+    "黃蕭": {
+      "identity": "守門人",
+      "realm": "練氣圓滿",
+      "personality": "懶散",
+      "place": "東州傳送塔",
+      "profession": "通行證查看／傳送",
+      "age": 66,
+      "sex": "男",
+      "quality": "普通",
+      "roots": "火",
+      "marital": "未婚",
+      "romance": false,
+      "weapon": "刀",
+      "actions": [
+        "對話",
+        "贈禮",
+        "NPC職業功能",
+        "切磋",
+        "邀請同行",
+        "任務／委託"
+      ],
+      "hostile": [
+        "偷襲",
+        "搶奪"
+      ],
+      "maxhp": 499,
+      "maxmp": 213,
+      "atk": 62,
+      "dao": 33,
+      "def": 32,
+      "daoDef": 29,
+      "hit": 37,
+      "agi": 35,
+      "battlePower": 482,
+      "critRate": 7,
+      "critDamage": 150,
+      "effectHit": 100,
+      "effectResist": 100,
+      "equipment": {
+        "武": "［初階］輪輪刀"
+      },
+      "skills": [
+        "［初階］玄刀斬",
+        "［初階］斷潮刀式",
+        "［初階］裂帛斬",
+        "［初階］刀背鎮魂"
+      ],
+      "flow": "物理型"
+    },
+    "韓鐵生": {
+      "identity": "礦工",
+      "realm": "練氣一層",
+      "place": "碧潮鎮",
+      "age": 50,
+      "sex": "男",
+      "quality": "弱者",
+      "roots": "土",
+      "personality": "豪爽",
+      "marital": "已婚",
+      "romance": false,
+      "weapon": "拳套",
+      "noAffinity": true,
+      "actions": [
+        "對話",
+        "任務／委託"
+      ],
+      "hostile": [
+        "偷襲"
+      ],
+      "maxhp": 85,
+      "maxmp": 34,
+      "atk": 9,
+      "dao": 9,
+      "def": 6,
+      "daoDef": 6,
+      "hit": 9,
+      "agi": 7,
+      "battlePower": 87,
+      "critRate": 5,
+      "critDamage": 150,
+      "effectHit": 92,
+      "effectResist": 92,
+      "equipment": {},
+      "skills": [
+        "［初階］強風波"
+      ],
+      "flow": "均衡"
+    },
+    "雲知秋": {
+      "age": 74,
+      "sex": "女",
+      "gender": "女",
+      "realm": "築基一層",
+      "quality": "優秀",
+      "flow": "道術型",
+      "roots": "水",
+      "identity": "丹藥商人",
+      "role": "丹藥商人",
+      "place": "東嶺鎮",
+      "personality": "謹慎",
+      "marital": "已婚",
+      "romance": false,
+      "weapon": "寶珠",
+      "sect": "無宗門",
+      "relation": "道侶：東方算",
+      "trade": "丹藥交易",
+      "skills": [
+        "［初階］靈珠功",
+        "［初階］水華療身",
+        "［初階］清流護體"
+      ],
+      "actions": [
+        "對話",
+        "贈禮",
+        "交易",
+        "任務／委託"
+      ],
+      "hostile": [
+        "偷襲",
+        "搶奪",
+        "搶劫"
+      ],
+      "equipment": {
+        "身": "［初階］雲紋短衣"
+      }
+    },
+    "阿禾": {
+      "age": 13,
+      "sex": "男",
+      "personality": "善良",
+      "place": "朝御城",
+      "portraitNumber": 1,
+      "identity": "平民",
+      "actions": [
+        "對話",
+        "任務／委託"
+      ],
+      "hostile": [],
+      "noAffinity": true,
+      "role": "平民",
+      "romance": false
+    },
+    "寧寧": {
+      "age": 11,
+      "sex": "女",
+      "personality": "乖巧",
+      "place": "朝御城",
+      "portraitNumber": 5,
+      "identity": "平民",
+      "actions": [
+        "對話",
+        "任務／委託"
+      ],
+      "hostile": [],
+      "noAffinity": true,
+      "role": "平民",
+      "romance": false
+    },
+    "小燕": {
+      "age": 9,
+      "sex": "女",
+      "personality": "好奇",
+      "place": "雷鳴沼",
+      "portraitNumber": 6,
+      "identity": "平民",
+      "actions": [
+        "對話",
+        "任務／委託"
+      ],
+      "hostile": [],
+      "noAffinity": true,
+      "role": "平民",
+      "romance": false
+    },
+    "沈菜芳": {
+      "age": 46,
+      "sex": "女",
+      "personality": "膽小",
+      "place": "朝御城",
+      "portraitNumber": 15,
+      "identity": "平民",
+      "actions": [
+        "對話",
+        "任務／委託"
+      ],
+      "hostile": [],
+      "noAffinity": true,
+      "role": "平民",
+      "romance": false
+    },
+    "陳蘭": {
+      "age": 81,
+      "sex": "女",
+      "personality": "正直",
+      "place": "朝御城",
+      "portraitNumber": 19,
+      "identity": "平民",
+      "actions": [
+        "對話",
+        "任務／委託"
+      ],
+      "hostile": [],
+      "noAffinity": true,
+      "role": "平民",
+      "romance": false
+    },
+    "吳大海": {
+      "age": 40,
+      "sex": "男",
+      "personality": "活潑",
+      "place": "朝御城",
+      "portraitNumber": 11,
+      "identity": "平民",
+      "actions": [
+        "對話",
+        "任務／委託"
+      ],
+      "hostile": [],
+      "noAffinity": true,
+      "role": "平民",
+      "romance": false
+    },
+    "陳東娘": {
+      "age": 37,
+      "sex": "女",
+      "personality": "謹慎",
+      "place": "朝御城",
+      "portraitNumber": 13,
+      "identity": "平民",
+      "actions": [
+        "對話",
+        "任務／委託"
+      ],
+      "hostile": [],
+      "noAffinity": true,
+      "role": "平民",
+      "romance": false
+    },
+    "柑橘": {
+      "age": 9,
+      "sex": "女",
+      "personality": "乖巧",
+      "place": "碧潮鎮",
+      "portraitNumber": 4,
+      "identity": "平民",
+      "actions": [
+        "對話",
+        "任務／委託"
+      ],
+      "hostile": [],
+      "noAffinity": true,
+      "role": "平民",
+      "romance": false
+    },
+    "？？？": {
+      "age": "？",
+      "sex": "？",
+      "personality": "？？",
+      "place": "晶礦秘境",
+      "portraitNumber": null,
+      "identity": "？？？",
+      "actions": [
+        "對話",
+        "交易"
+      ],
+      "hostile": [],
+      "noAffinity": true,
+      "role": "？？？",
+      "romance": false
+    },
+    "華安": {
+      "name": "華安",
+      "age": 36,
+      "sex": "男",
+      "weapon": "扇",
+      "realm": "練氣八層",
+      "quality": "普通",
+      "flow": "道術型",
+      "identity": "禮物商人",
+      "role": "禮物商人",
+      "roots": "火",
+      "mainRoot": "火",
+      "personality": "善良",
+      "romance": false,
+      "place": "天穹浮島",
+      "marital": "未婚",
+      "relation": "憎恨「???」（對象待設定）",
+      "actions": [
+        "對話",
+        "贈禮",
+        "交易",
+        "任務／委託",
+        "收取禮物"
+      ],
+      "hostile": [
+        "偷襲",
+        "搶奪",
+        "搶劫"
+      ],
+      "maxhp": 427,
+      "maxmp": 259,
+      "atk": 33,
+      "dao": 55,
+      "def": 24,
+      "daoDef": 29,
+      "agi": 38,
+      "hit": 38,
+      "critRate": 5,
+      "critDamage": 150,
+      "effectHit": 105,
+      "effectResist": 100,
+      "equipment": {
+        "武": "［初階］清風羽扇",
+        "戒": "［初階］青玉指環",
+        "項": "［初階］靈紋項鍊"
+      },
+      "skills": [
+        "［初階］折雲扇",
+        "［初階］掩目扇影",
+        "［初階］炭雨術"
+      ],
+      "battlePower": 438
+    }
+  },
+  "roots": {
+    "JZ072": [
+      "version",
+      "phase",
+      "data",
+      "fragment",
+      "state",
+      "major",
+      "rank",
+      "level",
+      "realm",
+      "rewardFor",
+      "giftName",
+      "affinity",
+      "hearts",
+      "pref",
+      "giftAllowed",
+      "migrate",
+      "versionHistory",
+      "qualities",
+      "baseGear",
+      "registerGear",
+      "migrateGear",
+      "gearValues",
+      "compare",
+      "partnerKind",
+      "manageable",
+      "partner",
+      "partnerInit",
+      "partnerStats",
+      "withPartner",
+      "partnerCanLearn",
+      "learnPartner",
+      "partnerEquip",
+      "partnerUnequip",
+      "togglePartner",
+      "releasePartner",
+      "partnerPage",
+      "partnerDetails",
+      "partnerTraining",
+      "partnerSetting",
+      "partnerAdvance",
+      "kickPartner",
+      "opposite",
+      "addTemporary",
+      "tick",
+      "markPartnerCards",
+      "huaPlace",
+      "huaTick",
+      "huaVisible",
+      "huaCard",
+      "huaTrade",
+      "huaBuy",
+      "huaQuest",
+      "huaBegin",
+      "huaPaint",
+      "huaNext",
+      "huaChoice",
+      "makeHuaQuest",
+      "huaSubmit",
+      "huaFinish",
+      "spring",
+      "springUse",
+      "skyEncounter",
+      "scourgeBattle",
+      "rule",
+      "enemyOf",
+      "specialBuff",
+      "releaseSwallow",
+      "autoTargets",
+      "chooseRule",
+      "tendency",
+      "newSkillAllowed",
+      "petRecord",
+      "petEvent",
+      "petCast",
+      "petDamage",
+      "commitPetAB",
+      "choosePetAB",
+      "autoSetting",
+      "autoRecover",
+      "stackable",
+      "buyBulk",
+      "endRelationship",
+      "confirmEndRelationship",
+      "mysteryEggSpecies",
+      "battleScenes",
+      "paintScene",
+      "masterPromoted",
+      "hotfix",
+      "suliBattleArt",
+      "skyTravelReason",
+      "npcHearts",
+      "paintNpcHearts",
+      "partnerPreview",
+      "battlePortraits",
+      "officialPartnerRoots",
+      "detailExplain",
+      "partnerGearBonus",
+      "migrating",
+      "ticking"
+    ],
+    "JZR": [
+      "version",
+      "masterPromoted",
+      "coreKeys",
+      "esc",
+      "rank",
+      "ensure",
+      "save",
+      "count",
+      "take",
+      "give",
+      "elementMultiplier",
+      "pending",
+      "powderCount",
+      "itemType",
+      "basePrice",
+      "saleBlocked",
+      "sellQuote",
+      "stock",
+      "openTrade",
+      "buy",
+      "sell",
+      "merchants",
+      "yun",
+      "petSpecies",
+      "petCore",
+      "starMultipliers",
+      "petData",
+      "petError",
+      "petHearts",
+      "petStats",
+      "feed",
+      "touch",
+      "petGear",
+      "petUnequip",
+      "specialBreak",
+      "legalPetSkills",
+      "learnPet",
+      "fruit",
+      "dew",
+      "breakRate",
+      "petAdvance",
+      "petPre",
+      "petPills",
+      "companionAllowed",
+      "newPetSkills",
+      "chooseAB",
+      "confirmAB",
+      "petSkillInfo",
+      "beastFloors",
+      "beast",
+      "waveRule",
+      "wavePoints",
+      "beastPoints",
+      "addBeastPoints",
+      "startRun",
+      "runRecover",
+      "saveRun",
+      "settleRun",
+      "openRun",
+      "pickRun",
+      "openBeast",
+      "previewBeast",
+      "rewardBeast",
+      "finishPetBattle",
+      "beastShop",
+      "beastBuy",
+      "beastShopRows",
+      "badgeShopRows",
+      "temp",
+      "onDodge",
+      "onImpact",
+      "prepareBattle",
+      "beginWendaoGuide",
+      "castRestriction",
+      "petAddCultivation",
+      "craftPetDan",
+      "catalogTotals",
+      "audit"
+    ],
+    "JZW": [
+      "version",
+      "masterPromoted",
+      "data",
+      "pending",
+      "isHuman",
+      "ensure",
+      "give",
+      "take",
+      "itemClass",
+      "materialCount",
+      "spendMaterial",
+      "gate",
+      "selectPlace",
+      "mapDown",
+      "gearScale",
+      "statAdjust",
+      "effectStat",
+      "costAdjust",
+      "hitAdjust",
+      "damageAdjust",
+      "healAdjust",
+      "beforeHurt",
+      "afterHurt",
+      "beforeResolve",
+      "extendStatus",
+      "afterResolve",
+      "onStatus",
+      "onCrit",
+      "roundEffects",
+      "restorePotions",
+      "itemDescription",
+      "showPendingPills",
+      "applyPre",
+      "useItem",
+      "monsterDrops",
+      "rollDrops",
+      "dropTables",
+      "openWendao",
+      "floorFighter",
+      "previewFloor",
+      "startFloor",
+      "previewRandom",
+      "startRandom",
+      "endChallenge",
+      "shop",
+      "purchase",
+      "openBox",
+      "chooseBox",
+      "audit"
+    ],
+    "JZP": [
+      "version",
+      "baseSHA256",
+      "realm",
+      "monsterStats",
+      "waveRealm",
+      "specialTechniques",
+      "unlearned",
+      "exchangeScroll",
+      "useScroll",
+      "ingredientCount",
+      "migrateGear",
+      "doneTitle",
+      "petQuest",
+      "beastGate",
+      "questReady",
+      "starterSpecies",
+      "syncPetQuest",
+      "enterBeast",
+      "showBeastGuide",
+      "finishBeastGuide",
+      "allowed",
+      "pickPets",
+      "validPets",
+      "enemy",
+      "launch",
+      "startTower",
+      "pickTower",
+      "startWave",
+      "beginRun",
+      "crossRange",
+      "patchReady",
+      "merchantRows",
+      "merchantMissingEquipment",
+      "resolveOp",
+      "heartTaskDefs",
+      "heartPrereq",
+      "acceptHeart",
+      "heartReady",
+      "claimHeart",
+      "record",
+      "bump",
+      "onCast",
+      "beforeDamage",
+      "damageEvent",
+      "bombPrepared",
+      "bombResult",
+      "finishBattle",
+      "supplementReady"
+    ]
+  },
+  "main": [
+    {
+      "key": "029",
+      "id": "jz073-029",
+      "title": "異相再次發生",
+      "place": "朝御城"
+    },
+    {
+      "key": "030",
+      "id": "jz073-030",
+      "title": "無法休息",
+      "place": "朝御城"
+    },
+    {
+      "key": "031",
+      "id": "jz073-031",
+      "title": "破壞",
+      "place": "東州傳送塔"
+    },
+    {
+      "key": "032",
+      "id": "jz073-032",
+      "title": "商量",
+      "place": "朝御城"
+    },
+    {
+      "key": "033A",
+      "id": "jz073-033A",
+      "title": "清除青陽山",
+      "place": "青陽山"
+    },
+    {
+      "key": "033B",
+      "id": "jz073-033B",
+      "title": "調查東州傳送塔",
+      "place": "朝御城"
+    },
+    {
+      "key": "034A",
+      "id": "jz073-034A",
+      "title": "危機！青陽山",
+      "place": "青陽山"
+    },
+    {
+      "key": "034B",
+      "id": "jz073-034B",
+      "title": "逆流與黑衣人",
+      "place": "東州傳送塔"
+    },
+    {
+      "key": "035A",
+      "id": "jz073-035A",
+      "title": "救命恩人？",
+      "place": "青陽鎮"
+    },
+    {
+      "key": "035B",
+      "id": "jz073-035B",
+      "title": "逆流追蹤",
+      "place": "東州傳送塔"
+    },
+    {
+      "key": "036A",
+      "id": "jz073-036A",
+      "title": "逼問！",
+      "place": "落星谷"
+    },
+    {
+      "key": "036B",
+      "id": "jz073-036B",
+      "title": "失控的雷鳴沼",
+      "place": "碧潮鎮"
+    },
+    {
+      "key": "037",
+      "id": "jz073-037",
+      "title": "封印解除",
+      "place": "雷鳴沼地下深窟"
+    },
+    {
+      "key": "038",
+      "id": "jz073-038",
+      "title": "第一封印。長右",
+      "place": "雷鳴沼地下深窟"
+    }
+  ],
+  "equipment": [
+    {
+      "name": "［無階］新手劍",
+      "slot": "武器"
+    },
+    {
+      "name": "［無階］新手刀",
+      "slot": "武器"
+    },
+    {
+      "name": "［無階］新手長槍",
+      "slot": "武器"
+    },
+    {
+      "name": "［無階］新手弓",
+      "slot": "武器"
+    },
+    {
+      "name": "［無階］新手拳套",
+      "slot": "武器"
+    },
+    {
+      "name": "［無階］新手錘",
+      "slot": "武器"
+    },
+    {
+      "name": "［無階］新手寶珠",
+      "slot": "武器"
+    },
+    {
+      "name": "［無階］新手扇",
+      "slot": "武器"
+    },
+    {
+      "name": "［無階］新手葫蘆",
+      "slot": "武器"
+    },
+    {
+      "name": "［無階］新手傘",
+      "slot": "武器"
+    },
+    {
+      "name": "［初階］靈鐵劍",
+      "slot": "武器"
+    },
+    {
+      "name": "［初階］靈鐵刀",
+      "slot": "武器"
+    },
+    {
+      "name": "［初階］靈鐵長槍",
+      "slot": "武器"
+    },
+    {
+      "name": "［初階］靈鐵弓",
+      "slot": "武器"
+    },
+    {
+      "name": "［初階］靈鐵拳套",
+      "slot": "武器"
+    },
+    {
+      "name": "［初階］靈鐵錘",
+      "slot": "武器"
+    },
+    {
+      "name": "［初階］靈鐵寶珠",
+      "slot": "武器"
+    },
+    {
+      "name": "［初階］靈鐵扇",
+      "slot": "武器"
+    },
+    {
+      "name": "［初階］靈鐵葫蘆",
+      "slot": "武器"
+    },
+    {
+      "name": "［初階］靈鐵傘",
+      "slot": "武器"
+    },
+    {
+      "name": "［初階］青鋒劍",
+      "slot": "武器"
+    },
+    {
+      "name": "［初階］斷木刀",
+      "slot": "武器"
+    },
+    {
+      "name": "［初階］鐵脊長槍",
+      "slot": "武器"
+    },
+    {
+      "name": "［初階］青藤弓",
+      "slot": "武器"
+    },
+    {
+      "name": "［初階］硬革拳套",
+      "slot": "武器"
+    },
+    {
+      "name": "［初階］沉鐵錘",
+      "slot": "武器"
+    },
+    {
+      "name": "［初階］霜月劍",
+      "slot": "武器"
+    },
+    {
+      "name": "［初階］赤紋刀",
+      "slot": "武器"
+    },
+    {
+      "name": "［初階］月牙長槍",
+      "slot": "武器"
+    },
+    {
+      "name": "［初階］青木弓",
+      "slot": "武器"
+    },
+    {
+      "name": "［初階］流雲拳套",
+      "slot": "武器"
+    },
+    {
+      "name": "［初階］聚氣錘",
+      "slot": "武器"
+    },
+    {
+      "name": "［初階］聚靈寶珠",
+      "slot": "武器"
+    },
+    {
+      "name": "［初階］青紋寶珠",
+      "slot": "武器"
+    },
+    {
+      "name": "［初階］清風羽扇",
+      "slot": "武器"
+    },
+    {
+      "name": "［初階］靈紋道扇",
+      "slot": "武器"
+    },
+    {
+      "name": "［初階］聚氣葫蘆",
+      "slot": "武器"
+    },
+    {
+      "name": "［初階］養靈葫蘆",
+      "slot": "武器"
+    },
+    {
+      "name": "［初階］青竹靈傘",
+      "slot": "武器"
+    },
+    {
+      "name": "［初階］流雲道傘",
+      "slot": "武器"
+    },
+    {
+      "name": "［初階］青藤劍",
+      "slot": "武器"
+    },
+    {
+      "name": "［初階］赤銅刀",
+      "slot": "武器"
+    },
+    {
+      "name": "［初階］玄鐵重錘",
+      "slot": "武器"
+    },
+    {
+      "name": "［初階］碧木弓",
+      "slot": "武器"
+    },
+    {
+      "name": "［初階］楊木長槍",
+      "slot": "武器"
+    },
+    {
+      "name": "［初階］羽爪拳套",
+      "slot": "武器"
+    },
+    {
+      "name": "［初階］雀羽弓",
+      "slot": "武器"
+    },
+    {
+      "name": "［初階］毒牙短刀",
+      "slot": "武器"
+    },
+    {
+      "name": "［初階］蛛絲靈弓",
+      "slot": "武器"
+    },
+    {
+      "name": "［初階］角鋒槍",
+      "slot": "武器"
+    },
+    {
+      "name": "［初階］雷角槍",
+      "slot": "武器"
+    },
+    {
+      "name": "［初階］碧芯劍",
+      "slot": "武器"
+    },
+    {
+      "name": "［初階］導靈劍",
+      "slot": "武器"
+    },
+    {
+      "name": "［初階］玄靈戰刀",
+      "slot": "武器"
+    },
+    {
+      "name": "［初階］靈楊長弓",
+      "slot": "武器"
+    },
+    {
+      "name": "［初階］碧芯寶珠",
+      "slot": "武器"
+    },
+    {
+      "name": "［初階］玄靈寶珠",
+      "slot": "武器"
+    },
+    {
+      "name": "［初階］雷角寶珠",
+      "slot": "武器"
+    },
+    {
+      "name": "［初階］青藤羽扇",
+      "slot": "武器"
+    },
+    {
+      "name": "［初階］雀羽靈扇",
+      "slot": "武器"
+    },
+    {
+      "name": "［初階］玄羽道扇",
+      "slot": "武器"
+    },
+    {
+      "name": "［初階］碧木葫蘆",
+      "slot": "武器"
+    },
+    {
+      "name": "［初階］凝魂葫蘆",
+      "slot": "武器"
+    },
+    {
+      "name": "［初階］血靈葫蘆",
+      "slot": "武器"
+    },
+    {
+      "name": "［初階］蛛絲靈傘",
+      "slot": "武器"
+    },
+    {
+      "name": "［初階］青羽道傘",
+      "slot": "武器"
+    },
+    {
+      "name": "［初階］玄靈法傘",
+      "slot": "武器"
+    },
+    {
+      "name": "［初階］玄水扇",
+      "slot": "武器"
+    },
+    {
+      "name": "［初階］赤銅斬刀",
+      "slot": "武器"
+    },
+    {
+      "name": "［初階］毒囊葫蘆",
+      "slot": "武器"
+    },
+    {
+      "name": "［初階］鍛造大錘",
+      "slot": "武器"
+    },
+    {
+      "name": "［初階］流雲槍",
+      "slot": "武器"
+    },
+    {
+      "name": "［初階］水舞扇",
+      "slot": "武器"
+    },
+    {
+      "name": "［初階］讓力大錘",
+      "slot": "武器"
+    },
+    {
+      "name": "［初階］流水劍",
+      "slot": "武器"
+    },
+    {
+      "name": "［初階］青木長弦弓",
+      "slot": "武器"
+    },
+    {
+      "name": "［初階］輪輪刀",
+      "slot": "武器"
+    },
+    {
+      "name": "［中階］岩茗槍",
+      "slot": "武器"
+    },
+    {
+      "name": "［中階］玄水拳套",
+      "slot": "武器"
+    },
+    {
+      "name": "［初階］粗布頭盔",
+      "slot": "頭"
+    },
+    {
+      "name": "［初階］粗布衣",
+      "slot": "身"
+    },
+    {
+      "name": "［初階］粗布褲",
+      "slot": "褲"
+    },
+    {
+      "name": "［初階］粗布鞋",
+      "slot": "鞋"
+    },
+    {
+      "name": "［初階］青紋布帽",
+      "slot": "頭"
+    },
+    {
+      "name": "［初階］青紋短袍",
+      "slot": "身"
+    },
+    {
+      "name": "［初階］青紋長褲",
+      "slot": "褲"
+    },
+    {
+      "name": "［初階］青紋布靴",
+      "slot": "鞋"
+    },
+    {
+      "name": "［初階］鐵邊布帽",
+      "slot": "頭"
+    },
+    {
+      "name": "［初階］護身布衣",
+      "slot": "身"
+    },
+    {
+      "name": "［初階］韌布長褲",
+      "slot": "褲"
+    },
+    {
+      "name": "［初階］輕行布靴",
+      "slot": "鞋"
+    },
+    {
+      "name": "［初階］雲紋束冠",
+      "slot": "頭"
+    },
+    {
+      "name": "［初階］素靈法帽",
+      "slot": "頭"
+    },
+    {
+      "name": "［初階］雲紋短衣",
+      "slot": "身"
+    },
+    {
+      "name": "［初階］素靈法袍",
+      "slot": "身"
+    },
+    {
+      "name": "［初階］雲紋護腿",
+      "slot": "褲"
+    },
+    {
+      "name": "［初階］素靈長褲",
+      "slot": "褲"
+    },
+    {
+      "name": "［初階］雲紋輕靴",
+      "slot": "鞋"
+    },
+    {
+      "name": "［初階］素靈步履",
+      "slot": "鞋"
+    },
+    {
+      "name": "［初階］羽行帽",
+      "slot": "頭"
+    },
+    {
+      "name": "［初階］狼皮帽",
+      "slot": "頭"
+    },
+    {
+      "name": "［初階］獸骨戰盔",
+      "slot": "頭"
+    },
+    {
+      "name": "［初階］玄靈戰盔",
+      "slot": "頭"
+    },
+    {
+      "name": "［初階］狐絨衣",
+      "slot": "身"
+    },
+    {
+      "name": "［初階］蟲甲護衣",
+      "slot": "身"
+    },
+    {
+      "name": "［初階］硬骨護衣",
+      "slot": "身"
+    },
+    {
+      "name": "［初階］赤尾披衣",
+      "slot": "身"
+    },
+    {
+      "name": "［初階］蛛絲輕衣",
+      "slot": "身"
+    },
+    {
+      "name": "［初階］黑蠍護腿",
+      "slot": "褲"
+    },
+    {
+      "name": "［初階］毒囊護腿",
+      "slot": "褲"
+    },
+    {
+      "name": "［初階］靈鐵護腿",
+      "slot": "褲"
+    },
+    {
+      "name": "［初階］雀羽靴",
+      "slot": "鞋"
+    },
+    {
+      "name": "［初階］硬骨戰靴",
+      "slot": "鞋"
+    },
+    {
+      "name": "［初階］龜甲帽",
+      "slot": "頭"
+    },
+    {
+      "name": "［初階］龜甲衣",
+      "slot": "身"
+    },
+    {
+      "name": "［初階］龜甲靴",
+      "slot": "鞋"
+    },
+    {
+      "name": "［初階］玄靈道衣",
+      "slot": "身"
+    },
+    {
+      "name": "［初階］碧木道衣",
+      "slot": "身"
+    },
+    {
+      "name": "［初階］凝魂靈袍",
+      "slot": "身"
+    },
+    {
+      "name": "［初階］赤尾靈袍",
+      "slot": "身"
+    },
+    {
+      "name": "［初階］青羽道帽",
+      "slot": "頭"
+    },
+    {
+      "name": "［初階］碧芯靈帽",
+      "slot": "頭"
+    },
+    {
+      "name": "［初階］凝魂道帽",
+      "slot": "頭"
+    },
+    {
+      "name": "［初階］玄靈道褲",
+      "slot": "褲"
+    },
+    {
+      "name": "［初階］玄靈步履",
+      "slot": "鞋"
+    },
+    {
+      "name": "［初階］碧魂靈褲",
+      "slot": "褲"
+    },
+    {
+      "name": "［初階］碧魂輕履",
+      "slot": "鞋"
+    },
+    {
+      "name": "［初階］凝魂道褲",
+      "slot": "褲"
+    },
+    {
+      "name": "［初階］凝魂靈靴",
+      "slot": "鞋"
+    },
+    {
+      "name": "［初階］靈羽法褲",
+      "slot": "褲"
+    },
+    {
+      "name": "［初階］靈羽踏雲靴",
+      "slot": "鞋"
+    },
+    {
+      "name": "［初階］流風靴",
+      "slot": "鞋"
+    },
+    {
+      "name": "［初階］水紋靈衣",
+      "slot": "身"
+    },
+    {
+      "name": "［初階］踏浪靴",
+      "slot": "鞋"
+    },
+    {
+      "name": "［初階］厚岩戰衣",
+      "slot": "身"
+    },
+    {
+      "name": "［初階］岩紋護腿",
+      "slot": "褲"
+    },
+    {
+      "name": "［初階］赤炎戰衣",
+      "slot": "身"
+    },
+    {
+      "name": "［初階］烈行戰靴",
+      "slot": "鞋"
+    },
+    {
+      "name": "［初階］青木額冠",
+      "slot": "頭"
+    },
+    {
+      "name": "［初階］翠藤衣",
+      "slot": "身"
+    },
+    {
+      "name": "［初階］藤影靴",
+      "slot": "鞋"
+    },
+    {
+      "name": "［初階］雷紋護額",
+      "slot": "頭"
+    },
+    {
+      "name": "［初階］紫電戰衣",
+      "slot": "身"
+    },
+    {
+      "name": "［初階］疾雷靴",
+      "slot": "鞋"
+    },
+    {
+      "name": "［初階］回瀾冠",
+      "slot": "頭"
+    },
+    {
+      "name": "［初階］玄水靈衣",
+      "slot": "身"
+    },
+    {
+      "name": "［初階］潮生護腿",
+      "slot": "褲"
+    },
+    {
+      "name": "［初階］土靈頭盔",
+      "slot": "頭"
+    },
+    {
+      "name": "［初階］勁地靴",
+      "slot": "鞋"
+    },
+    {
+      "name": "［中階］赤炎戰衣",
+      "slot": "身"
+    },
+    {
+      "name": "［中階］厚岩戰衣",
+      "slot": "身"
+    },
+    {
+      "name": "［中階］水紋靈衣",
+      "slot": "身"
+    },
+    {
+      "name": "［中階］流風靴",
+      "slot": "鞋"
+    },
+    {
+      "name": "［中階］踏浪靴",
+      "slot": "鞋"
+    },
+    {
+      "name": "［中階］土晶戰衣",
+      "slot": "身"
+    },
+    {
+      "name": "［初階］狼皮護頸",
+      "slot": "寵物"
+    },
+    {
+      "name": "［初階］蟲甲護片",
+      "slot": "寵物"
+    },
+    {
+      "name": "［初階］黑蠍甲環",
+      "slot": "寵物"
+    },
+    {
+      "name": "［初階］獸骨頸甲",
+      "slot": "寵物"
+    },
+    {
+      "name": "［初階］硬骨獸甲",
+      "slot": "寵物"
+    },
+    {
+      "name": "［初階］血獸環",
+      "slot": "寵物"
+    },
+    {
+      "name": "［初階］濃血戰環",
+      "slot": "寵物"
+    },
+    {
+      "name": "［初階］赤尾靈飾",
+      "slot": "寵物"
+    },
+    {
+      "name": "［初階］骨粉護符",
+      "slot": "寵物"
+    },
+    {
+      "name": "［初階］血精獸符",
+      "slot": "寵物"
+    },
+    {
+      "name": "［初階］靈楊獸牌",
+      "slot": "寵物"
+    },
+    {
+      "name": "［初階］硬骨戰甲",
+      "slot": "寵物"
+    },
+    {
+      "name": "［初階］血魄獸環",
+      "slot": "寵物"
+    },
+    {
+      "name": "［初階］凝魂獸佩",
+      "slot": "寵物"
+    },
+    {
+      "name": "［初階］妖元靈核",
+      "slot": "寵物"
+    },
+    {
+      "name": "［初階］龜甲護片",
+      "slot": "寵物"
+    },
+    {
+      "name": "［初階］龜甲背甲",
+      "slot": "寵物"
+    },
+    {
+      "name": "［初階］碧靈獸環",
+      "slot": "寵物"
+    },
+    {
+      "name": "［初階］玄靈獸甲",
+      "slot": "寵物"
+    },
+    {
+      "name": "［初階］凝魂獸鈴",
+      "slot": "寵物"
+    },
+    {
+      "name": "［特殊］靈水劍",
+      "slot": "武器"
+    },
+    {
+      "name": "［特殊］秘術弓",
+      "slot": "武器"
+    },
+    {
+      "name": "［特殊］鹿絞槍",
+      "slot": "武器"
+    },
+    {
+      "name": "［特殊］火霞刀",
+      "slot": "武器"
+    },
+    {
+      "name": "［特殊］問心劍",
+      "slot": "武器"
+    },
+    {
+      "name": "［特殊］破軍刀",
+      "slot": "武器"
+    },
+    {
+      "name": "［特殊］問道槍",
+      "slot": "武器"
+    },
+    {
+      "name": "［特殊］逐星弓",
+      "slot": "武器"
+    },
+    {
+      "name": "［特殊］破境拳套",
+      "slot": "武器"
+    },
+    {
+      "name": "［特殊］鎮岳錘",
+      "slot": "武器"
+    },
+    {
+      "name": "［特殊］問靈寶珠",
+      "slot": "武器"
+    },
+    {
+      "name": "［特殊］清虛道扇",
+      "slot": "武器"
+    },
+    {
+      "name": "［特殊］納靈葫蘆",
+      "slot": "武器"
+    },
+    {
+      "name": "［特殊］玄機靈傘",
+      "slot": "武器"
+    },
+    {
+      "name": "［特殊］土靈盔",
+      "slot": "頭"
+    },
+    {
+      "name": "［特殊］元華斗笠",
+      "slot": "頭"
+    },
+    {
+      "name": "［特殊］忡靈頭盔",
+      "slot": "頭"
+    },
+    {
+      "name": "［特殊］忡靈戰甲",
+      "slot": "身"
+    },
+    {
+      "name": "［特殊］忡靈鎖褲",
+      "slot": "褲"
+    },
+    {
+      "name": "［特殊］忡靈戰靴",
+      "slot": "鞋"
+    },
+    {
+      "name": "［特殊］問道戰衣",
+      "slot": "身"
+    },
+    {
+      "name": "［特殊］問道戰靴",
+      "slot": "鞋"
+    },
+    {
+      "name": "［特殊］問靈道冠",
+      "slot": "頭"
+    },
+    {
+      "name": "［特殊］玄心道袍",
+      "slot": "身"
+    },
+    {
+      "name": "［特殊］踏虛靈履",
+      "slot": "鞋"
+    },
+    {
+      "name": "［特殊］問天戰衣",
+      "slot": "身"
+    },
+    {
+      "name": "［特殊］獸牙護符",
+      "slot": "寵物"
+    },
+    {
+      "name": "［特殊］靈獸頸環",
+      "slot": "寵物"
+    },
+    {
+      "name": "［特殊］戰獸爪環",
+      "slot": "寵物"
+    },
+    {
+      "name": "［特殊］護獸靈甲",
+      "slot": "寵物"
+    },
+    {
+      "name": "［特殊］疾獸鈴",
+      "slot": "寵物"
+    },
+    {
+      "name": "［特殊］萬獸靈環",
+      "slot": "寵物"
+    },
+    {
+      "name": "［特殊］破天獸牙",
+      "slot": "寵物"
+    },
+    {
+      "name": "［特殊］萬靈道珠",
+      "slot": "寵物"
+    },
+    {
+      "name": "［特殊］不滅獸甲",
+      "slot": "寵物"
+    },
+    {
+      "name": "［特殊］天獸靈鈴",
+      "slot": "寵物"
+    },
+    {
+      "name": "［初階］狐絨靈環",
+      "slot": "寵物"
+    },
+    {
+      "name": "［特殊］清風靈葫",
+      "slot": "武器"
+    },
+    {
+      "name": "［特殊］靈水傘",
+      "slot": "武器"
+    },
+    {
+      "name": "［無階］新手護符",
+      "slot": "飾品"
+    },
+    {
+      "name": "［無階］新手項鍊",
+      "slot": "項鍊"
+    },
+    {
+      "name": "［無階］新手戒指",
+      "slot": "戒指"
+    },
+    {
+      "name": "［初階］青玉指環",
+      "slot": "戒指"
+    },
+    {
+      "name": "［初階］靈紋項鍊",
+      "slot": "項鍊"
+    },
+    {
+      "name": "［初階］聚靈護符",
+      "slot": "飾品"
+    },
+    {
+      "name": "［初階］赤銅吊墜",
+      "slot": "項鍊"
+    },
+    {
+      "name": "［初階］赤銅指環",
+      "slot": "戒指"
+    },
+    {
+      "name": "［初階］蛇鱗墜",
+      "slot": "項鍊"
+    },
+    {
+      "name": "［初階］蛟鱗戒",
+      "slot": "戒指"
+    },
+    {
+      "name": "［初階］妖羽耳飾",
+      "slot": "飾品"
+    },
+    {
+      "name": "［初階］雀羽墜",
+      "slot": "項鍊"
+    },
+    {
+      "name": "［初階］獸牙項鍊",
+      "slot": "項鍊"
+    },
+    {
+      "name": "［初階］利爪戒",
+      "slot": "戒指"
+    },
+    {
+      "name": "［初階］赤尾玉佩",
+      "slot": "飾品"
+    },
+    {
+      "name": "［初階］碧芯吊墜",
+      "slot": "項鍊"
+    },
+    {
+      "name": "［初階］導靈指環",
+      "slot": "戒指"
+    },
+    {
+      "name": "［初階］魂紋佩",
+      "slot": "飾品"
+    },
+    {
+      "name": "［初階］凝魂墜",
+      "slot": "項鍊"
+    },
+    {
+      "name": "［初階］玄靈道戒",
+      "slot": "戒指"
+    },
+    {
+      "name": "［初階］碧魂靈墜",
+      "slot": "項鍊"
+    },
+    {
+      "name": "［初階］羽靈玉佩",
+      "slot": "飾品"
+    },
+    {
+      "name": "［初階］血靈墜",
+      "slot": "項鍊"
+    },
+    {
+      "name": "［初階］玄魂指環",
+      "slot": "戒指"
+    },
+    {
+      "name": "［初階］雷紋項鍊",
+      "slot": "項鍊"
+    },
+    {
+      "name": "［初階］潤生指環",
+      "slot": "戒指"
+    },
+    {
+      "name": "［初階］回瀾項鍊",
+      "slot": "項鍊"
+    },
+    {
+      "name": "［中階］雷紋項鍊",
+      "slot": "項鍊"
+    },
+    {
+      "name": "［中階］潤生指環",
+      "slot": "戒指"
+    },
+    {
+      "name": "［中階］回瀾項鍊",
+      "slot": "項鍊"
+    },
+    {
+      "name": "［特殊］水心靈墜",
+      "slot": "項鍊"
+    },
+    {
+      "name": "［特殊］厚土護佩",
+      "slot": "飾品"
+    },
+    {
+      "name": "［特殊］問道護符",
+      "slot": "飾品"
+    },
+    {
+      "name": "［特殊］戰心指環",
+      "slot": "戒指"
+    },
+    {
+      "name": "［特殊］問心戒",
+      "slot": "戒指"
+    },
+    {
+      "name": "［特殊］問道佩",
+      "slot": "飾品"
+    },
+    {
+      "name": "［特殊］破境項鍊",
+      "slot": "項鍊"
+    },
+    {
+      "name": "［特殊］道心靈墜",
+      "slot": "項鍊"
+    },
+    {
+      "name": "［特殊］問天玉佩",
+      "slot": "飾品"
+    },
+    {
+      "name": "［特殊］破天戰佩",
+      "slot": "飾品"
+    }
+  ],
+  "medicines": [
+    {
+      "name": "［初階］氣血藥水",
+      "desc": "氣血＋50；戰前／戰中共用。",
+      "sources": [
+        {
+          "kind": "挑戰",
+          "name": "問道檯",
+          "text": "問道檯・逐步挑戰第4層首通×5"
+        },
+        {
+          "kind": "配方",
+          "name": "［初階］氣血藥水",
+          "text": "藥品製作：靈草×2＋藥草×1"
+        },
+        {
+          "kind": "商店",
+          "name": "賈金發",
+          "text": "賈金發販售（35靈幣）"
+        },
+        {
+          "kind": "任務",
+          "name": "CQ-DZ-009",
+          "text": "委託・素材換藥水！（可選獎勵×5）"
+        },
+        {
+          "kind": "任務",
+          "name": "CQ-DZ-011",
+          "text": "委託・收集！（可選獎勵×10）"
+        },
+        {
+          "kind": "任務",
+          "name": "CQ-DZ-022",
+          "text": "委託・急需靈幣（可選獎勵×50）"
+        },
+        {
+          "kind": "任務",
+          "name": "sidePotion",
+          "text": "支線・來！送你點不重要的玩意兒。"
+        },
+        {
+          "kind": "任務",
+          "name": "tutorial2",
+          "text": "主線・入門教學2"
+        }
+      ]
+    },
+    {
+      "name": "［初階］靈力藥水",
+      "desc": "靈力＋20；戰前／戰中共用。",
+      "sources": [
+        {
+          "kind": "挑戰",
+          "name": "問道檯",
+          "text": "問道檯・逐步挑戰第4層首通×5"
+        },
+        {
+          "kind": "配方",
+          "name": "［初階］靈力藥水",
+          "text": "藥品製作：靈草×2＋靈果×1"
+        },
+        {
+          "kind": "商店",
+          "name": "賈金發",
+          "text": "賈金發販售（30靈幣）"
+        },
+        {
+          "kind": "任務",
+          "name": "CQ-DZ-009",
+          "text": "委託・素材換藥水！（可選獎勵×5）"
+        },
+        {
+          "kind": "任務",
+          "name": "CQ-DZ-011",
+          "text": "委託・收集！（可選獎勵×10）"
+        },
+        {
+          "kind": "任務",
+          "name": "CQ-DZ-022",
+          "text": "委託・急需靈幣（可選獎勵×50）"
+        },
+        {
+          "kind": "任務",
+          "name": "CQ-DZ-040",
+          "text": "委託・靈粉不夠用了！（固定獎勵×5）"
+        },
+        {
+          "kind": "任務",
+          "name": "sidePotion",
+          "text": "支線・來！送你點不重要的玩意兒。"
+        },
+        {
+          "kind": "任務",
+          "name": "tutorial2",
+          "text": "主線・入門教學2"
+        }
+      ]
+    },
+    {
+      "name": "［初階］清露藥水",
+      "desc": "氣血＋35、靈力＋10；戰前／戰中共用。",
+      "sources": [
+        {
+          "kind": "配方",
+          "name": "［初階］清露藥水",
+          "text": "藥品製作：靈露×2＋藥草×1"
+        }
+      ]
+    },
+    {
+      "name": "［初階］凝靈藥水",
+      "desc": "靈力＋40；戰前／戰中共用。",
+      "sources": [
+        {
+          "kind": "配方",
+          "name": "［初階］凝靈藥水",
+          "text": "藥品製作：凝露花×1＋靈露×2"
+        }
+      ]
+    },
+    {
+      "name": "［初階］百靈藥水",
+      "desc": "氣血＋100、靈力＋30；戰前／戰中共用。",
+      "sources": [
+        {
+          "kind": "配方",
+          "name": "［初階］百靈藥水",
+          "text": "藥品製作：百年靈草×1＋玉葉果×1＋靈露×1"
+        },
+        {
+          "kind": "任務",
+          "name": "CQ-DZ-033",
+          "text": "委託・異常凶狠的甲蟲！（可選獎勵×10）"
+        },
+        {
+          "kind": "任務",
+          "name": "CQ-DZ-041",
+          "text": "委託・深窟裡有鬼！（固定獎勵×3）"
+        },
+        {
+          "kind": "任務",
+          "name": "CQ-DZ-044",
+          "text": "委託・燐火與靈蝶（固定獎勵×5）"
+        }
+      ]
+    },
+    {
+      "name": "［初階］濃縮氣血藥水",
+      "desc": "氣血＋80；戰前／戰中共用。",
+      "sources": [
+        {
+          "kind": "配方",
+          "name": "［初階］濃縮氣血藥水",
+          "text": "藥品製作：靈藥粉×1＋靈露×1"
+        }
+      ]
+    },
+    {
+      "name": "［初階］清神藥水",
+      "desc": "解除自身睡眠。",
+      "sources": [
+        {
+          "kind": "配方",
+          "name": "［初階］清神藥水",
+          "text": "藥品製作：靈粉×1＋靈露×1＋藥草×1"
+        },
+        {
+          "kind": "商店",
+          "name": "賈金發",
+          "text": "賈金發販售（65靈幣）"
+        }
+      ]
+    },
+    {
+      "name": "［初階］醒目藥水",
+      "desc": "解除自身失明。",
+      "sources": [
+        {
+          "kind": "配方",
+          "name": "［初階］醒目藥水",
+          "text": "藥品製作：靈粉×1＋凝露花×1"
+        },
+        {
+          "kind": "商店",
+          "name": "賈金發",
+          "text": "賈金發販售（65靈幣）"
+        }
+      ]
+    },
+    {
+      "name": "［初階］寧息藥水",
+      "desc": "戰鬥中使用，使自身睡眠抗性＋20%，持續3回合。",
+      "sources": [
+        {
+          "kind": "配方",
+          "name": "［初階］寧息藥水",
+          "text": "藥品製作：靈粉×1＋靈草×2"
+        }
+      ]
+    },
+    {
+      "name": "［初階］治癒丹",
+      "desc": "戰鬥中使用，每回合恢復30氣血，持續3回合。",
+      "sources": [
+        {
+          "kind": "配方",
+          "name": "［初階］治癒丹",
+          "text": "丹藥製作：藥草×3＋脆脆果×1"
+        },
+        {
+          "kind": "任務",
+          "name": "CQ-DZ-029",
+          "text": "委託・打不動的蟲！（可選獎勵×8）"
+        }
+      ]
+    },
+    {
+      "name": "［初階］靈癒丹",
+      "desc": "戰鬥中使用，每回合恢復10靈力，持續3回合。",
+      "sources": [
+        {
+          "kind": "配方",
+          "name": "［初階］靈癒丹",
+          "text": "丹藥製作：藥草×2＋靈果×1＋脆脆果×1"
+        },
+        {
+          "kind": "任務",
+          "name": "CQ-DZ-029",
+          "text": "委託・打不動的蟲！（可選獎勵×8）"
+        }
+      ]
+    },
+    {
+      "name": "［初階］提靈丹",
+      "desc": "戰前使用，套用下一場戰鬥；最大靈力＋5%。",
+      "sources": [
+        {
+          "kind": "配方",
+          "name": "［初階］提靈丹",
+          "text": "丹藥製作：靈露×2＋凝露花×1"
+        },
+        {
+          "kind": "商店",
+          "name": "雲知秋",
+          "text": "雲知秋販售（120靈幣）"
+        }
+      ]
+    },
+    {
+      "name": "［初階］碧元丹",
+      "desc": "戰前使用，套用下一場戰鬥；防＋5%。",
+      "sources": [
+        {
+          "kind": "配方",
+          "name": "［初階］碧元丹",
+          "text": "丹藥製作：碧萃枝×2＋玉葉果×1"
+        },
+        {
+          "kind": "商店",
+          "name": "雲知秋",
+          "text": "雲知秋販售（120靈幣）"
+        }
+      ]
+    },
+    {
+      "name": "［初階］百草丹",
+      "desc": "戰前使用，套用下一場戰鬥；最大氣血＋7%。",
+      "sources": [
+        {
+          "kind": "配方",
+          "name": "［初階］百草丹",
+          "text": "丹藥製作：百年靈草×1＋靈藥粉×1"
+        },
+        {
+          "kind": "商店",
+          "name": "雲知秋",
+          "text": "雲知秋販售（150靈幣）"
+        }
+      ]
+    },
+    {
+      "name": "［初階］養元丹",
+      "desc": "戰前使用，套用下一場戰鬥；靈力消耗－8%。",
+      "sources": [
+        {
+          "kind": "配方",
+          "name": "［初階］養元丹",
+          "text": "丹藥製作：玉葉果×1＋精靈液×1"
+        },
+        {
+          "kind": "商店",
+          "name": "雲知秋",
+          "text": "雲知秋販售（160靈幣）"
+        }
+      ]
+    },
+    {
+      "name": "［初階］血氣丹",
+      "desc": "戰前使用，套用下一場戰鬥；攻＋5%。",
+      "sources": [
+        {
+          "kind": "配方",
+          "name": "［初階］血氣丹",
+          "text": "丹藥製作：妖獸精血×2＋獸骨粉×1"
+        },
+        {
+          "kind": "商店",
+          "name": "雲知秋",
+          "text": "雲知秋販售（120靈幣）"
+        }
+      ]
+    },
+    {
+      "name": "［初階］淬體丹",
+      "desc": "戰前使用，套用下一場戰鬥；防＋7%",
+      "sources": [
+        {
+          "kind": "配方",
+          "name": "［初階］淬體丹",
+          "text": "丹藥製作：濃縮妖血×1＋獸骨粉×1"
+        }
+      ]
+    },
+    {
+      "name": "［初階］聚靈丹",
+      "desc": "戰前使用，套用下一場戰鬥；最大靈力＋7%。",
+      "sources": [
+        {
+          "kind": "配方",
+          "name": "［初階］聚靈丹",
+          "text": "丹藥製作：殘缺妖丹×2＋靈露×1"
+        },
+        {
+          "kind": "商店",
+          "name": "雲知秋",
+          "text": "雲知秋販售（150靈幣）"
+        }
+      ]
+    },
+    {
+      "name": "［初階］凝元丹",
+      "desc": "戰前使用，套用下一場戰鬥；攻＋4%、命＋4%。",
+      "sources": [
+        {
+          "kind": "配方",
+          "name": "［初階］凝元丹",
+          "text": "丹藥製作：妖丹×1＋精靈液×1"
+        },
+        {
+          "kind": "商店",
+          "name": "雲知秋",
+          "text": "雲知秋販售（160靈幣）"
+        }
+      ]
+    },
+    {
+      "name": "［初階］避毒丹",
+      "desc": "戰前使用，套用下一場戰鬥；中毒抗性＋25%。",
+      "sources": [
+        {
+          "kind": "配方",
+          "name": "［初階］避毒丹",
+          "text": "丹藥製作：毒囊×1＋凝露花×1"
+        },
+        {
+          "kind": "商店",
+          "name": "雲知秋",
+          "text": "雲知秋販售（140靈幣）"
+        }
+      ]
+    },
+    {
+      "name": "［初階］血靈丹",
+      "desc": "戰前使用，套用下一場戰鬥；最大氣血＋5%、攻＋3%",
+      "sources": [
+        {
+          "kind": "配方",
+          "name": "［初階］血靈丹",
+          "text": "丹藥製作：妖血精華×1＋靈藥粉×1"
+        }
+      ]
+    },
+    {
+      "name": "［初階］獸元丹",
+      "desc": "戰前使用，套用下一場戰鬥；攻＋5%、防＋5%、身＋5%",
+      "sources": [
+        {
+          "kind": "配方",
+          "name": "［初階］獸元丹",
+          "text": "丹藥製作：濃靈血精×1＋妖丹精華×1"
+        }
+      ]
+    },
+    {
+      "name": "［初階］妖元丹",
+      "desc": "戰前使用，套用下一場戰鬥；最大靈力＋8%、命＋5%。",
+      "sources": [
+        {
+          "kind": "配方",
+          "name": "［初階］妖元丹",
+          "text": "丹藥製作：妖丹精華×1＋精靈液×1＋玉葉果×1"
+        },
+        {
+          "kind": "商店",
+          "name": "雲知秋",
+          "text": "雲知秋販售（200靈幣）"
+        }
+      ]
+    },
+    {
+      "name": "［初階］醒神丹",
+      "desc": "戰鬥中立即解除睡眠",
+      "sources": [
+        {
+          "kind": "配方",
+          "name": "［初階］醒神丹",
+          "text": "丹藥製作：靈粉×2＋玉葉果×1"
+        }
+      ]
+    },
+    {
+      "name": "［初階］明目丹",
+      "desc": "戰鬥中立即解除失明",
+      "sources": [
+        {
+          "kind": "配方",
+          "name": "［初階］明目丹",
+          "text": "丹藥製作：靈粉×2＋凝露花×1"
+        }
+      ]
+    },
+    {
+      "name": "［初階］靈息丹",
+      "desc": "戰鬥中使用；命＋8%，持續3回合。",
+      "sources": [
+        {
+          "kind": "兌換",
+          "name": "問道檯",
+          "text": "問道檯商店・35問道積分"
+        },
+        {
+          "kind": "配方",
+          "name": "［初階］靈息丹",
+          "text": "丹藥製作：靈粉×2＋精靈液×1"
+        }
+      ]
+    },
+    {
+      "name": "［特殊］獸靈果丹",
+      "desc": "寵物限定：永久自選八核心一項；氣血／靈力＋20，其餘＋5。配方獸靈果×5。",
+      "sources": [
+        {
+          "kind": "配方",
+          "name": "［特殊］獸靈果丹",
+          "text": "丹藥製作：獸靈果×5"
+        }
+      ]
+    },
+    {
+      "name": "［特殊］靈獸露丹",
+      "desc": "寵物限定：永久選自身一種合法元素傷害＋1%，各元素上限10%；雙屬性只選一種。配方靈獸露×5。",
+      "sources": [
+        {
+          "kind": "配方",
+          "name": "［特殊］靈獸露丹",
+          "text": "丹藥製作：靈獸露×5"
+        }
+      ]
+    },
+    {
+      "name": "［初階］迅獸丹",
+      "desc": "",
+      "sources": [
+        {
+          "kind": "兌換",
+          "name": "萬獸檯",
+          "text": "萬獸檯・30萬獸積分兌換×1"
+        },
+        {
+          "kind": "任務",
+          "name": "CQ-DZ-032",
+          "text": "委託・寵物穿裝備很可愛對吧！（可選獎勵×3）"
+        }
+      ]
+    },
+    {
+      "name": "［初階］獸戰丹",
+      "desc": "",
+      "sources": [
+        {
+          "kind": "兌換",
+          "name": "萬獸檯",
+          "text": "萬獸檯・30萬獸積分兌換×1"
+        },
+        {
+          "kind": "任務",
+          "name": "CQ-DZ-032",
+          "text": "委託・寵物穿裝備很可愛對吧！（可選獎勵×3）"
+        }
+      ]
+    },
+    {
+      "name": "［初階］護獸丹",
+      "desc": "",
+      "sources": [
+        {
+          "kind": "兌換",
+          "name": "萬獸檯",
+          "text": "萬獸檯・30萬獸積分兌換×1"
+        },
+        {
+          "kind": "任務",
+          "name": "CQ-DZ-032",
+          "text": "委託・寵物穿裝備很可愛對吧！（可選獎勵×3）"
+        }
+      ]
+    },
+    {
+      "name": "［初階］寵物用破境丹",
+      "desc": "",
+      "sources": [
+        {
+          "kind": "兌換",
+          "name": "萬獸檯",
+          "text": "萬獸檯・40萬獸積分兌換×1"
+        },
+        {
+          "kind": "兌換",
+          "name": "萬獸檯",
+          "text": "萬獸檯・80萬獸積分兌換×1"
+        }
+      ]
+    },
+    {
+      "name": "［中階］寵物用破境丹",
+      "desc": "",
+      "sources": [
+        {
+          "kind": "兌換",
+          "name": "萬獸檯",
+          "text": "萬獸檯・40萬獸積分兌換×1"
+        },
+        {
+          "kind": "兌換",
+          "name": "萬獸檯",
+          "text": "萬獸檯・80萬獸積分兌換×1"
+        }
+      ]
+    },
+    {
+      "name": "［初階］靈根丹",
+      "desc": "",
+      "sources": [
+        {
+          "kind": "兌換",
+          "name": "朝御城",
+          "text": "朝御城聲望兌換所・120聲望"
+        },
+        {
+          "kind": "挑戰",
+          "name": "問道檯",
+          "text": "問道檯・逐步挑戰第3層首通×1"
+        },
+        {
+          "kind": "挑戰",
+          "name": "問道檯",
+          "text": "問道檯・逐步挑戰第10層首通×2"
+        },
+        {
+          "kind": "任務",
+          "name": "CQ-DZ-048",
+          "text": "委託・黑潮三獸試煉（固定獎勵×1）"
+        },
+        {
+          "kind": "任務",
+          "name": "strength",
+          "text": "主線・變強，才有保護的能力"
+        },
+        {
+          "kind": "任務",
+          "name": "realmBreakQuest",
+          "text": "主線・破境"
+        },
+        {
+          "kind": "任務",
+          "name": "granddaughter",
+          "text": "支線・走丟的孫女"
+        }
+      ]
+    },
+    {
+      "name": "［初階］凝力丹",
+      "desc": "戰鬥中使用；攻＋8%，持續3回合。",
+      "sources": [
+        {
+          "kind": "兌換",
+          "name": "問道檯",
+          "text": "問道檯商店・35問道積分"
+        }
+      ]
+    },
+    {
+      "name": "［初階］凝道丹",
+      "desc": "戰鬥中使用，道＋8%，持續3回合。",
+      "sources": [
+        {
+          "kind": "兌換",
+          "name": "問道檯",
+          "text": "問道檯商店・35問道積分"
+        }
+      ]
+    },
+    {
+      "name": "［初階］清靈丹",
+      "desc": "戰鬥中使用，效果命中＋12%，持續3回合。",
+      "sources": [
+        {
+          "kind": "兌換",
+          "name": "問道檯",
+          "text": "問道檯商店・35問道積分"
+        }
+      ]
+    },
+    {
+      "name": "［初階］鎮心丹",
+      "desc": "戰鬥中使用，身＋10%，持續3回合。",
+      "sources": [
+        {
+          "kind": "兌換",
+          "name": "問道檯",
+          "text": "問道檯商店・35問道積分"
+        }
+      ]
+    },
+    {
+      "name": "［三階］凝靈妖丹",
+      "desc": "",
+      "sources": []
+    },
+    {
+      "name": "［初階］綜合藥水",
+      "desc": "氣血＋30、靈力＋10；戰前／戰中共用。",
+      "sources": [
+        {
+          "kind": "商店",
+          "name": "賈金發",
+          "text": "賈金發販售（45靈幣）"
+        },
+        {
+          "kind": "任務",
+          "name": "feather",
+          "text": "支線・鳴雀的羽毛"
+        }
+      ]
+    },
+    {
+      "name": "［初階］解毒藥水",
+      "desc": "解除自身中毒。",
+      "sources": [
+        {
+          "kind": "商店",
+          "name": "賈金發",
+          "text": "賈金發販售（80靈幣）"
+        }
+      ]
+    },
+    {
+      "name": "［初階］解燒藥水",
+      "desc": "解除自身灼燒。",
+      "sources": [
+        {
+          "kind": "商店",
+          "name": "賈金發",
+          "text": "賈金發販售（80靈幣）"
+        }
+      ]
+    },
+    {
+      "name": "［初階］止血藥水",
+      "desc": "解除自身流血。",
+      "sources": [
+        {
+          "kind": "商店",
+          "name": "賈金發",
+          "text": "賈金發販售（80靈幣）"
+        }
+      ]
+    },
+    {
+      "name": "［中階］氣血藥水",
+      "desc": "恢復氣血 50；戰前／戰中共用。",
+      "sources": [
+        {
+          "kind": "挑戰",
+          "name": "問道檯",
+          "text": "問道檯・逐步挑戰第4層首通×5"
+        },
+        {
+          "kind": "配方",
+          "name": "［初階］氣血藥水",
+          "text": "藥品製作：靈草×2＋藥草×1"
+        },
+        {
+          "kind": "商店",
+          "name": "賈金發",
+          "text": "賈金發販售（35靈幣）"
+        },
+        {
+          "kind": "任務",
+          "name": "CQ-DZ-009",
+          "text": "委託・素材換藥水！（可選獎勵×5）"
+        },
+        {
+          "kind": "任務",
+          "name": "CQ-DZ-011",
+          "text": "委託・收集！（可選獎勵×10）"
+        },
+        {
+          "kind": "任務",
+          "name": "CQ-DZ-022",
+          "text": "委託・急需靈幣（可選獎勵×50）"
+        },
+        {
+          "kind": "任務",
+          "name": "sidePotion",
+          "text": "支線・來！送你點不重要的玩意兒。"
+        },
+        {
+          "kind": "任務",
+          "name": "tutorial2",
+          "text": "主線・入門教學2"
+        }
+      ]
+    },
+    {
+      "name": "［中階］靈力藥水",
+      "desc": "恢復 靈力 20；戰前／戰中共用。",
+      "sources": [
+        {
+          "kind": "挑戰",
+          "name": "問道檯",
+          "text": "問道檯・逐步挑戰第4層首通×5"
+        },
+        {
+          "kind": "配方",
+          "name": "［初階］靈力藥水",
+          "text": "藥品製作：靈草×2＋靈果×1"
+        },
+        {
+          "kind": "商店",
+          "name": "賈金發",
+          "text": "賈金發販售（30靈幣）"
+        },
+        {
+          "kind": "任務",
+          "name": "CQ-DZ-009",
+          "text": "委託・素材換藥水！（可選獎勵×5）"
+        },
+        {
+          "kind": "任務",
+          "name": "CQ-DZ-011",
+          "text": "委託・收集！（可選獎勵×10）"
+        },
+        {
+          "kind": "任務",
+          "name": "CQ-DZ-022",
+          "text": "委託・急需靈幣（可選獎勵×50）"
+        },
+        {
+          "kind": "任務",
+          "name": "CQ-DZ-040",
+          "text": "委託・靈粉不夠用了！（固定獎勵×5）"
+        },
+        {
+          "kind": "任務",
+          "name": "sidePotion",
+          "text": "支線・來！送你點不重要的玩意兒。"
+        },
+        {
+          "kind": "任務",
+          "name": "tutorial2",
+          "text": "主線・入門教學2"
+        }
+      ]
+    },
+    {
+      "name": "［中階］綜合藥水",
+      "desc": "恢復氣血 30 靈力 10；戰前／戰中共用。",
+      "sources": [
+        {
+          "kind": "商店",
+          "name": "賈金發",
+          "text": "賈金發販售（45靈幣）"
+        },
+        {
+          "kind": "任務",
+          "name": "feather",
+          "text": "支線・鳴雀的羽毛"
+        }
+      ]
+    },
+    {
+      "name": "［高階］氣血藥水",
+      "desc": "恢復氣血 50；戰前／戰中共用。",
+      "sources": [
+        {
+          "kind": "挑戰",
+          "name": "問道檯",
+          "text": "問道檯・逐步挑戰第4層首通×5"
+        },
+        {
+          "kind": "配方",
+          "name": "［初階］氣血藥水",
+          "text": "藥品製作：靈草×2＋藥草×1"
+        },
+        {
+          "kind": "商店",
+          "name": "賈金發",
+          "text": "賈金發販售（35靈幣）"
+        },
+        {
+          "kind": "任務",
+          "name": "CQ-DZ-009",
+          "text": "委託・素材換藥水！（可選獎勵×5）"
+        },
+        {
+          "kind": "任務",
+          "name": "CQ-DZ-011",
+          "text": "委託・收集！（可選獎勵×10）"
+        },
+        {
+          "kind": "任務",
+          "name": "CQ-DZ-022",
+          "text": "委託・急需靈幣（可選獎勵×50）"
+        },
+        {
+          "kind": "任務",
+          "name": "sidePotion",
+          "text": "支線・來！送你點不重要的玩意兒。"
+        },
+        {
+          "kind": "任務",
+          "name": "tutorial2",
+          "text": "主線・入門教學2"
+        }
+      ]
+    },
+    {
+      "name": "［高階］靈力藥水",
+      "desc": "恢復 靈力 20；戰前／戰中共用。",
+      "sources": [
+        {
+          "kind": "挑戰",
+          "name": "問道檯",
+          "text": "問道檯・逐步挑戰第4層首通×5"
+        },
+        {
+          "kind": "配方",
+          "name": "［初階］靈力藥水",
+          "text": "藥品製作：靈草×2＋靈果×1"
+        },
+        {
+          "kind": "商店",
+          "name": "賈金發",
+          "text": "賈金發販售（30靈幣）"
+        },
+        {
+          "kind": "任務",
+          "name": "CQ-DZ-009",
+          "text": "委託・素材換藥水！（可選獎勵×5）"
+        },
+        {
+          "kind": "任務",
+          "name": "CQ-DZ-011",
+          "text": "委託・收集！（可選獎勵×10）"
+        },
+        {
+          "kind": "任務",
+          "name": "CQ-DZ-022",
+          "text": "委託・急需靈幣（可選獎勵×50）"
+        },
+        {
+          "kind": "任務",
+          "name": "CQ-DZ-040",
+          "text": "委託・靈粉不夠用了！（固定獎勵×5）"
+        },
+        {
+          "kind": "任務",
+          "name": "sidePotion",
+          "text": "支線・來！送你點不重要的玩意兒。"
+        },
+        {
+          "kind": "任務",
+          "name": "tutorial2",
+          "text": "主線・入門教學2"
+        }
+      ]
+    },
+    {
+      "name": "［高階］綜合藥水",
+      "desc": "恢復氣血 30 靈力 10；戰前／戰中共用。",
+      "sources": [
+        {
+          "kind": "商店",
+          "name": "賈金發",
+          "text": "賈金發販售（45靈幣）"
+        },
+        {
+          "kind": "任務",
+          "name": "feather",
+          "text": "支線・鳴雀的羽毛"
+        }
+      ]
+    },
+    {
+      "name": "［仙階］氣血藥水",
+      "desc": "恢復氣血 50；戰前／戰中共用。",
+      "sources": [
+        {
+          "kind": "挑戰",
+          "name": "問道檯",
+          "text": "問道檯・逐步挑戰第4層首通×5"
+        },
+        {
+          "kind": "配方",
+          "name": "［初階］氣血藥水",
+          "text": "藥品製作：靈草×2＋藥草×1"
+        },
+        {
+          "kind": "商店",
+          "name": "賈金發",
+          "text": "賈金發販售（35靈幣）"
+        },
+        {
+          "kind": "任務",
+          "name": "CQ-DZ-009",
+          "text": "委託・素材換藥水！（可選獎勵×5）"
+        },
+        {
+          "kind": "任務",
+          "name": "CQ-DZ-011",
+          "text": "委託・收集！（可選獎勵×10）"
+        },
+        {
+          "kind": "任務",
+          "name": "CQ-DZ-022",
+          "text": "委託・急需靈幣（可選獎勵×50）"
+        },
+        {
+          "kind": "任務",
+          "name": "sidePotion",
+          "text": "支線・來！送你點不重要的玩意兒。"
+        },
+        {
+          "kind": "任務",
+          "name": "tutorial2",
+          "text": "主線・入門教學2"
+        }
+      ]
+    },
+    {
+      "name": "［仙階］靈力藥水",
+      "desc": "恢復 靈力 20；戰前／戰中共用。",
+      "sources": [
+        {
+          "kind": "挑戰",
+          "name": "問道檯",
+          "text": "問道檯・逐步挑戰第4層首通×5"
+        },
+        {
+          "kind": "配方",
+          "name": "［初階］靈力藥水",
+          "text": "藥品製作：靈草×2＋靈果×1"
+        },
+        {
+          "kind": "商店",
+          "name": "賈金發",
+          "text": "賈金發販售（30靈幣）"
+        },
+        {
+          "kind": "任務",
+          "name": "CQ-DZ-009",
+          "text": "委託・素材換藥水！（可選獎勵×5）"
+        },
+        {
+          "kind": "任務",
+          "name": "CQ-DZ-011",
+          "text": "委託・收集！（可選獎勵×10）"
+        },
+        {
+          "kind": "任務",
+          "name": "CQ-DZ-022",
+          "text": "委託・急需靈幣（可選獎勵×50）"
+        },
+        {
+          "kind": "任務",
+          "name": "CQ-DZ-040",
+          "text": "委託・靈粉不夠用了！（固定獎勵×5）"
+        },
+        {
+          "kind": "任務",
+          "name": "sidePotion",
+          "text": "支線・來！送你點不重要的玩意兒。"
+        },
+        {
+          "kind": "任務",
+          "name": "tutorial2",
+          "text": "主線・入門教學2"
+        }
+      ]
+    },
+    {
+      "name": "［仙階］綜合藥水",
+      "desc": "恢復氣血 30 靈力 10；戰前／戰中共用。",
+      "sources": [
+        {
+          "kind": "商店",
+          "name": "賈金發",
+          "text": "賈金發販售（45靈幣）"
+        },
+        {
+          "kind": "任務",
+          "name": "feather",
+          "text": "支線・鳴雀的羽毛"
+        }
+      ]
+    },
+    {
+      "name": "［天階］氣血藥水",
+      "desc": "恢復氣血 50；戰前／戰中共用。",
+      "sources": [
+        {
+          "kind": "挑戰",
+          "name": "問道檯",
+          "text": "問道檯・逐步挑戰第4層首通×5"
+        },
+        {
+          "kind": "配方",
+          "name": "［初階］氣血藥水",
+          "text": "藥品製作：靈草×2＋藥草×1"
+        },
+        {
+          "kind": "商店",
+          "name": "賈金發",
+          "text": "賈金發販售（35靈幣）"
+        },
+        {
+          "kind": "任務",
+          "name": "CQ-DZ-009",
+          "text": "委託・素材換藥水！（可選獎勵×5）"
+        },
+        {
+          "kind": "任務",
+          "name": "CQ-DZ-011",
+          "text": "委託・收集！（可選獎勵×10）"
+        },
+        {
+          "kind": "任務",
+          "name": "CQ-DZ-022",
+          "text": "委託・急需靈幣（可選獎勵×50）"
+        },
+        {
+          "kind": "任務",
+          "name": "sidePotion",
+          "text": "支線・來！送你點不重要的玩意兒。"
+        },
+        {
+          "kind": "任務",
+          "name": "tutorial2",
+          "text": "主線・入門教學2"
+        }
+      ]
+    },
+    {
+      "name": "［天階］靈力藥水",
+      "desc": "恢復 靈力 20；戰前／戰中共用。",
+      "sources": [
+        {
+          "kind": "挑戰",
+          "name": "問道檯",
+          "text": "問道檯・逐步挑戰第4層首通×5"
+        },
+        {
+          "kind": "配方",
+          "name": "［初階］靈力藥水",
+          "text": "藥品製作：靈草×2＋靈果×1"
+        },
+        {
+          "kind": "商店",
+          "name": "賈金發",
+          "text": "賈金發販售（30靈幣）"
+        },
+        {
+          "kind": "任務",
+          "name": "CQ-DZ-009",
+          "text": "委託・素材換藥水！（可選獎勵×5）"
+        },
+        {
+          "kind": "任務",
+          "name": "CQ-DZ-011",
+          "text": "委託・收集！（可選獎勵×10）"
+        },
+        {
+          "kind": "任務",
+          "name": "CQ-DZ-022",
+          "text": "委託・急需靈幣（可選獎勵×50）"
+        },
+        {
+          "kind": "任務",
+          "name": "CQ-DZ-040",
+          "text": "委託・靈粉不夠用了！（固定獎勵×5）"
+        },
+        {
+          "kind": "任務",
+          "name": "sidePotion",
+          "text": "支線・來！送你點不重要的玩意兒。"
+        },
+        {
+          "kind": "任務",
+          "name": "tutorial2",
+          "text": "主線・入門教學2"
+        }
+      ]
+    },
+    {
+      "name": "［天階］綜合藥水",
+      "desc": "恢復氣血 30 靈力 10；戰前／戰中共用。",
+      "sources": [
+        {
+          "kind": "商店",
+          "name": "賈金發",
+          "text": "賈金發販售（45靈幣）"
+        },
+        {
+          "kind": "任務",
+          "name": "feather",
+          "text": "支線・鳴雀的羽毛"
+        }
+      ]
+    },
+    {
+      "name": "［初階］道術丹",
+      "desc": "戰前使用，套用下一場戰鬥；道＋5%。",
+      "sources": [
+        {
+          "kind": "商店",
+          "name": "雲知秋",
+          "text": "雲知秋販售（120靈幣）"
+        }
+      ]
+    },
+    {
+      "name": "［初階］凝靈丹",
+      "desc": "戰前使用，套用下一場戰鬥；道＋4%、身＋4%。",
+      "sources": [
+        {
+          "kind": "商店",
+          "name": "雲知秋",
+          "text": "雲知秋販售（160靈幣）"
+        }
+      ]
+    },
+    {
+      "name": "［特殊］萬靈藥水",
+      "desc": "解除一次任意負面效果。",
+      "sources": [
+        {
+          "kind": "NPC贈禮",
+          "name": "蘇璃",
+          "text": "蘇璃 4心收取禮物×1"
+        },
+        {
+          "kind": "NPC贈禮",
+          "name": "蘇項",
+          "text": "蘇項 4心收取禮物×1"
+        },
+        {
+          "kind": "任務",
+          "name": "CQ-DZ-022",
+          "text": "委託・急需靈幣（固定獎勵×5）"
+        }
+      ]
+    },
+    {
+      "name": "［特殊］滿貫丹",
+      "desc": "戰鬥中使用，氣血／靈力回至全滿，清除自身全部減益。",
+      "sources": [
+        {
+          "kind": "NPC贈禮",
+          "name": "華安",
+          "text": "華安 10心收取禮物×1"
+        },
+        {
+          "kind": "任務",
+          "name": "CQ-DZ-050",
+          "text": "委託・黑潮中的第三道聲音（固定獎勵×1）"
+        }
+      ]
+    },
+    {
+      "name": "［初階］續擊丹",
+      "desc": "戰前使用，套用下一場戰鬥；下一次普通攻擊傷害＋5%，觸發後消失。",
+      "sources": [
+        {
+          "kind": "NPC贈禮",
+          "name": "金燦燦",
+          "text": "金燦燦 3心收取禮物×3"
+        }
+      ]
+    }
+  ],
+  "specials": [
+    "［特殊］靈水劍",
+    "［特殊］秘術弓",
+    "［特殊］鹿絞槍",
+    "［特殊］火霞刀",
+    "［特殊］問心劍",
+    "［特殊］破軍刀",
+    "［特殊］問道槍",
+    "［特殊］逐星弓",
+    "［特殊］破境拳套",
+    "［特殊］鎮岳錘",
+    "［特殊］問靈寶珠",
+    "［特殊］清虛道扇",
+    "［特殊］納靈葫蘆",
+    "［特殊］玄機靈傘",
+    "［特殊］土靈盔",
+    "［特殊］元華斗笠",
+    "［特殊］忡靈頭盔",
+    "［特殊］忡靈戰甲",
+    "［特殊］忡靈鎖褲",
+    "［特殊］忡靈戰靴",
+    "［特殊］問道戰衣",
+    "［特殊］問道戰靴",
+    "［特殊］問靈道冠",
+    "［特殊］玄心道袍",
+    "［特殊］踏虛靈履",
+    "［特殊］問天戰衣",
+    "［特殊］水心靈墜",
+    "［特殊］厚土護佩",
+    "［特殊］問道護符",
+    "［特殊］戰心指環",
+    "［特殊］問心戒",
+    "［特殊］問道佩",
+    "［特殊］破境項鍊",
+    "［特殊］道心靈墜",
+    "［特殊］問天玉佩",
+    "［特殊］破天戰佩",
+    "［特殊］獸牙護符",
+    "［特殊］靈獸頸環",
+    "［特殊］戰獸爪環",
+    "［特殊］護獸靈甲",
+    "［特殊］疾獸鈴",
+    "［特殊］萬獸靈環",
+    "［特殊］破天獸牙",
+    "［特殊］萬靈道珠",
+    "［特殊］不滅獸甲",
+    "［特殊］天獸靈鈴",
+    "［特殊］清風靈葫",
+    "［特殊］靈水傘",
+    "［特殊］獸靈果丹",
+    "［特殊］靈獸露丹",
+    "［特殊］藏寶圖",
+    "［特殊］月玉珮",
+    "［特殊］獸技秘卷",
+    "［特殊］問道秘卷",
+    "［特殊］靈契玉",
+    "［特殊］萬獸徽記",
+    "［特殊］寵物自選專屬技能箱",
+    "［特殊］寵物秘術卷軸",
+    "［特殊］妖物蛋",
+    "［特殊］寵物擴充格",
+    "［特殊］委託刷新令",
+    "［特殊］戰意玉",
+    "［特殊］自選一階材料箱",
+    "［特殊］自選一階妖物素材箱",
+    "［特殊］綜合一階素材箱",
+    "［特殊］萬靈藥水",
+    "［特殊］自選一階礦物箱",
+    "［特殊］自選二階素材箱",
+    "［特殊］自選二階妖物素材箱",
+    "［特殊］隨機功法書",
+    "［特殊］綜合二階素材箱",
+    "［特殊］滿貫丹",
+    "［特殊］災獸之魂",
+    "［特殊］東州大禮包",
+    "［特殊］無心之石",
+    "［特殊］爆爆煙花",
+    "［特殊］節能粉",
+    "［特殊］良護藥劑",
+    "［特殊］成良粉",
+    "［特殊］半月水玉",
+    "［特殊］半月山玉",
+    "［特殊］玄川的護身符",
+    "［特殊］玄川劍穗",
+    "［特殊］清妍的藥囊",
+    "［特殊］青羽箭飾",
+    "［特殊］忡靈術",
+    "［特殊］逆境訣",
+    "［特殊］破勢訣",
+    "［特殊］守心訣",
+    "［特殊］不屈戰意",
+    "［特殊］破境一擊",
+    "［特殊］守心歸元"
+  ],
+  "materials": [
+    [
+      "［一階］靈草",
+      "植物"
+    ],
+    [
+      "［一階］梨草",
+      "植物"
+    ],
+    [
+      "［一階］精草",
+      "植物"
+    ],
+    [
+      "［一階］靈露",
+      "植物"
+    ],
+    [
+      "［一階］碧萃枝",
+      "木材"
+    ],
+    [
+      "［一階］藥草",
+      "植物"
+    ],
+    [
+      "［一階］靈石",
+      "礦物"
+    ],
+    [
+      "［一階］靈原鐵",
+      "礦物"
+    ],
+    [
+      "［一階］靈木",
+      "木材"
+    ],
+    [
+      "［一階］靈果",
+      "靈果"
+    ],
+    [
+      "［一階］脆脆果",
+      "靈果"
+    ],
+    [
+      "［一階］破布",
+      "合成素材"
+    ],
+    [
+      "［一階］靈藥粉",
+      "合成素材"
+    ],
+    [
+      "［一階］精靈液",
+      "合成素材"
+    ],
+    [
+      "［一階］碧木芯",
+      "合成素材"
+    ],
+    [
+      "［一階］導靈粉",
+      "合成素材"
+    ],
+    [
+      "［一階］靈鐵錠",
+      "合成素材"
+    ],
+    [
+      "［一階］獸骨粉",
+      "合成素材"
+    ],
+    [
+      "［一階］妖血精華",
+      "合成素材"
+    ],
+    [
+      "［一階］魂粉",
+      "合成素材"
+    ],
+    [
+      "［一階］妖丹粉末",
+      "合成素材"
+    ],
+    [
+      "［一階］皮毛",
+      "妖物素材"
+    ],
+    [
+      "［一階］蛇鱗",
+      "妖物素材"
+    ],
+    [
+      "［一階］硬蟲甲",
+      "妖物素材"
+    ],
+    [
+      "［一階］妖鳥羽",
+      "妖物素材"
+    ],
+    [
+      "［一階］獸骨",
+      "妖物素材"
+    ],
+    [
+      "［一階］獸牙",
+      "妖物素材"
+    ],
+    [
+      "［一階］妖獸精血",
+      "妖物素材"
+    ],
+    [
+      "［一階］殘缺妖丹",
+      "妖物素材"
+    ],
+    [
+      "［一階］殘魂",
+      "妖物素材"
+    ],
+    [
+      "［一階］毒囊",
+      "妖物素材"
+    ],
+    [
+      "［一階］蛛絲",
+      "妖物素材"
+    ],
+    [
+      "［一階］獸角",
+      "素材"
+    ],
+    [
+      "［一階］靈粉",
+      "妖物素材"
+    ],
+    [
+      "［一階］龜殼",
+      "妖物素材"
+    ],
+    [
+      "［二階］凝露花",
+      "植物"
+    ],
+    [
+      "［二階］百年靈草",
+      "植物"
+    ],
+    [
+      "［二階］青紋藤",
+      "植物"
+    ],
+    [
+      "［二階］赤銅礦",
+      "礦物"
+    ],
+    [
+      "［二階］玄鐵",
+      "礦物"
+    ],
+    [
+      "［二階］火晶石",
+      "礦物"
+    ],
+    [
+      "［二階］水晶石",
+      "礦物"
+    ],
+    [
+      "［二階］木晶石",
+      "礦物"
+    ],
+    [
+      "［二階］風晶石",
+      "礦物"
+    ],
+    [
+      "［二階］雷晶石",
+      "礦物"
+    ],
+    [
+      "［二階］土晶石",
+      "礦物"
+    ],
+    [
+      "［二階］光晶石",
+      "礦物"
+    ],
+    [
+      "［二階］暗晶石",
+      "礦物"
+    ],
+    [
+      "［二階］碧綠木",
+      "木材"
+    ],
+    [
+      "［二階］楊木",
+      "木材"
+    ],
+    [
+      "［二階］玉葉果",
+      "靈果"
+    ],
+    [
+      "［二階］玄靈鐵錠",
+      "合成素材"
+    ],
+    [
+      "［二階］靈楊木板",
+      "合成素材"
+    ],
+    [
+      "［二階］硬骨板",
+      "合成素材"
+    ],
+    [
+      "［二階］濃靈血精",
+      "合成素材"
+    ],
+    [
+      "［二階］凝魂砂",
+      "合成素材"
+    ],
+    [
+      "［二階］妖丹精華",
+      "合成素材"
+    ],
+    [
+      "［二階］狐毛",
+      "素材"
+    ],
+    [
+      "［二階］蛟鱗",
+      "妖物素材"
+    ],
+    [
+      "［二階］黑蠍甲",
+      "妖物素材"
+    ],
+    [
+      "［二階］雀羽",
+      "妖物素材"
+    ],
+    [
+      "［二階］硬獸骨",
+      "妖物素材"
+    ],
+    [
+      "［二階］利爪",
+      "妖物素材"
+    ],
+    [
+      "［二階］濃縮妖血",
+      "妖物素材"
+    ],
+    [
+      "［二階］妖丹",
+      "妖物素材"
+    ],
+    [
+      "［二階］妖魂碎片",
+      "妖物素材"
+    ],
+    [
+      "［二階］雷角",
+      "妖物素材"
+    ],
+    [
+      "［二階］火尾毛",
+      "妖物素材"
+    ],
+    [
+      "［一階］龜甲片",
+      "合成素材"
+    ]
+  ],
+  "skills": [
+    {
+      "name": "忡靈術",
+      "tier": "特殊",
+      "rawTier": "特殊",
+      "raw": {
+        "id": "T001",
+        "tier": "特殊",
+        "name": "忡靈術",
+        "status": "已定案",
+        "ordinary": false,
+        "category": [
+          "攻擊",
+          "減益"
+        ],
+        "effect": "敵方全體110%道術傷害；每名被傷害命中的敵人，分別以80%基礎機率獨立判定「沉默」「靈蝕」各2回合",
+        "mp": "60 MP",
+        "cd": 4,
+        "realm": "練氣一層以上",
+        "learn": "集齊東州忡靈套裝四件後永久解鎖，不另要求功法書",
+        "root": "無特定靈根要求",
+        "weapon": "無",
+        "learning_weapon": "無",
+        "damage_element": "道術；無",
+        "cast": "雙手展開四枚套裝符紋。",
+        "visual": "符紋形成青白光環掃過敵方四個戰位，各自爆開細碎靈紋。",
+        "floating": "每個目標光環命中時各跳一次傷害，隨後分別顯示兩種減益的成功／抵抗。",
+        "audio": "起手為短靈光音；飛行為輕氣流；命中為適合武器的短促撞擊或狀態提示音；以命中／生效事件同步播放。",
+        "presentation_events": {
+          "cast_start_ms": 0,
+          "release_ms": 700,
+          "first_impact_ms": 1100,
+          "subsequent_hit_interval_ms": 160,
+          "note": "建議動畫時間，可隨速度縮放；只對效果明定的有效段派送一次結果，不憑動畫增加傷害段。全體同段共用命中時點。保留首批V2既有特殊演出次序。"
+        },
+        "audio_cues": {
+          "cast": "T001_cast",
+          "travel": "T001_travel",
+          "impact": "T001_impact",
+          "note": "事件識別名，不代表已存在同名音檔；可共用素材。"
+        }
+      }
+    },
+    {
+      "name": "青木擊",
+      "tier": "初階",
+      "rawTier": "初階",
+      "raw": {
+        "id": "T002",
+        "tier": "初階",
+        "name": "青木擊",
+        "status": "已定案",
+        "ordinary": true,
+        "category": [
+          "攻擊"
+        ],
+        "effect": "單體90%物理傷害",
+        "mp": "4 MP",
+        "cd": 0,
+        "realm": "練氣一層以上",
+        "learn": "取得本功法且尚未學會；無額外前置功法",
+        "root": "無特定靈根要求",
+        "weapon": "無",
+        "learning_weapon": "無",
+        "damage_element": "物理；無",
+        "cast": "前踏揮掌。",
+        "visual": "淡青衝擊短距離打向目標，接觸時壓縮成圓形氣浪。",
+        "floating": "衝擊接觸目標時一次傷害。",
+        "audio": "起手為短靈光音；飛行為輕氣流；命中為適合武器的短促撞擊或狀態提示音；以命中／生效事件同步播放。",
+        "presentation_events": {
+          "cast_start_ms": 0,
+          "release_ms": 420,
+          "first_impact_ms": 720,
+          "subsequent_hit_interval_ms": 160,
+          "note": "建議動畫時間，可隨速度縮放；只對效果明定的有效段派送一次結果，不憑動畫增加傷害段。全體同段共用命中時點。保留首批V2既有特殊演出次序。"
+        },
+        "audio_cues": {
+          "cast": "T002_cast",
+          "travel": "T002_travel",
+          "impact": "T002_impact",
+          "note": "事件識別名，不代表已存在同名音檔；可共用素材。"
+        }
+      }
+    },
+    {
+      "name": "劍氣斬",
+      "tier": "初階",
+      "rawTier": "初階",
+      "raw": {
+        "id": "T003",
+        "tier": "初階",
+        "name": "劍氣斬",
+        "status": "已定案",
+        "ordinary": true,
+        "category": [
+          "攻擊"
+        ],
+        "effect": "單體95%物理傷害；當前武器須為劍",
+        "mp": "5 MP",
+        "cd": 0,
+        "realm": "練氣一層以上",
+        "learn": "取得本功法且尚未學會；無額外前置功法",
+        "root": "無特定靈根要求",
+        "weapon": "劍",
+        "learning_weapon": "無",
+        "damage_element": "物理；無",
+        "cast": "拔劍橫斬。",
+        "visual": "一道薄弧劍氣飛向目標，命中留下短促斜切光痕。",
+        "floating": "斜切光痕出現時一次傷害。",
+        "audio": "起手為短靈光音；飛行為輕氣流；命中為適合武器的短促撞擊或狀態提示音；以命中／生效事件同步播放。",
+        "presentation_events": {
+          "cast_start_ms": 0,
+          "release_ms": 420,
+          "first_impact_ms": 720,
+          "subsequent_hit_interval_ms": 160,
+          "note": "建議動畫時間，可隨速度縮放；只對效果明定的有效段派送一次結果，不憑動畫增加傷害段。全體同段共用命中時點。保留首批V2既有特殊演出次序。"
+        },
+        "audio_cues": {
+          "cast": "T003_cast",
+          "travel": "T003_travel",
+          "impact": "T003_impact",
+          "note": "事件識別名，不代表已存在同名音檔；可共用素材。"
+        }
+      }
+    },
+    {
+      "name": "玄刀斬",
+      "tier": "初階",
+      "rawTier": "初階",
+      "raw": {
+        "id": "T004",
+        "tier": "初階",
+        "name": "玄刀斬",
+        "status": "已定案",
+        "ordinary": true,
+        "category": [
+          "攻擊"
+        ],
+        "effect": "單體95%物理傷害；當前武器須為刀",
+        "mp": "5 MP",
+        "cd": 0,
+        "realm": "練氣一層以上",
+        "learn": "取得本功法且尚未學會；無額外前置功法",
+        "root": "無特定靈根要求",
+        "weapon": "刀",
+        "learning_weapon": "無",
+        "damage_element": "物理；無",
+        "cast": "舉刀下劈。",
+        "visual": "寬厚刀芒直落，命中帶短暫地面震紋。",
+        "floating": "刀芒落下時一次傷害。",
+        "audio": "起手為短靈光音；飛行為輕氣流；命中為適合武器的短促撞擊或狀態提示音；以命中／生效事件同步播放。",
+        "presentation_events": {
+          "cast_start_ms": 0,
+          "release_ms": 420,
+          "first_impact_ms": 720,
+          "subsequent_hit_interval_ms": 160,
+          "note": "建議動畫時間，可隨速度縮放；只對效果明定的有效段派送一次結果，不憑動畫增加傷害段。全體同段共用命中時點。保留首批V2既有特殊演出次序。"
+        },
+        "audio_cues": {
+          "cast": "T004_cast",
+          "travel": "T004_travel",
+          "impact": "T004_impact",
+          "note": "事件識別名，不代表已存在同名音檔；可共用素材。"
+        }
+      }
+    },
+    {
+      "name": "蓄槍訣",
+      "tier": "初階",
+      "rawTier": "初階",
+      "raw": {
+        "id": "T005",
+        "tier": "初階",
+        "name": "蓄槍訣",
+        "status": "已定案",
+        "ordinary": true,
+        "category": [
+          "攻擊"
+        ],
+        "effect": "單體95%物理傷害；當前武器須為長槍。短暫蓄力只是動畫，不多耗戰鬥回合",
+        "mp": "5 MP",
+        "cd": 0,
+        "realm": "練氣一層以上",
+        "learn": "取得本功法且尚未學會；無額外前置功法",
+        "root": "無特定靈根要求",
+        "weapon": "長槍",
+        "learning_weapon": "無",
+        "damage_element": "物理；無",
+        "cast": "收槍聚力後前刺。",
+        "visual": "細長氣束刺向單體，命中呈十字穿刺亮點。",
+        "floating": "槍芒觸及目標時一次傷害。",
+        "audio": "起手為短靈光音；飛行為輕氣流；命中為適合武器的短促撞擊或狀態提示音；以命中／生效事件同步播放。",
+        "presentation_events": {
+          "cast_start_ms": 0,
+          "release_ms": 420,
+          "first_impact_ms": 720,
+          "subsequent_hit_interval_ms": 160,
+          "note": "建議動畫時間，可隨速度縮放；只對效果明定的有效段派送一次結果，不憑動畫增加傷害段。全體同段共用命中時點。保留首批V2既有特殊演出次序。"
+        },
+        "audio_cues": {
+          "cast": "T005_cast",
+          "travel": "T005_travel",
+          "impact": "T005_impact",
+          "note": "事件識別名，不代表已存在同名音檔；可共用素材。"
+        }
+      }
+    }
+  ],
+  "settings": {
+    "autoBattle": false,
+    "effects": "完整特效"
+  },
+  "auto": {
+    "useTech": false,
+    "techOrder": [],
+    "usePotion": false,
+    "hpThreshold": 50,
+    "mpThreshold": 50,
+    "preferDual": true,
+    "useRestorePill": false,
+    "speed": "normal",
+    "loadout": 0
+  },
+  "errors": [],
+  "additionalAuthoritativeSpecialItems": [
+    "［特殊］玄川的護身符",
+    "［特殊］玄川劍穗",
+    "［特殊］清妍的藥囊",
+    "［特殊］青羽箭飾",
+    "［特殊］半月水玉",
+    "［特殊］半月山玉",
+    "［特殊］月玉珮",
+    "［特殊］問道茶壺",
+    "［特殊］自選一階材料箱",
+    "［特殊］自選一階妖物素材箱",
+    "［特殊］戰意玉",
+    "［特殊］自選晶石箱",
+    "［特殊］自選護體丹箱",
+    "［特殊］隨機功法書",
+    "［特殊］自選二階材料箱",
+    "［特殊］自選二階妖物素材箱",
+    "［特殊］初階挑戰認證書",
+    "［特殊］晶礦秘境通行證",
+    "［特殊］神秘奇藥",
+    "［特殊］綜合二階素材箱",
+    "［特殊］神秘妖物蛋",
+    "［特殊］桂淞粉",
+    "［特殊］神秘粉末",
+    "［特殊］問道檯傳送令牌",
+    "［特殊］萬獸檯傳送令牌",
+    "［特殊］問道令",
+    "［特殊］問道殘頁"
+  ],
+  "actualWendaoStoreAudit": {
+    "names": [
+      "［特殊］玄川的護身符",
+      "［特殊］玄川劍穗",
+      "［特殊］清妍的藥囊",
+      "［特殊］青羽箭飾",
+      "［特殊］半月水玉",
+      "［特殊］半月山玉",
+      "［特殊］月玉珮",
+      "［特殊］問道茶壺",
+      "［特殊］自選一階材料箱",
+      "［特殊］自選一階妖物素材箱",
+      "［特殊］戰意玉",
+      "［特殊］自選晶石箱",
+      "［特殊］自選護體丹箱",
+      "［特殊］隨機功法書",
+      "［特殊］自選二階材料箱",
+      "［特殊］自選二階妖物素材箱",
+      "［特殊］初階挑戰認證書",
+      "［特殊］晶礦秘境通行證",
+      "［特殊］神秘奇藥",
+      "［特殊］綜合二階素材箱",
+      "［特殊］神秘妖物蛋",
+      "［特殊］桂淞粉",
+      "［特殊］神秘粉末",
+      "［特殊］問道檯傳送令牌",
+      "［特殊］萬獸檯傳送令牌",
+      "［特殊］問道令",
+      "［特殊］問道殘頁"
+    ],
+    "shopUI": "問道點數：0［特殊］問道殘頁32點10張可合成1本問道秘卷。兌換［特殊］戰意玉16點兌換［特殊］問靈寶珠320點・每存檔限1次道術類功法靈力消耗－6%兌換［特殊］清虛道扇320點・每存檔限1次使用增益／輔助或身法功法後，自身身＋6%，持續2回合，不疊加兌換［特殊］清風靈葫320點・每存檔限1次每場首次低於30%最大靈力時，立即恢復最大靈力10%，每場1次。兌換［特殊］靈水傘320點・每存檔限1次使用攻擊功法後，下次增益／輔助功法持續時間＋1回合；觸發消耗，不累積。兌換［特殊］問天玉佩1280點・每存檔限1次道術直接傷害＋8%；道術功法靈力消耗－5%兌換［特殊］破天戰佩1280點・每存檔限1次物理直接傷害＋8%；自身氣血高於50%時，暴擊傷害＋10%兌換［初階］凝道丹35點戰鬥中使用，道＋8%，持續3回合。兌換［初階］清靈丹35點戰鬥中使用，效果命中＋12%，持續3回合。兌換［初階］鎮心丹35點戰鬥中使用，身＋10%，持續3回合。兌換",
+    "shopFunction": "()=>{if(battle||S.place!=='問道檯')return;V.ensure();const wd=S.eastWord.wendao;showModal('問道檯兌換商店','<p>問道點數：'+V.points()+'</p>'+V.askRows.map(([n,price,once])=>'<div class=\"card\"><b>'+n+'</b><p>'+price+'點'+(once?'・每存檔限1次':'')+'</p><p>'+E(R546_GEAR_FULL[n]?.effect||arenas.ask_platform.shop.pills.find(r=>r.name===n)?.effect||JZW.itemDescription(n))+'</p><button '+(V.points()<price||once&&wd.purchased[n]?'disabled':'')+' onclick=\"JZW.purchase(\\''+n+'\\')\">'+(once&&wd.purchased[n]?'已兌換':'兌換')+'</button></div>').join(''));}",
+    "rootMeta": "undefined"
+  }
+}
