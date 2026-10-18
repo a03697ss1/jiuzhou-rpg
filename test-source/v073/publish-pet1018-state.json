@@ -1,0 +1,13 @@
+{
+  "base": "dec1867b4f06be1f386e054ea4e6ff94d162f352",
+  "protectedBlobs": {
+    "index.html": "4ab49d831543b50e78c4cd5b0464dd503ace9c77",
+    "定案規則_0.7.2.json": "3e5d8db97ca4fed4259074b7c48e57c679d82cf3"
+  },
+  "build": "20261018-pet-complete-2",
+  "url": "https://a03697ss1.github.io/jiuzhou-rpg/preview/v0.7.3/",
+  "indexSha256": "24b898966a8041635c55e8225f8d646817ac7a31724bc7d75d6325ad792754a0",
+  "materialImages": 69,
+  "documents": 5,
+  "sourceCommit": "acf6b18121061c4c662677241c15c29cf90785f0"
+}
