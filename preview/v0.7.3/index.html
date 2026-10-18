@@ -24986,7 +24986,7 @@ const finish=N.decorate;N.decorate=()=>{finish();const banner=document.querySele
 const history=JZ072.versionHistory;JZ072.versionHistory=()=>{history();document.getElementById('modalBody')?.insertAdjacentHTML('afterbegin','<section class="card"><h2>本輪18項修正</h2><h3>新增</h3><p>裝備、各階藥品與特殊物品的獨立圖片；補齊NPC靈根資質。</p><h3>改動</h3><p>狐毛、狐尾與獸角歸妖物素材；藥品使用你提供的數值；取得來源依完整階級與當前商店核對；布告箱移到放大的布告欄下方；交談只保留暫時離開。</p><h3>BUG修復</h3><p>戰鬥血量與戰位同步、測試999重複挑戰長右、主線行動所在地限制、蘇璃同行位置、柳清妍任務入口、功法階級顯示，以及必敗戰的手動1倍與繼續提示。</p></section>');};
 })();
 </script>
-<script>window.JZ073_BUILD_ID="20261019-items-battle-1";</script>
+<script>window.JZ073_BUILD_ID="20261019-equipment-1";</script>
 <script id="jz073-hidden-steal1019">(function(){'use strict';const N=JZ073,R=JZR;
 const drops=Object.freeze({'林夏于':'［特殊］火霞刀','蘇璃':'［特殊］靈水劍','柳清妍':'［特殊］秘術弓','邱山河':'［特殊］鹿絞槍','蘇項':'［特殊］土靈盔'});
 const names=new Set(Object.values(drops));
@@ -25054,5 +25054,15 @@ const style=document.createElement('style');style.textContent=`
 // Only remove the obsolete battle screen after settlement has detached that battle.
 // Preserve any replacement dialogue, result window, and the plot-defeat Continue step.
 const finish=N.finishStoryBattle;N.finishStoryBattle=function(b){const out=finish.apply(this,arguments);if(b?.jz073Story&&battle!==b&&document.querySelector('#modalBody .bmv1-canvas'))closeModal();if(b?.jz073Story&&battle!==b){document.getElementById('modalBack')?.classList.remove('bmv1-active','battle-locked');}return out;};
+})();
+</script>
+<script id="jz073-equipment1019">(function(){'use strict';const N=JZ073;
+const gearName=value=>{let name=String(value||'').trim().replace(/^.+?[：:]\s*/,'').replace(/\s*[×x]\s*\d+\s*$/,'').trim();return name&&name!=='無'&&(R546_GEAR_FULL[name]||R546_GEAR_FULL[JZ072.baseGear(name)])?name:null;};
+N.decorateEquipment19=root=>{if(!root)return;for(const entry of root.querySelectorAll('.card,.equipment-slot,.r513-equip')){if(entry.closest('.jz-library,.jz-help-shell')||entry.querySelector('.card,.equipment-slot,.r513-equip'))continue;const heading=entry.querySelector('b,strong')?.textContent;let name=gearName(entry.dataset.item||heading);if(!name&&entry.matches('.r513-equip')){const label=entry.querySelector('span')?.textContent||'';name=gearName(entry.textContent.trim().slice(label.trim().length));}if(!name)continue;entry.dataset.itemProduct=name;if(entry.querySelector('.jz-item-image'))continue;const copy=document.createElement('div');copy.className='jz19-equipment-copy';while(entry.firstChild)copy.append(entry.firstChild);entry.append(copy);entry.insertAdjacentHTML('afterbegin',N.itemImage1018(name,'jz19-equipment-icon'));entry.classList.add('jz19-equipment-card');}};
+for(const key of ['renderBag','renderPartners']){const old=window[key];window[key]=function(){const fragment=JZ072.fragment(old.apply(this,arguments));N.decorateEquipment19(fragment);return fragment.innerHTML;};}
+const modal=showModal;showModal=function(){const out=modal.apply(this,arguments);N.decorateEquipment19(document.getElementById('modalBody'));return out;};
+const decorate=N.decorate;N.decorate=function(){const out=decorate.apply(this,arguments);N.decorateEquipment19(document.getElementById('page'));const banner=document.querySelector('.jz073-banner');if(banner&&!banner.dataset.equipment19){banner.dataset.equipment19='true';banner.insertAdjacentHTML('beforeend','<span class="jz18-build">10/19 裝備圖片</span>');}return out;};
+const style=document.createElement('style');style.textContent='.jz19-equipment-card{display:flex;align-items:center;gap:12px;min-width:0}.jz19-equipment-copy{flex:1;min-width:0;overflow-wrap:anywhere}.jz19-equipment-card>.jz19-equipment-icon{display:block;width:68px;height:68px;max-width:68px;flex:0 0 68px;object-fit:contain}.r513-equip.jz19-equipment-card{gap:8px;align-items:flex-start}.r513-equip.jz19-equipment-card>.jz19-equipment-icon{width:44px;height:44px;max-width:44px;flex-basis:44px}.jz19-equipment-copy>p{margin:5px 0}.jz19-equipment-copy>b{display:block}@media(max-width:600px){.jz19-equipment-card{gap:8px}.jz19-equipment-card>.jz19-equipment-icon{width:52px;height:52px;max-width:52px;flex-basis:52px}}';document.head.append(style);
+const history=JZ072.versionHistory;JZ072.versionHistory=function(){history.apply(this,arguments);document.getElementById('modalBody')?.insertAdjacentHTML('afterbegin','<section class="card"><h3>10/19 BUG修復</h3><p>補齊玩家與夥伴已穿戴裝備、裝備庫及角色狀態裝備欄的圖片，沿用同件裝備的共用圖片。</p></section>');};
 })();
 </script>

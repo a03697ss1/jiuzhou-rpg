@@ -1,0 +1,19 @@
+{
+  "build": "20261019-equipment-1",
+  "changes": [
+    "玩家已穿戴裝備八格圖片",
+    "夥伴已穿戴裝備與共用裝備庫圖片",
+    "角色狀態裝備圖",
+    "穿戴、卸下與品質名稱對應共用圖片"
+  ],
+  "tests": 6,
+  "formalUpdated": false,
+  "bossDesignImplemented": false,
+  "bossScripts": {
+    "revision-boss1018": "1002b91ef6eb71b3872c4531a8be02a4fa8accecc81285fbe6222fcf33a43709",
+    "boss1019": "7d680055741bc3b48106765d789dc7582a2945550a3ffef1856be2d45616a707"
+  },
+  "bossDesignState": "新血條只有獨立設計預覽，待玩家確認後才可實裝。",
+  "images": "沿用現有物品圖片，未新增或替換裝備美術。",
+  "code": "equipment1019.js"
+}
