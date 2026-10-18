@@ -1,0 +1,1276 @@
+{
+  "errors": [],
+  "page": "",
+  "body": "九州修仙錄 V0.7.2 ｜仙曆 213年・第1日 08:00｜📍朝御城\n❔ 幫助\n💾 存檔管理\n⚙️ 設定\n測試999\n少男\n練氣二層\n點擊查看角色狀態\n❤️ 氣血\n110 / 128\n🔵 靈力\n39 / 47\n✨ 修為\n0 / 125\n⚔️ 戰力 132\n🪙 靈幣\n600\n其他資訊\n出戰寵物修為\n\n目前沒有出戰寵物。\n\n出戰夥伴修為\n\n目前沒有出戰夥伴。\n\n📌 任務\n📍 下一個主線\n［主線］確認修為\n返回朝御城，找【道衛隊長】邱山河。\n下一個任務：［主線］確認修為\n\n前往朝御城找邱山河接取任務。\n\n🗺️ 冒險\n🧭 地圖\n🎒 背包\n🧘 修練\n🌿 靈根\n📖 功法\n🛡️ 隊伍\n📜 任務\n🌸 人物\n🤝 夥伴\n🐾 寵物\nV0.7.3 獨立測試・待玩家驗收 圖鑑與來源本輪測試入口\n🌸 人物\n目前所在地可互動人物。\n📍 朝御城・主城\n藥水商人賈金發\n交易／任務\n目前無法互動\n♥\n♥\n♥\n♥\n♥\n♥\n♥\n♥\n♥\n♥\n道衛隊長邱山河\n任務／同行／道衛功能\n［任務／委託］ 交談\n♥\n♥\n♥\n♥\n♥\n♥\n♥\n♥\n♥\n♥\n煉金師林熙\n調製／煉丹\n目前無法互動\n♥\n♥\n♥\n♥\n♥\n♥\n♥\n♥\n♥\n♥\n鑄造師林旺\n煉器／鍛造／合成\n目前無法互動\n♥\n♥\n♥\n♥\n♥\n♥\n♥\n♥\n♥\n♥\n材料商人李大發\n交易\n目前無法互動\n♥\n♥\n♥\n♥\n♥\n♥\n♥\n♥\n♥\n♥\n寵物商人萬錢坤\n交易\n目前無法互動\n♥\n♥\n♥\n♥\n♥\n♥\n♥\n♥\n♥\n♥\n【平民】阿禾\n\n13歲／男・善良\n\n互動詳細介紹\n【平民】寧寧\n\n11歲／女・乖巧\n\n互動詳細介紹\n【平民】沈菜芳\n\n46歲／女・膽小\n\n互動詳細介紹\n【平民】陳蘭\n\n81歲／女・正直\n\n互動詳細介紹\n【平民】吳大海\n\n40歲／男・活潑\n\n互動詳細介紹\n【平民】陳東娘\n\n37歲／女・謹慎\n\n互動詳細介紹\n📜 冒險紀錄\n— ✕\n[08:00] 蘇璃加入同行8遊戲小時。\n[08:00] 🧪 測試999：已按實際新手流程同步任務、獎勵、藥水消耗、裝備、功法、修為與解鎖狀態。可直接接［主線］確認修為。\n\\n",
+  "npc": {
+    "邱山河": {
+      "identity": "道衛隊長",
+      "realm": "金丹五層",
+      "place": "朝御城",
+      "age": 45,
+      "sex": "男",
+      "quality": "優秀",
+      "roots": "主土／副火",
+      "personality": "正直",
+      "marital": "未婚",
+      "romance": false,
+      "weapon": "長槍",
+      "actions": [
+        "對話",
+        "贈禮",
+        "切磋",
+        "任務／委託",
+        "邀請同行",
+        "NPC職業功能"
+      ],
+      "hostile": [
+        "偷襲",
+        "搶奪"
+      ],
+      "maxhp": 2706,
+      "maxmp": 1188,
+      "atk": 236,
+      "dao": 135,
+      "def": 178,
+      "daoDef": 146,
+      "hit": 141,
+      "agi": 130,
+      "battlePower": 2113,
+      "critRate": 7,
+      "critDamage": 150,
+      "effectHit": 111,
+      "effectResist": 113,
+      "equipment": {
+        "武": "［中階］岩茗槍",
+        "頭": "［初階］土靈頭盔",
+        "身": "［中階］土晶戰衣",
+        "褲": "［初階］韌布長褲",
+        "鞋": "［初階］輕行布靴",
+        "戒": "［初階］青玉指環",
+        "項": "［初階］靈紋項鍊",
+        "飾": "［初階］聚靈護符"
+      },
+      "profession": "降低25目前惡值，僅一次。",
+      "skills": [
+        "［中階］貫陣龍槍",
+        "［中階］鎮岳金身",
+        "［初階］蓄槍訣",
+        "［初階］穿雲直刺",
+        "［初階］掃陣槍",
+        "［初階］長槍守界",
+        "［初階］挑燈截脈"
+      ],
+      "flow": "物理型"
+    },
+    "林夏于": {
+      "identity": "俠客",
+      "realm": "築基圓滿",
+      "personality": "好戰",
+      "place": "青陽鎮",
+      "age": 37,
+      "sex": "男",
+      "quality": "優秀",
+      "roots": "主火／副雷",
+      "marital": "未婚",
+      "romance": false,
+      "weapon": "刀",
+      "actions": [
+        "對話",
+        "贈禮",
+        "切磋",
+        "任務／委託",
+        "邀請同行",
+        "收取禮物"
+      ],
+      "hostile": [
+        "偷襲",
+        "搶奪"
+      ],
+      "maxhp": 1413,
+      "maxmp": 684,
+      "atk": 139,
+      "dao": 81,
+      "def": 84,
+      "daoDef": 81,
+      "hit": 84,
+      "agi": 78,
+      "battlePower": 1195,
+      "critRate": 7,
+      "critDamage": 150,
+      "effectHit": 108,
+      "effectResist": 110,
+      "equipment": {
+        "武": "［初階］赤銅斬刀",
+        "身": "［初階］青紋短袍",
+        "項": "［初階］靈紋項鍊",
+        "飾": "［初階］聚靈護符"
+      },
+      "skills": [
+        "［初階］玄刀斬",
+        "［初階］斷潮刀式",
+        "［初階］赤痕追斬",
+        "［初階］逆鋒截擊",
+        "［初階］藏刃訣",
+        "［初階］刀背鎮魂"
+      ],
+      "flow": "物理型",
+      "gift": "4心：［特殊］元華斗笠×1"
+    },
+    "沈玄川": {
+      "identity": "道衛隊員",
+      "realm": "練氣五層",
+      "personality": "熱血",
+      "place": "青陽山",
+      "age": 29,
+      "sex": "男",
+      "quality": "普通",
+      "roots": "水",
+      "marital": "未婚",
+      "romance": false,
+      "weapon": "劍",
+      "relation": "邱山河隊員",
+      "actions": [
+        "對話",
+        "贈禮",
+        "任務／委託",
+        "切磋",
+        "邀請同行",
+        "收取禮物"
+      ],
+      "hostile": [
+        "偷襲",
+        "搶奪"
+      ],
+      "maxhp": 265,
+      "maxmp": 176,
+      "atk": 36,
+      "dao": 35,
+      "def": 16,
+      "daoDef": 23,
+      "hit": 33,
+      "agi": 27,
+      "battlePower": 362,
+      "critRate": 10,
+      "critDamage": 150,
+      "effectHit": 100,
+      "effectResist": 102,
+      "equipment": {
+        "武": "［初階］流水劍",
+        "頭": "［初階］回瀾冠",
+        "飾": "［初階］聚靈護符"
+      },
+      "role": "道衛隊員",
+      "skills": [
+        "［初階］劍氣斬",
+        "［初階］削甲劍訣",
+        "［初階］回劍護身"
+      ],
+      "flow": "身法型",
+      "gift": "3心：［特殊］玄川的護身符×1（紀念品）；10心：［特殊］玄川劍穗×1（紀念品）",
+      "storyWard": false
+    },
+    "柳清妍": {
+      "identity": "道衛隊員",
+      "realm": "練氣圓滿",
+      "personality": "謹慎",
+      "place": "落星谷",
+      "age": 22,
+      "sex": "女",
+      "quality": "優秀",
+      "roots": "木",
+      "marital": "未婚",
+      "romance": false,
+      "weapon": "弓",
+      "relation": "邱山河隊員",
+      "actions": [
+        "對話",
+        "贈禮",
+        "切磋",
+        "邀請同行",
+        "收取禮物"
+      ],
+      "hostile": [
+        "偷襲",
+        "搶奪"
+      ],
+      "maxhp": 639,
+      "maxmp": 260,
+      "atk": 67,
+      "dao": 43,
+      "def": 41,
+      "daoDef": 38,
+      "hit": 50,
+      "agi": 39,
+      "battlePower": 600,
+      "critRate": 7,
+      "critDamage": 150,
+      "effectHit": 105,
+      "effectResist": 105,
+      "equipment": {
+        "武": "［初階］青木長弦弓",
+        "身": "［初階］護身布衣",
+        "褲": "［初階］青紋長褲",
+        "戒": "［初階］青玉指環",
+        "項": "［初階］靈紋項鍊"
+      },
+      "skills": [
+        "［初階］穿風矢",
+        "［初階］散羽齊射",
+        "［初階］斷筋矢",
+        "［初階］封喉矢",
+        "［初階］弦心定靶"
+      ],
+      "flow": "物理型",
+      "gift": "3心：［特殊］清妍的藥囊×1（紀念品）；10心：［特殊］青羽箭飾×1（紀念品）"
+    }
+  },
+  "drops": "object",
+  "dropTable": "object",
+  "dropSample": [
+    [
+      "青木狼",
+      [
+        [
+          "皮毛",
+          30
+        ],
+        [
+          "獸骨",
+          30
+        ],
+        [
+          "獸牙",
+          30
+        ],
+        [
+          "妖獸精血",
+          5
+        ],
+        [
+          "殘缺妖丹",
+          4
+        ],
+        [
+          "殘魂",
+          1
+        ]
+      ]
+    ],
+    [
+      "青靈蛇",
+      [
+        [
+          "蛇鱗",
+          45
+        ],
+        [
+          "獸牙",
+          45
+        ],
+        [
+          "妖獸精血",
+          5
+        ],
+        [
+          "殘缺妖丹",
+          4
+        ],
+        [
+          "殘魂",
+          1
+        ]
+      ]
+    ]
+  ],
+  "petSystem": {
+    "condition": "5★寵物消耗［特殊］萬獸徽記×1",
+    "display": "5顆星改為1顆流星，不是6★；按鍵完成後關閉並顯示已特殊突破。",
+    "stats": "突破後八核先整體×1.15，再套專屬核心：單核心專精再×1.10；潮汐龜防／道防各×1.07；均衡型八核各×1.03，且單項不得高於單核心專精型。",
+    "core_map": {
+      "青木狼": "攻",
+      "青靈蛇": "身",
+      "青翠蝶": "道",
+      "青臭蟲": "靈力",
+      "朝東鳥": "均衡",
+      "朝陽狐": "道",
+      "重翅蝶": "道",
+      "小圓蛛": "命",
+      "雷角鹿": "道",
+      "轟轟鯰": "氣血",
+      "噴水蟲": "身",
+      "冥雷蛟": "身",
+      "鳴雀": "攻",
+      "潮汐龜": "防＋道防",
+      "水蛇": "身",
+      "水刃狼": "均衡",
+      "風粉蝶": "命",
+      "千針蜂": "攻",
+      "自爆毒蛛": "氣血",
+      "天翼鷹": "身",
+      "飛蛇": "身",
+      "反彈盔甲蟲": "防＋道防"
+    }
+  },
+  "recipe": [
+    [
+      "［一階］破布",
+      "梨草×3",
+      ""
+    ],
+    [
+      "［一階］靈藥粉",
+      "靈草×2＋藥草×1",
+      ""
+    ]
+  ],
+  "state": {
+    "version": "V0.7.2",
+    "name": "測試999",
+    "identity": "少年",
+    "year": 213,
+    "day": 1,
+    "hour": 8,
+    "place": "朝御城",
+    "realm": "練氣二層",
+    "exp": 0,
+    "expNeed": 125,
+    "hp": 110,
+    "maxhp": 110,
+    "mp": 39,
+    "maxmp": 39,
+    "atk": 11,
+    "def": 8,
+    "agi": 9,
+    "hit": 11,
+    "coins": 600,
+    "prestige": 0,
+    "good": 0,
+    "evil": 0,
+    "experience": 2,
+    "fatigue": 0,
+    "outdoorHours": 0,
+    "mainRoot": "風",
+    "subRoot": "土",
+    "roots": {
+      "火": 1,
+      "水": 1,
+      "木": 1,
+      "風": 96,
+      "雷": 1,
+      "土": 47,
+      "光": 0,
+      "暗": 0
+    },
+    "equipment": {
+      "武器": "［無階］新手劍",
+      "頭盔": "無",
+      "上衣": "無",
+      "下裝": "無",
+      "鞋": "無",
+      "項鍊": "［無階］新手項鍊",
+      "戒指": "［無階］新手戒指",
+      "配飾": "［無階］新手護符"
+    },
+    "gearInventory": {},
+    "items": {
+      "［初階］氣血藥水": 4,
+      "［初階］靈力藥水": 5
+    },
+    "materials": {
+      "靈草": 5,
+      "藥草": 3,
+      "靈石": 3
+    },
+    "special": {},
+    "techInventory": [],
+    "techniques": [
+      "［初階］靈氣絕"
+    ],
+    "pets": [
+      {
+        "name": "青靈蛇",
+        "species": "青靈蛇",
+        "realm": "練氣一層",
+        "tier": "一般種",
+        "stars": 0,
+        "affection": 0,
+        "skills": [
+          "揮擊",
+          "纏繞"
+        ],
+        "jzr": {
+          "species": "青靈蛇",
+          "realm": "練氣一層",
+          "tier": "一般種",
+          "stars": 0,
+          "affection": 0,
+          "skills": [
+            "揮擊",
+            "纏繞"
+          ],
+          "gear": [],
+          "bonus": {},
+          "elementBonus": {},
+          "wins": 0,
+          "pre": [],
+          "loadout": [
+            "纏繞"
+          ]
+        },
+        "maxhp": 70,
+        "maxmp": 30,
+        "hp": 70,
+        "mp": 30
+      }
+    ],
+    "petActive": [
+      null,
+      null
+    ],
+    "partners": [
+      {
+        "age": 25,
+        "sex": "女",
+        "realm": "練氣五層",
+        "quality": "普通",
+        "identity": "修士",
+        "roots": "水",
+        "personality": "溫柔",
+        "affinity": 0,
+        "romance": true,
+        "place": "落星谷",
+        "marital": "未婚",
+        "relation": "蘇項妹妹",
+        "gift": "1心：［初階］護體丹－水×1；4心：［特殊］萬靈藥水×1；7心：［特殊］半月水玉×1（紀念品）；10心：［特殊］水心靈墜×1",
+        "weapon": "扇",
+        "actions": [
+          "對話",
+          "贈禮",
+          "切磋",
+          "約會",
+          "表白",
+          "求婚",
+          "邀請同行",
+          "收取禮物"
+        ],
+        "hostile": [
+          "偷襲",
+          "搶奪"
+        ],
+        "maxhp": 322,
+        "maxmp": 213,
+        "atk": 23,
+        "dao": 36,
+        "def": 18,
+        "daoDef": 23,
+        "hit": 29,
+        "agi": 29,
+        "battlePower": 338,
+        "critRate": 5,
+        "critDamage": 150,
+        "effectHit": 100,
+        "effectResist": 110,
+        "equipment": {
+          "武器": "［初階］水舞扇",
+          "頭盔": "無",
+          "上衣": "無",
+          "下裝": "無",
+          "鞋": "無",
+          "項鍊": "［初階］靈紋項鍊",
+          "戒指": "［初階］青玉指環",
+          "配飾": "［初階］聚靈護符"
+        },
+        "skills": [
+          "［初階］定神扇舞",
+          "［初階］清心扇",
+          "［初階］折雲扇"
+        ],
+        "flow": "治療／輔助型",
+        "rootValues": {
+          "火": 1,
+          "水": 100,
+          "土": 1,
+          "木": 1,
+          "雷": 1,
+          "風": 1,
+          "光": 0,
+          "暗": 0
+        },
+        "name": "蘇璃",
+        "hp": 322,
+        "mp": 213,
+        "mainRoot": "水",
+        "permanent": true,
+        "tavern": false,
+        "partnerType": "臨時",
+        "tempKind": "invite",
+        "inTeam": false,
+        "deployed": false,
+        "exp": 0,
+        "jz072": {
+          "shared": {
+            "武器": "［初階］水舞扇",
+            "項鍊": "［初階］靈紋項鍊",
+            "戒指": "［初階］青玉指環",
+            "配飾": "［初階］聚靈護符"
+          },
+          "base": {
+            "maxhp": 302,
+            "maxmp": 166,
+            "atk": 20,
+            "dao": 27,
+            "def": 18,
+            "daoDef": 20,
+            "agi": 19,
+            "hit": 21
+          },
+          "intrinsic": {
+            "武": "［初階］水舞扇",
+            "戒": "［初階］青玉指環",
+            "項": "［初階］靈紋項鍊",
+            "飾": "［初階］聚靈護符"
+          },
+          "learned": [
+            "［初階］定神扇舞",
+            "［初階］清心扇",
+            "［初階］折雲扇"
+          ],
+          "equipmentOwned": true
+        },
+        "learnedTechniques": [
+          "［初階］定神扇舞",
+          "［初階］清心扇",
+          "［初階］折雲扇"
+        ],
+        "loadouts": [
+          {
+            "name": "配置1",
+            "skills": [
+              "［初階］定神扇舞",
+              "［初階］清心扇",
+              "［初階］折雲扇"
+            ]
+          },
+          {
+            "name": "配置2",
+            "skills": []
+          },
+          {
+            "name": "配置3",
+            "skills": []
+          }
+        ],
+        "activeLoadout": 0,
+        "techniques": [
+          "［初階］定神扇舞",
+          "［初階］清心扇",
+          "［初階］折雲扇"
+        ]
+      }
+    ],
+    "log": [
+      "[08:00] 蘇璃加入同行8遊戲小時。",
+      "[08:00] 🧪 測試999：已按實際新手流程同步任務、獎勵、藥水消耗、裝備、功法、修為與解鎖狀態。可直接接［主線］確認修為。"
+    ],
+    "flags": {
+      "freeRoam": false,
+      "trainingUnlocked": true,
+      "alchemyUnlocked": false,
+      "forgeUnlocked": false,
+      "peopleUnlocked": true,
+      "mapUnlocked": true,
+      "partnersUnlocked": true,
+      "petsUnlocked": true,
+      "firstSeal": false,
+      "prologueDone": true,
+      "questUiUnlocked": true,
+      "personalAlchemyUnlocked": false,
+      "personalForgeUnlocked": false
+    },
+    "questState": {
+      "tutorial1": {
+        "visited": {
+          "adventure": true,
+          "bag": true,
+          "training": true,
+          "roots": true,
+          "tech": true
+        },
+        "complete": true,
+        "claimed": true
+      },
+      "tutorial2": {
+        "specialViewed": true,
+        "giftOpened": true,
+        "amuletEquipped": true,
+        "ready": true,
+        "claimed": true
+      },
+      "tour": {
+        "visited": {
+          "board": true,
+          "alchemy": true,
+          "forge": true,
+          "tea": true,
+          "clinic": true,
+          "jail": true
+        }
+      }
+    },
+    "quests": [
+      {
+        "id": "tutorial1",
+        "type": "主線",
+        "region": "東州",
+        "title": "入門教學1",
+        "desc": "依序查看冒險、背包、修煉、靈根、功法；五個介面皆查看完成後，點擊左側完成任務。",
+        "reward": "新手大禮包×1。",
+        "done": true,
+        "claimed": true,
+        "pinned": false,
+        "canonicalId": "MQ-DZ-001"
+      },
+      {
+        "id": "tutorial2",
+        "type": "主線",
+        "region": "東州",
+        "title": "入門教學2",
+        "desc": "打開背包 → ［消耗特殊］分頁 → 使用新手大禮包；穿戴［無階］新手護符後回報。",
+        "reward": "靈幣＋300、［初階］氣血藥水×2、［初階］靈力藥水×2、歷練×2。",
+        "done": true,
+        "claimed": true,
+        "pinned": false,
+        "canonicalId": "MQ-DZ-002"
+      },
+      {
+        "id": "tour",
+        "type": "主線",
+        "region": "東州",
+        "title": "初來乍到",
+        "desc": "回到冒險介面，分別點選布告欄、煉金爐、鑄造台、茶館、醫館、監牢設施並查看詳細資訊，完成後再回去找邱山河。",
+        "reward": "修為+30。",
+        "done": true,
+        "claimed": true,
+        "pinned": false,
+        "canonicalId": "MQ-DZ-003"
+      },
+      {
+        "id": "trainingQuest",
+        "type": "主線",
+        "region": "東州",
+        "title": "修煉",
+        "desc": "點選修練場，並完成一次修練，再回去找邱山河。",
+        "reward": "無獎勵。",
+        "done": true,
+        "claimed": true,
+        "pinned": false,
+        "canonicalId": "MQ-DZ-004"
+      },
+      {
+        "id": "firstBattle",
+        "type": "主線",
+        "region": "東州",
+        "title": "初次戰鬥",
+        "desc": "前往青陽鎮，尋找俠客－林夏于。 ",
+        "reward": "無獎勵。",
+        "done": true,
+        "claimed": true,
+        "pinned": false,
+        "canonicalId": "MQ-DZ-005"
+      },
+      {
+        "id": "firstCombatEntry",
+        "type": "主線",
+        "region": "東州",
+        "title": "首次進入戰鬥",
+        "desc": "前往青陽山，點選遭遇妖物，戰勝後向夥伴介面的林夏于對話。",
+        "reward": "［無階］新手劍、［無階］新手刀、［無階］新手長槍、［無階］新手弓、［無階］新手拳套、［無階］新手錘、［無階］新手寶珠、［無階］新手扇、［無階］新手葫蘆、［無階］新手傘選擇其一。",
+        "done": true,
+        "claimed": true,
+        "pinned": false,
+        "canonicalId": "MQ-DZ-006"
+      },
+      {
+        "id": "techQuest",
+        "type": "主線",
+        "region": "東州",
+        "title": "功法",
+        "desc": "打開功法介面，習得靈氣絕後向林夏于回報任務。",
+        "reward": "［初階］靈氣絕。",
+        "done": true,
+        "claimed": true,
+        "pinned": false,
+        "canonicalId": "MQ-DZ-007"
+      },
+      {
+        "id": "firstTry",
+        "type": "主線",
+        "region": "東州",
+        "title": "初次嘗試",
+        "desc": "點選遭遇妖物，並使用功法，［初階］靈氣絕攻擊青木狼一次，戰勝後向夥伴介面的林夏于對話。",
+        "reward": "修為+10。",
+        "done": true,
+        "claimed": true,
+        "pinned": false,
+        "canonicalId": "MQ-DZ-008"
+      },
+      {
+        "id": "itemUse",
+        "type": "主線",
+        "region": "東州",
+        "title": "道具的使用",
+        "desc": "點選遭遇妖物，使用防禦，讓青木狼攻擊一次，隨後點選物品，使用［初階］氣血藥水，戰勝後向夥伴介面的林夏于對話。",
+        "reward": "修為+25。",
+        "done": true,
+        "claimed": true,
+        "pinned": false,
+        "canonicalId": "MQ-DZ-009"
+      },
+      {
+        "id": "breakthrough",
+        "type": "主線",
+        "region": "東州",
+        "title": "突破",
+        "desc": "前往［修煉］介面進行突破，達到練氣二層。",
+        "reward": "［無階］新手項鍊、［無階］新手戒指。",
+        "done": true,
+        "claimed": true,
+        "pinned": false,
+        "canonicalId": "MQ-DZ-010"
+      },
+      {
+        "id": "returnCity",
+        "type": "主線",
+        "region": "東州",
+        "title": "返回主城",
+        "desc": "返回朝御城，找邱山河對話。",
+        "reward": "無獎勵。",
+        "done": true,
+        "claimed": true,
+        "pinned": false,
+        "canonicalId": "MQ-DZ-011"
+      }
+    ],
+    "bagTab": "物品",
+    "mapTab": "小地圖",
+    "settings": {
+      "autoBattle": false,
+      "effects": "完整特效"
+    },
+    "logPos": {
+      "x": null,
+      "y": null,
+      "w": 360,
+      "h": 300
+    },
+    "bigMapPos": {
+      "x": -420,
+      "y": -240
+    },
+    "portraitType": "少年",
+    "formation": {
+      "front1": "player",
+      "front2": null,
+      "back1": null,
+      "back2": null
+    },
+    "nextWord": {
+      "ringGranted": true
+    },
+    "minute": 0,
+    "effectiveMinutes": 0,
+    "gatherState": {
+      "青陽山": {
+        "charges": 5,
+        "zeroAt": null,
+        "v071Anchor": 480
+      },
+      "落星谷": {
+        "charges": 4,
+        "zeroAt": null,
+        "v071Anchor": 480
+      },
+      "雷鳴沼": {
+        "charges": 3,
+        "zeroAt": null,
+        "v071Anchor": 480
+      },
+      "潮汐秘境": {
+        "charges": 7,
+        "zeroAt": null,
+        "v071Anchor": 480
+      },
+      "晶礦秘境": {
+        "charges": 10,
+        "zeroAt": null,
+        "v071Anchor": 480
+      },
+      "天穹浮島": {
+        "charges": 4,
+        "zeroAt": null,
+        "v071Anchor": 480
+      }
+    },
+    "worldEvents": [],
+    "taskDialogueSeen": {},
+    "questArchive": {
+      "tutorial1": {
+        "id": "tutorial1",
+        "type": "主線",
+        "title": "入門教學1",
+        "npc": "",
+        "history": [],
+        "choiceLog": [],
+        "accepted": true,
+        "claimed": true,
+        "done": true,
+        "objective": "依序查看冒險、背包、修煉、靈根、功法；五個介面皆查看完成後，點擊左側完成任務。",
+        "reward": "新手大禮包×1。",
+        "pinned": false
+      },
+      "tutorial2": {
+        "id": "tutorial2",
+        "type": "主線",
+        "title": "入門教學2",
+        "npc": "",
+        "history": [],
+        "choiceLog": [],
+        "accepted": true,
+        "claimed": true,
+        "done": true,
+        "objective": "打開背包 → ［消耗特殊］分頁 → 使用新手大禮包；穿戴［無階］新手護符後回報。",
+        "reward": "靈幣＋300、［初階］氣血藥水×2、［初階］靈力藥水×2、歷練×2。",
+        "pinned": false
+      },
+      "tour": {
+        "id": "tour",
+        "type": "主線",
+        "title": "初來乍到",
+        "npc": "邱山河",
+        "history": [],
+        "choiceLog": [],
+        "accepted": true,
+        "claimed": true,
+        "done": true,
+        "objective": "回到冒險介面，分別點選布告欄、煉金爐、鑄造台、茶館、醫館、監牢設施並查看詳細資訊，完成後再回去找邱山河。",
+        "reward": "修為+30。",
+        "pinned": false
+      },
+      "trainingQuest": {
+        "id": "trainingQuest",
+        "type": "主線",
+        "title": "修煉",
+        "npc": "邱山河",
+        "history": [],
+        "choiceLog": [],
+        "accepted": true,
+        "claimed": true,
+        "done": true,
+        "objective": "點選修練場，並完成一次修練，再回去找邱山河。",
+        "reward": "無獎勵。",
+        "pinned": false
+      },
+      "firstBattle": {
+        "id": "firstBattle",
+        "type": "主線",
+        "title": "初次戰鬥",
+        "npc": "邱山河",
+        "history": [],
+        "choiceLog": [],
+        "accepted": true,
+        "claimed": true,
+        "done": true,
+        "objective": "前往青陽鎮，尋找俠客－林夏于。 ",
+        "reward": "無獎勵。",
+        "pinned": false
+      },
+      "firstCombatEntry": {
+        "id": "firstCombatEntry",
+        "type": "主線",
+        "title": "首次進入戰鬥",
+        "npc": "林夏于",
+        "history": [],
+        "choiceLog": [],
+        "accepted": true,
+        "claimed": true,
+        "done": true,
+        "objective": "前往青陽山，點選遭遇妖物，戰勝後向夥伴介面的林夏于對話。",
+        "reward": "［無階］新手劍、［無階］新手刀、［無階］新手長槍、［無階］新手弓、［無階］新手拳套、［無階］新手錘、［無階］新手寶珠、［無階］新手扇、［無階］新手葫蘆、［無階］新手傘選擇其一。",
+        "pinned": false
+      },
+      "techQuest": {
+        "id": "techQuest",
+        "type": "主線",
+        "title": "功法",
+        "npc": "林夏于",
+        "history": [],
+        "choiceLog": [],
+        "accepted": true,
+        "claimed": true,
+        "done": true,
+        "objective": "打開功法介面，習得靈氣絕後向林夏于回報任務。",
+        "reward": "［初階］靈氣絕。",
+        "pinned": false
+      },
+      "firstTry": {
+        "id": "firstTry",
+        "type": "主線",
+        "title": "初次嘗試",
+        "npc": "林夏于",
+        "history": [],
+        "choiceLog": [],
+        "accepted": true,
+        "claimed": true,
+        "done": true,
+        "objective": "點選遭遇妖物，並使用功法，［初階］靈氣絕攻擊青木狼一次，戰勝後向夥伴介面的林夏于對話。",
+        "reward": "修為+10。",
+        "pinned": false
+      },
+      "itemUse": {
+        "id": "itemUse",
+        "type": "主線",
+        "title": "道具的使用",
+        "npc": "林夏于",
+        "history": [],
+        "choiceLog": [],
+        "accepted": true,
+        "claimed": true,
+        "done": true,
+        "objective": "點選遭遇妖物，使用防禦，讓青木狼攻擊一次，隨後點選物品，使用［初階］氣血藥水，戰勝後向夥伴介面的林夏于對話。",
+        "reward": "修為+25。",
+        "pinned": false
+      },
+      "breakthrough": {
+        "id": "breakthrough",
+        "type": "主線",
+        "title": "突破",
+        "npc": "林夏于",
+        "history": [],
+        "choiceLog": [],
+        "accepted": true,
+        "claimed": true,
+        "done": true,
+        "objective": "前往［修煉］介面進行突破，達到練氣二層。",
+        "reward": "［無階］新手項鍊、［無階］新手戒指。",
+        "pinned": false
+      },
+      "returnCity": {
+        "id": "returnCity",
+        "type": "主線",
+        "title": "返回主城",
+        "npc": "林夏于",
+        "history": [],
+        "choiceLog": [],
+        "accepted": true,
+        "claimed": true,
+        "done": true,
+        "objective": "返回朝御城，找邱山河對話。",
+        "reward": "無獎勵。",
+        "pinned": false
+      }
+    },
+    "questSelection": null,
+    "questRuntime": {},
+    "npcAffinity": {},
+    "npcRelationship": {},
+    "trainingSystem": {
+      "ground": {
+        "charges": 2,
+        "max": 2,
+        "anchor": 0
+      },
+      "meditation": {
+        "charges": 3,
+        "max": 3,
+        "anchor": 0
+      }
+    },
+    "teaHistory": {},
+    "teaBuff": null,
+    "teaNextTrainingPct": 0,
+    "autoBattleConfig": {
+      "useTech": false,
+      "techOrder": [],
+      "usePotion": false,
+      "hpThreshold": 50,
+      "mpThreshold": 50,
+      "preferDual": true,
+      "useRestorePill": false,
+      "speed": "normal",
+      "loadout": 0
+    },
+    "fatigueStatus": false,
+    "craftedQualities": {},
+    "craftMastery": {
+      "alchemy": {
+        "level": 1,
+        "core": 0,
+        "heat": 0,
+        "lastAt": 480,
+        "aux": null
+      },
+      "forge": {
+        "level": 1,
+        "core": 0,
+        "aura": 100,
+        "lastAt": 480,
+        "aux": null
+      }
+    },
+    "npcCraftLog": [],
+    "debug999Synced": true,
+    "loadouts": [
+      {
+        "name": "編輯1",
+        "skills": [
+          "［初階］靈氣絕"
+        ]
+      },
+      {
+        "name": "編輯2",
+        "skills": []
+      },
+      {
+        "name": "編輯3",
+        "skills": []
+      }
+    ],
+    "activeLoadout": 0,
+    "npcSparDaily": {},
+    "auxItemData": {
+      "［特殊］節能粉": {
+        "energyBonus": 10
+      },
+      "［特殊］良護藥劑": {
+        "protectBonus": 100
+      },
+      "［特殊］成良粉": {
+        "successBonus": 3
+      },
+      "［特殊］桂淞粉": {
+        "qualityBonus": 5
+      },
+      "［特殊］神秘粉末": {
+        "guaranteedPotion": true,
+        "extraBottles": 4
+      }
+    },
+    "eastWord": {
+      "pills": [],
+      "wendao": {
+        "passed": 0,
+        "streak": 0,
+        "points": 0,
+        "purchased": {}
+      }
+    },
+    "souvenirs": {},
+    "npcGiftClaims": {},
+    "round1004": {
+      "beast": {
+        "passed": 0,
+        "high": 0,
+        "purchased": {},
+        "run": null,
+        "daily": ""
+      },
+      "purchases": {},
+      "merchantStock": {},
+      "pendingRewards": []
+    },
+    "bug1005": {
+      "pillNames": true
+    },
+    "v2": {
+      "capacity": 2,
+      "eggs": [],
+      "pendingPet": null,
+      "tab": 0
+    },
+    "clinicWard": [],
+    "v072": {
+      "giftDays": {},
+      "giftHistory": {},
+      "chatDays": {},
+      "cooldowns": {},
+      "partnerGrowth": {},
+      "bannedPartners": [],
+      "tendency": [],
+      "qualityMigrated": true,
+      "otherInfoOpen": true
+    },
+    "gifts": {},
+    "v073": {
+      "schema": 1,
+      "branch": null,
+      "known": [],
+      "dig": {
+        "count": 0,
+        "nextAt": 0
+      },
+      "story": {},
+      "reports": [],
+      "treasure": {
+        "charges": 2,
+        "lastDay": null
+      }
+    },
+    "v071": {
+      "boards": {},
+      "sequence": 0,
+      "reputation": 0,
+      "merchant": null,
+      "expansionExchanges": 0,
+      "dialogActions": {},
+      "stages": {},
+      "crimes": [],
+      "compatMigrated": true
+    },
+    "teaDaily": {
+      "day": "213/1",
+      "count": 0
+    },
+    "wanted": 0,
+    "lawState": {
+      "reportedLock": null,
+      "posterShown500": false,
+      "merchantRoll": {},
+      "region": "東州"
+    },
+    "prison": {
+      "active": false,
+      "sentenceDays": 0,
+      "originalSentenceDays": 0,
+      "reason": "",
+      "pendingPoorPrisonerDays": 0
+    },
+    "experienceHidden": 0,
+    "experienceCounters": {
+      "commission": 0,
+      "gather": 0,
+      "wildMinutes": 0,
+      "monster": {
+        "一般種": 0,
+        "特殊種": 0,
+        "高位種": 0,
+        "高危種（特）": 0
+      }
+    },
+    "breakExperienceSpend": 0,
+    "breakPill": "",
+    "outsideStatus": []
+  },
+  "world": {
+    "positions": {
+      "朝御城": [
+        43,
+        44
+      ],
+      "青陽鎮": [
+        25,
+        26
+      ],
+      "青陽山": [
+        11,
+        13
+      ],
+      "碧潮鎮": [
+        24,
+        65
+      ],
+      "雷鳴沼": [
+        10,
+        82
+      ],
+      "東嶺鎮": [
+        65,
+        24
+      ],
+      "落星谷": [
+        80,
+        12
+      ],
+      "天海港": [
+        62,
+        63
+      ],
+      "東州傳送塔": [
+        80,
+        70
+      ],
+      "潮汐秘境": [
+        64,
+        88
+      ],
+      "晶礦秘境": [
+        84,
+        90
+      ],
+      "問道檯": [
+        93,
+        37
+      ],
+      "萬獸檯": [
+        94,
+        62
+      ],
+      "天穹浮島": [
+        82,
+        48
+      ],
+      "黑潮禁岸": [
+        87,
+        82
+      ],
+      "雷鳴沼地下深窟": [
+        81,
+        29
+      ]
+    },
+    "roads": [
+      [
+        "朝御城",
+        "青陽鎮"
+      ],
+      [
+        "青陽鎮",
+        "青陽山"
+      ],
+      [
+        "朝御城",
+        "碧潮鎮"
+      ],
+      [
+        "碧潮鎮",
+        "雷鳴沼"
+      ],
+      [
+        "朝御城",
+        "東嶺鎮"
+      ],
+      [
+        "東嶺鎮",
+        "落星谷"
+      ],
+      [
+        "朝御城",
+        "天海港"
+      ],
+      [
+        "天海港",
+        "東州傳送塔"
+      ],
+      [
+        "雷鳴沼",
+        "雷鳴沼地下深窟"
+      ]
+    ],
+    "tele": [
+      "潮汐秘境",
+      "晶礦秘境",
+      "問道檯",
+      "萬獸檯",
+      "黑潮禁岸"
+    ]
+  }
+}
