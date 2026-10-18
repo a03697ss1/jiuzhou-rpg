@@ -1,0 +1,34 @@
+[
+  {
+    "name": "第一階段",
+    "format": "raw",
+    "width": 2172,
+    "height": 724,
+    "channels": 4,
+    "depth": "uchar",
+    "premultiplied": false,
+    "hasAlpha": true,
+    "size": 6290112,
+    "alphaUnchanged": true,
+    "visibleRgbUnchanged": true,
+    "transparentPixels": 1151191,
+    "pngBytes": 1194452,
+    "webpBytes": 786320
+  },
+  {
+    "name": "第二階段",
+    "format": "raw",
+    "width": 2172,
+    "height": 724,
+    "channels": 4,
+    "depth": "uchar",
+    "premultiplied": false,
+    "hasAlpha": true,
+    "size": 6290112,
+    "alphaUnchanged": true,
+    "visibleRgbUnchanged": true,
+    "transparentPixels": 1024642,
+    "pngBytes": 1520042,
+    "webpBytes": 1081142
+  }
+]

@@ -1,0 +1,24 @@
+{
+  "build": "20261019-bossbar-1",
+  "status": "已實裝並完成測試",
+  "approvedByUser": true,
+  "changes": [
+    "四耳猿首、封印鎖鏈的第一階段專屬血條",
+    "第二階段確實切換斷鏈、破碎封印、水雷圖片",
+    "即時氣血數字與比例、階段及屬性同步",
+    "預載兩套圖片，保留小型我方戰位與敵方隨從空間"
+  ],
+  "tests": 9,
+  "formalUpdated": false,
+  "mechanicsChanged": false,
+  "remainingBlockers": [],
+  "code": "boss-bar1019.js",
+  "assetFolder": "boss-bar-assets/",
+  "testCode": [
+    "boss-bar1019-test.cjs",
+    "boss-bar1019-combat.cjs"
+  ],
+  "normalFlowEvidence": "使用正式手動普攻、點選長右、跨階段後勝利；失敗結算與A線黑衣人正常勝利均通過。",
+  "artTool": "built-in image_gen",
+  "artPrompts": "boss-bar-assets/生成提示詞.json"
+}
