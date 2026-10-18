@@ -33,8 +33,8 @@
   "retainedCoreRows": 11,
   "missingPetRows": 0,
   "url": "https://a03697ss1.github.io/jiuzhou-rpg/preview/v0.7.3/",
-  "build": "20261018-save-recovery-3",
-  "deploymentCommit": "6a922f262725bf2bbb9bd670390b93b4aa534336",
+  "build": "20261018-save-recovery-4",
+  "deploymentCommit": "56ce5eaa7776f63a07ef9027c850786dd4fe7ca5",
   "recoveryTests": {
     "passed": 8,
     "total": 8
