@@ -50,7 +50,7 @@ body='<p>同一名稱在背包、圖鑑、製作與商店使用同一映射。<a
 for folder,title,cls in [('物品美術_2026-10-18','新增71類物品美術',''),('人物全身_2026-10-18','長右戰8名全身人物','people'),('素材美術_2026-10-18','沿用69張素材圖','')]:
  files=sorted((R/folder).glob('*.png'));body+='<h2>'+title+'</h2><div class="gallery '+cls+'">'+''.join('<figure><img loading="lazy" src="../'+folder+'/'+f.name+'" alt="'+f.stem+'"><figcaption>'+f.stem+'</figcaption></figure>' for f in files)+'</div>'
 (O/'素材圖片清單與預覽.html').write_text(page('物品與全身圖片清單',body),'utf-8')
-manifest={'version':'0.7.3','supplement':'20261018-review-fixes-1','items':52,'tests':total,'passed':total,'published':False,'formalUpdated':False,'savePrefix':'jz073-independent-20261017:','art':{'materials':69,'itemFamilies':len(list((R/'物品美術_2026-10-18').glob('*.png'))),'fullbody':8},'personalChromeRecordsVerified':False}
+manifest={'version':'0.7.3','supplement':'20261018-review-fixes-2','items':52,'tests':total,'passed':total,'published':False,'formalUpdated':False,'savePrefix':'jz073-independent-20261017:','art':{'materials':69,'itemFamilies':len(list((R/'物品美術_2026-10-18').glob('*.png'))),'fullbody':8},'personalChromeRecordsVerified':False}
 (O/'本輪交付清單.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2),'utf-8')
 preview=(P/'preview.html').read_text('utf-8')
 for a,b in [('/github-release/assets/','assets/'),('/新增美術_2026-10-16/','new-assets/'),('/素材美術_2026-10-18/','material-assets/'),('/物品美術_2026-10-18/','item-assets/'),('/人物全身_2026-10-18/','fullbody-assets/')]:preview=preview.replace(a,b)

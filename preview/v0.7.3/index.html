@@ -24686,7 +24686,7 @@ N.note('L36','已實裝','保留測試存檔隔離；增加同網址舊版紀錄
 <script id="jz073-revision-world1018">(function(){'use strict';const N=JZ073,U=JZ071,R=JZR,W=JZW,E=N.esc;
 N.revision1018={date:'2026-10-18',rows:{},version:'0.7.3'};
 N.fix1018=(id,text)=>N.revision1018.rows[id]={state:'已實裝，待驗收',text};
-const map=JZNEXT.map;map.positions.雷鳴沼地下深窟=[17,79];
+const map=JZNEXT.map;map.positions.雷鳴沼地下深窟=[27,83];
 map.roads=map.roads.filter(([a,b])=>!([a,b].includes('雷鳴沼地下深窟')&&![a,b].includes('雷鳴沼')));
 if(!map.roads.some(e=>e.includes('雷鳴沼')&&e.includes('雷鳴沼地下深窟')))map.roads.push(['雷鳴沼','雷鳴沼地下深窟']);
 JZ38.mapLinks=[...map.roads,...map.tele.map(n=>['東州傳送塔',n]),['東州傳送塔','天穹浮島']];
@@ -24884,4 +24884,4 @@ const stamp=document.getElementById('jz073-start-version');if(stamp)stamp.textCo
 const previous=JZ072.versionHistory;JZ072.versionHistory=()=>showModal('版本更新','<h2>V0.7.3・10/18 逐項修正</h2><h3>新增</h3><p>圖鑑搜尋、分類與階級組合篩選；全區／東州分頁；飾品、藥水與丹藥分類；妖物技能詳情；物品成品圖片與主線戰鬥全身人物。</p><h3>改動</h3><p>地下深窟移到雷鳴沼旁；野外境界表放入東州地圖；圖鑑與幫助視窗加大，內容分格；幫助重新說明玩法並補問道檯；八種特殊狀態整合到幫助。</p><p>精晶礦靈與臂巨礦使用此次確認的掉落比例。素材來源顯示四捨五入後的實際單項機率。夥伴最多出戰3名，寵物最多2隻，全隊仍為4個戰位。</p><p>長右血條移至上方，數字放在血條內；第二階段顯示全畫面提示與水／雷屬性，替換風雨雷光效果。長右戰改為手動操作。</p><h3>BUG修復</h3><p>返回圖鑑保留捲動位置；幫助可捲到底；配方顯示成品而非材料圖片；修正淬體丹百分比小數誤差；新寵物初始技能改從合法技能庫隨機取得；修正A路線測試入口的舊任務追蹤衝突。</p><p>保留舊版存檔副本讀取與備份。正式入口與正式母檔仍維持原版，等待玩家驗收。</p><button onclick="JZ073.previousRevisionHistory1018()">查看先前更新</button>');N.previousRevisionHistory1018=previous;
 })();
 </script>
-<script>window.JZ073_BUILD_ID="20261018-review-fixes-1";</script>
+<script>window.JZ073_BUILD_ID="20261018-review-fixes-2";</script>

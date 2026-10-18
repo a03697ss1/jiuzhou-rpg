@@ -1,6 +1,6 @@
 {
   "version": "0.7.3",
-  "supplement": "20261018-review-fixes-1",
+  "supplement": "20261018-review-fixes-2",
   "items": 52,
   "tests": 105,
   "passed": 105,
@@ -14,5 +14,5 @@
   },
   "personalChromeRecordsVerified": false,
   "url": "https://a03697ss1.github.io/jiuzhou-rpg/preview/v0.7.3/",
-  "build": "20261018-review-fixes-1"
+  "build": "20261018-review-fixes-2"
 }

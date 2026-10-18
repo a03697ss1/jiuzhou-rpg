@@ -1,7 +1,7 @@
 {
-  "url": "https://a03697ss1.github.io/jiuzhou-rpg/preview/v0.7.3/?build=20261018-pet-complete-2",
-  "expectedSha256": "9e759865b75a782f034931b9fcfcb8a9e49d11d149e6aed9aa1c33f55049912a",
-  "actualSha256": "9e759865b75a782f034931b9fcfcb8a9e49d11d149e6aed9aa1c33f55049912a",
+  "url": "https://a03697ss1.github.io/jiuzhou-rpg/preview/v0.7.3/?build=20261018-review-fixes-1",
+  "expectedSha256": "e9f6a7f8845f2034148f9df4f90f0c606912c133e07069599e9cc06ae16d6b98",
+  "actualSha256": "e9f6a7f8845f2034148f9df4f90f0c606912c133e07069599e9cc06ae16d6b98",
   "previewMatches": true,
   "formalEntrySha256": "84778599d163b9b12a165c38f7c2cbfb24dbdf22fcc76020de8271921a764cd0",
   "formalRulesSha256": "0859a18b0c2722b1e80652d53bfc0e46d21327f13602c971ed0f9381d41d70f3",
