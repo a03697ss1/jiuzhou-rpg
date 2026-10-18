@@ -1,6 +1,6 @@
 {
   "version": "0.7.3",
-  "build": "20261018-review18-1",
+  "build": "20261019-hidden-steal-1",
   "items": 18,
   "tests": 90,
   "passed": 90,
@@ -8,5 +8,10 @@
   "baseEquipmentImages": 254,
   "published": true,
   "formalUpdated": false,
-  "savePrefix": "jz073-independent-20261017:"
+  "savePrefix": "jz073-independent-20261017:",
+  "supplement": {
+    "date": "2026-10-19",
+    "tested": 25,
+    "formalUpdated": false
+  }
 }

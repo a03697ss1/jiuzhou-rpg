@@ -1,0 +1,41 @@
+{
+  "pass": true,
+  "url": "http://127.0.0.1:18776/V0.7.3_獨立測試_2026-10-17/GitHub測試發布/preview/v0.7.3/",
+  "before": {
+    "version": "0.7.3",
+    "build": "20261019-hidden-steal-1",
+    "started": true
+  },
+  "after": {
+    "count": 1,
+    "claimed": true,
+    "cards": [
+      {
+        "name": "［特殊］火霞刀",
+        "source": "取得來源未知來源",
+        "loaded": true
+      },
+      {
+        "name": "［特殊］靈水劍",
+        "source": "取得來源未知來源",
+        "loaded": true
+      },
+      {
+        "name": "［特殊］秘術弓",
+        "source": "取得來源未知來源",
+        "loaded": true
+      },
+      {
+        "name": "［特殊］鹿絞槍",
+        "source": "取得來源未知來源",
+        "loaded": true
+      },
+      {
+        "name": "［特殊］土靈盔",
+        "source": "取得來源未知來源",
+        "loaded": true
+      }
+    ]
+  },
+  "errors": []
+}

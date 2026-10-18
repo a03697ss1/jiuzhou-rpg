@@ -1,0 +1,57 @@
+{
+  "build": "20261019-hidden-steal-1",
+  "version": "0.7.3",
+  "testCount": 25,
+  "coverage": [
+    {
+      "npc": "林夏于",
+      "item": "［特殊］火霞刀",
+      "chance": 0.05,
+      "uniquePerGame": true,
+      "codex": "未知來源",
+      "state": "已實裝、測試通過，待玩家驗收"
+    },
+    {
+      "npc": "蘇璃",
+      "item": "［特殊］靈水劍",
+      "chance": 0.05,
+      "uniquePerGame": true,
+      "codex": "未知來源",
+      "state": "已實裝、測試通過，待玩家驗收"
+    },
+    {
+      "npc": "柳清妍",
+      "item": "［特殊］秘術弓",
+      "chance": 0.05,
+      "uniquePerGame": true,
+      "codex": "未知來源",
+      "state": "已實裝、測試通過，待玩家驗收"
+    },
+    {
+      "npc": "邱山河",
+      "item": "［特殊］鹿絞槍",
+      "chance": 0.05,
+      "uniquePerGame": true,
+      "codex": "未知來源",
+      "state": "已實裝、測試通過，待玩家驗收"
+    },
+    {
+      "npc": "蘇項",
+      "item": "［特殊］土靈盔",
+      "chance": 0.05,
+      "uniquePerGame": true,
+      "codex": "未知來源",
+      "state": "已實裝、測試通過，待玩家驗收"
+    }
+  ],
+  "protectedLocal": {
+    "九州修仙錄_測試分支.html": "58ce74be8922d4d0bc5e702fde0ebc8823649f560f00d12c8d843a5954a3ca50",
+    "九州修仙錄_正式母檔_0.7.2.html": "58ce74be8922d4d0bc5e702fde0ebc8823649f560f00d12c8d843a5954a3ca50",
+    "最新定案母檔_0.7.2.json": "692a8e04a80f9719d3a633979ace2bb6d0bd26dc6fd0cc9dab1179940dd853f8",
+    "github-release\\index.html": "42dfd58730135682c4a47500e25f6a841a31a5245da2557f82155880b67747f4",
+    "github-release\\定案規則_0.7.2.json": "692a8e04a80f9719d3a633979ace2bb6d0bd26dc6fd0cc9dab1179940dd853f8"
+  },
+  "formalUpdated": false,
+  "savePrefix": "jz073-independent-20261017:",
+  "note": "僅接入已確認的五件隱藏物品；未補造其他一般搶奪戰利品池。"
+}
