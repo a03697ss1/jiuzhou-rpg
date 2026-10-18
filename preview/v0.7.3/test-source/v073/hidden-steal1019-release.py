@@ -1,6 +1,6 @@
 from pathlib import Path
 import importlib.util,json,html,shutil,hashlib,re,sys,datetime
-P=Path(__file__).resolve().parent;R=P.parents[1];O=R/'V0.7.3_隱藏裝備修正_2026-10-19';BUILD='20261019-hidden-steal-1'
+P=Path(__file__).resolve().parent;R=P.parents[1];O=R/'V0.7.3_隱藏裝備修正_2026-10-19';BUILD='20261019-hidden-steal-2'
 spec=importlib.util.spec_from_file_location('pub',P/'publish-preview.py');pub=importlib.util.module_from_spec(spec);spec.loader.exec_module(pub)
 W=pub.W;D=pub.DEST;T=R/'V0.7.3_獨立測試_2026-10-17/Git測試分支';STATE=P/'hidden-steal1019-release-state.json'
 def prepare():
@@ -12,7 +12,7 @@ def prepare():
  for name,info in json.loads((P/'baseline.json').read_text('utf8'))['protected'].items():
   sha=pub.digest(R/name);assert sha==info['sha256'];protected[name]=sha
  assert pub.git(T,'branch','--show-current')=='test/v0.7.3-20261017'
- for f in [P/'build.py',P/'hidden-steal1019.js',P/'hidden-steal1019-test.cjs',Path(__file__)]:shutil.copy2(f,T/'test-source/v073'/f.name)
+ for f in [P/'build.py',P/'hidden-steal1019.js',P/'hidden-steal1019-test.cjs',P/'hidden-steal1019-live.cjs',Path(__file__)]:shutil.copy2(f,T/'test-source/v073'/f.name)
  preview=(P/'preview.html').read_text('utf8')
  replacements=[('/github-release/assets/','assets/'),('/新增美術_2026-10-16/','new-assets/'),('/素材美術_2026-10-18/','material-assets/'),('/物品美術_2026-10-18/','item-assets/'),('/人物全身_2026-10-18/','fullbody-assets/'),('/物品獨立美術_2026-10-18/','unique-item-assets/')]
  source=preview
@@ -32,7 +32,7 @@ def prepare():
  (D/'index.html').write_text(text,'utf8')
  for folder in [D/'施工來源',D/'test-source/v073',O/'施工來源']:
   folder.mkdir(parents=True,exist_ok=True)
-  for f in [P/'build.py',P/'hidden-steal1019.js',P/'hidden-steal1019-test.cjs',Path(__file__)]:shutil.copy2(f,folder/f.name)
+  for f in [P/'build.py',P/'hidden-steal1019.js',P/'hidden-steal1019-test.cjs',P/'hidden-steal1019-live.cjs',Path(__file__)]:shutil.copy2(f,folder/f.name)
  count=sum(len(d['rows']) for d in reports.values())
  coverage=[{'npc':n,'item':i,'chance':.05,'uniquePerGame':True,'codex':'未知來源','state':'已實裝、測試通過，待玩家驗收'} for n,i in {'林夏于':'［特殊］火霞刀','蘇璃':'［特殊］靈水劍','柳清妍':'［特殊］秘術弓','邱山河':'［特殊］鹿絞槍','蘇項':'［特殊］土靈盔'}.items()]
  result={'build':BUILD,'version':'0.7.3','testCount':count,'coverage':coverage,'protectedLocal':protected,'formalUpdated':False,'savePrefix':'jz073-independent-20261017:','note':'僅接入已確認的五件隱藏物品；未補造其他一般搶奪戰利品池。'}
@@ -58,3 +58,5 @@ def publish():
  pub.git(W,'push','origin','HEAD:refs/heads/main')
  state.update(published=True,deploymentCommit=pub.git(W,'rev-parse','HEAD'),publishedAt=datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=8))).isoformat(timespec='seconds'));(O/'GitHub測試發布紀錄.json').write_text(json.dumps(state,ensure_ascii=False,indent=2),'utf8');print(json.dumps(state,ensure_ascii=False))
 if __name__=='__main__':{'prepare':prepare,'publish':publish}[sys.argv[1]]()
+
+

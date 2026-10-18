@@ -1,7 +1,7 @@
 {
-  "build": "20261019-hidden-steal-1",
+  "build": "20261019-hidden-steal-2",
   "version": "0.7.3",
-  "testCount": 25,
+  "testCount": 26,
   "coverage": [
     {
       "npc": "林夏于",

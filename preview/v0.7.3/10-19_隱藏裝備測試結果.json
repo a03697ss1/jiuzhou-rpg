@@ -190,6 +190,15 @@
       }
     },
     {
+      "name": "沿用戰鬥引擎的勝利判定，雙方同時歸零仍可正常結算",
+      "pass": true,
+      "detail": {
+        "count": 1,
+        "claimed": true,
+        "ended": true
+      }
+    },
+    {
       "name": "正常存檔、重新載入後仍保留唯一取得旗標",
       "pass": true,
       "detail": {
