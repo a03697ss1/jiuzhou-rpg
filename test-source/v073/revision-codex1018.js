@@ -23,7 +23,7 @@ N.catalogRows1018=tab=>{
  if(tab==='NPC')return Object.entries({...JZNEXT.npcs,...U.npcs}).filter(([name])=>name!=='？？？'||S.v071?.merchant).map(([name,d])=>({name,data:d,category:d.noAffinity?(/平民|居民|路人/.test(d.identity||d.role||'')?'平民':'功能人物'):'可培養好感',grade:'',region:'東州'}));
  if(tab==='地區')return Object.keys(JZNEXT.map.positions).map(name=>({name,category:placeType(name),grade:'',region:regionOf(name)||'東州'}));
  if(['裝備','飾品'].includes(tab))return Object.keys(R546_GEAR_FULL).filter(n=>!JZ072.qualities.some(q=>n.startsWith(q))).filter(n=>tab==='飾品'?['戒','項','飾'].includes(R546_GEAR_FULL[n].slot):!['戒','項','飾'].includes(R546_GEAR_FULL[n].slot)).map(n=>item(n,slotLabel[R546_GEAR_FULL[n].slot]||'其他'));
- if(tab==='藥水與丹藥')return [...new Set([...(RECIPES.丹藥||[]).map(r=>r[0]),...(RECIPES.藥品||[]).map(r=>r[0]),...Object.keys(R.petPills||{})])].map(n=>item(n,R.petPills[n]||/獸靈果丹|靈獸露丹/.test(n)?'寵物丹藥':/藥水/.test(n)?'藥水':'丹藥'));
+ if(tab==='藥水與丹藥'){const canonical=n=>n.startsWith('［')?n:Object.keys(JZBUG.priceTable||{}).find(k=>k.startsWith('［')&&U.short(k)===U.short(n))||n;return [...new Set(N.allItemNames1018().filter(n=>!N.materialName(n)&&/藥水|丹$/.test(n)).map(canonical))].map(n=>item(n,R.petPills[n]||/寵物用|獸靈果丹|靈獸露丹/.test(n)?'寵物丹藥':/藥水/.test(n)?'藥水':'丹藥'));}
  if(tab==='禮物')return JZ072.data.gifts.map(n=>item(n.startsWith('［')?n:'［禮物］'+n,'禮物'));
  if(tab==='功法')return Object.values(C.byId).filter(r=>!r.monster&&r.id!=='basic').map(r=>({name:r.name,category:r.tier||r.raw?.tier||'特殊',grade:r.tier||r.raw?.tier||'特殊',region:'東州',data:r}));return [];
 };

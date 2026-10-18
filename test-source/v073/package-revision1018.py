@@ -19,9 +19,9 @@ for folder,kind in [('物品美術_2026-10-18','物品類型共用'),('人物全
  for p in sorted((R/folder).glob('*.png')):
   im=Image.open(p);origin=(people if kind=='長右戰全身人物' else origins).get(p.stem,{})
   art.append({'name':p.stem,'category':kind,'path':folder+'/'+p.name,'originalSource':origin.get('source','沿用既有素材原圖'),'prompt':origin.get('prompt',''),'sha256':hashlib.sha256(p.read_bytes()).hexdigest(),'width':im.width,'height':im.height,'alpha':im.mode=='RGBA' and im.getchannel('A').getextrema()[0]==0})
-assert len(art)==147 and all(r['alpha'] for r in art)
+assert len(art)==148 and all(r['alpha'] for r in art)
 (O/'物品圖片來源與檔案清單.json').write_text(json.dumps(art,ensure_ascii=False,indent=2),'utf-8')
-(O/'缺圖清單.json').write_text(json.dumps({'registeredItems':872,'missing':[],'note':'同類物品共用圖片，逐件映射見完整物品圖片映射。'},ensure_ascii=False,indent=2),'utf-8')
+(O/'缺圖清單.json').write_text(json.dumps({'registeredItems':results['物品美術與介面驗收.json']['rows'][0]['detail']['items'],'missing':[],'note':'同類物品共用圖片，逐件映射見完整物品圖片映射。'},ensure_ascii=False,indent=2),'utf-8')
 cov=[]
 for id,title in zip(ids,labels):
  tests=[f for f in reports for r in results[f]['rows'] if id in list(map(str,r.get('ids',[])))]
@@ -41,13 +41,13 @@ links='<ul>'+''.join('<li><a href="'+f+'">'+f[:-5]+'</a></li>' for f in ['逐項
 (O/'閱讀我_先看這裡.html').write_text(page('V0.7.3・10/18 逐項修正',f'<section><p>本輪52項（包含兩個44）已在目前0.7.3測試底稿上增量實裝。{total}項自動及流程檢查通過；美術與玩法仍待玩家驗收。正式母檔與正式入口沒有更新。</p><p>沿用同一個測試版存檔前綴，並保留上一輪舊版紀錄副本讀取功能。個人Chrome存檔沒有由本輪測試直接讀取。</p></section>'+links),'utf-8')
 rows=''.join('<tr><td>'+r['id']+'</td><td>'+r['title']+'</td><td>'+r['state']+'</td><td><a href="施工來源/'+r['source']+'">'+r['source']+'</a><br>'+''.join('<a href="'+f+'">驗收證據</a> ' for f in r['tests'])+'</td><td>'+r['remaining']+'</td></tr>' for r in cov)
 (O/'逐項施工工程覆蓋表.html').write_text(page('52項施工工程覆蓋表','<p>44a為狀態位置，44b為第二階段提示。每列均連結對應程式與本輪測試證據。</p><table><tr><th>項目</th><th>修正內容</th><th>狀態</th><th>程式與測試</th><th>剩餘事項</th></tr>'+rows+'</table>'),'utf-8')
-(O/'BUG修復與待補清單.html').write_text(page('BUG修復與待補清單','<section><h2>本輪修復</h2><p>深窟位置與路線、A路線測試前置、圖鑑返回捲動、幫助底部裁切、製作成品圖、物品缺圖、丹藥百分比文字、初始寵物技能，以及長右戰的立繪、血條、狀態與階段演出。</p><h2>保留事項</h2><p>其餘七種特殊狀態依先前確認保留於遊戲，沒有新增施加功法。未登錄取得途徑的物品顯示來源未知，沒有新增掉落或商店。</p><p>素材原圖69張沿用；新增70類物品美術共用於對應物品，名稱與階級另外顯示。不是每件同類裝備各生成一張不同圖片。8張全身圖只用於長右戰，其他已驗收人物圖保留。</p><p>完整手動主線測試使用提高能力的隔離角色，以驗證流程，不代表長右數值平衡已由玩家驗收。</p></section>'),'utf-8')
+(O/'BUG修復與待補清單.html').write_text(page('BUG修復與待補清單','<section><h2>本輪修復</h2><p>深窟位置與路線、A路線測試前置、圖鑑返回捲動、幫助底部裁切、製作成品圖、物品缺圖、丹藥百分比文字、初始寵物技能，以及長右戰的立繪、血條、狀態與階段演出。</p><h2>保留事項</h2><p>其餘七種特殊狀態依先前確認保留於遊戲，沒有新增施加功法。未登錄取得途徑的物品顯示來源未知，沒有新增掉落或商店。</p><p>素材原圖69張沿用；新增71類物品美術共用於對應物品，名稱與階級另外顯示。不是每件同類裝備各生成一張不同圖片。8張全身圖只用於長右戰，其他已驗收人物圖保留。</p><p>完整手動主線測試使用提高能力的隔離角色，以驗證流程，不代表長右數值平衡已由玩家驗收。</p></section>'),'utf-8')
 body=f'<p>本輪共重新執行{total}項檢查，全部通過。以下數字不重複計入前輪報告。</p>'
 for name,d in results.items():body+='<section><h2>'+name[:-5]+'（'+str(len(d['rows']))+'項）</h2><p><a href="'+name+'">完整結果</a></p><ul>'+''.join('<li>'+esc(r['name'])+'</li>' for r in d['rows'])+'</ul></section>'
 body+='<section><h2>畫面證據</h2>'+''.join('<p>'+esc(f.stem)+'</p><img loading="lazy" src="'+f.name+'">' for f in sorted(O.glob('*.png')) if '施工檢查' not in f.name)+'</section>'
 (O/'完整測試及驗收報告.html').write_text(page('完整測試及驗收報告',body),'utf-8')
 body='<p>同一名稱在背包、圖鑑、製作與商店使用同一映射。<a href="完整物品圖片映射.json">逐件物品圖片對照表</a>。任務物品有圖，但不加入圖鑑清單。</p>'
-for folder,title,cls in [('物品美術_2026-10-18','新增70類物品美術',''),('人物全身_2026-10-18','長右戰8名全身人物','people'),('素材美術_2026-10-18','沿用69張素材圖','')]:
+for folder,title,cls in [('物品美術_2026-10-18','新增71類物品美術',''),('人物全身_2026-10-18','長右戰8名全身人物','people'),('素材美術_2026-10-18','沿用69張素材圖','')]:
  files=sorted((R/folder).glob('*.png'));body+='<h2>'+title+'</h2><div class="gallery '+cls+'">'+''.join('<figure><img loading="lazy" src="../'+folder+'/'+f.name+'" alt="'+f.stem+'"><figcaption>'+f.stem+'</figcaption></figure>' for f in files)+'</div>'
 (O/'素材圖片清單與預覽.html').write_text(page('物品與全身圖片清單',body),'utf-8')
 manifest={'version':'0.7.3','supplement':'20261018-review-fixes-1','items':52,'tests':total,'passed':total,'published':False,'formalUpdated':False,'savePrefix':'jz073-independent-20261017:','art':{'materials':69,'itemFamilies':len(list((R/'物品美術_2026-10-18').glob('*.png'))),'fullbody':8},'personalChromeRecordsVerified':False}

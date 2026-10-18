@@ -1,7 +1,7 @@
 (function(){'use strict';const N=JZ073,E=N.esc;
 N.itemArtAudit1018=()=>N.allItemNames1018().map(name=>({name,family:N.itemArtFamily1018(name),image:N.itemIcon(name),missing:!/^data:image\/png|\.png(?:$|\?)/.test(N.itemIcon(name))}));
 N.remainingCodexImages1018=()=>N.itemArtAudit1018().filter(r=>r.missing);
-N.note('L33','已實裝','沿用69張素材圖，新增70類共用物品PNG與8張全身人物PNG；個別物品映射與圖片用途逐項列於本輪圖片清單。');
+N.note('L33','已實裝','沿用69張素材圖，新增71類共用物品PNG與8張全身人物PNG；個別物品映射與圖片用途逐項列於本輪圖片清單。');
 N.pending=N.pending.filter(r=>!['圖鑑缺少原始來源欄位','素材原生來源'].includes(r.id));
 const decorate=N.decorate;N.decorate=function(){const out=decorate.apply(this,arguments);for(const banner of document.querySelectorAll('.jz073-banner'))if(banner.firstChild?.nodeType===3)banner.firstChild.nodeValue='V0.7.3・10/18 逐項修正測試版・待玩家驗收 ';return out;};
 const stamp=document.getElementById('jz073-start-version');if(stamp)stamp.textContent='V0.7.3 獨立測試版・10/18 逐項修正';
