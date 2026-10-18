@@ -75,6 +75,7 @@ def prepare():
  if 'id="items1019"' in s:s=re.sub(r'<section id="items1019">.*?</section>',lambda m:note,s,flags=re.S)
  else:s=s.replace('</h1>','</h1>'+note,1)
  readme.write_text(s,'utf8')
+ delivery=D/'本輪交付清單.json';d=json.loads(delivery.read_text('utf-8-sig'));d.update(build=BUILD,latestCorrection={'date':'2026-10-19','checks':count,'imageChecks':8,'report':'10-19B_完整施工與驗收報告.html','formalUpdated':False});delivery.write_text(json.dumps(d,ensure_ascii=False,indent=2),'utf8')
  size=sum(f.stat().st_size for f in W.rglob('*') if f.is_file() and '.git' not in f.parts);assert size<1073741824,('GitHub Pages size',size)
  pub.git(T,'add','--','index.html','test-source/v073','item-review19-assets');pub.git(T,'commit','-m','Fix main-story battle exit and special item records, add dedicated boss health UI')
  state={'base':base,'build':BUILD,'protectedBlobs':blobs,'sourceCommit':pub.git(T,'rev-parse','HEAD'),'url':pub.URL+'?build='+BUILD,'siteBytes':size,'checks':count,'formalUpdated':False,'prepared':True};STATE.write_text(json.dumps(state,ensure_ascii=False,indent=2),'utf8');print(json.dumps(state,ensure_ascii=False))

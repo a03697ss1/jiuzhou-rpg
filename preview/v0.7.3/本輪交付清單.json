@@ -1,6 +1,6 @@
 {
   "version": "0.7.3",
-  "build": "20261019-hidden-steal-2",
+  "build": "20261019-items-battle-1",
   "items": 18,
   "tests": 90,
   "passed": 90,
@@ -12,6 +12,13 @@
   "supplement": {
     "date": "2026-10-19",
     "tested": 26,
+    "formalUpdated": false
+  },
+  "latestCorrection": {
+    "date": "2026-10-19",
+    "checks": 74,
+    "imageChecks": 8,
+    "report": "10-19B_完整施工與驗收報告.html",
     "formalUpdated": false
   }
 }
