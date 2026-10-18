@@ -20,6 +20,7 @@ def apply(text,standalone):
   return m[0].replace("phase='正式'","phase='獨立測試・待玩家驗收'").replace('masterPromoted=true','masterPromoted=false').replace('V0.7.2','V0.7.3 獨立測試').replace('九州修仙錄 0.7.2','九州修仙錄 0.7.3 獨立測試')
  text,n=re.subn(r'<script id="jz072-official">.*?</script>',branch_version,text,flags=re.S)
  assert n==1
+ text=text.replace('<h1>V0.7.2</h1>','<h1>V0.7.3</h1>').replace('>正式版 0.7.2</div>','>獨立測試版 0.7.3・待玩家驗收</div>')
  for a,b in hooks:
   count=text.count(a)
   if count!=1:raise ValueError(f'Hook count {count}: {a}')
