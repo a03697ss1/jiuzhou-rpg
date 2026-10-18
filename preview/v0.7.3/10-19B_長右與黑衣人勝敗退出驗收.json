@@ -1,0 +1,39 @@
+{
+  "rows": [
+    {
+      "name": "長右手動點選普攻、雙階段、勝利後改顯示異相解除",
+      "pass": true,
+      "detail": {
+        "battle": false,
+        "canvas": false,
+        "title": "東州異相解除",
+        "locked": false,
+        "phase": 2,
+        "victory": true,
+        "hp": 0
+      }
+    },
+    {
+      "name": "長右失敗結算保留失敗提示，關閉舊戰鬥畫面並恢復氣血",
+      "pass": true,
+      "detail": {
+        "canvas": false,
+        "title": "戰鬥失敗",
+        "hp": 50018,
+        "maxhp": 50018,
+        "victory": false
+      }
+    },
+    {
+      "name": "A線正常黑衣人勝利後任務完成並離開戰鬥畫面",
+      "pass": true,
+      "detail": {
+        "canvas": false,
+        "claimed": true,
+        "title": "［主線］逼問！",
+        "locked": false
+      }
+    }
+  ],
+  "errors": []
+}

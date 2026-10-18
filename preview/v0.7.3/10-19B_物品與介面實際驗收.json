@@ -1,0 +1,1228 @@
+{
+  "rows": [
+    {
+      "name": "20件問道裝備與新手護符來源、五件隱藏裝備來源仍未知",
+      "pass": true,
+      "detail": {
+        "wendao": [
+          {
+            "name": "［特殊］鎮岳錘",
+            "exists": true,
+            "source": [
+              {
+                "kind": "挑戰",
+                "name": "問道檯",
+                "text": "問道檯"
+              }
+            ]
+          },
+          {
+            "name": "［特殊］逐星弓",
+            "exists": true,
+            "source": [
+              {
+                "kind": "挑戰",
+                "name": "問道檯",
+                "text": "問道檯"
+              }
+            ]
+          },
+          {
+            "name": "［特殊］問道槍",
+            "exists": true,
+            "source": [
+              {
+                "kind": "挑戰",
+                "name": "問道檯",
+                "text": "問道檯"
+              }
+            ]
+          },
+          {
+            "name": "［特殊］問心劍",
+            "exists": true,
+            "source": [
+              {
+                "kind": "挑戰",
+                "name": "問道檯",
+                "text": "問道檯"
+              }
+            ]
+          },
+          {
+            "name": "［特殊］納靈葫蘆",
+            "exists": true,
+            "source": [
+              {
+                "kind": "挑戰",
+                "name": "問道檯",
+                "text": "問道檯"
+              }
+            ]
+          },
+          {
+            "name": "［特殊］破境拳套",
+            "exists": true,
+            "source": [
+              {
+                "kind": "挑戰",
+                "name": "問道檯",
+                "text": "問道檯"
+              }
+            ]
+          },
+          {
+            "name": "［特殊］破軍刀",
+            "exists": true,
+            "source": [
+              {
+                "kind": "挑戰",
+                "name": "問道檯",
+                "text": "問道檯"
+              }
+            ]
+          },
+          {
+            "name": "［特殊］玄機靈傘",
+            "exists": true,
+            "source": [
+              {
+                "kind": "挑戰",
+                "name": "問道檯",
+                "text": "問道檯"
+              }
+            ]
+          },
+          {
+            "name": "［特殊］問靈道冠",
+            "exists": true,
+            "source": [
+              {
+                "kind": "挑戰",
+                "name": "問道檯",
+                "text": "問道檯"
+              }
+            ]
+          },
+          {
+            "name": "［特殊］玄心道袍",
+            "exists": true,
+            "source": [
+              {
+                "kind": "挑戰",
+                "name": "問道檯",
+                "text": "問道檯"
+              }
+            ]
+          },
+          {
+            "name": "［特殊］問天戰衣",
+            "exists": true,
+            "source": [
+              {
+                "kind": "挑戰",
+                "name": "問道檯",
+                "text": "問道檯"
+              }
+            ]
+          },
+          {
+            "name": "［特殊］問道戰靴",
+            "exists": true,
+            "source": [
+              {
+                "kind": "挑戰",
+                "name": "問道檯",
+                "text": "問道檯"
+              }
+            ]
+          },
+          {
+            "name": "［特殊］踏虛靈履",
+            "exists": true,
+            "source": [
+              {
+                "kind": "挑戰",
+                "name": "問道檯",
+                "text": "問道檯"
+              }
+            ]
+          },
+          {
+            "name": "［特殊］問道戰衣",
+            "exists": true,
+            "source": [
+              {
+                "kind": "挑戰",
+                "name": "問道檯",
+                "text": "問道檯"
+              }
+            ]
+          },
+          {
+            "name": "［特殊］問心戒",
+            "exists": true,
+            "source": [
+              {
+                "kind": "挑戰",
+                "name": "問道檯",
+                "text": "問道檯"
+              }
+            ]
+          },
+          {
+            "name": "［特殊］戰心指環",
+            "exists": true,
+            "source": [
+              {
+                "kind": "挑戰",
+                "name": "問道檯",
+                "text": "問道檯"
+              }
+            ]
+          },
+          {
+            "name": "［特殊］破境項鍊",
+            "exists": true,
+            "source": [
+              {
+                "kind": "挑戰",
+                "name": "問道檯",
+                "text": "問道檯"
+              }
+            ]
+          },
+          {
+            "name": "［特殊］道心靈墜",
+            "exists": true,
+            "source": [
+              {
+                "kind": "挑戰",
+                "name": "問道檯",
+                "text": "問道檯"
+              }
+            ]
+          },
+          {
+            "name": "［特殊］問道佩",
+            "exists": true,
+            "source": [
+              {
+                "kind": "挑戰",
+                "name": "問道檯",
+                "text": "問道檯"
+              }
+            ]
+          },
+          {
+            "name": "［特殊］問天玉佩",
+            "exists": true,
+            "source": [
+              {
+                "kind": "兌換",
+                "name": "問道檯",
+                "text": "問道檯商店・1280問道點數"
+              }
+            ]
+          }
+        ],
+        "starter": [
+          {
+            "kind": "禮包",
+            "name": "新手大禮包",
+            "text": "開啟［特殊］新手大禮包取得×1。"
+          }
+        ],
+        "hidden": [
+          {
+            "name": "［特殊］火霞刀",
+            "source": []
+          },
+          {
+            "name": "［特殊］靈水劍",
+            "source": []
+          },
+          {
+            "name": "［特殊］秘術弓",
+            "source": []
+          },
+          {
+            "name": "［特殊］鹿絞槍",
+            "source": []
+          },
+          {
+            "name": "［特殊］土靈盔",
+            "source": []
+          }
+        ]
+      }
+    },
+    {
+      "name": "七本特殊功法分類、舊背包移回功法、數量保留及重複讀取",
+      "pass": true,
+      "detail": {
+        "result": [
+          {
+            "name": "［特殊］忡靈術",
+            "before": 0,
+            "after": 2,
+            "again": 2,
+            "special": 0,
+            "class": "功法",
+            "type": "功法"
+          },
+          {
+            "name": "［特殊］逆境訣",
+            "before": 0,
+            "after": 2,
+            "again": 2,
+            "special": 0,
+            "class": "功法",
+            "type": "功法"
+          },
+          {
+            "name": "［特殊］破勢訣",
+            "before": 0,
+            "after": 2,
+            "again": 2,
+            "special": 0,
+            "class": "功法",
+            "type": "功法"
+          },
+          {
+            "name": "［特殊］守心訣",
+            "before": 0,
+            "after": 2,
+            "again": 2,
+            "special": 0,
+            "class": "功法",
+            "type": "功法"
+          },
+          {
+            "name": "［特殊］不屈戰意",
+            "before": 0,
+            "after": 2,
+            "again": 2,
+            "special": 0,
+            "class": "功法",
+            "type": "功法"
+          },
+          {
+            "name": "［特殊］破境一擊",
+            "before": 0,
+            "after": 2,
+            "again": 2,
+            "special": 0,
+            "class": "功法",
+            "type": "功法"
+          },
+          {
+            "name": "［特殊］守心歸元",
+            "before": 0,
+            "after": 2,
+            "again": 2,
+            "special": 0,
+            "class": "功法",
+            "type": "功法"
+          }
+        ],
+        "art": true,
+        "learned": []
+      }
+    },
+    {
+      "name": "特殊功法維持原學習流程：學會消耗一本，重複學習不再扣書",
+      "pass": true,
+      "detail": {
+        "qty": 2,
+        "after": 1,
+        "again": 1,
+        "learned": 1,
+        "condition": "練氣一層以上",
+        "realm": "練氣一層"
+      }
+    },
+    {
+      "name": "百靈藥水公共煉製：只消耗百年靈草、玉葉果、靈露，沒有一階靈草",
+      "pass": true,
+      "detail": {
+        "before": {
+          "r": [
+            "［初階］百靈藥水",
+            "百年靈草×1＋玉葉果×1＋靈露×1",
+            "恢復100氣血＋30靈力。"
+          ],
+          "before": 0,
+          "has": true,
+          "buttons": [
+            {
+              "text": "製作",
+              "call": "r510Craft('［初階］百靈藥水','百年靈草×1＋玉葉果×1＋靈露×1','藥品','public')",
+              "disabled": false
+            }
+          ]
+        },
+        "after": {
+          "count": 1,
+          "materials": {
+            "［二階］百年靈草": 0,
+            "［二階］玉葉果": 0,
+            "［一階］靈露": 0
+          }
+        }
+      }
+    },
+    {
+      "name": "四件忡靈裝備顯示套裝效果並可點開原功法",
+      "pass": true,
+      "detail": [
+        {
+          "name": "忡靈頭盔",
+          "set": "忡靈套裝效果集齊忡靈頭盔、忡靈戰甲、忡靈鎖褲與忡靈戰靴四件後，永久解鎖［特殊］忡靈術，不另要求功法書。查看［特殊］忡靈術",
+          "action": "JZ073.skillInfo1018('T001')"
+        },
+        {
+          "name": "忡靈戰甲",
+          "set": "忡靈套裝效果集齊忡靈頭盔、忡靈戰甲、忡靈鎖褲與忡靈戰靴四件後，永久解鎖［特殊］忡靈術，不另要求功法書。查看［特殊］忡靈術",
+          "action": "JZ073.skillInfo1018('T001')"
+        },
+        {
+          "name": "忡靈鎖褲",
+          "set": "忡靈套裝效果集齊忡靈頭盔、忡靈戰甲、忡靈鎖褲與忡靈戰靴四件後，永久解鎖［特殊］忡靈術，不另要求功法書。查看［特殊］忡靈術",
+          "action": "JZ073.skillInfo1018('T001')"
+        },
+        {
+          "name": "忡靈戰靴",
+          "set": "忡靈套裝效果集齊忡靈頭盔、忡靈戰甲、忡靈鎖褲與忡靈戰靴四件後，永久解鎖［特殊］忡靈術，不另要求功法書。查看［特殊］忡靈術",
+          "action": "JZ073.skillInfo1018('T001')"
+        }
+      ]
+    },
+    {
+      "name": "其他NPC收取禮物入口完整；林熙維持無回禮；邱山河保留B線限制",
+      "pass": true,
+      "detail": [
+        {
+          "npc": "林夏于",
+          "buttons": [
+            {
+              "text": "← 返回人物",
+              "call": "closeModal();currentPage='people';renderPage()"
+            },
+            {
+              "text": "📋 詳細介紹",
+              "call": "r58NpcDetails('林夏于')"
+            },
+            {
+              "text": "對話",
+              "call": "r4NormalTalk('林夏于')"
+            },
+            {
+              "text": "贈禮",
+              "call": "r58Gift('林夏于')"
+            },
+            {
+              "text": "切磋",
+              "call": "r58Spar('林夏于')"
+            },
+            {
+              "text": "任務／委託",
+              "call": "r56OpenNpcTasks('林夏于')"
+            },
+            {
+              "text": "邀請同行（5心）",
+              "call": "r58Invite('林夏于')"
+            },
+            {
+              "text": "收取禮物",
+              "call": "r58ReceiveGift('林夏于')"
+            },
+            {
+              "text": "偷襲",
+              "call": "r58Hostile('林夏于','偷襲')"
+            },
+            {
+              "text": "搶奪",
+              "call": "r58Hostile('林夏于','搶奪')"
+            }
+          ]
+        },
+        {
+          "npc": "林旺",
+          "buttons": [
+            {
+              "text": "← 返回人物",
+              "call": "closeModal();currentPage='people';renderPage()"
+            },
+            {
+              "text": "📋 詳細介紹",
+              "call": "r58NpcDetails('林旺')"
+            },
+            {
+              "text": "對話",
+              "call": "r4NormalTalk('林旺')"
+            },
+            {
+              "text": "贈禮",
+              "call": "r58Gift('林旺')"
+            },
+            {
+              "text": "任務／委託",
+              "call": "r56OpenNpcTasks('林旺')"
+            },
+            {
+              "text": "NPC職業功能",
+              "call": "v070Profession('林旺')"
+            },
+            {
+              "text": "收取禮物",
+              "call": "r58ReceiveGift('林旺')"
+            },
+            {
+              "text": "偷襲",
+              "call": "r58Hostile('林旺','偷襲')"
+            },
+            {
+              "text": "搶奪",
+              "call": "r58Hostile('林旺','搶奪')"
+            }
+          ]
+        },
+        {
+          "npc": "李大發",
+          "buttons": [
+            {
+              "text": "← 返回人物",
+              "call": "closeModal();currentPage='people';renderPage()"
+            },
+            {
+              "text": "📋 詳細介紹",
+              "call": "r58NpcDetails('李大發')"
+            },
+            {
+              "text": "對話",
+              "call": "r4NormalTalk('李大發')"
+            },
+            {
+              "text": "贈禮",
+              "call": "r58Gift('李大發')"
+            },
+            {
+              "text": "交易",
+              "call": "r510Trade('李大發')"
+            },
+            {
+              "text": "收取禮物",
+              "call": "r58ReceiveGift('李大發')"
+            },
+            {
+              "text": "偷襲",
+              "call": "r58Hostile('李大發','偷襲')"
+            },
+            {
+              "text": "搶奪",
+              "call": "r58Hostile('李大發','搶奪')"
+            },
+            {
+              "text": "搶劫",
+              "call": "r58Hostile('李大發','搶劫')"
+            }
+          ]
+        },
+        {
+          "npc": "金燦燦",
+          "buttons": [
+            {
+              "text": "← 返回人物",
+              "call": "closeModal();currentPage='people';renderPage()"
+            },
+            {
+              "text": "📋 詳細介紹",
+              "call": "r58NpcDetails('金燦燦')"
+            },
+            {
+              "text": "對話",
+              "call": "r4NormalTalk('金燦燦')"
+            },
+            {
+              "text": "贈禮",
+              "call": "r58Gift('金燦燦')"
+            },
+            {
+              "text": "交易",
+              "call": "r510Trade('金燦燦')"
+            },
+            {
+              "text": "收取禮物",
+              "call": "r58ReceiveGift('金燦燦')"
+            },
+            {
+              "text": "偷襲",
+              "call": "r58Hostile('金燦燦','偷襲')"
+            },
+            {
+              "text": "搶奪",
+              "call": "r58Hostile('金燦燦','搶奪')"
+            }
+          ]
+        },
+        {
+          "npc": "張榕真",
+          "buttons": [
+            {
+              "text": "← 返回人物",
+              "call": "closeModal();currentPage='people';renderPage()"
+            },
+            {
+              "text": "📋 詳細介紹",
+              "call": "r58NpcDetails('張榕真')"
+            },
+            {
+              "text": "對話",
+              "call": "r4NormalTalk('張榕真')"
+            },
+            {
+              "text": "贈禮",
+              "call": "r58Gift('張榕真')"
+            },
+            {
+              "text": "切磋",
+              "call": "r58Spar('張榕真')"
+            },
+            {
+              "text": "任務／委託",
+              "call": "r56OpenNpcTasks('張榕真')"
+            },
+            {
+              "text": "邀請同行（5心）",
+              "call": "r58Invite('張榕真')"
+            },
+            {
+              "text": "收取禮物",
+              "call": "r58ReceiveGift('張榕真')"
+            },
+            {
+              "text": "偷襲",
+              "call": "r58Hostile('張榕真','偷襲')"
+            },
+            {
+              "text": "搶奪",
+              "call": "r58Hostile('張榕真','搶奪')"
+            }
+          ]
+        },
+        {
+          "npc": "蘇璃",
+          "buttons": [
+            {
+              "text": "← 返回人物",
+              "call": "closeModal();currentPage='people';renderPage()"
+            },
+            {
+              "text": "📋 詳細介紹",
+              "call": "r58NpcDetails('蘇璃')"
+            },
+            {
+              "text": "對話",
+              "call": "r4NormalTalk('蘇璃')"
+            },
+            {
+              "text": "贈禮",
+              "call": "r58Gift('蘇璃')"
+            },
+            {
+              "text": "切磋",
+              "call": "r58Spar('蘇璃')"
+            },
+            {
+              "text": "約會（8心）",
+              "call": "r58Date('蘇璃')"
+            },
+            {
+              "text": "表白／確認戀愛（9心）",
+              "call": "r58Confess('蘇璃')"
+            },
+            {
+              "text": "求婚／結為道侶（10心）",
+              "call": "r58Propose('蘇璃')"
+            },
+            {
+              "text": "邀請同行（5心）",
+              "call": "r58Invite('蘇璃')"
+            },
+            {
+              "text": "收取禮物",
+              "call": "r58ReceiveGift('蘇璃')"
+            }
+          ]
+        },
+        {
+          "npc": "蘇項",
+          "buttons": [
+            {
+              "text": "← 返回人物",
+              "call": "closeModal();currentPage='people';renderPage()"
+            },
+            {
+              "text": "📋 詳細介紹",
+              "call": "r58NpcDetails('蘇項')"
+            },
+            {
+              "text": "對話",
+              "call": "r4NormalTalk('蘇項')"
+            },
+            {
+              "text": "贈禮",
+              "call": "r58Gift('蘇項')"
+            },
+            {
+              "text": "切磋",
+              "call": "r58Spar('蘇項')"
+            },
+            {
+              "text": "邀請同行（5心）",
+              "call": "r58Invite('蘇項')"
+            },
+            {
+              "text": "收取禮物",
+              "call": "r58ReceiveGift('蘇項')"
+            },
+            {
+              "text": "偷襲",
+              "call": "r58Hostile('蘇項','偷襲')"
+            },
+            {
+              "text": "搶奪",
+              "call": "r58Hostile('蘇項','搶奪')"
+            }
+          ]
+        },
+        {
+          "npc": "沈玄川",
+          "buttons": [
+            {
+              "text": "← 返回人物",
+              "call": "closeModal();currentPage='people';renderPage()"
+            },
+            {
+              "text": "📋 詳細介紹",
+              "call": "r58NpcDetails('沈玄川')"
+            },
+            {
+              "text": "對話",
+              "call": "r4NormalTalk('沈玄川')"
+            },
+            {
+              "text": "贈禮",
+              "call": "r58Gift('沈玄川')"
+            },
+            {
+              "text": "切磋",
+              "call": "r58Spar('沈玄川')"
+            },
+            {
+              "text": "任務／委託",
+              "call": "r56OpenNpcTasks('沈玄川')"
+            },
+            {
+              "text": "邀請同行（5心）",
+              "call": "r58Invite('沈玄川')"
+            },
+            {
+              "text": "收取禮物",
+              "call": "r58ReceiveGift('沈玄川')"
+            },
+            {
+              "text": "偷襲",
+              "call": "r58Hostile('沈玄川','偷襲')"
+            },
+            {
+              "text": "搶奪",
+              "call": "r58Hostile('沈玄川','搶奪')"
+            }
+          ]
+        },
+        {
+          "npc": "柳清妍",
+          "buttons": [
+            {
+              "text": "← 返回人物",
+              "call": "closeModal();currentPage='people';renderPage()"
+            },
+            {
+              "text": "📋 詳細介紹",
+              "call": "r58NpcDetails('柳清妍')"
+            },
+            {
+              "text": "對話",
+              "call": "r4NormalTalk('柳清妍')"
+            },
+            {
+              "text": "贈禮",
+              "call": "r58Gift('柳清妍')"
+            },
+            {
+              "text": "切磋",
+              "call": "r58Spar('柳清妍')"
+            },
+            {
+              "text": "邀請同行（5心）",
+              "call": "r58Invite('柳清妍')"
+            },
+            {
+              "text": "收取禮物",
+              "call": "r58ReceiveGift('柳清妍')"
+            },
+            {
+              "text": "偷襲",
+              "call": "r58Hostile('柳清妍','偷襲')"
+            },
+            {
+              "text": "搶奪",
+              "call": "r58Hostile('柳清妍','搶奪')"
+            },
+            {
+              "text": "任務／委託",
+              "call": "r56OpenNpcTasks('柳清妍')"
+            }
+          ]
+        },
+        {
+          "npc": "華安",
+          "buttons": [
+            {
+              "text": "← 返回人物",
+              "call": "closeModal();currentPage='people';renderPage()"
+            },
+            {
+              "text": "詳細介紹",
+              "call": "r58NpcDetails('華安')"
+            },
+            {
+              "text": "對話",
+              "call": "r4NormalTalk('華安')"
+            },
+            {
+              "text": "贈禮",
+              "call": "r58Gift('華安')"
+            },
+            {
+              "text": "交易",
+              "call": "JZ072.huaTrade()"
+            },
+            {
+              "text": "任務／委託",
+              "call": "r56OpenNpcTasks('華安')"
+            },
+            {
+              "text": "收取禮物",
+              "call": "r58ReceiveGift('華安')"
+            },
+            {
+              "text": "偷襲",
+              "call": "r58Hostile('華安','偷襲')"
+            },
+            {
+              "text": "搶奪",
+              "call": "r58Hostile('華安','搶奪')"
+            },
+            {
+              "text": "搶劫",
+              "call": "r58Hostile('華安','搶劫')"
+            }
+          ]
+        },
+        {
+          "npc": "邱山河",
+          "buttons": [
+            {
+              "text": "← 返回人物",
+              "call": "closeModal();currentPage='people';renderPage()"
+            },
+            {
+              "text": "📋 詳細介紹",
+              "call": "r58NpcDetails('邱山河')"
+            },
+            {
+              "text": "對話",
+              "call": "r4NormalTalk('邱山河')"
+            },
+            {
+              "text": "贈禮",
+              "call": "r58Gift('邱山河')"
+            },
+            {
+              "text": "切磋",
+              "call": "r58Spar('邱山河')"
+            },
+            {
+              "text": "任務／委託",
+              "call": "r56OpenNpcTasks('邱山河')"
+            },
+            {
+              "text": "邀請同行（5心）",
+              "call": "r58Invite('邱山河')"
+            },
+            {
+              "text": "NPC職業功能",
+              "call": "v070Profession('邱山河')"
+            },
+            {
+              "text": "偷襲",
+              "call": "r58Hostile('邱山河','偷襲')"
+            },
+            {
+              "text": "搶奪",
+              "call": "r58Hostile('邱山河','搶奪')"
+            }
+          ]
+        },
+        {
+          "npc": "林熙",
+          "buttons": [
+            {
+              "text": "← 返回人物",
+              "call": "closeModal();currentPage='people';renderPage()"
+            },
+            {
+              "text": "📋 詳細介紹",
+              "call": "r58NpcDetails('林熙')"
+            },
+            {
+              "text": "對話",
+              "call": "r4NormalTalk('林熙')"
+            },
+            {
+              "text": "贈禮",
+              "call": "r58Gift('林熙')"
+            },
+            {
+              "text": "任務／委託",
+              "call": "r56OpenNpcTasks('林熙')"
+            },
+            {
+              "text": "NPC職業功能",
+              "call": "v070Profession('林熙')"
+            },
+            {
+              "text": "偷襲",
+              "call": "r58Hostile('林熙','偷襲')"
+            },
+            {
+              "text": "搶奪",
+              "call": "r58Hostile('林熙','搶奪')"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "隱藏位階與裝備原數值全部保留",
+      "pass": true,
+      "detail": {
+        "same": true,
+        "ranks": [
+          "特殊·初位",
+          "特殊·中位",
+          "特殊·仙位",
+          "特殊·高位"
+        ],
+        "scale": [
+          {
+            "realm": "練氣一層",
+            "scale": 0.4
+          },
+          {
+            "realm": "築基一層",
+            "scale": 0.4
+          },
+          {
+            "realm": "金丹一層",
+            "scale": 0.6
+          },
+          {
+            "realm": "元嬰一層",
+            "scale": 0.6
+          },
+          {
+            "realm": "化神一層",
+            "scale": 0.8
+          },
+          {
+            "realm": "煉虛一層",
+            "scale": 0.8
+          },
+          {
+            "realm": "合體一層",
+            "scale": 1
+          },
+          {
+            "realm": "大乘一層",
+            "scale": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "八張修正圖片實際載入；功法與品質名稱共用同圖",
+      "pass": true,
+      "detail": [
+        {
+          "name": "［特殊］忡靈術",
+          "src": "/物品修正美術_2026-10-19/［特殊］忡靈術.png",
+          "width": 1254,
+          "height": 1254,
+          "alias": "/物品修正美術_2026-10-19/［特殊］忡靈術.png",
+          "quality": "/物品修正美術_2026-10-19/［特殊］忡靈術.png"
+        },
+        {
+          "name": "［特殊］逆境訣",
+          "src": "/物品修正美術_2026-10-19/［特殊］逆境訣.png",
+          "width": 1254,
+          "height": 1254,
+          "alias": "/物品修正美術_2026-10-19/［特殊］逆境訣.png",
+          "quality": "/物品修正美術_2026-10-19/［特殊］逆境訣.png"
+        },
+        {
+          "name": "［特殊］破勢訣",
+          "src": "/物品修正美術_2026-10-19/［特殊］破勢訣.png",
+          "width": 1254,
+          "height": 1254,
+          "alias": "/物品修正美術_2026-10-19/［特殊］破勢訣.png",
+          "quality": "/物品修正美術_2026-10-19/［特殊］破勢訣.png"
+        },
+        {
+          "name": "［特殊］守心訣",
+          "src": "/物品修正美術_2026-10-19/［特殊］守心訣.png",
+          "width": 1254,
+          "height": 1254,
+          "alias": "/物品修正美術_2026-10-19/［特殊］守心訣.png",
+          "quality": "/物品修正美術_2026-10-19/［特殊］守心訣.png"
+        },
+        {
+          "name": "［特殊］不屈戰意",
+          "src": "/物品修正美術_2026-10-19/［特殊］不屈戰意.png",
+          "width": 1254,
+          "height": 1254,
+          "alias": "/物品修正美術_2026-10-19/［特殊］不屈戰意.png",
+          "quality": "/物品修正美術_2026-10-19/［特殊］不屈戰意.png"
+        },
+        {
+          "name": "［特殊］破境一擊",
+          "src": "/物品修正美術_2026-10-19/［特殊］破境一擊.png",
+          "width": 1254,
+          "height": 1254,
+          "alias": "/物品修正美術_2026-10-19/［特殊］破境一擊.png",
+          "quality": "/物品修正美術_2026-10-19/［特殊］破境一擊.png"
+        },
+        {
+          "name": "［特殊］守心歸元",
+          "src": "/物品修正美術_2026-10-19/［特殊］守心歸元.png",
+          "width": 1254,
+          "height": 1254,
+          "alias": "/物品修正美術_2026-10-19/［特殊］守心歸元.png",
+          "quality": "/物品修正美術_2026-10-19/［特殊］守心歸元.png"
+        },
+        {
+          "name": "［特殊］不滅獸甲",
+          "src": "/物品修正美術_2026-10-19/［特殊］不滅獸甲.png",
+          "width": 1254,
+          "height": 1254,
+          "alias": "/物品獨立美術_2026-10-18/［特殊］不滅獸甲.png",
+          "quality": "/物品修正美術_2026-10-19/［特殊］不滅獸甲.png"
+        }
+      ]
+    },
+    {
+      "name": "長右專屬血條與縮小戰位，數字在血條內並預留小怪區",
+      "pass": true,
+      "detail": {
+        "bar": {
+          "x": 392,
+          "y": 156,
+          "width": 796,
+          "height": 37,
+          "top": 156,
+          "right": 1188,
+          "bottom": 193,
+          "left": 392
+        },
+        "digits": {
+          "x": 393,
+          "y": 157,
+          "width": 794,
+          "height": 35,
+          "top": 157,
+          "right": 1187,
+          "bottom": 192,
+          "left": 393
+        },
+        "ornament": true,
+        "allies": [
+          {
+            "bounds": {
+              "x": 440,
+              "y": 651,
+              "width": 166,
+              "height": 162,
+              "top": 651,
+              "right": 606,
+              "bottom": 813,
+              "left": 440
+            },
+            "art": "http://127.0.0.1:18776/%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB_2026-10-18/%E5%B0%91%E5%B9%B4.png",
+            "fit": "contain"
+          },
+          {
+            "bounds": {
+              "x": 618,
+              "y": 651,
+              "width": 166,
+              "height": 162,
+              "top": 651,
+              "right": 784,
+              "bottom": 813,
+              "left": 618
+            },
+            "art": "http://127.0.0.1:18776/%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB_2026-10-18/%E9%82%B1%E5%B1%B1%E6%B2%B3.png",
+            "fit": "contain"
+          },
+          {
+            "bounds": {
+              "x": 796,
+              "y": 651,
+              "width": 166,
+              "height": 162,
+              "top": 651,
+              "right": 962,
+              "bottom": 813,
+              "left": 796
+            },
+            "art": "http://127.0.0.1:18776/%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB_2026-10-18/%E6%9E%97%E5%A4%8F%E4%BA%8E.png",
+            "fit": "contain"
+          },
+          {
+            "bounds": {
+              "x": 974,
+              "y": 651,
+              "width": 166,
+              "height": 162,
+              "top": 651,
+              "right": 1140,
+              "bottom": 813,
+              "left": 974
+            },
+            "art": "http://127.0.0.1:18776/%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB_2026-10-18/%E6%B2%88%E7%8E%84%E5%B7%9D.png",
+            "fit": "contain"
+          }
+        ],
+        "space": {
+          "x": 360,
+          "y": 323,
+          "width": 860,
+          "height": 240,
+          "top": 323,
+          "right": 1220,
+          "bottom": 563,
+          "left": 360
+        },
+        "auto": false,
+        "hp": "4500 / 4500"
+      }
+    },
+    {
+      "name": "長右第二階段同步專屬血條與全畫面屬性提示，禁止自動",
+      "pass": true,
+      "detail": {
+        "phase": 2,
+        "hp": 2250,
+        "bar": "2250 / 4500",
+        "notice": "洪災之禍長右已進入第二階段屬性更改為 水 / 雷",
+        "auto": false,
+        "blocked": "受長右的影響，禁止自動戰鬥。"
+      }
+    },
+    {
+      "name": "BOSS加三名敵方隨從的純排版驗收，四個我方戰位不重疊",
+      "pass": true,
+      "detail": {
+        "adds": [
+          {
+            "x": 1160,
+            "y": 773,
+            "width": 164,
+            "height": 108,
+            "top": 773,
+            "right": 1324,
+            "bottom": 881,
+            "left": 1160
+          },
+          {
+            "x": 1856,
+            "y": 773,
+            "width": 164,
+            "height": 108,
+            "top": 773,
+            "right": 2020,
+            "bottom": 881,
+            "left": 1856
+          },
+          {
+            "x": 1160,
+            "y": 897,
+            "width": 164,
+            "height": 108,
+            "top": 897,
+            "right": 1324,
+            "bottom": 1005,
+            "left": 1160
+          }
+        ],
+        "allies": [
+          {
+            "x": 1240,
+            "y": 1101,
+            "width": 166,
+            "height": 162,
+            "top": 1101,
+            "right": 1406,
+            "bottom": 1263,
+            "left": 1240
+          },
+          {
+            "x": 1418,
+            "y": 1101,
+            "width": 166,
+            "height": 162,
+            "top": 1101,
+            "right": 1584,
+            "bottom": 1263,
+            "left": 1418
+          },
+          {
+            "x": 1596,
+            "y": 1101,
+            "width": 166,
+            "height": 162,
+            "top": 1101,
+            "right": 1762,
+            "bottom": 1263,
+            "left": 1596
+          },
+          {
+            "x": 1774,
+            "y": 1101,
+            "width": 166,
+            "height": 162,
+            "top": 1101,
+            "right": 1940,
+            "bottom": 1263,
+            "left": 1774
+          }
+        ],
+        "note": "僅排版測試，未新增長右小怪、遭遇、技能或獎勵設定。"
+      }
+    }
+  ],
+  "errors": []
+}

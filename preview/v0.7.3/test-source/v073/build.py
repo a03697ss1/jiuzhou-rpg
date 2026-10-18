@@ -35,7 +35,7 @@ def apply(text,standalone):
  for folder,key in [('物品美術_2026-10-18','JZ073_ITEM_ART'),('人物全身_2026-10-18','JZ073_FULLBODY_ART'),('物品獨立美術_2026-10-18','JZ073_ITEM_UNIQUE_ART')]:
   pictures={v.stem:('data:image/png;base64,'+base64.b64encode(v.read_bytes()).decode() if standalone else '/'+folder+'/'+v.name) for v in (R/folder).glob('*.png')}
   code+='<script>window.'+key+'='+json.dumps(pictures,ensure_ascii=False).replace('</','<\\/')+';</script>\n'
- for name in ['core','economy','monsters','combat','story-data','humans','quests','world','commissions','pets','codex','ui','completion','clarifications','b-data','b-story','a-data','a-story','npc-generation','test-entry','side1018-data','side1018','material1018','pet-cores1018','pet1018','status1018','release1018','save-recovery1018','revision-world1018','revision-items1018','revision-codex1018','revision-help1018','revision-boss1018','revision-finish1018','review18-fixes','review18-art','hidden-steal1019']:
+ for name in ['core','economy','monsters','combat','story-data','humans','quests','world','commissions','pets','codex','ui','completion','clarifications','b-data','b-story','a-data','a-story','npc-generation','test-entry','side1018-data','side1018','material1018','pet-cores1018','pet1018','status1018','release1018','save-recovery1018','revision-world1018','revision-items1018','revision-codex1018','revision-help1018','revision-boss1018','revision-finish1018','review18-fixes','review18-art','hidden-steal1019','items1019','boss1019','battle1019']:
   f=P/(name+'.js')
   if f.exists():code+='<script id="jz073-'+name+'">'+f.read_text('utf8')+'</script>\n'
  return text+code

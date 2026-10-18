@@ -1,0 +1,260 @@
+{
+  "rows": [
+    {
+      "name": "5%精確邊界與1000等距抽樣恰有50次成功",
+      "pass": true,
+      "detail": {
+        "boundary": [
+          {
+            "roll": 0,
+            "item": "［特殊］火霞刀"
+          },
+          {
+            "roll": 0.049999,
+            "item": "［特殊］火霞刀"
+          },
+          {
+            "roll": 0.05,
+            "item": null
+          },
+          {
+            "roll": 0.999999,
+            "item": null
+          }
+        ],
+        "successes": 50
+      }
+    },
+    {
+      "name": "搶奪戰敗、其他敵對類型與不合法勝利均不抽獎",
+      "pass": true,
+      "detail": [
+        {
+          "got": null,
+          "calls": 0
+        },
+        {
+          "got": null,
+          "calls": 0
+        },
+        {
+          "got": null,
+          "calls": 0
+        },
+        {
+          "got": null,
+          "calls": 0
+        },
+        {
+          "got": null,
+          "calls": 0
+        },
+        {
+          "got": null,
+          "calls": 0
+        },
+        {
+          "got": null,
+          "calls": 0
+        },
+        {
+          "got": null,
+          "calls": 0
+        },
+        {
+          "got": null,
+          "calls": 0
+        }
+      ]
+    },
+    {
+      "name": "同場成功或未中都不重抽，首次取得後移除物品也不再生成",
+      "pass": true,
+      "detail": {
+        "firstMiss": null,
+        "retryMiss": null,
+        "first": "［特殊］火霞刀",
+        "repeat": null,
+        "count": 1,
+        "removed": null,
+        "calls": 0
+      }
+    },
+    {
+      "name": "舊存檔背包、玩家穿戴、夥伴穿戴及品質前綴都鎖定唯一件",
+      "pass": true,
+      "detail": [
+        {
+          "location": "bag",
+          "claimed": true,
+          "got": null,
+          "calls": 0
+        },
+        {
+          "location": "player",
+          "claimed": true,
+          "got": null,
+          "calls": 0
+        },
+        {
+          "location": "partner",
+          "claimed": true,
+          "got": null,
+          "calls": 0
+        },
+        {
+          "location": "quality",
+          "claimed": true,
+          "got": null,
+          "calls": 0
+        }
+      ]
+    },
+    {
+      "name": "真正搶奪判定失敗不進戰鬥也不發裝備",
+      "pass": true,
+      "detail": {
+        "battle": false,
+        "count": 0,
+        "claimed": {}
+      }
+    },
+    {
+      "name": "林夏于正常確認搶奪、實際戰鬥勝利取得一件且無一般戰利品",
+      "pass": true,
+      "detail": {
+        "count": 1,
+        "claimed": true,
+        "foes": [
+          0
+        ],
+        "settled": true,
+        "coins": 0,
+        "exp": 0
+      }
+    },
+    {
+      "name": "蘇璃正常確認搶奪、實際戰鬥勝利取得一件且無一般戰利品",
+      "pass": true,
+      "detail": {
+        "count": 1,
+        "claimed": true,
+        "foes": [
+          0
+        ],
+        "settled": true,
+        "coins": 0,
+        "exp": 0
+      }
+    },
+    {
+      "name": "柳清妍正常確認搶奪、實際戰鬥勝利取得一件且無一般戰利品",
+      "pass": true,
+      "detail": {
+        "count": 1,
+        "claimed": true,
+        "foes": [
+          0
+        ],
+        "settled": true,
+        "coins": 0,
+        "exp": 0
+      }
+    },
+    {
+      "name": "邱山河正常確認搶奪、實際戰鬥勝利取得一件且無一般戰利品",
+      "pass": true,
+      "detail": {
+        "count": 1,
+        "claimed": true,
+        "foes": [
+          0
+        ],
+        "settled": true,
+        "coins": 0,
+        "exp": 0
+      }
+    },
+    {
+      "name": "蘇項正常確認搶奪、實際戰鬥勝利取得一件且無一般戰利品",
+      "pass": true,
+      "detail": {
+        "count": 1,
+        "claimed": true,
+        "foes": [
+          0
+        ],
+        "settled": true,
+        "coins": 0,
+        "exp": 0
+      }
+    },
+    {
+      "name": "沿用戰鬥引擎的勝利判定，雙方同時歸零仍可正常結算",
+      "pass": true,
+      "detail": {
+        "count": 1,
+        "claimed": true,
+        "ended": true
+      }
+    },
+    {
+      "name": "正常存檔、重新載入後仍保留唯一取得旗標",
+      "pass": true,
+      "detail": {
+        "before": 1,
+        "after": 1,
+        "claimed": true,
+        "got": null,
+        "calls": 0
+      }
+    },
+    {
+      "name": "五件已持有裝備圖鑑仍只顯示未知來源",
+      "pass": true,
+      "detail": [
+        {
+          "item": "［特殊］火霞刀",
+          "npc": "林夏于",
+          "unknown": true,
+          "leak": false,
+          "sources": [],
+          "image": "/物品獨立美術_2026-10-18/［特殊］火霞刀.png"
+        },
+        {
+          "item": "［特殊］靈水劍",
+          "npc": "蘇璃",
+          "unknown": true,
+          "leak": false,
+          "sources": [],
+          "image": "/物品獨立美術_2026-10-18/［特殊］靈水劍.png"
+        },
+        {
+          "item": "［特殊］秘術弓",
+          "npc": "柳清妍",
+          "unknown": true,
+          "leak": false,
+          "sources": [],
+          "image": "/物品獨立美術_2026-10-18/［特殊］秘術弓.png"
+        },
+        {
+          "item": "［特殊］鹿絞槍",
+          "npc": "邱山河",
+          "unknown": true,
+          "leak": false,
+          "sources": [],
+          "image": "/物品獨立美術_2026-10-18/［特殊］鹿絞槍.png"
+        },
+        {
+          "item": "［特殊］土靈盔",
+          "npc": "蘇項",
+          "unknown": true,
+          "leak": false,
+          "sources": [],
+          "image": "/物品獨立美術_2026-10-18/［特殊］土靈盔.png"
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

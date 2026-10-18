@@ -24986,7 +24986,7 @@ const finish=N.decorate;N.decorate=()=>{finish();const banner=document.querySele
 const history=JZ072.versionHistory;JZ072.versionHistory=()=>{history();document.getElementById('modalBody')?.insertAdjacentHTML('afterbegin','<section class="card"><h2>本輪18項修正</h2><h3>新增</h3><p>裝備、各階藥品與特殊物品的獨立圖片；補齊NPC靈根資質。</p><h3>改動</h3><p>狐毛、狐尾與獸角歸妖物素材；藥品使用你提供的數值；取得來源依完整階級與當前商店核對；布告箱移到放大的布告欄下方；交談只保留暫時離開。</p><h3>BUG修復</h3><p>戰鬥血量與戰位同步、測試999重複挑戰長右、主線行動所在地限制、蘇璃同行位置、柳清妍任務入口、功法階級顯示，以及必敗戰的手動1倍與繼續提示。</p></section>');};
 })();
 </script>
-<script>window.JZ073_BUILD_ID="20261019-hidden-steal-2";</script>
+<script>window.JZ073_BUILD_ID="20261019-items-battle-1";</script>
 <script id="jz073-hidden-steal1019">(function(){'use strict';const N=JZ073,R=JZR;
 const drops=Object.freeze({'林夏于':'［特殊］火霞刀','蘇璃':'［特殊］靈水劍','柳清妍':'［特殊］秘術弓','邱山河':'［特殊］鹿絞槍','蘇項':'［特殊］土靈盔'});
 const names=new Set(Object.values(drops));
@@ -25015,4 +25015,44 @@ const history=JZ072.versionHistory;JZ072.versionHistory=function(){history.apply
 const decorate=N.decorate;N.decorate=()=>{decorate();const banner=document.querySelector('.jz073-banner');if(banner&&!banner.dataset.hidden1019){banner.dataset.hidden1019='true';banner.insertAdjacentHTML('beforeend','<span class="jz18-build">10/19 修正</span>');}};
 })();
 
+</script>
+<script id="jz073-items1019">(function(){'use strict';const N=JZ073,R=JZR,W=JZW,C=JZ360,E=N.esc;
+N.itemsReview19={version:'0.7.3',date:'2026-10-19',linXiGift:false};
+// User-confirmed acquisition locations. This does not invent shop prices or stock.
+N.wendaoConfirmed19=new Set(['鎮岳錘','逐星弓','問道槍','問心劍','納靈葫蘆','破境拳套','破軍刀','玄機靈傘','問靈道冠','玄心道袍','問天戰衣','問道戰靴','踏虛靈履','問道戰衣','問心戒','戰心指環','破境項鍊','道心靈墜','問道佩','問天玉佩'].map(n=>'［特殊］'+n));
+const sources=N.itemSources1018;N.itemSources1018=function(name){const base=JZ072.baseGear(name),rows=sources.apply(this,arguments).slice();if(N.wendaoConfirmed19.has(base)&&!rows.some(r=>r.name==='問道檯'))rows.push({kind:'挑戰',name:'問道檯',text:'問道檯'});if(base==='［無階］新手護符'&&!rows.some(r=>r.name==='新手大禮包'))rows.push({kind:'禮包',name:'新手大禮包',text:'開啟［特殊］新手大禮包取得×1。'});return rows;};
+N.specialTech19=Object.fromEntries(Object.values(C.byId).filter(r=>!r.monster&&r.tier==='特殊').map(r=>['［特殊］'+r.name,r]));
+const technique=n=>N.specialTech19[n]||Object.values(N.specialTech19).find(r=>r.name===n);
+const itemClass=W.itemClass;W.itemClass=function(n){return technique(n)?'功法':itemClass.apply(this,arguments);};
+// Earlier rewards can have placed a book in a generic special-item bucket.
+// Move every existing copy into the established technique inventory without learning it.
+N.migrateSpecialTech19=()=>{if(!S)return;S.techInventory??=[];for(const bucket of ['items','special','materials','gearInventory','souvenirs'])for(const [name,value] of Object.entries(S[bucket]||{})){const r=technique(name),count=typeof value==='object'?Number(value?.count||0):Number(value||0);if(!r||!Number.isInteger(count)||count<=0)continue;for(let i=0;i<count;i++)S.techInventory.push('［特殊］'+r.name);delete S[bucket][name];}};
+const ensure=R.ensure;R.ensure=function(){const out=ensure.apply(this,arguments);N.migrateSpecialTech19();return out;};
+const give=W.give;W.give=function(name,qty=1){if(technique(name))return R.give('［特殊］'+technique(name).name,qty);return give.apply(this,arguments);};
+const use=W.useItem;W.useItem=function(name){const r=technique(name);if(!r)return use.apply(this,arguments);if(battle)return false;R.ensure();const full='［特殊］'+r.name;if(!S.techInventory.includes(full))return false;return learnTechnique(full);};
+const artNames=[...Object.keys(N.specialTech19),'［特殊］不滅獸甲'];
+N.itemArt19=Object.fromEntries(artNames.map(n=>[n,'unique-item-assets/'+n+'.webp?rev=20261019-items-battle-1']));
+const icon=N.itemIcon;N.itemIcon=function(name){const base=JZ072.baseGear(name),r=technique(base);return N.itemArt19[base]||r&&N.itemArt19['［特殊］'+r.name]||icon.apply(this,arguments);};
+const techPage=renderTech;renderTech=function(){R.ensure();const fragment=JZ072.fragment(techPage.apply(this,arguments));for(const entry of fragment.querySelectorAll('.card,.tech-entry')){if(entry.querySelector('.card,.tech-entry'))continue;const title=entry.querySelector('b')?.textContent?.trim(),r=technique(title);if(r&&!entry.querySelector('.jz-item-image'))entry.insertAdjacentHTML('afterbegin',N.itemImage1018('［特殊］'+r.name,'jz19-tech-book'));}return fragment.innerHTML;};
+const setPieces=['忡靈頭盔','忡靈戰甲','忡靈鎖褲','忡靈戰靴'].map(n=>'［特殊］'+n);
+const card=N.catalogCard1018;N.catalogCard1018=function(row,tab){const html=card.apply(this,arguments);if(!setPieces.includes(row.name)||tab!=='裝備')return html;const fragment=JZ072.fragment(html),details=fragment.querySelector('.jz-catalog-details'),section=document.createElement('section');section.className='jz-catalog-section jz19-set-effect';section.innerHTML='<h4>忡靈套裝效果</h4><p>集齊忡靈頭盔、忡靈戰甲、忡靈鎖褲與忡靈戰靴四件後，永久解鎖［特殊］忡靈術，不另要求功法書。</p><button class="jz-reference" onclick="JZ073.skillInfo1018(\'T001\')">查看［特殊］忡靈術</button>';details?.insertBefore(section,details.querySelector('.jz-catalog-sources'));return fragment.innerHTML;};
+const history=JZ072.versionHistory;JZ072.versionHistory=function(){history.apply(this,arguments);document.getElementById('modalBody')?.insertAdjacentHTML('afterbegin','<section class="card"><h2>10/19 物品與戰鬥介面更新</h2><h3>新增</h3><p>忡靈套裝四件效果說明、特殊功法書圖片及獨立的不滅獸甲圖片。</p><h3>改動</h3><p>補齊問道檯裝備、新手護符的取得來源；長右專屬血條與較小的我方戰位。</p><h3>BUG修復</h3><p>修復主線戰鬥結算後仍停留在戰鬥畫面。特殊功法歸回功法分類，舊紀錄中的功法書保留並移回持有功法。</p></section>');};
+const style=document.createElement('style');style.textContent='.jz19-tech-book{width:86px;height:86px;flex:0 0 86px;object-fit:contain}.jz19-set-effect{border:1px solid #b79b54;background:linear-gradient(135deg,#24291c,#10222c);border-radius:8px;padding:12px}.jz19-set-effect h4{color:#edcf83}';document.head.append(style);
+const decorate=N.decorate;N.decorate=()=>{decorate();const banner=document.querySelector('.jz073-banner');if(banner&&!banner.dataset.items19){banner.dataset.items19='true';banner.insertAdjacentHTML('beforeend','<span class="jz18-build">10/19 主線戰鬥／物品修正</span>');}};
+})();
+</script>
+<script id="jz073-boss1019">(function(){'use strict';const N=JZ073;
+const frame='<svg class="jz19-boss-ornament" viewBox="0 0 900 84" preserveAspectRatio="none" aria-hidden="true"><defs><linearGradient id="jz19-gold" x2="0" y2="1"><stop stop-color="#fff1b1"/><stop offset=".45" stop-color="#94703f"/><stop offset="1" stop-color="#edc881"/></linearGradient></defs><g fill="none" stroke="url(#jz19-gold)" stroke-width="2"><path d="M48 16H365l25-9h120l25 9h317M48 68h315l22 8h130l22-8h315"/><path d="M51 12C22-6 2 12 17 29C31 45 3 45 5 61C8 76 29 82 53 69M33 20C12 11 12 31 28 35M32 58C10 66 25 79 43 67M849 12C878-6 898 12 883 29C869 45 897 45 895 61C892 76 871 82 847 69M867 20C888 11 888 31 872 35M868 58C890 66 875 79 857 67"/><path d="M47 25L29 42l18 17M853 25l18 17-18 17M397 9l14 7h78l14-7M416 76l12-7h44l12 7"/></g><g fill="#a6d8e2" stroke="#f0d999"><path d="M29 34l7 8-7 8-7-8zM871 34l7 8-7 8-7-8z"/></g></svg>';
+const core=bmv1CombatCore;bmv1CombatCore=function(b){const html=core.apply(this,arguments);if(!b.enemyTeam.some(f=>f.jz073Boss))return html;const fragment=JZ072.fragment(html),bar=fragment.querySelector('.jz-boss-health');if(bar){const wrap=document.createElement('div');wrap.className='jz19-boss-frame';bar.before(wrap);wrap.append(bar);wrap.insertAdjacentHTML('beforeend',frame);bar.setAttribute('aria-valuemin','0');}fragment.querySelector('.jz-boss-header')?.insertAdjacentHTML('afterbegin','<div class="jz19-boss-name">災獸長右</div>');fragment.querySelector('.jz-boss-adds')?.setAttribute('aria-label','敵方隨從戰位區');return fragment.innerHTML;};
+const style=document.createElement('style');style.textContent=`
+.jz-boss-header{height:126px;top:0}.jz19-boss-name{color:#f1d69e;font-size:21px;letter-spacing:8px;text-shadow:0 2px 5px #000,0 0 15px #ab714a;margin-bottom:4px}.jz-boss-phase{font-size:14px;letter-spacing:3px;margin-bottom:5px}.jz19-boss-frame{position:relative;margin:0 12px;padding:10px 30px;height:64px;box-sizing:border-box}.jz19-boss-ornament{position:absolute;inset:0;width:100%;height:100%;filter:drop-shadow(0 2px 3px #000);pointer-events:none}.jz19-boss-frame .jz-boss-health{height:37px;border-radius:2px;border:1px solid #9f834e;box-shadow:0 0 0 2px #06141d,0 0 0 3px #69502d,inset 0 0 12px #000;clip-path:polygon(1% 0,99% 0,100% 50%,99% 100%,1% 100%,0 50%)}.jz19-boss-frame .jz-boss-health>i{background:linear-gradient(90deg,#5e1529,#ae2d43 42%,#df6950 85%,#ffad72);border-top:1px solid #ffba9388}.jz19-boss-frame .jz-boss-health>span{font-variant-numeric:tabular-nums;font-size:18px;letter-spacing:1px}.jz-boss-tempest .jz19-boss-frame .jz-boss-health>i{background:linear-gradient(90deg,#172b58,#285a8e 42%,#548db5 85%,#a9dfea)}.jz-boss-detail{position:absolute;right:42px;top:108px;margin:0!important}.jz-boss-stage .jz-boss-body{left:25%;width:50%;top:16%;height:43%}.jz-boss-stage .jz-boss-allies{left:90px;top:72%;width:700px;gap:12px}.jz-boss-stage .jz-boss-allies .bsv2-card{height:162px!important}.jz-boss-stage .jz-boss-allies .bsv2-card .bsv2-art{inset:3px 8px 62px!important}.jz-boss-stage .jz-boss-allies .bsv2-orbs img{width:22px!important;height:22px!important}.jz-boss-stage .jz-boss-adds{left:10px;right:10px;top:31%;height:240px;display:grid;grid-template-columns:164px 164px;grid-auto-rows:108px;justify-content:space-between;align-content:start;gap:16px;z-index:3}.jz-boss-stage .jz-boss-adds .bsv2-card{width:164px!important;height:108px!important}.jz-boss-stage .jz-boss-adds .bsv2-name{font-size:12px!important}
+`;document.head.append(style);
+})();
+</script>
+<script id="jz073-battle1019">(function(){'use strict';const N=JZ073;
+// Main-quest settlement already advanced the quest, but left its battle modal open.
+// Only remove the obsolete battle screen after settlement has detached that battle.
+// Preserve any replacement dialogue, result window, and the plot-defeat Continue step.
+const finish=N.finishStoryBattle;N.finishStoryBattle=function(b){const out=finish.apply(this,arguments);if(b?.jz073Story&&battle!==b&&document.querySelector('#modalBody .bmv1-canvas'))closeModal();if(b?.jz073Story&&battle!==b){document.getElementById('modalBack')?.classList.remove('bmv1-active','battle-locked');}return out;};
+})();
 </script>

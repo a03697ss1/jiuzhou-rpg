@@ -1,0 +1,29 @@
+{
+  "rows": [
+    {
+      "name": "A線青陽山第1場實際勝利退出",
+      "initial": {
+        "ids": [
+          "jzu3",
+          "jzu4",
+          "jzu5"
+        ],
+        "refs": true
+      },
+      "result": {
+        "step": 1,
+        "dead": true,
+        "visible": true,
+        "battleCanvas": true,
+        "locked": true,
+        "rewardLogs": [
+          "輪到測試999行動。",
+          "測試999施展普通攻擊。",
+          "青臭蟲氣血 65 → 0。"
+        ]
+      },
+      "pass": false
+    }
+  ],
+  "errors": []
+}
