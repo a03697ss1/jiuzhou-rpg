@@ -1,0 +1,330 @@
+{
+  "rows": [
+    {
+      "ids": [
+        4,
+        6,
+        10
+      ],
+      "name": "全部登錄物品含任務物品皆有可解碼PNG、共用映射",
+      "pass": true,
+      "detail": {
+        "items": 890,
+        "images": 140,
+        "missing": [],
+        "broken": []
+      }
+    },
+    {
+      "ids": [
+        3
+      ],
+      "name": "七種公共與個人製作：所有配方僅顯示成品圖",
+      "pass": true,
+      "detail": [
+        {
+          "cat": "藥品",
+          "mode": "public",
+          "recipes": 9
+        },
+        {
+          "cat": "丹藥",
+          "mode": "public",
+          "recipes": 19
+        },
+        {
+          "cat": "武器",
+          "mode": "public",
+          "recipes": 37
+        },
+        {
+          "cat": "裝備",
+          "mode": "public",
+          "recipes": 37
+        },
+        {
+          "cat": "合成",
+          "mode": "public",
+          "recipes": 22
+        },
+        {
+          "cat": "飾品",
+          "mode": "public",
+          "recipes": 18
+        },
+        {
+          "cat": "寵物裝備",
+          "mode": "public",
+          "recipes": 20
+        },
+        {
+          "cat": "藥品",
+          "mode": "personalForge",
+          "recipes": 9
+        },
+        {
+          "cat": "丹藥",
+          "mode": "personalForge",
+          "recipes": 19
+        },
+        {
+          "cat": "武器",
+          "mode": "personalForge",
+          "recipes": 37
+        },
+        {
+          "cat": "裝備",
+          "mode": "personalForge",
+          "recipes": 37
+        },
+        {
+          "cat": "合成",
+          "mode": "personalForge",
+          "recipes": 22
+        },
+        {
+          "cat": "飾品",
+          "mode": "personalForge",
+          "recipes": 18
+        },
+        {
+          "cat": "寵物裝備",
+          "mode": "personalForge",
+          "recipes": 20
+        },
+        {
+          "cat": "藥品",
+          "mode": "personalAlchemy",
+          "recipes": 9
+        },
+        {
+          "cat": "丹藥",
+          "mode": "personalAlchemy",
+          "recipes": 19
+        },
+        {
+          "cat": "武器",
+          "mode": "personalAlchemy",
+          "recipes": 37
+        },
+        {
+          "cat": "裝備",
+          "mode": "personalAlchemy",
+          "recipes": 37
+        },
+        {
+          "cat": "合成",
+          "mode": "personalAlchemy",
+          "recipes": 22
+        },
+        {
+          "cat": "飾品",
+          "mode": "personalAlchemy",
+          "recipes": 18
+        },
+        {
+          "cat": "寵物裝備",
+          "mode": "personalAlchemy",
+          "recipes": 20
+        }
+      ]
+    },
+    {
+      "ids": [
+        5,
+        6
+      ],
+      "name": "背包各類物品有圖，裝備比較採鑄造台四欄數值",
+      "pass": true,
+      "detail": {
+        "tabs": {
+          "物品": [
+            {
+              "name": "［初階］氣血藥水",
+              "images": 1
+            },
+            {
+              "name": "［初階］靈力藥水",
+              "images": 1
+            },
+            {
+              "name": "［一階］靈石",
+              "images": 1
+            }
+          ],
+          "材料": [
+            {
+              "name": "靈草",
+              "images": 1
+            },
+            {
+              "name": "藥草",
+              "images": 1
+            },
+            {
+              "name": "靈石",
+              "images": 1
+            }
+          ],
+          "裝備": [
+            {
+              "name": "［初階］靈鐵劍",
+              "images": 1
+            }
+          ],
+          "禮物": [
+            {
+              "name": "［禮物］紙鶴",
+              "images": 1
+            }
+          ],
+          "消耗特殊": [
+            {
+              "name": "［特殊］神秘妖物蛋",
+              "images": 1
+            }
+          ],
+          "任務": [
+            {
+              "name": "［任務］命符",
+              "images": 1
+            }
+          ]
+        },
+        "cols": 4,
+        "images": 2,
+        "text": "目前穿戴［無階］新手劍欲穿戴［初階］靈鐵劍數值目前欲穿戴差異攻39+6命24+2目前效果無欲穿戴效果無返回背包"
+      }
+    },
+    {
+      "ids": [
+        11
+      ],
+      "name": "四隻新增妖物在圖鑑皆有對應地區背景",
+      "pass": true,
+      "detail": [
+        {
+          "name": "燐火狼",
+          "src": "http://127.0.0.1:18776/%E6%96%B0%E5%A2%9E%E7%BE%8E%E8%A1%93_2026-10-16/%E7%87%90%E7%81%AB%E7%8B%BC_%E5%AE%8C%E6%95%B4%E9%80%8F%E6%98%8E%E7%AB%8B%E7%B9%AA.png",
+          "background": "url(\"http://127.0.0.1:18776/%E6%96%B0%E5%A2%9E%E7%BE%8E%E8%A1%93_2026-10-16/%E9%BB%91%E6%BD%AE%E7%A6%81%E5%B2%B8_%E5%9C%B0%E5%9C%96%E5%A0%B4%E6%99%AF.png\")"
+        },
+        {
+          "name": "硬黑蠍",
+          "src": "http://127.0.0.1:18776/%E6%96%B0%E5%A2%9E%E7%BE%8E%E8%A1%93_2026-10-16/%E7%A1%AC%E9%BB%91%E8%A0%8D_%E5%AE%8C%E6%95%B4%E9%80%8F%E6%98%8E%E7%AB%8B%E7%B9%AA.png",
+          "background": "url(\"http://127.0.0.1:18776/%E6%96%B0%E5%A2%9E%E7%BE%8E%E8%A1%93_2026-10-16/%E9%BB%91%E6%BD%AE%E7%A6%81%E5%B2%B8_%E5%9C%B0%E5%9C%96%E5%A0%B4%E6%99%AF.png\")"
+        },
+        {
+          "name": "靈珠蝶",
+          "src": "http://127.0.0.1:18776/%E6%96%B0%E5%A2%9E%E7%BE%8E%E8%A1%93_2026-10-16/%E9%9D%88%E7%8F%A0%E8%9D%B6_%E5%AE%8C%E6%95%B4%E9%80%8F%E6%98%8E%E7%AB%8B%E7%B9%AA.png",
+          "background": "url(\"http://127.0.0.1:18776/%E6%96%B0%E5%A2%9E%E7%BE%8E%E8%A1%93_2026-10-16/%E9%BB%91%E6%BD%AE%E7%A6%81%E5%B2%B8_%E5%9C%B0%E5%9C%96%E5%A0%B4%E6%99%AF.png\")"
+        },
+        {
+          "name": "財寶怨靈",
+          "src": "http://127.0.0.1:18776/%E6%96%B0%E5%A2%9E%E7%BE%8E%E8%A1%93_2026-10-16/%E8%B2%A1%E5%AF%B6%E6%80%A8%E9%9D%88_%E5%AE%8C%E6%95%B4%E9%80%8F%E6%98%8E%E7%AB%8B%E7%B9%AA.png",
+          "background": "url(\"http://127.0.0.1:18776/%E6%96%B0%E5%A2%9E%E7%BE%8E%E8%A1%93_2026-10-16/%E9%9B%B7%E9%B3%B4%E6%B2%BC%E5%9C%B0%E4%B8%8B%E6%B7%B1%E7%AA%9F_%E5%9C%B0%E5%9C%96%E5%A0%B4%E6%99%AF.png\")"
+        }
+      ]
+    },
+    {
+      "ids": [
+        43,
+        47
+      ],
+      "name": "長右戰四種玩家與四名主線NPC使用完整全身圖且不裁切",
+      "pass": true,
+      "detail": {
+        "rows": [
+          {
+            "name": "少年",
+            "width": 1024,
+            "height": 1536,
+            "src": "/人物全身_2026-10-18/少年.png"
+          },
+          {
+            "name": "少女",
+            "width": 1024,
+            "height": 1536,
+            "src": "/人物全身_2026-10-18/少女.png"
+          },
+          {
+            "name": "成男",
+            "width": 1024,
+            "height": 1536,
+            "src": "/人物全身_2026-10-18/成男.png"
+          },
+          {
+            "name": "成女",
+            "width": 1024,
+            "height": 1536,
+            "src": "/人物全身_2026-10-18/成女.png"
+          },
+          {
+            "name": "邱山河",
+            "width": 1024,
+            "height": 1536,
+            "src": "/人物全身_2026-10-18/邱山河.png"
+          },
+          {
+            "name": "林夏于",
+            "width": 1024,
+            "height": 1536,
+            "src": "/人物全身_2026-10-18/林夏于.png"
+          },
+          {
+            "name": "沈玄川",
+            "width": 1024,
+            "height": 1536,
+            "src": "/人物全身_2026-10-18/沈玄川.png"
+          },
+          {
+            "name": "柳清妍",
+            "width": 1024,
+            "height": 1536,
+            "src": "/人物全身_2026-10-18/柳清妍.png"
+          }
+        ],
+        "units": [
+          {
+            "src": "http://127.0.0.1:18776/%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB_2026-10-18/%E5%B0%91%E5%B9%B4.png",
+            "fit": "contain",
+            "height": "134px"
+          },
+          {
+            "src": "http://127.0.0.1:18776/%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB_2026-10-18/%E9%82%B1%E5%B1%B1%E6%B2%B3.png",
+            "fit": "contain",
+            "height": "134px"
+          },
+          {
+            "src": "http://127.0.0.1:18776/%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB_2026-10-18/%E6%9E%97%E5%A4%8F%E4%BA%8E.png",
+            "fit": "contain",
+            "height": "134px"
+          },
+          {
+            "src": "http://127.0.0.1:18776/%E4%BA%BA%E7%89%A9%E5%85%A8%E8%BA%AB_2026-10-18/%E6%B2%88%E7%8E%84%E5%B7%9D.png",
+            "fit": "contain",
+            "height": "134px"
+          }
+        ],
+        "names": [
+          {
+            "name": "測試999",
+            "visible": true
+          },
+          {
+            "name": "邱山河",
+            "visible": true
+          },
+          {
+            "name": "林夏于",
+            "visible": true
+          },
+          {
+            "name": "沈玄川",
+            "visible": true
+          }
+        ]
+      }
+    }
+  ],
+  "errors": []
+}

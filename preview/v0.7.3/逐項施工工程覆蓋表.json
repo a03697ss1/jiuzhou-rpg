@@ -1,678 +1,525 @@
 [
   {
-    "id": "L01",
-    "item": "任務引導",
-    "area": "UI任務/地圖路徑",
-    "requiredAcceptance": "正確自動移動；鎖區不繞過",
-    "implementation": "已實裝",
-    "reason": "任務按合法道路逐步移動；呼叫既有移動檢查及傳送費。",
-    "source": "world.js",
+    "id": "1",
+    "title": "深窟座標與道路",
+    "state": "已實裝；自動驗收通過；待玩家驗收",
+    "source": "revision-world1018.js",
     "tests": [
-      "舊任務引導實際移動，黑潮未解鎖不繞過入口",
-      "天海港張榕真引導實際抵達人物介面"
+      "逐項修正驗收.json"
     ],
-    "automatedPass": true,
-    "userAcceptance": "待玩家明確驗收",
-    "fullAcceptance": false,
-    "acceptance": "待玩家明確驗收"
+    "remaining": ""
   },
   {
-    "id": "L02",
-    "item": "對話跳過",
-    "area": "所有任務對話引擎",
-    "requiredAcceptance": "重要訊息/選項/分支前停止",
-    "implementation": "已實裝",
-    "reason": "新舊對話跳過，重要情報與選項停止；保留原有推進副作用。",
-    "source": "completion.js",
+    "id": "2",
+    "title": "野外妖物境界與東州顯示",
+    "state": "已實裝；自動驗收通過；待玩家驗收",
+    "source": "revision-world1018.js",
     "tests": [
-      "逐字對話跳過停在重要節點，分支選擇不自動決定"
+      "逐項修正驗收.json"
     ],
-    "automatedPass": true,
-    "userAcceptance": "待玩家明確驗收",
-    "fullAcceptance": false,
-    "acceptance": "待玩家明確驗收"
+    "remaining": ""
   },
   {
-    "id": "L03",
-    "item": "裝備對照+品質",
-    "area": "背包/裝備/存檔",
-    "requiredAcceptance": "優良靈楊長弓全介面顯示一致",
-    "implementation": "已實裝",
-    "reason": "品質名稱、保存、同槽八核與衍生值比較使用現有成品實際記錄值；本輪新增候選品質倍率依使用者指示未啟用，不重乘或改玩家裝備。",
-    "source": "ui.js",
+    "id": "3",
+    "title": "七種製作功能顯示成品圖",
+    "state": "已實裝；自動驗收通過；待玩家驗收",
+    "source": "revision-items1018.js",
     "tests": [
-      "品質裝備比較、同槽數值與保存字串"
+      "物品美術與介面驗收.json"
     ],
-    "automatedPass": true,
-    "userAcceptance": "待玩家明確驗收",
-    "fullAcceptance": false,
-    "acceptance": "待玩家明確驗收"
+    "remaining": ""
   },
   {
-    "id": "L04",
-    "item": "平民愛心",
-    "area": "NPC/人物圖鑑",
-    "requiredAcceptance": "平民沒有好感與愛心",
-    "implementation": "已實裝",
-    "reason": "平民互動／詳情／列表不顯示愛心與送禮。",
-    "source": "ui.js",
+    "id": "4",
+    "title": "全部物品補圖",
+    "state": "已實裝；自動驗收通過；待玩家驗收",
+    "source": "revision-items1018.js",
     "tests": [
-      "平民無愛心／贈禮、功能NPC保留"
+      "物品美術與介面驗收.json"
     ],
-    "automatedPass": true,
-    "userAcceptance": "待玩家明確驗收",
-    "fullAcceptance": false,
-    "acceptance": "待玩家明確驗收"
+    "remaining": "美術與文字呈現待玩家逐項確認；來源未知條目未新增取得途徑。"
   },
   {
-    "id": "L05",
-    "item": "任務字體色",
-    "area": "任務清單/詳情/追蹤",
-    "requiredAcceptance": "主黃支藍委綠",
-    "implementation": "已實裝",
-    "reason": "主黃、支藍、委綠跨清單、對話與追蹤。",
-    "source": "style.css",
+    "id": "5",
+    "title": "背包裝備比較",
+    "state": "已實裝；自動驗收通過；待玩家驗收",
+    "source": "revision-items1018.js",
     "tests": [
-      "主黃支藍委綠標題實際色彩與任務工作編號隱藏"
+      "物品美術與介面驗收.json"
     ],
-    "automatedPass": true,
-    "userAcceptance": "待玩家明確驗收",
-    "fullAcceptance": false,
-    "acceptance": "待玩家明確驗收"
+    "remaining": ""
   },
   {
-    "id": "L06",
-    "item": "製作可作置頂",
-    "area": "公共/玩家煉金/鑄造",
-    "requiredAcceptance": "排序正確不改成本",
-    "implementation": "已實裝",
-    "reason": "各製作配方依材料及按鈕資格排序，可製作置頂。",
-    "source": "ui.js",
+    "id": "6",
+    "title": "背包物品圖片",
+    "state": "已實裝；自動驗收通過；待玩家驗收",
+    "source": "revision-items1018.js",
     "tests": [
-      "公共與個人製作配方可製作置頂且成本保持"
+      "物品美術與介面驗收.json"
     ],
-    "automatedPass": true,
-    "userAcceptance": "待玩家明確驗收",
-    "fullAcceptance": false,
-    "acceptance": "待玩家明確驗收"
+    "remaining": ""
   },
   {
-    "id": "L07",
-    "item": "惡魔裝飾框",
-    "area": "戰位框CSS/圖層",
-    "requiredAcceptance": "左上/右上角與尾巴/叉定位",
-    "implementation": "已實裝",
-    "reason": "雙角對稱、尾巴與叉位於側邊，保留四層結構。",
-    "source": "ui.js",
+    "id": "7",
+    "title": "圖鑑返回保留捲動",
+    "state": "已實裝；自動驗收通過；待玩家驗收",
+    "source": "revision-codex1018.js",
     "tests": [
-      "特殊／高危／高危特惡魔框雙角／尾巴／叉圖層未切除"
+      "逐項修正驗收.json"
     ],
-    "automatedPass": true,
-    "userAcceptance": "待玩家明確驗收",
-    "fullAcceptance": false,
-    "acceptance": "待玩家明確驗收"
+    "remaining": ""
   },
   {
-    "id": "L08",
-    "item": "站位被擊率",
-    "area": "敵AI隨機目標",
-    "requiredAcceptance": "統計前60後40；排合法例外",
-    "implementation": "已實裝",
-    "reason": "一般隨機敵方選取前排60／後排40；嘲諷及指定不覆寫。",
-    "source": "core.js",
+    "id": "8",
+    "title": "圖鑑返回按鈕",
+    "state": "已實裝；自動驗收通過；待玩家驗收",
+    "source": "revision-codex1018.js",
     "tests": [
-      "實際chosen入口10000次前60%後40%，指定／嘲諷例外"
+      "逐項修正驗收.json"
     ],
-    "automatedPass": true,
-    "userAcceptance": "待玩家明確驗收",
-    "fullAcceptance": false,
-    "acceptance": "待玩家明確驗收"
+    "remaining": ""
   },
   {
-    "id": "L09",
-    "item": "合成不扣能量",
-    "area": "合成/鑄造能源",
-    "requiredAcceptance": "前後能量不變",
-    "implementation": "已實裝",
-    "reason": "個人合成成本改0，公共合成本來不扣能；100%／無經驗保持。",
-    "source": "build.py",
+    "id": "9",
+    "title": "圖鑑視窗加大",
+    "state": "已實裝；自動驗收通過；待玩家驗收",
+    "source": "revision-codex1018.js",
     "tests": [
-      "實際個人合成100%成功、不扣能、不加經驗、材料無品質"
+      "逐項修正驗收.json"
     ],
-    "automatedPass": true,
-    "userAcceptance": "待玩家明確驗收",
-    "fullAcceptance": false,
-    "acceptance": "待玩家明確驗收"
+    "remaining": ""
   },
   {
-    "id": "L10",
-    "item": "護盾反擊",
-    "area": "技能/減益",
-    "requiredAcceptance": "破盾實際反傷與必中暈眩",
-    "implementation": "已實裝",
-    "reason": "沿既有直接破盾反擊，技能說明補特殊種限制。",
-    "source": "pets.js",
+    "id": "10",
+    "title": "任務物品移出圖鑑但保留圖片",
+    "state": "已實裝；自動驗收通過；待玩家驗收",
+    "source": "revision-codex1018.js",
     "tests": [
-      "護盾直接破盾反擊一次；DoT不反擊"
+      "物品美術與介面驗收.json",
+      "逐項修正驗收.json"
     ],
-    "automatedPass": true,
-    "userAcceptance": "待玩家明確驗收",
-    "fullAcceptance": false,
-    "acceptance": "待玩家明確驗收"
+    "remaining": ""
   },
   {
-    "id": "L11",
-    "item": "自選箱分類",
-    "area": "物品使用/箱目錄",
-    "requiredAcceptance": "按分類選、確認才扣箱",
-    "implementation": "已實裝",
-    "reason": "自選箱植物／礦物／木材／靈果分類，保留合法目錄與多箱確認。",
-    "source": "ui.js",
+    "id": "11",
+    "title": "四隻新妖物背景",
+    "state": "已實裝；自動驗收通過；待玩家驗收",
+    "source": "revision-codex1018.js",
     "tests": [
-      "箱分類、階級、多箱確認與取消防重複"
+      "物品美術與介面驗收.json"
     ],
-    "automatedPass": true,
-    "userAcceptance": "待玩家明確驗收",
-    "fullAcceptance": false,
-    "acceptance": "待玩家明確驗收"
+    "remaining": ""
   },
   {
-    "id": "L12",
-    "item": "素材階級及火尾毛",
-    "area": "背包/圖鑑/商店",
-    "requiredAcceptance": "階級與描述一致",
-    "implementation": "已實裝",
-    "reason": "正式素材階級沿同一目錄，火尾毛說明更新。",
-    "source": "completion.js",
+    "id": "12",
+    "title": "新寵物合法技能隨機取得",
+    "state": "已實裝；自動驗收通過；待玩家驗收",
+    "source": "revision-world1018.js",
     "tests": [
-      "火尾毛素材階級與物品描述／圖鑑同源"
+      "逐項修正驗收.json"
     ],
-    "automatedPass": true,
-    "userAcceptance": "待玩家明確驗收",
-    "fullAcceptance": false,
-    "acceptance": "待玩家明確驗收"
+    "remaining": ""
   },
   {
-    "id": "L13",
-    "item": "黑潮禁岸地圖",
-    "area": "九州/東州/冒險",
-    "requiredAcceptance": "合法入口與三種妖物",
-    "implementation": "已實裝",
-    "reason": "黑潮入口、境界、候選戰力、三種遭遇與A線永久挖掘。",
-    "source": "world.js",
+    "id": "13",
+    "title": "圖鑑卡片分格美化",
+    "state": "已實裝；自動驗收通過；待玩家驗收",
+    "source": "revision-codex1018.js",
     "tests": [
-      "黑潮解鎖、境界、主線關塔及導航不繞鎖",
-      "A線永久挖掘3次與B線隔離",
-      "新地圖節點／冒險／遭遇實際開啟與戰鬥背景"
+      "逐項修正驗收.json"
     ],
-    "automatedPass": true,
-    "userAcceptance": "待玩家明確驗收",
-    "fullAcceptance": false,
-    "acceptance": "待玩家明確驗收"
+    "remaining": ""
   },
   {
-    "id": "L14",
-    "item": "地下深窟地圖",
-    "area": "地圖/主線/冒險",
-    "requiredAcceptance": "3日後野外化與2次遭遇",
-    "implementation": "已實裝",
-    "reason": "深窟主線入口、3遊戲日野外化、每日遭遇回復與6次採集。",
-    "source": "world.js",
+    "id": "14",
+    "title": "妖物技能可點選詳情",
+    "state": "已實裝；自動驗收通過；待玩家驗收",
+    "source": "revision-codex1018.js",
     "tests": [
-      "地下深窟3日野外化與每日回復1最多2",
-      "深窟完整地名／主線區域資訊及火尾毛妖物分類"
+      "逐項修正驗收.json"
     ],
-    "automatedPass": true,
-    "userAcceptance": "待玩家明確驗收",
-    "fullAcceptance": false,
-    "acceptance": "待玩家明確驗收"
+    "remaining": ""
   },
   {
-    "id": "L15",
-    "item": "新妖物五種",
-    "area": "圖鑑/戰鬥/立繪",
-    "requiredAcceptance": "八核/技能/種級/合法境界",
-    "implementation": "已實裝",
-    "reason": "五隻新妖物、候選八核、合法種級與境界、立繪；須玩家驗收平衡。",
-    "source": "monsters.js",
+    "id": "15",
+    "title": "精晶礦靈掉落",
+    "state": "已實裝；自動驗收通過；待玩家驗收",
+    "source": "revision-world1018.js",
     "tests": [
-      "新妖物合法境界、種級、機率及正式公式候選戰力"
+      "逐項修正驗收.json"
     ],
-    "automatedPass": true,
-    "userAcceptance": "待玩家明確驗收",
-    "fullAcceptance": false,
-    "acceptance": "待玩家明確驗收"
+    "remaining": ""
   },
   {
-    "id": "L16",
-    "item": "長右BOSS",
-    "area": "雙階段/AI/血條",
-    "requiredAcceptance": "50%鎖血、MP滿、技能優先",
-    "implementation": "已實裝",
-    "reason": "50%鎖血、同一敵人、回滿MP、第二階段前兩動、潮濕優先與硬控免疫。",
-    "source": "combat.js",
+    "id": "16",
+    "title": "臂巨礦掉落",
+    "state": "已實裝；自動驗收通過；待玩家驗收",
+    "source": "revision-world1018.js",
     "tests": [
-      "長右50%同體鎖血、靈力全滿、指定兩動及潮濕優先",
-      "災獸之體在控制判定前攔截",
-      "長右實際戰鬥畫面、整體立繪與連續血條"
+      "逐項修正驗收.json"
     ],
-    "automatedPass": true,
-    "userAcceptance": "待玩家明確驗收",
-    "fullAcceptance": false,
-    "acceptance": "待玩家明確驗收"
+    "remaining": ""
   },
   {
-    "id": "L17",
-    "item": "長右劇情敗北",
-    "area": "醫館/同行NPC",
-    "requiredAcceptance": "免費滿回、可以重戰",
-    "implementation": "已實裝",
-    "reason": "長右敗北醫館免費全滿，保留038挑戰進度。",
-    "source": "quests.js",
+    "id": "17",
+    "title": "素材來源機率四捨五入",
+    "state": "已實裝；自動驗收通過；待玩家驗收",
+    "source": "revision-world1018.js",
     "tests": [
-      "長右戰敗實際復原、醫館、免費、進度可重試",
-      "既有醫館手動付費30分鐘規則未回退成1日"
+      "逐項修正驗收.json"
     ],
-    "automatedPass": true,
-    "userAcceptance": "待玩家明確驗收",
-    "fullAcceptance": false,
-    "acceptance": "待玩家明確驗收"
+    "remaining": ""
   },
   {
-    "id": "L18",
-    "item": "8種新狀態",
-    "area": "戰位框/傷害結算",
-    "requiredAcceptance": "唯一消耗+3%，圖示懸停",
-    "implementation": "已實裝",
-    "reason": "八種獨立狀態、必定施加、3%互動、單次消耗、獨立上限與圖示懸停；正式施加來源僅洪水→潮濕，其餘七種依本輪要求保留接口。",
-    "source": "status1018.js",
+    "id": "18",
+    "title": "妖物全區與東州分頁",
+    "state": "已實裝；自動驗收通過；待玩家驗收",
+    "source": "revision-codex1018.js",
     "tests": [
-      "八種狀態獨立於增減益，雷傷消耗一次及同招順序",
-      "破夢先判睡眠、喚醒後仍施加混亂；非睡眠弱傷",
-      "正式長右戰鬥畫面中洪水必定潮濕、圖示名稱、雷傷單次消耗"
+      "逐項修正驗收.json"
     ],
-    "automatedPass": true,
-    "userAcceptance": "待玩家明確驗收",
-    "fullAcceptance": false,
-    "acceptance": "待玩家明確驗收"
+    "remaining": ""
   },
   {
-    "id": "L19",
-    "item": "新寵物五星技能",
-    "area": "寵物/突破/技能欄",
-    "requiredAcceptance": "二選一獨立10心",
-    "implementation": "已實裝",
-    "reason": "已接入使用者補齊49列八核；保留11列野外值，沿用升星、突破與五星核心公式。",
-    "source": "pet1018.js",
+    "id": "19",
+    "title": "素材類型與階級組合篩選",
+    "state": "已實裝；自動驗收通過；待玩家驗收",
+    "source": "revision-codex1018.js",
     "tests": [
-      "新三寵正常孵化與成長驗收.json"
+      "逐項修正驗收.json"
     ],
-    "automatedPass": true,
-    "userAcceptance": "待玩家明確驗收",
-    "fullAcceptance": false,
-    "acceptance": "待玩家明確驗收"
+    "remaining": ""
   },
   {
-    "id": "L20",
-    "item": "新寵物10心",
-    "area": "寵物任務/進度",
-    "requiredAcceptance": "三項條件與計數起點",
-    "implementation": "已實裝",
-    "reason": "保留已定三條10心任務、計數與技能；由正常孵化取得的新三寵可接取。",
-    "source": "pet1018.js",
+    "id": "20",
+    "title": "圖鑑依類型及階級排序",
+    "state": "已實裝；自動驗收通過；待玩家驗收",
+    "source": "revision-codex1018.js",
     "tests": [
-      "新三寵正常孵化與成長驗收.json"
+      "逐項修正驗收.json"
     ],
-    "automatedPass": true,
-    "userAcceptance": "待玩家明確驗收",
-    "fullAcceptance": false,
-    "acceptance": "待玩家明確驗收"
+    "remaining": ""
   },
   {
-    "id": "L21",
-    "item": "任務029～038",
-    "area": "主線引擎/腳本",
-    "requiredAcceptance": "每條完整原文及旗標",
-    "implementation": "已實裝",
-    "reason": "A線034A～036A與B線033B～036B均接入使用者完整原稿、固定劇情必敗演出及實際事件流程；未補造一般火紅蓮功法或命符復活。",
-    "source": "a-story.js",
+    "id": "21",
+    "title": "圖鑑搜尋",
+    "state": "已實裝；自動驗收通過；待玩家驗收",
+    "source": "revision-codex1018.js",
     "tests": [
-      "主線029等待門檻、逐字流程與多敵回報",
-      "030兩地異相實際配置／兩次戰鬥／合計回報",
-      "031關塔與三人實際同行，返城自動完成",
-      "034A未完成入口事件不得跳過直接開戰",
-      "035A完成救援交談後滿回復，不產生滿貫丹",
-      "A線完整709節點與保密原稿接入",
-      "034A火紅蓮實際首動必敗，玩家1HP、寵物免費回滿不改成長",
-      "035A救援到正確節點才回滿、命符與線索不重複發放",
-      "035A普通黑衣人固定八核、無裝備、3至5合法物理／雷功法",
-      "A線032選擇至038完整連續實戰、保留A專屬旗標並不完成B線",
-      "B線完整原稿805節點載入，舊缺稿標記解除",
-      "033B三處調查六種順序皆可完成，回報180僅一次",
-      "035B滿貫丹在服下節點才回滿，跳過／重開不複製丹藥",
-      "035B三波站位／每場獨立結算／第二場失敗可重試且不重領",
-      "B線032選擇至038長右完整連續實戰與結算"
+      "逐項修正驗收.json"
     ],
-    "automatedPass": true,
-    "userAcceptance": "待玩家明確驗收",
-    "fullAcceptance": false,
-    "acceptance": "待玩家明確驗收"
+    "remaining": ""
   },
   {
-    "id": "L22",
-    "item": "A/B分支隔離",
-    "area": "世界進度/NPC位置",
-    "requiredAcceptance": "不得錯將陸家姓名給B線",
-    "implementation": "已實裝",
-    "reason": "A／B路線各自獎勵、情報、任務物與旗標保存；A線四人會合不自動加入邱山河，037明確換人；同一NPC不重複出現。",
-    "source": "a-story.js",
+    "id": "22",
+    "title": "NPC分頁與人物順位",
+    "state": "已實裝；自動驗收通過；待玩家驗收",
+    "source": "revision-codex1018.js",
     "tests": [
-      "A/B分支選項鎖定、同行位置與B線無陸家情報",
-      "033A雙戰站位及調查回報，B線以本次正式對話接續",
-      "035A黑衣人正式368功法與零戰鬥獎勵",
-      "034A山上交談後留守；青陽鎮入口事件封鎖所有移動",
-      "035A失敗不完成；勝利只發主線修為200，不掉戰利品",
-      "036A實際傳送、五人世界位置與四人出戰、無B線獎勵",
-      "034A可由柳清妍任務入口接續；035A落星谷對話立繪隨角色切換",
-      "034B追擊離隊與世界位置，全入口操作鎖至必敗戰",
-      "034B九珠陰雷真實UI強制首動全倒，免費特殊結算且不污染寵物任務",
-      "036B實際引導、調查傳送陣、深窟會合，無A線秘密或命符"
+      "逐項修正驗收.json"
     ],
-    "automatedPass": true,
-    "userAcceptance": "待玩家明確驗收",
-    "fullAcceptance": false,
-    "acceptance": "待玩家明確驗收"
+    "remaining": ""
   },
   {
-    "id": "L23",
-    "item": "新增支線015/016",
-    "area": "支線任務/好感",
-    "requiredAcceptance": "B線專屬權限與兩天門檻",
-    "implementation": "已實裝",
-    "reason": "015／016完整原稿逐句接入、可存檔續讀；038後兩日、B線036B、一次性獎勵與邱山河10心收禮資格。",
-    "source": "side1018.js",
+    "id": "23",
+    "title": "地區分頁與類型順位",
+    "state": "已實裝；自動驗收通過；待玩家驗收",
+    "source": "revision-codex1018.js",
     "tests": [
-      "新增支線兩日門檻與B線閒聊權限，完成危險區解鎖",
-      "015正常NPC接取、兩日硬鎖、88節點與獎勵一次",
-      "016正式B線門檻、逐字212節點、10心收禮與防重領",
-      "A線永久無法接取016與取得專屬贈禮",
-      "舊摘要已領獎存檔可補讀原稿，未補讀前不發10心禮物",
-      "A線及未完成036B即使舊存檔留收禮旗標仍不可越權",
-      "016對話正常存檔重載續讀與尚未領獎"
+      "逐項修正驗收.json"
     ],
-    "automatedPass": true,
-    "userAcceptance": "待玩家明確驗收",
-    "fullAcceptance": false,
-    "acceptance": "待玩家明確驗收"
+    "remaining": ""
   },
   {
-    "id": "L24",
-    "item": "委託浮島9條",
-    "area": "CQ026～034",
-    "requiredAcceptance": "完整文本、獎勵、神秘時間",
-    "implementation": "已實裝",
-    "reason": "CQ026～034含動態物種、製作證明與夜間神秘戰鬥。",
-    "source": "commissions.js",
+    "id": "24",
+    "title": "裝備部位分頁",
+    "state": "已實裝；自動驗收通過；待玩家驗收",
+    "source": "revision-codex1018.js",
     "tests": [
-      "CQ033三選二靈幣是選項；選足才發放",
-      "製作寵物裝備需接取後製作證明",
-      "兩條新神秘委託夜間事件、戰敗保留、重試／回收與獎勵"
+      "逐項修正驗收.json"
     ],
-    "automatedPass": true,
-    "userAcceptance": "待玩家明確驗收",
-    "fullAcceptance": false,
-    "acceptance": "待玩家明確驗收"
+    "remaining": ""
   },
   {
-    "id": "L25",
-    "item": "委託新地圖16條",
-    "area": "CQ035～050",
-    "requiredAcceptance": "CQ035～050；本次使用者已補齊046～049最終目標與獎勵，原待補條款被覆蓋",
-    "implementation": "已實裝",
-    "reason": "CQ035～050含使用者本輪046～049最終目標與獎勵；四條已解除待補。",
-    "source": "commissions.js",
+    "id": "25",
+    "title": "飾品分頁",
+    "state": "已實裝；自動驗收通過；待玩家驗收",
+    "source": "revision-codex1018.js",
     "tests": [
-      "CQ046特殊種區分與三獸數量；領獎不重複",
-      "CQ047僅實得怨靈靈幣累計，不讀身上總額",
-      "CQ048圓滿條件、CQ049戰敗重置",
-      "新委託多項提交選擇、取消、不足與正確扣除",
-      "四紙不重複、8小時、已接取與完成等待",
-      "新增25委託完成資格及逐件實際領獎，拒絕二次領取"
+      "逐項修正驗收.json"
     ],
-    "automatedPass": true,
-    "userAcceptance": "待玩家明確驗收",
-    "fullAcceptance": false,
-    "acceptance": "待玩家明確驗收"
+    "remaining": ""
   },
   {
-    "id": "L26",
-    "item": "委託現行25保留",
-    "area": "CQ001～025",
-    "requiredAcceptance": "8小時刷新、抽選、提交不可回歸",
-    "implementation": "已實裝",
-    "reason": "原25條資料不改，沿用四紙、8小時、提交與領獎流程。",
-    "source": "commissions.js",
+    "id": "26",
+    "title": "藥水丹藥合併分類",
+    "state": "已實裝；自動驗收通過；待玩家驗收",
+    "source": "revision-codex1018.js",
     "tests": [
-      "原25條委託逐欄不變；新增編號完整50條"
+      "逐項修正驗收.json"
     ],
-    "automatedPass": true,
-    "userAcceptance": "待玩家明確驗收",
-    "fullAcceptance": false,
-    "acceptance": "待玩家明確驗收"
+    "remaining": ""
   },
   {
-    "id": "L27",
-    "item": "修為V2.1",
-    "area": "每場修為結算",
-    "requiredAcceptance": "高10=1、高11=0、獨立計算",
-    "implementation": "已實裝",
-    "reason": "差10級按一般1／特殊2／高危4／高危特5／妖王8／神獸與災獸15保底；12類敵對人形倍率向上取整；差11級全部0，各出戰角色獨立結算。",
-    "source": "clarifications.js",
+    "id": "27",
+    "title": "丹藥百分比浮點文字",
+    "state": "已實裝；自動驗收通過；待玩家驗收",
+    "source": "revision-world1018.js",
     "tests": [
-      "修為同級、跨境、差10與11，角色獨立",
-      "一般多敵勝利真實發放合計修為與靈幣",
-      "實際夥伴／寵物各依自身境界取得修為，陣亡不取得",
-      "差10級七種保底與12人形向上取整；差11級全部0",
-      "差10級特殊種實際戰勝發放2修為且無待結算"
+      "逐項修正驗收.json"
     ],
-    "automatedPass": true,
-    "userAcceptance": "待玩家明確驗收",
-    "fullAcceptance": false,
-    "acceptance": "待玩家明確驗收"
+    "remaining": ""
   },
   {
-    "id": "L28",
-    "item": "靈幣V1",
-    "area": "每場靈幣結算",
-    "requiredAcceptance": "80級表+12人形倍率",
-    "implementation": "已實裝",
-    "reason": "80級靈幣表與12人形倍率；財寶怨靈依餘額。",
-    "source": "economy.js",
+    "id": "28",
+    "title": "禮物用途文字",
+    "state": "已實裝；自動驗收通過；待玩家驗收",
+    "source": "revision-world1018.js",
     "tests": [
-      "80級靈幣表、全部種級、人形與玩家境界無關"
+      "逐項修正驗收.json"
     ],
-    "automatedPass": true,
-    "userAcceptance": "待玩家明確驗收",
-    "fullAcceptance": false,
-    "acceptance": "待玩家明確驗收"
+    "remaining": ""
   },
   {
-    "id": "L29",
-    "item": "財寶怨靈例外",
-    "area": "特殊貨幣",
-    "requiredAcceptance": "3000-100×使用次數",
-    "implementation": "已實裝",
-    "reason": "財寶怨靈每次靈幣打擊才減100，最低0。",
-    "source": "combat.js",
+    "id": "29",
+    "title": "物品實際來源與來源未知",
+    "state": "已實裝；自動驗收通過；待玩家驗收",
+    "source": "revision-items1018.js",
     "tests": [
-      "財寶怨靈實際施放扣幣；0MP及最低0"
+      "逐項修正驗收.json"
     ],
-    "automatedPass": true,
-    "userAcceptance": "待玩家明確驗收",
-    "fullAcceptance": false,
-    "acceptance": "待玩家明確驗收"
+    "remaining": "美術與文字呈現待玩家逐項確認；來源未知條目未新增取得途徑。"
   },
   {
-    "id": "L30",
-    "item": "問道跨境界",
-    "area": "問道隨機NPC生成",
-    "requiredAcceptance": "對手範圍/根/招/品質/裝備",
-    "implementation": "已實裝",
-    "reason": "NPC80境界基線、九層獨立值、6品質、8流派、根值、合法武器與3～10招、跨境1V1及存檔對手；每件裝備獨立按55／25／12／5／2／1在既有合法品質間重分配，只套成品記錄值一次。",
-    "source": "npc-generation.js",
+    "id": "30",
+    "title": "八狀態移至幫助",
+    "state": "已實裝；自動驗收通過；待玩家驗收",
+    "source": "revision-help1018.js",
     "tests": [
-      "跨境範圍與根值邊界，正式表補齊後入口開放",
-      "80組NPC基線保留八個獨立欄位，築基／金丹九層正確",
-      "六品質與八流派倍率、隱藏值及每核獨立±5%",
-      "八流派合法武器偏好70/30抽樣與空池後備",
-      "1200個完整對手生成：五品質八流派、合法裝備與3至10相容招式",
-      "問道入口開放、金丹停用；預覽保密及問道令只可重抽一次",
-      "跨境1V1真實戰鬥：只有玩家、禁物品逃跑，勝利33問道點",
-      "跨境連勝加成上限37、敗北連勝歸0且不發野外獎勵",
-      "裝備品質55/25/12/5/2/1獨立抽樣、缺品質重分配、僅使用現有成品",
-      "NPC品質只乘自身基線，裝備最終記錄值加入一次且無候選倍率覆乘",
-      "跨境禁止物品、藥水、戰前效果與逃跑；不扣玩家庫存",
-      "主根四段55/30/12/3抽樣與六元素／雙高上限",
-      "合法武器偏好70/30與空池後備；不虛構流派偏好表"
+      "逐項修正驗收.json"
     ],
-    "automatedPass": true,
-    "userAcceptance": "待玩家明確驗收",
-    "fullAcceptance": false,
-    "acceptance": "待玩家明確驗收"
+    "remaining": ""
   },
   {
-    "id": "L31",
-    "item": "圖鑑素材反查",
-    "area": "圖鑑/背包/鍛造",
-    "requiredAcceptance": "從火尾毛能追到燐火狼/黑潮",
-    "implementation": "已實裝",
-    "reason": "全目錄＋正式合成產物來源反查；含天穹掉落、晶礦分池、採集、配方、商店、舊新任務、委託及素材箱。泛用委託仍51項。",
-    "source": "material1018.js",
+    "id": "31",
+    "title": "功法階級分頁",
+    "state": "已實裝；自動驗收通過；待玩家驗收",
+    "source": "revision-codex1018.js",
     "tests": [
-      "火尾毛來源反查燐火狼／黑潮，圖示共用",
-      "69項正式素材來源與17項原未分類素材完整可見、提交池51不變",
-      "正常材料商店購買→背包→圖鑑，圖片同源",
-      "正常鑄造台合成龜甲片、配方與背包圖片共用",
-      "委託紙獎勵、布告箱提交與素材圖同源，未擴增資格",
-      "天穹掉落與晶石來源依正式掉落函式核對",
-      "所有配方正式素材均在圖鑑，龜甲片仍非泛用提交資格"
+      "逐項修正驗收.json"
     ],
-    "automatedPass": true,
-    "userAcceptance": "待玩家明確驗收",
-    "fullAcceptance": false,
-    "acceptance": "待玩家明確驗收"
+    "remaining": ""
   },
   {
-    "id": "L32",
-    "item": "圖鑑NPC位置",
-    "area": "任務/NPC/地圖",
-    "requiredAcceptance": "華安與道衛隊動態位置",
-    "implementation": "已實裝",
-    "reason": "主線同行／鎮守位置覆蓋舊列表，保留華安既有動態位置。",
-    "source": "world.js",
+    "id": "32",
+    "title": "功法階級排序",
+    "state": "已實裝；自動驗收通過；待玩家驗收",
+    "source": "revision-codex1018.js",
     "tests": [
-      "同行NPC圖鑑不重複駐地，華安既有動態地點保留"
+      "逐項修正驗收.json"
     ],
-    "automatedPass": true,
-    "userAcceptance": "待玩家明確驗收",
-    "fullAcceptance": false,
-    "acceptance": "待玩家明確驗收"
+    "remaining": ""
   },
   {
-    "id": "L33",
-    "item": "圖鑑全圖片化",
-    "area": "素材/NPC/妖物/地區",
-    "requiredAcceptance": "同一圖源且不洩露秘密",
-    "implementation": "部分實裝",
-    "reason": "素材69／69張獨立PNG已接入共用圖源；妖物／NPC／地區沿用正式圖片。裝備、丹藥、禮物與任務物品依原工作檔後續階段保留獨立圖片目標與命名占位清單。",
-    "source": "material1018.js",
+    "id": "33",
+    "title": "功法階級顯示",
+    "state": "已實裝；自動驗收通過；待玩家驗收",
+    "source": "revision-codex1018.js",
     "tests": [
-      "所有圖鑑分類實際開啟，缺來源明示、圖片可載入",
-      "正常材料商店購買→背包→圖鑑，圖片同源",
-      "正常鑄造台合成龜甲片、配方與背包圖片共用",
-      "委託紙獎勵、布告箱提交與素材圖同源，未擴增資格"
+      "逐項修正驗收.json"
     ],
-    "automatedPass": true,
-    "userAcceptance": "待玩家明確驗收",
-    "fullAcceptance": false,
-    "acceptance": "待玩家明確驗收"
+    "remaining": ""
   },
   {
-    "id": "L34",
-    "item": "神秘蛋25種",
-    "area": "蛋/孵化/寵物",
-    "requiredAcceptance": "新增三種與合法種級",
-    "implementation": "已實裝",
-    "reason": "25種神秘蛋選單全部開放；新三寵6遊戲小時孵化與合法種級。",
-    "source": "pet1018.js",
+    "id": "34",
+    "title": "幫助可捲至最下方",
+    "state": "已實裝；自動驗收通過；待玩家驗收",
+    "source": "revision-help1018.js",
     "tests": [
-      "新三寵正常孵化與成長驗收.json"
+      "逐項修正驗收.json"
     ],
-    "automatedPass": true,
-    "userAcceptance": "待玩家明確驗收",
-    "fullAcceptance": false,
-    "acceptance": "待玩家明確驗收"
+    "remaining": ""
   },
   {
-    "id": "L35",
-    "item": "038獎勵",
-    "area": "任務領獎/物品",
-    "requiredAcceptance": "修為500+靈幣5000+長右之心不重複",
-    "implementation": "已實裝",
-    "reason": "心臟劇情只給一次，結算另給魂、大禮包及500／5000。",
-    "source": "completion.js",
+    "id": "35",
+    "title": "幫助相關連結黃字",
+    "state": "已實裝；自動驗收通過；待玩家驗收",
+    "source": "revision-help1018.js",
     "tests": [
-      "長右勝後公告、交談、心臟及完整獎勵僅一次"
+      "逐項修正驗收.json"
     ],
-    "automatedPass": true,
-    "userAcceptance": "待玩家明確驗收",
-    "fullAcceptance": false,
-    "acceptance": "待玩家明確驗收"
+    "remaining": ""
   },
   {
-    "id": "L36",
-    "item": "存檔/讀檔",
-    "area": "整個系統",
-    "requiredAcceptance": "跨版本舊檔/本輪新旗標/進度",
-    "implementation": "已實裝",
-    "reason": "保留測試版隔離；新增原版四槽副本讀取、保留區、讀取前自動存檔備份及不覆蓋手動槽的JSON匯入。",
-    "source": "save-recovery1018.js",
+    "id": "36",
+    "title": "幫助詳述玩法",
+    "state": "已實裝；自動驗收通過；待玩家驗收",
+    "source": "revision-help1018.js",
     "tests": [
-      "舊版存檔銜接驗收.json"
+      "逐項修正驗收.json"
     ],
-    "automatedPass": true,
-    "userAcceptance": "待玩家明確驗收",
-    "fullAcceptance": false,
-    "acceptance": "待玩家明確驗收"
+    "remaining": ""
   },
   {
-    "id": "L37",
-    "item": "已完成立繪地圖重用",
-    "area": "資源引用與畫面",
-    "requiredAcceptance": "不重做已有Word成果",
-    "implementation": "已實裝",
-    "reason": "重用10月16日新圖與現有正式NPC／妖物圖。",
-    "source": "build.py",
-    "tests": [],
-    "automatedPass": true,
-    "userAcceptance": "待玩家明確驗收",
-    "fullAcceptance": false,
-    "acceptance": "待玩家明確驗收"
+    "id": "37",
+    "title": "移除幫助開發用詞",
+    "state": "已實裝；自動驗收通過；待玩家驗收",
+    "source": "revision-help1018.js",
+    "tests": [
+      "逐項修正驗收.json"
+    ],
+    "remaining": ""
   },
   {
-    "id": "L38",
-    "item": "正式母檔保護",
-    "area": "發布流程",
-    "requiredAcceptance": "未驗收前一律保持原狀",
-    "implementation": "已實裝",
-    "reason": "獨立目錄、存檔前綴與受保護檔案雜湊；正式GitHub不動。",
-    "source": "baseline.json",
+    "id": "38",
+    "title": "治療境界倍率與範例",
+    "state": "已實裝；自動驗收通過；待玩家驗收",
+    "source": "revision-help1018.js",
     "tests": [
-      "載入、版本與存檔隔離"
+      "逐項修正驗收.json"
     ],
-    "automatedPass": true,
-    "userAcceptance": "待玩家明確驗收",
-    "fullAcceptance": false,
-    "acceptance": "待玩家明確驗收"
+    "remaining": ""
+  },
+  {
+    "id": "39",
+    "title": "移除NPC美術池內部說明",
+    "state": "已實裝；自動驗收通過；待玩家驗收",
+    "source": "revision-help1018.js",
+    "tests": [
+      "逐項修正驗收.json"
+    ],
+    "remaining": ""
+  },
+  {
+    "id": "40",
+    "title": "八狀態整合一頁與幫助重寫",
+    "state": "已實裝；自動驗收通過；待玩家驗收",
+    "source": "revision-help1018.js",
+    "tests": [
+      "逐項修正驗收.json"
+    ],
+    "remaining": ""
+  },
+  {
+    "id": "41",
+    "title": "補齊問道檯與已開放玩法",
+    "state": "已實裝；自動驗收通過；待玩家驗收",
+    "source": "revision-help1018.js",
+    "tests": [
+      "逐項修正驗收.json"
+    ],
+    "remaining": ""
+  },
+  {
+    "id": "42",
+    "title": "長右專屬血條內數字",
+    "state": "已實裝；自動驗收通過；待玩家驗收",
+    "source": "revision-boss1018.js",
+    "tests": [
+      "逐項修正驗收.json"
+    ],
+    "remaining": ""
+  },
+  {
+    "id": "43",
+    "title": "長右戰我方全身立繪",
+    "state": "已實裝；自動驗收通過；待玩家驗收",
+    "source": "revision-boss1018.js",
+    "tests": [
+      "物品美術與介面驗收.json",
+      "逐項修正驗收.json"
+    ],
+    "remaining": "美術與文字呈現待玩家逐項確認；來源未知條目未新增取得途徑。"
+  },
+  {
+    "id": "44a",
+    "title": "狀態移至氣血左上",
+    "state": "已實裝；自動驗收通過；待玩家驗收",
+    "source": "revision-boss1018.js",
+    "tests": [
+      "逐項修正驗收.json"
+    ],
+    "remaining": ""
+  },
+  {
+    "id": "44b",
+    "title": "第二階段全畫面提示",
+    "state": "已實裝；自動驗收通過；待玩家驗收",
+    "source": "revision-boss1018.js",
+    "tests": [
+      "逐項修正驗收.json"
+    ],
+    "remaining": ""
+  },
+  {
+    "id": "45",
+    "title": "長右風雨雷光特效",
+    "state": "已實裝；自動驗收通過；待玩家驗收",
+    "source": "revision-boss1018.js",
+    "tests": [
+      "逐項修正驗收.json"
+    ],
+    "remaining": "美術與文字呈現待玩家逐項確認；來源未知條目未新增取得途徑。"
+  },
+  {
+    "id": "46",
+    "title": "長右禁止自動戰鬥",
+    "state": "已實裝；自動驗收通過；待玩家驗收",
+    "source": "revision-boss1018.js",
+    "tests": [
+      "逐項修正驗收.json"
+    ],
+    "remaining": ""
+  },
+  {
+    "id": "47",
+    "title": "長右我方戰位縮小並預留敵方位置",
+    "state": "已實裝；自動驗收通過；待玩家驗收",
+    "source": "revision-boss1018.js",
+    "tests": [
+      "物品美術與介面驗收.json",
+      "逐項修正驗收.json"
+    ],
+    "remaining": ""
+  },
+  {
+    "id": "48",
+    "title": "長右稱號移至詳情",
+    "state": "已實裝；自動驗收通過；待玩家驗收",
+    "source": "revision-boss1018.js",
+    "tests": [
+      "逐項修正驗收.json"
+    ],
+    "remaining": ""
+  },
+  {
+    "id": "49",
+    "title": "長右血條上方與階段位置",
+    "state": "已實裝；自動驗收通過；待玩家驗收",
+    "source": "revision-boss1018.js",
+    "tests": [
+      "逐項修正驗收.json"
+    ],
+    "remaining": ""
+  },
+  {
+    "id": "50",
+    "title": "三夥伴與兩寵上限",
+    "state": "已實裝；自動驗收通過；待玩家驗收",
+    "source": "revision-world1018.js",
+    "tests": [
+      "逐項修正驗收.json"
+    ],
+    "remaining": ""
+  },
+  {
+    "id": "51",
+    "title": "A路線測試舊任務追蹤修復",
+    "state": "已實裝；自動驗收通過；待玩家驗收",
+    "source": "revision-world1018.js",
+    "tests": [
+      "逐項修正驗收.json"
+    ],
+    "remaining": ""
   }
 ]

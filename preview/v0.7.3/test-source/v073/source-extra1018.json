@@ -1,0 +1,487 @@
+{
+  "gifts": {
+    "林夏于": [
+      [
+        4,
+        "［特殊］元華斗笠",
+        1,
+        "gearInventory"
+      ]
+    ],
+    "林旺": [
+      [
+        10,
+        "［特殊］無心之石",
+        1,
+        "special"
+      ]
+    ],
+    "李大發": [
+      [
+        1,
+        "［特殊］爆爆煙花",
+        1,
+        "special"
+      ]
+    ],
+    "金燦燦": [
+      [
+        3,
+        "［初階］續擊丹",
+        3,
+        "items"
+      ]
+    ],
+    "張榕真": [
+      [
+        2,
+        "［特殊］節能粉",
+        3,
+        "special"
+      ],
+      [
+        5,
+        "［特殊］良護藥劑",
+        3,
+        "special"
+      ],
+      [
+        10,
+        "［特殊］成良粉",
+        2,
+        "special"
+      ]
+    ],
+    "蘇璃": [
+      [
+        1,
+        "［初階］護體丹－水",
+        1,
+        "items"
+      ],
+      [
+        4,
+        "［特殊］萬靈藥水",
+        1,
+        "items"
+      ],
+      [
+        7,
+        "［特殊］半月水玉",
+        1,
+        "special"
+      ],
+      [
+        10,
+        "［特殊］水心靈墜",
+        1,
+        "gearInventory"
+      ]
+    ],
+    "蘇項": [
+      [
+        1,
+        "［初階］護體丹－土",
+        1,
+        "items"
+      ],
+      [
+        4,
+        "［特殊］萬靈藥水",
+        1,
+        "items"
+      ],
+      [
+        7,
+        "［特殊］半月山玉",
+        1,
+        "special"
+      ],
+      [
+        10,
+        "［特殊］厚土護佩",
+        1,
+        "gearInventory"
+      ]
+    ],
+    "沈玄川": [
+      [
+        3,
+        "［特殊］玄川的護身符",
+        1,
+        "special"
+      ],
+      [
+        10,
+        "［特殊］玄川劍穗",
+        1,
+        "special"
+      ]
+    ],
+    "柳清妍": [
+      [
+        3,
+        "［特殊］清妍的藥囊",
+        1,
+        "special"
+      ],
+      [
+        10,
+        "［特殊］青羽箭飾",
+        1,
+        "special"
+      ]
+    ],
+    "華安": [
+      [
+        2,
+        "［禮物］紙鶴",
+        1
+      ],
+      [
+        5,
+        "［禮物］清心茶壺",
+        1
+      ],
+      [
+        7,
+        "［禮物］鴛鴦糕",
+        1
+      ],
+      [
+        10,
+        "［特殊］滿貫丹",
+        1
+      ]
+    ]
+  },
+  "beast": [
+    {
+      "floor": 1,
+      "enemies": [
+        [
+          "青木狼",
+          "一般種",
+          0,
+          [
+            "揮擊"
+          ]
+        ]
+      ],
+      "coins": 150,
+      "food": 3,
+      "biscuit": 0,
+      "soul": 1,
+      "grade": 0,
+      "material": 0,
+      "boxes": 0,
+      "badge": 0,
+      "realm": "練氣一層",
+      "tutorial": true
+    },
+    {
+      "floor": 2,
+      "enemies": [
+        [
+          "青靈蛇",
+          "一般種",
+          1,
+          [
+            "咬咬",
+            "纏繞"
+          ]
+        ]
+      ],
+      "coins": 200,
+      "food": 2,
+      "biscuit": 0,
+      "soul": 2,
+      "grade": 0,
+      "material": 0,
+      "boxes": 0,
+      "badge": 0,
+      "realm": "練氣二層",
+      "tutorial": false
+    },
+    {
+      "floor": 3,
+      "enemies": [
+        [
+          "青翠蝶",
+          "一般種",
+          2,
+          [
+            "翅擊",
+            "撲粉"
+          ]
+        ]
+      ],
+      "coins": 250,
+      "food": 0,
+      "biscuit": 2,
+      "soul": 3,
+      "grade": 1,
+      "material": 2,
+      "boxes": 0,
+      "badge": 0,
+      "realm": "練氣三層",
+      "tutorial": false
+    },
+    {
+      "floor": 4,
+      "enemies": [
+        [
+          "水刃狼",
+          "特殊種",
+          2,
+          [
+            "水牙",
+            "撕咬",
+            "狼嚎"
+          ]
+        ]
+      ],
+      "coins": 350,
+      "food": 0,
+      "biscuit": 2,
+      "soul": 4,
+      "grade": 2,
+      "material": 2,
+      "boxes": 0,
+      "badge": 0,
+      "realm": "練氣四層",
+      "tutorial": false
+    },
+    {
+      "floor": 5,
+      "enemies": [
+        [
+          "青木狼",
+          "一般種",
+          3,
+          [
+            "揮擊",
+            "撕咬"
+          ]
+        ],
+        [
+          "青靈蛇",
+          "一般種",
+          3,
+          [
+            "毒牙",
+            "纏繞"
+          ]
+        ]
+      ],
+      "coins": 500,
+      "food": 3,
+      "biscuit": 3,
+      "soul": 5,
+      "grade": 1,
+      "material": 3,
+      "boxes": 0,
+      "badge": 0,
+      "realm": "練氣五層",
+      "tutorial": false
+    },
+    {
+      "floor": 6,
+      "enemies": [
+        [
+          "轟轟鯰",
+          "一般種",
+          3,
+          [
+            "轟泥",
+            "噴水"
+          ]
+        ]
+      ],
+      "coins": 450,
+      "food": 4,
+      "biscuit": 0,
+      "soul": 4,
+      "grade": 2,
+      "material": 2,
+      "boxes": 0,
+      "badge": 0,
+      "realm": "練氣六層",
+      "tutorial": false
+    },
+    {
+      "floor": 7,
+      "enemies": [
+        [
+          "風粉蝶",
+          "特殊種",
+          3,
+          [
+            "撲粉",
+            "風翅",
+            "擾亂風流"
+          ]
+        ]
+      ],
+      "coins": 550,
+      "food": 0,
+      "biscuit": 3,
+      "soul": 5,
+      "grade": 2,
+      "material": 3,
+      "boxes": 0,
+      "badge": 0,
+      "realm": "練氣七層",
+      "tutorial": false
+    },
+    {
+      "floor": 8,
+      "enemies": [
+        [
+          "自爆毒蛛",
+          "一般種",
+          3,
+          [
+            "吐絲",
+            "自爆"
+          ]
+        ],
+        [
+          "千針蜂",
+          "特殊種",
+          3,
+          [
+            "千針刺",
+            "毒針",
+            "擾亂風流"
+          ]
+        ]
+      ],
+      "coins": 650,
+      "food": 0,
+      "biscuit": 4,
+      "soul": 6,
+      "grade": 2,
+      "material": 4,
+      "boxes": 0,
+      "badge": 0,
+      "realm": "練氣八層",
+      "tutorial": false
+    },
+    {
+      "floor": 9,
+      "enemies": [
+        [
+          "雷角鹿",
+          "高危種",
+          2,
+          [
+            "角擊",
+            "雷擊",
+            "充能",
+            "雷雲"
+          ]
+        ]
+      ],
+      "coins": 800,
+      "food": 0,
+      "biscuit": 4,
+      "soul": 7,
+      "grade": 2,
+      "material": 4,
+      "boxes": 1,
+      "badge": 0,
+      "realm": "練氣九層",
+      "tutorial": false
+    },
+    {
+      "floor": 10,
+      "enemies": [
+        [
+          "冥雷蛟",
+          "特殊種",
+          4,
+          [
+            "雷牙",
+            "雷擊",
+            "纏繞"
+          ]
+        ],
+        [
+          "水刃狼",
+          "特殊種",
+          4,
+          [
+            "水牙",
+            "撕咬",
+            "狼嚎"
+          ]
+        ]
+      ],
+      "coins": 1000,
+      "food": 5,
+      "biscuit": 5,
+      "soul": 8,
+      "grade": 2,
+      "material": 5,
+      "boxes": 2,
+      "badge": 1,
+      "realm": "練氣圓滿",
+      "tutorial": false
+    }
+  ],
+  "wendao": null,
+  "reward": "n=>{const b=R.beast(),f=floors[n-1];if(!f||n!==b.passed+1)return false;b.passed=n;S.coins+=f.coins;for(const [name,q] of [['寵物飼料',f.food],['寵物餅乾',f.biscuit],['獸魂晶',f.soul],['［特殊］自選二階妖物素材箱',f.boxes],['［特殊］萬獸徽記',f.badge]])if(q)R.give(name,q);if(f.material){if(f.grade===1){const pool=[...new Set(Object.values(JZW.dropTables).flat().map(x=>'［一階］'+x[0]))];for(let i=0;i<f.material;i++)R.give(pool[Math.floor(Math.random()*pool.length)],1,'materials');}else S.round1004.pendingRewards.push({source:'萬獸塔'+n,grade:2,count:f.material,claimed:false});}R.save();return true;}",
+  "WKeys": [
+    "version",
+    "masterPromoted",
+    "data",
+    "pending",
+    "isHuman",
+    "ensure",
+    "give",
+    "take",
+    "itemClass",
+    "materialCount",
+    "spendMaterial",
+    "gate",
+    "selectPlace",
+    "mapDown",
+    "gearScale",
+    "statAdjust",
+    "effectStat",
+    "costAdjust",
+    "hitAdjust",
+    "damageAdjust",
+    "healAdjust",
+    "beforeHurt",
+    "afterHurt",
+    "beforeResolve",
+    "extendStatus",
+    "afterResolve",
+    "onStatus",
+    "onCrit",
+    "roundEffects",
+    "restorePotions",
+    "itemDescription",
+    "showPendingPills",
+    "applyPre",
+    "useItem",
+    "monsterDrops",
+    "rollDrops",
+    "dropTables",
+    "openWendao",
+    "floorFighter",
+    "previewFloor",
+    "startFloor",
+    "previewRandom",
+    "startRandom",
+    "endChallenge",
+    "shop",
+    "purchase",
+    "openBox",
+    "chooseBox",
+    "audit"
+  ],
+  "giftFn": "function(name){if(name!=='邱山河')return receive.apply(this,arguments);const s=N.state().story,allowed=N.sideEligible(N.def('SQ-DZ-016'))&&N.quest('jz073-S016')?.progress.sideComplete,flag=s.qiuTenGift;if(!allowed)s.qiuTenGift=false;try{return receive.apply(this,arguments);}finally{if(!allowed)s.qiuTenGift=flag;}}"
+}

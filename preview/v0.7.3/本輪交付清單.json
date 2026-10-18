@@ -1,43 +1,18 @@
 {
   "version": "0.7.3",
-  "supplement": "2026-10-18-save-recovery",
+  "supplement": "20261018-review-fixes-1",
+  "items": 52,
+  "tests": 105,
+  "passed": 105,
   "published": true,
   "formalUpdated": false,
-  "coverage": {
-    "已實裝": 37,
-    "部分實裝": 1
+  "savePrefix": "jz073-independent-20261017:",
+  "art": {
+    "materials": 69,
+    "itemFamilies": 71,
+    "fullbody": 8
   },
-  "tests": [
-    {
-      "file": "施工測試結果.json",
-      "passed": 37
-    },
-    {
-      "file": "擴充流程測試結果.json",
-      "passed": 26
-    },
-    {
-      "file": "A線與NPC公式測試結果.json",
-      "passed": 22
-    },
-    {
-      "file": "B線與補充定案測試結果.json",
-      "passed": 13
-    },
-    {
-      "file": "新三寵正常孵化與成長驗收.json",
-      "passed": 7
-    }
-  ],
-  "newCoreRows": 49,
-  "retainedCoreRows": 11,
-  "missingPetRows": 0,
+  "personalChromeRecordsVerified": false,
   "url": "https://a03697ss1.github.io/jiuzhou-rpg/preview/v0.7.3/",
-  "build": "20261018-save-recovery-4",
-  "deploymentCommit": "56ce5eaa7776f63a07ef9027c850786dd4fe7ca5",
-  "recoveryTests": {
-    "passed": 8,
-    "total": 8
-  },
-  "personalChromeRecordsVerified": false
+  "build": "20261018-review-fixes-1"
 }

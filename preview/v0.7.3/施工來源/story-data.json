@@ -1,0 +1,1252 @@
+{
+  "029-offer": [
+    {
+      "speaker": "邱山河",
+      "text": "你來得正好。",
+      "important": false
+    },
+    {
+      "speaker": "玩家",
+      "text": "又發生什麼事了？",
+      "important": false
+    },
+    {
+      "speaker": "邱山河",
+      "text": "雷鳴沼那邊剛傳回消息，附近的靈氣又開始出現異常波動。",
+      "important": false
+    },
+    {
+      "speaker": "邱山河",
+      "text": "而且這次跟之前不太一樣。",
+      "important": false
+    },
+    {
+      "speaker": "玩家",
+      "text": "哪裡不一樣？",
+      "important": false
+    },
+    {
+      "speaker": "邱山河",
+      "text": "這次出現的是特殊種雷角鹿。",
+      "important": false
+    },
+    {
+      "speaker": "邱山河",
+      "text": "照理來說，特殊種妖物本來就比一般妖物少見，但雷鳴沼最近出現的那隻雷角鹿，似乎一直在同一片區域活動。",
+      "important": false
+    },
+    {
+      "speaker": "邱山河",
+      "text": "更麻煩的是，牠附近還聚集了其他妖物。",
+      "important": false
+    },
+    {
+      "speaker": "玩家",
+      "text": "所以不是只有一隻？",
+      "important": false
+    },
+    {
+      "speaker": "邱山河",
+      "text": "沒錯。",
+      "important": false
+    },
+    {
+      "speaker": "邱山河",
+      "text": "從這次開始，你／妳最好習慣面對不只一隻妖物的戰鬥。",
+      "important": false
+    },
+    {
+      "speaker": "邱山河",
+      "text": "實戰裡可不會每次都那麼剛好，只讓你一對一慢慢打。",
+      "important": false
+    },
+    {
+      "speaker": "邱山河",
+      "text": "去雷鳴沼看看，把那隻特殊種雷角鹿和牠附近的妖物一起處理掉。",
+      "important": false
+    },
+    {
+      "speaker": "玩家",
+      "text": "明白了。",
+      "important": false
+    },
+    {
+      "speaker": "邱山河",
+      "text": "別大意。特殊種本身就比一般種難纏，旁邊還有其他妖物時，戰鬥節奏會完全不一樣。",
+      "important": false
+    }
+  ],
+  "029-report": [
+    {
+      "speaker": "邱山河",
+      "text": "回來了？情況怎麼樣？",
+      "important": false
+    },
+    {
+      "speaker": "玩家",
+      "text": "特殊種雷角鹿已經處理掉了，旁邊還有另一隻妖物。",
+      "important": false
+    },
+    {
+      "speaker": "邱山河",
+      "text": "果然……",
+      "important": false
+    },
+    {
+      "speaker": "玩家",
+      "text": "你早就猜到了？",
+      "important": false
+    },
+    {
+      "speaker": "邱山河",
+      "text": "只是猜測。",
+      "important": false
+    },
+    {
+      "speaker": "邱山河",
+      "text": "之前的異相比較像是單一妖物受到靈氣影響。",
+      "important": false
+    },
+    {
+      "speaker": "邱山河",
+      "text": "但如果現在開始連附近其他妖物都聚集在一起，那就代表異常影響的範圍可能正在擴大。",
+      "important": false
+    },
+    {
+      "speaker": "玩家",
+      "text": "那些靈氣到底是從哪裡來的？",
+      "important": false
+    },
+    {
+      "speaker": "邱山河",
+      "text": "目前還不知道。",
+      "important": false
+    },
+    {
+      "speaker": "邱山河",
+      "text": "但有一件事可以確定。",
+      "important": false
+    },
+    {
+      "speaker": "邱山河",
+      "text": "這些異相並沒有因為之前的事情結束。",
+      "important": false
+    },
+    {
+      "speaker": "邱山河",
+      "text": "反而……越來越頻繁了。",
+      "important": false
+    },
+    {
+      "speaker": "旁白",
+      "text": "邱山河沉默片刻，神情比平時更加凝重。",
+      "important": false
+    },
+    {
+      "speaker": "邱山河",
+      "text": "你／妳先休息一下吧。",
+      "important": false
+    },
+    {
+      "speaker": "邱山河",
+      "text": "接下來恐怕還有不少事情要麻煩你。",
+      "important": false
+    }
+  ],
+  "030-offer": [
+    {
+      "speaker": "邱山河",
+      "text": "……你來得正好。",
+      "important": false
+    },
+    {
+      "speaker": "玩家",
+      "text": "看你的表情，我是不是又沒辦法休息了？",
+      "important": false
+    },
+    {
+      "speaker": "邱山河",
+      "text": "差不多。",
+      "important": false
+    },
+    {
+      "speaker": "邱山河",
+      "text": "青陽山、落星谷、雷鳴沼，三個地方幾乎同時傳來特殊種出沒的消息。",
+      "important": false
+    },
+    {
+      "speaker": "玩家",
+      "text": "三個地方一起？",
+      "important": false
+    },
+    {
+      "speaker": "邱山河",
+      "text": "青陽山是一條異常迅捷的青靈蛇，落星谷是一隻重翅蝶，雷鳴沼則是轟轟鯰。",
+      "important": false
+    },
+    {
+      "speaker": "玩家",
+      "text": "又是特殊種……",
+      "important": false
+    },
+    {
+      "speaker": "邱山河",
+      "text": "而且這次不是單獨一隻。每一處附近都還有其他妖物活動。",
+      "important": false
+    },
+    {
+      "speaker": "邱山河",
+      "text": "我們分頭處理。",
+      "important": false
+    },
+    {
+      "speaker": "邱山河",
+      "text": "你先選一處，我會前往另一處。",
+      "important": true
+    },
+    {
+      "speaker": "邱山河",
+      "text": "等你處理完第一處後，再去最後剩下的地方。",
+      "important": false
+    },
+    {
+      "speaker": "邱山河",
+      "text": "三處都必須盡快壓下來。",
+      "important": false
+    }
+  ],
+  "030-report": [
+    {
+      "speaker": "邱山河",
+      "text": "我這邊也處理完了。",
+      "important": false
+    },
+    {
+      "speaker": "玩家",
+      "text": "三個地方都是特殊種？",
+      "important": false
+    },
+    {
+      "speaker": "邱山河",
+      "text": "沒錯。",
+      "important": false
+    },
+    {
+      "speaker": "邱山河",
+      "text": "而且出現的時間太接近了。",
+      "important": false
+    },
+    {
+      "speaker": "玩家",
+      "text": "你覺得不是巧合？",
+      "important": false
+    },
+    {
+      "speaker": "邱山河",
+      "text": "已經很難當成巧合了。",
+      "important": false
+    },
+    {
+      "speaker": "邱山河",
+      "text": "妖物種類不同、出現地點不同，卻幾乎同時發生異常。",
+      "important": false
+    },
+    {
+      "speaker": "邱山河",
+      "text": "問題恐怕不只是那些妖物本身。",
+      "important": false
+    },
+    {
+      "speaker": "玩家",
+      "text": "那你來傳送塔是因為……",
+      "important": false
+    },
+    {
+      "speaker": "邱山河",
+      "text": "最近東州傳送塔周圍的靈氣也出現了異常波動。",
+      "important": false
+    },
+    {
+      "speaker": "邱山河",
+      "text": "原本我以為只是傳送陣運轉造成的。",
+      "important": false
+    },
+    {
+      "speaker": "邱山河",
+      "text": "現在看來，得重新查一次。",
+      "important": false
+    },
+    {
+      "speaker": "玩家",
+      "text": "需要我一起嗎？",
+      "important": false
+    },
+    {
+      "speaker": "邱山河",
+      "text": "先把狀態整理好。",
+      "important": false
+    },
+    {
+      "speaker": "邱山河",
+      "text": "接下來的事情，恐怕不會比剛才輕鬆。",
+      "important": false
+    }
+  ],
+  "031-offer": [
+    {
+      "speaker": "旁白",
+      "text": "玩家抵達東州傳送塔時，看見邱山河正在與黃蕭交談。",
+      "important": false
+    },
+    {
+      "speaker": "邱山河",
+      "text": "到底發生了什麼？",
+      "important": false
+    },
+    {
+      "speaker": "黃蕭",
+      "text": "三個黑衣人。",
+      "important": false
+    },
+    {
+      "speaker": "邱山河",
+      "text": "三個？",
+      "important": false
+    },
+    {
+      "speaker": "黃蕭",
+      "text": "突然跑來的，一句話都沒說。",
+      "important": false
+    },
+    {
+      "speaker": "黃蕭",
+      "text": "其中一個直接纏住我，另外兩個則跑到傳送塔的陣法附近。",
+      "important": false
+    },
+    {
+      "speaker": "玩家",
+      "text": "他們做了什麼？",
+      "important": false
+    },
+    {
+      "speaker": "黃蕭",
+      "text": "用了我沒見過的陣法。",
+      "important": false
+    },
+    {
+      "speaker": "黃蕭",
+      "text": "等我把那個纏著我的傢伙逼退，傳送塔的靈力傳輸已經被破壞了。",
+      "important": false
+    },
+    {
+      "speaker": "邱山河",
+      "text": "所以現在塔不能用了？",
+      "important": false
+    },
+    {
+      "speaker": "黃蕭",
+      "text": "不只是不能用。",
+      "important": false
+    },
+    {
+      "speaker": "黃蕭",
+      "text": "現在還有一些原本待在秘境、浮島上的道友，被困在那邊回不來。",
+      "important": false
+    },
+    {
+      "speaker": "玩家",
+      "text": "天穹浮島也一樣？",
+      "important": false
+    },
+    {
+      "speaker": "黃蕭",
+      "text": "浮島本身沒出問題。",
+      "important": false
+    },
+    {
+      "speaker": "黃蕭",
+      "text": "只是傳送通道被關掉了，所以現在誰都進不去，也出不來。",
+      "important": false
+    },
+    {
+      "speaker": "邱山河",
+      "text": "秘境呢？",
+      "important": false
+    },
+    {
+      "speaker": "黃蕭",
+      "text": "那邊倒是有聽到一些異常消息。",
+      "important": false
+    },
+    {
+      "speaker": "黃蕭",
+      "text": "但通道也關了，我現在根本沒辦法進去確認。",
+      "important": false
+    },
+    {
+      "speaker": "邱山河",
+      "text": "……",
+      "important": false
+    },
+    {
+      "speaker": "旁白",
+      "text": "邱山河看向已經暗下來的傳送陣。",
+      "important": false
+    },
+    {
+      "speaker": "邱山河",
+      "text": "三個黑衣人，同時出現，還能直接動到傳送塔的陣法。",
+      "important": false
+    },
+    {
+      "speaker": "邱山河",
+      "text": "這不是臨時起意。",
+      "important": false
+    },
+    {
+      "speaker": "玩家",
+      "text": "你覺得跟之前那些異相有關？",
+      "important": false
+    },
+    {
+      "speaker": "邱山河",
+      "text": "現在還不能確定。",
+      "important": false
+    },
+    {
+      "speaker": "邱山河",
+      "text": "但事情已經不是幾隻特殊種妖物那麼簡單了。",
+      "important": false
+    },
+    {
+      "speaker": "旁白",
+      "text": "邱山河轉向黃蕭。",
+      "important": false
+    },
+    {
+      "speaker": "邱山河",
+      "text": "你繼續留在這裡。",
+      "important": false
+    },
+    {
+      "speaker": "邱山河",
+      "text": "不管看到什麼異常，都不要擅自離開傳送塔。",
+      "important": false
+    },
+    {
+      "speaker": "黃蕭",
+      "text": "知道啦。",
+      "important": false
+    },
+    {
+      "speaker": "黃蕭",
+      "text": "我這把老骨頭今天已經夠倒楣了。",
+      "important": false
+    },
+    {
+      "speaker": "邱山河",
+      "text": "我先回朝御城，把情況回報東州統領。",
+      "important": false
+    },
+    {
+      "speaker": "旁白",
+      "text": "邱山河看向玩家。",
+      "important": false
+    },
+    {
+      "speaker": "邱山河",
+      "text": "你幫我做一件事。",
+      "important": false
+    },
+    {
+      "speaker": "玩家",
+      "text": "什麼事？",
+      "important": false
+    },
+    {
+      "speaker": "邱山河",
+      "text": "把林夏于、沈玄川、柳清妍三個人找回來。",
+      "important": false
+    },
+    {
+      "speaker": "邱山河",
+      "text": "現在東州情況不明，我需要能信任的人集中在朝御城。",
+      "important": false
+    },
+    {
+      "speaker": "邱山河",
+      "text": "找到他們後，直接帶他們回來。",
+      "important": false
+    },
+    {
+      "speaker": "玩家",
+      "text": "好。",
+      "important": false
+    },
+    {
+      "speaker": "邱山河",
+      "text": "我去見統領。",
+      "important": false
+    },
+    {
+      "speaker": "邱山河",
+      "text": "等人到齊，我們再一起商量下一步。",
+      "important": false
+    }
+  ],
+  "032-offer": [
+    {
+      "speaker": "旁白",
+      "text": "玩家帶著林夏于、沈玄川、柳清妍回到朝御城。",
+      "important": false
+    },
+    {
+      "speaker": "旁白",
+      "text": "邱山河也已結束與東州統領的討論，眾人在朝御城集合。",
+      "important": false
+    },
+    {
+      "speaker": "邱山河",
+      "text": "人都到了。",
+      "important": false
+    },
+    {
+      "speaker": "林夏于",
+      "text": "突然把我們全部叫回來，看來事情不小。",
+      "important": false
+    },
+    {
+      "speaker": "沈玄川",
+      "text": "隊長，統領那邊怎麼說？",
+      "important": false
+    },
+    {
+      "speaker": "柳清妍",
+      "text": "傳送塔的情況，有辦法處理嗎？",
+      "important": false
+    },
+    {
+      "speaker": "邱山河",
+      "text": "我已經把這幾天發生的事情全部回報給統領了。",
+      "important": false
+    },
+    {
+      "speaker": "邱山河",
+      "text": "特殊種妖物接連出現，傳送塔遭到三名黑衣人襲擊，秘境的情況也還不明朗。",
+      "important": false
+    },
+    {
+      "speaker": "邱山河",
+      "text": "統領認為，現在已經不能只當成東州境內的普通異常處理。",
+      "important": false
+    },
+    {
+      "speaker": "玩家",
+      "text": "所以接下來呢？",
+      "important": false
+    },
+    {
+      "speaker": "邱山河",
+      "text": "統領會先把東州目前的狀況轉達給附近其他州。",
+      "important": false
+    },
+    {
+      "speaker": "邱山河",
+      "text": "如果事態繼續擴大，也會正式請求其他州的道衛隊前來協助。",
+      "important": false
+    },
+    {
+      "speaker": "林夏于",
+      "text": "也就是說，現在還是得靠我們自己先撐著。",
+      "important": false
+    },
+    {
+      "speaker": "邱山河",
+      "text": "沒錯。",
+      "important": false
+    },
+    {
+      "speaker": "邱山河",
+      "text": "目前有兩件事情必須同時處理。",
+      "important": false
+    },
+    {
+      "speaker": "邱山河",
+      "text": "第一，繼續清除東州周圍野外出現的特殊種妖物。那些妖物如果繼續增加，城鎮周圍遲早會出事。",
+      "important": false
+    },
+    {
+      "speaker": "沈玄川",
+      "text": "這邊交給我。",
+      "important": false
+    },
+    {
+      "speaker": "柳清妍",
+      "text": "我也一起去。兩個人行動比較安全。",
+      "important": false
+    },
+    {
+      "speaker": "邱山河",
+      "text": "第二，就是想辦法恢復東州傳送塔。",
+      "important": false
+    },
+    {
+      "speaker": "林夏于",
+      "text": "你想直接回去查那個被破壞的陣法？",
+      "important": false
+    },
+    {
+      "speaker": "邱山河",
+      "text": "嗯。",
+      "important": false
+    },
+    {
+      "speaker": "邱山河",
+      "text": "如果傳送塔一直不能使用，被困在秘境和天穹浮島的人就回不來，我們也沒辦法確認秘境裡到底發生了什麼。",
+      "important": false
+    },
+    {
+      "speaker": "玩家",
+      "text": "所以要分成兩隊？",
+      "important": false
+    },
+    {
+      "speaker": "邱山河",
+      "text": "對。",
+      "important": false
+    },
+    {
+      "speaker": "邱山河",
+      "text": "你／妳選一邊。",
+      "important": false
+    },
+    {
+      "speaker": "邱山河",
+      "text": "跟沈玄川、柳清妍一起清除妖物，或者跟我和林夏于去調查傳送塔。",
+      "important": false
+    }
+  ],
+  "032-A": [
+    {
+      "speaker": "沈玄川",
+      "text": "好！那就直接從最近的地方開始！",
+      "important": false
+    },
+    {
+      "speaker": "柳清妍",
+      "text": "別一聽到打妖物就這麼興奮。",
+      "important": false
+    },
+    {
+      "speaker": "沈玄川",
+      "text": "這不是正好嗎？總比坐在這裡什麼都不做好。",
+      "important": false
+    },
+    {
+      "speaker": "邱山河",
+      "text": "那野外的事情就交給你們三個。",
+      "important": false
+    },
+    {
+      "speaker": "邱山河",
+      "text": "我和林夏于留在朝御城，再整理一次傳送塔的資料。",
+      "important": false
+    },
+    {
+      "speaker": "林夏于",
+      "text": "有新的發現，我們會通知你們。",
+      "important": false
+    },
+    {
+      "speaker": "玩家",
+      "text": "知道了。",
+      "important": false
+    }
+  ],
+  "032-B": [
+    {
+      "speaker": "邱山河",
+      "text": "好。",
+      "important": false
+    },
+    {
+      "speaker": "林夏于",
+      "text": "那就去看看那座塔到底被動了什麼手腳。",
+      "important": false
+    },
+    {
+      "speaker": "沈玄川",
+      "text": "那青陽山那邊交給我們。",
+      "important": false
+    },
+    {
+      "speaker": "柳清妍",
+      "text": "我們先從青陽山開始巡查。如果發現特殊種，會直接處理。",
+      "important": false
+    },
+    {
+      "speaker": "邱山河",
+      "text": "小心一點。",
+      "important": false
+    },
+    {
+      "speaker": "沈玄川",
+      "text": "放心吧，隊長。",
+      "important": false
+    },
+    {
+      "speaker": "玩家",
+      "text": "那我們也出發。",
+      "important": false
+    }
+  ],
+  "033A-0": [
+    {
+      "speaker": "沈玄川",
+      "text": "先看看附近的情況吧。",
+      "important": false
+    },
+    {
+      "speaker": "柳清妍",
+      "text": "這裡的靈氣不太穩，先別急著往深處走。",
+      "important": false
+    },
+    {
+      "speaker": "玩家",
+      "text": "那接下來怎麼辦？",
+      "important": false
+    },
+    {
+      "speaker": "柳清妍",
+      "text": "先把周圍出現的異常妖物處理掉。",
+      "important": false
+    },
+    {
+      "speaker": "沈玄川",
+      "text": "只要特殊種還在增加，就算我們想查原因，也很難安心調查。",
+      "important": false
+    },
+    {
+      "speaker": "玩家",
+      "text": "那就先清掉附近的妖物。",
+      "important": false
+    },
+    {
+      "speaker": "旁白",
+      "text": "話音剛落，草叢與山石間突然傳來急促的窸窣聲。",
+      "important": false
+    },
+    {
+      "speaker": "沈玄川",
+      "text": "小心！",
+      "important": false
+    },
+    {
+      "speaker": "旁白",
+      "text": "三隻青臭蟲突然竄出，其中一隻身上的氣息明顯比另外兩隻更加狂躁。",
+      "important": false
+    },
+    {
+      "speaker": "柳清妍",
+      "text": "特殊種……！",
+      "important": false
+    },
+    {
+      "speaker": "沈玄川",
+      "text": "來得正好，先把牠們解決！",
+      "important": false
+    }
+  ],
+  "033A-1": [
+    {
+      "speaker": "玩家",
+      "text": "連青臭蟲都出現特殊種了。",
+      "important": false
+    },
+    {
+      "speaker": "沈玄川",
+      "text": "而且比之前遇到的那些妖物更躁。",
+      "important": false
+    },
+    {
+      "speaker": "柳清妍",
+      "text": "不只是躁動。",
+      "important": false
+    },
+    {
+      "speaker": "玩家",
+      "text": "怎麼了？",
+      "important": false
+    },
+    {
+      "speaker": "柳清妍",
+      "text": "青陽山的靈力紊亂，比我們剛來的時候更明顯。",
+      "important": false
+    },
+    {
+      "speaker": "沈玄川",
+      "text": "特殊種不是已經處理掉了嗎？",
+      "important": false
+    },
+    {
+      "speaker": "柳清妍",
+      "text": "所以才奇怪。",
+      "important": false
+    },
+    {
+      "speaker": "柳清妍",
+      "text": "如果異常只是妖物造成的，牠死了之後，這附近的靈氣應該會逐漸恢復才對。",
+      "important": false
+    },
+    {
+      "speaker": "玩家",
+      "text": "但現在沒有。",
+      "important": false
+    },
+    {
+      "speaker": "柳清妍",
+      "text": "嗯。",
+      "important": false
+    },
+    {
+      "speaker": "旁白",
+      "text": "就在三人觀察周圍靈力變化時，遠處再次傳來低沉吼聲。",
+      "important": false
+    },
+    {
+      "speaker": "沈玄川",
+      "text": "又來了！",
+      "important": false
+    },
+    {
+      "speaker": "旁白",
+      "text": "兩隻氣息狂暴的青木狼從前方衝出，後方還跟著一隻青翠蝶。",
+      "important": false
+    },
+    {
+      "speaker": "柳清妍",
+      "text": "兩隻特殊種……！",
+      "important": false
+    }
+  ],
+  "033A-2": [
+    {
+      "speaker": "旁白",
+      "text": "三人沒有立即離開，而是開始仔細檢查附近地面、山壁與靈氣流向。",
+      "important": false
+    },
+    {
+      "speaker": "玩家",
+      "text": "等等。",
+      "important": false
+    },
+    {
+      "speaker": "沈玄川",
+      "text": "發現什麼了？",
+      "important": false
+    },
+    {
+      "speaker": "玩家",
+      "text": "這裡的地面……好像有東西。",
+      "important": false
+    },
+    {
+      "speaker": "旁白",
+      "text": "玩家撥開覆蓋在地面的枝葉與碎石，一道極淡的光芒從下方透出。",
+      "important": false
+    },
+    {
+      "speaker": "玩家",
+      "text": "是一個法陣。",
+      "important": false
+    },
+    {
+      "speaker": "玩家",
+      "text": "你們過來看看。",
+      "important": false
+    },
+    {
+      "speaker": "旁白",
+      "text": "沈玄川與柳清妍靠近，地上的陣紋仍泛著微弱光芒。",
+      "important": false
+    },
+    {
+      "speaker": "柳清妍",
+      "text": "這個紋路……",
+      "important": false
+    },
+    {
+      "speaker": "玩家",
+      "text": "妳認得？",
+      "important": false
+    },
+    {
+      "speaker": "柳清妍",
+      "text": "我總覺得在哪裡看過。",
+      "important": false
+    },
+    {
+      "speaker": "沈玄川",
+      "text": "等等，我好像也有印象。",
+      "important": false
+    },
+    {
+      "speaker": "柳清妍",
+      "text": "你也看過？",
+      "important": false
+    },
+    {
+      "speaker": "沈玄川",
+      "text": "以前各州道衛大集合訓練的時候，北州統領曾經拿過一本陣法相關的書給我們看。",
+      "important": false
+    },
+    {
+      "speaker": "沈玄川",
+      "text": "裡面好像就有這種圖案。",
+      "important": false
+    },
+    {
+      "speaker": "旁白",
+      "text": "柳清妍盯著陣紋片刻，神情突然一變。",
+      "important": false
+    },
+    {
+      "speaker": "柳清妍",
+      "text": "我想起來了。",
+      "important": false
+    },
+    {
+      "speaker": "柳清妍",
+      "text": "這是——龍胤之陣。",
+      "important": true
+    },
+    {
+      "speaker": "玩家",
+      "text": "龍胤之陣？",
+      "important": true
+    },
+    {
+      "speaker": "柳清妍",
+      "text": "這種陣法本身不會直接攻擊人。",
+      "important": false
+    },
+    {
+      "speaker": "柳清妍",
+      "text": "它會吸取在陣法範圍內死亡之物逸散的靈力。",
+      "important": false
+    },
+    {
+      "speaker": "玩家",
+      "text": "等等。",
+      "important": false
+    },
+    {
+      "speaker": "玩家",
+      "text": "那我們剛才擊殺的那些妖物……",
+      "important": false
+    },
+    {
+      "speaker": "沈玄川",
+      "text": "牠們死後逸散的靈力，全被這個陣吸走了？",
+      "important": false
+    },
+    {
+      "speaker": "柳清妍",
+      "text": "恐怕是。",
+      "important": false
+    },
+    {
+      "speaker": "玩家",
+      "text": "所以那些特殊種不只是意外出現在這裡。",
+      "important": false
+    },
+    {
+      "speaker": "沈玄川",
+      "text": "有人在利用牠們。",
+      "important": false
+    },
+    {
+      "speaker": "柳清妍",
+      "text": "而且對方懂陣法。",
+      "important": false
+    },
+    {
+      "speaker": "旁白",
+      "text": "三人再次看向仍在微微發光的龍胤之陣。",
+      "important": true
+    },
+    {
+      "speaker": "玩家",
+      "text": "那之前那些異相……",
+      "important": false
+    },
+    {
+      "speaker": "柳清妍",
+      "text": "至少現在可以確定一件事。",
+      "important": false
+    },
+    {
+      "speaker": "柳清妍",
+      "text": "這不是自然形成的。",
+      "important": false
+    },
+    {
+      "speaker": "沈玄川",
+      "text": "有人在背後動手腳。",
+      "important": false
+    },
+    {
+      "speaker": "玩家",
+      "text": "得把這件事告訴邱山河。",
+      "important": false
+    }
+  ],
+  "037-offer": [
+    {
+      "speaker": "旁白",
+      "text": "深處｜眾人看到前所未見的畫面：巨大水晶內封印一隻形如猿猴、卻有四隻耳朵的龐大妖物；水晶四周有充滿靈力的鎖鏈，前方站著黑衣人。",
+      "important": true
+    },
+    {
+      "speaker": "林夏于",
+      "text": "又有黑衣人……",
+      "important": false
+    },
+    {
+      "speaker": "沈玄川",
+      "text": "這到底是什麼鬼……這也太大了吧！",
+      "important": false
+    },
+    {
+      "speaker": "玩家",
+      "text": "這該不會就是黑衣人所說的長右……？",
+      "important": false
+    },
+    {
+      "speaker": "邱山河（憤怒）",
+      "text": "難道你們要解除封印？瘋了嗎？",
+      "important": true
+    },
+    {
+      "speaker": "黑衣人（興奮）",
+      "text": "瘋了？不不不，你們應該仔細看看這隻災獸看起來是多麼壯觀、多麼震撼。他可是隨隨便便就可以給世界帶來災難的長右！",
+      "important": false
+    },
+    {
+      "speaker": "柳清妍",
+      "text": "果然是長右，你們到底怎麼知道這裡封印著災獸的？",
+      "important": true
+    },
+    {
+      "speaker": "黑衣人",
+      "text": "你們知道為了今天，我們花費了多少時間嗎？從上仙大戰結束，我們宗主就在做各種準備了。龍胤之陣、轉靈之陣、還有解除封印所需的海量靈力，就在今天終於要完成了！哈哈哈哈！",
+      "important": true
+    },
+    {
+      "speaker": "黑衣人",
+      "text": "來了！來了！",
+      "important": false
+    },
+    {
+      "speaker": "旁白",
+      "text": "第一道黑光｜一束漆黑光芒自洞窟上方貫穿岩層，直衝封印水晶；鎖鏈啪、啪斷裂。",
+      "important": true
+    },
+    {
+      "speaker": "玩家",
+      "text": "鎖鏈斷了！",
+      "important": false
+    },
+    {
+      "speaker": "黑衣人（狂喜）",
+      "text": "來了來了！災厄要降臨啦！反正你們都要死了，告訴你們也無妨——我們來自混沌魔宗！我們的目的是復活災獸之主！",
+      "important": true
+    },
+    {
+      "speaker": "林夏于",
+      "text": "水晶裡的傢伙就是災獸之主？復活他對你們有什麼好處？",
+      "important": true
+    },
+    {
+      "speaker": "黑衣人",
+      "text": "長右是災獸之主？別說笑了！這傢伙只是復活災獸之主的第一部分而已。至於對我們有什麼好處？這我可沒義務告訴你們。",
+      "important": true
+    },
+    {
+      "speaker": "沈玄川",
+      "text": "那你們製造龍胤之陣還有轉靈之陣的意義是什麼！",
+      "important": true
+    },
+    {
+      "speaker": "黑衣人",
+      "text": "你們是傻子嗎？這麼簡單都看不懂！龍胤之陣的目的是讓妖物自相殘殺，來吸引更強種類的妖物。妖物死亡的充沛靈力賦予龍胤之陣，這道黑光就是紊亂靈力的集合體，也是打破上仙封印災獸枷鎖的方法。",
+      "important": true
+    },
+    {
+      "speaker": "黑衣人",
+      "text": "至於轉靈之陣不用我多說吧？就是將傳送塔的靈力給轉移到這裡的傳送陣。雖然讓你們進來是意外，但也沒關係，反正你們也活不過今日了。",
+      "important": true
+    },
+    {
+      "speaker": "邱山河",
+      "text": "復活牠，你也活不過今日！",
+      "important": false
+    },
+    {
+      "speaker": "黑衣人（大笑）",
+      "text": "我之所以站在這裡，就是因為我就是解開封印的最後一部分鑰匙。",
+      "important": true
+    },
+    {
+      "speaker": "旁白",
+      "text": "最終獻祭｜黑衣人將自身所有靈力注入封印水晶；林夏于催促阻止。",
+      "important": true
+    },
+    {
+      "speaker": "林夏于",
+      "text": "各位！快阻止他，不能讓他傳送靈力！",
+      "important": false
+    },
+    {
+      "speaker": "旁白",
+      "text": "柳清妍架起弓箭，準備射擊。第二道黑光同時再次擊入水晶，洞窟劇烈晃動，鎖鏈全部斷開。",
+      "important": false
+    },
+    {
+      "speaker": "柳清妍",
+      "text": "可惡，太晃了，我沒辦法射擊！",
+      "important": false
+    },
+    {
+      "speaker": "旁白",
+      "text": "黑衣人將全部靈力交給封印水晶後倒地；巨大水晶裂痕不斷向外延伸，最終爆裂。長右甦醒、發出咆哮，眾人握起武器。",
+      "important": true
+    },
+    {
+      "speaker": "邱山河",
+      "text": "各位！做好必死的覺悟。",
+      "important": false
+    }
+  ],
+  "038-report": [
+    {
+      "speaker": "邱山河",
+      "text": "我們……成功了？",
+      "important": false
+    },
+    {
+      "speaker": "柳清妍、沈玄川（高興）",
+      "text": "耶！",
+      "important": false
+    },
+    {
+      "speaker": "林夏于",
+      "text": "我們擊殺了災獸長右，這事可以讓我們吹牛一輩子了！",
+      "important": false
+    },
+    {
+      "speaker": "玩家",
+      "text": "真沒想到我們可以戰勝這麼巨大的妖物。",
+      "important": false
+    },
+    {
+      "speaker": "旁白",
+      "text": "異常心臟｜長右屍體突然扭動，所有人慌張拿武器對準；詭異附帶魂魄的心臟飛起來，主動飄向玩家。",
+      "important": false
+    },
+    {
+      "speaker": "沈玄川",
+      "text": "這個……是心臟吧？為什麼會跟著（玩家名字）？",
+      "important": false
+    },
+    {
+      "speaker": "玩家",
+      "text": "我也不知道！",
+      "important": false
+    },
+    {
+      "speaker": "旁白",
+      "text": "長右之心變成一縷光，自動飛入玩家背包。",
+      "important": false
+    },
+    {
+      "speaker": "眾人",
+      "text": "？？？",
+      "important": false
+    },
+    {
+      "speaker": "邱山河（輕咳）",
+      "text": "算了，今天已經發生夠多怪事了，也不差現在這一個了……",
+      "important": false
+    },
+    {
+      "speaker": "旁白",
+      "text": "眾人紛紛點頭。",
+      "important": false
+    },
+    {
+      "speaker": "柳清妍",
+      "text": "隊長，雖然長右的事情看起來告一段落了，但我覺得還是要觀察周圍的狀況。",
+      "important": false
+    },
+    {
+      "speaker": "邱山河",
+      "text": "是啊，各位，慶祝什麼的先擱置吧！",
+      "important": false
+    },
+    {
+      "speaker": "邱山河",
+      "text": "玄川，麻煩你探查青陽山的異相還在不在；清妍也麻煩妳去一趟落星谷；而夏于，城鎮的安危交給你了。",
+      "important": false
+    },
+    {
+      "speaker": "三人",
+      "text": "好！",
+      "important": false
+    },
+    {
+      "speaker": "旁白",
+      "text": "林夏于、沈玄川、柳清妍各自透過傳送陣離開主線隊伍，前往上述地點。現場只剩玩家與邱山河。",
+      "important": true
+    },
+    {
+      "speaker": "邱山河",
+      "text": "辛苦你／妳了，才剛來東州不久就遇到這些事情。",
+      "important": false
+    },
+    {
+      "speaker": "玩家",
+      "text": "沒事，我也是經歷了這些事才認知到自己實力的不足。",
+      "important": false
+    },
+    {
+      "speaker": "邱山河",
+      "text": "接下來有什麼打算？",
+      "important": false
+    }
+  ],
+  "038-NE": [
+    {
+      "speaker": "選1邱山河",
+      "text": "東北州啊，那裡挺好的，也很安全。如果你／妳到了那裡，幫我跟林關默打聲招呼。她是東北州的道衛隊長，實力可是在我之上。",
+      "important": false
+    },
+    {
+      "speaker": "選1玩家",
+      "text": "我會的。",
+      "important": false
+    }
+  ],
+  "038-SE": [
+    {
+      "speaker": "選2邱山河",
+      "text": "東南州啊，那裡最近聽說也有發生一些小事情，雖然具體是什麼我就不知道了。總之如果你／妳到了那裡，幫我跟陳孟打聲招呼。他是東南州的道衛隊長，雖然實力跟我差不多，但畢竟也是隊長，要相信他。",
+      "important": false
+    },
+    {
+      "speaker": "選2玩家",
+      "text": "我會的。",
+      "important": false
+    }
+  ]
+}

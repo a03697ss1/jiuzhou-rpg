@@ -1,0 +1,2507 @@
+[
+  {
+    "name": "［一階］靈草",
+    "family": "錦袋",
+    "hasMaterial": true
+  },
+  {
+    "name": "［一階］梨草",
+    "family": "錦袋",
+    "hasMaterial": true
+  },
+  {
+    "name": "［一階］精草",
+    "family": "錦袋",
+    "hasMaterial": true
+  },
+  {
+    "name": "［一階］靈露",
+    "family": "錦袋",
+    "hasMaterial": true
+  },
+  {
+    "name": "［一階］碧萃枝",
+    "family": "錦袋",
+    "hasMaterial": true
+  },
+  {
+    "name": "［一階］藥草",
+    "family": "錦袋",
+    "hasMaterial": true
+  },
+  {
+    "name": "［一階］靈石",
+    "family": "錦袋",
+    "hasMaterial": true
+  },
+  {
+    "name": "［一階］靈原鐵",
+    "family": "錦袋",
+    "hasMaterial": true
+  },
+  {
+    "name": "［一階］靈木",
+    "family": "錦袋",
+    "hasMaterial": true
+  },
+  {
+    "name": "［一階］靈果",
+    "family": "錦袋",
+    "hasMaterial": true
+  },
+  {
+    "name": "［一階］脆脆果",
+    "family": "錦袋",
+    "hasMaterial": true
+  },
+  {
+    "name": "［一階］破布",
+    "family": "錦袋",
+    "hasMaterial": true
+  },
+  {
+    "name": "［一階］靈藥粉",
+    "family": "藥粉",
+    "hasMaterial": true
+  },
+  {
+    "name": "［一階］精靈液",
+    "family": "錦袋",
+    "hasMaterial": true
+  },
+  {
+    "name": "［一階］碧木芯",
+    "family": "錦袋",
+    "hasMaterial": true
+  },
+  {
+    "name": "［一階］導靈粉",
+    "family": "藥粉",
+    "hasMaterial": true
+  },
+  {
+    "name": "［一階］靈鐵錠",
+    "family": "錦袋",
+    "hasMaterial": true
+  },
+  {
+    "name": "［一階］獸骨粉",
+    "family": "藥粉",
+    "hasMaterial": true
+  },
+  {
+    "name": "［一階］妖血精華",
+    "family": "錦袋",
+    "hasMaterial": true
+  },
+  {
+    "name": "［一階］魂粉",
+    "family": "藥粉",
+    "hasMaterial": true
+  },
+  {
+    "name": "［一階］妖丹粉末",
+    "family": "藥粉",
+    "hasMaterial": true
+  },
+  {
+    "name": "［一階］皮毛",
+    "family": "錦袋",
+    "hasMaterial": true
+  },
+  {
+    "name": "［一階］蛇鱗",
+    "family": "錦袋",
+    "hasMaterial": true
+  },
+  {
+    "name": "［一階］硬蟲甲",
+    "family": "錦袋",
+    "hasMaterial": true
+  },
+  {
+    "name": "［一階］妖鳥羽",
+    "family": "錦袋",
+    "hasMaterial": true
+  },
+  {
+    "name": "［一階］獸骨",
+    "family": "錦袋",
+    "hasMaterial": true
+  },
+  {
+    "name": "［一階］獸牙",
+    "family": "錦袋",
+    "hasMaterial": true
+  },
+  {
+    "name": "［一階］妖獸精血",
+    "family": "錦袋",
+    "hasMaterial": true
+  },
+  {
+    "name": "［一階］殘缺妖丹",
+    "family": "獸丹",
+    "hasMaterial": true
+  },
+  {
+    "name": "［一階］殘魂",
+    "family": "錦袋",
+    "hasMaterial": true
+  },
+  {
+    "name": "［一階］毒囊",
+    "family": "錦袋",
+    "hasMaterial": true
+  },
+  {
+    "name": "［一階］蛛絲",
+    "family": "錦袋",
+    "hasMaterial": true
+  },
+  {
+    "name": "［一階］獸角",
+    "family": "錦袋",
+    "hasMaterial": true
+  },
+  {
+    "name": "［一階］靈粉",
+    "family": "藥粉",
+    "hasMaterial": true
+  },
+  {
+    "name": "［一階］龜殼",
+    "family": "錦袋",
+    "hasMaterial": true
+  },
+  {
+    "name": "［二階］凝露花",
+    "family": "錦袋",
+    "hasMaterial": true
+  },
+  {
+    "name": "［二階］百年靈草",
+    "family": "錦袋",
+    "hasMaterial": true
+  },
+  {
+    "name": "［二階］青紋藤",
+    "family": "錦袋",
+    "hasMaterial": true
+  },
+  {
+    "name": "［二階］赤銅礦",
+    "family": "錦袋",
+    "hasMaterial": true
+  },
+  {
+    "name": "［二階］玄鐵",
+    "family": "錦袋",
+    "hasMaterial": true
+  },
+  {
+    "name": "［二階］火晶石",
+    "family": "寶珠",
+    "hasMaterial": true
+  },
+  {
+    "name": "［二階］水晶石",
+    "family": "寶珠",
+    "hasMaterial": true
+  },
+  {
+    "name": "［二階］木晶石",
+    "family": "寶珠",
+    "hasMaterial": true
+  },
+  {
+    "name": "［二階］風晶石",
+    "family": "寶珠",
+    "hasMaterial": true
+  },
+  {
+    "name": "［二階］雷晶石",
+    "family": "寶珠",
+    "hasMaterial": true
+  },
+  {
+    "name": "［二階］土晶石",
+    "family": "寶珠",
+    "hasMaterial": true
+  },
+  {
+    "name": "［二階］光晶石",
+    "family": "寶珠",
+    "hasMaterial": true
+  },
+  {
+    "name": "［二階］暗晶石",
+    "family": "寶珠",
+    "hasMaterial": true
+  },
+  {
+    "name": "［二階］碧綠木",
+    "family": "錦袋",
+    "hasMaterial": true
+  },
+  {
+    "name": "［二階］楊木",
+    "family": "錦袋",
+    "hasMaterial": true
+  },
+  {
+    "name": "［二階］玉葉果",
+    "family": "錦袋",
+    "hasMaterial": true
+  },
+  {
+    "name": "［二階］玄靈鐵錠",
+    "family": "錦袋",
+    "hasMaterial": true
+  },
+  {
+    "name": "［二階］靈楊木板",
+    "family": "錦袋",
+    "hasMaterial": true
+  },
+  {
+    "name": "［二階］硬骨板",
+    "family": "錦袋",
+    "hasMaterial": true
+  },
+  {
+    "name": "［二階］濃靈血精",
+    "family": "錦袋",
+    "hasMaterial": true
+  },
+  {
+    "name": "［二階］凝魂砂",
+    "family": "錦袋",
+    "hasMaterial": true
+  },
+  {
+    "name": "［二階］妖丹精華",
+    "family": "錦袋",
+    "hasMaterial": true
+  },
+  {
+    "name": "［二階］狐毛",
+    "family": "錦袋",
+    "hasMaterial": true
+  },
+  {
+    "name": "［二階］蛟鱗",
+    "family": "錦袋",
+    "hasMaterial": true
+  },
+  {
+    "name": "［二階］黑蠍甲",
+    "family": "錦袋",
+    "hasMaterial": true
+  },
+  {
+    "name": "［二階］雀羽",
+    "family": "錦袋",
+    "hasMaterial": true
+  },
+  {
+    "name": "［二階］硬獸骨",
+    "family": "錦袋",
+    "hasMaterial": true
+  },
+  {
+    "name": "［二階］利爪",
+    "family": "錦袋",
+    "hasMaterial": true
+  },
+  {
+    "name": "［二階］濃縮妖血",
+    "family": "錦袋",
+    "hasMaterial": true
+  },
+  {
+    "name": "［二階］妖丹",
+    "family": "獸丹",
+    "hasMaterial": true
+  },
+  {
+    "name": "［二階］妖魂碎片",
+    "family": "錦袋",
+    "hasMaterial": true
+  },
+  {
+    "name": "［二階］雷角",
+    "family": "錦袋",
+    "hasMaterial": true
+  },
+  {
+    "name": "［二階］火尾毛",
+    "family": "錦袋",
+    "hasMaterial": true
+  },
+  {
+    "name": "［一階］龜甲片",
+    "family": "錦袋",
+    "hasMaterial": true
+  },
+  {
+    "name": "［無階］新手護符",
+    "family": "護符",
+    "hasMaterial": false
+  },
+  {
+    "name": "［無階］新手項鍊",
+    "family": "項鍊",
+    "hasMaterial": false
+  },
+  {
+    "name": "［無階］新手戒指",
+    "family": "戒指",
+    "hasMaterial": false
+  },
+  {
+    "name": "［無階］新手劍",
+    "family": "劍",
+    "hasMaterial": false
+  },
+  {
+    "name": "［無階］新手刀",
+    "family": "刀",
+    "hasMaterial": false
+  },
+  {
+    "name": "［無階］新手長槍",
+    "family": "長槍",
+    "hasMaterial": false
+  },
+  {
+    "name": "［無階］新手弓",
+    "family": "弓",
+    "hasMaterial": false
+  },
+  {
+    "name": "［無階］新手拳套",
+    "family": "拳套",
+    "hasMaterial": false
+  },
+  {
+    "name": "［無階］新手錘",
+    "family": "錘",
+    "hasMaterial": false
+  },
+  {
+    "name": "［無階］新手寶珠",
+    "family": "寶珠",
+    "hasMaterial": false
+  },
+  {
+    "name": "［無階］新手扇",
+    "family": "扇",
+    "hasMaterial": false
+  },
+  {
+    "name": "［無階］新手葫蘆",
+    "family": "葫蘆",
+    "hasMaterial": false
+  },
+  {
+    "name": "［無階］新手傘",
+    "family": "傘",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］靈鐵劍",
+    "family": "劍",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］靈鐵刀",
+    "family": "刀",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］靈鐵長槍",
+    "family": "長槍",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］靈鐵弓",
+    "family": "弓",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］靈鐵拳套",
+    "family": "拳套",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］靈鐵錘",
+    "family": "錘",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］靈鐵寶珠",
+    "family": "寶珠",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］靈鐵扇",
+    "family": "扇",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］靈鐵葫蘆",
+    "family": "葫蘆",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］靈鐵傘",
+    "family": "傘",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］青鋒劍",
+    "family": "劍",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］斷木刀",
+    "family": "刀",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］鐵脊長槍",
+    "family": "長槍",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］青藤弓",
+    "family": "弓",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］硬革拳套",
+    "family": "拳套",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］沉鐵錘",
+    "family": "錘",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］霜月劍",
+    "family": "劍",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］赤紋刀",
+    "family": "刀",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］月牙長槍",
+    "family": "長槍",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］青木弓",
+    "family": "弓",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］流雲拳套",
+    "family": "拳套",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］聚氣錘",
+    "family": "錘",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］聚靈寶珠",
+    "family": "寶珠",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］青紋寶珠",
+    "family": "寶珠",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］清風羽扇",
+    "family": "扇",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］靈紋道扇",
+    "family": "扇",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］聚氣葫蘆",
+    "family": "葫蘆",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］養靈葫蘆",
+    "family": "葫蘆",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］青竹靈傘",
+    "family": "傘",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］流雲道傘",
+    "family": "傘",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］青藤劍",
+    "family": "劍",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］赤銅刀",
+    "family": "刀",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］玄鐵重錘",
+    "family": "錘",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］碧木弓",
+    "family": "弓",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］楊木長槍",
+    "family": "長槍",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］羽爪拳套",
+    "family": "拳套",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］雀羽弓",
+    "family": "弓",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］毒牙短刀",
+    "family": "刀",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］蛛絲靈弓",
+    "family": "弓",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］角鋒槍",
+    "family": "長槍",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］雷角槍",
+    "family": "長槍",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］碧芯劍",
+    "family": "劍",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］導靈劍",
+    "family": "劍",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］玄靈戰刀",
+    "family": "刀",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］靈楊長弓",
+    "family": "弓",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］碧芯寶珠",
+    "family": "寶珠",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］玄靈寶珠",
+    "family": "寶珠",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］雷角寶珠",
+    "family": "寶珠",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］青藤羽扇",
+    "family": "扇",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］雀羽靈扇",
+    "family": "扇",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］玄羽道扇",
+    "family": "扇",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］碧木葫蘆",
+    "family": "葫蘆",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］凝魂葫蘆",
+    "family": "葫蘆",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］血靈葫蘆",
+    "family": "葫蘆",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］蛛絲靈傘",
+    "family": "傘",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］青羽道傘",
+    "family": "傘",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］玄靈法傘",
+    "family": "傘",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］玄水扇",
+    "family": "扇",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］赤銅斬刀",
+    "family": "刀",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］毒囊葫蘆",
+    "family": "葫蘆",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］鍛造大錘",
+    "family": "錘",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］流雲槍",
+    "family": "長槍",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］水舞扇",
+    "family": "扇",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］讓力大錘",
+    "family": "錘",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］流水劍",
+    "family": "劍",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］青木長弦弓",
+    "family": "弓",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］輪輪刀",
+    "family": "刀",
+    "hasMaterial": false
+  },
+  {
+    "name": "［中階］岩茗槍",
+    "family": "長槍",
+    "hasMaterial": false
+  },
+  {
+    "name": "［中階］玄水拳套",
+    "family": "拳套",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］粗布頭盔",
+    "family": "頭盔",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］粗布衣",
+    "family": "長袍",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］粗布褲",
+    "family": "長褲",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］粗布鞋",
+    "family": "長靴",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］青紋布帽",
+    "family": "布冠",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］青紋短袍",
+    "family": "長袍",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］青紋長褲",
+    "family": "長褲",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］青紋布靴",
+    "family": "長靴",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］鐵邊布帽",
+    "family": "布冠",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］護身布衣",
+    "family": "長袍",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］韌布長褲",
+    "family": "長褲",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］輕行布靴",
+    "family": "長靴",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］雲紋束冠",
+    "family": "布冠",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］素靈法帽",
+    "family": "布冠",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］雲紋短衣",
+    "family": "長袍",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］素靈法袍",
+    "family": "長袍",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］雲紋護腿",
+    "family": "長褲",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］素靈長褲",
+    "family": "長褲",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］雲紋輕靴",
+    "family": "長靴",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］素靈步履",
+    "family": "長靴",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］羽行帽",
+    "family": "布冠",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］狼皮帽",
+    "family": "布冠",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］獸骨戰盔",
+    "family": "頭盔",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］玄靈戰盔",
+    "family": "頭盔",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］狐絨衣",
+    "family": "長袍",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］蟲甲護衣",
+    "family": "鎧甲",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］硬骨護衣",
+    "family": "長袍",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］赤尾披衣",
+    "family": "長袍",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］蛛絲輕衣",
+    "family": "長袍",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］黑蠍護腿",
+    "family": "長褲",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］毒囊護腿",
+    "family": "長褲",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］靈鐵護腿",
+    "family": "長褲",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］雀羽靴",
+    "family": "長靴",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］硬骨戰靴",
+    "family": "長靴",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］龜甲帽",
+    "family": "布冠",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］龜甲衣",
+    "family": "鎧甲",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］龜甲靴",
+    "family": "長靴",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］玄靈道衣",
+    "family": "長袍",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］碧木道衣",
+    "family": "長袍",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］凝魂靈袍",
+    "family": "長袍",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］赤尾靈袍",
+    "family": "長袍",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］青羽道帽",
+    "family": "布冠",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］碧芯靈帽",
+    "family": "布冠",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］凝魂道帽",
+    "family": "布冠",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］玄靈道褲",
+    "family": "長褲",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］玄靈步履",
+    "family": "長靴",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］碧魂靈褲",
+    "family": "長褲",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］碧魂輕履",
+    "family": "長靴",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］凝魂道褲",
+    "family": "長褲",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］凝魂靈靴",
+    "family": "長靴",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］靈羽法褲",
+    "family": "長褲",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］靈羽踏雲靴",
+    "family": "長靴",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］流風靴",
+    "family": "長靴",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］水紋靈衣",
+    "family": "長袍",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］踏浪靴",
+    "family": "長靴",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］厚岩戰衣",
+    "family": "長袍",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］岩紋護腿",
+    "family": "長褲",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］赤炎戰衣",
+    "family": "長袍",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］烈行戰靴",
+    "family": "長靴",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］青木額冠",
+    "family": "布冠",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］翠藤衣",
+    "family": "長袍",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］藤影靴",
+    "family": "長靴",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］雷紋護額",
+    "family": "布冠",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］紫電戰衣",
+    "family": "長袍",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］疾雷靴",
+    "family": "長靴",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］回瀾冠",
+    "family": "布冠",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］玄水靈衣",
+    "family": "長袍",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］潮生護腿",
+    "family": "長褲",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］土靈頭盔",
+    "family": "頭盔",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］勁地靴",
+    "family": "長靴",
+    "hasMaterial": false
+  },
+  {
+    "name": "［中階］赤炎戰衣",
+    "family": "長袍",
+    "hasMaterial": false
+  },
+  {
+    "name": "［中階］厚岩戰衣",
+    "family": "長袍",
+    "hasMaterial": false
+  },
+  {
+    "name": "［中階］水紋靈衣",
+    "family": "長袍",
+    "hasMaterial": false
+  },
+  {
+    "name": "［中階］流風靴",
+    "family": "長靴",
+    "hasMaterial": false
+  },
+  {
+    "name": "［中階］踏浪靴",
+    "family": "長靴",
+    "hasMaterial": false
+  },
+  {
+    "name": "［中階］土晶戰衣",
+    "family": "長袍",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］青玉指環",
+    "family": "戒指",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］靈紋項鍊",
+    "family": "項鍊",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］聚靈護符",
+    "family": "護符",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］赤銅吊墜",
+    "family": "項鍊",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］赤銅指環",
+    "family": "戒指",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］蛇鱗墜",
+    "family": "項鍊",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］蛟鱗戒",
+    "family": "戒指",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］妖羽耳飾",
+    "family": "護符",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］雀羽墜",
+    "family": "項鍊",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］獸牙項鍊",
+    "family": "項鍊",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］利爪戒",
+    "family": "戒指",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］赤尾玉佩",
+    "family": "護符",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］碧芯吊墜",
+    "family": "項鍊",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］導靈指環",
+    "family": "戒指",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］魂紋佩",
+    "family": "護符",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］凝魂墜",
+    "family": "項鍊",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］玄靈道戒",
+    "family": "戒指",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］碧魂靈墜",
+    "family": "項鍊",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］羽靈玉佩",
+    "family": "護符",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］血靈墜",
+    "family": "項鍊",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］玄魂指環",
+    "family": "戒指",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］雷紋項鍊",
+    "family": "項鍊",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］潤生指環",
+    "family": "戒指",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］回瀾項鍊",
+    "family": "項鍊",
+    "hasMaterial": false
+  },
+  {
+    "name": "［中階］雷紋項鍊",
+    "family": "項鍊",
+    "hasMaterial": false
+  },
+  {
+    "name": "［中階］潤生指環",
+    "family": "戒指",
+    "hasMaterial": false
+  },
+  {
+    "name": "［中階］回瀾項鍊",
+    "family": "項鍊",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］狼皮護頸",
+    "family": "項圈",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］蟲甲護片",
+    "family": "寵甲",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］黑蠍甲環",
+    "family": "寵甲",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］獸骨頸甲",
+    "family": "寵甲",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］硬骨獸甲",
+    "family": "寵甲",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］血獸環",
+    "family": "項圈",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］濃血戰環",
+    "family": "項圈",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］赤尾靈飾",
+    "family": "項圈",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］骨粉護符",
+    "family": "項圈",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］血精獸符",
+    "family": "項圈",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］靈楊獸牌",
+    "family": "項圈",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］硬骨戰甲",
+    "family": "寵甲",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］血魄獸環",
+    "family": "項圈",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］凝魂獸佩",
+    "family": "項圈",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］妖元靈核",
+    "family": "項圈",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］龜甲護片",
+    "family": "寵甲",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］龜甲背甲",
+    "family": "寵甲",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］碧靈獸環",
+    "family": "項圈",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］玄靈獸甲",
+    "family": "寵甲",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］凝魂獸鈴",
+    "family": "鈴鐺",
+    "hasMaterial": false
+  },
+  {
+    "name": "［特殊］靈水劍",
+    "family": "劍",
+    "hasMaterial": false
+  },
+  {
+    "name": "［特殊］秘術弓",
+    "family": "弓",
+    "hasMaterial": false
+  },
+  {
+    "name": "［特殊］鹿絞槍",
+    "family": "長槍",
+    "hasMaterial": false
+  },
+  {
+    "name": "［特殊］火霞刀",
+    "family": "刀",
+    "hasMaterial": false
+  },
+  {
+    "name": "［特殊］問心劍",
+    "family": "劍",
+    "hasMaterial": false
+  },
+  {
+    "name": "［特殊］破軍刀",
+    "family": "刀",
+    "hasMaterial": false
+  },
+  {
+    "name": "［特殊］問道槍",
+    "family": "長槍",
+    "hasMaterial": false
+  },
+  {
+    "name": "［特殊］逐星弓",
+    "family": "弓",
+    "hasMaterial": false
+  },
+  {
+    "name": "［特殊］破境拳套",
+    "family": "拳套",
+    "hasMaterial": false
+  },
+  {
+    "name": "［特殊］鎮岳錘",
+    "family": "錘",
+    "hasMaterial": false
+  },
+  {
+    "name": "［特殊］問靈寶珠",
+    "family": "寶珠",
+    "hasMaterial": false
+  },
+  {
+    "name": "［特殊］清虛道扇",
+    "family": "扇",
+    "hasMaterial": false
+  },
+  {
+    "name": "［特殊］納靈葫蘆",
+    "family": "葫蘆",
+    "hasMaterial": false
+  },
+  {
+    "name": "［特殊］玄機靈傘",
+    "family": "傘",
+    "hasMaterial": false
+  },
+  {
+    "name": "［特殊］土靈盔",
+    "family": "頭盔",
+    "hasMaterial": false
+  },
+  {
+    "name": "［特殊］元華斗笠",
+    "family": "布冠",
+    "hasMaterial": false
+  },
+  {
+    "name": "［特殊］忡靈頭盔",
+    "family": "頭盔",
+    "hasMaterial": false
+  },
+  {
+    "name": "［特殊］忡靈戰甲",
+    "family": "鎧甲",
+    "hasMaterial": false
+  },
+  {
+    "name": "［特殊］忡靈鎖褲",
+    "family": "長褲",
+    "hasMaterial": false
+  },
+  {
+    "name": "［特殊］忡靈戰靴",
+    "family": "長靴",
+    "hasMaterial": false
+  },
+  {
+    "name": "［特殊］問道戰衣",
+    "family": "長袍",
+    "hasMaterial": false
+  },
+  {
+    "name": "［特殊］問道戰靴",
+    "family": "長靴",
+    "hasMaterial": false
+  },
+  {
+    "name": "［特殊］問靈道冠",
+    "family": "布冠",
+    "hasMaterial": false
+  },
+  {
+    "name": "［特殊］玄心道袍",
+    "family": "長袍",
+    "hasMaterial": false
+  },
+  {
+    "name": "［特殊］踏虛靈履",
+    "family": "長靴",
+    "hasMaterial": false
+  },
+  {
+    "name": "［特殊］問天戰衣",
+    "family": "長袍",
+    "hasMaterial": false
+  },
+  {
+    "name": "［特殊］水心靈墜",
+    "family": "項鍊",
+    "hasMaterial": false
+  },
+  {
+    "name": "［特殊］厚土護佩",
+    "family": "護符",
+    "hasMaterial": false
+  },
+  {
+    "name": "［特殊］問道護符",
+    "family": "護符",
+    "hasMaterial": false
+  },
+  {
+    "name": "［特殊］戰心指環",
+    "family": "戒指",
+    "hasMaterial": false
+  },
+  {
+    "name": "［特殊］問心戒",
+    "family": "戒指",
+    "hasMaterial": false
+  },
+  {
+    "name": "［特殊］問道佩",
+    "family": "護符",
+    "hasMaterial": false
+  },
+  {
+    "name": "［特殊］破境項鍊",
+    "family": "項鍊",
+    "hasMaterial": false
+  },
+  {
+    "name": "［特殊］道心靈墜",
+    "family": "項鍊",
+    "hasMaterial": false
+  },
+  {
+    "name": "［特殊］問天玉佩",
+    "family": "護符",
+    "hasMaterial": false
+  },
+  {
+    "name": "［特殊］破天戰佩",
+    "family": "護符",
+    "hasMaterial": false
+  },
+  {
+    "name": "［特殊］獸牙護符",
+    "family": "項圈",
+    "hasMaterial": false
+  },
+  {
+    "name": "［特殊］靈獸頸環",
+    "family": "項圈",
+    "hasMaterial": false
+  },
+  {
+    "name": "［特殊］戰獸爪環",
+    "family": "項圈",
+    "hasMaterial": false
+  },
+  {
+    "name": "［特殊］護獸靈甲",
+    "family": "寵甲",
+    "hasMaterial": false
+  },
+  {
+    "name": "［特殊］疾獸鈴",
+    "family": "鈴鐺",
+    "hasMaterial": false
+  },
+  {
+    "name": "［特殊］萬獸靈環",
+    "family": "項圈",
+    "hasMaterial": false
+  },
+  {
+    "name": "［特殊］破天獸牙",
+    "family": "項圈",
+    "hasMaterial": false
+  },
+  {
+    "name": "［特殊］萬靈道珠",
+    "family": "項圈",
+    "hasMaterial": false
+  },
+  {
+    "name": "［特殊］不滅獸甲",
+    "family": "寵甲",
+    "hasMaterial": false
+  },
+  {
+    "name": "［特殊］天獸靈鈴",
+    "family": "鈴鐺",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］狐絨靈環",
+    "family": "項圈",
+    "hasMaterial": false
+  },
+  {
+    "name": "［特殊］清風靈葫",
+    "family": "葫蘆",
+    "hasMaterial": false
+  },
+  {
+    "name": "［特殊］靈水傘",
+    "family": "傘",
+    "hasMaterial": false
+  },
+  {
+    "name": "［禮物］匠心木槌",
+    "family": "木槌",
+    "hasMaterial": false
+  },
+  {
+    "name": "［禮物］厚土酒杯",
+    "family": "茶杯",
+    "hasMaterial": false
+  },
+  {
+    "name": "［禮物］古方丹冊",
+    "family": "書冊",
+    "hasMaterial": false
+  },
+  {
+    "name": "［禮物］墨香書冊",
+    "family": "書冊",
+    "hasMaterial": false
+  },
+  {
+    "name": "［禮物］山水畫卷",
+    "family": "畫卷",
+    "hasMaterial": false
+  },
+  {
+    "name": "［禮物］山紋護腕",
+    "family": "護腕",
+    "hasMaterial": false
+  },
+  {
+    "name": "［禮物］山茶花束",
+    "family": "花束",
+    "hasMaterial": false
+  },
+  {
+    "name": "［禮物］彩繪紙鳶",
+    "family": "紙鳶",
+    "hasMaterial": false
+  },
+  {
+    "name": "［禮物］彩羽風車",
+    "family": "風車",
+    "hasMaterial": false
+  },
+  {
+    "name": "［禮物］手繪山河圖",
+    "family": "禮盒",
+    "hasMaterial": false
+  },
+  {
+    "name": "［禮物］招財玉算盤",
+    "family": "算盤",
+    "hasMaterial": false
+  },
+  {
+    "name": "［禮物］星砂琉璃珠",
+    "family": "寶珠",
+    "hasMaterial": false
+  },
+  {
+    "name": "［禮物］星紋棋譜",
+    "family": "書冊",
+    "hasMaterial": false
+  },
+  {
+    "name": "［禮物］暖玉煙斗",
+    "family": "煙斗",
+    "hasMaterial": false
+  },
+  {
+    "name": "［禮物］月紋燈籠",
+    "family": "花燈",
+    "hasMaterial": false
+  },
+  {
+    "name": "［禮物］木蘭髮帶",
+    "family": "髮帶",
+    "hasMaterial": false
+  },
+  {
+    "name": "［禮物］東海貝雕",
+    "family": "貝雕",
+    "hasMaterial": false
+  },
+  {
+    "name": "［禮物］桂花糕",
+    "family": "糕點",
+    "hasMaterial": false
+  },
+  {
+    "name": "［禮物］桂花香囊",
+    "family": "香囊",
+    "hasMaterial": false
+  },
+  {
+    "name": "［禮物］水月髮釵",
+    "family": "髮簪",
+    "hasMaterial": false
+  },
+  {
+    "name": "［禮物］清心茶壺",
+    "family": "茶壺",
+    "hasMaterial": false
+  },
+  {
+    "name": "［禮物］清香茶葉",
+    "family": "茶葉",
+    "hasMaterial": false
+  },
+  {
+    "name": "［禮物］烈陽酒葫",
+    "family": "葫蘆",
+    "hasMaterial": false
+  },
+  {
+    "name": "［禮物］熱血戰旗",
+    "family": "戰旗",
+    "hasMaterial": false
+  },
+  {
+    "name": "［禮物］獸紋護符",
+    "family": "護符",
+    "hasMaterial": false
+  },
+  {
+    "name": "［禮物］獸紋鈴鐺",
+    "family": "鈴鐺",
+    "hasMaterial": false
+  },
+  {
+    "name": "［禮物］玄木算籌",
+    "family": "算盤",
+    "hasMaterial": false
+  },
+  {
+    "name": "［禮物］玄鐵鎮紙",
+    "family": "鎮紙",
+    "hasMaterial": false
+  },
+  {
+    "name": "［禮物］玉石棋子",
+    "family": "棋子",
+    "hasMaterial": false
+  },
+  {
+    "name": "［禮物］琉璃小瓶",
+    "family": "藥瓶",
+    "hasMaterial": false
+  },
+  {
+    "name": "［禮物］琉璃藥瓶",
+    "family": "藥瓶",
+    "hasMaterial": false
+  },
+  {
+    "name": "［禮物］白玉髮簪",
+    "family": "髮簪",
+    "hasMaterial": false
+  },
+  {
+    "name": "［禮物］百味藥香",
+    "family": "香盒",
+    "hasMaterial": false
+  },
+  {
+    "name": "［禮物］百花蜜糕",
+    "family": "糕點",
+    "hasMaterial": false
+  },
+  {
+    "name": "［禮物］百草香盒",
+    "family": "香盒",
+    "hasMaterial": false
+  },
+  {
+    "name": "［禮物］竹編小籃",
+    "family": "竹籃",
+    "hasMaterial": false
+  },
+  {
+    "name": "［禮物］精緻禮盒",
+    "family": "禮盒",
+    "hasMaterial": false
+  },
+  {
+    "name": "［禮物］糖葫蘆",
+    "family": "葫蘆",
+    "hasMaterial": false
+  },
+  {
+    "name": "［禮物］糖霜靈果串",
+    "family": "糖葫蘆",
+    "hasMaterial": false
+  },
+  {
+    "name": "［禮物］紅繩手串",
+    "family": "手串",
+    "hasMaterial": false
+  },
+  {
+    "name": "［禮物］紙鶴",
+    "family": "紙鶴",
+    "hasMaterial": false
+  },
+  {
+    "name": "［禮物］繡紋香囊",
+    "family": "香囊",
+    "hasMaterial": false
+  },
+  {
+    "name": "［禮物］老釀竹酒",
+    "family": "葫蘆",
+    "hasMaterial": false
+  },
+  {
+    "name": "［禮物］聚財銅錢串",
+    "family": "銅錢",
+    "hasMaterial": false
+  },
+  {
+    "name": "［禮物］落星花燈",
+    "family": "花燈",
+    "hasMaterial": false
+  },
+  {
+    "name": "［禮物］蜜漬靈果",
+    "family": "糕點",
+    "hasMaterial": false
+  },
+  {
+    "name": "［禮物］赤紋刀穗",
+    "family": "刀穗",
+    "hasMaterial": false
+  },
+  {
+    "name": "［禮物］道衛令匣",
+    "family": "禮盒",
+    "hasMaterial": false
+  },
+  {
+    "name": "［禮物］金絲酒盞",
+    "family": "茶杯",
+    "hasMaterial": false
+  },
+  {
+    "name": "［禮物］錦紋錢袋",
+    "family": "錢袋",
+    "hasMaterial": false
+  },
+  {
+    "name": "［禮物］錦繡禮冊",
+    "family": "書冊",
+    "hasMaterial": false
+  },
+  {
+    "name": "［禮物］鎮岳茶磚",
+    "family": "茶葉",
+    "hasMaterial": false
+  },
+  {
+    "name": "［禮物］雕紋酒壺",
+    "family": "酒壺",
+    "hasMaterial": false
+  },
+  {
+    "name": "［禮物］雕花木簪",
+    "family": "髮簪",
+    "hasMaterial": false
+  },
+  {
+    "name": "［禮物］雲紋手帕",
+    "family": "手帕",
+    "hasMaterial": false
+  },
+  {
+    "name": "［禮物］雲紋折扇匣",
+    "family": "禮盒",
+    "hasMaterial": false
+  },
+  {
+    "name": "［禮物］雲遊筆記",
+    "family": "書冊",
+    "hasMaterial": false
+  },
+  {
+    "name": "［禮物］靈木棋盤",
+    "family": "棋盤",
+    "hasMaterial": false
+  },
+  {
+    "name": "［禮物］靈獸木雕",
+    "family": "木雕",
+    "hasMaterial": false
+  },
+  {
+    "name": "［禮物］靈香木盒",
+    "family": "香盒",
+    "hasMaterial": false
+  },
+  {
+    "name": "［禮物］靈香禮盒",
+    "family": "禮盒",
+    "hasMaterial": false
+  },
+  {
+    "name": "［禮物］青玉小佩",
+    "family": "護符",
+    "hasMaterial": false
+  },
+  {
+    "name": "［禮物］青瓷茶杯",
+    "family": "茶杯",
+    "hasMaterial": false
+  },
+  {
+    "name": "［禮物］青羽箭飾",
+    "family": "護符",
+    "hasMaterial": false
+  },
+  {
+    "name": "［禮物］青鋒劍穗",
+    "family": "刀穗",
+    "hasMaterial": false
+  },
+  {
+    "name": "［禮物］風鈴掛飾",
+    "family": "鈴鐺",
+    "hasMaterial": false
+  },
+  {
+    "name": "［禮物］鴛鴦糕",
+    "family": "糕點",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］氣血藥水",
+    "family": "紅藥瓶",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］靈力藥水",
+    "family": "藍藥瓶",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］清露藥水",
+    "family": "藥瓶",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］凝靈藥水",
+    "family": "藥瓶",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］百靈藥水",
+    "family": "藥瓶",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］濃縮氣血藥水",
+    "family": "紅藥瓶",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］清神藥水",
+    "family": "藥瓶",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］醒目藥水",
+    "family": "藥瓶",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］寧息藥水",
+    "family": "藥瓶",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］治癒丹",
+    "family": "丹藥",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］靈癒丹",
+    "family": "丹藥",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］提靈丹",
+    "family": "丹藥",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］碧元丹",
+    "family": "丹藥",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］百草丹",
+    "family": "丹藥",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］養元丹",
+    "family": "丹藥",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］血氣丹",
+    "family": "丹藥",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］淬體丹",
+    "family": "丹藥",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］聚靈丹",
+    "family": "丹藥",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］凝元丹",
+    "family": "丹藥",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］避毒丹",
+    "family": "丹藥",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］血靈丹",
+    "family": "丹藥",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］獸元丹",
+    "family": "獸丹",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］妖元丹",
+    "family": "獸丹",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］醒神丹",
+    "family": "丹藥",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］明目丹",
+    "family": "丹藥",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］靈息丹",
+    "family": "丹藥",
+    "hasMaterial": false
+  },
+  {
+    "name": "［特殊］獸靈果丹",
+    "family": "獸丹",
+    "hasMaterial": false
+  },
+  {
+    "name": "［特殊］靈獸露丹",
+    "family": "藥瓶",
+    "hasMaterial": false
+  },
+  {
+    "name": "［特殊］藏寶圖",
+    "family": "錦袋",
+    "hasMaterial": false
+  },
+  {
+    "name": "隨機功法書",
+    "family": "書冊",
+    "hasMaterial": false
+  },
+  {
+    "name": "［特殊］月玉珮",
+    "family": "錦袋",
+    "hasMaterial": false
+  },
+  {
+    "name": "［特殊］獸技秘卷",
+    "family": "書冊",
+    "hasMaterial": false
+  },
+  {
+    "name": "［特殊］問道秘卷",
+    "family": "書冊",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］迅獸丹",
+    "family": "獸丹",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］獸戰丹",
+    "family": "獸丹",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］護獸丹",
+    "family": "獸丹",
+    "hasMaterial": false
+  },
+  {
+    "name": "［三階］紫心芝",
+    "family": "錦袋",
+    "hasMaterial": false
+  },
+  {
+    "name": "［三階］銀髓礦",
+    "family": "錦袋",
+    "hasMaterial": false
+  },
+  {
+    "name": "［三階］日陽木",
+    "family": "錦袋",
+    "hasMaterial": false
+  },
+  {
+    "name": "［三階］玄藤木",
+    "family": "錦袋",
+    "hasMaterial": false
+  },
+  {
+    "name": "［三階］日陽果",
+    "family": "錦袋",
+    "hasMaterial": false
+  },
+  {
+    "name": "［三階］月凝果",
+    "family": "錦袋",
+    "hasMaterial": false
+  },
+  {
+    "name": "［三階］熊皮",
+    "family": "錦袋",
+    "hasMaterial": false
+  },
+  {
+    "name": "［三階］赤炎鱗",
+    "family": "錦袋",
+    "hasMaterial": false
+  },
+  {
+    "name": "［三階］玄甲殼",
+    "family": "錦袋",
+    "hasMaterial": false
+  },
+  {
+    "name": "［三階］鷹羽",
+    "family": "錦袋",
+    "hasMaterial": false
+  },
+  {
+    "name": "［三階］靈獸骨",
+    "family": "錦袋",
+    "hasMaterial": false
+  },
+  {
+    "name": "［三階］裂靈牙",
+    "family": "錦袋",
+    "hasMaterial": false
+  },
+  {
+    "name": "［三階］裂靈爪",
+    "family": "錦袋",
+    "hasMaterial": false
+  },
+  {
+    "name": "［三階］靈獸精血",
+    "family": "錦袋",
+    "hasMaterial": false
+  },
+  {
+    "name": "［三階］凝靈妖丹",
+    "family": "獸丹",
+    "hasMaterial": false
+  },
+  {
+    "name": "［三階］凝魂晶",
+    "family": "寶珠",
+    "hasMaterial": false
+  },
+  {
+    "name": "［三階］寒晶角",
+    "family": "寶珠",
+    "hasMaterial": false
+  },
+  {
+    "name": "［八階］仙靈草",
+    "family": "錦袋",
+    "hasMaterial": false
+  },
+  {
+    "name": "［八階］仙金石",
+    "family": "錦袋",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］綜合藥水",
+    "family": "藥瓶",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］解毒藥水",
+    "family": "藥瓶",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］解燒藥水",
+    "family": "藥瓶",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］止血藥水",
+    "family": "藥瓶",
+    "hasMaterial": false
+  },
+  {
+    "name": "［中階］氣血藥水",
+    "family": "紅藥瓶",
+    "hasMaterial": false
+  },
+  {
+    "name": "［中階］靈力藥水",
+    "family": "藍藥瓶",
+    "hasMaterial": false
+  },
+  {
+    "name": "［中階］綜合藥水",
+    "family": "藥瓶",
+    "hasMaterial": false
+  },
+  {
+    "name": "［高階］氣血藥水",
+    "family": "紅藥瓶",
+    "hasMaterial": false
+  },
+  {
+    "name": "［高階］靈力藥水",
+    "family": "藍藥瓶",
+    "hasMaterial": false
+  },
+  {
+    "name": "［高階］綜合藥水",
+    "family": "藥瓶",
+    "hasMaterial": false
+  },
+  {
+    "name": "［仙階］氣血藥水",
+    "family": "紅藥瓶",
+    "hasMaterial": false
+  },
+  {
+    "name": "［仙階］靈力藥水",
+    "family": "藍藥瓶",
+    "hasMaterial": false
+  },
+  {
+    "name": "［仙階］綜合藥水",
+    "family": "藥瓶",
+    "hasMaterial": false
+  },
+  {
+    "name": "［天階］氣血藥水",
+    "family": "紅藥瓶",
+    "hasMaterial": false
+  },
+  {
+    "name": "［天階］靈力藥水",
+    "family": "藍藥瓶",
+    "hasMaterial": false
+  },
+  {
+    "name": "［天階］綜合藥水",
+    "family": "藥瓶",
+    "hasMaterial": false
+  },
+  {
+    "name": "寵物飼料",
+    "family": "獸糧",
+    "hasMaterial": false
+  },
+  {
+    "name": "寵物餅乾",
+    "family": "獸糧",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］道術丹",
+    "family": "丹藥",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］凝靈丹",
+    "family": "丹藥",
+    "hasMaterial": false
+  },
+  {
+    "name": "［特殊］自選一階材料箱",
+    "family": "寶箱",
+    "hasMaterial": false
+  },
+  {
+    "name": "［特殊］自選一階妖物素材箱",
+    "family": "寶箱",
+    "hasMaterial": false
+  },
+  {
+    "name": "功法殘卷",
+    "family": "書冊",
+    "hasMaterial": false
+  },
+  {
+    "name": "［特殊］綜合一階素材箱",
+    "family": "寶箱",
+    "hasMaterial": false
+  },
+  {
+    "name": "［特殊］萬靈藥水",
+    "family": "藥瓶",
+    "hasMaterial": false
+  },
+  {
+    "name": "［一階］利爪",
+    "family": "錦袋",
+    "hasMaterial": true
+  },
+  {
+    "name": "［特殊］自選一階礦物箱",
+    "family": "寶箱",
+    "hasMaterial": false
+  },
+  {
+    "name": "靈幣",
+    "family": "錦袋",
+    "hasMaterial": false
+  },
+  {
+    "name": "［特殊］自選二階素材箱",
+    "family": "寶箱",
+    "hasMaterial": false
+  },
+  {
+    "name": "［特殊］自選二階妖物素材箱",
+    "family": "寶箱",
+    "hasMaterial": false
+  },
+  {
+    "name": "［特殊］隨機功法書",
+    "family": "書冊",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］靈根丹",
+    "family": "丹藥",
+    "hasMaterial": false
+  },
+  {
+    "name": "［特殊］綜合二階素材箱",
+    "family": "寶箱",
+    "hasMaterial": false
+  },
+  {
+    "name": "［特殊］滿貫丹",
+    "family": "丹藥",
+    "hasMaterial": false
+  },
+  {
+    "name": "［特殊］災獸之魂",
+    "family": "錦袋",
+    "hasMaterial": false
+  },
+  {
+    "name": "［特殊］東州大禮包",
+    "family": "寶箱",
+    "hasMaterial": false
+  },
+  {
+    "name": "［特殊］無心之石",
+    "family": "錦袋",
+    "hasMaterial": false
+  },
+  {
+    "name": "［特殊］爆爆煙花",
+    "family": "錦袋",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］續擊丹",
+    "family": "丹藥",
+    "hasMaterial": false
+  },
+  {
+    "name": "［特殊］節能粉",
+    "family": "藥粉",
+    "hasMaterial": false
+  },
+  {
+    "name": "［特殊］良護藥劑",
+    "family": "藥瓶",
+    "hasMaterial": false
+  },
+  {
+    "name": "［特殊］成良粉",
+    "family": "藥粉",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］護體丹－水",
+    "family": "錦袋",
+    "hasMaterial": false
+  },
+  {
+    "name": "［特殊］半月水玉",
+    "family": "錦袋",
+    "hasMaterial": false
+  },
+  {
+    "name": "［初階］護體丹－土",
+    "family": "錦袋",
+    "hasMaterial": false
+  },
+  {
+    "name": "［特殊］半月山玉",
+    "family": "錦袋",
+    "hasMaterial": false
+  },
+  {
+    "name": "［特殊］玄川的護身符",
+    "family": "護符",
+    "hasMaterial": false
+  },
+  {
+    "name": "［特殊］玄川劍穗",
+    "family": "錦袋",
+    "hasMaterial": false
+  },
+  {
+    "name": "［特殊］清妍的藥囊",
+    "family": "錦袋",
+    "hasMaterial": false
+  },
+  {
+    "name": "［特殊］青羽箭飾",
+    "family": "護符",
+    "hasMaterial": false
+  },
+  {
+    "name": "［任務］命符",
+    "family": "命符",
+    "hasMaterial": false
+  },
+  {
+    "name": "［任務］無名靈印",
+    "family": "靈印",
+    "hasMaterial": false
+  },
+  {
+    "name": "［任務］靈獸之骨",
+    "family": "靈獸之骨",
+    "hasMaterial": false
+  },
+  {
+    "name": "靈草",
+    "family": "錦袋",
+    "hasMaterial": true
+  },
+  {
+    "name": "藥草",
+    "family": "錦袋",
+    "hasMaterial": true
+  },
+  {
+    "name": "靈石",
+    "family": "錦袋",
+    "hasMaterial": true
+  }
+]
