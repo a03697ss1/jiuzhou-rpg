@@ -1,0 +1,95 @@
+{
+  "rows": [
+    {
+      "name": "以原0.7.2正式頁建立四槽原始紀錄，再於同網址0.7.3讀到",
+      "pass": true,
+      "detail": [
+        {
+          "slot": "auto",
+          "name": "原角色甲",
+          "realm": "築基五層"
+        },
+        {
+          "slot": "1",
+          "name": "原角色甲",
+          "realm": "築基五層"
+        },
+        {
+          "slot": "2",
+          "name": "原角色甲",
+          "realm": "築基五層"
+        },
+        {
+          "slot": "3",
+          "name": "原角色甲",
+          "realm": "築基五層"
+        }
+      ]
+    },
+    {
+      "name": "登入畫面與存檔管理可見讀取舊版紀錄入口",
+      "pass": true,
+      "detail": {
+        "originalSlots": 4
+      }
+    },
+    {
+      "name": "測試版手動槽全滿仍能讀取原版，不覆蓋三個手動槽",
+      "pass": true,
+      "detail": {
+        "name": "原角色甲",
+        "realm": "築基五層",
+        "coins": 987654,
+        "exp": 77,
+        "place": "落星谷",
+        "version": "V0.7.3 獨立測試",
+        "manualSlotsUnchanged": true
+      }
+    },
+    {
+      "name": "原版四槽逐字不變；讀取前自動存檔有可見備份",
+      "pass": true,
+      "detail": {
+        "originalSlotsUnchanged": true,
+        "autoBackupExists": true,
+        "imports": 1
+      }
+    },
+    {
+      "name": "重整後仍可由介面讀回測試版原自動存檔",
+      "pass": true,
+      "detail": {
+        "ok": true,
+        "name": "測試角色乙",
+        "coins": 321
+      }
+    },
+    {
+      "name": "從JSON檔案匯入也建立保留副本，不覆蓋手動槽1",
+      "pass": true,
+      "detail": {
+        "name": "原角色甲",
+        "manualSlotsUnchanged": true
+      }
+    },
+    {
+      "name": "格式錯誤與空間不足時不載入、不改寫任何原版或手動槽",
+      "pass": true,
+      "detail": {
+        "invalid": false,
+        "quota": false,
+        "unchanged": true
+      }
+    },
+    {
+      "name": "另一個全新瀏覽器沒有舊檔時明示網址差異與檔案匯入",
+      "pass": true,
+      "detail": {
+        "emptySource": true,
+        "explained": true
+      }
+    }
+  ],
+  "errors": [],
+  "fixtures": "隔離瀏覽器測試資料，不是使用者Chrome的實際紀錄。"
+}

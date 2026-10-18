@@ -14,7 +14,7 @@ hooks=[
  ("function finish(b){if(!ended(b))return false;", "function finish(b){if(!ended(b))return false;if(globalThis.JZ073?.finishStoryBattle(b,!b.enemyTeam.some(f=>f.hp>0)))return true;"),
  ("const cost=20*(1-(aux?.energyBonus||0)/100);if(x.aura<cost)","const cost=0;if(x.aura<cost)"),
 ]
-isolation='''<script id="jz073-save-isolation">(()=>{const p='jz073-independent-20261017:',g=Storage.prototype.getItem,s=Storage.prototype.setItem,r=Storage.prototype.removeItem;Storage.prototype.getItem=function(k){return g.call(this,p+k)};Storage.prototype.setItem=function(k,v){return s.call(this,p+k,v)};Storage.prototype.removeItem=function(k){return r.call(this,p+k)};window.JZ073_SAVE_PREFIX=p;})();</script>'''
+isolation='''<script id="jz073-save-isolation">(()=>{const p='jz073-independent-20261017:',g=Storage.prototype.getItem,s=Storage.prototype.setItem,r=Storage.prototype.removeItem;window.JZ073_ORIGINAL_STORAGE=Object.freeze({read:key=>g.call(localStorage,key)});Storage.prototype.getItem=function(k){return g.call(this,p+k)};Storage.prototype.setItem=function(k,v){return s.call(this,p+k,v)};Storage.prototype.removeItem=function(k){return r.call(this,p+k)};window.JZ073_SAVE_PREFIX=p;})();</script>'''
 def apply(text,standalone):
  def branch_version(m):
   return m[0].replace("phase='正式'","phase='獨立測試・待玩家驗收'").replace('masterPromoted=true','masterPromoted=false').replace('V0.7.2','V0.7.3 獨立測試').replace('九州修仙錄 0.7.2','九州修仙錄 0.7.3 獨立測試')
@@ -31,7 +31,7 @@ def apply(text,standalone):
  code+='<script id="jz073-assets">window.JZ073_ART='+json.dumps(images,ensure_ascii=False).replace('</','<\\/')+';</script>\n'
  materials={v.stem:('data:image/png;base64,'+base64.b64encode(v.read_bytes()).decode() if standalone else '/素材美術_2026-10-18/'+v.name) for v in (R/'素材美術_2026-10-18').glob('*.png')}
  code+='<script id="jz073-material-assets">window.JZ073_MATERIAL_ART='+json.dumps(materials,ensure_ascii=False).replace('</','<\\/')+';</script>\n'
- for name in ['core','economy','monsters','combat','story-data','humans','quests','world','commissions','pets','codex','ui','completion','clarifications','b-data','b-story','a-data','a-story','npc-generation','test-entry','side1018-data','side1018','material1018','pet-cores1018','pet1018','status1018','release1018']:
+ for name in ['core','economy','monsters','combat','story-data','humans','quests','world','commissions','pets','codex','ui','completion','clarifications','b-data','b-story','a-data','a-story','npc-generation','test-entry','side1018-data','side1018','material1018','pet-cores1018','pet1018','status1018','release1018','save-recovery1018']:
   f=P/(name+'.js')
   if f.exists():code+='<script id="jz073-'+name+'">'+f.read_text('utf8')+'</script>\n'
  return text+code
