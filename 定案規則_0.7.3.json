@@ -60,10 +60,10 @@
       "物品": 50,
       "材料": 50,
       "裝備": 30,
-      "永久特殊": 30,
       "消耗特殊": 30
     },
     "unlimited": [
+      "永久特殊",
       "紀念品",
       "禮物",
       "任務"
@@ -101,34 +101,10 @@
         ]
       ],
       "coins": 5000
-    }
+    },
+    "individualExpiry": true,
+    "expiryDisplay": "每封信各自的遊戲年月日時間及剩餘日／小時／分鐘，讀取不重設"
   },
-  "retainedVersions": [
-    {
-      "version": "0.7.0",
-      "commit": "6b140aed11d22274166d0ab068957aa5089b223a",
-      "sha256": "41025f8ba431125bf16630185b360733de8be6259e000e1c7f1a64ab3507203a",
-      "bytes": 2320335,
-      "gzipBytes": 515606,
-      "url": "https://a03697ss1.github.io/jiuzhou-rpg/versions/0.7.0/"
-    },
-    {
-      "version": "0.7.1",
-      "commit": "be252762adee3920911f3576435695cb539ecf9f",
-      "sha256": "cde24ddc3314cdd5f5b4c197802ffbd87e01e30909aca89c3c835173397193e6",
-      "bytes": 2744038,
-      "gzipBytes": 630681,
-      "url": "https://a03697ss1.github.io/jiuzhou-rpg/versions/0.7.1/"
-    },
-    {
-      "version": "0.7.2",
-      "commit": "a420a7772dcbb75de52b87c6e2628fa87937495a",
-      "sha256": "84778599d163b9b12a165c38f7c2cbfb24dbdf22fcc76020de8271921a764cd0",
-      "bytes": 3224059,
-      "gzipBytes": 775778,
-      "url": "https://a03697ss1.github.io/jiuzhou-rpg/versions/0.7.2/"
-    }
-  ],
   "sourceModules": [
     {
       "name": "experience1019.js",
@@ -157,6 +133,10 @@
     {
       "name": "official073.js",
       "sha256": "0138c9fd73061a898ac00323a53494010ab005bfe1c35fb2ccf5b1fcaf67b77d"
+    },
+    {
+      "name": "revision8-1019.js",
+      "sha256": "b965c9008bc5ae3c6f38d25e49eae32d335e72c9548737d641989f23ab96d833"
     }
   ],
   "notInvented": [
@@ -164,5 +144,12 @@
     "背包擴充格未指定取得來源，不新增商店、配方或掉落。",
     "其餘七種新狀態無正式施加來源，保留接口與說明。",
     "金丹玩家成長未開放，築基圓滿停止突破。"
-  ]
+  ],
+  "historicalChangelog": [
+    "0.7.0",
+    "0.7.1",
+    "0.7.2"
+  ],
+  "historicalPlayableEntrances": false,
+  "build": "20261019-official073-2"
 }

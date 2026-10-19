@@ -45,6 +45,7 @@ def apply(text,standalone):
  code+='<script id="jz073-inventory-mail1019">'+(P/'inventory-mail1019.js').read_text('utf8')+'</script>\n'
  code+='<script id="jz073-inventory-art1019">'+(P/'inventory-art1019.js').read_text('utf8')+'</script>\n'
  code+='<script id="jz073-official073">'+(P/'official073.js').read_text('utf8')+'</script>\n'
+ code+='<script id="jz073-revision8-1019">'+(P/'revision8-1019.js').read_text('utf8')+'</script>\n'
  return text+code
 small=apply((P/'baseline-preview.html').read_text('utf8'),False);(P/'preview.html').write_text(small,'utf8')
 import sys
