@@ -24986,7 +24986,7 @@ const finish=N.decorate;N.decorate=()=>{finish();const banner=document.querySele
 const history=JZ072.versionHistory;JZ072.versionHistory=()=>{history();document.getElementById('modalBody')?.insertAdjacentHTML('afterbegin','<section class="card"><h2>本輪18項修正</h2><h3>新增</h3><p>裝備、各階藥品與特殊物品的獨立圖片；補齊NPC靈根資質。</p><h3>改動</h3><p>狐毛、狐尾與獸角歸妖物素材；藥品使用你提供的數值；取得來源依完整階級與當前商店核對；布告箱移到放大的布告欄下方；交談只保留暫時離開。</p><h3>BUG修復</h3><p>戰鬥血量與戰位同步、測試999重複挑戰長右、主線行動所在地限制、蘇璃同行位置、柳清妍任務入口、功法階級顯示，以及必敗戰的手動1倍與繼續提示。</p></section>');};
 })();
 </script>
-<script>window.JZ073_BUILD_ID="20261019-official073-7";</script>
+<script>window.JZ073_BUILD_ID="20261019-official073-8";</script>
 <script id="jz073-hidden-steal1019">(function(){'use strict';const N=JZ073,R=JZR;
 const drops=Object.freeze({'林夏于':'［特殊］火霞刀','蘇璃':'［特殊］靈水劍','柳清妍':'［特殊］秘術弓','邱山河':'［特殊］鹿絞槍','蘇項':'［特殊］土靈盔'});
 const names=new Set(Object.values(drops));
@@ -25562,4 +25562,14 @@ if(N.releaseHistory073){N.releaseHistory073.BUG修復.push('戰外使用藥水�
 })();
 </script>
 <script id="jz073-player-break-pill1019">(function(){'use strict';const N=JZ073,art={'［初階］破境丹':'unique-item-assets/［初階］破境丹.webp','［中階］破境丹':'unique-item-assets/［中階］破境丹.webp'},icon=N.itemIcon;N.itemIcon=function(n){return art[n]||icon.apply(this,arguments);};const names=N.allItemNames1018;N.allItemNames1018=function(){return [...new Set([...names.apply(this,arguments),...Object.keys(art)])];};if(N.releaseHistory073)N.releaseHistory073.BUG修復.push('補上初階與中階玩家用破境丹的獨立圖片，背包及圖鑑共用。');})();
+</script>
+<script id="jz073-npc-side-location1019">(function(){'use strict';const N=JZ073,U=JZ071;
+// User-confirmed correction: Lin returns to Qingyang Town after the first seal.
+const side=N.def('SQ-DZ-015');side.place='青陽鎮';R56_QUESTS[side.id].place='青陽鎮';for(const row of JZ073_SIDE1018['015'])if(row.speaker==='旁白'&&row.text==='玩家在朝御城遇見林夏于。')row.text='玩家在青陽鎮遇見林夏于。';
+const tuples=new Map();for(const data of Object.values(EAST_CONTENT))for(const row of data.npcs||[])if(!tuples.has(row[0]))tuples.set(row[0],[...row]);
+const sync=N.syncWorld;N.syncWorld=function(){if(S&&N.done('038')){const places=N.state().story.npcPlaces??={};places.林夏于='青陽鎮';}const out=sync.apply(this,arguments);if(!S)return out;const places={...N.state().story.npcPlaces};for(const p of S.partners||[])if(p.story073)places[p.name]='同行中';for(const [name,place] of Object.entries(places)){const expected=EAST_CONTENT[place],hits=Object.entries(EAST_CONTENT).flatMap(([area,data])=>(data.npcs||[]).filter(row=>row[0]===name).map(()=>area));if(hits.length===(expected?1:0)&&(!expected||hits[0]===place))continue;const row=tuples.get(name)||[name,JZNEXT.npcs[name]?.identity||JZNEXT.npcs[name]?.role||'',''];for(const data of Object.values(EAST_CONTENT))if(data.npcs)data.npcs=data.npcs.filter(row=>row[0]!==name);if(expected)(expected.npcs??=[]).push([...row]);}return out;};
+const people=renderPeople;renderPeople=function(){U.updateNpcLocations();N.syncWorld();return people.apply(this,arguments);};
+const rows=N.catalogRows1018;N.catalogRows1018=function(tab){if(tab==='NPC'){U.updateNpcLocations();N.syncWorld();}return rows.apply(this,arguments);};
+if(N.releaseHistory073)N.releaseHistory073.BUG修復.push('第一封印後林夏于在青陽鎮，圖鑑、人物列表與任務引導同步；危險區改在青陽鎮接取，保留兩日等待、完整對話與一次性獎勵。修復其他主線NPC人物列表仍使用舊固定位置的問題。');
+})();
 </script>

@@ -1,0 +1,246 @@
+{
+  "rows": [
+    {
+      "name": "第一封印後四位NPC圖鑑、人物列表一致，各自僅出現一處",
+      "pass": true,
+      "detail": [
+        {
+          "name": "林夏于",
+          "area": "青陽鎮",
+          "places": [
+            "青陽鎮"
+          ]
+        },
+        {
+          "name": "邱山河",
+          "area": "朝御城",
+          "places": [
+            "朝御城"
+          ]
+        },
+        {
+          "name": "沈玄川",
+          "area": "青陽山",
+          "places": [
+            "青陽山"
+          ]
+        },
+        {
+          "name": "柳清妍",
+          "area": "落星谷",
+          "places": [
+            "落星谷"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "其他可見NPC圖鑑所在地與人物實際所在地核對",
+      "pass": true,
+      "detail": [
+        {
+          "name": "邱山河",
+          "codex": "朝御城",
+          "actual": [
+            "朝御城"
+          ]
+        },
+        {
+          "name": "林夏于",
+          "codex": "青陽鎮",
+          "actual": [
+            "青陽鎮"
+          ]
+        },
+        {
+          "name": "賈金發",
+          "codex": "朝御城",
+          "actual": [
+            "朝御城"
+          ]
+        },
+        {
+          "name": "林熙",
+          "codex": "朝御城",
+          "actual": [
+            "朝御城"
+          ]
+        },
+        {
+          "name": "林旺",
+          "codex": "朝御城",
+          "actual": [
+            "朝御城"
+          ]
+        },
+        {
+          "name": "李大發",
+          "codex": "朝御城",
+          "actual": [
+            "朝御城"
+          ]
+        },
+        {
+          "name": "萬錢坤",
+          "codex": "朝御城",
+          "actual": [
+            "朝御城"
+          ]
+        },
+        {
+          "name": "金燦燦",
+          "codex": "青陽鎮",
+          "actual": [
+            "青陽鎮"
+          ]
+        },
+        {
+          "name": "東方算",
+          "codex": "東嶺鎮",
+          "actual": [
+            "東嶺鎮"
+          ]
+        },
+        {
+          "name": "張榕真",
+          "codex": "天海港",
+          "actual": [
+            "天海港"
+          ]
+        },
+        {
+          "name": "蘇項",
+          "codex": "落星谷",
+          "actual": [
+            "落星谷"
+          ]
+        },
+        {
+          "name": "沈玄川",
+          "codex": "青陽山",
+          "actual": [
+            "青陽山"
+          ]
+        },
+        {
+          "name": "柳清妍",
+          "codex": "落星谷",
+          "actual": [
+            "落星谷"
+          ]
+        },
+        {
+          "name": "黃蕭",
+          "codex": "東州傳送塔",
+          "actual": [
+            "東州傳送塔"
+          ]
+        },
+        {
+          "name": "韓鐵生",
+          "codex": "碧潮鎮",
+          "actual": [
+            "碧潮鎮"
+          ]
+        },
+        {
+          "name": "雲知秋",
+          "codex": "東嶺鎮",
+          "actual": [
+            "東嶺鎮"
+          ]
+        },
+        {
+          "name": "阿禾",
+          "codex": "朝御城",
+          "actual": [
+            "朝御城"
+          ]
+        },
+        {
+          "name": "寧寧",
+          "codex": "朝御城",
+          "actual": [
+            "朝御城"
+          ]
+        },
+        {
+          "name": "小燕",
+          "codex": "雷鳴沼",
+          "actual": [
+            "雷鳴沼"
+          ]
+        },
+        {
+          "name": "沈菜芳",
+          "codex": "朝御城",
+          "actual": [
+            "朝御城"
+          ]
+        },
+        {
+          "name": "陳蘭",
+          "codex": "朝御城",
+          "actual": [
+            "朝御城"
+          ]
+        },
+        {
+          "name": "吳大海",
+          "codex": "朝御城",
+          "actual": [
+            "朝御城"
+          ]
+        },
+        {
+          "name": "陳東娘",
+          "codex": "朝御城",
+          "actual": [
+            "朝御城"
+          ]
+        },
+        {
+          "name": "柑橘",
+          "codex": "碧潮鎮",
+          "actual": [
+            "碧潮鎮"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "危險區保留兩日門檻，到期後青陽鎮NPC接取按鈕確實開啟劇情",
+      "pass": true,
+      "detail": {
+        "flow": "015",
+        "first": "玩家在青陽鎮遇見林夏于。",
+        "place": "青陽鎮",
+        "definition": "青陽鎮"
+      }
+    },
+    {
+      "name": "危險區完整交談後發300靈幣一次、解鎖入口，存讀檔不重領",
+      "pass": true,
+      "detail": {
+        "coins": 900,
+        "repeat": false,
+        "claimed": true,
+        "complete": true,
+        "unlocked": true,
+        "known": true,
+        "loaded": 900,
+        "place": "青陽鎮"
+      }
+    },
+    {
+      "name": "與山河聊聊仍維持B線資格及朝御城接取，其他支線未改",
+      "pass": true,
+      "detail": {
+        "b": true,
+        "a": false,
+        "place": "朝御城"
+      }
+    }
+  ],
+  "errors": []
+}

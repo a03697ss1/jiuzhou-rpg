@@ -61,6 +61,7 @@ def apply(text,standalone):
  import importlib.util
  sp=importlib.util.spec_from_file_location('heal_dot1019',P/'heal-dot1019.py');mod=importlib.util.module_from_spec(sp);sp.loader.exec_module(mod);text=mod.patch(text)
  code+='<script id="jz073-player-break-pill1019">'+(P/'player-break-pill1019.js').read_text('utf8')+'</script>\n'
+ code+='<script id="jz073-npc-side-location1019">'+(P/'npc-side-location1019.js').read_text('utf8')+'</script>\n'
  return text+code
 small=apply((P/'baseline-preview.html').read_text('utf8'),False);(P/'preview.html').write_text(small,'utf8')
 import sys
