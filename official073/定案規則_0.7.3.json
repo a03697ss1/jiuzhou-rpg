@@ -103,7 +103,8 @@
       "coins": 5000
     },
     "individualExpiry": true,
-    "expiryDisplay": "每封信各自的遊戲年月日時間及剩餘日／小時／分鐘，讀取不重設"
+    "expiryDisplay": "每封信各自的遊戲年月日時間及剩餘日／小時／分鐘，讀取不重設",
+    "claimCurrencyDisplay": "領取當下刷新左側靈幣，顯示本次增加金額及餘額；同步儲存入帳與附件已領取狀態，不重複補發。"
   },
   "sourceModules": [
     {
@@ -137,6 +138,10 @@
     {
       "name": "revision8-1019.js",
       "sha256": "b965c9008bc5ae3c6f38d25e49eae32d335e72c9548737d641989f23ab96d833"
+    },
+    {
+      "name": "mail-refresh1019.js",
+      "sha256": "61178052bc322545a6e9a111706f04361e95803244b358fadabbab618c704b7f"
     }
   ],
   "notInvented": [
@@ -151,5 +156,5 @@
     "0.7.2"
   ],
   "historicalPlayableEntrances": false,
-  "build": "20261019-official073-2"
+  "build": "20261019-official073-3"
 }

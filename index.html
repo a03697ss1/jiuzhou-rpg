@@ -25055,7 +25055,7 @@ const style=document.createElement('style');style.textContent=`
 const finish=N.finishStoryBattle;N.finishStoryBattle=function(b){const out=finish.apply(this,arguments);if(b?.jz073Story&&battle!==b&&document.querySelector('#modalBody .bmv1-canvas'))closeModal();if(b?.jz073Story&&battle!==b){document.getElementById('modalBack')?.classList.remove('bmv1-active','battle-locked');}return out;};
 })();
 </script>
-<script>window.JZ073_BUILD_ID="20261019-official073-2";</script>
+<script>window.JZ073_BUILD_ID="20261019-official073-3";</script>
 <script id="jz073-equipment1019">(function(){'use strict';const N=JZ073;
 const gearName=value=>{let name=String(value||'').trim().replace(/^.+?[：:]\s*/,'').replace(/\s*[×x]\s*\d+\s*$/,'').trim();return name&&name!=='無'&&(R546_GEAR_FULL[name]||R546_GEAR_FULL[JZ072.baseGear(name)])?name:null;};
 N.decorateEquipment19=root=>{if(!root)return;for(const entry of root.querySelectorAll('.card,.equipment-slot,.r513-equip')){if(entry.closest('.jz-library,.jz-help-shell')||entry.querySelector('.card,.equipment-slot,.r513-equip'))continue;const heading=entry.querySelector('b,strong')?.textContent;let name=gearName(entry.dataset.item||heading);if(!name&&entry.matches('.r513-equip')){const label=entry.querySelector('span')?.textContent||'';name=gearName(entry.textContent.trim().slice(label.trim().length));}if(!name)continue;entry.dataset.itemProduct=name;if(entry.querySelector('.jz-item-image'))continue;const copy=document.createElement('div');copy.className='jz19-equipment-copy';while(entry.firstChild)copy.append(entry.firstChild);entry.append(copy);entry.insertAdjacentHTML('afterbegin',N.itemImage1018(name,'jz19-equipment-icon'));entry.classList.add('jz19-equipment-card');}};
@@ -25433,5 +25433,19 @@ const css=document.createElement('style');css.id='jz-revision8-1019';css.textCon
 .jz-catalog-grid{display:grid!important;grid-template-columns:repeat(auto-fill,minmax(min(100%,290px),1fr))!important;gap:14px!important;align-items:start!important}.jz-catalog-grid>.jz-catalog-card{height:490px!important;min-height:490px!important;max-height:490px!important;width:100%!important;box-sizing:border-box;display:flex!important;flex-direction:column!important;overflow:hidden!important;margin:0!important}.jz-catalog-card>.jz-catalog-image{height:150px!important;min-height:150px!important;max-height:150px!important;width:100%!important;flex:none!important;overflow:hidden}.jz-catalog-image img{width:100%!important;height:150px!important;object-fit:contain!important}.jz-catalog-card>.jz-catalog-heading{height:74px;min-height:74px;max-height:74px;overflow:auto;flex:none}.jz-catalog-card>.jz-catalog-details{min-height:0;flex:1;overflow:auto!important;scrollbar-width:thin}.jz-mail-card p{overflow-wrap:anywhere;line-height:1.6}#jz-save-feedback{color:#c6ecad}
 @media(max-width:560px){.jz-fixed-bag>.jz-slot-copy{font-size:15px!important}.jz-fixed-bag .jz-slot-copy b{font-size:16px!important}.jz-catalog-grid{grid-template-columns:1fr!important}}
 `;document.head.append(css);if(N.paintOfficial073)N.paintOfficial073();
+})();
+</script>
+<script id="jz073-mail-refresh1019">(function(){'use strict';const N=JZ073,B=N.inventory1019;
+const claim=B.claim;B.claim=function(){const before=Number(S?.coins)||0,out=claim.apply(this,arguments);if(out!==true)return out;const received=(Number(S?.coins)||0)-before;
+if(received>0){
+ // The attachment and balance already change together in the original claim.
+ // Refresh the sidebar without closing the letter or rerendering the page.
+ renderPlayer();
+ const body=document.getElementById('modalBody');if(body){const status=document.createElement('p');status.className='jz-mail-coin-receipt';status.setAttribute('role','status');status.style.cssText='color:#f1d28a;padding:12px;border:1px solid #8e753c;border-radius:8px';status.textContent='已領取靈幣＋'+received.toLocaleString('zh-TW')+'，目前持有 '+S.coins.toLocaleString('zh-TW')+' 靈幣。';body.prepend(status);}
+ log('📮 信件領取：靈幣＋'+received+'。');
+ // Persist the balance and consumed attachment in the same immediate snapshot.
+ r4WriteSave('auto',{silent:true});
+}return out;};
+if(N.releaseHistory073&&!N.releaseHistory073.BUG修復.includes('信件領取靈幣時即時刷新餘額與入帳提示，避免數字延遲更新。'))N.releaseHistory073.BUG修復.push('信件領取靈幣時即時刷新餘額與入帳提示，避免數字延遲更新。');
 })();
 </script>
