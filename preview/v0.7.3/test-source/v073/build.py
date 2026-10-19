@@ -57,6 +57,10 @@ def apply(text,standalone):
  code+='<script id="jz073-wendao-auto1019">'+(P/'wendao-auto1019.js').read_text('utf8')+'</script>\n'
  code+='<script id="jz073-wave-vitals1019">'+(P/'wave-vitals1019.js').read_text('utf8')+'</script>\n'
  code+='<script id="jz073-three-hotfix1019">'+(P/'three-hotfix1019.js').read_text('utf8')+'</script>\n'
+ code+='<script id="jz073-five-fixes1019">'+(P/'five-fixes1019.js').read_text('utf8')+'</script>\n'
+ import importlib.util
+ sp=importlib.util.spec_from_file_location('heal_dot1019',P/'heal-dot1019.py');mod=importlib.util.module_from_spec(sp);sp.loader.exec_module(mod);text=mod.patch(text)
+ code+='<script id="jz073-player-break-pill1019">'+(P/'player-break-pill1019.js').read_text('utf8')+'</script>\n'
  return text+code
 small=apply((P/'baseline-preview.html').read_text('utf8'),False);(P/'preview.html').write_text(small,'utf8')
 import sys

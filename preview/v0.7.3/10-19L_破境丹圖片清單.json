@@ -1,0 +1,16 @@
+[
+  {
+    "name": "［初階］破境丹",
+    "original": "V0.7.3_五項修正_2026-10-19\\［初階］破境丹.png",
+    "icon": "unique-item-assets/［初階］破境丹.webp",
+    "tool": "built-in image_gen",
+    "prompt": "仙俠初階破境丹，琥珀金色丹藥，簡單青銅藥碟，透明背景，無字。"
+  },
+  {
+    "name": "［中階］破境丹",
+    "original": "V0.7.3_五項修正_2026-10-19\\［中階］破境丹.png",
+    "icon": "unique-item-assets/［中階］破境丹.webp",
+    "tool": "built-in image_gen",
+    "prompt": "仙俠中階破境丹，青玉金紋丹藥，精細玉銅藥碟與藍金靈氣，透明背景，無字。"
+  }
+]

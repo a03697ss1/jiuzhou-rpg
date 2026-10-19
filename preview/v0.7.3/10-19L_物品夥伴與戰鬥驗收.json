@@ -1,0 +1,212 @@
+{
+  "rows": [
+    {
+      "name": "戰外背包實際使用藥水即時更新左側氣血與靈力，存讀檔保留",
+      "pass": true,
+      "detail": {
+        "hp": 51,
+        "mp": 21,
+        "text": "\n  \n   \n   \n    測試999\n    少男\n    練氣二層\n    點擊查看角色狀態\n   \n  \n  ❤️ 氣血51 / 128\n  🔵 靈力21 / 47\n  ✨ 修為0 / 125\n  \n ⚔️ 戰力 132🪙 靈幣600其他資訊出戰寵物修為目前沒有出戰寵物。出戰夥伴修為目前沒有出戰夥伴。",
+        "loaded": [
+          51,
+          21
+        ]
+      }
+    },
+    {
+      "name": "神秘奇藥有敘述與使用鍵，八核真實永久加1且不可重複耗用",
+      "pass": true,
+      "detail": {
+        "diff": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "before": 1,
+        "count": 0,
+        "same": true
+      }
+    },
+    {
+      "name": "劇情夥伴取代寵物後，離隊自動恢復兩隻寵物原戰位與存檔",
+      "pass": true,
+      "detail": {
+        "displaced": true,
+        "formation": {
+          "front1": "player",
+          "front2": "pet:0",
+          "back1": "pet:1",
+          "back2": null
+        },
+        "active": [
+          0,
+          1
+        ],
+        "pets": [
+          {
+            "hp": 50,
+            "mp": 20,
+            "deployed": true
+          },
+          {
+            "hp": 40,
+            "mp": 10,
+            "deployed": true
+          }
+        ],
+        "before": [
+          {
+            "hp": 50,
+            "mp": 20
+          },
+          {
+            "hp": 40,
+            "mp": 10
+          }
+        ],
+        "loaded": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "name": "主線三青臭蟲實際勝利同時計入新舊委託，錯誤地圖不計且不重複",
+      "pass": true,
+      "detail": [
+        {
+          "id": "test-old",
+          "kills": 3,
+          "done": true
+        },
+        {
+          "id": "test-new",
+          "kills": 3,
+          "done": true
+        },
+        {
+          "id": "test-wrong",
+          "kills": 0
+        }
+      ]
+    },
+    {
+      "name": "正式回瀾術可對中毒者施放；回合末先持續傷害再療癒，致死不可復活",
+      "pass": true,
+      "detail": {
+        "why": "",
+        "cast": {
+          "ok": true,
+          "targets": [
+            {
+              "maxhp": 200,
+              "maxmp": 1000,
+              "atk": 14,
+              "dao": 20,
+              "def": 10,
+              "daoDef": 10,
+              "agi": 12,
+              "hit": 13,
+              "name": "狀態測試",
+              "type": "enemy",
+              "tier": "一般種",
+              "realm": "大乘圓滿",
+              "attr": "木",
+              "element": "木",
+              "effectHit": 100,
+              "effectResist": 100,
+              "critRate": 5,
+              "critDamage": 150,
+              "elementPower": 3,
+              "elementDamage": {
+                "火": 0,
+                "水": 0,
+                "土": 0,
+                "木": 3,
+                "雷": 0,
+                "風": 0,
+                "光": 0,
+                "暗": 0
+              },
+              "hp": 0,
+              "mp": 978,
+              "status": [],
+              "skills": [
+                "揮擊"
+              ],
+              "jzCanonical": true,
+              "jzArea": "青陽山",
+              "combatPower": 141,
+              "mainRoot": "水",
+              "jzw": {
+                "temp": [],
+                "firstSkill": true,
+                "mpRecovered": false,
+                "earthShield": false,
+                "firstStatus": false,
+                "umbrella": false,
+                "target": null,
+                "combo": 0
+              },
+              "jzrFx": {
+                "temp": [],
+                "shieldUsed": {}
+              },
+              "jz073DreamWasAsleep": false,
+              "jz1009Pills": []
+            }
+          ]
+        },
+        "coexist": true,
+        "round": 3,
+        "logs": [
+          "狀態測試獲得「中毒」2回合。",
+          "狀態測試施展回瀾術，消耗22靈力。",
+          "狀態測試獲得「療癒」2回合。",
+          "狀態測試氣血 50 → 48。",
+          "狀態測試氣血 48 → 74。"
+        ],
+        "hp": 74,
+        "dead": 0,
+        "pending": ""
+      }
+    },
+    {
+      "name": "自動戰鬥療癒與中毒共存跨回合後正常結束，不再出現設定待定",
+      "pass": true,
+      "detail": {
+        "round": 2,
+        "dead": true,
+        "text": "\n    詳細戰鬥資訊測試999其他資訊氣血 4598/5018靈力 5000/5008攻 5004道 5004防 81道防 81身 10000命 10004境界 築基圓滿戰力 41285主靈根：火Buff［療癒］Debuff［中毒］沈玄川其他資訊氣血 265/265靈力 166/176攻 36道 35防 16道防 23身 27命 33境界 練氣五層戰力 335主靈根：水Buff無Debuff無柳清妍其他資訊氣血 629/639靈力 238/260攻 67道 43防 41道防 38身 39命 50境界 練氣圓滿戰力 581主靈根：木Buff無Debuff無原寵一氣血 34/137靈力 15/57攻 14道 14防 10道防 10身 12命 13境界 練氣五層戰力 141屬性：木Buff無Debuff無揮擊青木狼氣血 0/137靈力 57/57攻 14道 14防 10道防 10身 12命 13境界 練氣五層戰力 141屬性：木Buff無Debuff無揮擊\n      \n      \n      敵方\n      \n    \n      \n      \n      \n      \n      \n      \n      \n      \n    \n      \n\n      \n        \n        青木狼\n        \n          \n            氣血\n            \n            0/137\n          \n          \n            靈力\n            \n            57/57\n          \n        \n      \n    \n    後排1\n  \n      空位\n      後排2\n    \n      空位\n      前排1\n    \n      空位\n      前排2\n    \n      我方\n      \n    \n    \n\n    \n      測試999\n    \n\n    \n      \n        氣血\n        \n        4,598/5,018\n      \n      \n        靈力\n        \n        5,000/5,008\n      \n    \n\n    前排1\n  \n    \n    \n\n    \n      沈玄川\n    \n\n    \n      \n        氣血\n        \n        265/265\n      \n      \n        靈力\n        \n        166/176\n      \n    \n\n    前排2\n  \n    \n    \n\n    \n      柳清妍\n    \n\n    \n      \n        氣血\n        \n        629/639\n      \n      \n        靈力\n        \n        238/260\n      \n    \n\n    後排1\n  \n    \n      \n      \n      \n      \n      \n      \n      \n      \n    \n      \n\n      \n        \n        原寵一\n        \n          \n            氣血\n            \n            34/137\n          \n          \n            靈力\n            \n            15/57\n          \n        \n      \n    \n    後排2\n  \n    \n    \n\n    \n    普攻\n    功法\n    背包\n    防禦\n    逃跑\n    停止自動戰鬥速度 1.0×1.5×\n  \n\n    \n      第 2 回合一般戰鬥\n      \n        行動順序\n        ✓ 測試999▶ 柳清妍3 沈玄川4 原寵一5 青木狼（倒地）\n      \n      \n        戰鬥日誌\n        遭遇 青木狼！輪到測試999行動。測試999獲得「中毒」2回合。測試999獲得「療癒」2回合。測試999氣血 3000 → 2997。測試999氣血 2997 → 4598。輪到測試999行動。測試999施展普通攻擊。青木狼氣血 137 → 0。\n      \n    \n\n    主戰場 1300×800 / 中心 X=650\n    底部操作區 1300×100\n    右側資訊區 300×900\n  "
+      }
+    },
+    {
+      "name": "玩家初階及中階破境丹背包圖片均實際載入、獨立圖且保留寵物版",
+      "pass": true,
+      "detail": [
+        {
+          "name": "［初階］破境丹",
+          "icon": "unique-item-assets/［初階］破境丹.webp"
+        },
+        {
+          "name": "［中階］破境丹",
+          "icon": "unique-item-assets/［中階］破境丹.webp"
+        },
+        {
+          "name": "［初階］寵物用破境丹",
+          "icon": "unique-item-assets/［初階］寵物用破境丹.webp"
+        },
+        {
+          "name": "［中階］寵物用破境丹",
+          "icon": "unique-item-assets/［中階］寵物用破境丹.webp"
+        }
+      ]
+    }
+  ],
+  "errors": []
+}
