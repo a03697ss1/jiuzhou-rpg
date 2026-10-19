@@ -17533,7 +17533,7 @@ function createJZCombat(records, env={}) {
    if(JSON.stringify(existing.mods||null)!==JSON.stringify(op.mods||null)||(existing.value??null)!==(op.value??null))return '同名狀態不同強度覆蓋政策待定';
   }
   if((op.name==='冰凍'&&has(f,'減傷'))||(op.name==='減傷'&&has(f,'冰凍')))return '「冰凍」與「減傷」並存乘區待定';
-  if((dot[op.name]&&has(f,'療癒'))||(op.name==='療癒'&&allStates(f).some(s=>dot[s.name])))return '持續傷害與「療癒」同時結算先後待定';
+
   return '';
  }
  function preflight(b,f,r,targets){const extraReason=globalThis.JZR?.castRestriction(b,f,r,targets);if(extraReason)return extraReason;let reason=legal(b,f,r);if(reason)return reason;if(!targets.length)return '没有合法目標';
@@ -17635,10 +17635,10 @@ function createJZCombat(records, env={}) {
   if(confused&&r.target==='enemyAll'&&rng()<.5){const mp=cost(f,r);f.mp-=mp;init(f).cd[r.id]=(b.round||1)+r.cd+1;event(b,{type:'cast',id:r.id,actor:f.name,cost:mp});globalThis.JZ26?.castUsed(b,f,r);if(has(f,'迷茫')&&rng()<.5){event(b,{type:'fizzle',actor:f.name,id:r.id});return {ok:true,fizzle:true};}resolve(b,f,r,sides(b,f)[0].filter(alive));return {ok:true};}
   return cast(b,f,r,selection);
  }
- function endRound(b){if(b.jzEndedRound===b.round)return;const actors=[...b.playerTeam,...b.enemyTeam];if(!b.jzpAllowHealDots&&actors.some(f=>alive(f)&&allStates(f).some(s=>dot[s.name])&&has(f,'療癒'))){b.jzPending='持續傷害與持續治療結算先後待定';return false;}for(const f of actors){
+ function endRound(b){if(b.jzEndedRound===b.round)return;const actors=[...b.playerTeam,...b.enemyTeam];for(const f of actors){
    if(!alive(f))continue;const states=allStates(f);
-   if(!b.jzpAllowHealDots&&states.some(s=>dot[s.name])&&has(f,'療癒')){b.jzPending='持續傷害與持續治療結算先後待定';return false;}
-   for(const s of [...states].reverse()){
+
+   for(const s of [...states].reverse().sort((a,b)=>(dot[a.name]?0:a.name==='療癒'?2:1)-(dot[b.name]?0:b.name==='療癒'?2:1))){
     if(!alive(f))break;if(!allStates(f).includes(s))continue;
     if(dot[s.name]){b.jzwCurrentRule=byId[s.skillId]||b.jzwCurrentRule;hurt(b,s.source,f,Math.max(1,Math.round(s.tick*multiplier(s.source,f,false))),false);}
     if(s.name==='療癒')restore(b,s.source,f,s.snapshot.dao*.3+s.snapshot.mp*.02);
@@ -25055,7 +25055,7 @@ const style=document.createElement('style');style.textContent=`
 const finish=N.finishStoryBattle;N.finishStoryBattle=function(b){const out=finish.apply(this,arguments);if(b?.jz073Story&&battle!==b&&document.querySelector('#modalBody .bmv1-canvas'))closeModal();if(b?.jz073Story&&battle!==b){document.getElementById('modalBack')?.classList.remove('bmv1-active','battle-locked');}return out;};
 })();
 </script>
-<script>window.JZ073_BUILD_ID="20261019-official073-6";</script>
+<script>window.JZ073_BUILD_ID="20261019-official073-7";</script>
 <script id="jz073-equipment1019">(function(){'use strict';const N=JZ073;
 const gearName=value=>{let name=String(value||'').trim().replace(/^.+?[：:]\s*/,'').replace(/\s*[×x]\s*\d+\s*$/,'').trim();return name&&name!=='無'&&(R546_GEAR_FULL[name]||R546_GEAR_FULL[JZ072.baseGear(name)])?name:null;};
 N.decorateEquipment19=root=>{if(!root)return;for(const entry of root.querySelectorAll('.card,.equipment-slot,.r513-equip')){if(entry.closest('.jz-library,.jz-help-shell')||entry.querySelector('.card,.equipment-slot,.r513-equip'))continue;const heading=entry.querySelector('b,strong')?.textContent;let name=gearName(entry.dataset.item||heading);if(!name&&entry.matches('.r513-equip')){const label=entry.querySelector('span')?.textContent||'';name=gearName(entry.textContent.trim().slice(label.trim().length));}if(!name)continue;entry.dataset.itemProduct=name;if(entry.querySelector('.jz-item-image'))continue;const copy=document.createElement('div');copy.className='jz19-equipment-copy';while(entry.firstChild)copy.append(entry.firstChild);entry.append(copy);entry.insertAdjacentHTML('afterbegin',N.itemImage1018(name,'jz19-equipment-icon'));entry.classList.add('jz19-equipment-card');}};
@@ -25549,4 +25549,17 @@ const end=C.endRound;C.endRound=function(b){const out=end.apply(this,arguments);
 const style=document.createElement('style');style.id='jz-risk-tail-attached1019';style.textContent='.bsv2-card>.jz-risk-tail-outside{right:-31px!important}';document.head.append(style);
 if(N.releaseHistory073)N.releaseHistory073.BUG修復.push('［異相再次發生］顯示破境後兩個遊戲日等待與剩餘時間，到時立即更新；超過30回合清除戰鬥全螢幕並提供返回；高危種框外尾巴貼住戰位框。');
 })();
+</script>
+<script id="jz073-five-fixes1019">(function(){'use strict';const N=JZ073,R=JZR,W=JZW,U=JZ071,keys=['maxhp','maxmp','atk','dao','def','daoDef','agi','hit'],medicine='［特殊］神秘奇藥';
+const desc=W.itemDescription;W.itemDescription=function(n){return U.short(n)==='神秘奇藥'?'能永久提升使用者「八核」全數值＋1。':desc.apply(this,arguments);};
+const use=W.useItem;W.useItem=function(n){if(U.short(n)==='神秘奇藥'){if(battle||!R.count(n)||!R.take(n))return false;S.dao=Number(S.dao??S.atk??0);S.daoDef=Number(S.daoDef??S.def??0);for(const k of keys)S[k]=Number(S[k]||0)+1;S.hp=Math.min(r4Core().maxhp,S.hp+1);S.mp=Math.min(r4Core().maxmp,S.mp+1);log('使用神秘奇藥：八核全部永久＋1。');R.save();renderPlayer();renderPage();return true;}const outside=!battle,out=use.apply(this,arguments);if(outside&&out!==false&&!battle){renderPlayer();R.save();}return out;};
+const bag=renderBag;renderBag=function(){const root=JZ072.fragment(bag.apply(this,arguments));for(const card of root.querySelectorAll('[data-item-product]'))if(U.short(card.dataset.itemProduct)==='神秘奇藥'&&!card.querySelector('button[onclick*="useItem"]')){const host=card.querySelector('.jz-slot-actions')||card;host.insertAdjacentHTML('beforeend','<button onclick="JZW.useItem(\''+N.esc(card.dataset.itemProduct)+'\')">使用</button>');}return root.innerHTML;};
+const set=N.setStoryParty;N.setStoryParty=function(names){const story=N.state().story;if(!story.petReturn1019){const saved=story.savedFormation||S.formation||{};story.petReturn1019=Object.entries(saved).filter(([s,id])=>id?.startsWith('pet:')).map(([slot,id])=>{const index=Number(id.slice(4)),p=S.pets[index];return p?{slot,index,name:p.name,species:p.species}:null;}).filter(Boolean);}N.changingStoryPets1019=true;try{return set.apply(this,arguments);}finally{N.changingStoryPets1019=false;}};
+const clear=N.clearStoryParty;N.clearStoryParty=function(){const story=N.state().story,released=(S.partners||[]).filter(p=>p.story073).map(p=>p.name),out=clear.apply(this,arguments);if(N.changingStoryPets1019)return out;const saved=story.petReturn1019||Object.entries(story.savedFormation||{}).filter(([s,id])=>id?.startsWith('pet:')).map(([slot,id])=>{const index=Number(id.slice(4));return {slot,index,name:S.pets[index]?.name}});if(saved.length){for(const [slot,id] of Object.entries(S.formation||{}))if(id?.startsWith('npc:')&&released.includes(id.slice(4)))S.formation[slot]=null;for(const row of saved){const p=S.pets[row.index],id='pet:'+row.index;if(!p||p.name!==row.name||JZV2.dead(p)||Object.values(S.formation).includes(id))continue;if(Object.values(S.formation).filter(v=>v?.startsWith('pet:')).length>=2)break;const slot=!S.formation[row.slot]?row.slot:['front1','front2','back1','back2'].find(k=>!S.formation[k]);if(slot)S.formation[slot]=id;}S.petActive=Object.values(S.formation).filter(v=>v?.startsWith('pet:')).map(v=>Number(v.slice(4)));for(let i=0;i<S.pets.length;i++)S.pets[i].deployed=S.petActive.includes(i);}delete story.petReturn1019;delete story.savedFormation;R.save();return out;};
+const start=N.startStoryFight;N.startStoryFight=function(){const before=battle,out=start.apply(this,arguments);if(battle&&battle!==before){battle.v071Place=S.place;battle.commissionBefore1019=Object.fromEntries(S.quests.filter(q=>q.type==='委託'&&!q.claimed).map(q=>[q.id,N.clone(q.progress||{})]));}return out;};
+const finish=N.finishStoryBattle;N.finishStoryBattle=function(b,win){const out=finish.apply(this,arguments);if(!b?.jz073Story||!win||battle===b||b.commissionReconciled1019)return out;b.commissionReconciled1019=true;const foes=b.enemyTeam.filter(f=>f.hp<=0&&JZMON.byName[N.canonical(f.name)]),area=b.v071Place;for(const [id,before] of Object.entries(b.commissionBefore1019||{})){const q=U.quest(id);if(!q||q.claimed)continue;const g=q.goal,p=q.progress??={};if(!g||g.area&&g.area!==area)continue;const count=r=>foes.filter(f=>(!r.species||r.species.includes(N.canonical(f.name)))&&(!r.tier||f.tier===r.tier)&&(!r.realm||f.realm===r.realm)).length;if(g.kill||g.killAny||g.kind==='kills'){const n=count({species:g.kill?[g.kill]:g.killAny||(!g.any?g.species:null),tier:g.tier});p.kills=Math.max(p.kills||0,(before.kills||0)+n);if(g.g73)q.done=N.readyCommission(q);else q.done=(p.kills||0)>=g.qty;}if(g.kind==='multiKills'){p.counts??=g.requirements.map(()=>0);g.requirements.forEach((r,i)=>p.counts[i]=Math.max(p.counts[i]||0,(before.counts?.[i]||0)+count({...r,species:[r.species]})));q.done=N.readyCommission(q);}r56SyncQuestArchive(q);}R.save();renderQuests();return out;};
+if(N.releaseHistory073){N.releaseHistory073.BUG修復.push('戰外使用藥水即時更新角色資訊；劇情夥伴離隊後恢復被換下的寵物；主線妖物擊殺同步符合條件的已接委託；療癒與持續傷害並存不再卡住。');N.releaseHistory073.改動.push('神秘奇藥補上敘述與使用入口，使用後永久提升八核全部＋1。');}
+})();
+</script>
+<script id="jz073-player-break-pill1019">(function(){'use strict';const N=JZ073,art={'［初階］破境丹':'unique-item-assets/［初階］破境丹.webp','［中階］破境丹':'unique-item-assets/［中階］破境丹.webp'},icon=N.itemIcon;N.itemIcon=function(n){return art[n]||icon.apply(this,arguments);};const names=N.allItemNames1018;N.allItemNames1018=function(){return [...new Set([...names.apply(this,arguments),...Object.keys(art)])];};if(N.releaseHistory073)N.releaseHistory073.BUG修復.push('補上初階與中階玩家用破境丹的獨立圖片，背包及圖鑑共用。');})();
 </script>

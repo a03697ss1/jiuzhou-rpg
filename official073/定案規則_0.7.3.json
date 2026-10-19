@@ -190,6 +190,18 @@
     {
       "name": "three-hotfix1019.js",
       "sha256": "c1313fd5ebe44efa87eeb19d432f7487e6ecd848b095ca3bc28bb83a29b68e92"
+    },
+    {
+      "name": "five-fixes1019.js",
+      "sha256": "2062cb1b2fc8f61da4be5b1d9cf444ae628dfe52d5f65e98d9cf88efbbb6dbfd"
+    },
+    {
+      "name": "player-break-pill1019.js",
+      "sha256": "ec12a5df511b3dfd5296b1ff79ca124958d2f0f290fef83c6b0fd7f785480995"
+    },
+    {
+      "name": "heal-dot1019.py",
+      "sha256": "5db495b9b0a5d6012c29eae0813d3169a2571129c415a03e1755d2dfdc9c8de9"
     }
   ],
   "notInvented": [
@@ -204,7 +216,7 @@
     "0.7.2"
   ],
   "historicalPlayableEntrances": false,
-  "build": "20261019-official073-6",
+  "build": "20261019-official073-7",
   "performance073": {
     "conditions": "隔離Edge、CPU降速4倍；閒置4秒與一般自動戰鬥10秒。量測不代表朋友裝置實際速度。",
     "rootRebuildCallsBefore": 800,
@@ -261,6 +273,14 @@
     "029": "完成破境後等待兩個遊戲日，倒數及到期即時更新；雷鳴沼調查入口修復，可戰鬥及回報",
     "roundLimit": "既有超過30回合失敗規則保留，退出全螢幕並顯示返回遊戲按鈕",
     "tail": "高危種尾巴在框外並貼住框邊",
-    "deferred": "療癒與持續傷害衝突依使用者指示不在本輪修改"
+    "deferred": "療癒與持續傷害衝突本輪已獲使用者授權修復，取代前輪暫緩。"
+  },
+  "fiveFixes1019": {
+    "outsidePotion": "戰外使用後左側氣血靈力立即同步並存檔",
+    "mysteriousMedicine": "神秘奇藥可使用，八核全數永久+1",
+    "storyPets": "劇情夥伴離隊後，恢復原本被換下的合法存活寵物，最多2隻，含玩家4人上限",
+    "commissionStoryKills": "只計入已接且符合地圖、妖種、種級及境界條件的主線擊殺，不重算或自動領獎",
+    "healWithDOT": "允許共存，回合末先持續傷害，再對仍存活者施加療癒；不復活，不中斷戰鬥",
+    "pillArt": "初階及中階玩家用破境丹各自獨立圖，背包與圖鑑共用"
   }
 }
