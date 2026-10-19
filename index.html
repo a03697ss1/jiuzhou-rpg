@@ -25055,7 +25055,7 @@ const style=document.createElement('style');style.textContent=`
 const finish=N.finishStoryBattle;N.finishStoryBattle=function(b){const out=finish.apply(this,arguments);if(b?.jz073Story&&battle!==b&&document.querySelector('#modalBody .bmv1-canvas'))closeModal();if(b?.jz073Story&&battle!==b){document.getElementById('modalBack')?.classList.remove('bmv1-active','battle-locked');}return out;};
 })();
 </script>
-<script>window.JZ073_BUILD_ID="20261019-official073-8";</script>
+<script>window.JZ073_BUILD_ID="20261019-official073-9";</script>
 <script id="jz073-equipment1019">(function(){'use strict';const N=JZ073;
 const gearName=value=>{let name=String(value||'').trim().replace(/^.+?[：:]\s*/,'').replace(/\s*[×x]\s*\d+\s*$/,'').trim();return name&&name!=='無'&&(R546_GEAR_FULL[name]||R546_GEAR_FULL[JZ072.baseGear(name)])?name:null;};
 N.decorateEquipment19=root=>{if(!root)return;for(const entry of root.querySelectorAll('.card,.equipment-slot,.r513-equip')){if(entry.closest('.jz-library,.jz-help-shell')||entry.querySelector('.card,.equipment-slot,.r513-equip'))continue;const heading=entry.querySelector('b,strong')?.textContent;let name=gearName(entry.dataset.item||heading);if(!name&&entry.matches('.r513-equip')){const label=entry.querySelector('span')?.textContent||'';name=gearName(entry.textContent.trim().slice(label.trim().length));}if(!name)continue;entry.dataset.itemProduct=name;if(entry.querySelector('.jz-item-image'))continue;const copy=document.createElement('div');copy.className='jz19-equipment-copy';while(entry.firstChild)copy.append(entry.firstChild);entry.append(copy);entry.insertAdjacentHTML('afterbegin',N.itemImage1018(name,'jz19-equipment-icon'));entry.classList.add('jz19-equipment-card');}};
@@ -25571,5 +25571,14 @@ const sync=N.syncWorld;N.syncWorld=function(){if(S&&N.done('038')){const places=
 const people=renderPeople;renderPeople=function(){U.updateNpcLocations();N.syncWorld();return people.apply(this,arguments);};
 const rows=N.catalogRows1018;N.catalogRows1018=function(tab){if(tab==='NPC'){U.updateNpcLocations();N.syncWorld();}return rows.apply(this,arguments);};
 if(N.releaseHistory073)N.releaseHistory073.BUG修復.push('第一封印後林夏于在青陽鎮，圖鑑、人物列表與任務引導同步；危險區改在青陽鎮接取，保留兩日等待、完整對話與一次性獎勵。修復其他主線NPC人物列表仍使用舊固定位置的問題。');
+})();
+</script>
+<script id="jz073-recommended-power1019">(function(){'use strict';const N=JZ073,W=JZW,recommended={'黑潮禁岸':950,'雷鳴沼地下深窟':1400};N.recommendedPower1019=recommended;
+N.wildCave=()=>{const q=N.quest('038');if(!q?.claimed)return false;const at=q.completedAt??q.claimedAt??N.state().story.bossCompletedAt;return Number.isFinite(at)&&N.now()-at>=4320;};
+const gate=W.gate;W.gate=function(name){if(name==='雷鳴沼地下深窟'&&N.done('038'))N.state().story.caveOpened=true;const why=gate.apply(this,arguments);return Object.hasOwn(recommended,name)&&/^最低戰力/.test(why)?'':why;};
+const info=N.newPlaceInfo;N.newPlaceInfo=function(name){const html=info.apply(this,arguments);if(!Object.hasOwn(recommended,name))return html;const root=JZ072.fragment(html);for(const p of root.querySelectorAll('p'))if(/最低.*推薦戰力/.test(p.textContent))p.textContent='推薦戰力：'+recommended[name];return root.innerHTML;};
+const adventure=renderAdventure;renderAdventure=function(){const html=adventure.apply(this,arguments);if(!Object.hasOwn(recommended,S?.place))return html;const root=JZ072.fragment(html);for(const p of root.querySelectorAll('p')){if(p.classList.contains('jz-area-power'))p.textContent='推薦戰力：'+recommended[S.place];else p.innerHTML=p.innerHTML.replace('最低500／推薦950（測試參考值）','推薦戰力：950').replace('最低1050／推薦1400（測試參考值）','推薦戰力：1400');}return root.innerHTML;};
+const card=N.catalogCard1018;N.catalogCard1018=function(row,tab){const html=card.apply(this,arguments);if(tab!=='地區'||!Object.hasOwn(recommended,row.name))return html;const root=JZ072.fragment(html);root.querySelector('.jz-catalog-details')?.insertAdjacentHTML('afterbegin','<section><h4>推薦戰力</h4><p>'+recommended[row.name]+'</p></section>');return root.innerHTML;};
+if(N.releaseHistory073){N.releaseHistory073.改動.push('地下深窟、黑潮禁岸只顯示推薦戰力，不再以最低戰力限制進入；原有境界、主線及時間條件保留。');N.releaseHistory073.BUG修復.push('已完成第一封印的角色可恢復深窟入口旗標，野外化時間兼容既有完成／領獎時間紀錄，不重新開始等待。');}
 })();
 </script>

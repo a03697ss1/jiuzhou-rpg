@@ -206,6 +206,10 @@
     {
       "name": "npc-side-location1019.js",
       "sha256": "75bdf57e6251ac1541a19fc2f221c7e282faab0f0c6a57df8cf7c0b39c149457"
+    },
+    {
+      "name": "recommended-power1019.js",
+      "sha256": "92ad6ee6e873518cce3dc6d91f7fbb338ec12ad8ed4d36e0b62d2a146faec197"
     }
   ],
   "notInvented": [
@@ -220,7 +224,7 @@
     "0.7.2"
   ],
   "historicalPlayableEntrances": false,
-  "build": "20261019-official073-8",
+  "build": "20261019-official073-9",
   "performance073": {
     "conditions": "隔離Edge、CPU降速4倍；閒置4秒與一般自動戰鬥10秒。量測不代表朋友裝置實際速度。",
     "rootRebuildCallsBefore": 800,
@@ -295,5 +299,22 @@
     "side015Reward": "靈幣300，一次性",
     "sourceOfTruth": "人物列表、圖鑑及引導同步主線世界狀態，移除其他位置重複NPC",
     "unchanged": "與山河聊聊仍為朝御城、B線資格及兩日等待；對話僅更新危險區所在地旁白，其餘逐字原稿保留"
+  },
+  "recommendedPower1019": {
+    "黑潮禁岸": {
+      "recommended": 950,
+      "minimumPower": null,
+      "minimumRealm": "築基五層",
+      "unlock": "完成危險區"
+    },
+    "雷鳴沼地下深窟": {
+      "recommended": 1400,
+      "minimumPower": null,
+      "minimumRealm": "築基圓滿（野外狀態）",
+      "wildAfter": "第一封印完成後3個遊戲日",
+      "entry": "雷鳴沼",
+      "legacy": "完成第一封印者恢復遺漏的入口旗標，兼容completedAt／claimedAt／bossCompletedAt既有時間，不重置等待"
+    },
+    "authorization": "本輪使用者指定兩地僅需推薦戰力，不再硬鎖最低戰力"
   }
 }
