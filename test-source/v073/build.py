@@ -63,6 +63,7 @@ def apply(text,standalone):
  code+='<script id="jz073-player-break-pill1019">'+(P/'player-break-pill1019.js').read_text('utf8')+'</script>\n'
  code+='<script id="jz073-npc-side-location1019">'+(P/'npc-side-location1019.js').read_text('utf8')+'</script>\n'
  code+='<script id="jz073-recommended-power1019">'+(P/'recommended-power1019.js').read_text('utf8')+'</script>\n'
+ code+='<script id="jz073-pet-feed-pills1019">'+(P/'pet-feed-pills1019.js').read_text('utf8')+'</script>\n'
  return text+code
 small=apply((P/'baseline-preview.html').read_text('utf8'),False);(P/'preview.html').write_text(small,'utf8')
 import sys
