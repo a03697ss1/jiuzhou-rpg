@@ -25055,7 +25055,7 @@ const style=document.createElement('style');style.textContent=`
 const finish=N.finishStoryBattle;N.finishStoryBattle=function(b){const out=finish.apply(this,arguments);if(b?.jz073Story&&battle!==b&&document.querySelector('#modalBody .bmv1-canvas'))closeModal();if(b?.jz073Story&&battle!==b){document.getElementById('modalBack')?.classList.remove('bmv1-active','battle-locked');}return out;};
 })();
 </script>
-<script>window.JZ073_BUILD_ID="20261019-bossbar-1";</script>
+<script>window.JZ073_BUILD_ID="20261019-revision24-1";</script>
 <script id="jz073-equipment1019">(function(){'use strict';const N=JZ073;
 const gearName=value=>{let name=String(value||'').trim().replace(/^.+?[：:]\s*/,'').replace(/\s*[×x]\s*\d+\s*$/,'').trim();return name&&name!=='無'&&(R546_GEAR_FULL[name]||R546_GEAR_FULL[JZ072.baseGear(name)])?name:null;};
 N.decorateEquipment19=root=>{if(!root)return;for(const entry of root.querySelectorAll('.card,.equipment-slot,.r513-equip')){if(entry.closest('.jz-library,.jz-help-shell')||entry.querySelector('.card,.equipment-slot,.r513-equip'))continue;const heading=entry.querySelector('b,strong')?.textContent;let name=gearName(entry.dataset.item||heading);if(!name&&entry.matches('.r513-equip')){const label=entry.querySelector('span')?.textContent||'';name=gearName(entry.textContent.trim().slice(label.trim().length));}if(!name)continue;entry.dataset.itemProduct=name;if(entry.querySelector('.jz-item-image'))continue;const copy=document.createElement('div');copy.className='jz19-equipment-copy';while(entry.firstChild)copy.append(entry.firstChild);entry.append(copy);entry.insertAdjacentHTML('afterbegin',N.itemImage1018(name,'jz19-equipment-icon'));entry.classList.add('jz19-equipment-card');}};
@@ -25077,5 +25077,123 @@ const style=document.createElement('style');style.textContent=`
 .jz-boss-header.jz19-painted-header{height:180px;top:0;overflow:visible;pointer-events:none}.jz19-painted-name{position:absolute;top:9px;left:29%;width:59%;font-family:KaiTi,DFKai-SB,serif;font-weight:bold;font-size:25px;letter-spacing:3px;color:#edce91;text-shadow:0 2px 4px #000,0 0 12px #000;z-index:3}.jz19-painted-header .jz-boss-phase{position:absolute;left:44%;top:45px;width:31%;margin:0;padding:3px 0;border:1px solid #8c825e;border-radius:3px;background:linear-gradient(#12292b,#071315);font-size:14px;letter-spacing:2px;color:#e1e5bf;z-index:3}.jz19-painted-frame{position:absolute;left:0;top:-38px;width:100%;height:293.333px;pointer-events:none}.jz19-painted-ornament{position:absolute;inset:0;width:100%;height:100%;object-fit:fill;filter:drop-shadow(0 3px 4px #000a);z-index:2;pointer-events:none}.jz19-painted-frame .jz-boss-health{position:absolute;left:29.2%;top:48.8%;width:58.5%;height:10.1%;margin:0;padding:0;border:0;border-radius:0;clip-path:none;box-shadow:inset 0 0 10px #000;background:linear-gradient(#10131c,#22202a);z-index:1;overflow:hidden}.jz19-painted-frame .jz-boss-health>i{background:radial-gradient(ellipse at 35% 75%,#fc77554d,transparent 55%),repeating-linear-gradient(164deg,transparent 0 15px,#ffb39420 16px,transparent 19px 39px),linear-gradient(0deg,#6b0615,#b20f25 30%,#e93439 57%,#730919);border:0;box-shadow:0 0 16px #f34339}.jz19-painted-frame .jz-boss-health>span{font-family:Georgia,serif;font-size:19px;color:#fff3cf;letter-spacing:1px;z-index:4;text-shadow:0 1px 3px #000,0 0 4px #000}.jz19-painted-header[data-phase="2"] .jz-boss-health>i{background:radial-gradient(ellipse at 65% 30%,#c0d9ff66,transparent 55%),repeating-linear-gradient(164deg,transparent 0 15px,#9ad9ff40 16px,transparent 19px 39px),linear-gradient(0deg,#131d66,#274cab 35%,#547ce5 60%,#21275c);box-shadow:0 0 16px #80bbff}.jz19-painted-header[data-phase="2"] .jz-boss-phase{color:#d5e7ff;border-color:#9bacce;background:linear-gradient(#192639,#0b1226);box-shadow:0 0 12px #6869bf66}.jz19-painted-header .jz-boss-detail{top:153px;right:10px;pointer-events:auto}.jz-boss-stage:has(.jz19-painted-header) .jz-boss-body{top:23%;height:43%}
 `;document.head.append(style);
 const history=JZ072.versionHistory;JZ072.versionHistory=function(){history();document.getElementById('modalBody')?.insertAdjacentHTML('afterbegin','<section class="card"><h2>長右專屬血條</h2><h3>改動</h3><p>採用四耳猿首與封印鎖鏈的專屬血條；第二階段切換斷鏈、水流與雷光裝飾，氣血數字保留在血條內。</p></section>');};
+})();
+</script>
+<script id="jz073-revision24-items">(function(){'use strict';const N=JZ073,R=JZR,W=JZW,V=JZV2,E=N.esc;
+const short=n=>String(n||'').replace(/^(普通|優良|精品|珍稀|極品|完美)(?=［)/,'').replace(/^［[^］]+］/,'');
+N.revision24Descriptions={
+戰意玉:'特殊裝備進階素材。',獸魂晶:'寵物升星核心素材',獸靈果:'寵物煉丹素材',靈獸露:'寵物煉丹素材',
+獸靈果丹:'可永久提升該寵物八核選一數值＋5；選擇氣血或靈力時提升＋20。配方：獸靈果×5。',
+靈獸露丹:'可永久提升該寵物的屬性傷害＋1%，每種屬性最高提升10%。配方：靈獸露×5。',
+寵物自選專屬技能箱:'打開後可自選該寵物合法池技能。',獸技殘頁:'妖物技能相關素材，可用於特殊合成。',
+靈契玉:'進階寵物裝備用材料',萬獸徽記:'萬獸檯授予高階御獸修士的特殊徽記。可用於五星寵物的特殊突破，亦可作為萬獸檯高級兌換所需的珍貴憑證。',
+寵物秘術卷軸:'直接提升寵物一層境界，無法用於寵物破境。',
+凝力丹:'戰鬥中使用，使自身攻＋8%，持續3回合。',凝道丹:'戰鬥中使用，使自身道＋8%，持續3回合。',靈息丹:'戰鬥中使用，使自身命＋8%，持續3回合。',清靈丹:'戰鬥中使用，使自身效果命中＋12，持續3回合。',鎮心丹:'戰鬥中使用，使自身效果抵抗＋12，持續3回合。'
+};
+const desc=W.itemDescription;W.itemDescription=function(n){if(n==='［初階］寵物用破境丹')return '寵物境界突破與破境率＋5%';if(n==='［中階］寵物用破境丹')return '寵物境界突破與破境率＋8%';return N.revision24Descriptions[short(n)]||desc.apply(this,arguments);};
+// Explicit final gear values; NPC quality and the existing hidden rank scaling stay independent.
+const data=[
+['問心劍','武',{atk:29,dao:15,hit:13},'每場戰鬥首次使用功法時，該次功法命中率＋10個百分點'],
+['破軍刀','武',{atk:36,hit:8,agi:-4},'攻擊氣血高於70%的目標時，直接傷害＋6%'],
+['問道槍','武',{atk:31,agi:14,hit:10},'連續攻擊同一目標時，自第二次開始造成的直接傷害＋4%；更換目標後重新計算'],
+['逐星弓','武',{atk:25,dao:14,agi:7,hit:15,critRate:3},'暴擊率＋3%'],
+['破境拳套','武',{atk:22,agi:24,hit:15},'自身身高於目標身時，直接傷害額外＋5%'],
+['鎮岳錘','武',{hp:160,atk:40,def:8,agi:-10},'自身氣血高於50%時，錘類功法造成的直接傷害＋5%'],
+['問靈寶珠','武',{mp:75,dao:38,daoDef:7,agi:-8,hit:-3},'道術類功法靈力消耗－6%'],
+['清虛道扇','武',{mp:35,dao:20,agi:25,hit:8},'使用增益／輔助或身法功法後，自身身＋6%，持續2回合，不疊加'],
+['納靈葫蘆','武',{mp:100,dao:22,daoDef:10,effectResist:8},'每場戰鬥首次低於30%最大靈力時，立即恢復最大靈力的10%，每場僅觸發1次'],
+['玄機靈傘','武',{atk:16,dao:27,agi:18,hit:9,daoDef:6},'使用攻擊功法後，下次增益／輔助功法效果持續時間＋1回合；觸發後消耗，不能連續累積'],
+['問道護符','飾',{hp:70,mp:35,def:5,daoDef:5},'每場戰鬥首次受到異常狀態時，效果抵抗＋10，持續2回合'],
+['戰心指環','戒',{atk:15,hit:8,critRate:2},'成功暴擊後，攻＋6%，持續2回合，不疊加'],
+['問心戒','戒',{dao:16,hit:7,effectHit:6},'對帶有異常狀態的目標造成道術直接傷害＋5%'],
+['問道佩','飾',{hp:90,mp:50,agi:6,hit:6},'每場戰鬥首次氣血低於50%時，效果抵抗＋12，持續2回合'],
+['破境項鍊','項',{atk:18,dao:18,hit:8},'攻擊境界高於自身的目標時，直接傷害＋6%'],
+['道心靈墜','項',{mp:70,dao:20,daoDef:8,effectHit:8},'使用道術類功法後，下一次治療或增益／輔助功法的靈力消耗－10%，觸發後消耗'],
+['問天玉佩','飾',{mp:260,dao:48,daoDef:32,hit:15,effectHit:12},'道術直接傷害＋8%；使用道術功法時靈力消耗－5%'],
+['破天戰佩','飾',{hp:420,atk:52,def:34,hit:16,critRate:3},'物理直接傷害＋8%；自身氣血高於50%時，暴擊傷害＋10%']
+];N.gear24=data;
+for(const [name,slot,stats,effect] of data){const n='［特殊］'+name,g={...stats,slot,source:'問道檯',hidden:/問天玉佩|破天戰佩/.test(name)?'特殊·仙位':'特殊·中位',effect};R546_GEAR_FULL[n]=g;R4_GEAR_STATS[n]={...g};}
+const aliases={'清風靈葫':'納靈葫蘆','靈水傘':'玄機靈傘'};
+N.migrateGear24=()=>{if(!S)return;const rename=n=>{for(const [a,b] of Object.entries(aliases))if(String(n).endsWith('［特殊］'+a))return n.slice(0,-a.length)+b;return n;};
+for(const bag of ['gearInventory','special'])for(const [old,v] of Object.entries(S[bag]||{})){const n=rename(old);if(n!==old){const count=x=>typeof x==='object'?Number(x.count||0):Number(x||0);S[bag][n]=count(S[bag][n])+count(v);delete S[bag][old];}}
+for(const p of [S,...(S.partners||[]),...Object.values(JZ072.state().partnerGrowth||{})]){for(const k of Object.keys(p.equipment||{}))p.equipment[k]=rename(p.equipment[k]);for(const field of ['shared','intrinsic'])for(const k of Object.keys(p.jz072?.[field]||{}))p.jz072[field][k]=rename(p.jz072[field][k]);}
+const purchased=S.eastWord?.wendao?.purchased;if(purchased)for(const old of Object.keys(purchased)){const n=rename(old);if(n!==old){purchased[n]=purchased[n]||purchased[old];delete purchased[old];}}
+};const ensure=V.ensure;V.ensure=function(){const out=ensure.apply(this,arguments);N.migrateGear24();return out;};
+const pills=['凝力丹','凝道丹','靈息丹','清靈丹','鎮心丹'];V.spec.arenas.ask_platform.shop.pills=pills.map(name=>({name:'［初階］'+name,price:35,effect:N.revision24Descriptions[name]}));
+V.askRows=[['［特殊］問道殘頁',32,false],['［特殊］戰意玉',16,false],...data.map(([n])=>['［特殊］'+n,/問天玉佩|破天戰佩/.test(n)?1280:320,true]),...pills.map(n=>['［初階］'+n,35,false])];N.wendaoSourceRows1018=V.askRows.map(([n,price])=>[n,price]);
+W.shop=()=>{if(battle||S.place!=='問道檯')return;V.ensure();const wd=S.eastWord.wendao;showModal('問道檯兌換商店','<p>問道點數：'+V.points()+'</p>'+V.askRows.map(([n,price,once])=>'<section class="card jz24-shop-item">'+N.itemImage1018(n)+'<b>'+E(n)+'</b><p>'+price+' 問道點數／'+(R546_GEAR_FULL[n]?'件':pills.includes(short(n))?'顆':'個')+' · '+(once?'每份存檔限兌換一次':'可重複兌換')+'</p>'+(R546_GEAR_FULL[n]?'<p>'+r4BonusText(n)+'</p>':'')+'<p>'+E(R546_GEAR_FULL[n]?.effect||W.itemDescription(n))+'</p><button '+(V.points()<price||once&&wd.purchased[n]?'disabled':'')+' onclick="JZW.purchase(\''+n+'\')">'+(once&&wd.purchased[n]?'已兌換':'兌換')+'</button></section>').join(''));};
+// Renaming the shop row also updates its purchase path: the closure holds this same array.
+for(const row of R.beastShopRows)if(short(row[0])==='獸技秘卷')row[0]='［特殊］獸技殘頁';
+const sale=R.saleBlocked;R.saleBlocked=function(n){return String(n).includes('［特殊］')||/自選.*箱|［任務］/.test(n)||sale.apply(this,arguments);};
+const quote=R.sellQuote;R.sellQuote=function(merchant,n){if(short(n)==='功法殘卷'&&!R.saleBlocked(n)&&R.merchants[merchant]&&R.count(n))return 200;return quote.apply(this,arguments);};
+for(const list of Object.values(RECIPES))for(const row of list){if(row[0]==='［特殊］獸靈果丹')row[1]='獸靈果×5';if(row[0]==='［特殊］靈獸露丹')row[1]='靈獸露×5';}
+const petMaterials=['獸靈果','靈獸露'],materialKeys=n=>[...new Set(['items','special','materials'].flatMap(b=>Object.keys(S[b]||{})).filter(k=>short(k)===n))];
+N.petMaterialCount24=n=>materialKeys(short(n)).reduce((v,k)=>v+R.count(k),0);
+N.spendPetMaterial24=(n,q)=>{const s=short(n);if(N.petMaterialCount24(s)<q)return false;for(const k of materialKeys(s)){const take=Math.min(q,R.count(k));if(take)R.take(k,take);q-=take;if(!q)break;}return true;};
+const wCount=W.materialCount,wSpend=W.spendMaterial;W.materialCount=function(n){return petMaterials.includes(short(n))?N.petMaterialCount24(n):wCount.apply(this,arguments);};W.spendMaterial=function(n,q){return petMaterials.includes(short(n))?N.spendPetMaterial24(n,q):wSpend.apply(this,arguments);};
+const has=r59HasIngredients,consume=r59ConsumeIngredients;const petRecipe=req=>petMaterials.some(m=>String(req).includes(m));
+r59HasIngredients=function(req){return petRecipe(req)?r59ParseReq(req).every(([n,c])=>W.materialCount(n)>=c):has.apply(this,arguments);};
+r59ConsumeIngredients=function(req){if(!petRecipe(req))return consume.apply(this,arguments);if(!r59HasIngredients(req))return false;for(const [n,c] of r59ParseReq(req))W.spendMaterial(n,c);return true;};
+const missing=r512Missing;r512Missing=function(req){return petRecipe(req)?r59ParseReq(req).filter(([n,c])=>W.materialCount(n)<c).map(([n,c])=>n+' 缺 '+(c-W.materialCount(n))).join('、'):missing.apply(this,arguments);};
+R.craftPetDan=n=>{const m={'［特殊］獸靈果丹':'獸靈果','［特殊］靈獸露丹':'靈獸露'}[n];if(battle||!m||!N.spendPetMaterial24(m,5))return false;R.give(n);R.save();renderPage();return true;};
+const sources=N.itemSources1018;N.itemSources1018=function(n){const out=sources.apply(this,arguments);if(['獸靈果丹','靈獸露丹'].includes(short(n))&&!out.some(r=>r.name==='煉金爐'))out.push({kind:'配方',name:'煉金爐',text:'煉金爐・煉丹：'+(short(n)==='獸靈果丹'?'獸靈果':'靈獸露')+'×5'});return out;};
+const all=N.allItemNames1018;N.allItemNames1018=()=>[...new Set([...all(),...data.map(([n])=>'［特殊］'+n),...pills.map(n=>'［初階］'+n),'［特殊］獸技殘頁'])].filter(n=>!aliases[short(n)]);
+const catalog=N.catalogRows1018;N.catalogRows1018=function(tab){return catalog.apply(this,arguments).filter(r=>!aliases[short(r.name)]);};
+const bag=renderBag;renderBag=function(){const d=JZ072.fragment(bag.apply(this,arguments));for(const button of d.querySelectorAll('button[onclick*="JZ073.usePack"]')){const card=[...d.querySelectorAll('[data-item-product],.card')].find(c=>c.dataset.itemProduct==='［特殊］東州大禮包'||c.querySelector('b')?.textContent.trim()==='［特殊］東州大禮包');if(card)card.append(button);}for(const card of d.querySelectorAll('[data-item-product]')){const n=card.dataset.itemProduct;if(N.revision24Descriptions[short(n)]||/寵物用破境丹/.test(n)){const text=W.itemDescription(n);if(!card.textContent.includes(text)){let p=card.querySelector('.jz24-item-description');if(!p){p=document.createElement('p');p.className='jz24-item-description';card.append(p);}p.textContent=text;}}}return d.innerHTML;};
+const battleBag=r58BattleBag;r58BattleBag=function(){const out=battleBag.apply(this,arguments);for(const card of document.querySelectorAll('.r526-battle-pop .card'))if(/箱|禮包/.test(card.querySelector('b')?.textContent||''))card.remove();return out;};
+const use=W.useItem;W.useItem=function(n){if(battle&&/箱|禮包/.test(n))return false;return use.apply(this,arguments);};
+})();
+</script>
+<script id="jz073-revision24-combat">(function(){'use strict';const N=JZ073,C=JZ360,W=JZW,R=JZR,P=JZP;
+const names=f=>Object.values(f.type==='player'?S.equipment||{}:f.equipment||JZNEXT.npcs[N.canonical(f.name)]?.equipment||{}).map(n=>JZ072.baseGear(n)),wear=(f,n)=>names(f).includes('［特殊］'+n);
+const magic=r=>r?.id!=='basic'&&(r?.ops?.some(o=>o.kind==='magic')||r?.category?.includes('道術'));
+const aid=r=>r?.category?.includes('增益／輔助')||r?.ops?.some(o=>o.op==='heal');
+const attack=r=>r?.id!=='basic'&&(r?.category?.includes('攻擊')||r?.ops?.some(o=>['damage','mainHit'].includes(o.op)));
+const manaRecovery=(b,f)=>{if(wear(f,'納靈葫蘆')&&!f.jz24ManaRecovered&&f.hp>0&&f.mp<C.stat(f,'maxmp')*.3){f.jz24ManaRecovered=true;C.restore(b,f,f,C.stat(f,'maxmp')*.1,true);C.log(b,f.name+'的納靈葫蘆回復靈力，本場已觸發。');}};
+const onCast=P.onCast;P.onCast=function(b,a,r){const out=onCast.apply(this,arguments);manaRecovery(b,a);return out;};
+const cost=W.costAdjust;W.costAdjust=function(f,r,n){const base=cost.apply(this,arguments);return f.jz24PendantReady&&aid(r)&&wear(f,'道心靈墜')?Math.max(0,Math.ceil(base*.9)):base;};
+const before=W.beforeResolve;W.beforeResolve=function(b,a,r){const out=before.apply(this,arguments);b.jz24ExtendActor=null;if(a.jz24PendantReady&&aid(r)&&wear(a,'道心靈墜'))a.jz24PendantReady=false;if(a.jz24UmbrellaReady&&r.category?.includes('增益／輔助')&&wear(a,'玄機靈傘')){a.jz24UmbrellaReady=false;b.jz24ExtendActor=a;}return out;};
+const extend=W.extendStatus;W.extendStatus=function(b,a,op){const value=extend.apply(this,arguments);return b.jz24ExtendActor===a&&!op.hostile&&op.turns!=null?{...value,turns:value.turns+1}:value;};
+const after=W.afterResolve;W.afterResolve=function(b,a,r){const out=after.apply(this,arguments);if(magic(r)&&wear(a,'道心靈墜'))a.jz24PendantReady=true;if(attack(r)&&wear(a,'玄機靈傘'))a.jz24UmbrellaReady=true;b.jz24ExtendActor=null;for(const f of [...b.playerTeam,...b.enemyTeam])manaRecovery(b,f);return out;};
+// A beneficial status alone does not qualify as an abnormal state for the ring.
+const damage=W.damageAdjust;W.damageAdjust=function(a,t,n,kind){const out=damage.apply(this,arguments);return wear(a,'問心戒')&&kind==='magic'&&C.allStates(t).length&&!C.init(t).debuffs.length?out/1.05:out;};
+// Replace the legacy agility effect, retaining existing combat item timing and restrictions.
+const use=W.useItem;W.useItem=function(n){if(n!=='［初階］鎮心丹'||!battle)return use.apply(this,arguments);const b=battle,a=JZV3.actor(b)||b.playerTeam.find(f=>f.type==='player');if(!R.count(n)||!a||a.hp<=0||b.jzBusy||b.jzLab||b.tutorialCase||b.jzWendao&&b.jzWendao.mode!=='tower'||['沉默','憤怒','暈眩','冰凍','睡眠'].some(s=>C.has(a,s)))return false;if(!R.take(n))return false;const mods={effectResist:.12},key=JSON.stringify(mods);a.jzw??={temp:[]};a.jzw.temp=(a.jzw.temp||[]).filter(t=>t.key!==key);a.jzw.temp.push({key,mods,turns:3,at:b.round||1});C.log(b,a.name+'使用鎮心丹：效果抵抗＋12，持續3回合。');R.save();r526CloseBattlePop();showBattle();return true;};
+N.shieldValue24=f=>f?Math.max(0,Math.round(Number(C.has(f,'護盾')?.shield||0))):0;
+const card=bsv2Card;bsv2Card=function(f){const d=JZ072.fragment(card.apply(this,arguments)),shield=N.shieldValue24(f);if(shield){const line=d.querySelector('.bsv21-line')||d.querySelector('.bsv2-statline'),bar=line?.querySelector('.bsv21-bar');line?.classList.add('jz24-shield-line');if(line)line.insertAdjacentHTML('beforeend','<span class="jz24-shield-value" aria-label="護盾值 '+shield+'">護盾 '+shield+'</span>');if(bar){bar.classList.add('jz24-shielded');bar.insertAdjacentHTML('beforeend','<em class="jz24-shield-layer" style="width:'+Math.min(100,shield/C.stat(f,'maxhp')*100)+'%"></em>');}}return d.innerHTML;};
+const core=bmv1CombatCore;bmv1CombatCore=function(b){const html=core.apply(this,arguments),f=b.enemyTeam.find(f=>f.jz073Boss);if(!f||!N.shieldValue24(f))return html;const d=JZ072.fragment(html);d.querySelector('.jz-boss-health>span')?.insertAdjacentHTML('beforeend','<small class="jz24-boss-shield">護盾 '+N.shieldValue24(f)+'</small>');return d.innerHTML;};
+N.isBossFight24=b=>!!(b?.boss||b?.isBoss||b?.jzBoss||b?.jz073Story==='038'||b?.enemyTeam?.some(f=>f.jz073Boss||f.boss||f.isBoss||f.type==='boss'||f.tier==='災獸種'));
+N.ensureBossSurvivor24=(b,win)=>{if(win&&N.isBossFight24(b)&&Number(S.hp)<=0){S.hp=1;C.log(b,'BOSS戰鬥勝利，玩家以1點氣血脫離戰鬥。');R.save();renderPlayer();return true;}return false;};
+const finish=P.finishBattle;P.finishBattle=function(b,win){const out=finish.apply(this,arguments);N.ensureBossSurvivor24(b,win);return out;};
+const story=N.finishStoryBattle;N.finishStoryBattle=function(b,win){const out=story.apply(this,arguments);if(out)N.ensureBossSurvivor24(b,win);return out;};
+// General combat copies unit HP to S after finishBattle; apply the invariant again at its final victory exit.
+const win=battleWin;battleWin=function(){const b=battle,out=win.apply(this,arguments);N.ensureBossSurvivor24(b,true);return out;};
+// Recover the already-broken post-Changyou save once; do not alter active battle HP.
+const ensure=R.ensure;R.ensure=function(){const out=ensure.apply(this,arguments);if(S&&!battle&&!S.revision24BossHPChecked){S.revision24BossHPChecked=true;if(N.quest('038')?.progress.victory&&S.hp<=0){S.hp=1;R.save();}}return out;};
+const style=document.createElement('style');style.textContent='.jz24-shield-line{position:relative}.jz24-shield-value{position:absolute;right:0;top:-13px;padding:0 4px;height:13px;line-height:13px;background:#062b3ff2;border:1px solid #6edcf0;border-radius:3px;color:#c7faff!important;font-size:10px!important;white-space:nowrap;box-shadow:0 0 5px #42cbdd;z-index:9}.bsv21-bar.jz24-shielded{outline:1px solid #8beaff;box-shadow:0 0 5px #4ac8f2;position:relative;overflow:visible}.jz24-shield-layer{position:absolute;left:0;top:-2px;height:3px;background:#b0f7ff;box-shadow:0 0 5px #51dfff}.jz24-boss-shield{display:inline-block;margin-left:12px;color:#c5f9ff;padding:1px 6px;border:1px solid #83e9ff;border-radius:3px;background:#0a324c;font:14px Microsoft JhengHei}.jz24-shop-item .jz-item-image{width:76px;height:76px;object-fit:contain;float:left;margin:0 14px 6px 0}.jz24-shop-item{min-height:116px}';document.head.append(style);
+})();
+</script>
+<script id="jz073-revision24-ui">(function(){'use strict';const N=JZ073,R=JZR,E=N.esc,K=R.coreKeys,labels={maxhp:'氣血',maxmp:'靈力',atk:'攻',dao:'道',def:'防',daoDef:'道防',agi:'身',hit:'命'};
+// Updating results must never replace an active IME input or its selection.
+let timer=null;
+N.catalogSearch1018=v=>{const s=N.catalog1018;if(!s)return;s.query=v;clearTimeout(timer);if(document.getElementById('jz-catalog-search')?.dataset.composing==='true')return;timer=setTimeout(()=>{if(s!==N.catalog1018||!document.querySelector('.jz-library'))return;const show=window.showModal;window.showModal=function(title,html){if(title!=='圖鑑')return show.apply(this,arguments);const d=JZ072.fragment(html),current=document.querySelector('.jz-catalog-grid'),next=d.querySelector('.jz-catalog-grid');if(current&&next)current.replaceChildren(...next.childNodes);const count=document.querySelector('.jz-library-heading>span'),nextCount=d.querySelector('.jz-library-heading>span');if(count&&nextCount)count.textContent=nextCount.textContent;const oldEmpty=document.querySelector('.jz-catalog-scroll>.jz24-empty');oldEmpty?.remove();if(!next?.children.length)document.querySelector('.jz-catalog-scroll')?.insertAdjacentHTML('beforeend','<p class="jz24-empty">沒有符合條件的資料。</p>');};try{N.drawCodex1018(false);}finally{window.showModal=show;}},180);};
+document.addEventListener('compositionstart',e=>{if(e.target.id==='jz-catalog-search'){e.target.dataset.composing='true';clearTimeout(timer);}});
+document.addEventListener('compositionend',e=>{if(e.target.id==='jz-catalog-search'){e.target.dataset.composing='false';N.catalogSearch1018(e.target.value);}});
+N.advanceTable24=(before,after,next)=>'<section class="jz24-advance"><h3>成功後提升數值 · '+E(next)+'</h3><table class="jz072-diff"><thead><tr><th>數值</th><th>目前</th><th>提升後</th><th>增加</th></tr></thead><tbody>'+K.map(k=>{const a=Math.round(before[k]||0),b=Math.round(after[k]||0),delta=b-a;return '<tr data-stat="'+k+'"><td>'+labels[k]+'</td><td>'+a+'</td><td>'+b+'</td><td class="'+(delta>=0?'jz072-gain':'jz072-loss')+'">'+(delta>=0?'+':'')+delta+'</td></tr>';}).join('')+'</tbody></table></section>';
+N.playerAdvancePreview24=()=>{const live=S,clone=structuredClone(S);try{S=clone;const before=r4Core(),next=v070NextRealm();if(!next||live.realm==='築基圓滿')return null;S.realm=next;v070ApplyAdvanceGrowth();return {before,after:r4Core(),next};}finally{S=live;}};
+const training=renderTraining;renderTraining=function(){const d=JZ072.fragment(training.apply(this,arguments)),locked=S.realm==='築基圓滿';if(locked){for(const b of d.querySelectorAll('button[onclick*="v070AttemptAdvance"],button[onclick*="tryBreakthrough"]')){b.disabled=true;b.textContent='後續境界尚未開放';}d.querySelector('.advance-card')?.insertAdjacentHTML('afterbegin','<p class="gold">已達目前開放的最高境界：築基圓滿。</p>');}else{const v=N.playerAdvancePreview24();if(v)d.querySelector('.advance-card')?.insertAdjacentHTML('beforeend',N.advanceTable24(v.before,v.after,v.next));}return d.innerHTML;};
+const advance=v070AttemptAdvance;v070AttemptAdvance=function(){if(S.realm==='築基圓滿')return false;return advance.apply(this,arguments);};const oldTry=tryBreakthrough;tryBreakthrough=function(){if(S.realm==='築基圓滿')return false;return oldTry.apply(this,arguments);};
+const partner=JZ072.partnerTraining;JZ072.partnerTraining=function(p){const clone=structuredClone(p),d=JZ072.fragment(partner.call(this,clone));d.querySelectorAll('.jz1011-advance-preview,.jz24-advance').forEach(e=>e.remove());const v=JZ072.partnerPreview(clone);if(v.after)d.insertAdjacentHTML('beforeend',N.advanceTable24(v.before,v.after,v.next));return d.innerHTML;};
+const pet=JZV2.advancePreview;JZV2.advancePreview=function(p){const original=pet.apply(this,arguments),x=R.petData(p),next=v070NextRealm(x.realm);if(!next)return original;let before,after;try{before=R.petStats(structuredClone(p));const clone=structuredClone(p);clone.realm=next;R.petData(clone).realm=next;const live=S.realm;try{if(R.rank(next)>R.rank(S.realm))S.realm=next;after=R.petStats(clone);}finally{S.realm=live;}}catch{return original;}return '<p>下一階段：'+E(next)+'</p>'+N.advanceTable24(before,after,next);};
+const decorate=N.decorate;N.decorate=function(){const out=decorate.apply(this,arguments),banner=document.querySelector('.jz073-banner');if(banner){if(banner.firstChild?.nodeType===3)banner.firstChild.nodeValue='V0.7.3・10/19 物品與戰鬥修正測試版 ';banner.querySelectorAll('.jz18-build').forEach(e=>e.remove());banner.insertAdjacentHTML('beforeend','<span class="jz18-build">10/19 最新測試</span>');}const stamp=document.getElementById('jz073-start-version');if(stamp)stamp.textContent='V0.7.3 獨立測試版・10/19 物品與戰鬥修正';return out;};
+const history=JZ072.versionHistory;JZ072.versionHistory=function(){history();document.getElementById('modalBody')?.insertAdjacentHTML('afterbegin','<section class="card"><h2>10/19 物品與戰鬥修正</h2><h3>新增</h3><p>血條護盾值；長右水與水雷兩階段立繪；物品完整說明。</p><h3>改動</h3><p>問道裝備與五種戰中丹藥採最新清單；低階素材箱改為樸素外觀；萬獸檯兌換獸技殘頁；功法殘卷售價200靈幣。</p><h3>BUG修復</h3><p>BOSS勝利後玩家至少1氣血；圖鑑中文輸入；自選箱不進戰鬥背包；特殊物品與自選箱禁止出售；突破數值預覽；築基圓滿停止向未開放境界突破。</p></section>');};
+})();
+</script>
+<script id="jz073-revision24-art">(function(){'use strict';const N=JZ073;
+N.art24={boss1:'revision24-assets/長右_水.webp',boss2:'revision24-assets/長右_水雷.webp',box1:'revision24-assets/一階樸素素材箱.webp',box2:'revision24-assets/二階樸素素材箱.webp',leaf:'revision24-assets/獸技殘頁.webp'};
+for(const src of Object.values(N.art24)){const im=new Image();im.src=src;}
+N.art.長右=N.art24.boss1;
+const icon=N.itemIcon;N.itemIcon=function(name){if(/獸技殘頁/.test(name))return N.art24.leaf;if(/(?:自選|綜合).*一階.*箱|自選護體丹箱/.test(name))return N.art24.box1;if(/(?:自選|綜合).*二階.*箱|自選晶石箱/.test(name))return N.art24.box2;return icon.apply(this,arguments);};
+const core=bmv1CombatCore;bmv1CombatCore=function(b){const html=core.apply(this,arguments),boss=b.enemyTeam.find(f=>f.jz073Boss);if(!boss)return html;const d=JZ072.fragment(html),img=d.querySelector('.jz-boss-body>img');if(img){img.src=boss.jz073Phase===2?N.art24.boss2:N.art24.boss1;img.alt=boss.jz073Phase===2?'長右完整水雷立繪':'長右完整水元素立繪';}return d.innerHTML;};
 })();
 </script>
