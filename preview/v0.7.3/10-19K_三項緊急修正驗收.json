@@ -1,0 +1,75 @@
+{
+  "rows": [
+    {
+      "name": "異相等待兩日顯示倒數，推進時間到期立即更新且不自動接任務",
+      "pass": true,
+      "detail": {
+        "before": "尚未接取：［主線］異相再次發生完成［主線］破境後須等待2個遊戲日。剩餘：0日0小時1分鐘。引導",
+        "after": "尚未接取：［主線］異相再次發生已等待滿2個遊戲日，可前往朝御城與邱山河接取任務。前往雷鳴沼［調查異相］，勝後返回朝御城回報。引導",
+        "early": false,
+        "ready": true,
+        "accepted": false
+      }
+    },
+    {
+      "name": "異相接取→雷鳴沼調查入口→實際戰鬥→回城回報完整流程",
+      "pass": true,
+      "detail": {
+        "claimed": true,
+        "next": "尚未接取：［主線］無法休息選一處調查，親自處理兩地異相後到東州傳送塔與邱山河會合。朝御城・邱山河（進行中或尚未符合前置／等待條件）引導"
+      }
+    },
+    {
+      "name": "30回合自動戰鬥逾時正常退出，可點返回繼續遊戲",
+      "pass": true,
+      "detail": {
+        "text": "已超過30回合，戰鬥失敗，已退出戰鬥。返回遊戲",
+        "locked": false,
+        "full": false,
+        "body": false,
+        "once": true,
+        "auto": false,
+        "round": 31
+      }
+    },
+    {
+      "name": "高危種尾巴貼住框邊且仍位於框外，兩種高危框與兩種視窗尺寸",
+      "pass": true,
+      "detail": [
+        {
+          "width": 1366,
+          "tier": "高危種",
+          "gap": -1.1878662109375,
+          "extends": true,
+          "clipped": false,
+          "paths": 1
+        },
+        {
+          "width": 1366,
+          "tier": "高危種（特）",
+          "gap": -1.18780517578125,
+          "extends": true,
+          "clipped": false,
+          "paths": 2
+        },
+        {
+          "width": 1920,
+          "tier": "高危種",
+          "gap": -1.39129638671875,
+          "extends": true,
+          "clipped": false,
+          "paths": 1
+        },
+        {
+          "width": 1920,
+          "tier": "高危種（特）",
+          "gap": -1.391357421875,
+          "extends": true,
+          "clipped": false,
+          "paths": 2
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

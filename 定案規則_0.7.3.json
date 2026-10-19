@@ -186,6 +186,10 @@
     {
       "name": "wave-vitals1019.js",
       "sha256": "4c4f814c9878213ba16efcdbf1468fc2b4cd0e08ed66cbbb3577adef6973b424"
+    },
+    {
+      "name": "three-hotfix1019.js",
+      "sha256": "c1313fd5ebe44efa87eeb19d432f7487e6ecd848b095ca3bc28bb83a29b68e92"
     }
   ],
   "notInvented": [
@@ -200,7 +204,7 @@
     "0.7.2"
   ],
   "historicalPlayableEntrances": false,
-  "build": "20261019-official073-5",
+  "build": "20261019-official073-6",
   "performance073": {
     "conditions": "隔離Edge、CPU降速4倍；閒置4秒與一般自動戰鬥10秒。量測不代表朋友裝置實際速度。",
     "rootRebuildCallsBefore": 800,
@@ -252,5 +256,11 @@
     "streakBonus": "沿用連勝加成，最高+5",
     "entryAuto": "逐步挑戰、境界相符、跨境界三模式遵守進場自動設定",
     "restrictions": "跨境與同境禁物品、戰前效果與逃跑不變"
+  },
+  "urgentFix1019": {
+    "029": "完成破境後等待兩個遊戲日，倒數及到期即時更新；雷鳴沼調查入口修復，可戰鬥及回報",
+    "roundLimit": "既有超過30回合失敗規則保留，退出全螢幕並顯示返回遊戲按鈕",
+    "tail": "高危種尾巴在框外並貼住框邊",
+    "deferred": "療癒與持續傷害衝突依使用者指示不在本輪修改"
   }
 }

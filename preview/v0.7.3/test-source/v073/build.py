@@ -56,6 +56,7 @@ def apply(text,standalone):
  code+='<script id="jz073-pet-battle1019">'+(P/'pet-battle1019.js').read_text('utf8')+'</script>\n'
  code+='<script id="jz073-wendao-auto1019">'+(P/'wendao-auto1019.js').read_text('utf8')+'</script>\n'
  code+='<script id="jz073-wave-vitals1019">'+(P/'wave-vitals1019.js').read_text('utf8')+'</script>\n'
+ code+='<script id="jz073-three-hotfix1019">'+(P/'three-hotfix1019.js').read_text('utf8')+'</script>\n'
  return text+code
 small=apply((P/'baseline-preview.html').read_text('utf8'),False);(P/'preview.html').write_text(small,'utf8')
 import sys

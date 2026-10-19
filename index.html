@@ -24986,7 +24986,7 @@ const finish=N.decorate;N.decorate=()=>{finish();const banner=document.querySele
 const history=JZ072.versionHistory;JZ072.versionHistory=()=>{history();document.getElementById('modalBody')?.insertAdjacentHTML('afterbegin','<section class="card"><h2>本輪18項修正</h2><h3>新增</h3><p>裝備、各階藥品與特殊物品的獨立圖片；補齊NPC靈根資質。</p><h3>改動</h3><p>狐毛、狐尾與獸角歸妖物素材；藥品使用你提供的數值；取得來源依完整階級與當前商店核對；布告箱移到放大的布告欄下方；交談只保留暫時離開。</p><h3>BUG修復</h3><p>戰鬥血量與戰位同步、測試999重複挑戰長右、主線行動所在地限制、蘇璃同行位置、柳清妍任務入口、功法階級顯示，以及必敗戰的手動1倍與繼續提示。</p></section>');};
 })();
 </script>
-<script>window.JZ073_BUILD_ID="20261019-official073-5";</script>
+<script>window.JZ073_BUILD_ID="20261019-official073-6";</script>
 <script id="jz073-hidden-steal1019">(function(){'use strict';const N=JZ073,R=JZR;
 const drops=Object.freeze({'林夏于':'［特殊］火霞刀','蘇璃':'［特殊］靈水劍','柳清妍':'［特殊］秘術弓','邱山河':'［特殊］鹿絞槍','蘇項':'［特殊］土靈盔'});
 const names=new Set(Object.values(drops));
@@ -25537,5 +25537,16 @@ const recover=R.runRecover;R.runRecover=function(size){if(battle)return recover.
 const finish=R.finishPetBattle;R.finishPetBattle=function(b,win){const fresh=b?.jzPetMode?.mode==='wave'&&!b.jzrSettled,out=finish.apply(this,arguments);if(fresh){N.waveVitals1019(R.beast().run,false);R.save();}return out;};
 const settle=R.settleRun;R.settleRun=function(){if(battle)return settle.apply(this,arguments);const run=R.beast().run;if(!run)return settle.apply(this,arguments);const pets=(run.states||[]).map(petFor).filter(Boolean),out=settle.apply(this,arguments);if(!R.beast().run){for(const p of pets){const f=R.petStats(p);p.hp=f.maxhp;p.mp=f.maxmp;}R.save();renderPlayer();log('萬妖陣已結算，參戰寵物氣血與靈力已全部恢復。');}return out;};
 if(N.releaseHistory073){N.releaseHistory073.BUG修復.push('萬妖陣儲存退出同步寵物氣血靈力；醫館治療後重新進場採用治療後數值，不再被舊波次數值覆蓋。');N.releaseHistory073.改動.push('萬妖陣退出結算後，參戰寵物自動恢復滿氣血與滿靈力。');}
+})();
+</script>
+<script id="jz073-three-hotfix1019">(function(){'use strict';const N=JZ073,C=JZ360;
+N.wait0291019=()=>{const d=N.def('029'),prev=N.quest('realmBreakQuest');if(!prev?.claimed||N.quest('029'))return null;const story=N.state().story;story.waitStart??={};const at=prev.completedAt??prev.claimedAt??(story.waitStart['029']??=N.now()),remaining=Math.max(0,Math.ceil(at+2880-N.now()));return {d,remaining,text:remaining?'完成［主線］破境後須等待2個遊戲日。剩餘：'+Math.floor(remaining/1440)+'日'+Math.floor(remaining%1440/60)+'小時'+remaining%60+'分鐘。':'已等待滿2個遊戲日，可前往朝御城與邱山河接取任務。'};};
+const next=JZ1007.nextHTML;JZ1007.nextHTML=function(){const w=N.wait0291019();if(!w)return next.apply(this,arguments);return '<div class="jz-next-main jz073-main" data-wait029="'+w.remaining+'"><b>下一個任務：［主線］異相再次發生</b><p>'+N.esc(w.text)+'</p>'+(w.remaining?'':'<p>'+N.esc(w.d.objective)+'</p>')+'<button onclick="JZ073.guide(\'jz073-029\')">引導</button></div>';};
+const advance=r4AdvanceMinutes;r4AdvanceMinutes=function(){const out=advance.apply(this,arguments);if(S&&N.wait0291019())renderQuests();return out;};
+const guide=N.guide;N.guide=function(id){const d=N.def(id),w=d?.key==='029'&&N.wait0291019();if(w?.remaining)return N.notice('［主線］異相再次發生',w.text);return guide.apply(this,arguments);};
+const buttons=N.storyButtons;N.storyButtons=function(){let html=buttons.apply(this,arguments);const q=N.quest('029');if(S.place==='雷鳴沼'&&q&&!q.claimed&&q.progress?.started&&!q.progress.victory&&!html.includes("storyBattle('029')"))html+='<button onclick="JZ073.storyBattle(\'029\')">調查異相</button>';return html;};
+const end=C.endRound;C.endRound=function(b){const out=end.apply(this,arguments);if(b?.jzFinished&&b.round>30&&!battle&&!b.jzPetMode&&!b.jzWave&&!b.jzLab&&b.playerTeam.some(f=>f.hp>0)&&b.enemyTeam.some(f=>f.hp>0)&&!b.timeoutUI1019){b.timeoutUI1019=true;b.auto=false;clearTimeout(b.timer);closeModal();document.getElementById('modalBack')?.classList.remove('bmv1-active','battle-locked');document.body.classList.remove('jz26-battle');render();showModal('回合上限','<p>已超過30回合，戰鬥失敗，已退出戰鬥。</p><button class="primary" onclick="closeModal()">返回遊戲</button>');}return out;};
+const style=document.createElement('style');style.id='jz-risk-tail-attached1019';style.textContent='.bsv2-card>.jz-risk-tail-outside{right:-31px!important}';document.head.append(style);
+if(N.releaseHistory073)N.releaseHistory073.BUG修復.push('［異相再次發生］顯示破境後兩個遊戲日等待與剩餘時間，到時立即更新；超過30回合清除戰鬥全螢幕並提供返回；高危種框外尾巴貼住戰位框。');
 })();
 </script>
