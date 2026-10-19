@@ -210,6 +210,10 @@
     {
       "name": "recommended-power1019.js",
       "sha256": "92ad6ee6e873518cce3dc6d91f7fbb338ec12ad8ed4d36e0b62d2a146faec197"
+    },
+    {
+      "name": "pet-feed-pills1019.js",
+      "sha256": "3fa582cec1340e1ffe431bc5b41e6968b7f3b2fde3a114b390a6dc007bc3a688"
     }
   ],
   "notInvented": [
@@ -224,7 +228,7 @@
     "0.7.2"
   ],
   "historicalPlayableEntrances": false,
-  "build": "20261019-official073-9",
+  "build": "20261019-official073-10",
   "performance073": {
     "conditions": "隔離Edge、CPU降速4倍；閒置4秒與一般自動戰鬥10秒。量測不代表朋友裝置實際速度。",
     "rootRebuildCallsBefore": 800,
@@ -316,5 +320,20 @@
       "legacy": "完成第一封印者恢復遺漏的入口旗標，兼容completedAt／claimedAt／bossCompletedAt既有時間，不重置等待"
     },
     "authorization": "本輪使用者指定兩地僅需推薦戰力，不再硬鎖最低戰力"
+  },
+  "petFeeding1019": {
+    "perPet": true,
+    "foodDailyMaximum": 3,
+    "cookieDailyMaximum": 1,
+    "reset": "遊戲時間00:00，非真實時間",
+    "affection": "飼料+2，餅乾+3，原效果不變",
+    "persistence": "次數存入該寵物，讀檔或改名不重置；未成功餵食不扣次數",
+    "oldPets": "本輪啟用前無計數紀錄者，首次使用建立當日計數，不倒推先前餵食"
+  },
+  "beastPillDescriptions1019": {
+    "迅獸丹": "寵物戰前使用，下一場身+10%，持續3回合",
+    "獸戰丹": "寵物戰前使用，下一場攻+8%、道+8%，持續3回合",
+    "護獸丹": "寵物戰前使用，下一場防+10%、道防+10%，持續3回合",
+    "scope": "補齊背包、兌換及寵物道具選單敘述，原正式效果不變"
   }
 }

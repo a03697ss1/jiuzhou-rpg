@@ -1,0 +1,155 @@
+{
+  "rows": [
+    {
+      "name": "萬獸檯實際兌換三種丹藥，兌換與背包均顯示原有效果及3回合",
+      "pass": true,
+      "detail": [
+        {
+          "name": "［初階］迅獸丹",
+          "text": "［初階］迅獸丹 ×1\n\n30 萬獸積分\n\n寵物專用。戰前對指定寵物使用，下一場戰鬥身＋10%，持續3回合。\n\n兌換"
+        },
+        {
+          "name": "［初階］獸戰丹",
+          "text": "［初階］獸戰丹 ×1\n\n30 萬獸積分\n\n寵物專用。戰前對指定寵物使用，下一場戰鬥攻＋8%、道＋8%，持續3回合。\n\n兌換"
+        },
+        {
+          "name": "［初階］護獸丹",
+          "text": "［初階］護獸丹 ×1\n\n30 萬獸積分\n\n寵物專用。戰前對指定寵物使用，下一場戰鬥防＋10%、道防＋10%，持續3回合。\n\n兌換"
+        }
+      ]
+    },
+    {
+      "name": "三丹由寵物使用道具入口套用，下一場增益維持3回合後消失",
+      "pass": true,
+      "detail": {
+        "before": {
+          "agi": 12,
+          "atk": 14,
+          "dao": 14,
+          "def": 10,
+          "daoDef": 10
+        },
+        "active": {
+          "agi": 13.2,
+          "atk": 15.120000000000001,
+          "dao": 15.120000000000001,
+          "def": 11,
+          "daoDef": 11
+        },
+        "after": {
+          "agi": 12,
+          "atk": 14,
+          "dao": 14,
+          "def": 10,
+          "daoDef": 10
+        },
+        "pending": []
+      }
+    },
+    {
+      "name": "甲寵飼料實點3次、餅乾1次後鎖定，超量不扣道具；乙寵另計",
+      "pass": true,
+      "detail": {
+        "deniedFood": false,
+        "deniedCookie": false,
+        "first": {
+          "day": 0,
+          "food": 3,
+          "cookie": 1
+        },
+        "firstAffection": 19,
+        "otherFood": true,
+        "otherCookie": true,
+        "other": {
+          "day": 0,
+          "food": 1,
+          "cookie": 1
+        },
+        "food": 4,
+        "cookie": 2
+      }
+    },
+    {
+      "name": "存讀檔與改名不重置當日已吃次數",
+      "pass": true,
+      "detail": {
+        "d": {
+          "day": 0,
+          "food": 3,
+          "cookie": 1
+        },
+        "name": "改名甲寵",
+        "before": 16,
+        "after": 16,
+        "out": false
+      }
+    },
+    {
+      "name": "遊戲23:59仍達上限，跨00:00各寵物獨立重置並可重新餵食",
+      "pass": true,
+      "detail": {
+        "late": {
+          "day": 0,
+          "food": 3,
+          "cookie": 1
+        },
+        "blocked": false,
+        "reset": [
+          {
+            "day": 1,
+            "food": 0,
+            "cookie": 0
+          },
+          {
+            "day": 1,
+            "food": 0,
+            "cookie": 0
+          }
+        ],
+        "a": true,
+        "b": true,
+        "after": {
+          "day": 1,
+          "food": 1,
+          "cookie": 1
+        },
+        "other": {
+          "day": 1,
+          "food": 0,
+          "cookie": 0
+        }
+      }
+    },
+    {
+      "name": "沒道具、倒地或戰鬥中不扣當日次數；有階級飼料同樣受每日上限",
+      "pass": true,
+      "detail": {
+        "before": {
+          "day": 1,
+          "food": 1,
+          "cookie": 1
+        },
+        "unchanged": {
+          "day": 1,
+          "food": 1,
+          "cookie": 1
+        },
+        "empty": false,
+        "dead": false,
+        "fighting": false,
+        "results": [
+          true,
+          true,
+          false
+        ],
+        "after": {
+          "day": 1,
+          "food": 3,
+          "cookie": 1
+        },
+        "items": 3
+      }
+    }
+  ],
+  "errors": []
+}
