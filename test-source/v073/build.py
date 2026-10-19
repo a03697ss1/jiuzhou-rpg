@@ -48,6 +48,14 @@ def apply(text,standalone):
  code+='<script id="jz073-revision8-1019">'+(P/'revision8-1019.js').read_text('utf8')+'</script>\n'
  code+='<script id="jz073-mail-refresh1019">'+(P/'mail-refresh1019.js').read_text('utf8')+'</script>\n'
  code+='<script id="jz073-performance1019">'+(P/'performance1019.js').read_text('utf8')+'</script>\n'
+ code+='<script id="jz073-material-capacity1019">'+(P/'material-capacity1019.js').read_text('utf8')+'</script>\n'
+ code+='<script id="jz073-main-sidebar1019">'+(P/'main-sidebar1019.js').read_text('utf8')+'</script>\n'
+ code+='<script id="jz073-town-clinic1019">'+(P/'town-clinic1019.js').read_text('utf8')+'</script>\n'
+ code+='<script id="jz073-risk-tail1019">'+(P/'risk-tail1019.js').read_text('utf8')+'</script>\n'
+ code+='<script id="jz073-random-book1019">'+(P/'random-book1019.js').read_text('utf8')+'</script>\n'
+ code+='<script id="jz073-pet-battle1019">'+(P/'pet-battle1019.js').read_text('utf8')+'</script>\n'
+ code+='<script id="jz073-wendao-auto1019">'+(P/'wendao-auto1019.js').read_text('utf8')+'</script>\n'
+ code+='<script id="jz073-wave-vitals1019">'+(P/'wave-vitals1019.js').read_text('utf8')+'</script>\n'
  return text+code
 small=apply((P/'baseline-preview.html').read_text('utf8'),False);(P/'preview.html').write_text(small,'utf8')
 import sys

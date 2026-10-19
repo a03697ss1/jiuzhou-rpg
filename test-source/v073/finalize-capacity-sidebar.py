@@ -1,0 +1,15 @@
+from pathlib import Path
+import importlib.util,json,shutil,re,html
+P=Path(__file__).resolve().parent;R=P.parents[1];O=R/'V0.7.3_材料容量與主線置頂_2026-10-19';BUILD='20261019-official073-5';sp=importlib.util.spec_from_file_location('pub',P/'publish-preview.py');pub=importlib.util.module_from_spec(sp);sp.loader.exec_module(pub);T=pub.O/'Git測試分支';D=pub.DEST
+qa=json.loads((O/'驗收.json').read_text('utf8'));assert not qa['errors'] and len(qa['rows'])==11 and all(r['pass'] for r in qa['rows'])
+for folder in [D/'test-source/v073',T/'test-source/v073']:
+ for n in ['material-capacity1019.js','main-sidebar1019.js','capacity-sidebar-test.cjs','package-capacity-sidebar.py','finalize-capacity-sidebar.py','build.py']:shutil.copy2(P/n,folder/n)
+f=pub.W/'定案規則_0.7.3.json';rules=json.loads(f.read_text('utf8'));rules['build']=BUILD;rules['inventory']['initialSlots']['材料']=100;rules['inventory']['materialMigration']={'oldBase':50,'newBase':100,'oldCharacters':'原容量加50格，保留已擴充的額外格數','once':True,'marker':'materialBaseSlots=100','existingOverflow':'郵箱原附件不變，可在有空位時領回'};rules['mainSidebar']={'alwaysVisible':True,'position':'左側任務區第一格','accepted':'無論是否釘選皆顯示','unaccepted':'顯示下一主線與前置／等待條件，不自動接取','ready':'可回報主線仍置頂','branch':'遵守A／B分支，不混用名稱或改動分支完成記錄'}
+for n in ['material-capacity1019.js','main-sidebar1019.js']:rules['sourceModules'].append({'name':n,'sha256':pub.digest(P/n)})
+f.write_text(json.dumps(rules,ensure_ascii=False,indent=2),'utf8');shutil.copy2(f,T/'official073/定案規則_0.7.3.json')
+f=R/'最新定案母檔_0.7.3.json';m=json.loads(f.read_text('utf8'));assert 'currentConfirmed073'in m;m['official073']=rules;f.write_text(json.dumps(m,ensure_ascii=False,indent=2),'utf8')
+shutil.copy2(O/'驗收.json',D/'10-19J_材料容量與主線置頂驗收.json')
+report='<!doctype html><meta charset="utf-8"><title>材料100格與主線置頂修正</title><style>body{max-width:1000px;margin:40px auto;padding:20px;background:#0b1924;color:#e1e9ed;font:18px/1.8 sans-serif}a{color:#efcd86}</style><h1>材料100格與主線置頂</h1><h2>改動</h2><p>材料背包初始容量提高至100格。舊角色增加50格，例如53變成103；既有擴充不縮減，遷移只執行一次，存讀檔不再增加。每次擴充仍為3格。其他背包容量不變。</p><p>郵箱既有溢出附件保留，玩家可領回有空位的材料。沒有重發或自動刪除舊附件。</p><h2>BUG修復</h2><p>主線不論接取與釘選與否，固定顯示於左側任務區第一格。未接取仍顯示下一主線及條件；可回報時仍置頂。保留A／B分支，不自動接取、回報、發獎或變更任務完成記錄。</p><h2>11項測試通過</h2><ul>'+''.join('<li>'+html.escape(r['name'])+'</li>' for r in qa['rows'])+'</ul><p><a href="../../../?build='+BUILD+'">開啟最新版</a> · <a href="10-19J_材料容量與主線置頂驗收.json">完整驗收</a></p>'
+(D/'10-19J_材料容量與主線置頂.html').write_text(report,'utf8');(O/'修正與驗收.html').write_text(report,'utf8')
+old=pub.git(pub.W,'show','HEAD:preview/v0.7.3/index.html');new=(D/'index.html').read_text('utf8');scripts=lambda s:{m[1]:m[2] for m in re.finditer(r'<script id="([^"]+)">(.*?)</script>',s,re.S)};a,b=scripts(old),scripts(new);assert all(b[k]==v for k,v in a.items())
+s={'build':BUILD,'url':'https://a03697ss1.github.io/jiuzhou-rpg/?build='+BUILD,'base':pub.git(pub.W,'rev-parse','HEAD'),'tests':11,'siteBytes':sum(f.stat().st_size for f in pub.W.rglob('*') if f.is_file() and '.git' not in f.parts)};assert s['siteBytes']<1073741824;(P/'capacity-sidebar-state.json').write_text(json.dumps(s,ensure_ascii=False,indent=2),'utf8');print(json.dumps(s,ensure_ascii=False))
