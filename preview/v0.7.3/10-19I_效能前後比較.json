@@ -1,0 +1,14 @@
+{
+  "conditions": "隔離Edge、CPU降速4倍；閒置4秒與一般自動戰鬥10秒。量測不代表朋友裝置實際速度。",
+  "rootRebuildCallsBefore": 800,
+  "rootRebuildCallsAfter": 69,
+  "longTaskMedianBeforeMs": 340,
+  "longTaskMedianAfterMs": 66.0,
+  "normalBattle": "另以4倍CPU降速、1.5倍速度完成9回合正常野外戰鬥，約17.7秒；沒有加速計時器。",
+  "changes": [
+    "靈根圖示穩定後不再重複清理，變更靈根仍更新。",
+    "物品名稱正規化使用有上限快取，只快取名稱，不快取戰鬥數值。",
+    "素材標籤改為單次比對並只修改有變化的文字。"
+  ],
+  "tests": 17
+}

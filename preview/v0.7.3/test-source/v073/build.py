@@ -47,6 +47,7 @@ def apply(text,standalone):
  code+='<script id="jz073-official073">'+(P/'official073.js').read_text('utf8')+'</script>\n'
  code+='<script id="jz073-revision8-1019">'+(P/'revision8-1019.js').read_text('utf8')+'</script>\n'
  code+='<script id="jz073-mail-refresh1019">'+(P/'mail-refresh1019.js').read_text('utf8')+'</script>\n'
+ code+='<script id="jz073-performance1019">'+(P/'performance1019.js').read_text('utf8')+'</script>\n'
  return text+code
 small=apply((P/'baseline-preview.html').read_text('utf8'),False);(P/'preview.html').write_text(small,'utf8')
 import sys

@@ -1,0 +1,61 @@
+{
+  "rows": [
+    {
+      "name": "所有正式物品名稱正規化結果與原程式一致",
+      "pass": true,
+      "detail": {
+        "names": 912
+      }
+    },
+    {
+      "name": "素材標示完整結果與舊規則一致，重複處理不重複前綴",
+      "pass": true,
+      "detail": {
+        "equal": true,
+        "repeat": true,
+        "count": 276
+      }
+    },
+    {
+      "name": "四倍CPU降速、1.5倍正常自動野外戰鬥可完成結算",
+      "pass": true,
+      "detail": {
+        "finished": true,
+        "round": 9,
+        "hp": 83,
+        "dead": true,
+        "speed": 1.5,
+        "wallMs": 17720
+      }
+    },
+    {
+      "name": "靈根圖示已整理時不再觸發重建，圖像與節點保留",
+      "pass": true,
+      "detail": {
+        "sameHTML": true,
+        "sameImage": true,
+        "mutations": 0
+      }
+    },
+    {
+      "name": "更換靈根仍可更新正確圖片",
+      "pass": true,
+      "detail": {
+        "before": "../../assets/jz070_4d3242a16ae107bfa967ec0b.png",
+        "after": "../../assets/jz070_e46a28612476d09e76a3beb2.png",
+        "root": "水"
+      }
+    },
+    {
+      "name": "背包、圖鑑及領信保持正常",
+      "pass": true,
+      "detail": {
+        "bag": true,
+        "codex": 69,
+        "coins": 5000,
+        "receipt": true
+      }
+    }
+  ],
+  "errors": []
+}

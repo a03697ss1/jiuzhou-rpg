@@ -1,0 +1,14 @@
+<!doctype html><meta charset="utf-8"><title>0.7.3 效能修正</title><style>body{max-width:1000px;margin:40px auto;padding:20px;background:#0b1924;color:#e1e9ed;font:18px/1.8 sans-serif}a{color:#efcd86}pre{white-space:pre-wrap}</style><h1>整體介面與自動戰鬥效能修正</h1><p>靈根圖示的舊清理程式與完整圖示保護程式互相重建，引發反覆觀察更新；素材階級標籤則在每次戰鬥畫面更新時，逐項重掃所有文字。</p><p>本輪保留相同圖示輸出，只處理變更的節點；名稱正規化加入有限快取，素材階級改一次比對。不調整傷害、血量、掉落、回合順序、動畫速度或存檔格式。</p><pre>{
+  &quot;conditions&quot;: &quot;隔離Edge、CPU降速4倍；閒置4秒與一般自動戰鬥10秒。量測不代表朋友裝置實際速度。&quot;,
+  &quot;rootRebuildCallsBefore&quot;: 800,
+  &quot;rootRebuildCallsAfter&quot;: 69,
+  &quot;longTaskMedianBeforeMs&quot;: 340,
+  &quot;longTaskMedianAfterMs&quot;: 66.0,
+  &quot;normalBattle&quot;: &quot;另以4倍CPU降速、1.5倍速度完成9回合正常野外戰鬥，約17.7秒；沒有加速計時器。&quot;,
+  &quot;changes&quot;: [
+    &quot;靈根圖示穩定後不再重複清理，變更靈根仍更新。&quot;,
+    &quot;物品名稱正規化使用有上限快取，只快取名稱，不快取戰鬥數值。&quot;,
+    &quot;素材標籤改為單次比對並只修改有變化的文字。&quot;
+  ],
+  &quot;tests&quot;: 17
+}</pre><h2>17項檢查通過</h2><ul><li>所有正式物品名稱正規化結果與原程式一致：通過</li><li>素材標示完整結果與舊規則一致，重複處理不重複前綴：通過</li><li>四倍CPU降速、1.5倍正常自動野外戰鬥可完成結算：通過</li><li>靈根圖示已整理時不再觸發重建，圖像與節點保留：通過</li><li>更換靈根仍可更新正確圖片：通過</li><li>背包、圖鑑及領信保持正常：通過</li><li>五種戰中丹藥由戰鬥背包實際使用；鎮心只加抵抗12、3回合後消失：通過</li><li>未開啟的自選護體丹箱不在戰鬥背包，直接使用也不扣箱子：通過</li><li>護盾值顯示在實際氣血條上方，承傷扣盾、破盾後標籤消失：通過</li><li>長右正常傷害跨50%時，本體與專屬血條同時切換水雷圖片：通過</li><li>長右戰玩家真實倒地、NPC完成擊殺，勝利後1氣血並可醫館治療：通過</li><li>其他BOSS共用結算：玩家倒地、夥伴勝利後保留1氣血：通過</li><li>A線青陽山第1場實際勝利退出：通過</li><li>A線青陽山第2場實際勝利退出：通過</li><li>B線第1波勝利退出：通過</li><li>B線第2波勝利退出：通過</li><li>B線第3波勝利退出：通過</li></ul><p><a href="../../../?build=20261019-official073-4">開啟最新正式版</a> · <a href="10-19I_效能前後比較.json">量測資料</a></p>
