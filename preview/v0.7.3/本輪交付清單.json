@@ -1,6 +1,6 @@
 {
   "version": "0.7.3",
-  "build": "20261019-bossbar-1",
+  "build": "20261019-revision24-1",
   "items": 18,
   "tests": 90,
   "passed": 90,
@@ -63,5 +63,325 @@
     "normalFlowEvidence": "使用正式手動普攻、點選長右、跨階段後勝利；失敗結算與A線黑衣人正常勝利均通過。",
     "artTool": "built-in image_gen",
     "artPrompts": "boss-bar-assets/生成提示詞.json"
+  },
+  "revision24": {
+    "build": "20261019-revision24-1",
+    "version": "0.7.3",
+    "completed": 23,
+    "pending": 1,
+    "tests": 42,
+    "regressionTests": 39,
+    "formalUpdated": false,
+    "rows": [
+      {
+        "id": 1,
+        "title": "護盾值",
+        "status": "已實裝／驗證通過",
+        "result": "血條上方顯示護盾數字，承傷扣除、破盾消失。",
+        "code": "revision24-combat.js",
+        "evidence": [
+          "介面與物品驗收.json",
+          "戰鬥與嚴重BUG驗收.json",
+          "問道18裝備特殊效果驗收.json",
+          "配方成長存讀檔驗收.json"
+        ]
+      },
+      {
+        "id": 2,
+        "title": "問道裝備與五種丹藥",
+        "status": "已實裝／驗證通過",
+        "result": "18件裝備採本輪完整數值、位階與效果；補完整商店。五種丹藥35點可重複兌換，鎮心丹改為抵抗＋12、3回合。",
+        "code": "revision24-items.js / revision24-combat.js",
+        "evidence": [
+          "介面與物品驗收.json",
+          "戰鬥與嚴重BUG驗收.json",
+          "問道18裝備特殊效果驗收.json",
+          "配方成長存讀檔驗收.json"
+        ]
+      },
+      {
+        "id": 3,
+        "title": "紀念品歷練",
+        "status": "待補",
+        "result": "已查明現行領取沒有給歷練；現有原表只有紀念品敘述，沒有獎勵數字。待玩家補充每件數量及重複取得規則。",
+        "code": "baseline-scripts/99-jzw-word-integration.js：jzClaimNpcGift",
+        "evidence": [
+          "紀念品歷練待補清單.json"
+        ]
+      },
+      {
+        "id": 4,
+        "title": "缺圖與凝力丹",
+        "status": "已實裝／驗證通過",
+        "result": "核對912個現有物品名稱之圖片路徑，缺檔0。凝力丹等五丹沿用既有獨立圖，補齊商店顯示；獸技殘頁新增獨立圖。",
+        "code": "revision24-items.js / revision24-art.js",
+        "evidence": [
+          "介面與物品驗收.json",
+          "戰鬥與嚴重BUG驗收.json",
+          "問道18裝備特殊效果驗收.json",
+          "配方成長存讀檔驗收.json"
+        ]
+      },
+      {
+        "id": 5,
+        "title": "一、二階素材箱",
+        "status": "已實裝／驗證通過",
+        "result": "換成樸素木箱與鐵包角木箱，共用同一映射；保留開箱內容與數量。",
+        "code": "revision24-art.js",
+        "evidence": [
+          "介面與物品驗收.json",
+          "戰鬥與嚴重BUG驗收.json",
+          "問道18裝備特殊效果驗收.json",
+          "配方成長存讀檔驗收.json"
+        ]
+      },
+      {
+        "id": 6,
+        "title": "戰意玉說明",
+        "status": "已實裝／驗證通過",
+        "result": "特殊裝備進階素材。",
+        "code": "revision24-items.js",
+        "evidence": [
+          "介面與物品驗收.json",
+          "戰鬥與嚴重BUG驗收.json",
+          "問道18裝備特殊效果驗收.json",
+          "配方成長存讀檔驗收.json"
+        ]
+      },
+      {
+        "id": 7,
+        "title": "戰鬥背包排除未開箱",
+        "status": "已實裝／驗證通過",
+        "result": "自選護體丹箱等箱子不出現在戰鬥背包；直接呼叫使用亦不消耗。",
+        "code": "revision24-items.js",
+        "evidence": [
+          "介面與物品驗收.json",
+          "戰鬥與嚴重BUG驗收.json",
+          "問道18裝備特殊效果驗收.json",
+          "配方成長存讀檔驗收.json"
+        ]
+      },
+      {
+        "id": 8,
+        "title": "長右水／水雷本體",
+        "status": "已實裝／驗證通過",
+        "result": "第一階段水元素，第二階段切換水雷立繪；血條與本體均依實際階段換圖。",
+        "code": "revision24-art.js",
+        "evidence": [
+          "介面與物品驗收.json",
+          "戰鬥與嚴重BUG驗收.json",
+          "問道18裝備特殊效果驗收.json",
+          "配方成長存讀檔驗收.json"
+        ]
+      },
+      {
+        "id": 9,
+        "title": "BOSS勝利後氣血0",
+        "status": "已實裝／驗證通過",
+        "result": "玩家倒地而夥伴擊殺長右後至少1氣血，可醫館治療；通用BOSS最終勝利寫回同樣保護。",
+        "code": "revision24-combat.js：ensureBossSurvivor24 / battleWin",
+        "evidence": [
+          "介面與物品驗收.json",
+          "戰鬥與嚴重BUG驗收.json",
+          "問道18裝備特殊效果驗收.json",
+          "配方成長存讀檔驗收.json"
+        ]
+      },
+      {
+        "id": 10,
+        "title": "獸魂晶",
+        "status": "已實裝／驗證通過",
+        "result": "寵物升星核心素材。",
+        "code": "revision24-items.js",
+        "evidence": [
+          "介面與物品驗收.json",
+          "戰鬥與嚴重BUG驗收.json",
+          "問道18裝備特殊效果驗收.json",
+          "配方成長存讀檔驗收.json"
+        ]
+      },
+      {
+        "id": 11,
+        "title": "圖鑑搜尋輸入",
+        "status": "已實裝／驗證通過",
+        "result": "更新搜尋結果時保留輸入元件、焦點與選取；中文組字期間不重畫。",
+        "code": "revision24-ui.js：catalogSearch1018",
+        "evidence": [
+          "介面與物品驗收.json",
+          "戰鬥與嚴重BUG驗收.json",
+          "問道18裝備特殊效果驗收.json",
+          "配方成長存讀檔驗收.json"
+        ]
+      },
+      {
+        "id": 12,
+        "title": "東州大禮包",
+        "status": "已實裝／驗證通過",
+        "result": "使用按鈕移入物品卡片；實際使用發放與數量正常。",
+        "code": "revision24-items.js：renderBag",
+        "evidence": [
+          "介面與物品驗收.json",
+          "戰鬥與嚴重BUG驗收.json",
+          "問道18裝備特殊效果驗收.json",
+          "配方成長存讀檔驗收.json"
+        ]
+      },
+      {
+        "id": 13,
+        "title": "獸靈果丹與靈獸露丹",
+        "status": "已實裝／驗證通過",
+        "result": "兩者配方各自專用素材×5；物品庫與材料庫共用計數。公共爐實際製作通過，永久＋5／＋20與屬傷10%上限通過。",
+        "code": "revision24-items.js：petMaterialCount24 / r59ConsumeIngredients",
+        "evidence": [
+          "介面與物品驗收.json",
+          "戰鬥與嚴重BUG驗收.json",
+          "問道18裝備特殊效果驗收.json",
+          "配方成長存讀檔驗收.json"
+        ]
+      },
+      {
+        "id": 14,
+        "title": "寵物自選專屬技能箱",
+        "status": "已實裝／驗證通過",
+        "result": "打開後可自選該寵物合法池技能。沿用既有合法技能池。",
+        "code": "revision24-items.js",
+        "evidence": [
+          "介面與物品驗收.json",
+          "戰鬥與嚴重BUG驗收.json",
+          "問道18裝備特殊效果驗收.json",
+          "配方成長存讀檔驗收.json"
+        ]
+      },
+      {
+        "id": 15,
+        "title": "獸技殘頁",
+        "status": "已實裝／驗證通過",
+        "result": "萬獸檯35點兌換改為獸技殘頁；描述為妖物技能相關素材，可用於特殊合成。",
+        "code": "revision24-items.js",
+        "evidence": [
+          "介面與物品驗收.json",
+          "戰鬥與嚴重BUG驗收.json",
+          "問道18裝備特殊效果驗收.json",
+          "配方成長存讀檔驗收.json"
+        ]
+      },
+      {
+        "id": 16,
+        "title": "初階寵物用破境丹",
+        "status": "已實裝／驗證通過",
+        "result": "寵物境界突破與破境率＋5%。",
+        "code": "revision24-items.js",
+        "evidence": [
+          "介面與物品驗收.json",
+          "戰鬥與嚴重BUG驗收.json",
+          "問道18裝備特殊效果驗收.json",
+          "配方成長存讀檔驗收.json"
+        ]
+      },
+      {
+        "id": 17,
+        "title": "中階寵物用破境丹",
+        "status": "已實裝／驗證通過",
+        "result": "寵物境界突破與破境率＋8%。",
+        "code": "revision24-items.js",
+        "evidence": [
+          "介面與物品驗收.json",
+          "戰鬥與嚴重BUG驗收.json",
+          "問道18裝備特殊效果驗收.json",
+          "配方成長存讀檔驗收.json"
+        ]
+      },
+      {
+        "id": 18,
+        "title": "靈契玉",
+        "status": "已實裝／驗證通過",
+        "result": "進階寵物裝備用材料。",
+        "code": "revision24-items.js",
+        "evidence": [
+          "介面與物品驗收.json",
+          "戰鬥與嚴重BUG驗收.json",
+          "問道18裝備特殊效果驗收.json",
+          "配方成長存讀檔驗收.json"
+        ]
+      },
+      {
+        "id": 19,
+        "title": "萬獸徽記",
+        "status": "已實裝／驗證通過",
+        "result": "採用本輪完整敘述：五星特殊突破及萬獸檯高級兌換憑證。",
+        "code": "revision24-items.js",
+        "evidence": [
+          "介面與物品驗收.json",
+          "戰鬥與嚴重BUG驗收.json",
+          "問道18裝備特殊效果驗收.json",
+          "配方成長存讀檔驗收.json"
+        ]
+      },
+      {
+        "id": 20,
+        "title": "寵物秘術卷軸",
+        "status": "已實裝／驗證通過",
+        "result": "提升一層境界，不可用於破境；實測圓滿拒用且不扣道具。",
+        "code": "revision24-items.js / 既有JZR.petAdvance",
+        "evidence": [
+          "介面與物品驗收.json",
+          "戰鬥與嚴重BUG驗收.json",
+          "問道18裝備特殊效果驗收.json",
+          "配方成長存讀檔驗收.json"
+        ]
+      },
+      {
+        "id": 21,
+        "title": "出售限制",
+        "status": "已實裝／驗證通過",
+        "result": "所有［特殊］及自選箱不可出售、不列入出售介面。",
+        "code": "revision24-items.js：saleBlocked",
+        "evidence": [
+          "介面與物品驗收.json",
+          "戰鬥與嚴重BUG驗收.json",
+          "問道18裝備特殊效果驗收.json",
+          "配方成長存讀檔驗收.json"
+        ]
+      },
+      {
+        "id": 22,
+        "title": "功法殘卷售價",
+        "status": "已實裝／驗證通過",
+        "result": "每個實際出售取得200靈幣。",
+        "code": "revision24-items.js：sellQuote",
+        "evidence": [
+          "介面與物品驗收.json",
+          "戰鬥與嚴重BUG驗收.json",
+          "問道18裝備特殊效果驗收.json",
+          "配方成長存讀檔驗收.json"
+        ]
+      },
+      {
+        "id": 23,
+        "title": "突破／破境數值預覽",
+        "status": "已實裝／驗證通過",
+        "result": "玩家、永久夥伴與寵物顯示目前、提升後、增加量；玩家與夥伴實際突破後八核與預覽一致。",
+        "code": "revision24-ui.js",
+        "evidence": [
+          "介面與物品驗收.json",
+          "戰鬥與嚴重BUG驗收.json",
+          "問道18裝備特殊效果驗收.json",
+          "配方成長存讀檔驗收.json"
+        ]
+      },
+      {
+        "id": 24,
+        "title": "築基圓滿上限",
+        "status": "已實裝／驗證通過",
+        "result": "玩家築基圓滿的突破按鈕關閉，直接呼叫亦拒絕；不扣修為、歷練或丹藥。",
+        "code": "revision24-ui.js",
+        "evidence": [
+          "介面與物品驗收.json",
+          "戰鬥與嚴重BUG驗收.json",
+          "問道18裝備特殊效果驗收.json",
+          "配方成長存讀檔驗收.json"
+        ]
+      }
+    ]
   }
 }

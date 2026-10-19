@@ -1,0 +1,178 @@
+{
+  "rows": [
+    {
+      "name": "問心劍首次功法命中＋10百分點，施放後不再增加",
+      "pass": true,
+      "detail": {
+        "first": 0.6,
+        "after": 0.5,
+        "cast": true
+      }
+    },
+    {
+      "name": "破軍刀嚴格高於70%氣血，直接傷害＋6%",
+      "pass": true,
+      "detail": {
+        "high": 106,
+        "low": 100
+      }
+    },
+    {
+      "name": "問道槍連續同目標自第二次＋4%，換目標重新計算",
+      "pass": true,
+      "detail": [
+        100,
+        104,
+        100,
+        104
+      ]
+    },
+    {
+      "name": "逐星弓僅自帶暴擊率＋3%，八核數值不重複乘算",
+      "pass": true,
+      "detail": {
+        "atk": 25,
+        "dao": 14,
+        "agi": 7,
+        "hit": 15,
+        "critRate": 3,
+        "slot": "武",
+        "source": "問道檯",
+        "hidden": "特殊·中位",
+        "effect": "暴擊率＋3%"
+      }
+    },
+    {
+      "name": "破境拳套身高於目標直接傷害＋5%，相同不觸發",
+      "pass": true,
+      "detail": {
+        "yes": 105,
+        "no": 100
+      }
+    },
+    {
+      "name": "鎮岳錘只在自身氣血高於50%的錘類功法＋5%",
+      "pass": true,
+      "detail": {
+        "skill": "定錘功",
+        "yes": 105,
+        "low": 100,
+        "other": 100
+      }
+    },
+    {
+      "name": "問靈寶珠只減道術功法靈力消耗6%",
+      "pass": true,
+      "detail": {
+        "yes": 94,
+        "no": 100
+      }
+    },
+    {
+      "name": "清虛道扇增益功法後身＋6%，2回合、不疊加",
+      "pass": true,
+      "detail": {
+        "one": 106,
+        "two": 106,
+        "round1": 106,
+        "expired": 100
+      }
+    },
+    {
+      "name": "納靈葫蘆實際施法扣靈力後立即回復10%，整場只觸發一次",
+      "pass": true,
+      "detail": {
+        "cost": 60,
+        "after1": 345,
+        "after2": 245
+      }
+    },
+    {
+      "name": "玄機靈傘攻擊功法後，下一次增益持續＋1、消耗且不能累積",
+      "pass": true,
+      "detail": {
+        "attackTwice": true,
+        "states": [
+          {
+            "name": "守勢",
+            "turns": 3
+          }
+        ],
+        "consumed": true
+      }
+    },
+    {
+      "name": "問道護符首次受到異常時抵抗＋10，2回合後消失且不再觸發",
+      "pass": true,
+      "detail": {
+        "first": 110,
+        "second": 100
+      }
+    },
+    {
+      "name": "戰心指環暴擊後攻＋6%，2回合、不疊加",
+      "pass": true,
+      "detail": {
+        "first": 106,
+        "repeat": 106,
+        "end": 100
+      }
+    },
+    {
+      "name": "問心戒只對異常目標道術直傷＋5%，僅增益不觸發",
+      "pass": true,
+      "detail": {
+        "buff": 100,
+        "bad": 105,
+        "physical": 100
+      }
+    },
+    {
+      "name": "問道佩首次低於50%抵抗＋12，2回合後不重複觸發",
+      "pass": true,
+      "detail": {
+        "first": 112,
+        "second": 100
+      }
+    },
+    {
+      "name": "破境項鍊只對高於自身境界的目標直接傷害＋6%",
+      "pass": true,
+      "detail": {
+        "high": 106,
+        "equal": 100
+      }
+    },
+    {
+      "name": "道心靈墜實際道術後下一次增益消耗減10%，僅扣一次",
+      "pass": true,
+      "detail": {
+        "cost1": 15,
+        "cost2": 16,
+        "spent": 15,
+        "consumed": true
+      }
+    },
+    {
+      "name": "問天玉佩道術直傷＋8%、道術消耗－5%",
+      "pass": true,
+      "detail": {
+        "magicDamage": 108,
+        "physical": 100,
+        "cost": 95
+      }
+    },
+    {
+      "name": "破天戰佩物理直傷＋8%；高於50%氣血暴傷＋10百分點",
+      "pass": true,
+      "detail": {
+        "normal": 108,
+        "crit": 115.20000000000002,
+        "low": 108,
+        "magicDamage": 100
+      }
+    }
+  ],
+  "errors": [],
+  "note": "效果以正式戰鬥函式、正式功法T001/T019及獨立控制單位核對；商店、玩家倒地BOSS勝利與介面另有正常遊戲流程驗收。"
+}

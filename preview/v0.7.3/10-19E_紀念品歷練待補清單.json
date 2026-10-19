@@ -1,0 +1,57 @@
+{
+  "id": 3,
+  "status": "待補",
+  "finding": "現行jzClaimNpcGift只給物品並記錄已領取，沒有增加歷練。現存紀念品原表只有敘述，未給歷練數值。",
+  "needed": [
+    "各紀念品獲得的歷練數量",
+    "同物品重複獲得是否再次給予歷練"
+  ],
+  "sources": [
+    "baseline-scripts/99-jzw-word-integration.js：souvenirs / jzClaimNpcGift",
+    "revision24-runtime.json：gifts / souvenirs"
+  ],
+  "knownNpcSouvenirs": [
+    {
+      "npc": "蘇璃",
+      "hearts": 7,
+      "name": "［特殊］半月水玉",
+      "qty": 1,
+      "experience": null
+    },
+    {
+      "npc": "蘇項",
+      "hearts": 7,
+      "name": "［特殊］半月山玉",
+      "qty": 1,
+      "experience": null
+    },
+    {
+      "npc": "沈玄川",
+      "hearts": 3,
+      "name": "［特殊］玄川的護身符",
+      "qty": 1,
+      "experience": null
+    },
+    {
+      "npc": "沈玄川",
+      "hearts": 10,
+      "name": "［特殊］玄川劍穗",
+      "qty": 1,
+      "experience": null
+    },
+    {
+      "npc": "柳清妍",
+      "hearts": 3,
+      "name": "［特殊］清妍的藥囊",
+      "qty": 1,
+      "experience": null
+    },
+    {
+      "npc": "柳清妍",
+      "hearts": 10,
+      "name": "［特殊］青羽箭飾",
+      "qty": 1,
+      "experience": null
+    }
+  ]
+}

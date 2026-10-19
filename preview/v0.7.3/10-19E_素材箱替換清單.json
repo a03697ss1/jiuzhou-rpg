@@ -1,0 +1,62 @@
+[
+  {
+    "old": "［特殊］綜合一階素材箱.webp",
+    "current": "revision24-assets/一階樸素素材箱.webp",
+    "oldSha256": "0dba9e5f8dfd24638d574c1d8fc8d3ddbcd31a474ff142b158cad9435cb89886",
+    "archivedSource": "https://raw.githubusercontent.com/a03697ss1/jiuzhou-rpg/test/v0.7.3-20261017/qa-archive/20261019-boxes/%EF%BC%BB%E7%89%B9%E6%AE%8A%EF%BC%BD%E7%B6%9C%E5%90%88%E4%B8%80%E9%9A%8E%E7%B4%A0%E6%9D%90%E7%AE%B1.webp"
+  },
+  {
+    "old": "［特殊］綜合二階素材箱.webp",
+    "current": "revision24-assets/二階樸素素材箱.webp",
+    "oldSha256": "18faccd705b1af501b7c53cb27d2382b8dfd15c93eefce890e59941bfd4769da",
+    "archivedSource": "https://raw.githubusercontent.com/a03697ss1/jiuzhou-rpg/test/v0.7.3-20261017/qa-archive/20261019-boxes/%EF%BC%BB%E7%89%B9%E6%AE%8A%EF%BC%BD%E7%B6%9C%E5%90%88%E4%BA%8C%E9%9A%8E%E7%B4%A0%E6%9D%90%E7%AE%B1.webp"
+  },
+  {
+    "old": "［特殊］自選一階妖物素材箱.webp",
+    "current": "revision24-assets/一階樸素素材箱.webp",
+    "oldSha256": "f9878cf3891f25786e4f8ddb6f876dc729e6f6419142b16313b80d7cee26e13c",
+    "archivedSource": "https://raw.githubusercontent.com/a03697ss1/jiuzhou-rpg/test/v0.7.3-20261017/qa-archive/20261019-boxes/%EF%BC%BB%E7%89%B9%E6%AE%8A%EF%BC%BD%E8%87%AA%E9%81%B8%E4%B8%80%E9%9A%8E%E5%A6%96%E7%89%A9%E7%B4%A0%E6%9D%90%E7%AE%B1.webp"
+  },
+  {
+    "old": "［特殊］自選一階材料箱.webp",
+    "current": "revision24-assets/一階樸素素材箱.webp",
+    "oldSha256": "4019546789e4b32f316ca27680ff18f2ec926a77b82f62d6b725a3b52af2ad4e",
+    "archivedSource": "https://raw.githubusercontent.com/a03697ss1/jiuzhou-rpg/test/v0.7.3-20261017/qa-archive/20261019-boxes/%EF%BC%BB%E7%89%B9%E6%AE%8A%EF%BC%BD%E8%87%AA%E9%81%B8%E4%B8%80%E9%9A%8E%E6%9D%90%E6%96%99%E7%AE%B1.webp"
+  },
+  {
+    "old": "［特殊］自選一階礦物箱.webp",
+    "current": "revision24-assets/一階樸素素材箱.webp",
+    "oldSha256": "a3ecc406dcce4db6eb9ddb2d238c828b77a99391c8019e8cf08b729609c2c96b",
+    "archivedSource": "https://raw.githubusercontent.com/a03697ss1/jiuzhou-rpg/test/v0.7.3-20261017/qa-archive/20261019-boxes/%EF%BC%BB%E7%89%B9%E6%AE%8A%EF%BC%BD%E8%87%AA%E9%81%B8%E4%B8%80%E9%9A%8E%E7%A4%A6%E7%89%A9%E7%AE%B1.webp"
+  },
+  {
+    "old": "［特殊］自選二階妖物素材箱.webp",
+    "current": "revision24-assets/二階樸素素材箱.webp",
+    "oldSha256": "cc595cf4be0480c0d6b0cd31aec2470d856e2eeb6c2d79919fe7ea80e54be303",
+    "archivedSource": "https://raw.githubusercontent.com/a03697ss1/jiuzhou-rpg/test/v0.7.3-20261017/qa-archive/20261019-boxes/%EF%BC%BB%E7%89%B9%E6%AE%8A%EF%BC%BD%E8%87%AA%E9%81%B8%E4%BA%8C%E9%9A%8E%E5%A6%96%E7%89%A9%E7%B4%A0%E6%9D%90%E7%AE%B1.webp"
+  },
+  {
+    "old": "［特殊］自選二階材料箱.webp",
+    "current": "revision24-assets/二階樸素素材箱.webp",
+    "oldSha256": "6f830c324811c880ef5ea4fd5c6c730704d3005ed3d476dba2e1a98ff3cbaf4c",
+    "archivedSource": "https://raw.githubusercontent.com/a03697ss1/jiuzhou-rpg/test/v0.7.3-20261017/qa-archive/20261019-boxes/%EF%BC%BB%E7%89%B9%E6%AE%8A%EF%BC%BD%E8%87%AA%E9%81%B8%E4%BA%8C%E9%9A%8E%E6%9D%90%E6%96%99%E7%AE%B1.webp"
+  },
+  {
+    "old": "［特殊］自選二階素材箱.webp",
+    "current": "revision24-assets/二階樸素素材箱.webp",
+    "oldSha256": "6d1c49beca861564fdb899945fa5ebfb03265c6426ccf8f7e325dc476b600d51",
+    "archivedSource": "https://raw.githubusercontent.com/a03697ss1/jiuzhou-rpg/test/v0.7.3-20261017/qa-archive/20261019-boxes/%EF%BC%BB%E7%89%B9%E6%AE%8A%EF%BC%BD%E8%87%AA%E9%81%B8%E4%BA%8C%E9%9A%8E%E7%B4%A0%E6%9D%90%E7%AE%B1.webp"
+  },
+  {
+    "old": "［特殊］自選晶石箱.webp",
+    "current": "revision24-assets/二階樸素素材箱.webp",
+    "oldSha256": "62af836fd9a96d4bf9bca648b99478f2ec498a71358d87d01d1048b0a6085d05",
+    "archivedSource": "https://raw.githubusercontent.com/a03697ss1/jiuzhou-rpg/test/v0.7.3-20261017/qa-archive/20261019-boxes/%EF%BC%BB%E7%89%B9%E6%AE%8A%EF%BC%BD%E8%87%AA%E9%81%B8%E6%99%B6%E7%9F%B3%E7%AE%B1.webp"
+  },
+  {
+    "old": "［特殊］自選護體丹箱.webp",
+    "current": "revision24-assets/一階樸素素材箱.webp",
+    "oldSha256": "790e3aea98deb2dd65e888055212bbef76ed0c7d3a1db868452f304729f10a08",
+    "archivedSource": "https://raw.githubusercontent.com/a03697ss1/jiuzhou-rpg/test/v0.7.3-20261017/qa-archive/20261019-boxes/%EF%BC%BB%E7%89%B9%E6%AE%8A%EF%BC%BD%E8%87%AA%E9%81%B8%E8%AD%B7%E9%AB%94%E4%B8%B9%E7%AE%B1.webp"
+  }
+]

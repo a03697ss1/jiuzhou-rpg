@@ -1,0 +1,25 @@
+{
+  "tool": "built-in image_gen",
+  "outputs": [
+    {
+      "file": "長右_水.png",
+      "prompt": "Edit this exact approved four-eared gigantic ape Changyou boss full-body transparent illustration. Preserve face, four ears, anatomy, pose, fur, silhouette, realistic painted Chinese xianxia art and complete feet/hands. Add WATER ELEMENT FIRST-PHASE subtle but clearly visible blue floodwater ribbons coiling around both forearms, small flowing water sheets at ankles and between claws, suspended droplets and watery cyan glints. Water must not obscure face, ears, fingers or feet. No lightning, no thunder, no electric arcs. Keep water within canvas with small margin, no ground scenery, transparent background. One full independent monster sprite, no text, no frame. Same composition and scale as reference."
+    },
+    {
+      "file": "長右_水雷.png",
+      "prompt": "Edit this exact FIRST-PHASE WATER four-eared gigantic ape boss to its SECOND-PHASE WATER AND THUNDER variant. Preserve the exact same face, four ears, full-body pose, fur, anatomy, size, complete hands/feet, and flowing blue water ribbons. ADD sharp natural violet-white lightning arcs around shoulders, forearms and watery ankles, electric light reflected subtly on wet fur. Water remains clear and visible. Lightning should be organic thin branching, premium realistic fantasy effects, not pixels, not thick zigzag icons, not sci-fi neon outlines. Do not obscure face or ears or paws. Transparent background, no landscape, no text, full independent game sprite, same composition and canvas."
+    },
+    {
+      "file": "一階樸素素材箱.png",
+      "prompt": "Chinese xianxia game inventory icon, one small plain EARLY LEVEL material storage chest. Weathered light brown softwood planks, simple dull iron hinge, rough hemp rope tied around lid, faded paper seal with no legible text, tiny beige cloth peeking out. Practical humble inexpensive handmade box, slight wear, NOT treasure overflowing, NOT gold, NO gemstones, NO ornate filigree, NO glow. Independent clearly recognizable isolated object, realistic painted high quality, transparent background, square icon, fully visible with padding, no letters/numbers/UI frame."
+    },
+    {
+      "file": "二階樸素素材箱.png",
+      "prompt": "Chinese xianxia game inventory icon, one modest SECOND LEVEL materials storage chest. Dark brown hardwood with four simple dark iron corner bands, plain brass latch, single small muted teal cord knot, restrained quality slightly sturdier than rough early wood crate. Practical ordinary box, NOT opulent, NO gold trim, NO gemstones, NO magic glow, NO ornate carvings, NO sparkling treasure. Independent isolated game item, detailed realistic painted xianxia icon, transparent background, square with padding, no text, no decorative UI frame."
+    },
+    {
+      "file": "獸技殘頁.png",
+      "prompt": "Chinese xianxia game item icon: Beast Technique Fragment, one torn old parchment LEAF / PAGE from a monster technique manuscript, irregular frayed edges, faded ink drawing of a beast paw and small abstract illegible brush glyphs, a small reddish cinnabar seal, simple muted beige brown paper, not a full book or rolled scroll, no gold frame, no modern text. Detailed painted inventory icon, clear independent recognizable silhouette, transparent background, square composition with padding."
+    }
+  ]
+}
