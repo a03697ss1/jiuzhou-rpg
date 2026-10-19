@@ -24986,7 +24986,7 @@ const finish=N.decorate;N.decorate=()=>{finish();const banner=document.querySele
 const history=JZ072.versionHistory;JZ072.versionHistory=()=>{history();document.getElementById('modalBody')?.insertAdjacentHTML('afterbegin','<section class="card"><h2>本輪18項修正</h2><h3>新增</h3><p>裝備、各階藥品與特殊物品的獨立圖片；補齊NPC靈根資質。</p><h3>改動</h3><p>狐毛、狐尾與獸角歸妖物素材；藥品使用你提供的數值；取得來源依完整階級與當前商店核對；布告箱移到放大的布告欄下方；交談只保留暫時離開。</p><h3>BUG修復</h3><p>戰鬥血量與戰位同步、測試999重複挑戰長右、主線行動所在地限制、蘇璃同行位置、柳清妍任務入口、功法階級顯示，以及必敗戰的手動1倍與繼續提示。</p></section>');};
 })();
 </script>
-<script>window.JZ073_BUILD_ID="20261019-official073-2";</script>
+<script>window.JZ073_BUILD_ID="20261019-official073-3";</script>
 <script id="jz073-hidden-steal1019">(function(){'use strict';const N=JZ073,R=JZR;
 const drops=Object.freeze({'林夏于':'［特殊］火霞刀','蘇璃':'［特殊］靈水劍','柳清妍':'［特殊］秘術弓','邱山河':'［特殊］鹿絞槍','蘇項':'［特殊］土靈盔'});
 const names=new Set(Object.values(drops));
@@ -25433,5 +25433,19 @@ const css=document.createElement('style');css.id='jz-revision8-1019';css.textCon
 .jz-catalog-grid{display:grid!important;grid-template-columns:repeat(auto-fill,minmax(min(100%,290px),1fr))!important;gap:14px!important;align-items:start!important}.jz-catalog-grid>.jz-catalog-card{height:490px!important;min-height:490px!important;max-height:490px!important;width:100%!important;box-sizing:border-box;display:flex!important;flex-direction:column!important;overflow:hidden!important;margin:0!important}.jz-catalog-card>.jz-catalog-image{height:150px!important;min-height:150px!important;max-height:150px!important;width:100%!important;flex:none!important;overflow:hidden}.jz-catalog-image img{width:100%!important;height:150px!important;object-fit:contain!important}.jz-catalog-card>.jz-catalog-heading{height:74px;min-height:74px;max-height:74px;overflow:auto;flex:none}.jz-catalog-card>.jz-catalog-details{min-height:0;flex:1;overflow:auto!important;scrollbar-width:thin}.jz-mail-card p{overflow-wrap:anywhere;line-height:1.6}#jz-save-feedback{color:#c6ecad}
 @media(max-width:560px){.jz-fixed-bag>.jz-slot-copy{font-size:15px!important}.jz-fixed-bag .jz-slot-copy b{font-size:16px!important}.jz-catalog-grid{grid-template-columns:1fr!important}}
 `;document.head.append(css);if(N.paintOfficial073)N.paintOfficial073();
+})();
+</script>
+<script id="jz073-mail-refresh1019">(function(){'use strict';const N=JZ073,B=N.inventory1019;
+const claim=B.claim;B.claim=function(){const before=Number(S?.coins)||0,out=claim.apply(this,arguments);if(out!==true)return out;const received=(Number(S?.coins)||0)-before;
+if(received>0){
+ // The attachment and balance already change together in the original claim.
+ // Refresh the sidebar without closing the letter or rerendering the page.
+ renderPlayer();
+ const body=document.getElementById('modalBody');if(body){const status=document.createElement('p');status.className='jz-mail-coin-receipt';status.setAttribute('role','status');status.style.cssText='color:#f1d28a;padding:12px;border:1px solid #8e753c;border-radius:8px';status.textContent='已領取靈幣＋'+received.toLocaleString('zh-TW')+'，目前持有 '+S.coins.toLocaleString('zh-TW')+' 靈幣。';body.prepend(status);}
+ log('📮 信件領取：靈幣＋'+received+'。');
+ // Persist the balance and consumed attachment in the same immediate snapshot.
+ r4WriteSave('auto',{silent:true});
+}return out;};
+if(N.releaseHistory073&&!N.releaseHistory073.BUG修復.includes('信件領取靈幣時即時刷新餘額與入帳提示，避免數字延遲更新。'))N.releaseHistory073.BUG修復.push('信件領取靈幣時即時刷新餘額與入帳提示，避免數字延遲更新。');
 })();
 </script>
