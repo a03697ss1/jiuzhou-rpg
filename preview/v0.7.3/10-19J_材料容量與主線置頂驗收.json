@@ -1,0 +1,496 @@
+{
+  "build": "20261019-official073-5",
+  "rows": [
+    {
+      "name": "新角色材料100格，物品及其他容量保持原設定",
+      "pass": true,
+      "detail": {
+        "defaults": {
+          "物品": 50,
+          "材料": 100,
+          "裝備": 30,
+          "消耗特殊": 30
+        },
+        "cap": {
+          "物品": 50,
+          "材料": 100,
+          "裝備": 30,
+          "消耗特殊": 30
+        },
+        "marker": 100
+      }
+    },
+    {
+      "name": "舊角色53格轉為103格，只增加一次並保留擴充數",
+      "pass": true,
+      "detail": {
+        "cap": 103,
+        "after": 103
+      }
+    },
+    {
+      "name": "材料超過50種不寄出；郵箱既有溢出材料可正常領回",
+      "pass": true,
+      "detail": {
+        "used": 72,
+        "before": 0,
+        "letters": 1,
+        "qtyBefore": 1,
+        "qtyAfter": 3,
+        "claimed": true,
+        "remaining": 0
+      }
+    },
+    {
+      "name": "100格仍可用擴充格加3，存讀檔不再補50",
+      "pass": true,
+      "detail": {
+        "cap": 103,
+        "loaded": 103,
+        "text": "材料：72／103格（同名物品堆疊占1格）",
+        "help": "<p>物品初始50格、材料初始100格，裝備、消耗特殊各有30格。同名物品可堆疊，只占1格；不同品質名稱的裝備各占一格。永久特殊、紀念品、禮物與任務物品不限格數。</p><p>各有限容量分頁的最後有「開啟新格子」。消耗一個背包擴充格，可選擇一頁增加3格。郵箱中的擴充格也可直接使用。</p><p>郵箱位於上方「幫助」左側，最多10封。普通信件保留7個遊戲日；有內容物不能手動刪除，但逾期仍會連同未領物品刪除。</p><p>信件內尚有任務物品、特殊道具或裝備時，會保留至領取。郵箱滿10封時，新的普通物品會拒收並提示；重要道具另放在「重要道具保管」，請整理背包後領取。</p>"
+      }
+    },
+    {
+      "name": "舊主線未釘選仍在第一格，優先於支線",
+      "pass": true,
+      "detail": {
+        "title": "確認修為",
+        "first": "📜 主線・確認修為與道衛隊長邱山河完成對話。任務回報：undefined",
+        "status": "accepted",
+        "id": "confirmCult",
+        "pinned": false
+      }
+    },
+    {
+      "name": "新主線未接取仍在第一格，顯示接取條件且不自動接取",
+      "pass": true,
+      "detail": {
+        "text": "尚未接取：［主線］商量與眾人交談，選擇清除妖物或調查傳送塔。朝御城・邱山河引導",
+        "status": "unaccepted",
+        "exists": false,
+        "count": 1
+      }
+    },
+    {
+      "name": "已接取主線不釘選仍置頂，A分支顯示正確主線",
+      "pass": true,
+      "detail": {
+        "accepted": "accepted",
+        "text": "進行中：［主線］清除青陽山與沈玄川或柳清妍交談，完成兩場戰鬥並調查龍胤之陣。任務回報：修為＋180引導",
+        "status": "accepted",
+        "id": "jz073-033A",
+        "count": 1
+      }
+    },
+    {
+      "name": "主線可回報時置頂，回報後提示下一條但不代領獎勵",
+      "pass": true,
+      "detail": {
+        "ready": "ready",
+        "text": "尚未接取：［主線］危機！青陽山與沈玄川或柳清妍交談後，返回青陽鎮通報青陽山危機。青陽山・沈玄川引導",
+        "status": "unaccepted",
+        "exists": false
+      }
+    },
+    {
+      "name": "B路線未接取與接取後都提示B線，保留分支狀態",
+      "pass": true,
+      "detail": {
+        "pending": "尚未接取：［主線］調查東州傳送塔與邱山河、林夏于前往東州傳送塔；三處調查順序不限，全部完成後繼續。朝御城・邱山河引導",
+        "text": "進行中：［主線］調查東州傳送塔與邱山河、林夏于前往東州傳送塔；三處調查順序不限，全部完成後繼續。任務回報：修為＋180引導",
+        "status": "accepted",
+        "branch": "B"
+      }
+    },
+    {
+      "name": "尚未符合等待條件的主線依然置頂提示，不自動接取",
+      "pass": true,
+      "detail": {
+        "text": "尚未接取：［主線］異相再次發生前往雷鳴沼［調查異相］，勝後返回朝御城回報。朝御城・邱山河（進行中或尚未符合前置／等待條件）引導",
+        "status": "unaccepted",
+        "exists": false
+      }
+    },
+    {
+      "name": "主線全部完成仍有置頂完成提示",
+      "pass": true,
+      "detail": {
+        "text": "目前已完成所有已開放主線。",
+        "status": "complete"
+      }
+    },
+    {
+      "name": "四個東州城鎮有醫館、主城不重複、野外不新增",
+      "pass": true,
+      "detail": {
+        "towns": [
+          {
+            "place": "青陽鎮",
+            "count": 1
+          },
+          {
+            "place": "天海港",
+            "count": 1
+          },
+          {
+            "place": "碧潮鎮",
+            "count": 1
+          },
+          {
+            "place": "東嶺鎮",
+            "count": 1
+          }
+        ],
+        "main": 1,
+        "wild": false
+      }
+    },
+    {
+      "name": "四城鎮實際醫館氣血治療，費用與主城一致",
+      "pass": true,
+      "detail": [
+        {
+          "place": "朝御城",
+          "paid": 13,
+          "label": "一般氣血治療 13靈幣"
+        },
+        {
+          "place": "青陽鎮",
+          "paid": 13,
+          "label": "一般氣血治療 13靈幣"
+        },
+        {
+          "place": "天海港",
+          "paid": 13,
+          "label": "一般氣血治療 13靈幣"
+        },
+        {
+          "place": "碧潮鎮",
+          "paid": 13,
+          "label": "一般氣血治療 13靈幣"
+        },
+        {
+          "place": "東嶺鎮",
+          "paid": 13,
+          "label": "一般氣血治療 13靈幣"
+        }
+      ]
+    },
+    {
+      "name": "特殊分頁12張功法殘卷可由公共鑄造台實際合成並使用功法書",
+      "pass": true,
+      "detail": {
+        "before": {
+          "disabled": false,
+          "req": [
+            "［特殊］隨機功法書",
+            "功法殘卷×10",
+            ""
+          ],
+          "qty": 12,
+          "books": 0,
+          "energy": "{\"alchemy\":{\"level\":1,\"core\":0,\"heat\":0,\"lastAt\":480,\"aux\":null},\"forge\":{\"level\":1,\"core\":0,\"aura\":100,\"lastAt\":480,\"aux\":null}}"
+        },
+        "x": {
+          "qty": 2,
+          "books": 1,
+          "energy": "{\"alchemy\":{\"level\":1,\"core\":0,\"heat\":0,\"lastAt\":480,\"aux\":null},\"forge\":{\"level\":1,\"core\":0,\"aura\":100,\"lastAt\":480,\"aux\":null}}",
+          "inventory": 0,
+          "afterBooks": 0,
+          "afterInventory": 1
+        }
+      }
+    },
+    {
+      "name": "跨分頁6＋6張可合成，9張與獸技殘頁不誤用",
+      "pass": true,
+      "detail": {
+        "books": 0,
+        "after": 1,
+        "ok": true,
+        "left": 2,
+        "denied": false,
+        "remain": 9,
+        "beast": 20
+      }
+    },
+    {
+      "name": "高危及高危特尾巴實際位於框外，雙角與叉保留",
+      "pass": true,
+      "detail": [
+        {
+          "tier": "高危種",
+          "left": 547.7734375,
+          "right": 541.2774658203125,
+          "tailOutside": true,
+          "clipped": false,
+          "overflow": "visible",
+          "mainPaths": 1
+        },
+        {
+          "tier": "高危種（特）",
+          "left": 754.3809204101562,
+          "right": 747.885009765625,
+          "tailOutside": true,
+          "clipped": false,
+          "overflow": "visible",
+          "mainPaths": 2
+        }
+      ]
+    },
+    {
+      "name": "寵物小數氣血／靈力顯示取整，實際數值不變",
+      "pass": true,
+      "detail": {
+        "hp": 131.4,
+        "mp": 18.57777777777,
+        "maxhp": 137,
+        "maxmp": 57,
+        "text": [
+          "131/137",
+          "19/57"
+        ],
+        "species": "青木狼",
+        "name": "666"
+      }
+    },
+    {
+      "name": "萬妖陣開啟進場自動即自動，關閉則保留手動",
+      "pass": true,
+      "detail": [
+        {
+          "on": true,
+          "auto": true,
+          "kind": "wave",
+          "setting": true
+        },
+        {
+          "on": false,
+          "auto": false,
+          "kind": "wave",
+          "setting": false
+        }
+      ]
+    },
+    {
+      "name": "夥伴／寵物共用設定有實際開關且存讀檔保留",
+      "pass": true,
+      "detail": {
+        "before": true,
+        "after": true
+      }
+    },
+    {
+      "name": "寵物實際共用背包連喝至門檻，關閉共用時不消耗",
+      "pass": true,
+      "detail": {
+        "before": 9,
+        "used": true,
+        "hp": 101,
+        "maxhp": 137,
+        "count": 7,
+        "off": false,
+        "after": 7,
+        "type": "pet"
+      }
+    },
+    {
+      "name": "寵物回復輔助目標共用自身／最低血量選擇",
+      "pass": true,
+      "detail": {
+        "lowest": "另隻寵物",
+        "self": "666",
+        "name": "666"
+      }
+    },
+    {
+      "name": "萬妖陣自動正常完成一波，保留寵物數值與波次進度",
+      "pass": true,
+      "detail": {
+        "run": {
+          "wave": 2,
+          "completed": 1,
+          "states": [
+            {
+              "index": 0,
+              "name": "666",
+              "hp": 123.4,
+              "mp": 3.577777777769999,
+              "maxhp": 137,
+              "maxmp": 57
+            }
+          ]
+        },
+        "enemyDead": true,
+        "finite": true
+      }
+    },
+    {
+      "name": "問道三種模式遵守進場自動開關，設定不被改寫",
+      "pass": true,
+      "detail": [
+        {
+          "mode": "same",
+          "auto": true,
+          "setting": true,
+          "units": [
+            "player"
+          ],
+          "noRun": true
+        },
+        {
+          "mode": "same",
+          "auto": false,
+          "setting": false,
+          "units": [
+            "player"
+          ],
+          "noRun": true
+        },
+        {
+          "mode": "cross",
+          "auto": true,
+          "setting": true,
+          "units": [
+            "player"
+          ],
+          "noRun": true
+        },
+        {
+          "mode": "cross",
+          "auto": false,
+          "setting": false,
+          "units": [
+            "player"
+          ],
+          "noRun": true
+        },
+        {
+          "mode": "tower",
+          "auto": true,
+          "setting": true,
+          "units": [
+            "player"
+          ],
+          "noRun": true
+        },
+        {
+          "mode": "tower",
+          "auto": false,
+          "setting": false,
+          "units": [
+            "player"
+          ],
+          "noRun": true
+        }
+      ]
+    },
+    {
+      "name": "跨境勝利基數64加原連勝，重複結算不重發，敗北歸零",
+      "pass": true,
+      "detail": {
+        "values": [
+          65,
+          66,
+          67,
+          68,
+          69,
+          69,
+          69
+        ],
+        "total": 473,
+        "after": 473,
+        "streak": 0,
+        "hp": 10,
+        "mp": 5
+      }
+    },
+    {
+      "name": "同境仍16加連勝，入口與幫助更新64且不解除物品限制",
+      "pass": true,
+      "detail": {
+        "points": 17,
+        "text": "逐步挑戰塔固定敵人，首次勝利永久通關與領獎；已通關不可重打。戰敗可重試，允許丹藥。已通關 0／10 層1層・顧青川2層・陸炎成3層・雷景安4層・許風遙5層・江澄月6層・韓岳石7層・羅熾峰8層・柳青衡9層・雷靖川10層・沈洛川隨機挑戰1V1；只有玩家，使用普通攻擊與目前編成功法。禁道具、藥水、丹藥、戰前效果及逃跑，不套元素克制。問道點數 17｜連勝 1｜加成最高＋5。境界相符戰・16點＋連勝跨境界戰・64點＋連勝對手高一個大境界，最高金丹圓滿；問道令可在開戰前重抽一次。兌換商店返回冒險",
+        "help": "[\"以逐步挑戰或單人對戰磨練實力，取得問道積分。\",[],\"<p>完成［來對決吧！］後可前往問道檯。逐步挑戰共有10層，每層首通獎勵只能領取1次，失敗可再次挑戰。</p><p>境界相符戰與跨境界戰為玩家本人一對一。不能帶夥伴或寵物，也不能逃跑、使用道具或套用戰前丹藥效果。</p><p>境界相符戰基礎獎勵為16積分，跨境界戰為64積分；連勝可增加獎勵，獎勵加成最高為5，連勝數本身可繼續累積。戰敗後連勝歸零。</p><p>可在問道商店用積分兌換功法殘頁、丹藥與裝備。部分特殊裝備每份存檔限購1件，兌換前請查看價格與限制。</p>\",[\"戰鬥\",\"裝備\",\"丹藥與藥水\"]]"
+      }
+    },
+    {
+      "name": "跨境實際自動戰鬥結束、獎勵65、原氣血靈力恢復",
+      "pass": true,
+      "detail": {
+        "points": 65,
+        "hp": 10000,
+        "mp": 500,
+        "dead": true,
+        "mode": "cross",
+        "paid": true
+      }
+    },
+    {
+      "name": "受傷儲存離陣→醫館實際補滿→讀檔→返回陣內採用治療後氣血靈力",
+      "pass": true,
+      "detail": {
+        "hp": 137,
+        "mp": 57,
+        "maxhp": 137,
+        "maxmp": 57,
+        "shown": {
+          "index": 0,
+          "name": "醫館測試寵",
+          "hp": 137,
+          "mp": 57,
+          "maxhp": 137,
+          "maxmp": 57
+        },
+        "coins": 9953
+      }
+    },
+    {
+      "name": "波次戰鬥傷勢同步、陣內恢復不被舊寵物值覆寫",
+      "pass": true,
+      "detail": {
+        "ended": {
+          "hp": 20,
+          "mp": 3
+        },
+        "state": {
+          "index": 0,
+          "name": "醫館測試寵",
+          "hp": 61.1,
+          "mp": 20.1,
+          "maxhp": 137,
+          "maxmp": 57
+        },
+        "left": 4,
+        "hp": 61.1,
+        "mp": 20.1,
+        "completed": 1,
+        "wave": 2
+      }
+    },
+    {
+      "name": "萬妖陣戰敗退出結算免費補滿參戰寵物，積分不重發、其他寵物不變",
+      "pass": true,
+      "detail": {
+        "points": 11,
+        "before": 0,
+        "first": 11,
+        "after": 11,
+        "again": false,
+        "hp": 137,
+        "mp": 57,
+        "maxhp": 137,
+        "maxmp": 57,
+        "dead": false,
+        "other": {
+          "hp": 11,
+          "mp": 3
+        },
+        "coins": 0,
+        "run": null
+      }
+    }
+  ],
+  "errors": []
+}

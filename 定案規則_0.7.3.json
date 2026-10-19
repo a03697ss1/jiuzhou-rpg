@@ -58,7 +58,7 @@
   "inventory": {
     "initialSlots": {
       "物品": 50,
-      "材料": 50,
+      "材料": 100,
       "裝備": 30,
       "消耗特殊": 30
     },
@@ -71,7 +71,15 @@
     "stackByName": true,
     "expansionItem": "［特殊］背包擴充格",
     "expansionStep": 3,
-    "expansionUpperCap": null
+    "expansionUpperCap": null,
+    "materialMigration": {
+      "oldBase": 50,
+      "newBase": 100,
+      "oldCharacters": "原容量加50格，保留已擴充的額外格數",
+      "once": true,
+      "marker": "materialBaseSlots=100",
+      "existingOverflow": "郵箱原附件不變，可在有空位時領回"
+    }
   },
   "mail": {
     "position": "幫助左側",
@@ -146,6 +154,38 @@
     {
       "name": "performance1019.js",
       "sha256": "223b30abc78128ee93f72c353ff914d476e8e913180352b7f24809d74e73adc3"
+    },
+    {
+      "name": "material-capacity1019.js",
+      "sha256": "9dbbc219adeab3ab30d0ad0bb3e5bdd5abd3bee1141c8ed4061213f995c759f5"
+    },
+    {
+      "name": "main-sidebar1019.js",
+      "sha256": "ad5a103d3007852aea270dd85b0003d8af4d48cd1b207180b053b7070db9c8c5"
+    },
+    {
+      "name": "town-clinic1019.js",
+      "sha256": "04a5fbf4ebe8bee578bdab530f8711782cf42409a823d610f3138c52535e3b54"
+    },
+    {
+      "name": "risk-tail1019.js",
+      "sha256": "c7d276031e343e8b51e2be1eeae86f7d32609b8640bce95e2631c764ecf3b19b"
+    },
+    {
+      "name": "random-book1019.js",
+      "sha256": "15bd4461c161183385bee763b47afb36b19ccc8a79381289bb0c8cdef53c2462"
+    },
+    {
+      "name": "pet-battle1019.js",
+      "sha256": "c1301b85c07dafdec3857d97ece1bce35ccbd1f968c78d02e7f5562b1fe86b60"
+    },
+    {
+      "name": "wendao-auto1019.js",
+      "sha256": "3dc26300db520b36eb0e0bd66523ffa01409393e7c4badbec83da0a0e5fe1974"
+    },
+    {
+      "name": "wave-vitals1019.js",
+      "sha256": "4c4f814c9878213ba16efcdbf1468fc2b4cd0e08ed66cbbb3577adef6973b424"
     }
   ],
   "notInvented": [
@@ -160,7 +200,7 @@
     "0.7.2"
   ],
   "historicalPlayableEntrances": false,
-  "build": "20261019-official073-4",
+  "build": "20261019-official073-5",
   "performance073": {
     "conditions": "隔離Edge、CPU降速4倍；閒置4秒與一般自動戰鬥10秒。量測不代表朋友裝置實際速度。",
     "rootRebuildCallsBefore": 800,
@@ -174,5 +214,43 @@
       "素材標籤改為單次比對並只修改有變化的文字。"
     ],
     "tests": 17
+  },
+  "mainSidebar": {
+    "alwaysVisible": true,
+    "position": "左側任務區第一格",
+    "accepted": "無論是否釘選皆顯示",
+    "unaccepted": "顯示下一主線與前置／等待條件，不自動接取",
+    "ready": "可回報主線仍置頂",
+    "branch": "遵守A／B分支，不混用名稱或改動分支完成記錄"
+  },
+  "townClinics": {
+    "towns": [
+      "青陽鎮",
+      "天海港",
+      "碧潮鎮",
+      "東嶺鎮"
+    ],
+    "service": "沿用主城醫館治療、異常、病房與費用；沈玄川劇情病人留主城"
+  },
+  "highRiskTail": "高危種及高危種（特）裝飾尾巴置於戰位框外，保留角與叉",
+  "randomBookRecipe": {
+    "output": "［特殊］隨機功法書",
+    "ingredients": {
+      "功法殘卷": 10
+    },
+    "count": "跨背包分頁累加實際持有數",
+    "excluded": "獸技殘頁"
+  },
+  "petAutoBattle": {
+    "waveEntry": "沿用進場自動設定",
+    "recovery": "夥伴／寵物共用開關、門檻、藥水優先與輔助目標",
+    "numberDisplay": "戰位氣血與靈力顯示整數，實際值保留",
+    "waveVitals": "儲存退出同步寵物傷勢；返回採用醫館治療後氣血靈力，結算後參戰寵物免費補滿"
+  },
+  "wendaoUpdate1019": {
+    "crossBasePoints": 64,
+    "streakBonus": "沿用連勝加成，最高+5",
+    "entryAuto": "逐步挑戰、境界相符、跨境界三模式遵守進場自動設定",
+    "restrictions": "跨境與同境禁物品、戰前效果與逃跑不變"
   }
 }

@@ -24986,7 +24986,7 @@ const finish=N.decorate;N.decorate=()=>{finish();const banner=document.querySele
 const history=JZ072.versionHistory;JZ072.versionHistory=()=>{history();document.getElementById('modalBody')?.insertAdjacentHTML('afterbegin','<section class="card"><h2>本輪18項修正</h2><h3>新增</h3><p>裝備、各階藥品與特殊物品的獨立圖片；補齊NPC靈根資質。</p><h3>改動</h3><p>狐毛、狐尾與獸角歸妖物素材；藥品使用你提供的數值；取得來源依完整階級與當前商店核對；布告箱移到放大的布告欄下方；交談只保留暫時離開。</p><h3>BUG修復</h3><p>戰鬥血量與戰位同步、測試999重複挑戰長右、主線行動所在地限制、蘇璃同行位置、柳清妍任務入口、功法階級顯示，以及必敗戰的手動1倍與繼續提示。</p></section>');};
 })();
 </script>
-<script>window.JZ073_BUILD_ID="20261019-official073-4";</script>
+<script>window.JZ073_BUILD_ID="20261019-official073-5";</script>
 <script id="jz073-hidden-steal1019">(function(){'use strict';const N=JZ073,R=JZR;
 const drops=Object.freeze({'林夏于':'［特殊］火霞刀','蘇璃':'［特殊］靈水劍','柳清妍':'［特殊］秘術弓','邱山河':'［特殊］鹿絞槍','蘇項':'［特殊］土靈盔'});
 const names=new Set(Object.values(drops));
@@ -25463,5 +25463,79 @@ let catalogue='',matcher=null,canonical=new Map();const seenText=new WeakMap();
 N.materialLabels1019=root=>{if(!root)return;const key=U.materialCatalog.join('\n');if(key!==catalogue){catalogue=key;canonical=new Map();for(const name of U.materialCatalog){const s=U.short(name);if(!canonical.has(s))canonical.set(s,N.materialName(s));}const names=[...canonical.keys()].sort((a,b)=>b.length-a.length).map(s=>s.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'));matcher=new RegExp('(^|[^\\u4e00-\\u9fff］])('+names.join('|')+')(?=\\s*(?:[×xｘ]|$))','g');}
 const walker=document.createTreeWalker(root,NodeFilter.SHOW_TEXT),nodes=[];while(walker.nextNode())nodes.push(walker.currentNode);for(const node of nodes){const text=node.nodeValue;if(seenText.get(node)===text||node.parentElement?.closest('script,style,button,input,textarea,select,.jz-catalog-card'))continue;matcher.lastIndex=0;const next=text.replace(matcher,(_,prefix,name)=>prefix+(canonical.get(name)||name));if(next!==text)node.nodeValue=next;seenText.set(node,next);}};
 if(N.releaseHistory073)N.releaseHistory073.BUG修復.push('減少戰鬥畫面中靈根圖示與物品文字的重複處理，改善較慢裝置的介面及自動戰鬥卡頓。');
+})();
+</script>
+<script id="jz073-material-capacity1019">(function(){'use strict';const N=JZ073,B=N.inventory1019;
+B.defaults.材料=100;
+const state=B.state;B.state=function(){const existing=!!S.inventoryMail1019,s=state.apply(this,arguments);if(s.materialBaseSlots!==100){const old=Number(s.capacity.材料);s.capacity.材料=existing?Math.max(50,Number.isFinite(old)?Math.floor(old):50)+50:Math.max(100,Number.isFinite(old)?Math.floor(old):100);s.materialBaseSlots=100;}return s;};
+if(R511_CODEX.背包與郵箱)R511_CODEX.背包與郵箱[2]=R511_CODEX.背包與郵箱[2].replace('物品與材料各有50格','物品初始50格、材料初始100格');
+if(N.releaseHistory073)N.releaseHistory073.改動.push('材料背包初始容量由50格提高至100格；既有角色增加50格，保留先前擴充的額外格數，僅套用一次。');
+})();
+</script>
+<script id="jz073-main-sidebar1019">(function(){'use strict';const N=JZ073,E=N.esc;
+N.mainSidebar1019=()=>{let q=null,d=null;if(JZ071.done('realmBreakQuest')){const branch=N.state().branch;d=N.main.find(row=>!N.done(row.id)&&(!row.key.endsWith('A')||branch==='A')&&(!row.key.endsWith('B')||branch==='B'));if(d)q=N.quest(d.id);}else q=S.quests.find(row=>row.type==='主線'&&!row.claimed&&!row.retired);return {q,d};};
+const quests=renderQuests;renderQuests=function(){const out=quests.apply(this,arguments);if(!S)return out;const panel=document.getElementById('questPanel');if(!panel)return out;const {q,d}=N.mainSidebar1019();let card=null;
+if(q){const existing=[...panel.querySelectorAll('.quest')].find(e=>/主線/.test(e.querySelector('b')?.textContent||'')&&(e.querySelector('b')?.textContent||'').includes(q.title));card=existing?.cloneNode(true)||document.createElement('div');if(!existing)card.innerHTML='<b>'+E(q.done?'可回報：［主線］':'進行中：［主線］')+E(q.title)+'</b><p>'+E(q.desc||d?.objective||'')+'</p>'+(q.done?'<p>✓ 任務目標已完成，可回報。</p>':'')+(q.reward?'<div class="reward">任務回報：'+E(q.reward)+'</div>':'')+'<button onclick="JZ073.guide(\''+E(q.id)+'\')">引導</button>';card.dataset.mainStatus=q.done?'ready':'accepted';card.dataset.mainQuest=q.id;
+}else{const root=JZ072.fragment(JZ1007.nextHTML()||'');card=root.querySelector('.jz-next-main');if(card){card.dataset.mainStatus='unaccepted';if(d)card.dataset.mainQuest=d.id;const title=card.querySelector('b');if(title)title.textContent=title.textContent.replace('下一個任務：','尚未接取：');}}
+panel.querySelectorAll('.jz-next-main,.next-main-hint,.jz073-main').forEach(e=>e.remove());for(const el of panel.querySelectorAll('.quest'))if(/主線/.test(el.querySelector('b')?.textContent||''))el.remove();if(!card){card=document.createElement('div');card.textContent='目前已完成所有已開放主線。';card.dataset.mainStatus='complete';}card.classList.add('jz-next-main','jz-main-top1019');card.dataset.mainTop='true';card.setAttribute('role','status');panel.prepend(card);return out;};
+if(N.releaseHistory073)N.releaseHistory073.BUG修復.push('主線不論是否接取或釘選，皆固定在左側任務區最上方；未接取時仍顯示下一主線及條件。');
+})();
+</script>
+<script id="jz073-town-clinic1019">(function(){'use strict';const N=JZ073,towns=new Set(Object.values(REGIONS).flatMap(r=>r.towns||[]));N.clinicTowns1019=[...towns];
+const facilities=facilitiesFor;facilitiesFor=function(place){const rows=facilities.apply(this,arguments);return towns.has(place)&&!rows.includes('醫館')?[...rows,'醫館']:rows;};
+// Ordinary treatment, prices, wards and rescue use the unchanged main-city clinic.
+// Story patients stay at their actual city rather than appearing in every clinic.
+const clinic=openClinic;openClinic=function(){const out=clinic.apply(this,arguments);if(S?.place!=='朝御城')for(const card of document.querySelectorAll('#modalBody .card'))if(card.querySelector('h3')?.textContent==='病房・沈玄川')card.remove();return out;};
+if(N.releaseHistory073)N.releaseHistory073.新增.push('城鎮設備新增醫館，治療、異常狀態、疲勞調養與病房救援沿用主城相同規則及費用。');
+})();
+</script>
+<script id="jz073-risk-tail1019">(function(){'use strict';const N=JZ073,card=bsv2Card;
+bsv2Card=function(f){const out=card.apply(this,arguments);if(!/高危/.test(f?.tier||''))return out;const root=JZ072.fragment(out),host=root.firstElementChild,mark=host?.querySelector('.jz-tier-mark'),tail=mark?.querySelectorAll('path')[1];if(!tail)return out;const path=tail.getAttribute('d');tail.remove();host.classList.add('jz-risk-tail-host');host.insertAdjacentHTML('beforeend','<svg class="jz-risk-tail-outside" viewBox="228 20 48 90" preserveAspectRatio="none" aria-label="高危種框外尾巴" pointer-events="none"><path d="'+N.esc(path)+'"/></svg>');return root.innerHTML;};
+const style=document.createElement('style');style.id='jz-risk-tail-outside1019';style.textContent='.bsv2-card.jz-risk-tail-host{overflow:visible!important}.bsv2-card>.jz-risk-tail-outside{position:absolute!important;left:auto!important;right:-40px!important;top:0!important;width:36px!important;height:80px!important;overflow:visible!important;z-index:12;fill:#591d25;stroke:#e6bb79;stroke-width:2;filter:drop-shadow(0 2px 2px #000);pointer-events:none!important}';document.head.append(style);
+if(N.releaseHistory073)N.releaseHistory073.BUG修復.push('高危種戰位框尾巴獨立置於框外，保留雙角與高危種（特）的叉，不再擠入立繪或被內框裁切。');
+})();
+</script>
+<script id="jz073-random-book1019">(function(){'use strict';const N=JZ073,R=JZR,U=JZ071,bags=['materials','items','special','gearInventory','souvenirs'];
+const pieces=()=>bags.flatMap(b=>Object.entries(S[b]||{}).filter(([n])=>U.short(n)==='功法殘卷').map(([name,v])=>({bag:b,name,count:Math.max(0,Math.floor(Number(typeof v==='object'?v.count:v)||0))})));N.bookFragmentCount1019=()=>pieces().reduce((n,r)=>n+r.count,0);
+const reqBook=req=>{const rows=r59ParseReq(req);return rows.length===1&&U.short(rows[0][0])==='功法殘卷'&&rows[0][1]===10;};
+const has=r59HasIngredients;r59HasIngredients=function(req){return reqBook(req)?N.bookFragmentCount1019()>=10:has.apply(this,arguments);};
+const missing=r512Missing;r512Missing=function(req){return reqBook(req)?N.bookFragmentCount1019()>=10?'':'功法殘卷 缺 '+(10-N.bookFragmentCount1019()):missing.apply(this,arguments);};
+const craft=r59CraftItem;r59CraftItem=function(name,req,category){if(U.short(name)!=='隨機功法書'||category!=='合成')return craft.apply(this,arguments);const formal=(RECIPES.合成||[]).find(r=>U.short(r[0])==='隨機功法書');if(battle||!formal||!reqBook(req)||!reqBook(formal[1])||N.bookFragmentCount1019()<10)return false;let left=10;for(const row of pieces()){const take=Math.min(left,row.count);if(!take)continue;const entry=S[row.bag][row.name];if(typeof entry==='object')entry.count-=take;else S[row.bag][row.name]-=take;left-=take;if(!left)break;}R.give('［特殊］隨機功法書',1);N.recipeCrafted('［特殊］隨機功法書','合成');log('🧩 合成完成：消耗功法殘卷×10，獲得［特殊］隨機功法書×1。');R.save();render();r59RenderCraftPage();return true;};
+for(const row of RECIPES.合成||[])if(U.short(row[0])==='隨機功法書')row[0]='［特殊］隨機功法書';
+if(N.releaseHistory073)N.releaseHistory073.BUG修復.push('隨機功法書合成正確讀取各背包分頁的功法殘卷；10張合成1本可使用的特殊隨機功法書，不誤用獸技殘頁。');
+})();
+</script>
+<script id="jz073-pet-battle1019">(function(){'use strict';const N=JZ073,A=JZ072,R=JZR,C=JZ360;
+// Share the existing partner policy with pets; keep the same potion pools,
+// thresholds, priority, status restrictions, and support-target preference.
+A.autoRecover=(b,f)=>{const c=JZ1007.config();if(!b.auto||!['player','partner','pet'].includes(f.type)||f.hp<=0||f.jz072Swallowed||['partner','pet'].includes(f.type)&&!c.partnerRestore||b.jzLab||b.jzWendao&&b.jzWendao.mode!=='tower')return false;let used=false;for(const key of ['hp','mp']){const enabled=key==='hp'?c.useHP:c.useMP;if(enabled===false)continue;const threshold=Math.max(0,Math.min(100,Number(c[key+'Threshold']))),max=C.stat(f,key==='hp'?'maxhp':'maxmp');if(key==='hp'&&C.has(f,'絕療')||key==='mp'&&C.has(f,'靈蝕'))continue;let rows=JZ1007.potionNames().map(n=>({n,effect:JZ1007.potionEffect(n)})).filter(row=>row.effect?.[key==='hp'?0:1]>0&&(c.potionMode!=='custom'||c.potionAllowed.includes(row.n)));rows.sort((a,d)=>(a.effect[key==='hp'?0:1]-d.effect[key==='hp'?0:1])*(c.potionPriority==='high'?-1:1));while(c.usePotion&&f[key]/max*100<threshold){const row=rows.find(r=>R.count(r.n)>0);if(!row)break;const before=f[key];if(!R.take(row.n))break;C.restore(b,f,f,row.effect[0]);C.restore(b,f,f,row.effect[1],true);C.log(b,f.name+'自動使用'+row.n+'×1。');used=true;if(f[key]<=before)break;}if(c.useRestorePill){for(const [n,d] of Object.entries(JZ1009.restorePills))if(d.key===key&&f[key]/max*100<threshold&&R.count(n)>0&&!f.jz1009Pills?.some(p=>p.key===key&&p.turns>0)){if(!R.take(n))break;(f.jz1009Pills??=[]).push({...d,name:n,turns:3});C.log(b,f.name+'自動使用'+n+'，持續3回合。');used=true;break;}}}if(used)R.save();return used;};
+
+const launch=JZP.launch;JZP.launch=function(team,enemies,mode){const out=launch.apply(this,arguments),b=battle;if(out&&b?.jzPetMode===mode&&mode.mode==='wave'&&!!b.auto!==!!JZ1007.config().enterAuto)toggleAutoBattle();return out;};
+const card=bsv2Card;bsv2Card=function(){const root=JZ072.fragment(card.apply(this,arguments));for(const el of root.querySelectorAll('.bsv21-num')){const values=el.textContent.trim().split('/').map(v=>Number(v.replaceAll(',','')));if(values.length!==2||!values.every(Number.isFinite))continue;const aliveHP=el.closest('.bsv21-line')?.querySelector('span')?.textContent.includes('氣血');el.textContent=values.map((v,i)=>Math.max(aliveHP&&i===0&&v>0?1:0,Math.round(v)).toLocaleString('zh-TW')).join('/');}return root.innerHTML;};
+N.petSettingsLabels1019=()=>{const root=document.getElementById('modalBody');if(!root)return;const walker=document.createTreeWalker(root,NodeFilter.SHOW_TEXT),nodes=[];while(walker.nextNode())nodes.push(walker.currentNode);for(const node of nodes){if(node.parentElement?.closest('script,style'))continue;const next=node.nodeValue.replaceAll('恢復與夥伴設定','恢復與夥伴／寵物設定').replaceAll('允許夥伴使用恢復類物品','允許夥伴／寵物使用恢復類物品');if(next!==node.nodeValue)node.nodeValue=next;}};
+for(const key of ['r58OpenSettings','r526OpenAutoBattleSettings','r592OpenSettings']){const settings=window[key];if(typeof settings==='function')window[key]=function(){const out=settings.apply(this,arguments);N.petSettingsLabels1019();return out;};}
+if(N.releaseHistory073){N.releaseHistory073.改動.push('自動戰鬥的恢復與夥伴設定擴充為夥伴／寵物共用，沿用同一門檻、藥水優先順序與輔助目標設定。');N.releaseHistory073.BUG修復.push('萬妖陣進場遵守進場自動戰鬥設定；戰位氣血與靈力以整數顯示，避免回復後小數位過長溢出，不改動實際運算或寵物數值。');}
+})();
+</script>
+<script id="jz073-wendao-auto1019">(function(){'use strict';const N=JZ073,W=JZW,R=JZR;
+// Apply entry preference only after a real arena battle was created.
+for(const key of ['startRandom','startFloor']){const start=W[key];W[key]=function(){const before=battle,out=start.apply(this,arguments),b=battle;if(b&&b!==before&&b.jzWendao&&!!b.auto!==!!JZ1007.config().enterAuto)toggleAutoBattle();return out;};}
+const finish=W.endChallenge;W.endChallenge=function(b,win){if(b?.jzWendao?.mode!=='cross')return finish.apply(this,arguments);if(b.jzwPaid)return;b.jzwPaid=true;const x=S.eastWord.wendao,r=b.jzWendao;if(win){x.streak++;const q=64+Math.min(x.streak,5);x.points=(Number(S.special['［特殊］問道點數'])||x.points||0)+q;S.special['［特殊］問道點數']=x.points;log('問道挑戰勝利，點數＋'+q+'，連勝 '+x.streak+'。');}else{x.streak=0;log('問道挑戰失敗，可再次挑戰。');}S.hp=r.saved.hp;S.mp=r.saved.mp;battle=null;closeModal();R.save();render();setTimeout(()=>W.openWendao(),0);};
+const open=W.openWendao;W.openWendao=function(){const out=open.apply(this,arguments);for(const el of document.querySelectorAll('#modalBody button,#modalBody p')){if(el.textContent.includes('跨境界戰'))el.textContent=el.textContent.replace('32點','64點').replace('32積分','64積分');}return out;};
+const help=R511_CODEX.問道檯;if(help)R511_CODEX.問道檯=JSON.parse(JSON.stringify(help).replaceAll('跨境界戰為32積分','跨境界戰為64積分'));
+const guide=R.beginWendaoGuide;R.beginWendaoGuide=function(){const before=battle,out=guide.apply(this,arguments),b=battle;if(b&&b!==before&&b.jzWendao&&!!b.auto!==!!JZ1007.config().enterAuto)toggleAutoBattle();return out;};
+if(N.releaseHistory073){N.releaseHistory073.改動.push('問道檯跨境界戰勝利基礎獎勵提高為64問道點數，沿用原有連勝加成。');N.releaseHistory073.BUG修復.push('問道檯逐步挑戰、境界相符戰及跨境界戰遵守進場自動戰鬥設定。');}
+})();
+</script>
+<script id="jz073-wave-vitals1019">(function(){'use strict';const N=JZ073,R=JZR,P=JZP;
+const petFor=s=>{const p=S.pets[s.index];return p&&p.name===s.name?p:null;};
+N.waveVitals1019=(run,fromPet)=>{if(!run)return;for(const s of run.states||[]){const p=petFor(s);if(!p)continue;const f=R.petStats(p);s.maxhp=f.maxhp;s.maxmp=f.maxmp;if(fromPet){s.hp=f.hp;s.mp=f.mp;}else{p.hp=Math.max(0,Math.min(f.maxhp,s.hp));p.mp=Math.max(0,Math.min(f.maxmp,s.mp));}}};
+const save=R.saveRun;R.saveRun=function(){if(!battle)N.waveVitals1019(R.beast().run,false);return save.apply(this,arguments);};
+const start=P.startWave;P.startWave=function(){if(!battle){const run=R.beast().run;if(run?.saved)N.waveVitals1019(run,true);}return start.apply(this,arguments);};
+const open=R.openRun;R.openRun=function(){if(!battle){const run=R.beast().run;if(run?.saved)N.waveVitals1019(run,true);}return open.apply(this,arguments);};
+const recover=R.runRecover;R.runRecover=function(size){if(battle)return recover.apply(this,arguments);const run=R.beast().run,key=size===30?'recovery30':size===50?'recovery50':'';if(run&&key&&run.completed&&run[key]>0){if(run.saved)N.waveVitals1019(run,true);run.saved=false;}const out=recover.apply(this,arguments);if(out){N.waveVitals1019(run,false);R.save();}return out;};
+const finish=R.finishPetBattle;R.finishPetBattle=function(b,win){const fresh=b?.jzPetMode?.mode==='wave'&&!b.jzrSettled,out=finish.apply(this,arguments);if(fresh){N.waveVitals1019(R.beast().run,false);R.save();}return out;};
+const settle=R.settleRun;R.settleRun=function(){if(battle)return settle.apply(this,arguments);const run=R.beast().run;if(!run)return settle.apply(this,arguments);const pets=(run.states||[]).map(petFor).filter(Boolean),out=settle.apply(this,arguments);if(!R.beast().run){for(const p of pets){const f=R.petStats(p);p.hp=f.maxhp;p.mp=f.maxmp;}R.save();renderPlayer();log('萬妖陣已結算，參戰寵物氣血與靈力已全部恢復。');}return out;};
+if(N.releaseHistory073){N.releaseHistory073.BUG修復.push('萬妖陣儲存退出同步寵物氣血靈力；醫館治療後重新進場採用治療後數值，不再被舊波次數值覆蓋。');N.releaseHistory073.改動.push('萬妖陣退出結算後，參戰寵物自動恢復滿氣血與滿靈力。');}
 })();
 </script>
