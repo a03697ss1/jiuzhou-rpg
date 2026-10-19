@@ -1,0 +1,19 @@
+from pathlib import Path
+import json,statistics,importlib.util,re,shutil,html
+P=Path(__file__).resolve().parent;R=P.parents[1];O=R/'V0.7.3_效能修正_2026-10-19';BUILD='20261019-official073-4';sp=importlib.util.spec_from_file_location('pub',P/'publish-preview.py');pub=importlib.util.module_from_spec(sp);sp.loader.exec_module(pub);T=pub.O/'Git測試分支';D=pub.DEST
+cases=[]
+for src in [O/'效能與相容性驗收.json',R/'V0.7.3_24項修正_2026-10-19/戰鬥與嚴重BUG驗收.json',R/'V0.7.3_物品與收禮修正_2026-10-19/主線連續戰鬥退出驗收.json']:
+ d=json.loads(src.read_text('utf8'));assert not d['errors'] and all(r['pass'] for r in d['rows']),src;cases+=d['rows'];shutil.copy2(src,D/('10-19I_'+src.name))
+assert len(cases)==17
+before=json.loads((P/'performance-before.json').read_text('utf8'));after=json.loads((P/'performance-after.json').read_text('utf8'))
+summary={'conditions':'隔離Edge、CPU降速4倍；閒置4秒與一般自動戰鬥10秒。量測不代表朋友裝置實際速度。','rootRebuildCallsBefore':before['state']['calls']['rootRebuild']['count'],'rootRebuildCallsAfter':after['state']['calls']['rootRebuild']['count'],'longTaskMedianBeforeMs':statistics.median(before['state']['longTasks'][len(before['idle']['longTasks']):]),'longTaskMedianAfterMs':statistics.median(after['state']['longTasks'][len(after['idle']['longTasks']):]),'normalBattle':'另以4倍CPU降速、1.5倍速度完成9回合正常野外戰鬥，約17.7秒；沒有加速計時器。','changes':['靈根圖示穩定後不再重複清理，變更靈根仍更新。','物品名稱正規化使用有上限快取，只快取名稱，不快取戰鬥數值。','素材標籤改為單次比對並只修改有變化的文字。'],'tests':17}
+(O/'效能前後比較.json').write_text(json.dumps(summary,ensure_ascii=False,indent=2),'utf8');shutil.copy2(O/'效能前後比較.json',D/'10-19I_效能前後比較.json')
+for n in ['performance-before.json','performance-after.json']:shutil.copy2(P/n,O/n)
+for folder in [D/'test-source/v073',T/'test-source/v073']:
+ for n in ['performance1019.js','performance-profile.cjs','performance-test.cjs','package-performance.py','finalize-performance.py','build.py']:shutil.copy2(P/n,folder/n)
+f=pub.W/'定案規則_0.7.3.json';rules=json.loads(f.read_text('utf8'));rules['build']=BUILD;rules['performance073']=summary;rules['sourceModules'].append({'name':'performance1019.js','sha256':pub.digest(P/'performance1019.js')});f.write_text(json.dumps(rules,ensure_ascii=False,indent=2),'utf8');shutil.copy2(f,T/'official073/定案規則_0.7.3.json')
+f=R/'最新定案母檔_0.7.3.json';m=json.loads(f.read_text('utf8'));assert 'currentConfirmed073'in m;m['official073']=rules;f.write_text(json.dumps(m,ensure_ascii=False,indent=2),'utf8')
+report='<!doctype html><meta charset="utf-8"><title>0.7.3 效能修正</title><style>body{max-width:1000px;margin:40px auto;padding:20px;background:#0b1924;color:#e1e9ed;font:18px/1.8 sans-serif}a{color:#efcd86}pre{white-space:pre-wrap}</style><h1>整體介面與自動戰鬥效能修正</h1><p>靈根圖示的舊清理程式與完整圖示保護程式互相重建，引發反覆觀察更新；素材階級標籤則在每次戰鬥畫面更新時，逐項重掃所有文字。</p><p>本輪保留相同圖示輸出，只處理變更的節點；名稱正規化加入有限快取，素材階級改一次比對。不調整傷害、血量、掉落、回合順序、動畫速度或存檔格式。</p><pre>'+html.escape(json.dumps(summary,ensure_ascii=False,indent=2))+'</pre><h2>17項檢查通過</h2><ul>'+''.join('<li>'+html.escape(r['name'])+'：通過</li>' for r in cases)+'</ul><p><a href="../../../?build='+BUILD+'">開啟最新正式版</a> · <a href="10-19I_效能前後比較.json">量測資料</a></p>'
+(D/'10-19I_效能修正與驗收.html').write_text(report,'utf8');(O/'效能修正與驗收.html').write_text(report,'utf8')
+old=pub.git(pub.W,'show','HEAD:preview/v0.7.3/index.html');new=(D/'index.html').read_text('utf8');scripts=lambda s:{m[1]:m[2] for m in re.finditer(r'<script id="([^"]+)">(.*?)</script>',s,re.S)};a,b=scripts(old),scripts(new);assert all(b[k]==v for k,v in a.items())
+s={'build':BUILD,'url':'https://a03697ss1.github.io/jiuzhou-rpg/?build='+BUILD,'base':pub.git(pub.W,'rev-parse','HEAD'),'tests':17,'siteBytes':sum(f.stat().st_size for f in pub.W.rglob('*') if f.is_file() and '.git' not in f.parts)};assert s['siteBytes']<1073741824;(P/'performance-state.json').write_text(json.dumps(s,ensure_ascii=False,indent=2),'utf8');print(json.dumps({'state':s,'comparison':summary},ensure_ascii=False))

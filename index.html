@@ -25055,7 +25055,7 @@ const style=document.createElement('style');style.textContent=`
 const finish=N.finishStoryBattle;N.finishStoryBattle=function(b){const out=finish.apply(this,arguments);if(b?.jz073Story&&battle!==b&&document.querySelector('#modalBody .bmv1-canvas'))closeModal();if(b?.jz073Story&&battle!==b){document.getElementById('modalBack')?.classList.remove('bmv1-active','battle-locked');}return out;};
 })();
 </script>
-<script>window.JZ073_BUILD_ID="20261019-official073-3";</script>
+<script>window.JZ073_BUILD_ID="20261019-official073-4";</script>
 <script id="jz073-equipment1019">(function(){'use strict';const N=JZ073;
 const gearName=value=>{let name=String(value||'').trim().replace(/^.+?[：:]\s*/,'').replace(/\s*[×x]\s*\d+\s*$/,'').trim();return name&&name!=='無'&&(R546_GEAR_FULL[name]||R546_GEAR_FULL[JZ072.baseGear(name)])?name:null;};
 N.decorateEquipment19=root=>{if(!root)return;for(const entry of root.querySelectorAll('.card,.equipment-slot,.r513-equip')){if(entry.closest('.jz-library,.jz-help-shell')||entry.querySelector('.card,.equipment-slot,.r513-equip'))continue;const heading=entry.querySelector('b,strong')?.textContent;let name=gearName(entry.dataset.item||heading);if(!name&&entry.matches('.r513-equip')){const label=entry.querySelector('span')?.textContent||'';name=gearName(entry.textContent.trim().slice(label.trim().length));}if(!name)continue;entry.dataset.itemProduct=name;if(entry.querySelector('.jz-item-image'))continue;const copy=document.createElement('div');copy.className='jz19-equipment-copy';while(entry.firstChild)copy.append(entry.firstChild);entry.append(copy);entry.insertAdjacentHTML('afterbegin',N.itemImage1018(name,'jz19-equipment-icon'));entry.classList.add('jz19-equipment-card');}};
@@ -25447,5 +25447,21 @@ if(received>0){
  r4WriteSave('auto',{silent:true});
 }return out;};
 if(N.releaseHistory073&&!N.releaseHistory073.BUG修復.includes('信件領取靈幣時即時刷新餘額與入帳提示，避免數字延遲更新。'))N.releaseHistory073.BUG修復.push('信件領取靈幣時即時刷新餘額與入帳提示，避免數字延遲更新。');
+})();
+</script>
+<script id="jz073-performance1019">(function(){'use strict';const N=JZ073,U=JZ071;
+// Name normalization is pure; never cache stats, combat results, or inventory.
+const short=U.short,shorts=new Map();U.short=function(name){if(typeof name!=='string')return short.apply(this,arguments);if(shorts.has(name))return shorts.get(name);const value=short.apply(this,arguments);if(shorts.size>=4096)shorts.clear();shorts.set(name,value);return value;};
+// Older root-art passes replace each other's output. Keep their final artwork,
+// but do not rerun them for the very same, already-normalized DOM nodes.
+const rebuild=window.r554RebuildAllRootWidgets,seenRoots=new WeakMap(),selector='.bsv2-card > .r554-bsv2-root,.r554-root-widget,.r521-root-orb';
+const signature=e=>[e.className,e.dataset.root,e.getAttribute('title'),e.childElementCount,...[...e.querySelectorAll('img')].map(im=>im.getAttribute('src'))].join('|');
+window.r554RebuildAllRootWidgets=function(scope=document){const roots=[...scope.querySelectorAll(selector)];if(!roots.some(e=>seenRoots.get(e)!==signature(e)))return;const out=rebuild.apply(this,arguments);for(const e of scope.querySelectorAll(selector))seenRoots.set(e,signature(e));return out;};
+// One compiled material-name matcher replaces a fresh regexp for every material
+// on every text node. Preserve the exact tier rules and only write changed text.
+let catalogue='',matcher=null,canonical=new Map();const seenText=new WeakMap();
+N.materialLabels1019=root=>{if(!root)return;const key=U.materialCatalog.join('\n');if(key!==catalogue){catalogue=key;canonical=new Map();for(const name of U.materialCatalog){const s=U.short(name);if(!canonical.has(s))canonical.set(s,N.materialName(s));}const names=[...canonical.keys()].sort((a,b)=>b.length-a.length).map(s=>s.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'));matcher=new RegExp('(^|[^\\u4e00-\\u9fff］])('+names.join('|')+')(?=\\s*(?:[×xｘ]|$))','g');}
+const walker=document.createTreeWalker(root,NodeFilter.SHOW_TEXT),nodes=[];while(walker.nextNode())nodes.push(walker.currentNode);for(const node of nodes){const text=node.nodeValue;if(seenText.get(node)===text||node.parentElement?.closest('script,style,button,input,textarea,select,.jz-catalog-card'))continue;matcher.lastIndex=0;const next=text.replace(matcher,(_,prefix,name)=>prefix+(canonical.get(name)||name));if(next!==text)node.nodeValue=next;seenText.set(node,next);}};
+if(N.releaseHistory073)N.releaseHistory073.BUG修復.push('減少戰鬥畫面中靈根圖示與物品文字的重複處理，改善較慢裝置的介面及自動戰鬥卡頓。');
 })();
 </script>
