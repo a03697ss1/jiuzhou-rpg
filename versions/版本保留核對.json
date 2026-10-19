@@ -1,0 +1,26 @@
+[
+  {
+    "version": "0.7.0",
+    "commit": "6b140aed11d22274166d0ab068957aa5089b223a",
+    "sha256": "41025f8ba431125bf16630185b360733de8be6259e000e1c7f1a64ab3507203a",
+    "bytes": 2320335,
+    "gzipBytes": 515606,
+    "url": "https://a03697ss1.github.io/jiuzhou-rpg/versions/0.7.0/"
+  },
+  {
+    "version": "0.7.1",
+    "commit": "be252762adee3920911f3576435695cb539ecf9f",
+    "sha256": "cde24ddc3314cdd5f5b4c197802ffbd87e01e30909aca89c3c835173397193e6",
+    "bytes": 2744038,
+    "gzipBytes": 630681,
+    "url": "https://a03697ss1.github.io/jiuzhou-rpg/versions/0.7.1/"
+  },
+  {
+    "version": "0.7.2",
+    "commit": "a420a7772dcbb75de52b87c6e2628fa87937495a",
+    "sha256": "84778599d163b9b12a165c38f7c2cbfb24dbdf22fcc76020de8271921a764cd0",
+    "bytes": 3224059,
+    "gzipBytes": 775778,
+    "url": "https://a03697ss1.github.io/jiuzhou-rpg/versions/0.7.2/"
+  }
+]

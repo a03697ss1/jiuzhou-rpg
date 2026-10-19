@@ -38,6 +38,13 @@ def apply(text,standalone):
  for name in ['core','economy','monsters','combat','story-data','humans','quests','world','commissions','pets','codex','ui','completion','clarifications','b-data','b-story','a-data','a-story','npc-generation','test-entry','side1018-data','side1018','material1018','pet-cores1018','pet1018','status1018','release1018','save-recovery1018','revision-world1018','revision-items1018','revision-codex1018','revision-help1018','revision-boss1018','revision-finish1018','review18-fixes','review18-art','hidden-steal1019','items1019','boss1019','battle1019','equipment1019','boss-bar1019','revision24-items','revision24-combat','revision24-ui','revision24-art']:
   f=P/(name+'.js')
   if f.exists():code+='<script id="jz073-'+name+'">'+f.read_text('utf8')+'</script>\n'
+ code+='<script id="jz073-experience1019">'+(P/'experience1019.js').read_text('utf8')+'</script>\n'
+ code+='<script id="jz073-partner-background1019">'+(P/'partner-background1019.js').read_text('utf8')+'</script>\n'
+ code+='<script id="jz073-inventory-layout1019">'+(P/'inventory-layout1019.js').read_text('utf8')+'</script>\n'
+ code+='<script id="jz073-help-scroll1019">'+(P/'help-scroll1019.js').read_text('utf8')+'</script>\n'
+ code+='<script id="jz073-inventory-mail1019">'+(P/'inventory-mail1019.js').read_text('utf8')+'</script>\n'
+ code+='<script id="jz073-inventory-art1019">'+(P/'inventory-art1019.js').read_text('utf8')+'</script>\n'
+ code+='<script id="jz073-official073">'+(P/'official073.js').read_text('utf8')+'</script>\n'
  return text+code
 small=apply((P/'baseline-preview.html').read_text('utf8'),False);(P/'preview.html').write_text(small,'utf8')
 import sys

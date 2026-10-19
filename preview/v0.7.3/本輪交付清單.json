@@ -1,13 +1,13 @@
 {
   "version": "0.7.3",
-  "build": "20261019-revision24-1",
+  "build": "20261019-official073-1",
   "items": 18,
   "tests": 90,
   "passed": 90,
   "newIndependentImages": 384,
   "baseEquipmentImages": 254,
   "published": true,
-  "formalUpdated": false,
+  "formalUpdated": true,
   "savePrefix": "jz073-independent-20261017:",
   "supplement": {
     "date": "2026-10-19",
@@ -67,8 +67,8 @@
   "revision24": {
     "build": "20261019-revision24-1",
     "version": "0.7.3",
-    "completed": 23,
-    "pending": 1,
+    "completed": 24,
+    "pending": 0,
     "tests": 42,
     "regressionTests": 39,
     "formalUpdated": false,
@@ -102,11 +102,12 @@
       {
         "id": 3,
         "title": "紀念品歷練",
-        "status": "待補",
-        "result": "已查明現行領取沒有給歷練；現有原表只有紀念品敘述，沒有獎勵數字。待玩家補充每件數量及重複取得規則。",
-        "code": "baseline-scripts/99-jzw-word-integration.js：jzClaimNpcGift",
+        "status": "已實裝／驗證通過",
+        "result": "每種紀念品首次＋1、月玉珮＋5；持有／領取證據補發一次，存讀檔防重複。",
+        "code": "experience1019.js",
         "evidence": [
-          "紀念品歷練待補清單.json"
+          "歷練與夥伴背景驗收.json",
+          "戰鬥歷練驗收.json"
         ]
       },
       {
@@ -383,5 +384,10 @@
         ]
       }
     ]
-  }
+  },
+  "phase": "正式版",
+  "masterPromoted": true,
+  "latestReport": "10-19F_正式發布與驗收報告.html",
+  "newChecks": 49,
+  "regressionChecks": 81
 }

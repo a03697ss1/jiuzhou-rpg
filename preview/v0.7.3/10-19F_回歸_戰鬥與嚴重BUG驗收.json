@@ -1,0 +1,174 @@
+{
+  "rows": [
+    {
+      "name": "五種戰中丹藥由戰鬥背包實際使用；鎮心只加抵抗12、3回合後消失",
+      "pass": true,
+      "detail": {
+        "out": [
+          {
+            "name": "［初階］凝力丹",
+            "k": "atk",
+            "before": 15,
+            "after": 16.2,
+            "expected": 16.2,
+            "used": 1,
+            "agiBefore": 100000,
+            "agiAfter": 100000
+          },
+          {
+            "name": "［初階］凝道丹",
+            "k": "dao",
+            "before": 15,
+            "after": 16.2,
+            "expected": 16.2,
+            "used": 1,
+            "agiBefore": 100000,
+            "agiAfter": 100000
+          },
+          {
+            "name": "［初階］靈息丹",
+            "k": "hit",
+            "before": 15,
+            "after": 16.2,
+            "expected": 16.2,
+            "used": 1,
+            "agiBefore": 100000,
+            "agiAfter": 100000
+          },
+          {
+            "name": "［初階］清靈丹",
+            "k": "effectHit",
+            "before": 100,
+            "after": 112,
+            "expected": 112,
+            "used": 1,
+            "agiBefore": 100000,
+            "agiAfter": 100000
+          },
+          {
+            "name": "［初階］鎮心丹",
+            "k": "effectResist",
+            "before": 100,
+            "after": 112,
+            "expected": 112,
+            "used": 1,
+            "agiBefore": 100000,
+            "agiAfter": 100000
+          }
+        ],
+        "beforeExpiry": 112,
+        "afterExpiry": 100,
+        "base": 100
+      }
+    },
+    {
+      "name": "未開啟的自選護體丹箱不在戰鬥背包，直接使用也不扣箱子",
+      "pass": true,
+      "detail": {
+        "names": [
+          "［初階］氣血藥水",
+          "［初階］靈力藥水"
+        ],
+        "before": 1,
+        "after": 1
+      }
+    },
+    {
+      "name": "護盾值顯示在實際氣血條上方，承傷扣盾、破盾後標籤消失",
+      "pass": true,
+      "detail": {
+        "before": {
+          "first": 12505,
+          "label": "護盾 12505",
+          "after": 12485,
+          "newLabel": "護盾 12485",
+          "hp": 50000
+        },
+        "broken": {
+          "shield": 0,
+          "label": false,
+          "hp": 49999
+        }
+      }
+    },
+    {
+      "name": "長右正常傷害跨50%時，本體與專屬血條同時切換水雷圖片",
+      "pass": true,
+      "detail": {
+        "before": "revision24-assets/長右_水.webp",
+        "after": "revision24-assets/長右_水雷.webp",
+        "bar": "boss-bar-assets/長右血條_第二階段.webp",
+        "hp": 2250,
+        "phase": 2,
+        "notice": "洪災之禍長右已進入第二階段屬性更改為 水 / 雷"
+      }
+    },
+    {
+      "name": "長右戰玩家真實倒地、NPC完成擊殺，勝利後1氣血並可醫館治療",
+      "pass": true,
+      "detail": {
+        "fight": {
+          "hp": 1,
+          "victory": true,
+          "deadPlayer": 0,
+          "enemyHP": 0,
+          "title": "東州異相解除"
+        },
+        "clinic": {
+          "title": "🏥 醫館",
+          "text": "夥伴與寵物倒地後，由玩家付費救治；等待30分鐘遊戲時間，治療完成自動返回管理介面。一般治療僅玩家 一般氣血治療 5002靈幣 一般靈力治療 2靈幣僅出戰夥伴 一般氣血治療 0靈幣 一般靈力治療 0靈幣僅寵物 一般氣血治療 0靈幣 一般靈力治療 0靈幣治療全體（氣血＋靈力） 5004靈幣🛏️ 疲勞調養每實際降低1點疲勞＝2靈幣。目前疲勞：0/100調養點數（1～100）開始調養🩺 異常狀態治療身體狀態良好，目前沒有需要醫治的常規異常。☯️ 經脈治療目前沒有突破／破境造成的經脈傷勢。病房",
+          "buttons": [
+            {
+              "text": "一般氣血治療 5002靈幣",
+              "disabled": false,
+              "action": "JZ26.generalHeal('player','hp')"
+            },
+            {
+              "text": "一般靈力治療 2靈幣",
+              "disabled": false,
+              "action": "JZ26.generalHeal('player','mp')"
+            },
+            {
+              "text": "一般氣血治療 0靈幣",
+              "disabled": true,
+              "action": "JZ26.generalHeal('partner','hp')"
+            },
+            {
+              "text": "一般靈力治療 0靈幣",
+              "disabled": true,
+              "action": "JZ26.generalHeal('partner','mp')"
+            },
+            {
+              "text": "一般氣血治療 0靈幣",
+              "disabled": true,
+              "action": "JZ26.generalHeal('pet','hp')"
+            },
+            {
+              "text": "一般靈力治療 0靈幣",
+              "disabled": true,
+              "action": "JZ26.generalHeal('pet','mp')"
+            },
+            {
+              "text": "治療全體（氣血＋靈力） 5004靈幣",
+              "disabled": false,
+              "action": "JZ38.healAll()"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "其他BOSS共用結算：玩家倒地、夥伴勝利後保留1氣血",
+      "pass": true,
+      "detail": {
+        "battle": false,
+        "hp": 1,
+        "player": 0,
+        "enemy": 0,
+        "story": null,
+        "note": "BOSS旗標的結算路徑驗收，未新增正式妖物或遭遇。"
+      }
+    }
+  ],
+  "errors": []
+}

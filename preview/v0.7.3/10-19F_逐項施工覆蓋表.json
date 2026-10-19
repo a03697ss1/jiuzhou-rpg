@@ -1,0 +1,47 @@
+{
+  "build": "20261019-official073-1",
+  "version": "0.7.3",
+  "formal": true,
+  "previous24Completed": 24,
+  "rows": [
+    {
+      "title": "歷練與紀念品",
+      "result": "已完成；experience1019.js。領取、合成、存讀檔、溢出上限、茶館、任務、好感、孵化與升星。",
+      "evidence": "歷練與夥伴背景驗收.json"
+    },
+    {
+      "title": "戰鬥歷練",
+      "result": "已完成；experience1019.js。A線真實三隻青臭蟲退出與逐隻計數；種類／大境界限制及防重複。",
+      "evidence": "戰鬥歷練驗收.json"
+    },
+    {
+      "title": "夥伴背景",
+      "result": "已完成；partner-background1019.js。蘇璃、蘇項隊伍與夥伴管理圖片實載，後續可結婚對象自動套用。",
+      "evidence": "歷練與夥伴背景驗收.json"
+    },
+    {
+      "title": "背包容量、固定格、擴充與郵箱",
+      "result": "已完成；inventory-mail1019.js／inventory-layout1019.js。滿50格、擴充3格、滿10封、7日到期、重要道具、獎勵與存讀檔。",
+      "evidence": "背包郵箱固定格驗收.json"
+    },
+    {
+      "title": "正常取得流程",
+      "result": "已完成；inventory-mail1019.js。真實野外戰鬥、公共煉製、NPC收禮均可觸發寄存。",
+      "evidence": "郵箱正常取得流程驗收.json"
+    },
+    {
+      "title": "幫助捲動",
+      "result": "已完成；help-scroll1019.js。切換保持側欄位置，回到舊條目恢復內文位置。",
+      "evidence": "背包郵箱固定格驗收.json"
+    }
+  ],
+  "pending": [
+    "抽獎池與抽獎功能未設計；票券先保留。",
+    "背包擴充格未指定取得來源，不新增商店、配方或掉落。",
+    "其餘七種新狀態無正式施加來源，保留接口與說明。",
+    "金丹玩家成長未開放，築基圓滿停止突破。"
+  ],
+  "newChecks": 49,
+  "regressionChecks": 81,
+  "totalChecks": 130
+}

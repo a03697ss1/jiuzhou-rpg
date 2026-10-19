@@ -1,0 +1,83 @@
+{
+  "rows": [
+    {
+      "name": "A線青陽山第1場實際勝利退出",
+      "initial": {
+        "ids": [
+          "jzu3",
+          "jzu4",
+          "jzu5"
+        ],
+        "refs": true
+      },
+      "result": {
+        "step": 1,
+        "dead": true,
+        "visible": false,
+        "battleCanvas": true,
+        "locked": false,
+        "rewardLogs": [
+          "輪到測試999行動。",
+          "測試999施展普通攻擊。",
+          "青臭蟲氣血 15 → 0。"
+        ]
+      },
+      "pass": true
+    },
+    {
+      "name": "A線青陽山第2場實際勝利退出",
+      "initial": {
+        "ids": [
+          "jzu3",
+          "jzu4",
+          "jzu5"
+        ],
+        "refs": true
+      },
+      "result": {
+        "step": 2,
+        "dead": true,
+        "visible": false,
+        "battleCanvas": true,
+        "locked": false,
+        "rewardLogs": [
+          "輪到柳清妍行動。",
+          "柳清妍施展散羽齊射，消耗15靈力。",
+          "青翠蝶氣血 40 → 0。"
+        ]
+      },
+      "pass": true
+    },
+    {
+      "name": "B線第1波勝利退出",
+      "pass": true,
+      "detail": {
+        "step": 1,
+        "canvas": false,
+        "title": "［主線］逆流追蹤",
+        "dead": true
+      }
+    },
+    {
+      "name": "B線第2波勝利退出",
+      "pass": true,
+      "detail": {
+        "step": 2,
+        "canvas": false,
+        "title": "［主線］逆流追蹤",
+        "dead": true
+      }
+    },
+    {
+      "name": "B線第3波勝利退出",
+      "pass": true,
+      "detail": {
+        "step": 3,
+        "canvas": false,
+        "title": "［主線］逆流追蹤",
+        "dead": true
+      }
+    }
+  ],
+  "errors": []
+}

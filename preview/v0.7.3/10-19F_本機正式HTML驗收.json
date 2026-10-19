@@ -1,0 +1,20 @@
+{
+  "pass": true,
+  "title": "九州修仙錄 0.7.3",
+  "version": "V0.7.3",
+  "images": [
+    {
+      "name": "抽獎卷",
+      "width": 1254
+    },
+    {
+      "name": "［特殊］改名卡",
+      "width": 1254
+    },
+    {
+      "name": "靈幣",
+      "width": 1254
+    }
+  ],
+  "errors": []
+}

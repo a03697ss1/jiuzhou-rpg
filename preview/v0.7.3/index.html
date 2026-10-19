@@ -24986,7 +24986,7 @@ const finish=N.decorate;N.decorate=()=>{finish();const banner=document.querySele
 const history=JZ072.versionHistory;JZ072.versionHistory=()=>{history();document.getElementById('modalBody')?.insertAdjacentHTML('afterbegin','<section class="card"><h2>本輪18項修正</h2><h3>新增</h3><p>裝備、各階藥品與特殊物品的獨立圖片；補齊NPC靈根資質。</p><h3>改動</h3><p>狐毛、狐尾與獸角歸妖物素材；藥品使用你提供的數值；取得來源依完整階級與當前商店核對；布告箱移到放大的布告欄下方；交談只保留暫時離開。</p><h3>BUG修復</h3><p>戰鬥血量與戰位同步、測試999重複挑戰長右、主線行動所在地限制、蘇璃同行位置、柳清妍任務入口、功法階級顯示，以及必敗戰的手動1倍與繼續提示。</p></section>');};
 })();
 </script>
-<script>window.JZ073_BUILD_ID="20261019-revision24-1";</script>
+<script>window.JZ073_BUILD_ID="20261019-official073-1";</script>
 <script id="jz073-hidden-steal1019">(function(){'use strict';const N=JZ073,R=JZR;
 const drops=Object.freeze({'林夏于':'［特殊］火霞刀','蘇璃':'［特殊］靈水劍','柳清妍':'［特殊］秘術弓','邱山河':'［特殊］鹿絞槍','蘇項':'［特殊］土靈盔'});
 const names=new Set(Object.values(drops));
@@ -25195,5 +25195,209 @@ for(const src of Object.values(N.art24)){const im=new Image();im.src=src;}
 N.art.長右=N.art24.boss1;
 const icon=N.itemIcon;N.itemIcon=function(name){if(/獸技殘頁/.test(name))return N.art24.leaf;if(/(?:自選|綜合).*一階.*箱|自選護體丹箱/.test(name))return N.art24.box1;if(/(?:自選|綜合).*二階.*箱|自選晶石箱/.test(name))return N.art24.box2;return icon.apply(this,arguments);};
 const core=bmv1CombatCore;bmv1CombatCore=function(b){const html=core.apply(this,arguments),boss=b.enemyTeam.find(f=>f.jz073Boss);if(!boss)return html;const d=JZ072.fragment(html),img=d.querySelector('.jz-boss-body>img');if(img){img.src=boss.jz073Phase===2?N.art24.boss2:N.art24.boss1;img.alt=boss.jz073Phase===2?'長右完整水雷立繪':'長右完整水元素立繪';}return d.innerHTML;};
+})();
+</script>
+<script id="jz073-experience1019">(function(){'use strict';
+const N=JZ073,R=JZR,U=JZ071,X=N.experience1019={version:1},number=v=>Math.max(0,Math.floor(Number(v)||0));
+let scanning=false,legacyBattle=0,travel=0;
+const souvenirNames=Object.keys(JZW.data.souvenirs),teaNames=['焦葉粗茶','雲芽清茶','玉露凝香','悟道仙茗'];
+const quantity=v=>number(typeof v==='object'?v?.count:v);
+// Keep the original save fields and counters; only normalize the shared pool.
+v070EnsureExperience=function(){if(!S)return;const total=Math.min(120,number(S.experience)+number(S.experienceHidden));S.experience=Math.min(100,total);S.experienceHidden=Math.max(0,total-100);const c=S.experienceCounters??={};c.commission=number(c.commission);c.gather=number(c.gather);c.wildMinutes=number(c.wildMinutes);c.monster??={};};
+v070TotalExperience=function(){v070EnsureExperience();return S.experience+S.experienceHidden;};
+X.add=(n,why)=>{v070EnsureExperience();const gain=Math.min(number(n),120-v070TotalExperience()),total=v070TotalExperience()+gain;S.experience=Math.min(100,total);S.experienceHidden=Math.max(0,total-100);if(gain&&why)log('📘 '+why+'：歷練＋'+gain+'。');return gain;};
+v070AddExperience=function(n,why){return legacyBattle?0:X.add(n,why);};
+v070SpendExperience=function(n){const total=v070TotalExperience(),spent=Math.min(Math.floor(total/10)*10,Math.floor(number(n)/10)*10),left=total-spent;S.experience=Math.min(100,left);S.experienceHidden=Math.max(0,left-100);return spent;};
+X.petId=p=>{const d=R.petData(p);return d.v3TouchId??=(crypto.randomUUID());};
+X.eligibleNpc=n=>{const d=U.npcs[n]||JZNEXT.npcs[n];return !!d&&!d.noAffinity&&d.affinityMax!==0;};
+X.state=()=>{v070EnsureExperience();if(S.experienceV073)return S.experienceV073;const x=S.experienceV073={schema:1,souvenirs:{},quests:{},npc:{},pets:{},tea:{},teaEarned:0,receipts:[]};
+ // Past quest/heart/star awards cannot be reconstructed safely. Seed their
+ // milestones without replaying them. Souvenirs were confirmed never paid.
+ for(const q of S.quests||[])if(q.claimed)x.quests[q.id]=true;
+ for(const [n,a] of Object.entries(S.npcAffinity||{}))if(X.eligibleNpc(n))x.npc[n]={five:a>=50,ten:a>=100};
+ for(const p of S.pets||[]){const d=R.petData(p);x.pets[X.petId(p)]={five:d.affection>=50,ten:d.affection>=100,star:d.stars>=5};}
+ for(const t of teaNames)if(S.teaHistory?.[t]){x.tea[t]=true;x.teaEarned+=t==='悟道仙茗'?4:1;}x.teaEarned=Math.min(7,x.teaEarned);return x;};
+X.receipt=(kind,key,amount,label)=>{const x=X.state(),gain=X.add(amount,label);x.receipts.push({kind,key,amount,credited:gain,at:r4GameMinutes()});if(x.receipts.length>200)x.receipts.splice(0,x.receipts.length-200);return gain;};
+X.souvenir=n=>{const x=X.state();if(!souvenirNames.includes(n)||x.souvenirs[n])return false;x.souvenirs[n]=true;X.receipt('souvenir',n,n==='［特殊］月玉珮'?5:1,'首次取得'+n);return true;};
+X.scan=()=>{if(!S||scanning)return;scanning=true;try{const x=X.state(),proof=new Set();for(const n of souvenirNames)if(['souvenirs','items','special','materials','gearInventory'].some(b=>quantity(S[b]?.[n])>0))proof.add(n);
+ for(const [npc,rows] of Object.entries(JZNEXT.gifts||{}))rows.forEach((r,i)=>{if(S.npcGiftClaims?.[npc+':'+i]&&souvenirNames.includes(r[1]))proof.add(r[1]);});
+ // The complete jade consumes both half-jades, which are themselves souvenirs.
+ if(proof.has('［特殊］月玉珮')){proof.add('［特殊］半月水玉');proof.add('［特殊］半月山玉');}
+ if(number(S.eastWord?.wendao?.passed)>=10)proof.add('［特殊］問道茶壺');
+ for(const n of proof)X.souvenir(n);
+ for(const q of S.quests||[]){if(!q.claimed||x.quests[q.id])continue;x.quests[q.id]=true;if(q.type==='主線'||q.type==='支線')X.receipt('quest',q.id,1,'完成［'+q.type+'］'+q.title);else if(q.type==='委託'){const c=S.experienceCounters;c.commission++;if(c.commission>=5){const times=Math.floor(c.commission/5);c.commission%=5;X.receipt('commission',q.id,times,'累積完成委託');}}}
+ for(const [n,a] of Object.entries(S.npcAffinity||{})){if(!X.eligibleNpc(n))continue;const m=x.npc[n]??={};if(a>=50&&!m.five){m.five=true;X.receipt('npc',n+':5',1,n+'好感達到5心');}if(a>=100&&!m.ten){m.ten=true;X.receipt('npc',n+':10',2,n+'好感達到10心');}}
+ for(const p of S.pets||[]){const d=R.petData(p),id=X.petId(p),m=x.pets[id]??={};if(d.affection>=50&&!m.five){m.five=true;X.receipt('pet',id+':5',1,p.name+'好感達到5心');}if(d.affection>=100&&!m.ten){m.ten=true;X.receipt('pet',id+':10',2,p.name+'好感達到10心');}if(d.stars>=5&&!m.star){m.star=true;X.receipt('pet',id+':star5',3,p.name+'首次達到5星');}}
+ }finally{scanning=false;}};
+for(const [obj,key] of [[R,'ensure'],[R,'save'],[window,'r4WriteSave'],[window,'render'],[window,'renderPage'],[window,'r56SyncQuestArchive']]){const old=obj[key];if(typeof old!=='function')continue;obj[key]=function(){if(key==='ensure'){const out=old.apply(this,arguments);X.scan();return out;}X.scan();const out=old.apply(this,arguments);X.scan();return out;};}
+// Observe the private NPC/crafting grant paths as well as public grants.
+const give=R.give;R.give=function(){X.scan();const out=give.apply(this,arguments);X.scan();return out;};
+const claim=jzClaimNpcGift;jzClaimNpcGift=function(){X.scan();const out=claim.apply(this,arguments);X.scan();return out;};
+// The tutorial formerly added two points directly, outside the common award.
+// It now follows the same one-point main-quest rule as subsequent chapters.
+R56_QUESTS.tutorial2.reward=String(R56_QUESTS.tutorial2.reward).replace(/歷練[×＋+]2/g,'歷練＋1');
+r5CompleteTutorial2=function(){const q=S.quests?.find(q=>q.id==='tutorial2');if(!q?.done||q.claimed)return false;X.scan();q.reward=String(q.reward||'').replace(/歷練[×＋+]2/g,'歷練＋1');q.claimed=true;q.pinned=false;S.coins+=300;S.items['［初階］氣血藥水']=number(S.items['［初階］氣血藥水'])+2;S.items['［初階］靈力藥水']=number(S.items['［初階］靈力藥水'])+2;S.flags.peopleUnlocked=S.flags.questUiUnlocked=true;S.questState.tutorial2??={};S.questState.tutorial2.claimed=true;r56SyncQuestArchive(q);currentPage='people';R.save();render();return true;};
+reportTutorial2=function(){return r5CompleteTutorial2();};
+// Half-jades live in the souvenir bag, rather than the material bag.
+const halves=['半月水玉','半月山玉'],jadeRecipe=req=>halves.every(n=>String(req).includes(n));
+const countMaterial=JZW.materialCount,spendMaterial=JZW.spendMaterial;
+JZW.materialCount=function(n){if(!halves.includes(U.short(n)))return countMaterial.apply(this,arguments);return ['items','special','materials','souvenirs'].reduce((v,b)=>v+Object.entries(S[b]||{}).filter(([k])=>U.short(k)===U.short(n)).reduce((a,[,q])=>a+quantity(q),0),0);};
+JZW.spendMaterial=function(n,q){if(!halves.includes(U.short(n)))return spendMaterial.apply(this,arguments);if(JZW.materialCount(n)<q)return false;for(const b of ['souvenirs','special','items','materials'])for(const [k,v] of Object.entries(S[b]||{})){if(U.short(k)!==U.short(n))continue;const used=Math.min(q,quantity(v));S[b][k]=quantity(v)-used;q-=used;if(!q)return true;}return false;};
+const hasIngredients=r59HasIngredients,consumeIngredients=r59ConsumeIngredients,missingIngredients=r512Missing;
+r59HasIngredients=function(req){return jadeRecipe(req)?r59ParseReq(req).every(([n,c])=>JZW.materialCount(n)>=c):hasIngredients.apply(this,arguments);};
+r59ConsumeIngredients=function(req){if(!jadeRecipe(req))return consumeIngredients.apply(this,arguments);if(!r59HasIngredients(req))return false;X.scan();for(const [n,c] of r59ParseReq(req))JZW.spendMaterial(n,c);return true;};
+r512Missing=function(req){return jadeRecipe(req)?r59ParseReq(req).filter(([n,c])=>JZW.materialCount(n)<c).map(([n,c])=>n+' 缺 '+(c-JZW.materialCount(n))).join('、'):missingIngredients.apply(this,arguments);};
+r58TeaFirst=function(name){const x=X.state();S.teaHistory??={};if(!teaNames.includes(name)||S.teaHistory[name]||x.tea[name])return false;S.teaHistory[name]=true;x.tea[name]=true;const amount=Math.min(7-x.teaEarned,name==='悟道仙茗'?4:1);x.teaEarned+=amount;if(amount)X.receipt('tea',name,amount,'首次品嘗'+name);return true;};
+X.recordBattle=(b,win)=>{if(!b||b.experience1019Recorded)return;b.experience1019Recorded=true;if(!win||b.jzLab||b.jzSpar||b.jzWendao||b.jzPetMode||b.tutorialCase||b.jz073PlotLoss||b.jz073NoLoot)return;X.scan();const c=S.experienceCounters.monster;
+ for(const e of b.enemyTeam||[]){if(e.hp>0)continue;const name=N.canonical(e.name),kind=e.hostileKind||N.kind(e),monster=!!JZMON.byName[name]||['妖王種','神獸種','災獸種'].includes(kind);
+ if(!monster){if(['長老級','道祖級'].includes(kind))X.receipt('battle',kind,5,'擊殺'+kind);else if(/州府統領/.test([e.identity,e.role,e.npcRole,kind,JZNEXT.npcs[name]?.identity,U.npcs[name]?.identity].join(' ')))X.receipt('battle',name,3,'戰勝州府統領');continue;}
+ if(['一般種','特殊種'].includes(kind)&&JZ072.rank(e.realm)<JZ072.rank(S.realm))continue;
+ const direct={'妖王種':1,'神獸種':5,'災獸種':5}[kind];if(direct){X.receipt('battle',name,direct,'擊殺'+kind);continue;}
+ const category=kind==='高危種'?'高位種':kind==='高危種(特)'?'高危種（特）':kind,need={'一般種':30,'特殊種':20,'高位種':10,'高危種（特）':5}[category];if(!need)continue;c[category]=number(c[category])+1;if(c[category]>=need){c[category]-=need;X.receipt('battle',category,1,'累積擊殺'+need+'隻'+category);}
+ }};
+const record=U.recordBattle;U.recordBattle=function(b,win){X.recordBattle(b,win);return record.apply(this,arguments);};
+// The old single-foe reward handler still runs for cultivation/loot. Suppress
+// only its experience award/counter mutation, preserving all other settlement.
+const win=battleWin;battleWin=function(){const b=battle;X.recordBattle(b,true);v070EnsureExperience();const counters=structuredClone(S.experienceCounters.monster);legacyBattle++;try{return win.apply(this,arguments);}finally{legacyBattle--;S.experienceCounters.monster=counters;X.scan();}};
+const gather=gatherNearby;gatherNearby=function(){X.scan();const before=Object.values(S.materials||{}).reduce((a,v)=>a+quantity(v),0),out=gather.apply(this,arguments),after=Object.values(S.materials||{}).reduce((a,v)=>a+quantity(v),0);if(after>before){const c=S.experienceCounters;c.gather++;if(c.gather>=30){c.gather-=30;X.receipt('gather','30',1,'累積採集30次');}R.save();}return out;};
+const move=moveTo;moveTo=function(){travel++;try{return move.apply(this,arguments);}finally{travel--;}};
+const advance=r4AdvanceMinutes;r4AdvanceMinutes=function(mins,opt){X.scan();const place=S.place,before=r4GameMinutes(),out=advance.apply(this,arguments),elapsed=Math.max(0,r4GameMinutes()-before);if(!travel&&place===S.place&&placeType(place)==='野外'&&elapsed){const c=S.experienceCounters;c.wildMinutes+=elapsed;const times=Math.floor(c.wildMinutes/1440);if(times){c.wildMinutes%=1440;X.receipt('wild','24h',times,'野外累積遊歷'+times+'日');}}return out;};
+const useToken=n=>{if(U.short(n)!=='歷練令牌')return null;if(battle||!R.count(n)||!R.take(n,1))return false;X.receipt('token',n,3,'使用歷練令牌');R.save();render();return true;};
+for(const key of ['useItem'])for(const ob of [R,JZW]){const old=ob[key];if(typeof old!=='function')continue;ob[key]=function(n){const out=useToken(n);return out===null?old.apply(this,arguments):out;};}
+for(const ob of [R,JZW]){const old=ob.itemDescription;if(typeof old==='function')ob.itemDescription=function(n){if(U.short(n)==='歷練令牌')return '使用後獲得3點歷練。';return old.apply(this,arguments);};}
+const training=renderTraining;renderTraining=function(){return training.apply(this,arguments).replace(/\s*<span class="tiny muted">（另有隱藏儲備）<\/span>/g,'');};
+R511_CODEX.歷練=['歷練來自修行中的遊歷與成長，可投入突破或破境，提高成功率。',[],
+ '<p>平常顯示最高100／100；超過的歷練最多保留20點。消耗時會從總量扣除，保留的歷練自動補回顯示值。超過總上限的部分不再累積。</p><p>每次可投入10點的整數倍。每消耗10點，突破或破境成功率增加1個百分點；即使失敗也會消耗。</p><h3>任務與品茗</h3><p>每完成一個主線或支線，獲得1點；每完成5次委託，獲得1點。每種茶首次品嘗獲得1點，首次喝到悟道仙茗額外獲得3點；品茗最多提供7點。</p><h3>戰鬥</h3><p>一般種每30隻、特殊種每20隻、高危種（高位種）每10隻、高危種（特）每5隻，各獲得1點。妖王種每隻1點；神獸種與災獸種每隻5點。一般種或特殊種若低於自己的大境界，該次擊殺不累積。</p><p>擊殺長老級或道祖級敵人獲得5點；戰勝或擊殺州府統領獲得3點，同一場不重複計算。</p><h3>探索與培養感情</h3><p>採集每30次獲得1點。在野外累積24小時遊戲時間獲得1點，可以跨野外區域累積；往返城鎮與野外的移動時間不計入。</p><p>有好感度的NPC與每一隻寵物，首次達到5心獲得1點，10心再獲得2點。每隻寵物首次達到5星，獲得3點。</p><h3>紀念品與道具</h3><p>每種紀念品首次取得獲得1點；月玉珮首次取得獲得5點。相同紀念品再次取得不會重複給予歷練。歷練令牌使用後獲得3點。</p>', ['突破與破境','茶館','NPC','寵物養成']];
+const history=JZ072.versionHistory;JZ072.versionHistory=function(){history();document.getElementById('modalBody')?.insertAdjacentHTML('afterbegin','<section class="card"><h2>10/19 歷練修正</h2><h3>新增</h3><p>紀念品首次取得歷練，月玉珮5點，其餘每種1點；已持有或已領取的紀念品補發一次。</p><h3>改動</h3><p>任務、委託、好感、寵物升星、採集與野外遊歷依歷練規則累積。</p><h3>BUG修復</h3><p>品茗的7點上限獨立計算；多隻敵人的歷練逐隻結算；低於自身大境界的一般與特殊種不累積。存讀檔不重複發放，投入量維持10點整數倍。</p></section>');};
+})();
+</script>
+<script id="jz073-partner-background1019">(function(){'use strict';const N=JZ073;
+const home=Object.fromEntries(Object.entries(JZNEXT.npcs).map(([n,d])=>[n,d.place]));
+N.partnerPortraitScene1019=n=>{const d=JZNEXT.npcs[n]||JZ071.npcs[n];if(!d?.romance)return '';return d.partnerBackground||d.portraitBackground||JZ38.scene(n)||JZV2_ART[home[n]||d.home||d.place]||'';};
+N.paintPartnerPortraits1019=root=>{for(const im of root.querySelectorAll('.r519-member-card>img,.team-slot>img,.jz072-partner-head>img')){const n=Object.keys(JZNEXT.npcs).find(n=>im.alt.startsWith(n));if(!n)continue;const scene=N.partnerPortraitScene1019(n);if(!scene)continue;im.classList.add('jz-romance-partner-portrait');im.dataset.partnerScene=n;im.style.backgroundImage='url("'+scene+'")';im.style.backgroundSize='cover';im.style.backgroundPosition='center';im.style.backgroundColor='#10252b';}};
+for(const name of ['renderTeam','renderPartners']){const old=window[name];window[name]=function(){const d=JZ072.fragment(old.apply(this,arguments));N.paintPartnerPortraits1019(d);return d.innerHTML;};}
+})();
+</script>
+<script id="jz073-inventory-layout1019">(function(){'use strict';const N=JZ073;
+N.fixedCard1019=(card,kind='bag')=>{if(card.classList.contains('jz-fixed-slot'))return;card.classList.add('jz-fixed-slot','jz-fixed-'+kind);const copy=document.createElement('div'),actions=document.createElement('div');copy.className='jz-slot-copy';actions.className='jz-slot-actions';for(const node of [...card.childNodes]){if(node.nodeType===1&&node.matches('img.jz-item-image'))continue;if(node.nodeType===1&&node.matches('button,select'))actions.append(node);else copy.append(node);}card.append(copy);if(actions.children.length)card.append(actions);};
+N.fixedGroups1019=(root,selector,kind)=>{const cards=[...root.querySelectorAll(selector)].filter(c=>!c.querySelector(selector)),parents=new Set(cards.map(c=>c.parentElement));for(const parent of parents){const rows=cards.filter(c=>c.parentElement===parent);if(!rows.length)continue;let grid=parent.matches('.jz-fixed-grid,.jzbug-recipe-grid,.jzbug-tech-grid,.tech-list')?parent:null;if(!grid){grid=document.createElement('div');rows[0].before(grid);rows.forEach(r=>grid.append(r));}grid.classList.add('jz-fixed-grid','jz-fixed-'+kind+'-grid');for(const row of rows)N.fixedCard1019(row,kind);}};
+const bag=renderBag;renderBag=function(){const d=JZ072.fragment(bag.apply(this,arguments));for(const grid of d.querySelectorAll('.jzbug-bag-grid,.jzbug-equipped')){grid.classList.add('jz-fixed-grid','jz-fixed-bag-grid');for(const card of grid.querySelectorAll(':scope>.card'))N.fixedCard1019(card);}return d.innerHTML;};
+for(const name of ['r511RecipeList','r510RecipeRows','r59RecipeRows','r512NpcRecipeRows']){const old=window[name];if(typeof old!=='function')continue;window[name]=function(){const d=JZ072.fragment(old.apply(this,arguments));N.fixedGroups1019(d,'.prod-recipe,.craft-recipe','recipe');return d.innerHTML;};}
+const tech=renderTech;renderTech=function(){const d=JZ072.fragment(tech.apply(this,arguments));for(const card of d.querySelectorAll('.jzbug-tech-grid>.card,.tech-list>.card')){const n=card.querySelector('b')?.textContent;if(n&&JZ360.byName[n]&&!card.querySelector('.jz-item-image'))card.insertAdjacentHTML('afterbegin',N.itemImage1018(n));}N.fixedGroups1019(d,'.tech-list>.card,.jz360-tech,.jzbug-tech-card,.jzbug-tech-grid>.card','tech');N.fixedGroups1019(d,'.tech-entry','loadout');return d.innerHTML;};
+const style=document.createElement('style');style.id='jz-fixed-inventory1019';style.textContent=`
+.jz-fixed-grid{display:grid!important;grid-template-columns:repeat(auto-fill,minmax(min(100%,230px),1fr))!important;gap:12px!important;align-items:start!important;min-width:0}
+.jz-fixed-grid>.jz-fixed-slot{box-sizing:border-box;width:100%!important;min-width:0!important;height:286px!important;min-height:286px!important;max-height:286px!important;display:flex!important;flex-direction:column!important;align-items:stretch!important;gap:7px;margin:0!important;padding:12px!important;overflow:hidden!important;border:1px solid #36536a;border-radius:12px;background:#0d1d29}
+.jz-fixed-slot>.jz-item-image{display:block;float:none!important;flex:none;width:76px!important;height:76px!important;object-fit:contain;align-self:center;margin:0!important}
+.jz-fixed-slot>.jz-slot-copy{min-height:0;min-width:0;flex:1;overflow:auto;overflow-wrap:anywhere;scrollbar-width:thin;line-height:1.5}
+.jz-slot-copy>b,.jz-slot-copy>strong{display:block;color:#f2dea2;line-height:1.5;min-height:1.5em}
+.jz-slot-copy p{margin:5px 0}.jz-slot-copy br+br{display:none}
+.jz-slot-actions{flex:none;display:flex;flex-wrap:wrap;gap:5px;max-height:80px;overflow:auto;align-items:center}
+.jz-slot-actions button{margin:0!important;min-height:34px;flex:1 1 auto}.jz-slot-actions select{width:100%;min-width:0}
+.jz-fixed-recipe-grid>.jz-fixed-slot{height:366px!important;min-height:366px!important;max-height:366px!important}
+.jz-fixed-tech-grid>.jz-fixed-slot{height:320px!important;min-height:320px!important;max-height:320px!important}
+.jz-fixed-loadout-grid>.jz-fixed-slot{height:112px!important;min-height:112px!important;max-height:112px!important}
+.jz-fixed-slot .jz072-compare{min-width:0;max-width:100%}.jz-fixed-slot table{width:100%;font-size:12px}
+@media(max-width:560px){.jz-fixed-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:8px!important}.jz-fixed-grid>.jz-fixed-slot{padding:9px!important}.jz-fixed-slot>.jz-item-image{width:64px!important;height:64px!important}.jz-slot-copy{font-size:13px}.jz-slot-actions button{font-size:12px;padding:6px!important}}
+`;document.head.append(style);
+})();
+</script>
+<script id="jz073-help-scroll1019">(function(){'use strict';const N=JZ073,memory=N.helpScroll1019={side:0,topics:{},query:''};
+const draw=r511Codex;r511Codex=function(){const oldSide=document.querySelector('.jz-help-side'),oldMain=document.querySelector('.jz-help-main'),oldKey=oldMain?.querySelector('h2')?.textContent,body=document.getElementById('modalBody'),back=document.getElementById('modalBack'),outer={body:body?.scrollTop||0,back:back?.scrollTop||0};if(oldSide){memory.side=oldSide.scrollTop;if(oldKey)memory.topics[oldKey]=oldMain.scrollTop;}const query=String(S.helpSearch||'');if(query!==memory.query){memory.side=0;memory.query=query;}const out=draw.apply(this,arguments),side=document.querySelector('.jz-help-side'),main=document.querySelector('.jz-help-main'),key=main?.querySelector('h2')?.textContent;if(side)side.scrollTop=memory.side;if(main)main.scrollTop=memory.topics[key]||0;if(body)body.scrollTop=outer.body;if(back)back.scrollTop=outer.back;return out;};
+const modal=showModal;showModal=function(){const out=modal.apply(this,arguments);document.getElementById('modalBack')?.classList.toggle('jz-reading-top1019',!!document.querySelector('#modalBody .jz-help-shell,#modalBody .jz-mail-list,#modalBody .jz-mail-attachments'));return out;};
+const style=document.createElement('style');style.textContent='#modalBack.jz-reading-top1019{z-index:12000!important}';document.head.append(style);
+})();
+</script>
+<script id="jz073-inventory-mail1019">(function(){'use strict';const N=JZ073,R=JZR,W=JZW,E=N.esc,B=N.inventory1019={defaults:{物品:50,材料:50,裝備:30,永久特殊:30,消耗特殊:30},days:7,maxMail:10},num=v=>Math.max(0,Math.floor(Number(typeof v==='object'?v?.count:v)||0));
+const bags=['items','materials','gearInventory','special','souvenirs'],expandName='［特殊］背包擴充格';let syncing=false;
+const initial=initialState;initialState=function(){const s=initial.apply(this,arguments);s.mailboxNewCharacter1019=true;return s;};
+B.category=(name,bag)=>{if(name.startsWith('［任務］'))return '任務';if(bag==='gifts'||JZ072.giftName(name))return '禮物';const cl=W.itemClass(name);if(cl==='紀念品'||bag==='souvenirs')return '紀念品';if(bag==='gearInventory'||R546_GEAR_FULL[name])return '裝備';if(cl==='永久特殊'||cl==='消耗特殊')return cl;if(bag==='materials')return '材料';return '物品';};
+B.rows=tab=>{const map=new Map();for(const bag of bags)for(const [name,value] of Object.entries(S[bag]||{})){const qty=num(value);if(!qty||B.category(name,bag)!==tab)continue;if(!map.has(name))map.set(name,{name,qty:0,entries:[]});const row=map.get(name);row.qty+=qty;row.entries.push({bag,value});}return [...map.values()];};
+B.state=()=>{if(S.inventoryMail1019)return S.inventoryMail1019;const s=S.inventoryMail1019={schema:1,capacity:{...B.defaults},mail:[],reserve:[],sequence:0,campaigns:{},refused:[]};if(!S.mailboxNewCharacter1019){s.campaigns.pioneer1019=true;s.mail.push({id:'pioneer1019',title:'給先驅者的感謝信',sender:'a03697ss1',text:'我是a03697ss1，感謝各位當測試員並遊玩我的遊戲，在此準備禮物給你們這些先驅者。',created:r4GameMinutes(),expires:r4GameMinutes()+B.days*1440,unread:true,attachments:[{name:'抽獎卷',qty:10,bag:'items'},{name:'［特殊］改名卡',qty:1,bag:'special'},{name:'靈幣',qty:5000,kind:'coins'}]});}return s;};
+B.important=a=>a.kind!=='coins'&&(a.name.startsWith('［任務］')||a.name.startsWith('［特殊］')||a.bag==='gearInventory'||!!R546_GEAR_FULL[a.name]);
+B.hasContents=m=>m.attachments.some(a=>a.qty>0);
+B.protected=m=>m.attachments.some(a=>a.qty>0&&B.important(a));
+B.purge=()=>{const s=B.state(),now=r4GameMinutes(),expired=[...s.mail,...s.reserve].filter(m=>now>=m.expires&&!B.protected(m));if(expired.length){s.mail=s.mail.filter(m=>!expired.includes(m));s.reserve=s.reserve.filter(m=>!expired.includes(m));log('📮 '+expired.length+'封信件已超過7個遊戲日，自動刪除。');}return expired.length;};
+B.attachments=rows=>rows.flatMap(r=>r.entries.map(({bag,value})=>({name:r.name,qty:num(value),bag,...(typeof value==='object'?{value:structuredClone(value)}:{})})));
+B.merge=(target,attachments)=>{for(const a of attachments){const old=target.find(r=>r.name===a.name&&r.bag===a.bag&&r.kind===a.kind&&JSON.stringify(r.value||null)===JSON.stringify(a.value||null));if(old)old.qty+=a.qty;else target.push(structuredClone(a));}};
+B.deliver=attachments=>{if(!attachments.length)return;const s=B.state(),now=r4GameMinutes();B.purge();if(s.mail.length<B.maxMail){const last=s.mail.at(-1);if(last?.overflow&&last.created===now){B.merge(last.attachments,attachments);last.unread=true;}else s.mail.push({id:'overflow-'+(++s.sequence),title:'背包溢出物品',sender:'物品保管處',text:'背包已無空格，以下物品暫存於郵箱。請整理背包後領取。',created:now,expires:now+B.days*1440,unread:true,overflow:true,attachments:structuredClone(attachments)});return;}
+ const important=attachments.filter(B.important),ordinary=attachments.filter(a=>!B.important(a));if(important.length){let reserve=s.reserve.find(m=>m.overflow&&m.created===now);if(!reserve){reserve={id:'reserve-'+(++s.sequence),title:'重要道具保管',sender:'物品保管處',text:'郵箱已滿；重要道具已另外保留，整理背包後可在此領取。',created:now,expires:now+B.days*1440,unread:true,overflow:true,attachments:[]};s.reserve.push(reserve);}B.merge(reserve.attachments,important);}if(ordinary.length){const notice=ordinary.map(a=>a.name+'×'+a.qty).join('、');s.refused.push({at:now,items:structuredClone(ordinary)});if(s.refused.length>30)s.refused.shift();log('📮 郵箱已滿10封，未能收取：'+notice+'。');N.mailRefusal1019='郵箱已滿10封，未能收取：'+notice+'。';}
+};
+B.sync=()=>{if(!S||syncing)return;syncing=true;try{const s=B.state();B.purge();for(const [tab,start] of Object.entries(B.defaults))s.capacity[tab]=Math.max(start,num(s.capacity[tab]||start));const overflow=[];for(const tab of Object.keys(B.defaults)){const rows=B.rows(tab);for(const row of rows.slice(s.capacity[tab])){overflow.push(...B.attachments([row]));for(const {bag} of row.entries)delete S[bag][row.name];}}B.deliver(overflow);B.badge();}finally{syncing=false;}};
+B.used=tab=>B.rows(tab).length;
+B.canReceive=(name,bag)=>{const tab=B.category(name,bag),cap=B.state().capacity[tab];return cap==null||B.rows(tab).some(r=>r.name===name)||B.used(tab)<cap;};
+B.allMail=()=>[...B.state().mail,...B.state().reserve];
+B.find=id=>B.allMail().find(m=>m.id===id);
+B.expansionCount=()=>R.count(expandName)+B.allMail().reduce((sum,m)=>sum+m.attachments.filter(a=>a.name===expandName).reduce((v,a)=>v+a.qty,0),0);
+B.expand=tab=>{if(battle||!Object.hasOwn(B.defaults,tab)||!B.expansionCount())return false;const s=B.state();let taken=R.take(expandName,1);if(!taken)for(const m of B.allMail()){const a=m.attachments.find(a=>a.name===expandName&&a.qty>0);if(a){a.qty--;taken=true;break;}}if(!taken)return false;s.capacity[tab]+=3;log('🎒 '+tab+'背包增加3格，目前容量'+s.capacity[tab]+'格。');R.save();closeModal();renderPage();return true;};
+B.chooseExpansion=tab=>{if(battle)return false;const s=B.state();showModal('開啟新格子','<p>消耗［特殊］背包擴充格×1，選擇一個分頁增加3格。</p><p>可用擴充格：'+B.expansionCount()+'（包含郵箱中保留的擴充格）</p><div class="jz-mail-expand-options">'+Object.keys(B.defaults).map(t=>'<button '+(!B.expansionCount()?'disabled':'')+' onclick="JZ073.inventory1019.expand(\''+t+'\')">'+E(t)+' '+s.capacity[t]+' → '+(s.capacity[t]+3)+'格</button>').join('')+'</div>');return true;};
+B.put=a=>{if(a.kind==='coins'){S.coins+=a.qty;return;}S[a.bag]??={};const old=S[a.bag][a.name];if(typeof old==='object')old.count=num(old)+a.qty;else if(a.value)S[a.bag][a.name]={...structuredClone(a.value),count:num(old)+a.qty};else S[a.bag][a.name]=num(old)+a.qty;};
+B.claim=(id,index)=>{if(battle)return false;B.sync();const m=B.find(id);if(!m)return false;const wanted=index==null?m.attachments:m.attachments.filter((a,i)=>i===index);let claimed=0;syncing=true;try{for(const a of wanted){if(!a.qty||a.kind!=='coins'&&!B.canReceive(a.name,a.bag))continue;B.put(a);a.qty=0;claimed++;}}finally{syncing=false;}if(!claimed){showModal('背包空間不足','<p>請先整理對應分頁，或使用背包擴充格增加容量後再領取。</p><button onclick="JZ073.inventory1019.openLetter(\''+E(id)+'\')">返回信件</button>');return false;}m.unread=false;R.ensure();R.save();B.openLetter(id);return true;};
+B.remove=id=>{B.sync();const m=B.find(id);if(!m||B.hasContents(m))return false;const s=B.state();s.mail=s.mail.filter(r=>r.id!==id);s.reserve=s.reserve.filter(r=>r.id!==id);R.save();B.open();return true;};
+B.timeText=m=>B.protected(m)||m.expires==null?'含重要道具，保留至領取':Math.max(0,Math.ceil((m.expires-r4GameMinutes())/60))+'遊戲小時後到期';
+B.open=()=>{if(battle)return false;B.sync();const s=B.state(),rows=ms=>ms.map(m=>'<section class="card jz-mail-card"><b>'+E(m.title)+(m.unread?' <span class="gold">未讀</span>':'')+'</b><p>寄件人：'+E(m.sender)+' · '+B.timeText(m)+'</p><p>附件 '+m.attachments.filter(a=>a.qty>0).length+' 項</p><button onclick="JZ073.inventory1019.openLetter(\''+E(m.id)+'\')">開啟信件</button><button '+(B.hasContents(m)?'disabled title="請先領取全部內容物"':'')+' onclick="JZ073.inventory1019.remove(\''+E(m.id)+'\')">刪除</button></section>').join('');showModal('郵箱','<p>信件 '+s.mail.length+'／10。普通信件保留7個遊戲日，有未領取物品仍會到期刪除；含任務物品、特殊道具或裝備的信件會保留至領取。</p><div class="jz-mail-list">'+(rows(s.mail)||'<p>目前沒有信件。</p>')+'</div>'+(s.reserve.length?'<h3>重要道具保管</h3><p>郵箱已滿時另外保留的重要道具，不占10封信件名額。</p><div class="jz-mail-list">'+rows(s.reserve)+'</div>':'')+'<button onclick="closeModal()">關閉</button>');return true;};
+B.openLetter=id=>{if(battle)return false;B.sync();const m=B.find(id);if(!m)return B.open();m.unread=false;r4ScheduleAutoSave();showModal(m.title,'<p>寄件人：'+E(m.sender)+' · '+B.timeText(m)+'</p><p class="jz-mail-text">'+E(m.text)+'</p><div class="jz-mail-attachments">'+m.attachments.map((a,i)=>'<section class="card jz-fixed-slot jz-mail-attachment" data-mail-item="'+E(a.name)+'">'+N.itemImage1018(a.name)+'<div class="jz-slot-copy"><b>'+E(a.name)+'</b><p>'+ (a.qty?'×'+a.qty:'已領取')+'</p></div><div class="jz-slot-actions"><button '+(!a.qty?'disabled':'')+' onclick="JZ073.inventory1019.claim(\''+E(id)+'\','+i+')">領取</button>'+(a.name===expandName&&a.qty?'<button onclick="JZ073.inventory1019.chooseExpansion()">直接擴充背包</button>':'')+'</div></section>').join('')+'</div><div class="actions"><button '+(!B.hasContents(m)?'disabled':'')+' onclick="JZ073.inventory1019.claim(\''+E(id)+'\')">全部領取</button><button '+(B.hasContents(m)?'disabled':'')+' onclick="JZ073.inventory1019.remove(\''+E(id)+'\')">刪除信件</button><button onclick="JZ073.inventory1019.open()">返回郵箱</button></div>');return true;};
+B.badge=()=>{const help=document.getElementById('helpBtn');if(!help)return;let button=document.getElementById('mailBtn1019');if(!button){button=document.createElement('button');button.id='mailBtn1019';button.onclick=()=>B.open();help.before(button);}const s=S?.inventoryMail1019,unread=s?[...s.mail,...s.reserve].filter(m=>m.unread&&B.hasContents(m)).length:0;button.textContent='📮 郵箱'+(unread?'（'+unread+'）':'');if(N.mailRefusal1019){let notice=document.getElementById('jz-mail-refusal1019');if(!notice){notice=document.createElement('aside');notice.id='jz-mail-refusal1019';notice.setAttribute('role','alert');notice.innerHTML='<span></span><button type="button">知道了</button>';notice.querySelector('button').onclick=()=>{N.mailRefusal1019='';notice.remove();};document.body.append(notice);}notice.querySelector('span').textContent=N.mailRefusal1019;}};
+for(const [ob,key] of [[R,'ensure'],[R,'save'],[window,'r4ScheduleAutoSave'],[window,'r4WriteSave'],[window,'render'],[window,'renderPage']]){const old=ob[key];ob[key]=function(){if(key==='ensure'){const out=old.apply(this,arguments);B.sync();return out;}B.sync();const out=old.apply(this,arguments);B.sync();return out;};}
+const give=R.give;R.give=function(){const out=give.apply(this,arguments);B.sync();return out;};
+const advance=r4AdvanceMinutes;r4AdvanceMinutes=function(){const out=advance.apply(this,arguments);B.sync();return out;};
+// Keep the existing renderers and interactions; add vacant slots and one
+// expansion control after the usable slots, never charge a slot for the control.
+const bag=renderBag;renderBag=function(){B.sync();const d=JZ072.fragment(bag.apply(this,arguments)),tab=S.bagTab==='特殊'?'消耗特殊':S.bagTab||'物品',grid=d.querySelector('.jzbug-bag-grid');if(!grid)return d.innerHTML;const cap=B.state().capacity[tab],used=Object.hasOwn(B.defaults,tab)?B.used(tab):null;grid.classList.add('jz-fixed-grid','jz-fixed-bag-grid');for(const el of [...grid.children])if(!el.classList.contains('card'))el.remove();const count=document.createElement('p');count.className='jz-bag-capacity';count.textContent=used==null?'本分頁不限格數':tab+'：'+used+'／'+cap+'格（同名物品堆疊占1格）';grid.before(count);if(N.mailRefusal1019){const warning=document.createElement('p');warning.className='red jz-mail-refused';warning.textContent=N.mailRefusal1019;grid.before(warning);}
+ for(const card of grid.querySelectorAll(':scope>.card'))if(!card.dataset.itemProduct&&!card.querySelector('b,button')&&/目前沒有/.test(card.textContent))card.remove();
+ const free=cap==null?Math.max(0,4-grid.children.length):Math.max(0,cap-used);for(let i=0;i<free;i++){const empty=document.createElement('div');empty.className='jz-fixed-slot jz-slot-empty';empty.setAttribute('aria-label','空格');empty.innerHTML='<span aria-hidden="true">◇</span><span>空格</span>';grid.append(empty);}if(cap!=null){const add=document.createElement('button');add.className='jz-fixed-slot jz-slot-expand';add.type='button';add.setAttribute('onclick','JZ073.inventory1019.chooseExpansion(\''+tab+'\')');add.innerHTML='<span aria-hidden="true">＋</span><b>開啟新格子</b><span>背包擴充格×1<br>本分頁增加3格</span>';grid.append(add);}for(const card of grid.querySelectorAll(':scope>.card')){if(['［特殊］背包擴充格','［特殊］改名卡','抽獎卷'].includes(card.dataset.itemProduct)&&!card.querySelector('button')){let actions=card.querySelector('.jz-slot-actions');if(!actions){actions=document.createElement('div');actions.className='jz-slot-actions';card.append(actions);}actions.insertAdjacentHTML('beforeend','<button onclick="JZW.useItem(\''+E(card.dataset.itemProduct)+'\')">使用</button>');}N.fixedCard1019(card);}return d.innerHTML;};
+const descriptions={背包擴充格:'使用後可選擇物品、材料、裝備、永久特殊或消耗特殊其中一頁，增加3格容量。',改名卡:'使用後可更改玩家角色名稱，消耗1張。',抽獎卷:'抽獎用票券。請保留，抽獎功能尚未開放。'};
+for(const ob of [R,W]){const description=ob.itemDescription;if(typeof description==='function')ob.itemDescription=function(n){return descriptions[JZ071.short(n)]||description.apply(this,arguments);};const use=ob.useItem;if(typeof use==='function')ob.useItem=function(n){const short=JZ071.short(n);if(short==='背包擴充格')return B.chooseExpansion();if(short==='改名卡'){if(battle||!R.count(n))return false;showModal('更改角色名稱','<p>消耗改名卡×1，更改玩家名稱。</p><input id="jz-player-rename" maxlength="12" value="'+E(S.name)+'"><button onclick="JZ073.inventory1019.rename()">確認改名</button>');return true;}if(short==='抽獎卷')return N.notice('抽獎卷','請先保留此票券，抽獎功能尚未開放。');return use.apply(this,arguments);};}
+B.rename=()=>{const name=String(document.getElementById('jz-player-rename')?.value||'').trim();if(battle||!name||name===S.name||!R.take('［特殊］改名卡',1))return false;const old=S.name;S.name=name;log('角色名稱由'+old+'更改為'+name+'。');R.save();closeModal();render();return true;};
+const all=N.allItemNames1018;N.allItemNames1018=()=>[...new Set([...all(),expandName,'［特殊］改名卡','抽獎卷'])];
+const sources=N.itemSources1018;N.itemSources1018=function(n){if(['改名卡','抽獎卷'].includes(JZ071.short(n)))return [{kind:'郵件',name:'先驅者感謝信',text:'已有角色可透過先驅者感謝信領取一次。'}];if(JZ071.short(n)==='背包擴充格')return [];return sources.apply(this,arguments);};
+const decorate=N.decorate;N.decorate=function(){const out=decorate.apply(this,arguments);B.badge();return out;};
+const style=document.createElement('style');style.id='jz-inventory-mail1019';style.textContent=`.jz-fixed-grid>.jz-slot-empty{align-items:center!important;justify-content:center;gap:10px!important;color:#466171;background:linear-gradient(150deg,#0c1a24,#08131b);border-style:dashed}.jz-slot-empty>span:first-child{font-size:40px;color:#304d5d}.jz-fixed-grid>.jz-slot-expand{align-items:center!important;justify-content:center;gap:12px!important;border:1px dashed #aa8a38!important;color:#e6ce8d;background:#182526!important;cursor:pointer}.jz-slot-expand>span:first-child{font-size:44px}.jz-slot-expand>span:last-child{font-size:13px;line-height:1.5}.jz-bag-capacity{color:#b7ccda}.jz-mail-list,.jz-mail-expand-options{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}.jz-mail-attachments{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}.jz-mail-attachment{display:flex;flex-direction:column;min-width:0;height:230px;padding:12px}.jz-mail-attachment>.jz-item-image{width:90px!important;height:90px!important;object-fit:contain;align-self:center}.jz-mail-attachment .jz-slot-copy{overflow:auto;flex:1;min-height:0}.jz-mail-text{white-space:pre-wrap;line-height:1.9;padding:18px;border:1px solid #36536a;border-radius:12px;background:#0e1c28}.jz-mail-card{margin:0}.jz-mail-refused{border:1px solid #8c453d;padding:12px;border-radius:8px}`;document.head.append(style);
+R511_CODEX.背包與郵箱=['背包各類物品分開計算容量，郵箱可暫存背包放不下的物品。',[], '<p>物品與材料各有50格，裝備、永久特殊、消耗特殊各有30格。同名物品可堆疊，只占1格；不同品質名稱的裝備各占一格。紀念品、禮物與任務物品不限格數。</p><p>各有限容量分頁的最後有「開啟新格子」。消耗一個背包擴充格，可選擇一頁增加3格。郵箱中的擴充格也可直接使用。</p><p>郵箱位於上方「幫助」左側，最多10封。普通信件保留7個遊戲日；有內容物不能手動刪除，但逾期仍會連同未領物品刪除。</p><p>信件內尚有任務物品、特殊道具或裝備時，會保留至領取。郵箱滿10封時，新的普通物品會拒收並提示；重要道具另放在「重要道具保管」，請整理背包後領取。</p>', ['地圖','任務','設定與存檔']];
+style.textContent+='#jz-mail-refusal1019{position:fixed;right:16px;top:78px;z-index:12010;max-width:min(420px,calc(100vw - 32px));padding:16px;background:#391d21;border:1px solid #c66d58;border-radius:12px;box-shadow:0 8px 30px #0009;line-height:1.7}#jz-mail-refusal1019 button{display:block;margin:10px 0 0 auto}';
+})();
+</script>
+<script id="jz073-inventory-art1019">(function(){'use strict';const N=JZ073;
+N.inventoryArt1019=Object.fromEntries(['背包擴充格','抽獎卷','改名卡','靈幣'].map(n=>[n,'inventory-assets/'+n+'.webp']));
+const icon=N.itemIcon;N.itemIcon=function(n){return N.inventoryArt1019[JZ071.short(n)]||icon.apply(this,arguments);};
+})();
+</script>
+<script id="jz073-official073">(function(){'use strict';if(!window.JZ073_OFFICIAL)return;const N=JZ073,R=JZR,E=N.esc,ROOT='https://a03697ss1.github.io/jiuzhou-rpg/';
+N.phase=JZ072.phase='正式版';N.masterPromoted=JZ072.masterPromoted=JZR.masterPromoted=JZW.masterPromoted=JZV2.promoted=true;N.acceptedAt='2026-10-19';
+N.version=JZ072.version=JZV2.version=R.version=JZW.version='0.7.3';
+for(const [ob,key] of [[R,'ensure'],[JZ071,'ensure'],[N,'ensure']]){const old=ob[key];ob[key]=function(){const out=old.apply(this,arguments);if(S)S.version='V0.7.3';return out;};}
+const initial=initialState;initialState=function(){const s=initial.apply(this,arguments);s.version='V0.7.3';return s;};
+N.releaseHistory073={version:'0.7.3',date:'2026-10-19',新增:[
+ '雷鳴沼地下深窟、黑潮禁岸、新妖物與災獸長右雙階段BOSS戰；長右專屬血條及水／水雷立繪。',
+ '東州A／B主線分支、兩條後續支線與新增委託；兩條分支各自保留經歷、道具與隱藏紀錄。',
+ '燐火狼、硬黑蠍、靈珠蝶加入寵物養成；神秘妖物蛋25種選擇、6遊戲小時孵化。',
+ '完整圖片圖鑑、地區／類型／階級篩選、搜尋、取得來源與技能說明；裝備與物品圖片。',
+ '問道檯跨境界對手生成，依境界、品質、流派、靈根與合法裝備功法生成。',
+ '背包容量、固定格與每次增加3格的背包擴充格；功法、煉金爐、鑄造檯固定格。',
+ '郵箱、7遊戲日信件期限、重要道具保管與既有角色先驅者感謝信；抽獎卷、改名卡與靈幣圖片。'],
+ 改動:[
+ '戰鬥修為與靈幣採新表；依各出戰單位自身境界計算。高出敵方11層以上不獲修為。',
+ '歷練表面100、額外保留20；投入整10點提高突破／破境成功率。任務、委託、戰鬥、探索、採集、品茗、好感與升星分別累積。',
+ '每種紀念品首次取得歷練＋1，月玉珮首次＋5；目前持有與已領取紀錄可確認的紀念品補發一次。',
+ '問道裝備、五種戰中丹藥、寵物材料與道具說明更新；特殊物品及自選箱禁止出售。',
+ '玩家與永久夥伴裝備介面顯示圖片及數值；突破顯示提升前後與差額；可結婚夥伴使用各自背景。',
+ '0.7.0、0.7.1、0.7.2另存歷史入口，各自使用存檔副本，保留原版本與規則。'],
+ BUG修復:[
+ '修正主線三隻青臭蟲、後續主線與一般戰鬥敵方倒地後無法結束的問題。',
+ '修正BOSS勝利時玩家倒地後仍為0氣血；勝利退出後至少1氣血，可至醫館治療。',
+ '修正長右第二階段立繪、血條與屬性切換；護盾值會隨承傷更新。',
+ '修正圖鑑中文搜尋、切換條目捲動回頂、幫助清單回彈與日誌遮擋。',
+ '修正月玉珮合成漏查紀念品欄；品茗歷練上限誤用角色總歷練；多敵歷練漏算。',
+ '修正寵物丹藥配方、特殊功法分類、NPC位置、任務入口、裝備來源與物品敘述。',
+ '修正未開箱道具進入戰鬥背包、浮點百分比文字及突破數值預覽；築基圓滿停止突破至尚未開放的金丹。']};
+N.versions073=()=>showModal('歷史版本','<p>目前正式版：0.7.3。舊版各自保留，使用各自存檔副本，避免舊版本覆寫新版進度。</p>'+['0.7.0','0.7.1','0.7.2'].map(v=>'<p><a href="'+ROOT+'versions/'+v+'/" target="_blank" rel="noopener">開啟 '+v+' 保留版</a></p>').join(''));
+JZ072.versionHistory=()=>showModal('版本更新・0.7.3','<h2>V0.7.3 · 2026-10-19</h2>'+['新增','改動','BUG修復'].map(k=>'<section class="card" data-release-kind="'+k+'"><h3>'+k+'</h3><ul>'+N.releaseHistory073[k].map(t=>'<li>'+E(t)+'</li>').join('')+'</ul></section>').join('')+'<p>抽獎功能與金丹修行尚未開放；抽獎卷請先保留。音樂暫不實裝。</p><button onclick="JZ073.versions073()">0.7.0／0.7.1／0.7.2 保留版</button>');
+N.paintOfficial073=()=>{document.title='九州修仙錄 0.7.3';for(const e of document.querySelectorAll('.brand'))e.textContent='九州修仙錄 V0.7.3';const stamp=document.getElementById('jz073-start-version');if(stamp)stamp.textContent='V0.7.3 正式版';for(const e of document.querySelectorAll('#start .muted.small'))if(/0\.7\.[23]/.test(e.textContent))e.textContent='正式版 0.7.3';for(const banner of document.querySelectorAll('.jz073-banner')){if(banner.firstChild?.nodeType===3)banner.firstChild.nodeValue='V0.7.3 正式版 ';banner.querySelectorAll('.jz18-build').forEach(e=>e.remove());if(!banner.querySelector('[data-release-history]'))banner.insertAdjacentHTML('beforeend','<button data-release-history onclick="JZ072.versionHistory()">更新內容</button><button data-release-history onclick="JZ073.versions073()">歷史版本</button>');}};
+const decorate=N.decorate;N.decorate=function(){const out=decorate.apply(this,arguments);N.paintOfficial073();return out;};
+// Continue the existing 0.7.3 namespace. Only copy the old automatic save if
+// that namespace is empty; never overwrite a test save or an old manual slot.
+const auto=r4SaveKey('auto');if(!localStorage.getItem(auto)){const raw=window.JZ073_ORIGINAL_STORAGE?.read(auto);if(raw){try{N.saveRecovery.parse(raw);N.saveRecovery.keep(raw,'升級0.7.3前的原版自動存檔','official-upgrade');localStorage.setItem(auto,raw);}catch{}}}
+if(localStorage.getItem(auto)){const button=document.getElementById('continueBtn');if(button)button.style.display='inline-block';}
+const recovery=N.saveRecovery.view;N.saveRecovery.view=function(){return recovery.apply(this,arguments).replace('測試版與原版分開存檔。','0.7.3會延續先前測試進度；原版紀錄仍保留。').replaceAll('測試版自動存檔','0.7.3自動存檔');};
+N.paintOfficial073();
 })();
 </script>

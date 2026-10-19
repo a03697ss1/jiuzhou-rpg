@@ -1,0 +1,38 @@
+[
+  {
+    "name": "背包擴充格",
+    "width": 1254,
+    "height": 1254,
+    "pngBytes": 2234186,
+    "webpBytes": 1522862,
+    "visibleRGBMismatch": 0,
+    "alphaMismatch": 0
+  },
+  {
+    "name": "抽獎卷",
+    "width": 1254,
+    "height": 1254,
+    "pngBytes": 1559296,
+    "webpBytes": 1049940,
+    "visibleRGBMismatch": 0,
+    "alphaMismatch": 0
+  },
+  {
+    "name": "改名卡",
+    "width": 1254,
+    "height": 1254,
+    "pngBytes": 1475433,
+    "webpBytes": 932338,
+    "visibleRGBMismatch": 0,
+    "alphaMismatch": 0
+  },
+  {
+    "name": "靈幣",
+    "width": 1254,
+    "height": 1254,
+    "pngBytes": 1401332,
+    "webpBytes": 960670,
+    "visibleRGBMismatch": 0,
+    "alphaMismatch": 0
+  }
+]
