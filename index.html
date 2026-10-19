@@ -25055,7 +25055,7 @@ const style=document.createElement('style');style.textContent=`
 const finish=N.finishStoryBattle;N.finishStoryBattle=function(b){const out=finish.apply(this,arguments);if(b?.jz073Story&&battle!==b&&document.querySelector('#modalBody .bmv1-canvas'))closeModal();if(b?.jz073Story&&battle!==b){document.getElementById('modalBack')?.classList.remove('bmv1-active','battle-locked');}return out;};
 })();
 </script>
-<script>window.JZ073_BUILD_ID="20261019-official073-7";</script>
+<script>window.JZ073_BUILD_ID="20261019-official073-8";</script>
 <script id="jz073-equipment1019">(function(){'use strict';const N=JZ073;
 const gearName=value=>{let name=String(value||'').trim().replace(/^.+?[：:]\s*/,'').replace(/\s*[×x]\s*\d+\s*$/,'').trim();return name&&name!=='無'&&(R546_GEAR_FULL[name]||R546_GEAR_FULL[JZ072.baseGear(name)])?name:null;};
 N.decorateEquipment19=root=>{if(!root)return;for(const entry of root.querySelectorAll('.card,.equipment-slot,.r513-equip')){if(entry.closest('.jz-library,.jz-help-shell')||entry.querySelector('.card,.equipment-slot,.r513-equip'))continue;const heading=entry.querySelector('b,strong')?.textContent;let name=gearName(entry.dataset.item||heading);if(!name&&entry.matches('.r513-equip')){const label=entry.querySelector('span')?.textContent||'';name=gearName(entry.textContent.trim().slice(label.trim().length));}if(!name)continue;entry.dataset.itemProduct=name;if(entry.querySelector('.jz-item-image'))continue;const copy=document.createElement('div');copy.className='jz19-equipment-copy';while(entry.firstChild)copy.append(entry.firstChild);entry.append(copy);entry.insertAdjacentHTML('afterbegin',N.itemImage1018(name,'jz19-equipment-icon'));entry.classList.add('jz19-equipment-card');}};
@@ -25562,4 +25562,14 @@ if(N.releaseHistory073){N.releaseHistory073.BUG修復.push('戰外使用藥水�
 })();
 </script>
 <script id="jz073-player-break-pill1019">(function(){'use strict';const N=JZ073,art={'［初階］破境丹':'unique-item-assets/［初階］破境丹.webp','［中階］破境丹':'unique-item-assets/［中階］破境丹.webp'},icon=N.itemIcon;N.itemIcon=function(n){return art[n]||icon.apply(this,arguments);};const names=N.allItemNames1018;N.allItemNames1018=function(){return [...new Set([...names.apply(this,arguments),...Object.keys(art)])];};if(N.releaseHistory073)N.releaseHistory073.BUG修復.push('補上初階與中階玩家用破境丹的獨立圖片，背包及圖鑑共用。');})();
+</script>
+<script id="jz073-npc-side-location1019">(function(){'use strict';const N=JZ073,U=JZ071;
+// User-confirmed correction: Lin returns to Qingyang Town after the first seal.
+const side=N.def('SQ-DZ-015');side.place='青陽鎮';R56_QUESTS[side.id].place='青陽鎮';for(const row of JZ073_SIDE1018['015'])if(row.speaker==='旁白'&&row.text==='玩家在朝御城遇見林夏于。')row.text='玩家在青陽鎮遇見林夏于。';
+const tuples=new Map();for(const data of Object.values(EAST_CONTENT))for(const row of data.npcs||[])if(!tuples.has(row[0]))tuples.set(row[0],[...row]);
+const sync=N.syncWorld;N.syncWorld=function(){if(S&&N.done('038')){const places=N.state().story.npcPlaces??={};places.林夏于='青陽鎮';}const out=sync.apply(this,arguments);if(!S)return out;const places={...N.state().story.npcPlaces};for(const p of S.partners||[])if(p.story073)places[p.name]='同行中';for(const [name,place] of Object.entries(places)){const expected=EAST_CONTENT[place],hits=Object.entries(EAST_CONTENT).flatMap(([area,data])=>(data.npcs||[]).filter(row=>row[0]===name).map(()=>area));if(hits.length===(expected?1:0)&&(!expected||hits[0]===place))continue;const row=tuples.get(name)||[name,JZNEXT.npcs[name]?.identity||JZNEXT.npcs[name]?.role||'',''];for(const data of Object.values(EAST_CONTENT))if(data.npcs)data.npcs=data.npcs.filter(row=>row[0]!==name);if(expected)(expected.npcs??=[]).push([...row]);}return out;};
+const people=renderPeople;renderPeople=function(){U.updateNpcLocations();N.syncWorld();return people.apply(this,arguments);};
+const rows=N.catalogRows1018;N.catalogRows1018=function(tab){if(tab==='NPC'){U.updateNpcLocations();N.syncWorld();}return rows.apply(this,arguments);};
+if(N.releaseHistory073)N.releaseHistory073.BUG修復.push('第一封印後林夏于在青陽鎮，圖鑑、人物列表與任務引導同步；危險區改在青陽鎮接取，保留兩日等待、完整對話與一次性獎勵。修復其他主線NPC人物列表仍使用舊固定位置的問題。');
+})();
 </script>
