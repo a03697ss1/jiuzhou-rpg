@@ -1,0 +1,1242 @@
+[
+  {
+    "name": "a-accept.cjs",
+    "bytes": 33236,
+    "retained": "test-source/v073/a-accept.cjs"
+  },
+  {
+    "name": "a-data.js",
+    "bytes": 65359,
+    "retained": "test-source/v073/a-data.js"
+  },
+  {
+    "name": "a-dialogues.json",
+    "bytes": 88857,
+    "retained": "test-source/v073/a-dialogues.json"
+  },
+  {
+    "name": "a-story.js",
+    "bytes": 16667,
+    "retained": "test-source/v073/a-story.js"
+  },
+  {
+    "name": "a-tests.js",
+    "bytes": 27969,
+    "retained": "test-source/v073/a-tests.js"
+  },
+  {
+    "name": "a1018.cjs",
+    "bytes": 33242,
+    "retained": "test-source/v073/a1018.cjs"
+  },
+  {
+    "name": "accept.cjs",
+    "bytes": 32595,
+    "retained": "test-source/v073/accept.cjs"
+  },
+  {
+    "name": "add-heart-test1018.py",
+    "bytes": 534,
+    "retained": "test-source/v073/add-heart-test1018.py"
+  },
+  {
+    "name": "art1018-gallery.py",
+    "bytes": 2966,
+    "retained": "test-source/v073/art1018-gallery.py"
+  },
+  {
+    "name": "art1018-qa.cjs",
+    "bytes": 1767,
+    "retained": "test-source/v073/art1018-qa.cjs"
+  },
+  {
+    "name": "b-accept.cjs",
+    "bytes": 22327,
+    "retained": "test-source/v073/b-accept.cjs"
+  },
+  {
+    "name": "b-data.js",
+    "bytes": 74193,
+    "retained": "test-source/v073/b-data.js"
+  },
+  {
+    "name": "b-dialogues.json",
+    "bytes": 100923,
+    "retained": "test-source/v073/b-dialogues.json"
+  },
+  {
+    "name": "b-story.js",
+    "bytes": 18265,
+    "retained": "test-source/v073/b-story.js"
+  },
+  {
+    "name": "b-tests.js",
+    "bytes": 17537,
+    "retained": "test-source/v073/b-tests.js"
+  },
+  {
+    "name": "b1018.cjs",
+    "bytes": 22333,
+    "retained": "test-source/v073/b1018.cjs"
+  },
+  {
+    "name": "baseline-material-inventory1018.json",
+    "bytes": 122942,
+    "retained": "test-source/v073/baseline-material-inventory1018.json"
+  },
+  {
+    "name": "baseline.json",
+    "bytes": 943,
+    "retained": "test-source/v073/baseline.json"
+  },
+  {
+    "name": "battle1019-boss-test.cjs",
+    "bytes": 4240,
+    "retained": "test-source/v073/battle1019-boss-test.cjs"
+  },
+  {
+    "name": "battle1019-story-test.cjs",
+    "bytes": 3929,
+    "retained": "test-source/v073/battle1019-story-test.cjs"
+  },
+  {
+    "name": "battle1019-stress.cjs",
+    "bytes": 2805,
+    "retained": "test-source/v073/battle1019-stress.cjs"
+  },
+  {
+    "name": "battle1019.js",
+    "bytes": 632,
+    "retained": "test-source/v073/battle1019.js"
+  },
+  {
+    "name": "bootstrap.py",
+    "bytes": 2474,
+    "retained": "test-source/v073/bootstrap.py"
+  },
+  {
+    "name": "boss-bar1019-combat.cjs",
+    "bytes": 4621,
+    "retained": "test-source/v073/boss-bar1019-combat.cjs"
+  },
+  {
+    "name": "boss-bar1019-release.py",
+    "bytes": 9805,
+    "retained": "test-source/v073/boss-bar1019-release.py"
+  },
+  {
+    "name": "boss-bar1019-test.cjs",
+    "bytes": 6474,
+    "retained": "test-source/v073/boss-bar1019-test.cjs"
+  },
+  {
+    "name": "boss-bar1019-verify.py",
+    "bytes": 1786,
+    "retained": "test-source/v073/boss-bar1019-verify.py"
+  },
+  {
+    "name": "boss-bar1019.js",
+    "bytes": 4157,
+    "retained": "test-source/v073/boss-bar1019.js"
+  },
+  {
+    "name": "boss-sim.cjs",
+    "bytes": 4131,
+    "retained": "test-source/v073/boss-sim.cjs"
+  },
+  {
+    "name": "boss1019.js",
+    "bytes": 3505,
+    "retained": "test-source/v073/boss1019.js"
+  },
+  {
+    "name": "build.py",
+    "bytes": 7217,
+    "retained": "test-source/v073/build.py"
+  },
+  {
+    "name": "check1018.cjs",
+    "bytes": 9980,
+    "retained": "test-source/v073/check1018.cjs"
+  },
+  {
+    "name": "clarifications.js",
+    "bytes": 2462,
+    "retained": "test-source/v073/clarifications.js"
+  },
+  {
+    "name": "codex.js",
+    "bytes": 11683,
+    "retained": "test-source/v073/codex.js"
+  },
+  {
+    "name": "combat.js",
+    "bytes": 10119,
+    "retained": "test-source/v073/combat.js"
+  },
+  {
+    "name": "commissions.js",
+    "bytes": 19093,
+    "retained": "test-source/v073/commissions.js"
+  },
+  {
+    "name": "completion.js",
+    "bytes": 8604,
+    "retained": "test-source/v073/completion.js"
+  },
+  {
+    "name": "core.js",
+    "bytes": 3707,
+    "retained": "test-source/v073/core.js"
+  },
+  {
+    "name": "core1018.cjs",
+    "bytes": 32601,
+    "retained": "test-source/v073/core1018.cjs"
+  },
+  {
+    "name": "debug-pet-test1018.py",
+    "bytes": 313,
+    "retained": "test-source/v073/debug-pet-test1018.py"
+  },
+  {
+    "name": "deployment1018-record.py",
+    "bytes": 1298,
+    "retained": "test-source/v073/deployment1018-record.py"
+  },
+  {
+    "name": "diagnose.cjs",
+    "bytes": 5058,
+    "retained": "test-source/v073/diagnose.cjs"
+  },
+  {
+    "name": "docs1018-qa.cjs",
+    "bytes": 1776,
+    "retained": "test-source/v073/docs1018-qa.cjs"
+  },
+  {
+    "name": "economy.js",
+    "bytes": 3536,
+    "retained": "test-source/v073/economy.js"
+  },
+  {
+    "name": "equipment1019-release.py",
+    "bytes": 7101,
+    "retained": "test-source/v073/equipment1019-release.py"
+  },
+  {
+    "name": "equipment1019-test.cjs",
+    "bytes": 6766,
+    "retained": "test-source/v073/equipment1019-test.cjs"
+  },
+  {
+    "name": "equipment1019.js",
+    "bytes": 3014,
+    "retained": "test-source/v073/equipment1019.js"
+  },
+  {
+    "name": "experience-battle-test.cjs",
+    "bytes": 5928,
+    "retained": "test-source/v073/experience-battle-test.cjs"
+  },
+  {
+    "name": "experience-test.cjs",
+    "bytes": 12938,
+    "retained": "test-source/v073/experience-test.cjs"
+  },
+  {
+    "name": "experience1019.js",
+    "bytes": 14045,
+    "retained": "test-source/v073/experience1019.js"
+  },
+  {
+    "name": "extended-tests.js",
+    "bytes": 25258,
+    "retained": "test-source/v073/extended-tests.js"
+  },
+  {
+    "name": "extended.cjs",
+    "bytes": 30064,
+    "retained": "test-source/v073/extended.cjs"
+  },
+  {
+    "name": "extended1018.cjs",
+    "bytes": 30036,
+    "retained": "test-source/v073/extended1018.cjs"
+  },
+  {
+    "name": "final-publish-pet1018.py",
+    "bytes": 779,
+    "retained": "test-source/v073/final-publish-pet1018.py"
+  },
+  {
+    "name": "final-publish-recovery1018.py",
+    "bytes": 793,
+    "retained": "test-source/v073/final-publish-recovery1018.py"
+  },
+  {
+    "name": "final-publish-revision1018.py",
+    "bytes": 793,
+    "retained": "test-source/v073/final-publish-revision1018.py"
+  },
+  {
+    "name": "finalize1018.py",
+    "bytes": 1525,
+    "retained": "test-source/v073/finalize1018.py"
+  },
+  {
+    "name": "finish-recovery1018.py",
+    "bytes": 590,
+    "retained": "test-source/v073/finish-recovery1018.py"
+  },
+  {
+    "name": "fix-live-pet-accept1018.py",
+    "bytes": 374,
+    "retained": "test-source/v073/fix-live-pet-accept1018.py"
+  },
+  {
+    "name": "fix-recovery-qa1018.py",
+    "bytes": 646,
+    "retained": "test-source/v073/fix-recovery-qa1018.py"
+  },
+  {
+    "name": "github-preview.py",
+    "bytes": 1521,
+    "retained": "test-source/v073/github-preview.py"
+  },
+  {
+    "name": "help-scroll1019.js",
+    "bytes": 1383,
+    "retained": "test-source/v073/help-scroll1019.js"
+  },
+  {
+    "name": "hidden-steal1019-live.cjs",
+    "bytes": 2823,
+    "retained": "test-source/v073/hidden-steal1019-live.cjs"
+  },
+  {
+    "name": "hidden-steal1019-release.py",
+    "bytes": 7709,
+    "retained": "test-source/v073/hidden-steal1019-release.py"
+  },
+  {
+    "name": "hidden-steal1019-test.cjs",
+    "bytes": 8880,
+    "retained": "test-source/v073/hidden-steal1019-test.cjs"
+  },
+  {
+    "name": "hidden-steal1019.js",
+    "bytes": 2849,
+    "retained": "test-source/v073/hidden-steal1019.js"
+  },
+  {
+    "name": "humans.js",
+    "bytes": 2631,
+    "retained": "test-source/v073/humans.js"
+  },
+  {
+    "name": "inspect-next.cjs",
+    "bytes": 884,
+    "retained": "test-source/v073/inspect-next.cjs"
+  },
+  {
+    "name": "inspect.cjs",
+    "bytes": 1495,
+    "retained": "test-source/v073/inspect.cjs"
+  },
+  {
+    "name": "inspection.json",
+    "bytes": 33582,
+    "retained": "test-source/v073/inspection.json"
+  },
+  {
+    "name": "inventory-art1019.js",
+    "bytes": 313,
+    "retained": "test-source/v073/inventory-art1019.js"
+  },
+  {
+    "name": "inventory-layout1019.js",
+    "bytes": 4518,
+    "retained": "test-source/v073/inventory-layout1019.js"
+  },
+  {
+    "name": "inventory-mail-test.cjs",
+    "bytes": 15401,
+    "retained": "test-source/v073/inventory-mail-test.cjs"
+  },
+  {
+    "name": "inventory-mail1019.js",
+    "bytes": 18059,
+    "retained": "test-source/v073/inventory-mail1019.js"
+  },
+  {
+    "name": "inventory1018.cjs",
+    "bytes": 1814,
+    "retained": "test-source/v073/inventory1018.cjs"
+  },
+  {
+    "name": "inventory1018.json",
+    "bytes": 226436,
+    "retained": "test-source/v073/inventory1018.json"
+  },
+  {
+    "name": "items1019-art-manifest.json",
+    "bytes": 9546,
+    "retained": "test-source/v073/items1019-art-manifest.json"
+  },
+  {
+    "name": "items1019-art.cjs",
+    "bytes": 1699,
+    "retained": "test-source/v073/items1019-art.cjs"
+  },
+  {
+    "name": "items1019-release.py",
+    "bytes": 13172,
+    "retained": "test-source/v073/items1019-release.py"
+  },
+  {
+    "name": "items1019-save.cjs",
+    "bytes": 1539,
+    "retained": "test-source/v073/items1019-save.cjs"
+  },
+  {
+    "name": "items1019-test.cjs",
+    "bytes": 10489,
+    "retained": "test-source/v073/items1019-test.cjs"
+  },
+  {
+    "name": "items1019-verify.py",
+    "bytes": 2184,
+    "retained": "test-source/v073/items1019-verify.py"
+  },
+  {
+    "name": "items1019.js",
+    "bytes": 5471,
+    "retained": "test-source/v073/items1019.js"
+  },
+  {
+    "name": "live-pet-entry1018.cjs",
+    "bytes": 2359,
+    "retained": "test-source/v073/live-pet-entry1018.cjs"
+  },
+  {
+    "name": "live-pet1018.py",
+    "bytes": 1851,
+    "retained": "test-source/v073/live-pet1018.py"
+  },
+  {
+    "name": "live-recovery1018-qa.cjs",
+    "bytes": 7615,
+    "retained": "test-source/v073/live-recovery1018-qa.cjs"
+  },
+  {
+    "name": "live-recovery1018.py",
+    "bytes": 1864,
+    "retained": "test-source/v073/live-recovery1018.py"
+  },
+  {
+    "name": "live-revision1018.py",
+    "bytes": 1858,
+    "retained": "test-source/v073/live-revision1018.py"
+  },
+  {
+    "name": "live1018.py",
+    "bytes": 1827,
+    "retained": "test-source/v073/live1018.py"
+  },
+  {
+    "name": "mail-art.cjs",
+    "bytes": 1124,
+    "retained": "test-source/v073/mail-art.cjs"
+  },
+  {
+    "name": "mail-normal-flow-test.cjs",
+    "bytes": 4376,
+    "retained": "test-source/v073/mail-normal-flow-test.cjs"
+  },
+  {
+    "name": "material-flow1018.cjs",
+    "bytes": 5360,
+    "retained": "test-source/v073/material-flow1018.cjs"
+  },
+  {
+    "name": "material1018.js",
+    "bytes": 12617,
+    "retained": "test-source/v073/material1018.js"
+  },
+  {
+    "name": "merge1018-artmanifest.py",
+    "bytes": 565,
+    "retained": "test-source/v073/merge1018-artmanifest.py"
+  },
+  {
+    "name": "meta1018.cjs",
+    "bytes": 1566,
+    "retained": "test-source/v073/meta1018.cjs"
+  },
+  {
+    "name": "monsters.js",
+    "bytes": 5462,
+    "retained": "test-source/v073/monsters.js"
+  },
+  {
+    "name": "need-check.cjs",
+    "bytes": 4239,
+    "retained": "test-source/v073/need-check.cjs"
+  },
+  {
+    "name": "npc-generation.js",
+    "bytes": 13668,
+    "retained": "test-source/v073/npc-generation.js"
+  },
+  {
+    "name": "official073.js",
+    "bytes": 5656,
+    "retained": "test-source/v073/official073.js"
+  },
+  {
+    "name": "offline-pet1018.cjs",
+    "bytes": 2191,
+    "retained": "test-source/v073/offline-pet1018.cjs"
+  },
+  {
+    "name": "offline-recovery1018.cjs",
+    "bytes": 2194,
+    "retained": "test-source/v073/offline-recovery1018.cjs"
+  },
+  {
+    "name": "offline-recovery1018.py",
+    "bytes": 241,
+    "retained": "test-source/v073/offline-recovery1018.py"
+  },
+  {
+    "name": "offline1018.cjs",
+    "bytes": 2192,
+    "retained": "test-source/v073/offline1018.cjs"
+  },
+  {
+    "name": "package-pet1018.py",
+    "bytes": 6476,
+    "retained": "test-source/v073/package-pet1018.py"
+  },
+  {
+    "name": "package-recovery1018.py",
+    "bytes": 5088,
+    "retained": "test-source/v073/package-recovery1018.py"
+  },
+  {
+    "name": "package-revision1018.py",
+    "bytes": 11621,
+    "retained": "test-source/v073/package-revision1018.py"
+  },
+  {
+    "name": "package.py",
+    "bytes": 24202,
+    "retained": "test-source/v073/package.py"
+  },
+  {
+    "name": "package1018.py",
+    "bytes": 12363,
+    "retained": "test-source/v073/package1018.py"
+  },
+  {
+    "name": "partner-background1019.js",
+    "bytes": 1038,
+    "retained": "test-source/v073/partner-background1019.js"
+  },
+  {
+    "name": "pet-complete-a1018.cjs",
+    "bytes": 33239,
+    "retained": "test-source/v073/pet-complete-a1018.cjs"
+  },
+  {
+    "name": "pet-complete-b1018.cjs",
+    "bytes": 22330,
+    "retained": "test-source/v073/pet-complete-b1018.cjs"
+  },
+  {
+    "name": "pet-complete-core1018.cjs",
+    "bytes": 32584,
+    "retained": "test-source/v073/pet-complete-core1018.cjs"
+  },
+  {
+    "name": "pet-complete-extended1018.cjs",
+    "bytes": 30033,
+    "retained": "test-source/v073/pet-complete-extended1018.cjs"
+  },
+  {
+    "name": "pet-complete-meta1018.cjs",
+    "bytes": 1565,
+    "retained": "test-source/v073/pet-complete-meta1018.cjs"
+  },
+  {
+    "name": "pet-complete-regression1018.py",
+    "bytes": 614,
+    "retained": "test-source/v073/pet-complete-regression1018.py"
+  },
+  {
+    "name": "pet-complete1018.cjs",
+    "bytes": 9074,
+    "retained": "test-source/v073/pet-complete1018.cjs"
+  },
+  {
+    "name": "pet-cores1018.js",
+    "bytes": 2087,
+    "retained": "test-source/v073/pet-cores1018.js"
+  },
+  {
+    "name": "pet-formula1018.cjs",
+    "bytes": 6094,
+    "retained": "test-source/v073/pet-formula1018.cjs"
+  },
+  {
+    "name": "pet-heart-events1018.js",
+    "bytes": 2676,
+    "retained": "test-source/v073/pet-heart-events1018.js"
+  },
+  {
+    "name": "pet1018.js",
+    "bytes": 4612,
+    "retained": "test-source/v073/pet1018.js"
+  },
+  {
+    "name": "pets.js",
+    "bytes": 12419,
+    "retained": "test-source/v073/pets.js"
+  },
+  {
+    "name": "prepare-pet-publish1018.py",
+    "bytes": 1321,
+    "retained": "test-source/v073/prepare-pet-publish1018.py"
+  },
+  {
+    "name": "prepare-revision-publisher.py",
+    "bytes": 1176,
+    "retained": "test-source/v073/prepare-revision-publisher.py"
+  },
+  {
+    "name": "prepare-revision-tests.py",
+    "bytes": 2622,
+    "retained": "test-source/v073/prepare-revision-tests.py"
+  },
+  {
+    "name": "prepare1018-tests.py",
+    "bytes": 706,
+    "retained": "test-source/v073/prepare1018-tests.py"
+  },
+  {
+    "name": "probe.cjs",
+    "bytes": 1955,
+    "retained": "test-source/v073/probe.cjs"
+  },
+  {
+    "name": "publish-pet1018-qa.cjs",
+    "bytes": 3100,
+    "retained": "test-source/v073/publish-pet1018-qa.cjs"
+  },
+  {
+    "name": "publish-pet1018-state.json",
+    "bytes": 526,
+    "retained": "test-source/v073/publish-pet1018-state.json"
+  },
+  {
+    "name": "publish-pet1018.py",
+    "bytes": 5908,
+    "retained": "test-source/v073/publish-pet1018.py"
+  },
+  {
+    "name": "publish-preview.py",
+    "bytes": 4262,
+    "retained": "test-source/v073/publish-preview.py"
+  },
+  {
+    "name": "publish-recovery1018-qa.cjs",
+    "bytes": 3104,
+    "retained": "test-source/v073/publish-recovery1018-qa.cjs"
+  },
+  {
+    "name": "publish-recovery1018-state.json",
+    "bytes": 527,
+    "retained": "test-source/v073/publish-recovery1018-state.json"
+  },
+  {
+    "name": "publish-recovery1018.py",
+    "bytes": 5914,
+    "retained": "test-source/v073/publish-recovery1018.py"
+  },
+  {
+    "name": "publish-revision1018-state.json",
+    "bytes": 526,
+    "retained": "test-source/v073/publish-revision1018-state.json"
+  },
+  {
+    "name": "publish-revision1018.py",
+    "bytes": 6213,
+    "retained": "test-source/v073/publish-revision1018.py"
+  },
+  {
+    "name": "publish1018-qa.cjs",
+    "bytes": 3103,
+    "retained": "test-source/v073/publish1018-qa.cjs"
+  },
+  {
+    "name": "publish1018-state.json",
+    "bytes": 535,
+    "retained": "test-source/v073/publish1018-state.json"
+  },
+  {
+    "name": "publish1018.py",
+    "bytes": 5811,
+    "retained": "test-source/v073/publish1018.py"
+  },
+  {
+    "name": "published-check.cjs",
+    "bytes": 2089,
+    "retained": "test-source/v073/published-check.cjs"
+  },
+  {
+    "name": "push-revision-source1018.py",
+    "bytes": 704,
+    "retained": "test-source/v073/push-revision-source1018.py"
+  },
+  {
+    "name": "quests.js",
+    "bytes": 25151,
+    "retained": "test-source/v073/quests.js"
+  },
+  {
+    "name": "recheck-pet-cores1018.py",
+    "bytes": 9990,
+    "retained": "test-source/v073/recheck-pet-cores1018.py"
+  },
+  {
+    "name": "release-official073.py",
+    "bytes": 19379,
+    "retained": "test-source/v073/release-official073.py"
+  },
+  {
+    "name": "release1018.js",
+    "bytes": 3601,
+    "retained": "test-source/v073/release1018.js"
+  },
+  {
+    "name": "repair-story.py",
+    "bytes": 1271,
+    "retained": "test-source/v073/repair-story.py"
+  },
+  {
+    "name": "report-check.cjs",
+    "bytes": 2469,
+    "retained": "test-source/v073/report-check.cjs"
+  },
+  {
+    "name": "review18-adjust-tests.py",
+    "bytes": 422,
+    "retained": "test-source/v073/review18-adjust-tests.py"
+  },
+  {
+    "name": "review18-art-qa.cjs",
+    "bytes": 5651,
+    "retained": "test-source/v073/review18-art-qa.cjs"
+  },
+  {
+    "name": "review18-art-sync.py",
+    "bytes": 881,
+    "retained": "test-source/v073/review18-art-sync.py"
+  },
+  {
+    "name": "review18-art.js",
+    "bytes": 1894,
+    "retained": "test-source/v073/review18-art.js"
+  },
+  {
+    "name": "review18-artplan.py",
+    "bytes": 4933,
+    "retained": "test-source/v073/review18-artplan.py"
+  },
+  {
+    "name": "review18-delivery-qa.cjs",
+    "bytes": 4492,
+    "retained": "test-source/v073/review18-delivery-qa.cjs"
+  },
+  {
+    "name": "review18-dynamic-audit.cjs",
+    "bytes": 1095,
+    "retained": "test-source/v073/review18-dynamic-audit.cjs"
+  },
+  {
+    "name": "review18-dynamic-completion.py",
+    "bytes": 3158,
+    "retained": "test-source/v073/review18-dynamic-completion.py"
+  },
+  {
+    "name": "review18-extra-items.cjs",
+    "bytes": 1771,
+    "retained": "test-source/v073/review18-extra-items.cjs"
+  },
+  {
+    "name": "review18-final-adjust.py",
+    "bytes": 499,
+    "retained": "test-source/v073/review18-final-adjust.py"
+  },
+  {
+    "name": "review18-finalize-source.py",
+    "bytes": 1263,
+    "retained": "test-source/v073/review18-finalize-source.py"
+  },
+  {
+    "name": "review18-fixes.js",
+    "bytes": 21007,
+    "retained": "test-source/v073/review18-fixes.js"
+  },
+  {
+    "name": "review18-formation-polish.py",
+    "bytes": 373,
+    "retained": "test-source/v073/review18-formation-polish.py"
+  },
+  {
+    "name": "review18-inspect.cjs",
+    "bytes": 2292,
+    "retained": "test-source/v073/review18-inspect.cjs"
+  },
+  {
+    "name": "review18-legacy-webp.cjs",
+    "bytes": 2264,
+    "retained": "test-source/v073/review18-legacy-webp.cjs"
+  },
+  {
+    "name": "review18-live.py",
+    "bytes": 1853,
+    "retained": "test-source/v073/review18-live.py"
+  },
+  {
+    "name": "review18-package.py",
+    "bytes": 11335,
+    "retained": "test-source/v073/review18-package.py"
+  },
+  {
+    "name": "review18-polish.py",
+    "bytes": 2062,
+    "retained": "test-source/v073/review18-polish.py"
+  },
+  {
+    "name": "review18-prepare-publisher.py",
+    "bytes": 1573,
+    "retained": "test-source/v073/review18-prepare-publisher.py"
+  },
+  {
+    "name": "review18-publish-state.json",
+    "bytes": 609,
+    "retained": "test-source/v073/review18-publish-state.json"
+  },
+  {
+    "name": "review18-publish.py",
+    "bytes": 9038,
+    "retained": "test-source/v073/review18-publish.py"
+  },
+  {
+    "name": "review18-push-source.py",
+    "bytes": 713,
+    "retained": "test-source/v073/review18-push-source.py"
+  },
+  {
+    "name": "review18-qa.cjs",
+    "bytes": 9640,
+    "retained": "test-source/v073/review18-qa.cjs"
+  },
+  {
+    "name": "review18-read.py",
+    "bytes": 580,
+    "retained": "test-source/v073/review18-read.py"
+  },
+  {
+    "name": "review18-regression-a.cjs",
+    "bytes": 33847,
+    "retained": "test-source/v073/review18-regression-a.cjs"
+  },
+  {
+    "name": "review18-regression-b.cjs",
+    "bytes": 22938,
+    "retained": "test-source/v073/review18-regression-b.cjs"
+  },
+  {
+    "name": "review18-regression-core.cjs",
+    "bytes": 32643,
+    "retained": "test-source/v073/review18-regression-core.cjs"
+  },
+  {
+    "name": "review18-regressions.py",
+    "bytes": 848,
+    "retained": "test-source/v073/review18-regressions.py"
+  },
+  {
+    "name": "review18-screen-webp.cjs",
+    "bytes": 1176,
+    "retained": "test-source/v073/review18-screen-webp.cjs"
+  },
+  {
+    "name": "review18-source-adjust.py",
+    "bytes": 2356,
+    "retained": "test-source/v073/review18-source-adjust.py"
+  },
+  {
+    "name": "review18-source-completion.py",
+    "bytes": 1687,
+    "retained": "test-source/v073/review18-source-completion.py"
+  },
+  {
+    "name": "review18-test-cleanup.py",
+    "bytes": 507,
+    "retained": "test-source/v073/review18-test-cleanup.py"
+  },
+  {
+    "name": "review18-visual.cjs",
+    "bytes": 4611,
+    "retained": "test-source/v073/review18-visual.cjs"
+  },
+  {
+    "name": "review18-webp.cjs",
+    "bytes": 2397,
+    "retained": "test-source/v073/review18-webp.cjs"
+  },
+  {
+    "name": "revision-art-batch0.json",
+    "bytes": 255,
+    "retained": "test-source/v073/revision-art-batch0.json"
+  },
+  {
+    "name": "revision-art-batch1.json",
+    "bytes": 2273,
+    "retained": "test-source/v073/revision-art-batch1.json"
+  },
+  {
+    "name": "revision-art-batch2.json",
+    "bytes": 2842,
+    "retained": "test-source/v073/revision-art-batch2.json"
+  },
+  {
+    "name": "revision-art-batch3.json",
+    "bytes": 5013,
+    "retained": "test-source/v073/revision-art-batch3.json"
+  },
+  {
+    "name": "revision-art-batch4.json",
+    "bytes": 6537,
+    "retained": "test-source/v073/revision-art-batch4.json"
+  },
+  {
+    "name": "revision-art-batch5.json",
+    "bytes": 9789,
+    "retained": "test-source/v073/revision-art-batch5.json"
+  },
+  {
+    "name": "revision-art-batch6.json",
+    "bytes": 10547,
+    "retained": "test-source/v073/revision-art-batch6.json"
+  },
+  {
+    "name": "revision-art-batch7.json",
+    "bytes": 1012,
+    "retained": "test-source/v073/revision-art-batch7.json"
+  },
+  {
+    "name": "revision-art-batch8.json",
+    "bytes": 596,
+    "retained": "test-source/v073/revision-art-batch8.json"
+  },
+  {
+    "name": "revision-art-qa1018.cjs",
+    "bytes": 5926,
+    "retained": "test-source/v073/revision-art-qa1018.cjs"
+  },
+  {
+    "name": "revision-boss-probe.cjs",
+    "bytes": 914,
+    "retained": "test-source/v073/revision-boss-probe.cjs"
+  },
+  {
+    "name": "revision-boss1018.js",
+    "bytes": 7214,
+    "retained": "test-source/v073/revision-boss1018.js"
+  },
+  {
+    "name": "revision-codex1018.js",
+    "bytes": 13768,
+    "retained": "test-source/v073/revision-codex1018.js"
+  },
+  {
+    "name": "revision-delivery-qa1018.cjs",
+    "bytes": 4095,
+    "retained": "test-source/v073/revision-delivery-qa1018.cjs"
+  },
+  {
+    "name": "revision-finish1018.js",
+    "bytes": 2405,
+    "retained": "test-source/v073/revision-finish1018.js"
+  },
+  {
+    "name": "revision-fullbody-correction.json",
+    "bytes": 685,
+    "retained": "test-source/v073/revision-fullbody-correction.json"
+  },
+  {
+    "name": "revision-fullbody-manifest.json",
+    "bytes": 7327,
+    "retained": "test-source/v073/revision-fullbody-manifest.json"
+  },
+  {
+    "name": "revision-help1018.js",
+    "bytes": 25555,
+    "retained": "test-source/v073/revision-help1018.js"
+  },
+  {
+    "name": "revision-inspect.cjs",
+    "bytes": 923,
+    "retained": "test-source/v073/revision-inspect.cjs"
+  },
+  {
+    "name": "revision-items1018.js",
+    "bytes": 12081,
+    "retained": "test-source/v073/revision-items1018.js"
+  },
+  {
+    "name": "revision-map-ui1018.cjs",
+    "bytes": 1810,
+    "retained": "test-source/v073/revision-map-ui1018.cjs"
+  },
+  {
+    "name": "revision-pet-qa1018.cjs",
+    "bytes": 9380,
+    "retained": "test-source/v073/revision-pet-qa1018.cjs"
+  },
+  {
+    "name": "revision-qa1018.cjs",
+    "bytes": 13090,
+    "retained": "test-source/v073/revision-qa1018.cjs"
+  },
+  {
+    "name": "revision-recipe-probe.cjs",
+    "bytes": 993,
+    "retained": "test-source/v073/revision-recipe-probe.cjs"
+  },
+  {
+    "name": "revision-regression-a1018.cjs",
+    "bytes": 33590,
+    "retained": "test-source/v073/revision-regression-a1018.cjs"
+  },
+  {
+    "name": "revision-regression-b1018.cjs",
+    "bytes": 22681,
+    "retained": "test-source/v073/revision-regression-b1018.cjs"
+  },
+  {
+    "name": "revision-regression-core1018.cjs",
+    "bytes": 32644,
+    "retained": "test-source/v073/revision-regression-core1018.cjs"
+  },
+  {
+    "name": "revision-save-qa1018.cjs",
+    "bytes": 7547,
+    "retained": "test-source/v073/revision-save-qa1018.cjs"
+  },
+  {
+    "name": "revision-smoke1018.cjs",
+    "bytes": 2063,
+    "retained": "test-source/v073/revision-smoke1018.cjs"
+  },
+  {
+    "name": "revision-world1018.js",
+    "bytes": 7113,
+    "retained": "test-source/v073/revision-world1018.js"
+  },
+  {
+    "name": "revision1018-inventory.cjs",
+    "bytes": 2522,
+    "retained": "test-source/v073/revision1018-inventory.cjs"
+  },
+  {
+    "name": "revision24-art.js",
+    "bytes": 1134,
+    "retained": "test-source/v073/revision24-art.js"
+  },
+  {
+    "name": "revision24-battle.cjs",
+    "bytes": 9236,
+    "retained": "test-source/v073/revision24-battle.cjs"
+  },
+  {
+    "name": "revision24-combat.js",
+    "bytes": 6366,
+    "retained": "test-source/v073/revision24-combat.js"
+  },
+  {
+    "name": "revision24-effects.cjs",
+    "bytes": 9297,
+    "retained": "test-source/v073/revision24-effects.cjs"
+  },
+  {
+    "name": "revision24-growth-save.cjs",
+    "bytes": 7031,
+    "retained": "test-source/v073/revision24-growth-save.cjs"
+  },
+  {
+    "name": "revision24-inspect.cjs",
+    "bytes": 2677,
+    "retained": "test-source/v073/revision24-inspect.cjs"
+  },
+  {
+    "name": "revision24-items.js",
+    "bytes": 10946,
+    "retained": "test-source/v073/revision24-items.js"
+  },
+  {
+    "name": "revision24-release.py",
+    "bytes": 16949,
+    "retained": "test-source/v073/revision24-release.py"
+  },
+  {
+    "name": "revision24-test.cjs",
+    "bytes": 11560,
+    "retained": "test-source/v073/revision24-test.cjs"
+  },
+  {
+    "name": "revision24-ui.js",
+    "bytes": 5547,
+    "retained": "test-source/v073/revision24-ui.js"
+  },
+  {
+    "name": "revision24-verify.py",
+    "bytes": 1819,
+    "retained": "test-source/v073/revision24-verify.py"
+  },
+  {
+    "name": "runtime.json",
+    "bytes": 433346,
+    "retained": "test-source/v073/runtime.json"
+  },
+  {
+    "name": "save-pet1018.py",
+    "bytes": 910,
+    "retained": "test-source/v073/save-pet1018.py"
+  },
+  {
+    "name": "save-recovery1018-qa.cjs",
+    "bytes": 7553,
+    "retained": "test-source/v073/save-recovery1018-qa.cjs"
+  },
+  {
+    "name": "save-recovery1018.js",
+    "bytes": 5873,
+    "retained": "test-source/v073/save-recovery1018.js"
+  },
+  {
+    "name": "script-index.json",
+    "bytes": 17465,
+    "retained": "test-source/v073/script-index.json"
+  },
+  {
+    "name": "side1018-data.js",
+    "bytes": 33643,
+    "retained": "test-source/v073/side1018-data.js"
+  },
+  {
+    "name": "side1018-data.py",
+    "bytes": 897,
+    "retained": "test-source/v073/side1018-data.py"
+  },
+  {
+    "name": "side1018-dialogues.json",
+    "bytes": 37524,
+    "retained": "test-source/v073/side1018-dialogues.json"
+  },
+  {
+    "name": "side1018.js",
+    "bytes": 3229,
+    "retained": "test-source/v073/side1018.js"
+  },
+  {
+    "name": "smoke.cjs",
+    "bytes": 791,
+    "retained": "test-source/v073/smoke.cjs"
+  },
+  {
+    "name": "source-extra1018.cjs",
+    "bytes": 994,
+    "retained": "test-source/v073/source-extra1018.cjs"
+  },
+  {
+    "name": "source-extra1018.json",
+    "bytes": 8915,
+    "retained": "test-source/v073/source-extra1018.json"
+  },
+  {
+    "name": "source-index1018.py",
+    "bytes": 1742,
+    "retained": "test-source/v073/source-index1018.py"
+  },
+  {
+    "name": "standalone-check.cjs",
+    "bytes": 2970,
+    "retained": "test-source/v073/standalone-check.cjs"
+  },
+  {
+    "name": "start1018.py",
+    "bytes": 2108,
+    "retained": "test-source/v073/start1018.py"
+  },
+  {
+    "name": "status1018.js",
+    "bytes": 2036,
+    "retained": "test-source/v073/status1018.js"
+  },
+  {
+    "name": "story-data.js",
+    "bytes": 25109,
+    "retained": "test-source/v073/story-data.js"
+  },
+  {
+    "name": "story-data.json",
+    "bytes": 34742,
+    "retained": "test-source/v073/story-data.json"
+  },
+  {
+    "name": "story-data.py",
+    "bytes": 1426,
+    "retained": "test-source/v073/story-data.py"
+  },
+  {
+    "name": "style.css",
+    "bytes": 15758,
+    "retained": "test-source/v073/style.css"
+  },
+  {
+    "name": "sync-recovery1018.py",
+    "bytes": 1791,
+    "retained": "test-source/v073/sync-recovery1018.py"
+  },
+  {
+    "name": "test-entry.js",
+    "bytes": 1765,
+    "retained": "test-source/v073/test-entry.js"
+  },
+  {
+    "name": "ui.js",
+    "bytes": 16897,
+    "retained": "test-source/v073/ui.js"
+  },
+  {
+    "name": "visual-check.cjs",
+    "bytes": 5090,
+    "retained": "test-source/v073/visual-check.cjs"
+  },
+  {
+    "name": "worktree1018-qa.cjs",
+    "bytes": 1502,
+    "retained": "test-source/v073/worktree1018-qa.cjs"
+  },
+  {
+    "name": "world.js",
+    "bytes": 10706,
+    "retained": "test-source/v073/world.js"
+  }
+]

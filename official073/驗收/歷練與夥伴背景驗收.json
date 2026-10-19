@@ -1,0 +1,264 @@
+{
+  "url": "http://127.0.0.1:18776/V0.7.3_%E7%8D%A8%E7%AB%8B%E6%B8%AC%E8%A9%A6_2026-10-17/GitHub%E6%B8%AC%E8%A9%A6%E7%99%BC%E5%B8%83/",
+  "rows": [
+    {
+      "name": "歷練100＋20上限、溢出丟棄、消耗整十與儲備補回",
+      "pass": true,
+      "detail": {
+        "a": [
+          100,
+          3
+        ],
+        "got": 2,
+        "c": [
+          100,
+          20
+        ],
+        "spent": 30,
+        "d": [
+          90,
+          0
+        ],
+        "low": 0,
+        "normalized": [
+          96,
+          0
+        ]
+      }
+    },
+    {
+      "name": "正常NPC收禮：紀念品首次＋1、不能二領、普通禮物不給紀念品歷練",
+      "pass": true,
+      "detail": {
+        "first": 1,
+        "qty": 1,
+        "after": 1,
+        "claimed": true,
+        "paid": true
+      }
+    },
+    {
+      "name": "兩枚半月玉正常收取後合成月玉珮：各1與月玉珮5，合計7",
+      "pass": true,
+      "detail": {
+        "action": {
+          "recipe": [
+            "［特殊］月玉珮",
+            "半月水玉×1＋半月山玉×1",
+            ""
+          ],
+          "has": true,
+          "before": 2,
+          "ok": true
+        },
+        "x": {
+          "total": 7,
+          "moon": 1,
+          "half1": 0,
+          "half2": 0,
+          "receipts": [
+            {
+              "kind": "souvenir",
+              "key": "［特殊］半月水玉",
+              "amount": 1,
+              "credited": 1,
+              "at": 480
+            },
+            {
+              "kind": "souvenir",
+              "key": "［特殊］半月山玉",
+              "amount": 1,
+              "credited": 1,
+              "at": 480
+            },
+            {
+              "kind": "souvenir",
+              "key": "［特殊］月玉珮",
+              "amount": 5,
+              "credited": 5,
+              "at": 480
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "已持有／已領取的舊紀念品只補發一次，存讀檔不重給",
+      "pass": true,
+      "detail": {
+        "before": {
+          "total": 8,
+          "ledger": {
+            "［特殊］月玉珮": true,
+            "［特殊］玄川的護身符": true,
+            "［特殊］半月水玉": true,
+            "［特殊］半月山玉": true
+          }
+        },
+        "after": {
+          "total": 8,
+          "ledger": {
+            "［特殊］月玉珮": true,
+            "［特殊］玄川的護身符": true,
+            "［特殊］半月水玉": true,
+            "［特殊］半月山玉": true
+          }
+        }
+      }
+    },
+    {
+      "name": "補發遇總上限120只給剩餘空間，之後消耗也不重複補發",
+      "pass": true,
+      "detail": {
+        "cap": 120,
+        "after": 100,
+        "receipt": {
+          "kind": "souvenir",
+          "key": "［特殊］月玉珮",
+          "amount": 5,
+          "credited": 2,
+          "at": 480
+        }
+      }
+    },
+    {
+      "name": "茶館正常飲茶：角色原有歷練不影響品茗7點上限",
+      "pass": true,
+      "detail": {
+        "deltas": [
+          1,
+          1,
+          1,
+          4,
+          0
+        ],
+        "total": 87,
+        "teaEarned": 7,
+        "history": {
+          "焦葉粗茶": true,
+          "雲芽清茶": true,
+          "玉露凝香": true,
+          "悟道仙茗": true
+        }
+      }
+    },
+    {
+      "name": "正常主支線領獎各＋1，5張委託正式領獎累積＋1，不重複",
+      "pass": true,
+      "detail": {
+        "values": [
+          1,
+          2
+        ],
+        "total": 3,
+        "remainder": 0
+      }
+    },
+    {
+      "name": "NPC首次5心＋1與10心再＋2，無好感NPC不計，重達不重給",
+      "pass": true,
+      "detail": {
+        "five": 1,
+        "ten": 3,
+        "after": 3
+      }
+    },
+    {
+      "name": "正常孵化寵物、餵食跨5／10心、實際升5星，每隻各自防重複",
+      "pass": true,
+      "detail": {
+        "five": 1,
+        "ten": 3,
+        "stars": 5,
+        "total": 6,
+        "after": 6,
+        "id": "9b638d25-2a90-442b-b4be-c0be5f511c3e"
+      }
+    },
+    {
+      "name": "採集正常獲得素材每30次＋1，失敗採集不計入",
+      "pass": true,
+      "detail": {
+        "total": 1,
+        "remainder": 0,
+        "delta": 1,
+        "after": 1
+      }
+    },
+    {
+      "name": "野外跨區累積24小時＋1；城鎮與來回移動時間不計",
+      "pass": true,
+      "detail": {
+        "before": {
+          "total": 1,
+          "minutes": 0
+        },
+        "after": 1,
+        "minutes": 0,
+        "place": "朝御城"
+      }
+    },
+    {
+      "name": "歷練令牌正式道具使用＋3、消耗1，戰鬥禁止使用，不新增來源",
+      "pass": true,
+      "detail": {
+        "a": true,
+        "total": 3,
+        "left": 1,
+        "denied": false,
+        "after": 1
+      }
+    },
+    {
+      "name": "蘇璃與蘇項隊伍／夥伴管理背景真實載入，不改角色或戰力",
+      "pass": true,
+      "detail": {
+        "team": [
+          {
+            "name": "蘇璃",
+            "background": "../../assets/jz070_03903c85e27ac9a4853985ff.png",
+            "loaded": true,
+            "src": "../../assets/jz070_3b7ccecd022c0152dda37797.png"
+          },
+          {
+            "name": "蘇項",
+            "background": "../../assets/jz070_03903c85e27ac9a4853985ff.png",
+            "loaded": true,
+            "src": "../../assets/jz070_780f31851853952ecf0ce4e1.png"
+          }
+        ],
+        "partners": [
+          {
+            "name": "蘇璃",
+            "background": "initial",
+            "loaded": true
+          },
+          {
+            "name": "蘇項",
+            "background": "url(\"../../assets/jz070_03903c85e27ac9a4853985ff.png\")",
+            "loaded": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "可結婚角色新增時自動讀取專屬背景，普通NPC不強制套用",
+      "pass": true,
+      "detail": {
+        "src": "../../assets/jz070_65dc15ab9b4428899c0137e6.png",
+        "expected": "../../assets/jz070_65dc15ab9b4428899c0137e6.png",
+        "normal": ""
+      }
+    },
+    {
+      "name": "歷練幫助有完整規則、修練介面不顯示隱藏點數",
+      "pass": true,
+      "detail": {
+        "hiddenUI": false,
+        "visible": true,
+        "help": true
+      }
+    }
+  ],
+  "errors": []
+}

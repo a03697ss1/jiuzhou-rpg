@@ -1,0 +1,444 @@
+{
+  "url": "http://127.0.0.1:18776/V0.7.3_%E7%8D%A8%E7%AB%8B%E6%B8%AC%E8%A9%A6_2026-10-17/GitHub%E6%B8%AC%E8%A9%A6%E7%99%BC%E5%B8%83/",
+  "rows": [
+    {
+      "name": "五類初始容量50／50／30／30／30，同名堆疊只占一格",
+      "pass": true,
+      "detail": {
+        "capacity": {
+          "物品": 50,
+          "材料": 50,
+          "裝備": 30,
+          "永久特殊": 30,
+          "消耗特殊": 30
+        },
+        "used": 1,
+        "qty": 150,
+        "mail": 0
+      }
+    },
+    {
+      "name": "材料第51種自動入信、保留數量，整理後領取，不可二領",
+      "pass": true,
+      "detail": {
+        "before": {
+          "used": 50,
+          "qty": 0,
+          "mail": [
+            {
+              "n": "［一階］靈草",
+              "q": 7
+            }
+          ]
+        },
+        "blocked": false,
+        "ok": true,
+        "after": 7,
+        "again": false,
+        "used": 50
+      }
+    },
+    {
+      "name": "每個有限分頁最後有擴充格，消耗1個只讓指定分頁增加3",
+      "pass": true,
+      "detail": {
+        "before": {
+          "empty": 50,
+          "last": "＋開啟新格子背包擴充格×1本分頁增加3格",
+          "cap": 50
+        },
+        "after": {
+          "cap": 53,
+          "other": 50,
+          "qty": 1,
+          "empty": 53
+        }
+      }
+    },
+    {
+      "name": "郵箱位於幫助左側；已有角色收到一次感謝信，三項附件獨立圖片",
+      "pass": true,
+      "detail": {
+        "count": 1,
+        "text": "我是a03697ss1，感謝各位當測試員並遊玩我的遊戲，在此準備禮物給你們這些先驅者。",
+        "sender": "a03697ss1",
+        "attachments": [
+          {
+            "name": "抽獎卷",
+            "qty": 10
+          },
+          {
+            "name": "［特殊］改名卡",
+            "qty": 1
+          },
+          {
+            "name": "靈幣",
+            "qty": 5000
+          }
+        ],
+        "images": [
+          {
+            "name": "抽獎卷",
+            "src": "inventory-assets/抽獎卷.webp",
+            "loaded": true
+          },
+          {
+            "name": "［特殊］改名卡",
+            "src": "inventory-assets/改名卡.webp",
+            "loaded": true
+          },
+          {
+            "name": "靈幣",
+            "src": "inventory-assets/靈幣.webp",
+            "loaded": true
+          }
+        ],
+        "leftOfHelp": true
+      }
+    },
+    {
+      "name": "感謝信正常按全部領取，抽獎卷10、改名卡1、靈幣5000；讀檔不重給",
+      "pass": true,
+      "detail": {
+        "before": 600,
+        "one": {
+          "coins": 5600,
+          "tickets": 10,
+          "cards": 1,
+          "remaining": false
+        },
+        "two": {
+          "coins": 5600,
+          "tickets": 10,
+          "cards": 1,
+          "remaining": false,
+          "again": false
+        }
+      }
+    },
+    {
+      "name": "新建立角色不重發先驅者信件；舊角色未領取的感謝信超7日保留",
+      "pass": true,
+      "detail": {
+        "fresh": 0,
+        "old": 1,
+        "protected": true
+      }
+    },
+    {
+      "name": "普通信件滿7個遊戲日自動刪除，未領取材料也到期刪除",
+      "pass": true,
+      "detail": {
+        "before": true,
+        "after": false,
+        "material": 0
+      }
+    },
+    {
+      "name": "有內容物不能手動刪信，領完後才能刪除；重要道具不逾期",
+      "pass": true,
+      "detail": {
+        "blocked": false,
+        "protected": true,
+        "claimed": true,
+        "removed": true,
+        "remaining": 0,
+        "qty": 1
+      }
+    },
+    {
+      "name": "滿10封普通物品拒收有可見提示，特殊物品與裝備另保留",
+      "pass": true,
+      "detail": {
+        "mail": 10,
+        "refused": {
+          "at": 490,
+          "items": [
+            {
+              "name": "［二階］玄鐵",
+              "qty": 3,
+              "bag": "materials"
+            }
+          ]
+        },
+        "reserve": [
+          "［特殊］改名卡",
+          "［特殊］問心劍"
+        ],
+        "visible": "郵箱已滿10封，未能收取：［二階］玄鐵×3。知道了",
+        "materials": 0
+      }
+    },
+    {
+      "name": "重要道具保管中的擴充格可直接使用，滿背包不會卡死",
+      "pass": true,
+      "detail": {
+        "before": 30,
+        "count": 1,
+        "ok": true,
+        "after": 33,
+        "left": 0
+      }
+    },
+    {
+      "name": "紀念品、禮物、任務物品不限容量；裝備寄存保留既有品質記錄值",
+      "pass": true,
+      "detail": {
+        "souvenirs": 80,
+        "gifts": 80,
+        "tasks": 80,
+        "stored": {
+          "count": 2,
+          "quality": "完美",
+          "testStat": 29
+        },
+        "restored": {
+          "count": 2,
+          "quality": "完美",
+          "testStat": 29
+        }
+      }
+    },
+    {
+      "name": "改名卡可用、只消耗1，保留角色與寵物身分紀錄",
+      "pass": true,
+      "detail": {
+        "ok": true,
+        "name": "先驅修士",
+        "card": 0,
+        "sameId": true,
+        "sameRealm": true
+      }
+    },
+    {
+      "name": "背包八頁固定格，長短文字不改高度，空格及擴充控制不冒充物品",
+      "pass": true,
+      "detail": [
+        {
+          "tab": "物品",
+          "cells": 51,
+          "heights": [
+            286
+          ],
+          "fakeItems": false,
+          "expand": 1
+        },
+        {
+          "tab": "材料",
+          "cells": 51,
+          "heights": [
+            286
+          ],
+          "fakeItems": false,
+          "expand": 1
+        },
+        {
+          "tab": "裝備",
+          "cells": 31,
+          "heights": [
+            286
+          ],
+          "fakeItems": false,
+          "expand": 1
+        },
+        {
+          "tab": "永久特殊",
+          "cells": 31,
+          "heights": [
+            286
+          ],
+          "fakeItems": false,
+          "expand": 1
+        },
+        {
+          "tab": "消耗特殊",
+          "cells": 31,
+          "heights": [
+            286
+          ],
+          "fakeItems": false,
+          "expand": 1
+        },
+        {
+          "tab": "紀念品",
+          "cells": 4,
+          "heights": [
+            286
+          ],
+          "fakeItems": false,
+          "expand": 0
+        },
+        {
+          "tab": "禮物",
+          "cells": 4,
+          "heights": [
+            286
+          ],
+          "fakeItems": false,
+          "expand": 0
+        },
+        {
+          "tab": "任務",
+          "cells": 4,
+          "heights": [
+            286
+          ],
+          "fakeItems": false,
+          "expand": 0
+        }
+      ]
+    },
+    {
+      "name": "公共爐／鑄造台各類配方固定格，成品圖、材料與操作保留",
+      "pass": true,
+      "detail": [
+        {
+          "tab": "煉製",
+          "count": 9,
+          "fixed": true,
+          "heights": [
+            366
+          ],
+          "buttons": true,
+          "images": true,
+          "nested": 0
+        },
+        {
+          "tab": "煉丹",
+          "count": 19,
+          "fixed": true,
+          "heights": [
+            366
+          ],
+          "buttons": true,
+          "images": true,
+          "nested": 0
+        },
+        {
+          "tab": "合成",
+          "count": 22,
+          "fixed": true,
+          "heights": [
+            366
+          ],
+          "buttons": true,
+          "images": true,
+          "nested": 0
+        },
+        {
+          "tab": "煉器",
+          "count": 37,
+          "fixed": true,
+          "heights": [
+            366
+          ],
+          "buttons": true,
+          "images": true,
+          "nested": 0
+        },
+        {
+          "tab": "鍛造",
+          "count": 37,
+          "fixed": true,
+          "heights": [
+            366
+          ],
+          "buttons": true,
+          "images": true,
+          "nested": 0
+        },
+        {
+          "tab": "寵物鍛造",
+          "count": 20,
+          "fixed": true,
+          "heights": [
+            366
+          ],
+          "buttons": true,
+          "images": true,
+          "nested": 0
+        },
+        {
+          "tab": "鑄飾",
+          "count": 18,
+          "fixed": true,
+          "heights": [
+            366
+          ],
+          "buttons": true,
+          "images": true,
+          "nested": 0
+        }
+      ]
+    },
+    {
+      "name": "功法持有／已學卡片固定格、圖片、學習與編入功能保留",
+      "pass": true,
+      "detail": [
+        {
+          "cards": 1,
+          "fixed": true,
+          "heights": [
+            320
+          ],
+          "images": true,
+          "buttons": true
+        },
+        {
+          "cards": 1,
+          "fixed": true,
+          "heights": [
+            320
+          ],
+          "images": true,
+          "buttons": true
+        }
+      ]
+    },
+    {
+      "name": "手機390寬度兩欄固定格無橫向溢出",
+      "pass": true,
+      "detail": [
+        {
+          "width": 173,
+          "height": 286,
+          "fits": true
+        },
+        {
+          "width": 173,
+          "height": 286,
+          "fits": true
+        },
+        {
+          "width": 173,
+          "height": 286,
+          "fits": true
+        },
+        {
+          "width": 173,
+          "height": 286,
+          "fits": true
+        }
+      ]
+    },
+    {
+      "name": "幫助左側往下滾，點不同條目不回頂；返回舊條目記住閱讀位置",
+      "pass": true,
+      "detail": {
+        "before": {
+          "side": 550,
+          "main": 130
+        },
+        "next": {
+          "side": 1148,
+          "title": "背包與郵箱"
+        },
+        "after": {
+          "side": 1148,
+          "main": 130
+        }
+      }
+    }
+  ],
+  "errors": []
+}

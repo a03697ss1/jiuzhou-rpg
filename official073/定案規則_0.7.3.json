@@ -1,0 +1,168 @@
+{
+  "meta": {
+    "version": "0.7.3",
+    "date": "2026-10-19",
+    "phase": "正式版",
+    "base": "定案規則_0.7.2.json",
+    "priority": "沿用0.7.2與已驗收0.7.3測試分支；本輪使用者最新確認規則優先。舊版內容只保留作歷史，不回蓋新版。",
+    "authorization": "2026-10-19玩家明確同意升正式0.7.3，並保留0.7.0／0.7.1／0.7.2；圖鑑與主線已由玩家驗收通過。"
+  },
+  "accepted": [
+    "圖鑑",
+    "A／B主線",
+    "既有0.7.3測試分支已實裝與驗收功能"
+  ],
+  "experience": {
+    "visibleCap": 100,
+    "hiddenCap": 20,
+    "spendStep": 10,
+    "chancePerStep": 1,
+    "mainQuest": 1,
+    "sideQuest": 1,
+    "commissionsPerPoint": 5,
+    "teaCap": 7,
+    "firstTea": 1,
+    "firstEnlightenmentTeaExtra": 3,
+    "monsterKillsPerPoint": {
+      "一般種": 30,
+      "特殊種": 20,
+      "高位種": 10,
+      "高危種（特）": 5
+    },
+    "monsterDirect": {
+      "妖王種": 1,
+      "神獸種": 5,
+      "災獸種": 5
+    },
+    "humanDirect": {
+      "長老級": 5,
+      "道祖級": 5,
+      "州府統領": 3
+    },
+    "gathersPerPoint": 30,
+    "wildMinutesPerPoint": 1440,
+    "travelExcluded": true,
+    "npcHeart": {
+      "5": 1,
+      "10": 2
+    },
+    "petHeart": {
+      "5": 1,
+      "10": 2
+    },
+    "petFirst5Stars": 3,
+    "souvenirFirstEach": 1,
+    "moonJadeFirst": 5,
+    "token": 3
+  },
+  "inventory": {
+    "initialSlots": {
+      "物品": 50,
+      "材料": 50,
+      "裝備": 30,
+      "永久特殊": 30,
+      "消耗特殊": 30
+    },
+    "unlimited": [
+      "紀念品",
+      "禮物",
+      "任務"
+    ],
+    "stackByName": true,
+    "expansionItem": "［特殊］背包擴充格",
+    "expansionStep": 3,
+    "expansionUpperCap": null
+  },
+  "mail": {
+    "position": "幫助左側",
+    "maxLetters": 10,
+    "expiresAfterGameDays": 7,
+    "deleteOnlyWhenEmpty": true,
+    "important": [
+      "［任務］物品",
+      "［特殊］物品",
+      "裝備"
+    ],
+    "importantDoesNotExpireWhileUnclaimed": true,
+    "fullOrdinary": "拒收並提示",
+    "fullImportant": "另外保留",
+    "pioneer": {
+      "existingCharactersOnly": true,
+      "once": true,
+      "text": "我是a03697ss1，感謝各位當測試員並遊玩我的遊戲，在此準備禮物給你們這些先驅者。",
+      "items": [
+        [
+          "抽獎卷",
+          10
+        ],
+        [
+          "［特殊］改名卡",
+          1
+        ]
+      ],
+      "coins": 5000
+    }
+  },
+  "retainedVersions": [
+    {
+      "version": "0.7.0",
+      "commit": "6b140aed11d22274166d0ab068957aa5089b223a",
+      "sha256": "41025f8ba431125bf16630185b360733de8be6259e000e1c7f1a64ab3507203a",
+      "bytes": 2320335,
+      "gzipBytes": 515606,
+      "url": "https://a03697ss1.github.io/jiuzhou-rpg/versions/0.7.0/"
+    },
+    {
+      "version": "0.7.1",
+      "commit": "be252762adee3920911f3576435695cb539ecf9f",
+      "sha256": "cde24ddc3314cdd5f5b4c197802ffbd87e01e30909aca89c3c835173397193e6",
+      "bytes": 2744038,
+      "gzipBytes": 630681,
+      "url": "https://a03697ss1.github.io/jiuzhou-rpg/versions/0.7.1/"
+    },
+    {
+      "version": "0.7.2",
+      "commit": "a420a7772dcbb75de52b87c6e2628fa87937495a",
+      "sha256": "84778599d163b9b12a165c38f7c2cbfb24dbdf22fcc76020de8271921a764cd0",
+      "bytes": 3224059,
+      "gzipBytes": 775778,
+      "url": "https://a03697ss1.github.io/jiuzhou-rpg/versions/0.7.2/"
+    }
+  ],
+  "sourceModules": [
+    {
+      "name": "experience1019.js",
+      "sha256": "9580da245c3a45f96a3048ff11e7bd1ef7dd10a6928217860cfc4732624e0529"
+    },
+    {
+      "name": "partner-background1019.js",
+      "sha256": "f84897f13764b015f3767b1bfc7814814b8a47fd32bc88a87d2caaf5ff037c5a"
+    },
+    {
+      "name": "inventory-layout1019.js",
+      "sha256": "51785d183094c5b344ea220be10521faa4983e0746dcaf1043b90bcbef13d3ab"
+    },
+    {
+      "name": "help-scroll1019.js",
+      "sha256": "5f55ca15ee38d95258bb3187a1fdd109d8cc294b3874e1a1b32abdc421623367"
+    },
+    {
+      "name": "inventory-mail1019.js",
+      "sha256": "6f8c3275821c4bd10e5441ad8addb0d57887a3413a3b069ffb31e7fbfd988620"
+    },
+    {
+      "name": "inventory-art1019.js",
+      "sha256": "0a76c46a5e17f579e4870c973473d13efe84668f5e576da798857a62ebe3a433"
+    },
+    {
+      "name": "official073.js",
+      "sha256": "0138c9fd73061a898ac00323a53494010ab005bfe1c35fb2ccf5b1fcaf67b77d"
+    }
+  ],
+  "notInvented": [
+    "抽獎池與抽獎功能未設計；票券先保留。",
+    "背包擴充格未指定取得來源，不新增商店、配方或掉落。",
+    "其餘七種新狀態無正式施加來源，保留接口與說明。",
+    "金丹玩家成長未開放，築基圓滿停止突破。"
+  ]
+}

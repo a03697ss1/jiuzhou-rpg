@@ -1,0 +1,22 @@
+(function(){'use strict';const N=JZ073;
+N.fixedCard1019=(card,kind='bag')=>{if(card.classList.contains('jz-fixed-slot'))return;card.classList.add('jz-fixed-slot','jz-fixed-'+kind);const copy=document.createElement('div'),actions=document.createElement('div');copy.className='jz-slot-copy';actions.className='jz-slot-actions';for(const node of [...card.childNodes]){if(node.nodeType===1&&node.matches('img.jz-item-image'))continue;if(node.nodeType===1&&node.matches('button,select'))actions.append(node);else copy.append(node);}card.append(copy);if(actions.children.length)card.append(actions);};
+N.fixedGroups1019=(root,selector,kind)=>{const cards=[...root.querySelectorAll(selector)].filter(c=>!c.querySelector(selector)),parents=new Set(cards.map(c=>c.parentElement));for(const parent of parents){const rows=cards.filter(c=>c.parentElement===parent);if(!rows.length)continue;let grid=parent.matches('.jz-fixed-grid,.jzbug-recipe-grid,.jzbug-tech-grid,.tech-list')?parent:null;if(!grid){grid=document.createElement('div');rows[0].before(grid);rows.forEach(r=>grid.append(r));}grid.classList.add('jz-fixed-grid','jz-fixed-'+kind+'-grid');for(const row of rows)N.fixedCard1019(row,kind);}};
+const bag=renderBag;renderBag=function(){const d=JZ072.fragment(bag.apply(this,arguments));for(const grid of d.querySelectorAll('.jzbug-bag-grid,.jzbug-equipped')){grid.classList.add('jz-fixed-grid','jz-fixed-bag-grid');for(const card of grid.querySelectorAll(':scope>.card'))N.fixedCard1019(card);}return d.innerHTML;};
+for(const name of ['r511RecipeList','r510RecipeRows','r59RecipeRows','r512NpcRecipeRows']){const old=window[name];if(typeof old!=='function')continue;window[name]=function(){const d=JZ072.fragment(old.apply(this,arguments));N.fixedGroups1019(d,'.prod-recipe,.craft-recipe','recipe');return d.innerHTML;};}
+const tech=renderTech;renderTech=function(){const d=JZ072.fragment(tech.apply(this,arguments));for(const card of d.querySelectorAll('.jzbug-tech-grid>.card,.tech-list>.card')){const n=card.querySelector('b')?.textContent;if(n&&JZ360.byName[n]&&!card.querySelector('.jz-item-image'))card.insertAdjacentHTML('afterbegin',N.itemImage1018(n));}N.fixedGroups1019(d,'.tech-list>.card,.jz360-tech,.jzbug-tech-card,.jzbug-tech-grid>.card','tech');N.fixedGroups1019(d,'.tech-entry','loadout');return d.innerHTML;};
+const style=document.createElement('style');style.id='jz-fixed-inventory1019';style.textContent=`
+.jz-fixed-grid{display:grid!important;grid-template-columns:repeat(auto-fill,minmax(min(100%,230px),1fr))!important;gap:12px!important;align-items:start!important;min-width:0}
+.jz-fixed-grid>.jz-fixed-slot{box-sizing:border-box;width:100%!important;min-width:0!important;height:286px!important;min-height:286px!important;max-height:286px!important;display:flex!important;flex-direction:column!important;align-items:stretch!important;gap:7px;margin:0!important;padding:12px!important;overflow:hidden!important;border:1px solid #36536a;border-radius:12px;background:#0d1d29}
+.jz-fixed-slot>.jz-item-image{display:block;float:none!important;flex:none;width:76px!important;height:76px!important;object-fit:contain;align-self:center;margin:0!important}
+.jz-fixed-slot>.jz-slot-copy{min-height:0;min-width:0;flex:1;overflow:auto;overflow-wrap:anywhere;scrollbar-width:thin;line-height:1.5}
+.jz-slot-copy>b,.jz-slot-copy>strong{display:block;color:#f2dea2;line-height:1.5;min-height:1.5em}
+.jz-slot-copy p{margin:5px 0}.jz-slot-copy br+br{display:none}
+.jz-slot-actions{flex:none;display:flex;flex-wrap:wrap;gap:5px;max-height:80px;overflow:auto;align-items:center}
+.jz-slot-actions button{margin:0!important;min-height:34px;flex:1 1 auto}.jz-slot-actions select{width:100%;min-width:0}
+.jz-fixed-recipe-grid>.jz-fixed-slot{height:366px!important;min-height:366px!important;max-height:366px!important}
+.jz-fixed-tech-grid>.jz-fixed-slot{height:320px!important;min-height:320px!important;max-height:320px!important}
+.jz-fixed-loadout-grid>.jz-fixed-slot{height:112px!important;min-height:112px!important;max-height:112px!important}
+.jz-fixed-slot .jz072-compare{min-width:0;max-width:100%}.jz-fixed-slot table{width:100%;font-size:12px}
+@media(max-width:560px){.jz-fixed-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:8px!important}.jz-fixed-grid>.jz-fixed-slot{padding:9px!important}.jz-fixed-slot>.jz-item-image{width:64px!important;height:64px!important}.jz-slot-copy{font-size:13px}.jz-slot-actions button{font-size:12px;padding:6px!important}}
+`;document.head.append(style);
+})();
