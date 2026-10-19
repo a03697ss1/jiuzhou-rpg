@@ -1,0 +1,48 @@
+{
+  "rows": [
+    {
+      "name": "低於1050戰力，三日後可由雷鳴沼實際走入地下深窟",
+      "pass": true,
+      "detail": {
+        "power": 79,
+        "wild": true,
+        "gate": "",
+        "nearby": true,
+        "place": "雷鳴沼地下深窟"
+      }
+    },
+    {
+      "name": "兩地東州地圖只顯示推薦戰力，前往按鈕可按",
+      "pass": true,
+      "detail": [
+        {
+          "name": "雷鳴沼地下深窟",
+          "text": "雷鳴沼地下深窟類型：野外區域最低境界：築基圓滿推薦戰力：1400入口已開放前往",
+          "disabled": false,
+          "node": "雷鳴沼地下深窟",
+          "power": 79
+        },
+        {
+          "name": "黑潮禁岸",
+          "text": "黑潮禁岸類型：危險區最低境界：築基五層推薦戰力：950入口已開放前往",
+          "disabled": false,
+          "node": "黑潮禁岸",
+          "power": 79
+        }
+      ]
+    },
+    {
+      "name": "原境界與任務解鎖限制保持，完成旗標及領獎時間兼容舊存檔",
+      "pass": true,
+      "detail": {
+        "caveRealm": "最低境界：築基圓滿",
+        "coastRealm": "最低境界：築基五層",
+        "coastQuest": "需完成［支線］危險區",
+        "wild": true,
+        "legacyGate": "",
+        "recovered": true
+      }
+    }
+  ],
+  "errors": []
+}

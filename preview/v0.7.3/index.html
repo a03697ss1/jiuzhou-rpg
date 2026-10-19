@@ -24986,7 +24986,7 @@ const finish=N.decorate;N.decorate=()=>{finish();const banner=document.querySele
 const history=JZ072.versionHistory;JZ072.versionHistory=()=>{history();document.getElementById('modalBody')?.insertAdjacentHTML('afterbegin','<section class="card"><h2>本輪18項修正</h2><h3>新增</h3><p>裝備、各階藥品與特殊物品的獨立圖片；補齊NPC靈根資質。</p><h3>改動</h3><p>狐毛、狐尾與獸角歸妖物素材；藥品使用你提供的數值；取得來源依完整階級與當前商店核對；布告箱移到放大的布告欄下方；交談只保留暫時離開。</p><h3>BUG修復</h3><p>戰鬥血量與戰位同步、測試999重複挑戰長右、主線行動所在地限制、蘇璃同行位置、柳清妍任務入口、功法階級顯示，以及必敗戰的手動1倍與繼續提示。</p></section>');};
 })();
 </script>
-<script>window.JZ073_BUILD_ID="20261019-official073-8";</script>
+<script>window.JZ073_BUILD_ID="20261019-official073-9";</script>
 <script id="jz073-hidden-steal1019">(function(){'use strict';const N=JZ073,R=JZR;
 const drops=Object.freeze({'林夏于':'［特殊］火霞刀','蘇璃':'［特殊］靈水劍','柳清妍':'［特殊］秘術弓','邱山河':'［特殊］鹿絞槍','蘇項':'［特殊］土靈盔'});
 const names=new Set(Object.values(drops));
@@ -25571,5 +25571,14 @@ const sync=N.syncWorld;N.syncWorld=function(){if(S&&N.done('038')){const places=
 const people=renderPeople;renderPeople=function(){U.updateNpcLocations();N.syncWorld();return people.apply(this,arguments);};
 const rows=N.catalogRows1018;N.catalogRows1018=function(tab){if(tab==='NPC'){U.updateNpcLocations();N.syncWorld();}return rows.apply(this,arguments);};
 if(N.releaseHistory073)N.releaseHistory073.BUG修復.push('第一封印後林夏于在青陽鎮，圖鑑、人物列表與任務引導同步；危險區改在青陽鎮接取，保留兩日等待、完整對話與一次性獎勵。修復其他主線NPC人物列表仍使用舊固定位置的問題。');
+})();
+</script>
+<script id="jz073-recommended-power1019">(function(){'use strict';const N=JZ073,W=JZW,recommended={'黑潮禁岸':950,'雷鳴沼地下深窟':1400};N.recommendedPower1019=recommended;
+N.wildCave=()=>{const q=N.quest('038');if(!q?.claimed)return false;const at=q.completedAt??q.claimedAt??N.state().story.bossCompletedAt;return Number.isFinite(at)&&N.now()-at>=4320;};
+const gate=W.gate;W.gate=function(name){if(name==='雷鳴沼地下深窟'&&N.done('038'))N.state().story.caveOpened=true;const why=gate.apply(this,arguments);return Object.hasOwn(recommended,name)&&/^最低戰力/.test(why)?'':why;};
+const info=N.newPlaceInfo;N.newPlaceInfo=function(name){const html=info.apply(this,arguments);if(!Object.hasOwn(recommended,name))return html;const root=JZ072.fragment(html);for(const p of root.querySelectorAll('p'))if(/最低.*推薦戰力/.test(p.textContent))p.textContent='推薦戰力：'+recommended[name];return root.innerHTML;};
+const adventure=renderAdventure;renderAdventure=function(){const html=adventure.apply(this,arguments);if(!Object.hasOwn(recommended,S?.place))return html;const root=JZ072.fragment(html);for(const p of root.querySelectorAll('p')){if(p.classList.contains('jz-area-power'))p.textContent='推薦戰力：'+recommended[S.place];else p.innerHTML=p.innerHTML.replace('最低500／推薦950（測試參考值）','推薦戰力：950').replace('最低1050／推薦1400（測試參考值）','推薦戰力：1400');}return root.innerHTML;};
+const card=N.catalogCard1018;N.catalogCard1018=function(row,tab){const html=card.apply(this,arguments);if(tab!=='地區'||!Object.hasOwn(recommended,row.name))return html;const root=JZ072.fragment(html);root.querySelector('.jz-catalog-details')?.insertAdjacentHTML('afterbegin','<section><h4>推薦戰力</h4><p>'+recommended[row.name]+'</p></section>');return root.innerHTML;};
+if(N.releaseHistory073){N.releaseHistory073.改動.push('地下深窟、黑潮禁岸只顯示推薦戰力，不再以最低戰力限制進入；原有境界、主線及時間條件保留。');N.releaseHistory073.BUG修復.push('已完成第一封印的角色可恢復深窟入口旗標，野外化時間兼容既有完成／領獎時間紀錄，不重新開始等待。');}
 })();
 </script>
